@@ -1,2 +1,9 @@
 language: csharp
 solution: mruv-pb-csharp.sln
+dotnet: 2.2.402
+
+install:
+  - dotnet restore
+
+script:
+  - msbuild /p:Configuration=Release mruv-pb-csharp.sln
