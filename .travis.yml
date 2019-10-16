@@ -19,3 +19,4 @@ deploy:
   script: dotnet pack -p:PackageVersion=$(cat VERSION.txt).$TRAVIS_BUILD_NUMBER && dotnet nuget push bin/Debug/*.nupkg -k $NUGET_API_KEY -s https://api.nuget.org/v3/index.json
   on:
     branch: master
+    tags: true
