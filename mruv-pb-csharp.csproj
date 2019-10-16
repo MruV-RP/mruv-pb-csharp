@@ -3,10 +3,10 @@
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <RootNamespace>mruv_pb_csharp</RootNamespace>
 
-	<PackageId>MruV.Protos</PackageId>
-	<Version>0.1.1</Version>
-	<Authors>Mrucznik</Authors>
-	<Company>Mrucznik Role Play</Company>
+	  <PackageId>MruV.Protos</PackageId>
+	  <Authors>Mrucznik</Authors>
+	  <Company>Mrucznik Role Play</Company>
+	  <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Google.Api.CommonProtos" Version="1.7.0" />
