@@ -12,10 +12,56 @@ namespace Mruv {
   {
     static readonly string __ServiceName = "mruv.MruVCharactersService";
 
+    static readonly grpc::Marshaller<global::Mruv.Character> __Marshaller_mruv_Character = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Character.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.CharacterID> __Marshaller_mruv_CharacterID = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.CharacterID.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.DeathStreamRequest> __Marshaller_mruv_DeathStreamRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.DeathStreamRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.DeathStreamResponse> __Marshaller_mruv_DeathStreamResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.DeathStreamResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.ServiceStatusRequest> __Marshaller_mruv_ServiceStatusRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.ServiceStatusRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.ServiceStatusResponse> __Marshaller_mruv_ServiceStatusResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.ServiceStatusResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.VersionRequest> __Marshaller_mruv_VersionRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.VersionRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.VersionResponse> __Marshaller_mruv_VersionResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.VersionResponse.Parser.ParseFrom);
+
+    static readonly grpc::Method<global::Mruv.Character, global::Mruv.CharacterID> __Method_Create = new grpc::Method<global::Mruv.Character, global::Mruv.CharacterID>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "Create",
+        __Marshaller_mruv_Character,
+        __Marshaller_mruv_CharacterID);
+
+    static readonly grpc::Method<global::Mruv.CharacterID, global::Mruv.Character> __Method_Get = new grpc::Method<global::Mruv.CharacterID, global::Mruv.Character>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "Get",
+        __Marshaller_mruv_CharacterID,
+        __Marshaller_mruv_Character);
+
+    static readonly grpc::Method<global::Mruv.Character, global::Mruv.CharacterID> __Method_Update = new grpc::Method<global::Mruv.Character, global::Mruv.CharacterID>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "Update",
+        __Marshaller_mruv_Character,
+        __Marshaller_mruv_CharacterID);
+
+    static readonly grpc::Method<global::Mruv.CharacterID, global::Mruv.CharacterID> __Method_Remove = new grpc::Method<global::Mruv.CharacterID, global::Mruv.CharacterID>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "Remove",
+        __Marshaller_mruv_CharacterID,
+        __Marshaller_mruv_CharacterID);
+
+    static readonly grpc::Method<global::Mruv.CharacterID, global::Mruv.CharacterID> __Method_KillCharacter = new grpc::Method<global::Mruv.CharacterID, global::Mruv.CharacterID>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "KillCharacter",
+        __Marshaller_mruv_CharacterID,
+        __Marshaller_mruv_CharacterID);
+
+    static readonly grpc::Method<global::Mruv.DeathStreamRequest, global::Mruv.DeathStreamResponse> __Method_DeathsStream = new grpc::Method<global::Mruv.DeathStreamRequest, global::Mruv.DeathStreamResponse>(
+        grpc::MethodType.ServerStreaming,
+        __ServiceName,
+        "DeathsStream",
+        __Marshaller_mruv_DeathStreamRequest,
+        __Marshaller_mruv_DeathStreamResponse);
 
     static readonly grpc::Method<global::Mruv.ServiceStatusRequest, global::Mruv.ServiceStatusResponse> __Method_GetServiceStatus = new grpc::Method<global::Mruv.ServiceStatusRequest, global::Mruv.ServiceStatusResponse>(
         grpc::MethodType.Unary,
@@ -41,6 +87,54 @@ namespace Mruv {
     [grpc::BindServiceMethod(typeof(MruVCharactersService), "BindService")]
     public abstract partial class MruVCharactersServiceBase
     {
+      /// <summary>
+      ///CRUD
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.CharacterID> Create(global::Mruv.Character request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.Character> Get(global::Mruv.CharacterID request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.CharacterID> Update(global::Mruv.Character request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.CharacterID> Remove(global::Mruv.CharacterID request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      ///Deaths
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.CharacterID> KillCharacter(global::Mruv.CharacterID request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task DeathsStream(global::Mruv.DeathStreamRequest request, grpc::IServerStreamWriter<global::Mruv.DeathStreamResponse> responseStream, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      ///Service status
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
       public virtual global::System.Threading.Tasks.Task<global::Mruv.ServiceStatusResponse> GetServiceStatus(global::Mruv.ServiceStatusRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
@@ -76,18 +170,190 @@ namespace Mruv {
       {
       }
 
+      /// <summary>
+      ///CRUD
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Mruv.CharacterID Create(global::Mruv.Character request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return Create(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      ///CRUD
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Mruv.CharacterID Create(global::Mruv.Character request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_Create, null, options, request);
+      }
+      /// <summary>
+      ///CRUD
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Mruv.CharacterID> CreateAsync(global::Mruv.Character request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return CreateAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      ///CRUD
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Mruv.CharacterID> CreateAsync(global::Mruv.Character request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_Create, null, options, request);
+      }
+      public virtual global::Mruv.Character Get(global::Mruv.CharacterID request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return Get(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Mruv.Character Get(global::Mruv.CharacterID request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_Get, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Character> GetAsync(global::Mruv.CharacterID request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Character> GetAsync(global::Mruv.CharacterID request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_Get, null, options, request);
+      }
+      public virtual global::Mruv.CharacterID Update(global::Mruv.Character request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return Update(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Mruv.CharacterID Update(global::Mruv.Character request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_Update, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Mruv.CharacterID> UpdateAsync(global::Mruv.Character request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return UpdateAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Mruv.CharacterID> UpdateAsync(global::Mruv.Character request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_Update, null, options, request);
+      }
+      public virtual global::Mruv.CharacterID Remove(global::Mruv.CharacterID request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return Remove(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Mruv.CharacterID Remove(global::Mruv.CharacterID request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_Remove, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Mruv.CharacterID> RemoveAsync(global::Mruv.CharacterID request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return RemoveAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Mruv.CharacterID> RemoveAsync(global::Mruv.CharacterID request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_Remove, null, options, request);
+      }
+      /// <summary>
+      ///Deaths
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Mruv.CharacterID KillCharacter(global::Mruv.CharacterID request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return KillCharacter(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      ///Deaths
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Mruv.CharacterID KillCharacter(global::Mruv.CharacterID request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_KillCharacter, null, options, request);
+      }
+      /// <summary>
+      ///Deaths
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Mruv.CharacterID> KillCharacterAsync(global::Mruv.CharacterID request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return KillCharacterAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      ///Deaths
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Mruv.CharacterID> KillCharacterAsync(global::Mruv.CharacterID request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_KillCharacter, null, options, request);
+      }
+      public virtual grpc::AsyncServerStreamingCall<global::Mruv.DeathStreamResponse> DeathsStream(global::Mruv.DeathStreamRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeathsStream(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncServerStreamingCall<global::Mruv.DeathStreamResponse> DeathsStream(global::Mruv.DeathStreamRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncServerStreamingCall(__Method_DeathsStream, null, options, request);
+      }
+      /// <summary>
+      ///Service status
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       public virtual global::Mruv.ServiceStatusResponse GetServiceStatus(global::Mruv.ServiceStatusRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetServiceStatus(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      ///Service status
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       public virtual global::Mruv.ServiceStatusResponse GetServiceStatus(global::Mruv.ServiceStatusRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetServiceStatus, null, options, request);
       }
+      /// <summary>
+      ///Service status
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       public virtual grpc::AsyncUnaryCall<global::Mruv.ServiceStatusResponse> GetServiceStatusAsync(global::Mruv.ServiceStatusRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetServiceStatusAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      ///Service status
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       public virtual grpc::AsyncUnaryCall<global::Mruv.ServiceStatusResponse> GetServiceStatusAsync(global::Mruv.ServiceStatusRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetServiceStatus, null, options, request);
@@ -120,6 +386,12 @@ namespace Mruv {
     public static grpc::ServerServiceDefinition BindService(MruVCharactersServiceBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
+          .AddMethod(__Method_Create, serviceImpl.Create)
+          .AddMethod(__Method_Get, serviceImpl.Get)
+          .AddMethod(__Method_Update, serviceImpl.Update)
+          .AddMethod(__Method_Remove, serviceImpl.Remove)
+          .AddMethod(__Method_KillCharacter, serviceImpl.KillCharacter)
+          .AddMethod(__Method_DeathsStream, serviceImpl.DeathsStream)
           .AddMethod(__Method_GetServiceStatus, serviceImpl.GetServiceStatus)
           .AddMethod(__Method_GetServiceVersion, serviceImpl.GetServiceVersion).Build();
     }
@@ -130,6 +402,12 @@ namespace Mruv {
     /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
     public static void BindService(grpc::ServiceBinderBase serviceBinder, MruVCharactersServiceBase serviceImpl)
     {
+      serviceBinder.AddMethod(__Method_Create, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Character, global::Mruv.CharacterID>(serviceImpl.Create));
+      serviceBinder.AddMethod(__Method_Get, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.CharacterID, global::Mruv.Character>(serviceImpl.Get));
+      serviceBinder.AddMethod(__Method_Update, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Character, global::Mruv.CharacterID>(serviceImpl.Update));
+      serviceBinder.AddMethod(__Method_Remove, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.CharacterID, global::Mruv.CharacterID>(serviceImpl.Remove));
+      serviceBinder.AddMethod(__Method_KillCharacter, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.CharacterID, global::Mruv.CharacterID>(serviceImpl.KillCharacter));
+      serviceBinder.AddMethod(__Method_DeathsStream, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Mruv.DeathStreamRequest, global::Mruv.DeathStreamResponse>(serviceImpl.DeathsStream));
       serviceBinder.AddMethod(__Method_GetServiceStatus, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.ServiceStatusRequest, global::Mruv.ServiceStatusResponse>(serviceImpl.GetServiceStatus));
       serviceBinder.AddMethod(__Method_GetServiceVersion, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.VersionRequest, global::Mruv.VersionResponse>(serviceImpl.GetServiceVersion));
     }

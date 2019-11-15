@@ -25,41 +25,96 @@ namespace Mruv {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChFpdGVtcy9pdGVtcy5wcm90bxIEbXJ1dhocZ29vZ2xlL2FwaS9hbm5vdGF0",
-            "aW9ucy5wcm90bxoTY29tbW9uL2hlYWx0aC5wcm90byItChFDcmVhdGVJdGVt",
-            "UmVxdWVzdBIYCgRpdGVtGAEgASgLMgoubXJ1di5JdGVtIiUKEkNyZWF0ZUl0",
-            "ZW1SZXNwb25zZRIPCgdpdGVtX2lkGAEgASgDIiUKEkRlc3Ryb3lJdGVtUmVx",
-            "dWVzdBIPCgdpdGVtX2lkGAEgASgDIiYKE0Rlc3Ryb3lJdGVtUmVzcG9uc2US",
-            "DwoHc3VjY2VzcxgBIAEoCCItChFVcGRhdGVJdGVtUmVxdWVzdBIYCgRpdGVt",
-            "GAEgASgLMgoubXJ1di5JdGVtIiUKElVwZGF0ZUl0ZW1SZXNwb25zZRIPCgdz",
-            "dWNjZXNzGAEgASgIIiEKDkdldEl0ZW1SZXF1ZXN0Eg8KB2l0ZW1faWQYASAB",
-            "KAMiKwoPR2V0SXRlbVJlc3BvbnNlEhgKBGl0ZW0YASABKAsyCi5tcnV2Lkl0",
-            "ZW0iIAoESXRlbRIKCgJpZBgBIAEoAxIMCgRuYW1lGAIgASgJMq0ECg9NcnVW",
-            "SXRlbVNlcnZpY2USTgoGQ3JlYXRlEhcubXJ1di5DcmVhdGVJdGVtUmVxdWVz",
-            "dBoYLm1ydXYuQ3JlYXRlSXRlbVJlc3BvbnNlIhGC0+STAgsiCS9pdGVtcy92",
-            "MRJbCgdEZXN0cm95EhgubXJ1di5EZXN0cm95SXRlbVJlcXVlc3QaGS5tcnV2",
-            "LkRlc3Ryb3lJdGVtUmVzcG9uc2UiG4LT5JMCFSoTL2l0ZW1zL3YxL3tpdGVt",
-            "X2lkfRJYCgZVcGRhdGUSFy5tcnV2LlVwZGF0ZUl0ZW1SZXF1ZXN0GhgubXJ1",
-            "di5VcGRhdGVJdGVtUmVzcG9uc2UiG4LT5JMCFTITL2l0ZW1zL3YxL3tpdGVt",
-            "LmlkfRJPCgNHZXQSFC5tcnV2LkdldEl0ZW1SZXF1ZXN0GhUubXJ1di5HZXRJ",
-            "dGVtUmVzcG9uc2UiG4LT5JMCFRITL2l0ZW1zL3YxL3tpdGVtX2lkfRJlChBH",
-            "ZXRTZXJ2aWNlU3RhdHVzEhoubXJ1di5TZXJ2aWNlU3RhdHVzUmVxdWVzdBob",
-            "Lm1ydXYuU2VydmljZVN0YXR1c1Jlc3BvbnNlIhiC0+STAhISEC9pdGVtcy92",
-            "MS9zdGF0dXMSWwoRR2V0U2VydmljZVZlcnNpb24SFC5tcnV2LlZlcnNpb25S",
-            "ZXF1ZXN0GhUubXJ1di5WZXJzaW9uUmVzcG9uc2UiGYLT5JMCExIRL2l0ZW1z",
-            "L3YxL3ZlcnNpb25CJVojZ2l0aHViLmNvbS9NcnVWLVJQL21ydXYtcGItZ28v",
-            "aXRlbXNiBnByb3RvMw=="));
+            "aW9ucy5wcm90bxoTY29tbW9uL2hlYWx0aC5wcm90bxoXaXRlbXMvaXRlbXNf",
+            "bW9kZWwucHJvdG8aFGNvbW1vbi9zcGF0aWFsLnByb3RvIiAKD0dldEl0ZW1z",
+            "UmVxdWVzdBINCgVsaW1pdBgBIAEoBSItChBHZXRJdGVtc1Jlc3BvbnNlEhkK",
+            "BWl0ZW1zGAEgAygLMgoubXJ1di5JdGVtIiQKE0dldEl0ZW1UeXBlc1JlcXVl",
+            "c3QSDQoFbGltaXQYASABKAUiOgoUR2V0SXRlbVR5cGVzUmVzcG9uc2USIgoK",
+            "aXRlbV90eXBlcxgBIAMoCzIOLm1ydXYuSXRlbVR5cGUiJQoUR2V0Q29udGFp",
+            "bmVyc1JlcXVlc3QSDQoFbGltaXQYASABKAUiPAoVR2V0Q29udGFpbmVyc1Jl",
+            "c3BvbnNlEiMKCmNvbnRhaW5lcnMYASADKAsyDy5tcnV2LkNvbnRhaW5lciJx",
+            "Cg5QdXRJdGVtUmVxdWVzdBInCgxjb250YWluZXJfaWQYASABKAsyES5tcnV2",
+            "LkNvbnRhaW5lcklEEh0KB2l0ZW1faWQYAiABKAsyDC5tcnV2Lkl0ZW1JRBIO",
+            "CgRzbG90GAMgASgFSABCBwoFd2hlcmUiKwoPVGFrZUl0ZW1SZXF1ZXN0EhgK",
+            "AmlkGAEgASgLMgwubXJ1di5JdGVtSUQiLAoQVGFrZUl0ZW1SZXNwb25zZRIY",
+            "CgRpdGVtGAEgASgLMgoubXJ1di5JdGVtIjYKGUdldENvbnRhaW5lckl0ZW1z",
+            "UmVzcG9uc2USGQoFaXRlbXMYASADKAsyCi5tcnV2Lkl0ZW0iWwoRUmVtb3Zl",
+            "SXRlbVJlcXVlc3QSJwoMY29udGFpbmVyX2lkGAEgASgLMhEubXJ1di5Db250",
+            "YWluZXJJRBIdCgdpdGVtX2lkGAIgASgLMgwubXJ1di5JdGVtSUQiTAoQU29y",
+            "dEl0ZW1zUmVxdWVzdBInCgxjb250YWluZXJfaWQYASABKAsyES5tcnV2LkNv",
+            "bnRhaW5lcklEEg8KB3NvcnRfYnkYAiABKAkiLgoRU29ydEl0ZW1zUmVzcG9u",
+            "c2USGQoFaXRlbXMYASADKAsyCi5tcnV2Lkl0ZW0iagoWR2V0TmVhcmVzdEl0",
+            "ZW1zUmVxdWVzdBInCg9wbGF5ZXJfcG9zaXRpb24YASABKAsyDi5tcnV2LlBv",
+            "c2l0aW9uEicKDGNvbnRhaW5lcl9pZBgCIAEoCzIRLm1ydXYuQ29udGFpbmVy",
+            "SUQiOQoXR2V0TmVhcmVzdEl0ZW1zUmVzcG9uc2USHgoEaXRlbRgBIAMoCzIQ",
+            "Lm1ydXYuSW5zaWRlSXRlbSIvCg5Vc2VJdGVtUmVxdWVzdBIdCgdpdGVtX2lk",
+            "GAEgASgLMgwubXJ1di5JdGVtSUQiIgoPVXNlSXRlbVJlc3BvbnNlEg8KB3N1",
+            "Y2Nlc3MYASABKAgyuw8KD01ydVZJdGVtU2VydmljZRI5CgpDcmVhdGVJdGVt",
+            "EgoubXJ1di5JdGVtGgwubXJ1di5JdGVtSUQiEYLT5JMCCyIJL3YxL2l0ZW1z",
+            "EjsKB0dldEl0ZW0SDC5tcnV2Lkl0ZW1JRBoKLm1ydXYuSXRlbSIWgtPkkwIQ",
+            "Eg4vdjEvaXRlbXMve2lkfRI+CgpVcGRhdGVJdGVtEgoubXJ1di5JdGVtGgwu",
+            "bXJ1di5JdGVtSUQiFoLT5JMCEDIOL3YxL2l0ZW1zL3tpZH0SQAoKRGVsZXRl",
+            "SXRlbRIMLm1ydXYuSXRlbUlEGgwubXJ1di5JdGVtSUQiFoLT5JMCECoOL3Yx",
+            "L2l0ZW1zL3tpZH0STAoIR2V0SXRlbXMSFS5tcnV2LkdldEl0ZW1zUmVxdWVz",
+            "dBoWLm1ydXYuR2V0SXRlbXNSZXNwb25zZSIRgtPkkwILEgkvdjEvaXRlbXMS",
+            "SQoOQ3JlYXRlSXRlbVR5cGUSDi5tcnV2Lkl0ZW1UeXBlGhAubXJ1di5JdGVt",
+            "VHlwZUlEIhWC0+STAg8iDS92MS9pdGVtVHlwZXMSSwoLR2V0SXRlbVR5cGUS",
+            "EC5tcnV2Lkl0ZW1UeXBlSUQaDi5tcnV2Lkl0ZW1UeXBlIhqC0+STAhQSEi92",
+            "MS9pdGVtVHlwZXMve2lkfRJOCg5VcGRhdGVJdGVtVHlwZRIOLm1ydXYuSXRl",
+            "bVR5cGUaEC5tcnV2Lkl0ZW1UeXBlSUQiGoLT5JMCFDISL3YxL2l0ZW1UeXBl",
+            "cy97aWR9ElAKDkRlbGV0ZUl0ZW1UeXBlEhAubXJ1di5JdGVtVHlwZUlEGhAu",
+            "bXJ1di5JdGVtVHlwZUlEIhqC0+STAhQqEi92MS9pdGVtVHlwZXMve2lkfRJc",
+            "CgxHZXRJdGVtVHlwZXMSGS5tcnV2LkdldEl0ZW1UeXBlc1JlcXVlc3QaGi5t",
+            "cnV2LkdldEl0ZW1UeXBlc1Jlc3BvbnNlIhWC0+STAg8SDS92MS9pdGVtVHlw",
+            "ZXMSTQoPQ3JlYXRlQ29udGFpbmVyEg8ubXJ1di5Db250YWluZXIaES5tcnV2",
+            "LkNvbnRhaW5lcklEIhaC0+STAhAiDi92MS9jb250YWluZXJzEk8KDEdldENv",
+            "bnRhaW5lchIRLm1ydXYuQ29udGFpbmVySUQaDy5tcnV2LkNvbnRhaW5lciIb",
+            "gtPkkwIVEhMvdjEvY29udGFpbmVycy97aWR9ElIKD1VwZGF0ZUNvbnRhaW5l",
+            "chIPLm1ydXYuQ29udGFpbmVyGhEubXJ1di5Db250YWluZXJJRCIbgtPkkwIV",
+            "MhMvdjEvY29udGFpbmVycy97aWR9ElQKD0RlbGV0ZUNvbnRhaW5lchIRLm1y",
+            "dXYuQ29udGFpbmVySUQaES5tcnV2LkNvbnRhaW5lcklEIhuC0+STAhUqEy92",
+            "MS9jb250YWluZXJzL3tpZH0SYAoNR2V0Q29udGFpbmVycxIaLm1ydXYuR2V0",
+            "Q29udGFpbmVyc1JlcXVlc3QaGy5tcnV2LkdldENvbnRhaW5lcnNSZXNwb25z",
+            "ZSIWgtPkkwIQEg4vdjEvY29udGFpbmVycxJqChFHZXRDb250YWluZXJJdGVt",
+            "cxIRLm1ydXYuQ29udGFpbmVySUQaHy5tcnV2LkdldENvbnRhaW5lckl0ZW1z",
+            "UmVzcG9uc2UiIYLT5JMCGxIZL3YxL2NvbnRhaW5lcnMve2lkfS9pdGVtcxJ3",
+            "ChNSZW1vdmVDb250YWluZXJJdGVtEhcubXJ1di5SZW1vdmVJdGVtUmVxdWVz",
+            "dBoKLm1ydXYuSXRlbSI7gtPkkwI1KjMvdjEvY29udGFpbmVycy97Y29udGFp",
+            "bmVyX2lkLmlkfS9pdGVtcy97aXRlbV9pZC5pZH0SagoHUHV0SXRlbRIULm1y",
+            "dXYuUHV0SXRlbVJlcXVlc3QaDC5tcnV2Lkl0ZW1JRCI7gtPkkwI1GjMvdjEv",
+            "Y29udGFpbmVycy97Y29udGFpbmVyX2lkLmlkfS9pdGVtcy97aXRlbV9pZC5p",
+            "ZH0SewoJU29ydEl0ZW1zEhYubXJ1di5Tb3J0SXRlbXNSZXF1ZXN0GhcubXJ1",
+            "di5Tb3J0SXRlbXNSZXNwb25zZSI9gtPkkwI3EjUvdjEvY29udGFpbmVycy97",
+            "Y29udGFpbmVyX2lkLmlkfS9pdGVtcy9zb3J0L3tzb3J0X2J5fRJQCg9HZXRO",
+            "ZWFyZXN0SXRlbXMSHC5tcnV2LkdldE5lYXJlc3RJdGVtc1JlcXVlc3QaHS5t",
+            "cnV2LkdldE5lYXJlc3RJdGVtc1Jlc3BvbnNlIgASOAoHVXNlSXRlbRIULm1y",
+            "dXYuVXNlSXRlbVJlcXVlc3QaFS5tcnV2LlVzZUl0ZW1SZXNwb25zZSIAEmUK",
+            "EEdldFNlcnZpY2VTdGF0dXMSGi5tcnV2LlNlcnZpY2VTdGF0dXNSZXF1ZXN0",
+            "GhsubXJ1di5TZXJ2aWNlU3RhdHVzUmVzcG9uc2UiGILT5JMCEhIQL3YxL2l0",
+            "ZW1zL3N0YXR1cxJbChFHZXRTZXJ2aWNlVmVyc2lvbhIULm1ydXYuVmVyc2lv",
+            "blJlcXVlc3QaFS5tcnV2LlZlcnNpb25SZXNwb25zZSIZgtPkkwITEhEvdjEv",
+            "aXRlbXMvdmVyc2lvbkIlWiNnaXRodWIuY29tL01ydVYtUlAvbXJ1di1wYi1n",
+            "by9pdGVtc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, global::Mruv.HealthReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, global::Mruv.HealthReflection.Descriptor, global::Mruv.ItemsModelReflection.Descriptor, global::Mruv.SpatialReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.CreateItemRequest), global::Mruv.CreateItemRequest.Parser, new[]{ "Item" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.CreateItemResponse), global::Mruv.CreateItemResponse.Parser, new[]{ "ItemId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.DestroyItemRequest), global::Mruv.DestroyItemRequest.Parser, new[]{ "ItemId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.DestroyItemResponse), global::Mruv.DestroyItemResponse.Parser, new[]{ "Success" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.UpdateItemRequest), global::Mruv.UpdateItemRequest.Parser, new[]{ "Item" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.UpdateItemResponse), global::Mruv.UpdateItemResponse.Parser, new[]{ "Success" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetItemRequest), global::Mruv.GetItemRequest.Parser, new[]{ "ItemId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetItemResponse), global::Mruv.GetItemResponse.Parser, new[]{ "Item" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Item), global::Mruv.Item.Parser, new[]{ "Id", "Name" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetItemsRequest), global::Mruv.GetItemsRequest.Parser, new[]{ "Limit" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetItemsResponse), global::Mruv.GetItemsResponse.Parser, new[]{ "Items" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetItemTypesRequest), global::Mruv.GetItemTypesRequest.Parser, new[]{ "Limit" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetItemTypesResponse), global::Mruv.GetItemTypesResponse.Parser, new[]{ "ItemTypes" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetContainersRequest), global::Mruv.GetContainersRequest.Parser, new[]{ "Limit" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetContainersResponse), global::Mruv.GetContainersResponse.Parser, new[]{ "Containers" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.PutItemRequest), global::Mruv.PutItemRequest.Parser, new[]{ "ContainerId", "ItemId", "Slot" }, new[]{ "Where" }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.TakeItemRequest), global::Mruv.TakeItemRequest.Parser, new[]{ "Id" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.TakeItemResponse), global::Mruv.TakeItemResponse.Parser, new[]{ "Item" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetContainerItemsResponse), global::Mruv.GetContainerItemsResponse.Parser, new[]{ "Items" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.RemoveItemRequest), global::Mruv.RemoveItemRequest.Parser, new[]{ "ContainerId", "ItemId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.SortItemsRequest), global::Mruv.SortItemsRequest.Parser, new[]{ "ContainerId", "SortBy" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.SortItemsResponse), global::Mruv.SortItemsResponse.Parser, new[]{ "Items" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetNearestItemsRequest), global::Mruv.GetNearestItemsRequest.Parser, new[]{ "PlayerPosition", "ContainerId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetNearestItemsResponse), global::Mruv.GetNearestItemsResponse.Parser, new[]{ "Item" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.UseItemRequest), global::Mruv.UseItemRequest.Parser, new[]{ "ItemId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.UseItemResponse), global::Mruv.UseItemResponse.Parser, new[]{ "Success" }, null, null, null)
           }));
     }
     #endregion
@@ -67,13 +122,13 @@ namespace Mruv {
   }
   #region Messages
   /// <summary>
-  ///Items
+  /// Requests messages
   /// </summary>
-  public sealed partial class CreateItemRequest : pb::IMessage<CreateItemRequest> {
-    private static readonly pb::MessageParser<CreateItemRequest> _parser = new pb::MessageParser<CreateItemRequest>(() => new CreateItemRequest());
+  public sealed partial class GetItemsRequest : pb::IMessage<GetItemsRequest> {
+    private static readonly pb::MessageParser<GetItemsRequest> _parser = new pb::MessageParser<GetItemsRequest>(() => new GetItemsRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<CreateItemRequest> Parser { get { return _parser; } }
+    public static pb::MessageParser<GetItemsRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
@@ -86,55 +141,55 @@ namespace Mruv {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CreateItemRequest() {
+    public GetItemsRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CreateItemRequest(CreateItemRequest other) : this() {
-      item_ = other.item_ != null ? other.item_.Clone() : null;
+    public GetItemsRequest(GetItemsRequest other) : this() {
+      limit_ = other.limit_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CreateItemRequest Clone() {
-      return new CreateItemRequest(this);
+    public GetItemsRequest Clone() {
+      return new GetItemsRequest(this);
     }
 
-    /// <summary>Field number for the "item" field.</summary>
-    public const int ItemFieldNumber = 1;
-    private global::Mruv.Item item_;
+    /// <summary>Field number for the "limit" field.</summary>
+    public const int LimitFieldNumber = 1;
+    private int limit_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Mruv.Item Item {
-      get { return item_; }
+    public int Limit {
+      get { return limit_; }
       set {
-        item_ = value;
+        limit_ = value;
       }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as CreateItemRequest);
+      return Equals(other as GetItemsRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(CreateItemRequest other) {
+    public bool Equals(GetItemsRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(Item, other.Item)) return false;
+      if (Limit != other.Limit) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (item_ != null) hash ^= Item.GetHashCode();
+      if (Limit != 0) hash ^= Limit.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -148,9 +203,9 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (item_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Item);
+      if (Limit != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(Limit);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -160,8 +215,8 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (item_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Item);
+      if (Limit != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Limit);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -170,15 +225,12 @@ namespace Mruv {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(CreateItemRequest other) {
+    public void MergeFrom(GetItemsRequest other) {
       if (other == null) {
         return;
       }
-      if (other.item_ != null) {
-        if (item_ == null) {
-          Item = new global::Mruv.Item();
-        }
-        Item.MergeFrom(other.Item);
+      if (other.Limit != 0) {
+        Limit = other.Limit;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -191,11 +243,8 @@ namespace Mruv {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 10: {
-            if (item_ == null) {
-              Item = new global::Mruv.Item();
-            }
-            input.ReadMessage(Item);
+          case 8: {
+            Limit = input.ReadInt32();
             break;
           }
         }
@@ -204,11 +253,11 @@ namespace Mruv {
 
   }
 
-  public sealed partial class CreateItemResponse : pb::IMessage<CreateItemResponse> {
-    private static readonly pb::MessageParser<CreateItemResponse> _parser = new pb::MessageParser<CreateItemResponse>(() => new CreateItemResponse());
+  public sealed partial class GetItemsResponse : pb::IMessage<GetItemsResponse> {
+    private static readonly pb::MessageParser<GetItemsResponse> _parser = new pb::MessageParser<GetItemsResponse>(() => new GetItemsResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<CreateItemResponse> Parser { get { return _parser; } }
+    public static pb::MessageParser<GetItemsResponse> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
@@ -221,55 +270,54 @@ namespace Mruv {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CreateItemResponse() {
+    public GetItemsResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CreateItemResponse(CreateItemResponse other) : this() {
-      itemId_ = other.itemId_;
+    public GetItemsResponse(GetItemsResponse other) : this() {
+      items_ = other.items_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CreateItemResponse Clone() {
-      return new CreateItemResponse(this);
+    public GetItemsResponse Clone() {
+      return new GetItemsResponse(this);
     }
 
-    /// <summary>Field number for the "item_id" field.</summary>
-    public const int ItemIdFieldNumber = 1;
-    private long itemId_;
+    /// <summary>Field number for the "items" field.</summary>
+    public const int ItemsFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Mruv.Item> _repeated_items_codec
+        = pb::FieldCodec.ForMessage(10, global::Mruv.Item.Parser);
+    private readonly pbc::RepeatedField<global::Mruv.Item> items_ = new pbc::RepeatedField<global::Mruv.Item>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long ItemId {
-      get { return itemId_; }
-      set {
-        itemId_ = value;
-      }
+    public pbc::RepeatedField<global::Mruv.Item> Items {
+      get { return items_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as CreateItemResponse);
+      return Equals(other as GetItemsResponse);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(CreateItemResponse other) {
+    public bool Equals(GetItemsResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (ItemId != other.ItemId) return false;
+      if(!items_.Equals(other.items_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (ItemId != 0L) hash ^= ItemId.GetHashCode();
+      hash ^= items_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -283,10 +331,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (ItemId != 0L) {
-        output.WriteRawTag(8);
-        output.WriteInt64(ItemId);
-      }
+      items_.WriteTo(output, _repeated_items_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -295,9 +340,7 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (ItemId != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(ItemId);
-      }
+      size += items_.CalculateSize(_repeated_items_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -305,13 +348,11 @@ namespace Mruv {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(CreateItemResponse other) {
+    public void MergeFrom(GetItemsResponse other) {
       if (other == null) {
         return;
       }
-      if (other.ItemId != 0L) {
-        ItemId = other.ItemId;
-      }
+      items_.Add(other.items_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -323,8 +364,8 @@ namespace Mruv {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            ItemId = input.ReadInt64();
+          case 10: {
+            items_.AddEntriesFrom(input, _repeated_items_codec);
             break;
           }
         }
@@ -333,11 +374,11 @@ namespace Mruv {
 
   }
 
-  public sealed partial class DestroyItemRequest : pb::IMessage<DestroyItemRequest> {
-    private static readonly pb::MessageParser<DestroyItemRequest> _parser = new pb::MessageParser<DestroyItemRequest>(() => new DestroyItemRequest());
+  public sealed partial class GetItemTypesRequest : pb::IMessage<GetItemTypesRequest> {
+    private static readonly pb::MessageParser<GetItemTypesRequest> _parser = new pb::MessageParser<GetItemTypesRequest>(() => new GetItemTypesRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<DestroyItemRequest> Parser { get { return _parser; } }
+    public static pb::MessageParser<GetItemTypesRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
@@ -350,55 +391,55 @@ namespace Mruv {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public DestroyItemRequest() {
+    public GetItemTypesRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public DestroyItemRequest(DestroyItemRequest other) : this() {
-      itemId_ = other.itemId_;
+    public GetItemTypesRequest(GetItemTypesRequest other) : this() {
+      limit_ = other.limit_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public DestroyItemRequest Clone() {
-      return new DestroyItemRequest(this);
+    public GetItemTypesRequest Clone() {
+      return new GetItemTypesRequest(this);
     }
 
-    /// <summary>Field number for the "item_id" field.</summary>
-    public const int ItemIdFieldNumber = 1;
-    private long itemId_;
+    /// <summary>Field number for the "limit" field.</summary>
+    public const int LimitFieldNumber = 1;
+    private int limit_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long ItemId {
-      get { return itemId_; }
+    public int Limit {
+      get { return limit_; }
       set {
-        itemId_ = value;
+        limit_ = value;
       }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as DestroyItemRequest);
+      return Equals(other as GetItemTypesRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(DestroyItemRequest other) {
+    public bool Equals(GetItemTypesRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (ItemId != other.ItemId) return false;
+      if (Limit != other.Limit) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (ItemId != 0L) hash ^= ItemId.GetHashCode();
+      if (Limit != 0) hash ^= Limit.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -412,9 +453,9 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (ItemId != 0L) {
+      if (Limit != 0) {
         output.WriteRawTag(8);
-        output.WriteInt64(ItemId);
+        output.WriteInt32(Limit);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -424,8 +465,8 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (ItemId != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(ItemId);
+      if (Limit != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Limit);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -434,12 +475,12 @@ namespace Mruv {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(DestroyItemRequest other) {
+    public void MergeFrom(GetItemTypesRequest other) {
       if (other == null) {
         return;
       }
-      if (other.ItemId != 0L) {
-        ItemId = other.ItemId;
+      if (other.Limit != 0) {
+        Limit = other.Limit;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -453,7 +494,7 @@ namespace Mruv {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            ItemId = input.ReadInt64();
+            Limit = input.ReadInt32();
             break;
           }
         }
@@ -462,11 +503,11 @@ namespace Mruv {
 
   }
 
-  public sealed partial class DestroyItemResponse : pb::IMessage<DestroyItemResponse> {
-    private static readonly pb::MessageParser<DestroyItemResponse> _parser = new pb::MessageParser<DestroyItemResponse>(() => new DestroyItemResponse());
+  public sealed partial class GetItemTypesResponse : pb::IMessage<GetItemTypesResponse> {
+    private static readonly pb::MessageParser<GetItemTypesResponse> _parser = new pb::MessageParser<GetItemTypesResponse>(() => new GetItemTypesResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<DestroyItemResponse> Parser { get { return _parser; } }
+    public static pb::MessageParser<GetItemTypesResponse> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
@@ -479,55 +520,54 @@ namespace Mruv {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public DestroyItemResponse() {
+    public GetItemTypesResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public DestroyItemResponse(DestroyItemResponse other) : this() {
-      success_ = other.success_;
+    public GetItemTypesResponse(GetItemTypesResponse other) : this() {
+      itemTypes_ = other.itemTypes_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public DestroyItemResponse Clone() {
-      return new DestroyItemResponse(this);
+    public GetItemTypesResponse Clone() {
+      return new GetItemTypesResponse(this);
     }
 
-    /// <summary>Field number for the "success" field.</summary>
-    public const int SuccessFieldNumber = 1;
-    private bool success_;
+    /// <summary>Field number for the "item_types" field.</summary>
+    public const int ItemTypesFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Mruv.ItemType> _repeated_itemTypes_codec
+        = pb::FieldCodec.ForMessage(10, global::Mruv.ItemType.Parser);
+    private readonly pbc::RepeatedField<global::Mruv.ItemType> itemTypes_ = new pbc::RepeatedField<global::Mruv.ItemType>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Success {
-      get { return success_; }
-      set {
-        success_ = value;
-      }
+    public pbc::RepeatedField<global::Mruv.ItemType> ItemTypes {
+      get { return itemTypes_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as DestroyItemResponse);
+      return Equals(other as GetItemTypesResponse);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(DestroyItemResponse other) {
+    public bool Equals(GetItemTypesResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Success != other.Success) return false;
+      if(!itemTypes_.Equals(other.itemTypes_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Success != false) hash ^= Success.GetHashCode();
+      hash ^= itemTypes_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -541,10 +581,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Success != false) {
-        output.WriteRawTag(8);
-        output.WriteBool(Success);
-      }
+      itemTypes_.WriteTo(output, _repeated_itemTypes_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -553,9 +590,7 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Success != false) {
-        size += 1 + 1;
-      }
+      size += itemTypes_.CalculateSize(_repeated_itemTypes_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -563,13 +598,11 @@ namespace Mruv {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(DestroyItemResponse other) {
+    public void MergeFrom(GetItemTypesResponse other) {
       if (other == null) {
         return;
       }
-      if (other.Success != false) {
-        Success = other.Success;
-      }
+      itemTypes_.Add(other.itemTypes_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -581,8 +614,8 @@ namespace Mruv {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            Success = input.ReadBool();
+          case 10: {
+            itemTypes_.AddEntriesFrom(input, _repeated_itemTypes_codec);
             break;
           }
         }
@@ -591,11 +624,11 @@ namespace Mruv {
 
   }
 
-  public sealed partial class UpdateItemRequest : pb::IMessage<UpdateItemRequest> {
-    private static readonly pb::MessageParser<UpdateItemRequest> _parser = new pb::MessageParser<UpdateItemRequest>(() => new UpdateItemRequest());
+  public sealed partial class GetContainersRequest : pb::IMessage<GetContainersRequest> {
+    private static readonly pb::MessageParser<GetContainersRequest> _parser = new pb::MessageParser<GetContainersRequest>(() => new GetContainersRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<UpdateItemRequest> Parser { get { return _parser; } }
+    public static pb::MessageParser<GetContainersRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
@@ -608,21 +641,631 @@ namespace Mruv {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public UpdateItemRequest() {
+    public GetContainersRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public UpdateItemRequest(UpdateItemRequest other) : this() {
+    public GetContainersRequest(GetContainersRequest other) : this() {
+      limit_ = other.limit_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetContainersRequest Clone() {
+      return new GetContainersRequest(this);
+    }
+
+    /// <summary>Field number for the "limit" field.</summary>
+    public const int LimitFieldNumber = 1;
+    private int limit_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int Limit {
+      get { return limit_; }
+      set {
+        limit_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as GetContainersRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(GetContainersRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Limit != other.Limit) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Limit != 0) hash ^= Limit.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Limit != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(Limit);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Limit != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Limit);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(GetContainersRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Limit != 0) {
+        Limit = other.Limit;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Limit = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class GetContainersResponse : pb::IMessage<GetContainersResponse> {
+    private static readonly pb::MessageParser<GetContainersResponse> _parser = new pb::MessageParser<GetContainersResponse>(() => new GetContainersResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<GetContainersResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[5]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetContainersResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetContainersResponse(GetContainersResponse other) : this() {
+      containers_ = other.containers_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetContainersResponse Clone() {
+      return new GetContainersResponse(this);
+    }
+
+    /// <summary>Field number for the "containers" field.</summary>
+    public const int ContainersFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Mruv.Container> _repeated_containers_codec
+        = pb::FieldCodec.ForMessage(10, global::Mruv.Container.Parser);
+    private readonly pbc::RepeatedField<global::Mruv.Container> containers_ = new pbc::RepeatedField<global::Mruv.Container>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Mruv.Container> Containers {
+      get { return containers_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as GetContainersResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(GetContainersResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!containers_.Equals(other.containers_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= containers_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      containers_.WriteTo(output, _repeated_containers_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += containers_.CalculateSize(_repeated_containers_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(GetContainersResponse other) {
+      if (other == null) {
+        return;
+      }
+      containers_.Add(other.containers_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            containers_.AddEntriesFrom(input, _repeated_containers_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class PutItemRequest : pb::IMessage<PutItemRequest> {
+    private static readonly pb::MessageParser<PutItemRequest> _parser = new pb::MessageParser<PutItemRequest>(() => new PutItemRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<PutItemRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[6]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PutItemRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PutItemRequest(PutItemRequest other) : this() {
+      containerId_ = other.containerId_ != null ? other.containerId_.Clone() : null;
+      itemId_ = other.itemId_ != null ? other.itemId_.Clone() : null;
+      switch (other.WhereCase) {
+        case WhereOneofCase.Slot:
+          Slot = other.Slot;
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PutItemRequest Clone() {
+      return new PutItemRequest(this);
+    }
+
+    /// <summary>Field number for the "container_id" field.</summary>
+    public const int ContainerIdFieldNumber = 1;
+    private global::Mruv.ContainerID containerId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Mruv.ContainerID ContainerId {
+      get { return containerId_; }
+      set {
+        containerId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "item_id" field.</summary>
+    public const int ItemIdFieldNumber = 2;
+    private global::Mruv.ItemID itemId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Mruv.ItemID ItemId {
+      get { return itemId_; }
+      set {
+        itemId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "slot" field.</summary>
+    public const int SlotFieldNumber = 3;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int Slot {
+      get { return whereCase_ == WhereOneofCase.Slot ? (int) where_ : 0; }
+      set {
+        where_ = value;
+        whereCase_ = WhereOneofCase.Slot;
+      }
+    }
+
+    private object where_;
+    /// <summary>Enum of possible cases for the "where" oneof.</summary>
+    public enum WhereOneofCase {
+      None = 0,
+      Slot = 3,
+    }
+    private WhereOneofCase whereCase_ = WhereOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public WhereOneofCase WhereCase {
+      get { return whereCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearWhere() {
+      whereCase_ = WhereOneofCase.None;
+      where_ = null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as PutItemRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(PutItemRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(ContainerId, other.ContainerId)) return false;
+      if (!object.Equals(ItemId, other.ItemId)) return false;
+      if (Slot != other.Slot) return false;
+      if (WhereCase != other.WhereCase) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (containerId_ != null) hash ^= ContainerId.GetHashCode();
+      if (itemId_ != null) hash ^= ItemId.GetHashCode();
+      if (whereCase_ == WhereOneofCase.Slot) hash ^= Slot.GetHashCode();
+      hash ^= (int) whereCase_;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (containerId_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(ContainerId);
+      }
+      if (itemId_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(ItemId);
+      }
+      if (whereCase_ == WhereOneofCase.Slot) {
+        output.WriteRawTag(24);
+        output.WriteInt32(Slot);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (containerId_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ContainerId);
+      }
+      if (itemId_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ItemId);
+      }
+      if (whereCase_ == WhereOneofCase.Slot) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Slot);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(PutItemRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.containerId_ != null) {
+        if (containerId_ == null) {
+          ContainerId = new global::Mruv.ContainerID();
+        }
+        ContainerId.MergeFrom(other.ContainerId);
+      }
+      if (other.itemId_ != null) {
+        if (itemId_ == null) {
+          ItemId = new global::Mruv.ItemID();
+        }
+        ItemId.MergeFrom(other.ItemId);
+      }
+      switch (other.WhereCase) {
+        case WhereOneofCase.Slot:
+          Slot = other.Slot;
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (containerId_ == null) {
+              ContainerId = new global::Mruv.ContainerID();
+            }
+            input.ReadMessage(ContainerId);
+            break;
+          }
+          case 18: {
+            if (itemId_ == null) {
+              ItemId = new global::Mruv.ItemID();
+            }
+            input.ReadMessage(ItemId);
+            break;
+          }
+          case 24: {
+            Slot = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class TakeItemRequest : pb::IMessage<TakeItemRequest> {
+    private static readonly pb::MessageParser<TakeItemRequest> _parser = new pb::MessageParser<TakeItemRequest>(() => new TakeItemRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<TakeItemRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[7]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TakeItemRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TakeItemRequest(TakeItemRequest other) : this() {
+      id_ = other.id_ != null ? other.id_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TakeItemRequest Clone() {
+      return new TakeItemRequest(this);
+    }
+
+    /// <summary>Field number for the "id" field.</summary>
+    public const int IdFieldNumber = 1;
+    private global::Mruv.ItemID id_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Mruv.ItemID Id {
+      get { return id_; }
+      set {
+        id_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as TakeItemRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(TakeItemRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Id, other.Id)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (id_ != null) hash ^= Id.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (id_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Id);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (id_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Id);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(TakeItemRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.id_ != null) {
+        if (id_ == null) {
+          Id = new global::Mruv.ItemID();
+        }
+        Id.MergeFrom(other.Id);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (id_ == null) {
+              Id = new global::Mruv.ItemID();
+            }
+            input.ReadMessage(Id);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class TakeItemResponse : pb::IMessage<TakeItemResponse> {
+    private static readonly pb::MessageParser<TakeItemResponse> _parser = new pb::MessageParser<TakeItemResponse>(() => new TakeItemResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<TakeItemResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[8]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TakeItemResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TakeItemResponse(TakeItemResponse other) : this() {
       item_ = other.item_ != null ? other.item_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public UpdateItemRequest Clone() {
-      return new UpdateItemRequest(this);
+    public TakeItemResponse Clone() {
+      return new TakeItemResponse(this);
     }
 
     /// <summary>Field number for the "item" field.</summary>
@@ -638,11 +1281,11 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as UpdateItemRequest);
+      return Equals(other as TakeItemResponse);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(UpdateItemRequest other) {
+    public bool Equals(TakeItemResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -692,7 +1335,7 @@ namespace Mruv {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(UpdateItemRequest other) {
+    public void MergeFrom(TakeItemResponse other) {
       if (other == null) {
         return;
       }
@@ -726,15 +1369,15 @@ namespace Mruv {
 
   }
 
-  public sealed partial class UpdateItemResponse : pb::IMessage<UpdateItemResponse> {
-    private static readonly pb::MessageParser<UpdateItemResponse> _parser = new pb::MessageParser<UpdateItemResponse>(() => new UpdateItemResponse());
+  public sealed partial class GetContainerItemsResponse : pb::IMessage<GetContainerItemsResponse> {
+    private static readonly pb::MessageParser<GetContainerItemsResponse> _parser = new pb::MessageParser<GetContainerItemsResponse>(() => new GetContainerItemsResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<UpdateItemResponse> Parser { get { return _parser; } }
+    public static pb::MessageParser<GetContainerItemsResponse> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -743,21 +1386,1020 @@ namespace Mruv {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public UpdateItemResponse() {
+    public GetContainerItemsResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public UpdateItemResponse(UpdateItemResponse other) : this() {
+    public GetContainerItemsResponse(GetContainerItemsResponse other) : this() {
+      items_ = other.items_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetContainerItemsResponse Clone() {
+      return new GetContainerItemsResponse(this);
+    }
+
+    /// <summary>Field number for the "items" field.</summary>
+    public const int ItemsFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Mruv.Item> _repeated_items_codec
+        = pb::FieldCodec.ForMessage(10, global::Mruv.Item.Parser);
+    private readonly pbc::RepeatedField<global::Mruv.Item> items_ = new pbc::RepeatedField<global::Mruv.Item>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Mruv.Item> Items {
+      get { return items_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as GetContainerItemsResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(GetContainerItemsResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!items_.Equals(other.items_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= items_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      items_.WriteTo(output, _repeated_items_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += items_.CalculateSize(_repeated_items_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(GetContainerItemsResponse other) {
+      if (other == null) {
+        return;
+      }
+      items_.Add(other.items_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            items_.AddEntriesFrom(input, _repeated_items_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class RemoveItemRequest : pb::IMessage<RemoveItemRequest> {
+    private static readonly pb::MessageParser<RemoveItemRequest> _parser = new pb::MessageParser<RemoveItemRequest>(() => new RemoveItemRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<RemoveItemRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[10]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RemoveItemRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RemoveItemRequest(RemoveItemRequest other) : this() {
+      containerId_ = other.containerId_ != null ? other.containerId_.Clone() : null;
+      itemId_ = other.itemId_ != null ? other.itemId_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RemoveItemRequest Clone() {
+      return new RemoveItemRequest(this);
+    }
+
+    /// <summary>Field number for the "container_id" field.</summary>
+    public const int ContainerIdFieldNumber = 1;
+    private global::Mruv.ContainerID containerId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Mruv.ContainerID ContainerId {
+      get { return containerId_; }
+      set {
+        containerId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "item_id" field.</summary>
+    public const int ItemIdFieldNumber = 2;
+    private global::Mruv.ItemID itemId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Mruv.ItemID ItemId {
+      get { return itemId_; }
+      set {
+        itemId_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as RemoveItemRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(RemoveItemRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(ContainerId, other.ContainerId)) return false;
+      if (!object.Equals(ItemId, other.ItemId)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (containerId_ != null) hash ^= ContainerId.GetHashCode();
+      if (itemId_ != null) hash ^= ItemId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (containerId_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(ContainerId);
+      }
+      if (itemId_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(ItemId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (containerId_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ContainerId);
+      }
+      if (itemId_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ItemId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(RemoveItemRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.containerId_ != null) {
+        if (containerId_ == null) {
+          ContainerId = new global::Mruv.ContainerID();
+        }
+        ContainerId.MergeFrom(other.ContainerId);
+      }
+      if (other.itemId_ != null) {
+        if (itemId_ == null) {
+          ItemId = new global::Mruv.ItemID();
+        }
+        ItemId.MergeFrom(other.ItemId);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (containerId_ == null) {
+              ContainerId = new global::Mruv.ContainerID();
+            }
+            input.ReadMessage(ContainerId);
+            break;
+          }
+          case 18: {
+            if (itemId_ == null) {
+              ItemId = new global::Mruv.ItemID();
+            }
+            input.ReadMessage(ItemId);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class SortItemsRequest : pb::IMessage<SortItemsRequest> {
+    private static readonly pb::MessageParser<SortItemsRequest> _parser = new pb::MessageParser<SortItemsRequest>(() => new SortItemsRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<SortItemsRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[11]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SortItemsRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SortItemsRequest(SortItemsRequest other) : this() {
+      containerId_ = other.containerId_ != null ? other.containerId_.Clone() : null;
+      sortBy_ = other.sortBy_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SortItemsRequest Clone() {
+      return new SortItemsRequest(this);
+    }
+
+    /// <summary>Field number for the "container_id" field.</summary>
+    public const int ContainerIdFieldNumber = 1;
+    private global::Mruv.ContainerID containerId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Mruv.ContainerID ContainerId {
+      get { return containerId_; }
+      set {
+        containerId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "sort_by" field.</summary>
+    public const int SortByFieldNumber = 2;
+    private string sortBy_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string SortBy {
+      get { return sortBy_; }
+      set {
+        sortBy_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as SortItemsRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(SortItemsRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(ContainerId, other.ContainerId)) return false;
+      if (SortBy != other.SortBy) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (containerId_ != null) hash ^= ContainerId.GetHashCode();
+      if (SortBy.Length != 0) hash ^= SortBy.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (containerId_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(ContainerId);
+      }
+      if (SortBy.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(SortBy);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (containerId_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ContainerId);
+      }
+      if (SortBy.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(SortBy);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(SortItemsRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.containerId_ != null) {
+        if (containerId_ == null) {
+          ContainerId = new global::Mruv.ContainerID();
+        }
+        ContainerId.MergeFrom(other.ContainerId);
+      }
+      if (other.SortBy.Length != 0) {
+        SortBy = other.SortBy;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (containerId_ == null) {
+              ContainerId = new global::Mruv.ContainerID();
+            }
+            input.ReadMessage(ContainerId);
+            break;
+          }
+          case 18: {
+            SortBy = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class SortItemsResponse : pb::IMessage<SortItemsResponse> {
+    private static readonly pb::MessageParser<SortItemsResponse> _parser = new pb::MessageParser<SortItemsResponse>(() => new SortItemsResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<SortItemsResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[12]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SortItemsResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SortItemsResponse(SortItemsResponse other) : this() {
+      items_ = other.items_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SortItemsResponse Clone() {
+      return new SortItemsResponse(this);
+    }
+
+    /// <summary>Field number for the "items" field.</summary>
+    public const int ItemsFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Mruv.Item> _repeated_items_codec
+        = pb::FieldCodec.ForMessage(10, global::Mruv.Item.Parser);
+    private readonly pbc::RepeatedField<global::Mruv.Item> items_ = new pbc::RepeatedField<global::Mruv.Item>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Mruv.Item> Items {
+      get { return items_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as SortItemsResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(SortItemsResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!items_.Equals(other.items_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= items_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      items_.WriteTo(output, _repeated_items_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += items_.CalculateSize(_repeated_items_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(SortItemsResponse other) {
+      if (other == null) {
+        return;
+      }
+      items_.Add(other.items_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            items_.AddEntriesFrom(input, _repeated_items_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class GetNearestItemsRequest : pb::IMessage<GetNearestItemsRequest> {
+    private static readonly pb::MessageParser<GetNearestItemsRequest> _parser = new pb::MessageParser<GetNearestItemsRequest>(() => new GetNearestItemsRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<GetNearestItemsRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[13]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetNearestItemsRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetNearestItemsRequest(GetNearestItemsRequest other) : this() {
+      playerPosition_ = other.playerPosition_ != null ? other.playerPosition_.Clone() : null;
+      containerId_ = other.containerId_ != null ? other.containerId_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetNearestItemsRequest Clone() {
+      return new GetNearestItemsRequest(this);
+    }
+
+    /// <summary>Field number for the "player_position" field.</summary>
+    public const int PlayerPositionFieldNumber = 1;
+    private global::Mruv.Position playerPosition_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Mruv.Position PlayerPosition {
+      get { return playerPosition_; }
+      set {
+        playerPosition_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "container_id" field.</summary>
+    public const int ContainerIdFieldNumber = 2;
+    private global::Mruv.ContainerID containerId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Mruv.ContainerID ContainerId {
+      get { return containerId_; }
+      set {
+        containerId_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as GetNearestItemsRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(GetNearestItemsRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(PlayerPosition, other.PlayerPosition)) return false;
+      if (!object.Equals(ContainerId, other.ContainerId)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (playerPosition_ != null) hash ^= PlayerPosition.GetHashCode();
+      if (containerId_ != null) hash ^= ContainerId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (playerPosition_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(PlayerPosition);
+      }
+      if (containerId_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(ContainerId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (playerPosition_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PlayerPosition);
+      }
+      if (containerId_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ContainerId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(GetNearestItemsRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.playerPosition_ != null) {
+        if (playerPosition_ == null) {
+          PlayerPosition = new global::Mruv.Position();
+        }
+        PlayerPosition.MergeFrom(other.PlayerPosition);
+      }
+      if (other.containerId_ != null) {
+        if (containerId_ == null) {
+          ContainerId = new global::Mruv.ContainerID();
+        }
+        ContainerId.MergeFrom(other.ContainerId);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (playerPosition_ == null) {
+              PlayerPosition = new global::Mruv.Position();
+            }
+            input.ReadMessage(PlayerPosition);
+            break;
+          }
+          case 18: {
+            if (containerId_ == null) {
+              ContainerId = new global::Mruv.ContainerID();
+            }
+            input.ReadMessage(ContainerId);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class GetNearestItemsResponse : pb::IMessage<GetNearestItemsResponse> {
+    private static readonly pb::MessageParser<GetNearestItemsResponse> _parser = new pb::MessageParser<GetNearestItemsResponse>(() => new GetNearestItemsResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<GetNearestItemsResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[14]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetNearestItemsResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetNearestItemsResponse(GetNearestItemsResponse other) : this() {
+      item_ = other.item_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetNearestItemsResponse Clone() {
+      return new GetNearestItemsResponse(this);
+    }
+
+    /// <summary>Field number for the "item" field.</summary>
+    public const int ItemFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Mruv.InsideItem> _repeated_item_codec
+        = pb::FieldCodec.ForMessage(10, global::Mruv.InsideItem.Parser);
+    private readonly pbc::RepeatedField<global::Mruv.InsideItem> item_ = new pbc::RepeatedField<global::Mruv.InsideItem>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Mruv.InsideItem> Item {
+      get { return item_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as GetNearestItemsResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(GetNearestItemsResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!item_.Equals(other.item_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= item_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      item_.WriteTo(output, _repeated_item_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += item_.CalculateSize(_repeated_item_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(GetNearestItemsResponse other) {
+      if (other == null) {
+        return;
+      }
+      item_.Add(other.item_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            item_.AddEntriesFrom(input, _repeated_item_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class UseItemRequest : pb::IMessage<UseItemRequest> {
+    private static readonly pb::MessageParser<UseItemRequest> _parser = new pb::MessageParser<UseItemRequest>(() => new UseItemRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<UseItemRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[15]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UseItemRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UseItemRequest(UseItemRequest other) : this() {
+      itemId_ = other.itemId_ != null ? other.itemId_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UseItemRequest Clone() {
+      return new UseItemRequest(this);
+    }
+
+    /// <summary>Field number for the "item_id" field.</summary>
+    public const int ItemIdFieldNumber = 1;
+    private global::Mruv.ItemID itemId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Mruv.ItemID ItemId {
+      get { return itemId_; }
+      set {
+        itemId_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as UseItemRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(UseItemRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(ItemId, other.ItemId)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (itemId_ != null) hash ^= ItemId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (itemId_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(ItemId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (itemId_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ItemId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(UseItemRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.itemId_ != null) {
+        if (itemId_ == null) {
+          ItemId = new global::Mruv.ItemID();
+        }
+        ItemId.MergeFrom(other.ItemId);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (itemId_ == null) {
+              ItemId = new global::Mruv.ItemID();
+            }
+            input.ReadMessage(ItemId);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class UseItemResponse : pb::IMessage<UseItemResponse> {
+    private static readonly pb::MessageParser<UseItemResponse> _parser = new pb::MessageParser<UseItemResponse>(() => new UseItemResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<UseItemResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[16]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UseItemResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UseItemResponse(UseItemResponse other) : this() {
       success_ = other.success_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public UpdateItemResponse Clone() {
-      return new UpdateItemResponse(this);
+    public UseItemResponse Clone() {
+      return new UseItemResponse(this);
     }
 
     /// <summary>Field number for the "success" field.</summary>
@@ -773,11 +2415,11 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as UpdateItemResponse);
+      return Equals(other as UseItemResponse);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(UpdateItemResponse other) {
+    public bool Equals(UseItemResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -827,7 +2469,7 @@ namespace Mruv {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(UpdateItemResponse other) {
+    public void MergeFrom(UseItemResponse other) {
       if (other == null) {
         return;
       }
@@ -847,427 +2489,6 @@ namespace Mruv {
             break;
           case 8: {
             Success = input.ReadBool();
-            break;
-          }
-        }
-      }
-    }
-
-  }
-
-  public sealed partial class GetItemRequest : pb::IMessage<GetItemRequest> {
-    private static readonly pb::MessageParser<GetItemRequest> _parser = new pb::MessageParser<GetItemRequest>(() => new GetItemRequest());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<GetItemRequest> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[6]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public GetItemRequest() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public GetItemRequest(GetItemRequest other) : this() {
-      itemId_ = other.itemId_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public GetItemRequest Clone() {
-      return new GetItemRequest(this);
-    }
-
-    /// <summary>Field number for the "item_id" field.</summary>
-    public const int ItemIdFieldNumber = 1;
-    private long itemId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long ItemId {
-      get { return itemId_; }
-      set {
-        itemId_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as GetItemRequest);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(GetItemRequest other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (ItemId != other.ItemId) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (ItemId != 0L) hash ^= ItemId.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-      if (ItemId != 0L) {
-        output.WriteRawTag(8);
-        output.WriteInt64(ItemId);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (ItemId != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(ItemId);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(GetItemRequest other) {
-      if (other == null) {
-        return;
-      }
-      if (other.ItemId != 0L) {
-        ItemId = other.ItemId;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 8: {
-            ItemId = input.ReadInt64();
-            break;
-          }
-        }
-      }
-    }
-
-  }
-
-  public sealed partial class GetItemResponse : pb::IMessage<GetItemResponse> {
-    private static readonly pb::MessageParser<GetItemResponse> _parser = new pb::MessageParser<GetItemResponse>(() => new GetItemResponse());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<GetItemResponse> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[7]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public GetItemResponse() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public GetItemResponse(GetItemResponse other) : this() {
-      item_ = other.item_ != null ? other.item_.Clone() : null;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public GetItemResponse Clone() {
-      return new GetItemResponse(this);
-    }
-
-    /// <summary>Field number for the "item" field.</summary>
-    public const int ItemFieldNumber = 1;
-    private global::Mruv.Item item_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Mruv.Item Item {
-      get { return item_; }
-      set {
-        item_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as GetItemResponse);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(GetItemResponse other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (!object.Equals(Item, other.Item)) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (item_ != null) hash ^= Item.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-      if (item_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Item);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (item_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Item);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(GetItemResponse other) {
-      if (other == null) {
-        return;
-      }
-      if (other.item_ != null) {
-        if (item_ == null) {
-          Item = new global::Mruv.Item();
-        }
-        Item.MergeFrom(other.Item);
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            if (item_ == null) {
-              Item = new global::Mruv.Item();
-            }
-            input.ReadMessage(Item);
-            break;
-          }
-        }
-      }
-    }
-
-  }
-
-  public sealed partial class Item : pb::IMessage<Item> {
-    private static readonly pb::MessageParser<Item> _parser = new pb::MessageParser<Item>(() => new Item());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<Item> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[8]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public Item() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public Item(Item other) : this() {
-      id_ = other.id_;
-      name_ = other.name_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public Item Clone() {
-      return new Item(this);
-    }
-
-    /// <summary>Field number for the "id" field.</summary>
-    public const int IdFieldNumber = 1;
-    private long id_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long Id {
-      get { return id_; }
-      set {
-        id_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "name" field.</summary>
-    public const int NameFieldNumber = 2;
-    private string name_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Name {
-      get { return name_; }
-      set {
-        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as Item);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(Item other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (Id != other.Id) return false;
-      if (Name != other.Name) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (Id != 0L) hash ^= Id.GetHashCode();
-      if (Name.Length != 0) hash ^= Name.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-      if (Id != 0L) {
-        output.WriteRawTag(8);
-        output.WriteInt64(Id);
-      }
-      if (Name.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(Name);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (Id != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Id);
-      }
-      if (Name.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(Item other) {
-      if (other == null) {
-        return;
-      }
-      if (other.Id != 0L) {
-        Id = other.Id;
-      }
-      if (other.Name.Length != 0) {
-        Name = other.Name;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 8: {
-            Id = input.ReadInt64();
-            break;
-          }
-          case 18: {
-            Name = input.ReadString();
             break;
           }
         }
