@@ -19,7 +19,7 @@ jobs:
     - name: Build with dotnet
       run: dotnet build --configuration Release
     - name: Create nuget package
-      run: dotnet pack -p:PackageVersion=$(git describe --tags)
+      run: dotnet pack -p:PackageVersion=$(git describe --tags | sed 's/-.*//')
     - name: Publish nuget to nuget.org
       env: 
         NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
