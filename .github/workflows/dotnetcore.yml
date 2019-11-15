@@ -24,4 +24,4 @@ jobs:
     - name: Publish nuget to github packages
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: dotnet nuget push bin/Debug/*.nupkg -k $NUGET_API_KEY -s "https://nuget.pkg.github.com/MruV-RP/index.json"
+      run: dotnet nuget push bin/Debug/*.nupkg -k $NUGET_API_KEY -s https://nuget.pkg.github.com/MruV-RP/index.json
