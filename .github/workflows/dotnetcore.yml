@@ -18,3 +18,9 @@ jobs:
         dotnet-version: 2.2.402
     - name: Build with dotnet
       run: dotnet build --configuration Release
+    - name: Create nuget package
+      run: dotnet pack -p:PackageVersion=$(git describe --tags)
+    - name: Publish nuget to nuget.org
+      env: 
+        NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
+      run: dotnet nuget push bin/Debug/*.nupkg -k $NUGET_API_KEY -s https://api.nuget.org/v3/index.json
