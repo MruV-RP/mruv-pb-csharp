@@ -20,13 +20,8 @@ jobs:
       run: dotnet build --configuration Release
     - name: Create nuget package
       run: dotnet pack -p:PackageVersion=$(git describe --tags --abbrev=0 | sed -r 's/v(.*)-(.*)-(.*)/\1 /')
-    - name: Add nuget sources
+
+    - name: Publish nuget to github packages
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: nuget source Add -Name "GitHub" -Source "https://nuget.pkg.github.com/MruV-RP/index.json" -UserName MruV-RP -Password $GITHUB_TOKEN
-    - name: Publish nuget to nuget.org
-      env: 
-        NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
-      run: dotnet nuget push bin/Debug/*.nupkg -k $NUGET_API_KEY -s https://api.nuget.org/v3/index.json
-    - name: Publish nuget to github packages
-      run: dotnet nuget push bin/Debug/*.nupkg -s "GitHub"
+      run: dotnet nuget push bin/Debug/*.nupkg -k $NUGET_API_KEY -s "https://nuget.pkg.github.com/MruV-RP/index.json"
