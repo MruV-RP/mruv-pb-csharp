@@ -25,27 +25,27 @@ namespace Mruv {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChdpdGVtcy9pdGVtc19tb2RlbC5wcm90bxIEbXJ1dhoUY29tbW9uL3NwYXRp",
-            "YWwucHJvdG8imAEKCEl0ZW1UeXBlEgoKAmlkGAEgASgFEgwKBG5hbWUYAiAB",
+            "YWwucHJvdG8iiwEKCEl0ZW1UeXBlEgoKAmlkGAEgASgFEgwKBG5hbWUYAiAB",
             "KAkSEwoLZGVzY3JpcHRpb24YAyABKAkSEwoLYmFzZV93ZWlnaHQYBCABKAIS",
-            "EwoLYmFzZV92b2x1bWUYBSABKAISFAoKbW9kZWxfbmFtZRgHIAEoCUgAEhQK",
-            "Cm1vZGVsX2hhc2gYCCABKAVIAEIHCgVtb2RlbCIYCgpJdGVtVHlwZUlEEgoK",
-            "AmlkGAEgASgFIkgKBEl0ZW0SCgoCaWQYASABKAMSFAoMaXRlbV90eXBlX2lk",
-            "GAIgASgFEg4KBndlaWdodBgDIAEoAhIOCgZ2b2x1bWUYBCABKAIiFAoGSXRl",
-            "bUlEEgoKAmlkGAEgASgDIpEBCg1Db250YWluZXJUeXBlEgoKAmlkGAEgASgF",
-            "Eh4KFmNvbnRhaW5lcl9pdGVtX3R5cGVfaWQYAiABKAUSEgoKbWF4X251bWJl",
-            "chgDIAEoBRISCgptYXhfdm9sdW1lGAQgASgCEhIKCm1heF93ZWlnaHQYBSAB",
-            "KAISGAoQdmFsaWRfaXRlbV90eXBlcxgIIAMoBSJwCglDb250YWluZXISCgoC",
-            "aWQYASABKAUSDwoHdHlwZV9pZBgCIAEoBRIPCgdpdGVtX2lkGAMgASgDEhQK",
-            "DGl0ZW1zX2luc2lkZRgEIAEoBRIfCgVpdGVtcxgFIAMoCzIQLm1ydXYuSW5z",
-            "aWRlSXRlbSIZCgtDb250YWluZXJJRBIKCgJpZBgBIAEoBSJ3CgpJbnNpZGVJ",
-            "dGVtEhQKDGNvbnRhaW5lcl9pZBgBIAEoBRIPCgdpdGVtX2lkGAIgASgDEiAK",
-            "CHBvc2l0aW9uGAMgASgLMg4ubXJ1di5Qb3NpdGlvbhIgCghyb3RhdGlvbhgE",
-            "IAEoCzIOLm1ydXYuUm90YXRpb25CJVojZ2l0aHViLmNvbS9NcnVWLVJQL21y",
-            "dXYtcGItZ28vaXRlbXNiBnByb3RvMw=="));
+            "EwoLYmFzZV92b2x1bWUYBSABKAISEgoKbW9kZWxfbmFtZRgGIAEoCRISCgpt",
+            "b2RlbF9oYXNoGAcgASgFIhgKCkl0ZW1UeXBlSUQSCgoCaWQYASABKAUiSAoE",
+            "SXRlbRIKCgJpZBgBIAEoAxIUCgxpdGVtX3R5cGVfaWQYAiABKAUSDgoGd2Vp",
+            "Z2h0GAMgASgCEg4KBnZvbHVtZRgEIAEoAiIUCgZJdGVtSUQSCgoCaWQYASAB",
+            "KAMikQEKDUNvbnRhaW5lclR5cGUSCgoCaWQYASABKAUSHgoWY29udGFpbmVy",
+            "X2l0ZW1fdHlwZV9pZBgCIAEoBRISCgptYXhfbnVtYmVyGAMgASgFEhIKCm1h",
+            "eF92b2x1bWUYBCABKAISEgoKbWF4X3dlaWdodBgFIAEoAhIYChB2YWxpZF9p",
+            "dGVtX3R5cGVzGAggAygFInAKCUNvbnRhaW5lchIKCgJpZBgBIAEoBRIPCgd0",
+            "eXBlX2lkGAIgASgFEg8KB2l0ZW1faWQYAyABKAMSFAoMaXRlbXNfaW5zaWRl",
+            "GAQgASgFEh8KBWl0ZW1zGAUgAygLMhAubXJ1di5JbnNpZGVJdGVtIhkKC0Nv",
+            "bnRhaW5lcklEEgoKAmlkGAEgASgFIncKCkluc2lkZUl0ZW0SFAoMY29udGFp",
+            "bmVyX2lkGAEgASgFEg8KB2l0ZW1faWQYAiABKAMSIAoIcG9zaXRpb24YAyAB",
+            "KAsyDi5tcnV2LlBvc2l0aW9uEiAKCHJvdGF0aW9uGAQgASgLMg4ubXJ1di5S",
+            "b3RhdGlvbkIlWiNnaXRodWIuY29tL01ydVYtUlAvbXJ1di1wYi1nby9pdGVt",
+            "c2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Mruv.SpatialReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.ItemType), global::Mruv.ItemType.Parser, new[]{ "Id", "Name", "Description", "BaseWeight", "BaseVolume", "ModelName", "ModelHash" }, new[]{ "Model" }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.ItemType), global::Mruv.ItemType.Parser, new[]{ "Id", "Name", "Description", "BaseWeight", "BaseVolume", "ModelName", "ModelHash" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.ItemTypeID), global::Mruv.ItemTypeID.Parser, new[]{ "Id" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Item), global::Mruv.Item.Parser, new[]{ "Id", "ItemTypeId", "Weight", "Volume" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.ItemID), global::Mruv.ItemID.Parser, new[]{ "Id" }, null, null, null),
@@ -89,15 +89,8 @@ namespace Mruv {
       description_ = other.description_;
       baseWeight_ = other.baseWeight_;
       baseVolume_ = other.baseVolume_;
-      switch (other.ModelCase) {
-        case ModelOneofCase.ModelName:
-          ModelName = other.ModelName;
-          break;
-        case ModelOneofCase.ModelHash:
-          ModelHash = other.ModelHash;
-          break;
-      }
-
+      modelName_ = other.modelName_;
+      modelHash_ = other.modelHash_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -162,44 +155,25 @@ namespace Mruv {
     }
 
     /// <summary>Field number for the "model_name" field.</summary>
-    public const int ModelNameFieldNumber = 7;
+    public const int ModelNameFieldNumber = 6;
+    private string modelName_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ModelName {
-      get { return modelCase_ == ModelOneofCase.ModelName ? (string) model_ : ""; }
+      get { return modelName_; }
       set {
-        model_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-        modelCase_ = ModelOneofCase.ModelName;
+        modelName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
     /// <summary>Field number for the "model_hash" field.</summary>
-    public const int ModelHashFieldNumber = 8;
+    public const int ModelHashFieldNumber = 7;
+    private int modelHash_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int ModelHash {
-      get { return modelCase_ == ModelOneofCase.ModelHash ? (int) model_ : 0; }
+      get { return modelHash_; }
       set {
-        model_ = value;
-        modelCase_ = ModelOneofCase.ModelHash;
+        modelHash_ = value;
       }
-    }
-
-    private object model_;
-    /// <summary>Enum of possible cases for the "model" oneof.</summary>
-    public enum ModelOneofCase {
-      None = 0,
-      ModelName = 7,
-      ModelHash = 8,
-    }
-    private ModelOneofCase modelCase_ = ModelOneofCase.None;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public ModelOneofCase ModelCase {
-      get { return modelCase_; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearModel() {
-      modelCase_ = ModelOneofCase.None;
-      model_ = null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -222,7 +196,6 @@ namespace Mruv {
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(BaseVolume, other.BaseVolume)) return false;
       if (ModelName != other.ModelName) return false;
       if (ModelHash != other.ModelHash) return false;
-      if (ModelCase != other.ModelCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -234,9 +207,8 @@ namespace Mruv {
       if (Description.Length != 0) hash ^= Description.GetHashCode();
       if (BaseWeight != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(BaseWeight);
       if (BaseVolume != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(BaseVolume);
-      if (modelCase_ == ModelOneofCase.ModelName) hash ^= ModelName.GetHashCode();
-      if (modelCase_ == ModelOneofCase.ModelHash) hash ^= ModelHash.GetHashCode();
-      hash ^= (int) modelCase_;
+      if (ModelName.Length != 0) hash ^= ModelName.GetHashCode();
+      if (ModelHash != 0) hash ^= ModelHash.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -270,12 +242,12 @@ namespace Mruv {
         output.WriteRawTag(45);
         output.WriteFloat(BaseVolume);
       }
-      if (modelCase_ == ModelOneofCase.ModelName) {
-        output.WriteRawTag(58);
+      if (ModelName.Length != 0) {
+        output.WriteRawTag(50);
         output.WriteString(ModelName);
       }
-      if (modelCase_ == ModelOneofCase.ModelHash) {
-        output.WriteRawTag(64);
+      if (ModelHash != 0) {
+        output.WriteRawTag(56);
         output.WriteInt32(ModelHash);
       }
       if (_unknownFields != null) {
@@ -301,10 +273,10 @@ namespace Mruv {
       if (BaseVolume != 0F) {
         size += 1 + 4;
       }
-      if (modelCase_ == ModelOneofCase.ModelName) {
+      if (ModelName.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(ModelName);
       }
-      if (modelCase_ == ModelOneofCase.ModelHash) {
+      if (ModelHash != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(ModelHash);
       }
       if (_unknownFields != null) {
@@ -333,15 +305,12 @@ namespace Mruv {
       if (other.BaseVolume != 0F) {
         BaseVolume = other.BaseVolume;
       }
-      switch (other.ModelCase) {
-        case ModelOneofCase.ModelName:
-          ModelName = other.ModelName;
-          break;
-        case ModelOneofCase.ModelHash:
-          ModelHash = other.ModelHash;
-          break;
+      if (other.ModelName.Length != 0) {
+        ModelName = other.ModelName;
       }
-
+      if (other.ModelHash != 0) {
+        ModelHash = other.ModelHash;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -373,11 +342,11 @@ namespace Mruv {
             BaseVolume = input.ReadFloat();
             break;
           }
-          case 58: {
+          case 50: {
             ModelName = input.ReadString();
             break;
           }
-          case 64: {
+          case 56: {
             ModelHash = input.ReadInt32();
             break;
           }
