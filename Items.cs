@@ -32,72 +32,77 @@ namespace Mruv {
             "c3QSDQoFbGltaXQYASABKAUiOgoUR2V0SXRlbVR5cGVzUmVzcG9uc2USIgoK",
             "aXRlbV90eXBlcxgBIAMoCzIOLm1ydXYuSXRlbVR5cGUiJQoUR2V0Q29udGFp",
             "bmVyc1JlcXVlc3QSDQoFbGltaXQYASABKAUiPAoVR2V0Q29udGFpbmVyc1Jl",
-            "c3BvbnNlEiMKCmNvbnRhaW5lcnMYASADKAsyDy5tcnV2LkNvbnRhaW5lciJx",
-            "Cg5QdXRJdGVtUmVxdWVzdBInCgxjb250YWluZXJfaWQYASABKAsyES5tcnV2",
-            "LkNvbnRhaW5lcklEEh0KB2l0ZW1faWQYAiABKAsyDC5tcnV2Lkl0ZW1JRBIO",
-            "CgRzbG90GAMgASgFSABCBwoFd2hlcmUiKwoPVGFrZUl0ZW1SZXF1ZXN0EhgK",
-            "AmlkGAEgASgLMgwubXJ1di5JdGVtSUQiLAoQVGFrZUl0ZW1SZXNwb25zZRIY",
-            "CgRpdGVtGAEgASgLMgoubXJ1di5JdGVtIjYKGUdldENvbnRhaW5lckl0ZW1z",
-            "UmVzcG9uc2USGQoFaXRlbXMYASADKAsyCi5tcnV2Lkl0ZW0iWwoRUmVtb3Zl",
-            "SXRlbVJlcXVlc3QSJwoMY29udGFpbmVyX2lkGAEgASgLMhEubXJ1di5Db250",
-            "YWluZXJJRBIdCgdpdGVtX2lkGAIgASgLMgwubXJ1di5JdGVtSUQiTAoQU29y",
-            "dEl0ZW1zUmVxdWVzdBInCgxjb250YWluZXJfaWQYASABKAsyES5tcnV2LkNv",
-            "bnRhaW5lcklEEg8KB3NvcnRfYnkYAiABKAkiLgoRU29ydEl0ZW1zUmVzcG9u",
-            "c2USGQoFaXRlbXMYASADKAsyCi5tcnV2Lkl0ZW0iagoWR2V0TmVhcmVzdEl0",
-            "ZW1zUmVxdWVzdBInCg9wbGF5ZXJfcG9zaXRpb24YASABKAsyDi5tcnV2LlBv",
-            "c2l0aW9uEicKDGNvbnRhaW5lcl9pZBgCIAEoCzIRLm1ydXYuQ29udGFpbmVy",
-            "SUQiOQoXR2V0TmVhcmVzdEl0ZW1zUmVzcG9uc2USHgoEaXRlbRgBIAMoCzIQ",
-            "Lm1ydXYuSW5zaWRlSXRlbSIvCg5Vc2VJdGVtUmVxdWVzdBIdCgdpdGVtX2lk",
-            "GAEgASgLMgwubXJ1di5JdGVtSUQiIgoPVXNlSXRlbVJlc3BvbnNlEg8KB3N1",
-            "Y2Nlc3MYASABKAgy1hAKD01ydVZJdGVtU2VydmljZRI5CgpDcmVhdGVJdGVt",
-            "EgoubXJ1di5JdGVtGgwubXJ1di5JdGVtSUQiEYLT5JMCCyIJL3YxL2l0ZW1z",
-            "EjsKB0dldEl0ZW0SDC5tcnV2Lkl0ZW1JRBoKLm1ydXYuSXRlbSIWgtPkkwIQ",
-            "Eg4vdjEvaXRlbXMve2lkfRI+CgpVcGRhdGVJdGVtEgoubXJ1di5JdGVtGgwu",
-            "bXJ1di5JdGVtSUQiFoLT5JMCEDIOL3YxL2l0ZW1zL3tpZH0SQAoKRGVsZXRl",
-            "SXRlbRIMLm1ydXYuSXRlbUlEGgwubXJ1di5JdGVtSUQiFoLT5JMCECoOL3Yx",
-            "L2l0ZW1zL3tpZH0STAoIR2V0SXRlbXMSFS5tcnV2LkdldEl0ZW1zUmVxdWVz",
-            "dBoWLm1ydXYuR2V0SXRlbXNSZXNwb25zZSIRgtPkkwILEgkvdjEvaXRlbXMS",
-            "SQoOQ3JlYXRlSXRlbVR5cGUSDi5tcnV2Lkl0ZW1UeXBlGhAubXJ1di5JdGVt",
-            "VHlwZUlEIhWC0+STAg8iDS92MS9pdGVtVHlwZXMSSwoLR2V0SXRlbVR5cGUS",
-            "EC5tcnV2Lkl0ZW1UeXBlSUQaDi5tcnV2Lkl0ZW1UeXBlIhqC0+STAhQSEi92",
-            "MS9pdGVtVHlwZXMve2lkfRJOCg5VcGRhdGVJdGVtVHlwZRIOLm1ydXYuSXRl",
-            "bVR5cGUaEC5tcnV2Lkl0ZW1UeXBlSUQiGoLT5JMCFDISL3YxL2l0ZW1UeXBl",
-            "cy97aWR9ElAKDkRlbGV0ZUl0ZW1UeXBlEhAubXJ1di5JdGVtVHlwZUlEGhAu",
-            "bXJ1di5JdGVtVHlwZUlEIhqC0+STAhQqEi92MS9pdGVtVHlwZXMve2lkfRJc",
-            "CgxHZXRJdGVtVHlwZXMSGS5tcnV2LkdldEl0ZW1UeXBlc1JlcXVlc3QaGi5t",
-            "cnV2LkdldEl0ZW1UeXBlc1Jlc3BvbnNlIhWC0+STAg8SDS92MS9pdGVtVHlw",
-            "ZXMSTQoPQ3JlYXRlQ29udGFpbmVyEg8ubXJ1di5Db250YWluZXIaES5tcnV2",
-            "LkNvbnRhaW5lcklEIhaC0+STAhAiDi92MS9jb250YWluZXJzEk8KDEdldENv",
-            "bnRhaW5lchIRLm1ydXYuQ29udGFpbmVySUQaDy5tcnV2LkNvbnRhaW5lciIb",
-            "gtPkkwIVEhMvdjEvY29udGFpbmVycy97aWR9ElIKD1VwZGF0ZUNvbnRhaW5l",
-            "chIPLm1ydXYuQ29udGFpbmVyGhEubXJ1di5Db250YWluZXJJRCIbgtPkkwIV",
-            "MhMvdjEvY29udGFpbmVycy97aWR9ElQKD0RlbGV0ZUNvbnRhaW5lchIRLm1y",
-            "dXYuQ29udGFpbmVySUQaES5tcnV2LkNvbnRhaW5lcklEIhuC0+STAhUqEy92",
-            "MS9jb250YWluZXJzL3tpZH0SYAoNR2V0Q29udGFpbmVycxIaLm1ydXYuR2V0",
-            "Q29udGFpbmVyc1JlcXVlc3QaGy5tcnV2LkdldENvbnRhaW5lcnNSZXNwb25z",
-            "ZSIWgtPkkwIQEg4vdjEvY29udGFpbmVycxJqChFHZXRDb250YWluZXJJdGVt",
-            "cxIRLm1ydXYuQ29udGFpbmVySUQaHy5tcnV2LkdldENvbnRhaW5lckl0ZW1z",
-            "UmVzcG9uc2UiIYLT5JMCGxIZL3YxL2NvbnRhaW5lcnMve2lkfS9pdGVtcxJ3",
-            "ChNSZW1vdmVDb250YWluZXJJdGVtEhcubXJ1di5SZW1vdmVJdGVtUmVxdWVz",
-            "dBoKLm1ydXYuSXRlbSI7gtPkkwI1KjMvdjEvY29udGFpbmVycy97Y29udGFp",
-            "bmVyX2lkLmlkfS9pdGVtcy97aXRlbV9pZC5pZH0SagoHUHV0SXRlbRIULm1y",
-            "dXYuUHV0SXRlbVJlcXVlc3QaDC5tcnV2Lkl0ZW1JRCI7gtPkkwI1GjMvdjEv",
-            "Y29udGFpbmVycy97Y29udGFpbmVyX2lkLmlkfS9pdGVtcy97aXRlbV9pZC5p",
-            "ZH0SewoJU29ydEl0ZW1zEhYubXJ1di5Tb3J0SXRlbXNSZXF1ZXN0GhcubXJ1",
-            "di5Tb3J0SXRlbXNSZXNwb25zZSI9gtPkkwI3EjUvdjEvY29udGFpbmVycy97",
-            "Y29udGFpbmVyX2lkLmlkfS9pdGVtcy9zb3J0L3tzb3J0X2J5fRLIAQoPR2V0",
-            "TmVhcmVzdEl0ZW1zEhwubXJ1di5HZXROZWFyZXN0SXRlbXNSZXF1ZXN0Gh0u",
-            "bXJ1di5HZXROZWFyZXN0SXRlbXNSZXNwb25zZSJ4gtPkkwJyEnAvdjEvY29u",
-            "dGFpbmVycy97Y29udGFpbmVyX2lkLmlkfS9pdGVtcy9uZWFyZXN0L3gve3Bs",
-            "YXllcl9wb3NpdGlvbi54fS95L3twbGF5ZXJfcG9zaXRpb24ueX0vei97cGxh",
-            "eWVyX3Bvc2l0aW9uLnp9EloKB1VzZUl0ZW0SFC5tcnV2LlVzZUl0ZW1SZXF1",
-            "ZXN0GhUubXJ1di5Vc2VJdGVtUmVzcG9uc2UiIoLT5JMCHBIaL3YxL2l0ZW1z",
-            "L3tpdGVtX2lkLmlkfS91c2USZQoQR2V0U2VydmljZVN0YXR1cxIaLm1ydXYu",
-            "U2VydmljZVN0YXR1c1JlcXVlc3QaGy5tcnV2LlNlcnZpY2VTdGF0dXNSZXNw",
-            "b25zZSIYgtPkkwISEhAvdjEvaXRlbXMvc3RhdHVzElsKEUdldFNlcnZpY2VW",
-            "ZXJzaW9uEhQubXJ1di5WZXJzaW9uUmVxdWVzdBoVLm1ydXYuVmVyc2lvblJl",
-            "c3BvbnNlIhmC0+STAhMSES92MS9pdGVtcy92ZXJzaW9uQiVaI2dpdGh1Yi5j",
-            "b20vTXJ1Vi1SUC9tcnV2LXBiLWdvL2l0ZW1zYgZwcm90bzM="));
+            "c3BvbnNlEiMKCmNvbnRhaW5lcnMYASADKAsyDy5tcnV2LkNvbnRhaW5lciIp",
+            "ChhHZXRDb250YWluZXJUeXBlc1JlcXVlc3QSDQoFbGltaXQYASABKAUicQoO",
+            "UHV0SXRlbVJlcXVlc3QSJwoMY29udGFpbmVyX2lkGAEgASgLMhEubXJ1di5D",
+            "b250YWluZXJJRBIdCgdpdGVtX2lkGAIgASgLMgwubXJ1di5JdGVtSUQSDgoE",
+            "c2xvdBgDIAEoBUgAQgcKBXdoZXJlIisKD1Rha2VJdGVtUmVxdWVzdBIYCgJp",
+            "ZBgBIAEoCzIMLm1ydXYuSXRlbUlEIiwKEFRha2VJdGVtUmVzcG9uc2USGAoE",
+            "aXRlbRgBIAEoCzIKLm1ydXYuSXRlbSI2ChlHZXRDb250YWluZXJJdGVtc1Jl",
+            "c3BvbnNlEhkKBWl0ZW1zGAEgAygLMgoubXJ1di5JdGVtIlsKEVJlbW92ZUl0",
+            "ZW1SZXF1ZXN0EicKDGNvbnRhaW5lcl9pZBgBIAEoCzIRLm1ydXYuQ29udGFp",
+            "bmVySUQSHQoHaXRlbV9pZBgCIAEoCzIMLm1ydXYuSXRlbUlEIkwKEFNvcnRJ",
+            "dGVtc1JlcXVlc3QSJwoMY29udGFpbmVyX2lkGAEgASgLMhEubXJ1di5Db250",
+            "YWluZXJJRBIPCgdzb3J0X2J5GAIgASgJIi4KEVNvcnRJdGVtc1Jlc3BvbnNl",
+            "EhkKBWl0ZW1zGAEgAygLMgoubXJ1di5JdGVtImoKFkdldE5lYXJlc3RJdGVt",
+            "c1JlcXVlc3QSJwoPcGxheWVyX3Bvc2l0aW9uGAEgASgLMg4ubXJ1di5Qb3Np",
+            "dGlvbhInCgxjb250YWluZXJfaWQYAiABKAsyES5tcnV2LkNvbnRhaW5lcklE",
+            "IjkKF0dldE5lYXJlc3RJdGVtc1Jlc3BvbnNlEh4KBGl0ZW0YASADKAsyEC5t",
+            "cnV2Lkluc2lkZUl0ZW0iLwoOVXNlSXRlbVJlcXVlc3QSHQoHaXRlbV9pZBgB",
+            "IAEoCzIMLm1ydXYuSXRlbUlEIiIKD1VzZUl0ZW1SZXNwb25zZRIPCgdzdWNj",
+            "ZXNzGAEgASgIMvwRCg9NcnVWSXRlbVNlcnZpY2USOQoKQ3JlYXRlSXRlbRIK",
+            "Lm1ydXYuSXRlbRoMLm1ydXYuSXRlbUlEIhGC0+STAgsiCS92MS9pdGVtcxI7",
+            "CgdHZXRJdGVtEgwubXJ1di5JdGVtSUQaCi5tcnV2Lkl0ZW0iFoLT5JMCEBIO",
+            "L3YxL2l0ZW1zL3tpZH0SQAoKRGVsZXRlSXRlbRIMLm1ydXYuSXRlbUlEGgwu",
+            "bXJ1di5JdGVtSUQiFoLT5JMCECoOL3YxL2l0ZW1zL3tpZH0STAoIR2V0SXRl",
+            "bXMSFS5tcnV2LkdldEl0ZW1zUmVxdWVzdBoWLm1ydXYuR2V0SXRlbXNSZXNw",
+            "b25zZSIRgtPkkwILEgkvdjEvaXRlbXMSSQoOQ3JlYXRlSXRlbVR5cGUSDi5t",
+            "cnV2Lkl0ZW1UeXBlGhAubXJ1di5JdGVtVHlwZUlEIhWC0+STAg8iDS92MS9p",
+            "dGVtVHlwZXMSSwoLR2V0SXRlbVR5cGUSEC5tcnV2Lkl0ZW1UeXBlSUQaDi5t",
+            "cnV2Lkl0ZW1UeXBlIhqC0+STAhQSEi92MS9pdGVtVHlwZXMve2lkfRJQCg5E",
+            "ZWxldGVJdGVtVHlwZRIQLm1ydXYuSXRlbVR5cGVJRBoQLm1ydXYuSXRlbVR5",
+            "cGVJRCIagtPkkwIUKhIvdjEvaXRlbVR5cGVzL3tpZH0SXAoMR2V0SXRlbVR5",
+            "cGVzEhkubXJ1di5HZXRJdGVtVHlwZXNSZXF1ZXN0GhoubXJ1di5HZXRJdGVt",
+            "VHlwZXNSZXNwb25zZSIVgtPkkwIPEg0vdjEvaXRlbVR5cGVzEk0KD0NyZWF0",
+            "ZUNvbnRhaW5lchIPLm1ydXYuQ29udGFpbmVyGhEubXJ1di5Db250YWluZXJJ",
+            "RCIWgtPkkwIQIg4vdjEvY29udGFpbmVycxJPCgxHZXRDb250YWluZXISES5t",
+            "cnV2LkNvbnRhaW5lcklEGg8ubXJ1di5Db250YWluZXIiG4LT5JMCFRITL3Yx",
+            "L2NvbnRhaW5lcnMve2lkfRJUCg9EZWxldGVDb250YWluZXISES5tcnV2LkNv",
+            "bnRhaW5lcklEGhEubXJ1di5Db250YWluZXJJRCIbgtPkkwIVKhMvdjEvY29u",
+            "dGFpbmVycy97aWR9EmAKDUdldENvbnRhaW5lcnMSGi5tcnV2LkdldENvbnRh",
+            "aW5lcnNSZXF1ZXN0GhsubXJ1di5HZXRDb250YWluZXJzUmVzcG9uc2UiFoLT",
+            "5JMCEBIOL3YxL2NvbnRhaW5lcnMSXQoTQ3JlYXRlQ29udGFpbmVyVHlwZRIT",
+            "Lm1ydXYuQ29udGFpbmVyVHlwZRoVLm1ydXYuQ29udGFpbmVyVHlwZUlEIhqC",
+            "0+STAhQiEi92MS9jb250YWluZXJUeXBlcxJfChBHZXRDb250YWluZXJUeXBl",
+            "EhUubXJ1di5Db250YWluZXJUeXBlSUQaEy5tcnV2LkNvbnRhaW5lclR5cGUi",
+            "H4LT5JMCGRIXL3YxL2NvbnRhaW5lclR5cGVzL3tpZH0SYAoTRGVsZXRlQ29u",
+            "dGFpbmVyVHlwZRIVLm1ydXYuQ29udGFpbmVyVHlwZUlEGhEubXJ1di5Db250",
+            "YWluZXJJRCIfgtPkkwIZKhcvdjEvY29udGFpbmVyVHlwZXMve2lkfRJmChFH",
+            "ZXRDb250YWluZXJUeXBlcxIeLm1ydXYuR2V0Q29udGFpbmVyVHlwZXNSZXF1",
+            "ZXN0GhMubXJ1di5Db250YWluZXJUeXBlIhqC0+STAhQSEi92MS9jb250YWlu",
+            "ZXJUeXBlczABEmoKEUdldENvbnRhaW5lckl0ZW1zEhEubXJ1di5Db250YWlu",
+            "ZXJJRBofLm1ydXYuR2V0Q29udGFpbmVySXRlbXNSZXNwb25zZSIhgtPkkwIb",
+            "EhkvdjEvY29udGFpbmVycy97aWR9L2l0ZW1zEncKE1JlbW92ZUNvbnRhaW5l",
+            "ckl0ZW0SFy5tcnV2LlJlbW92ZUl0ZW1SZXF1ZXN0GgoubXJ1di5JdGVtIjuC",
+            "0+STAjUqMy92MS9jb250YWluZXJzL3tjb250YWluZXJfaWQuaWR9L2l0ZW1z",
+            "L3tpdGVtX2lkLmlkfRJqCgdQdXRJdGVtEhQubXJ1di5QdXRJdGVtUmVxdWVz",
+            "dBoMLm1ydXYuSXRlbUlEIjuC0+STAjUaMy92MS9jb250YWluZXJzL3tjb250",
+            "YWluZXJfaWQuaWR9L2l0ZW1zL3tpdGVtX2lkLmlkfRJ7CglTb3J0SXRlbXMS",
+            "Fi5tcnV2LlNvcnRJdGVtc1JlcXVlc3QaFy5tcnV2LlNvcnRJdGVtc1Jlc3Bv",
+            "bnNlIj2C0+STAjcSNS92MS9jb250YWluZXJzL3tjb250YWluZXJfaWQuaWR9",
+            "L2l0ZW1zL3NvcnQve3NvcnRfYnl9EsgBCg9HZXROZWFyZXN0SXRlbXMSHC5t",
+            "cnV2LkdldE5lYXJlc3RJdGVtc1JlcXVlc3QaHS5tcnV2LkdldE5lYXJlc3RJ",
+            "dGVtc1Jlc3BvbnNlIniC0+STAnIScC92MS9jb250YWluZXJzL3tjb250YWlu",
+            "ZXJfaWQuaWR9L2l0ZW1zL25lYXJlc3QveC97cGxheWVyX3Bvc2l0aW9uLnh9",
+            "L3kve3BsYXllcl9wb3NpdGlvbi55fS96L3twbGF5ZXJfcG9zaXRpb24uen0S",
+            "WgoHVXNlSXRlbRIULm1ydXYuVXNlSXRlbVJlcXVlc3QaFS5tcnV2LlVzZUl0",
+            "ZW1SZXNwb25zZSIigtPkkwIcEhovdjEvaXRlbXMve2l0ZW1faWQuaWR9L3Vz",
+            "ZRJlChBHZXRTZXJ2aWNlU3RhdHVzEhoubXJ1di5TZXJ2aWNlU3RhdHVzUmVx",
+            "dWVzdBobLm1ydXYuU2VydmljZVN0YXR1c1Jlc3BvbnNlIhiC0+STAhISEC92",
+            "MS9pdGVtcy9zdGF0dXMSWwoRR2V0U2VydmljZVZlcnNpb24SFC5tcnV2LlZl",
+            "cnNpb25SZXF1ZXN0GhUubXJ1di5WZXJzaW9uUmVzcG9uc2UiGYLT5JMCExIR",
+            "L3YxL2l0ZW1zL3ZlcnNpb25CJVojZ2l0aHViLmNvbS9NcnVWLVJQL21ydXYt",
+            "cGItZ28vaXRlbXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, global::Mruv.HealthReflection.Descriptor, global::Mruv.ItemsModelReflection.Descriptor, global::Mruv.SpatialReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -107,6 +112,7 @@ namespace Mruv {
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetItemTypesResponse), global::Mruv.GetItemTypesResponse.Parser, new[]{ "ItemTypes" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetContainersRequest), global::Mruv.GetContainersRequest.Parser, new[]{ "Limit" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetContainersResponse), global::Mruv.GetContainersResponse.Parser, new[]{ "Containers" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetContainerTypesRequest), global::Mruv.GetContainerTypesRequest.Parser, new[]{ "Limit" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.PutItemRequest), global::Mruv.PutItemRequest.Parser, new[]{ "ContainerId", "ItemId", "Slot" }, new[]{ "Where" }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.TakeItemRequest), global::Mruv.TakeItemRequest.Parser, new[]{ "Id" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.TakeItemResponse), global::Mruv.TakeItemResponse.Parser, new[]{ "Item" }, null, null, null),
@@ -877,6 +883,135 @@ namespace Mruv {
 
   }
 
+  public sealed partial class GetContainerTypesRequest : pb::IMessage<GetContainerTypesRequest> {
+    private static readonly pb::MessageParser<GetContainerTypesRequest> _parser = new pb::MessageParser<GetContainerTypesRequest>(() => new GetContainerTypesRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<GetContainerTypesRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[6]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetContainerTypesRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetContainerTypesRequest(GetContainerTypesRequest other) : this() {
+      limit_ = other.limit_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetContainerTypesRequest Clone() {
+      return new GetContainerTypesRequest(this);
+    }
+
+    /// <summary>Field number for the "limit" field.</summary>
+    public const int LimitFieldNumber = 1;
+    private int limit_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int Limit {
+      get { return limit_; }
+      set {
+        limit_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as GetContainerTypesRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(GetContainerTypesRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Limit != other.Limit) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Limit != 0) hash ^= Limit.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Limit != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(Limit);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Limit != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Limit);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(GetContainerTypesRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Limit != 0) {
+        Limit = other.Limit;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Limit = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
   public sealed partial class PutItemRequest : pb::IMessage<PutItemRequest> {
     private static readonly pb::MessageParser<PutItemRequest> _parser = new pb::MessageParser<PutItemRequest>(() => new PutItemRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -885,7 +1020,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[6]; }
+      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1110,7 +1245,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[7]; }
+      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1245,7 +1380,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[8]; }
+      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1380,7 +1515,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[9]; }
+      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1501,7 +1636,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[10]; }
+      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1670,7 +1805,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[11]; }
+      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1833,7 +1968,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[12]; }
+      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1954,7 +2089,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[13]; }
+      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2123,7 +2258,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[14]; }
+      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[15]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2244,7 +2379,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[15]; }
+      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[16]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2379,7 +2514,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[16]; }
+      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[17]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

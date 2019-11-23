@@ -24,6 +24,9 @@ namespace Mruv {
     static readonly grpc::Marshaller<global::Mruv.ContainerID> __Marshaller_mruv_ContainerID = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.ContainerID.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.GetContainersRequest> __Marshaller_mruv_GetContainersRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.GetContainersRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.GetContainersResponse> __Marshaller_mruv_GetContainersResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.GetContainersResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.ContainerType> __Marshaller_mruv_ContainerType = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.ContainerType.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.ContainerTypeID> __Marshaller_mruv_ContainerTypeID = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.ContainerTypeID.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.GetContainerTypesRequest> __Marshaller_mruv_GetContainerTypesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.GetContainerTypesRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.GetContainerItemsResponse> __Marshaller_mruv_GetContainerItemsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.GetContainerItemsResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.RemoveItemRequest> __Marshaller_mruv_RemoveItemRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.RemoveItemRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.PutItemRequest> __Marshaller_mruv_PutItemRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.PutItemRequest.Parser.ParseFrom);
@@ -51,13 +54,6 @@ namespace Mruv {
         "GetItem",
         __Marshaller_mruv_ItemID,
         __Marshaller_mruv_Item);
-
-    static readonly grpc::Method<global::Mruv.Item, global::Mruv.ItemID> __Method_UpdateItem = new grpc::Method<global::Mruv.Item, global::Mruv.ItemID>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "UpdateItem",
-        __Marshaller_mruv_Item,
-        __Marshaller_mruv_ItemID);
 
     static readonly grpc::Method<global::Mruv.ItemID, global::Mruv.ItemID> __Method_DeleteItem = new grpc::Method<global::Mruv.ItemID, global::Mruv.ItemID>(
         grpc::MethodType.Unary,
@@ -87,13 +83,6 @@ namespace Mruv {
         __Marshaller_mruv_ItemTypeID,
         __Marshaller_mruv_ItemType);
 
-    static readonly grpc::Method<global::Mruv.ItemType, global::Mruv.ItemTypeID> __Method_UpdateItemType = new grpc::Method<global::Mruv.ItemType, global::Mruv.ItemTypeID>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "UpdateItemType",
-        __Marshaller_mruv_ItemType,
-        __Marshaller_mruv_ItemTypeID);
-
     static readonly grpc::Method<global::Mruv.ItemTypeID, global::Mruv.ItemTypeID> __Method_DeleteItemType = new grpc::Method<global::Mruv.ItemTypeID, global::Mruv.ItemTypeID>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -122,13 +111,6 @@ namespace Mruv {
         __Marshaller_mruv_ContainerID,
         __Marshaller_mruv_Container);
 
-    static readonly grpc::Method<global::Mruv.Container, global::Mruv.ContainerID> __Method_UpdateContainer = new grpc::Method<global::Mruv.Container, global::Mruv.ContainerID>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "UpdateContainer",
-        __Marshaller_mruv_Container,
-        __Marshaller_mruv_ContainerID);
-
     static readonly grpc::Method<global::Mruv.ContainerID, global::Mruv.ContainerID> __Method_DeleteContainer = new grpc::Method<global::Mruv.ContainerID, global::Mruv.ContainerID>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -142,6 +124,34 @@ namespace Mruv {
         "GetContainers",
         __Marshaller_mruv_GetContainersRequest,
         __Marshaller_mruv_GetContainersResponse);
+
+    static readonly grpc::Method<global::Mruv.ContainerType, global::Mruv.ContainerTypeID> __Method_CreateContainerType = new grpc::Method<global::Mruv.ContainerType, global::Mruv.ContainerTypeID>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "CreateContainerType",
+        __Marshaller_mruv_ContainerType,
+        __Marshaller_mruv_ContainerTypeID);
+
+    static readonly grpc::Method<global::Mruv.ContainerTypeID, global::Mruv.ContainerType> __Method_GetContainerType = new grpc::Method<global::Mruv.ContainerTypeID, global::Mruv.ContainerType>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetContainerType",
+        __Marshaller_mruv_ContainerTypeID,
+        __Marshaller_mruv_ContainerType);
+
+    static readonly grpc::Method<global::Mruv.ContainerTypeID, global::Mruv.ContainerID> __Method_DeleteContainerType = new grpc::Method<global::Mruv.ContainerTypeID, global::Mruv.ContainerID>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "DeleteContainerType",
+        __Marshaller_mruv_ContainerTypeID,
+        __Marshaller_mruv_ContainerID);
+
+    static readonly grpc::Method<global::Mruv.GetContainerTypesRequest, global::Mruv.ContainerType> __Method_GetContainerTypes = new grpc::Method<global::Mruv.GetContainerTypesRequest, global::Mruv.ContainerType>(
+        grpc::MethodType.ServerStreaming,
+        __ServiceName,
+        "GetContainerTypes",
+        __Marshaller_mruv_GetContainerTypesRequest,
+        __Marshaller_mruv_ContainerType);
 
     static readonly grpc::Method<global::Mruv.ContainerID, global::Mruv.GetContainerItemsResponse> __Method_GetContainerItems = new grpc::Method<global::Mruv.ContainerID, global::Mruv.GetContainerItemsResponse>(
         grpc::MethodType.Unary,
@@ -225,11 +235,6 @@ namespace Mruv {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.ItemID> UpdateItem(global::Mruv.Item request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
       public virtual global::System.Threading.Tasks.Task<global::Mruv.ItemID> DeleteItem(global::Mruv.ItemID request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
@@ -252,11 +257,6 @@ namespace Mruv {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::Mruv.ItemType> GetItemType(global::Mruv.ItemTypeID request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.ItemTypeID> UpdateItemType(global::Mruv.ItemType request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -287,17 +287,38 @@ namespace Mruv {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.ContainerID> UpdateContainer(global::Mruv.Container request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
       public virtual global::System.Threading.Tasks.Task<global::Mruv.ContainerID> DeleteContainer(global::Mruv.ContainerID request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       public virtual global::System.Threading.Tasks.Task<global::Mruv.GetContainersResponse> GetContainers(global::Mruv.GetContainersRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      ///CRUD container types
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.ContainerTypeID> CreateContainerType(global::Mruv.ContainerType request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.ContainerType> GetContainerType(global::Mruv.ContainerTypeID request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.ContainerID> DeleteContainerType(global::Mruv.ContainerTypeID request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task GetContainerTypes(global::Mruv.GetContainerTypesRequest request, grpc::IServerStreamWriter<global::Mruv.ContainerType> responseStream, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -451,22 +472,6 @@ namespace Mruv {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetItem, null, options, request);
       }
-      public virtual global::Mruv.ItemID UpdateItem(global::Mruv.Item request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return UpdateItem(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      public virtual global::Mruv.ItemID UpdateItem(global::Mruv.Item request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_UpdateItem, null, options, request);
-      }
-      public virtual grpc::AsyncUnaryCall<global::Mruv.ItemID> UpdateItemAsync(global::Mruv.Item request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return UpdateItemAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      public virtual grpc::AsyncUnaryCall<global::Mruv.ItemID> UpdateItemAsync(global::Mruv.Item request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_UpdateItem, null, options, request);
-      }
       public virtual global::Mruv.ItemID DeleteItem(global::Mruv.ItemID request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return DeleteItem(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -558,22 +563,6 @@ namespace Mruv {
       public virtual grpc::AsyncUnaryCall<global::Mruv.ItemType> GetItemTypeAsync(global::Mruv.ItemTypeID request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetItemType, null, options, request);
-      }
-      public virtual global::Mruv.ItemTypeID UpdateItemType(global::Mruv.ItemType request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return UpdateItemType(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      public virtual global::Mruv.ItemTypeID UpdateItemType(global::Mruv.ItemType request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_UpdateItemType, null, options, request);
-      }
-      public virtual grpc::AsyncUnaryCall<global::Mruv.ItemTypeID> UpdateItemTypeAsync(global::Mruv.ItemType request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return UpdateItemTypeAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      public virtual grpc::AsyncUnaryCall<global::Mruv.ItemTypeID> UpdateItemTypeAsync(global::Mruv.ItemType request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_UpdateItemType, null, options, request);
       }
       public virtual global::Mruv.ItemTypeID DeleteItemType(global::Mruv.ItemTypeID request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
@@ -667,22 +656,6 @@ namespace Mruv {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetContainer, null, options, request);
       }
-      public virtual global::Mruv.ContainerID UpdateContainer(global::Mruv.Container request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return UpdateContainer(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      public virtual global::Mruv.ContainerID UpdateContainer(global::Mruv.Container request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_UpdateContainer, null, options, request);
-      }
-      public virtual grpc::AsyncUnaryCall<global::Mruv.ContainerID> UpdateContainerAsync(global::Mruv.Container request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return UpdateContainerAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      public virtual grpc::AsyncUnaryCall<global::Mruv.ContainerID> UpdateContainerAsync(global::Mruv.Container request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_UpdateContainer, null, options, request);
-      }
       public virtual global::Mruv.ContainerID DeleteContainer(global::Mruv.ContainerID request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return DeleteContainer(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -714,6 +687,90 @@ namespace Mruv {
       public virtual grpc::AsyncUnaryCall<global::Mruv.GetContainersResponse> GetContainersAsync(global::Mruv.GetContainersRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetContainers, null, options, request);
+      }
+      /// <summary>
+      ///CRUD container types
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Mruv.ContainerTypeID CreateContainerType(global::Mruv.ContainerType request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return CreateContainerType(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      ///CRUD container types
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Mruv.ContainerTypeID CreateContainerType(global::Mruv.ContainerType request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_CreateContainerType, null, options, request);
+      }
+      /// <summary>
+      ///CRUD container types
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Mruv.ContainerTypeID> CreateContainerTypeAsync(global::Mruv.ContainerType request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return CreateContainerTypeAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      ///CRUD container types
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Mruv.ContainerTypeID> CreateContainerTypeAsync(global::Mruv.ContainerType request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_CreateContainerType, null, options, request);
+      }
+      public virtual global::Mruv.ContainerType GetContainerType(global::Mruv.ContainerTypeID request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetContainerType(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Mruv.ContainerType GetContainerType(global::Mruv.ContainerTypeID request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetContainerType, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Mruv.ContainerType> GetContainerTypeAsync(global::Mruv.ContainerTypeID request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetContainerTypeAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Mruv.ContainerType> GetContainerTypeAsync(global::Mruv.ContainerTypeID request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetContainerType, null, options, request);
+      }
+      public virtual global::Mruv.ContainerID DeleteContainerType(global::Mruv.ContainerTypeID request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteContainerType(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Mruv.ContainerID DeleteContainerType(global::Mruv.ContainerTypeID request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_DeleteContainerType, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Mruv.ContainerID> DeleteContainerTypeAsync(global::Mruv.ContainerTypeID request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteContainerTypeAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Mruv.ContainerID> DeleteContainerTypeAsync(global::Mruv.ContainerTypeID request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_DeleteContainerType, null, options, request);
+      }
+      public virtual grpc::AsyncServerStreamingCall<global::Mruv.ContainerType> GetContainerTypes(global::Mruv.GetContainerTypesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetContainerTypes(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncServerStreamingCall<global::Mruv.ContainerType> GetContainerTypes(global::Mruv.GetContainerTypesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncServerStreamingCall(__Method_GetContainerTypes, null, options, request);
       }
       /// <summary>
       ///Container Methods
@@ -969,19 +1026,20 @@ namespace Mruv {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_CreateItem, serviceImpl.CreateItem)
           .AddMethod(__Method_GetItem, serviceImpl.GetItem)
-          .AddMethod(__Method_UpdateItem, serviceImpl.UpdateItem)
           .AddMethod(__Method_DeleteItem, serviceImpl.DeleteItem)
           .AddMethod(__Method_GetItems, serviceImpl.GetItems)
           .AddMethod(__Method_CreateItemType, serviceImpl.CreateItemType)
           .AddMethod(__Method_GetItemType, serviceImpl.GetItemType)
-          .AddMethod(__Method_UpdateItemType, serviceImpl.UpdateItemType)
           .AddMethod(__Method_DeleteItemType, serviceImpl.DeleteItemType)
           .AddMethod(__Method_GetItemTypes, serviceImpl.GetItemTypes)
           .AddMethod(__Method_CreateContainer, serviceImpl.CreateContainer)
           .AddMethod(__Method_GetContainer, serviceImpl.GetContainer)
-          .AddMethod(__Method_UpdateContainer, serviceImpl.UpdateContainer)
           .AddMethod(__Method_DeleteContainer, serviceImpl.DeleteContainer)
           .AddMethod(__Method_GetContainers, serviceImpl.GetContainers)
+          .AddMethod(__Method_CreateContainerType, serviceImpl.CreateContainerType)
+          .AddMethod(__Method_GetContainerType, serviceImpl.GetContainerType)
+          .AddMethod(__Method_DeleteContainerType, serviceImpl.DeleteContainerType)
+          .AddMethod(__Method_GetContainerTypes, serviceImpl.GetContainerTypes)
           .AddMethod(__Method_GetContainerItems, serviceImpl.GetContainerItems)
           .AddMethod(__Method_RemoveContainerItem, serviceImpl.RemoveContainerItem)
           .AddMethod(__Method_PutItem, serviceImpl.PutItem)
@@ -1000,19 +1058,20 @@ namespace Mruv {
     {
       serviceBinder.AddMethod(__Method_CreateItem, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Item, global::Mruv.ItemID>(serviceImpl.CreateItem));
       serviceBinder.AddMethod(__Method_GetItem, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.ItemID, global::Mruv.Item>(serviceImpl.GetItem));
-      serviceBinder.AddMethod(__Method_UpdateItem, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Item, global::Mruv.ItemID>(serviceImpl.UpdateItem));
       serviceBinder.AddMethod(__Method_DeleteItem, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.ItemID, global::Mruv.ItemID>(serviceImpl.DeleteItem));
       serviceBinder.AddMethod(__Method_GetItems, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.GetItemsRequest, global::Mruv.GetItemsResponse>(serviceImpl.GetItems));
       serviceBinder.AddMethod(__Method_CreateItemType, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.ItemType, global::Mruv.ItemTypeID>(serviceImpl.CreateItemType));
       serviceBinder.AddMethod(__Method_GetItemType, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.ItemTypeID, global::Mruv.ItemType>(serviceImpl.GetItemType));
-      serviceBinder.AddMethod(__Method_UpdateItemType, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.ItemType, global::Mruv.ItemTypeID>(serviceImpl.UpdateItemType));
       serviceBinder.AddMethod(__Method_DeleteItemType, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.ItemTypeID, global::Mruv.ItemTypeID>(serviceImpl.DeleteItemType));
       serviceBinder.AddMethod(__Method_GetItemTypes, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.GetItemTypesRequest, global::Mruv.GetItemTypesResponse>(serviceImpl.GetItemTypes));
       serviceBinder.AddMethod(__Method_CreateContainer, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Container, global::Mruv.ContainerID>(serviceImpl.CreateContainer));
       serviceBinder.AddMethod(__Method_GetContainer, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.ContainerID, global::Mruv.Container>(serviceImpl.GetContainer));
-      serviceBinder.AddMethod(__Method_UpdateContainer, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Container, global::Mruv.ContainerID>(serviceImpl.UpdateContainer));
       serviceBinder.AddMethod(__Method_DeleteContainer, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.ContainerID, global::Mruv.ContainerID>(serviceImpl.DeleteContainer));
       serviceBinder.AddMethod(__Method_GetContainers, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.GetContainersRequest, global::Mruv.GetContainersResponse>(serviceImpl.GetContainers));
+      serviceBinder.AddMethod(__Method_CreateContainerType, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.ContainerType, global::Mruv.ContainerTypeID>(serviceImpl.CreateContainerType));
+      serviceBinder.AddMethod(__Method_GetContainerType, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.ContainerTypeID, global::Mruv.ContainerType>(serviceImpl.GetContainerType));
+      serviceBinder.AddMethod(__Method_DeleteContainerType, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.ContainerTypeID, global::Mruv.ContainerID>(serviceImpl.DeleteContainerType));
+      serviceBinder.AddMethod(__Method_GetContainerTypes, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Mruv.GetContainerTypesRequest, global::Mruv.ContainerType>(serviceImpl.GetContainerTypes));
       serviceBinder.AddMethod(__Method_GetContainerItems, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.ContainerID, global::Mruv.GetContainerItemsResponse>(serviceImpl.GetContainerItems));
       serviceBinder.AddMethod(__Method_RemoveContainerItem, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.RemoveItemRequest, global::Mruv.Item>(serviceImpl.RemoveContainerItem));
       serviceBinder.AddMethod(__Method_PutItem, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.PutItemRequest, global::Mruv.ItemID>(serviceImpl.PutItem));
