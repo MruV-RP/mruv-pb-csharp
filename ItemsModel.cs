@@ -38,10 +38,11 @@ namespace Mruv {
             "BSJwCglDb250YWluZXISCgoCaWQYASABKAUSDwoHdHlwZV9pZBgCIAEoBRIP",
             "CgdpdGVtX2lkGAMgASgDEhQKDGl0ZW1zX2luc2lkZRgEIAEoBRIfCgVpdGVt",
             "cxgFIAMoCzIQLm1ydXYuSW5zaWRlSXRlbSIZCgtDb250YWluZXJJRBIKCgJp",
-            "ZBgBIAEoBSJ3CgpJbnNpZGVJdGVtEhQKDGNvbnRhaW5lcl9pZBgBIAEoBRIP",
-            "CgdpdGVtX2lkGAIgASgDEiAKCHBvc2l0aW9uGAMgASgLMg4ubXJ1di5Qb3Np",
-            "dGlvbhIgCghyb3RhdGlvbhgEIAEoCzIOLm1ydXYuUm90YXRpb25CJVojZ2l0",
-            "aHViLmNvbS9NcnVWLVJQL21ydXYtcGItZ28vaXRlbXNiBnByb3RvMw=="));
+            "ZBgBIAEoBSJ/CgpJbnNpZGVJdGVtEhQKDGNvbnRhaW5lcl9pZBgBIAEoBRIf",
+            "CgdpdGVtX2lkGAIgASgLMgwubXJ1di5JdGVtSURIABIaCgRpdGVtGAMgASgL",
+            "MgoubXJ1di5JdGVtSAASEAoIcG9zaXRpb24YBCABKAVCDAoKaXRlbV9vcl9p",
+            "ZEIlWiNnaXRodWIuY29tL01ydVYtUlAvbXJ1di1wYi1nby9pdGVtc2IGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Mruv.SpatialReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -53,7 +54,7 @@ namespace Mruv {
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.ContainerTypeID), global::Mruv.ContainerTypeID.Parser, new[]{ "Id" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Container), global::Mruv.Container.Parser, new[]{ "Id", "TypeId", "ItemId", "ItemsInside", "Items" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.ContainerID), global::Mruv.ContainerID.Parser, new[]{ "Id" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.InsideItem), global::Mruv.InsideItem.Parser, new[]{ "ContainerId", "ItemId", "Position", "Rotation" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.InsideItem), global::Mruv.InsideItem.Parser, new[]{ "ContainerId", "ItemId", "Item", "Position" }, new[]{ "ItemOrId" }, null, null)
           }));
     }
     #endregion
@@ -1607,9 +1608,16 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public InsideItem(InsideItem other) : this() {
       containerId_ = other.containerId_;
-      itemId_ = other.itemId_;
-      position_ = other.position_ != null ? other.position_.Clone() : null;
-      rotation_ = other.rotation_ != null ? other.rotation_.Clone() : null;
+      position_ = other.position_;
+      switch (other.ItemOrIdCase) {
+        case ItemOrIdOneofCase.ItemId:
+          ItemId = other.ItemId.Clone();
+          break;
+        case ItemOrIdOneofCase.Item:
+          Item = other.Item.Clone();
+          break;
+      }
+
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1631,35 +1639,54 @@ namespace Mruv {
 
     /// <summary>Field number for the "item_id" field.</summary>
     public const int ItemIdFieldNumber = 2;
-    private long itemId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long ItemId {
-      get { return itemId_; }
+    public global::Mruv.ItemID ItemId {
+      get { return itemOrIdCase_ == ItemOrIdOneofCase.ItemId ? (global::Mruv.ItemID) itemOrId_ : null; }
       set {
-        itemId_ = value;
+        itemOrId_ = value;
+        itemOrIdCase_ = value == null ? ItemOrIdOneofCase.None : ItemOrIdOneofCase.ItemId;
+      }
+    }
+
+    /// <summary>Field number for the "item" field.</summary>
+    public const int ItemFieldNumber = 3;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Mruv.Item Item {
+      get { return itemOrIdCase_ == ItemOrIdOneofCase.Item ? (global::Mruv.Item) itemOrId_ : null; }
+      set {
+        itemOrId_ = value;
+        itemOrIdCase_ = value == null ? ItemOrIdOneofCase.None : ItemOrIdOneofCase.Item;
       }
     }
 
     /// <summary>Field number for the "position" field.</summary>
-    public const int PositionFieldNumber = 3;
-    private global::Mruv.Position position_;
+    public const int PositionFieldNumber = 4;
+    private int position_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Mruv.Position Position {
+    public int Position {
       get { return position_; }
       set {
         position_ = value;
       }
     }
 
-    /// <summary>Field number for the "rotation" field.</summary>
-    public const int RotationFieldNumber = 4;
-    private global::Mruv.Rotation rotation_;
+    private object itemOrId_;
+    /// <summary>Enum of possible cases for the "item_or_id" oneof.</summary>
+    public enum ItemOrIdOneofCase {
+      None = 0,
+      ItemId = 2,
+      Item = 3,
+    }
+    private ItemOrIdOneofCase itemOrIdCase_ = ItemOrIdOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Mruv.Rotation Rotation {
-      get { return rotation_; }
-      set {
-        rotation_ = value;
-      }
+    public ItemOrIdOneofCase ItemOrIdCase {
+      get { return itemOrIdCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearItemOrId() {
+      itemOrIdCase_ = ItemOrIdOneofCase.None;
+      itemOrId_ = null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1676,9 +1703,10 @@ namespace Mruv {
         return true;
       }
       if (ContainerId != other.ContainerId) return false;
-      if (ItemId != other.ItemId) return false;
-      if (!object.Equals(Position, other.Position)) return false;
-      if (!object.Equals(Rotation, other.Rotation)) return false;
+      if (!object.Equals(ItemId, other.ItemId)) return false;
+      if (!object.Equals(Item, other.Item)) return false;
+      if (Position != other.Position) return false;
+      if (ItemOrIdCase != other.ItemOrIdCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1686,9 +1714,10 @@ namespace Mruv {
     public override int GetHashCode() {
       int hash = 1;
       if (ContainerId != 0) hash ^= ContainerId.GetHashCode();
-      if (ItemId != 0L) hash ^= ItemId.GetHashCode();
-      if (position_ != null) hash ^= Position.GetHashCode();
-      if (rotation_ != null) hash ^= Rotation.GetHashCode();
+      if (itemOrIdCase_ == ItemOrIdOneofCase.ItemId) hash ^= ItemId.GetHashCode();
+      if (itemOrIdCase_ == ItemOrIdOneofCase.Item) hash ^= Item.GetHashCode();
+      if (Position != 0) hash ^= Position.GetHashCode();
+      hash ^= (int) itemOrIdCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1706,17 +1735,17 @@ namespace Mruv {
         output.WriteRawTag(8);
         output.WriteInt32(ContainerId);
       }
-      if (ItemId != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(ItemId);
+      if (itemOrIdCase_ == ItemOrIdOneofCase.ItemId) {
+        output.WriteRawTag(18);
+        output.WriteMessage(ItemId);
       }
-      if (position_ != null) {
+      if (itemOrIdCase_ == ItemOrIdOneofCase.Item) {
         output.WriteRawTag(26);
-        output.WriteMessage(Position);
+        output.WriteMessage(Item);
       }
-      if (rotation_ != null) {
-        output.WriteRawTag(34);
-        output.WriteMessage(Rotation);
+      if (Position != 0) {
+        output.WriteRawTag(32);
+        output.WriteInt32(Position);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -1729,14 +1758,14 @@ namespace Mruv {
       if (ContainerId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(ContainerId);
       }
-      if (ItemId != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(ItemId);
+      if (itemOrIdCase_ == ItemOrIdOneofCase.ItemId) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ItemId);
       }
-      if (position_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Position);
+      if (itemOrIdCase_ == ItemOrIdOneofCase.Item) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Item);
       }
-      if (rotation_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Rotation);
+      if (Position != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Position);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1752,21 +1781,24 @@ namespace Mruv {
       if (other.ContainerId != 0) {
         ContainerId = other.ContainerId;
       }
-      if (other.ItemId != 0L) {
-        ItemId = other.ItemId;
+      if (other.Position != 0) {
+        Position = other.Position;
       }
-      if (other.position_ != null) {
-        if (position_ == null) {
-          Position = new global::Mruv.Position();
-        }
-        Position.MergeFrom(other.Position);
+      switch (other.ItemOrIdCase) {
+        case ItemOrIdOneofCase.ItemId:
+          if (ItemId == null) {
+            ItemId = new global::Mruv.ItemID();
+          }
+          ItemId.MergeFrom(other.ItemId);
+          break;
+        case ItemOrIdOneofCase.Item:
+          if (Item == null) {
+            Item = new global::Mruv.Item();
+          }
+          Item.MergeFrom(other.Item);
+          break;
       }
-      if (other.rotation_ != null) {
-        if (rotation_ == null) {
-          Rotation = new global::Mruv.Rotation();
-        }
-        Rotation.MergeFrom(other.Rotation);
-      }
+
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -1782,22 +1814,26 @@ namespace Mruv {
             ContainerId = input.ReadInt32();
             break;
           }
-          case 16: {
-            ItemId = input.ReadInt64();
+          case 18: {
+            global::Mruv.ItemID subBuilder = new global::Mruv.ItemID();
+            if (itemOrIdCase_ == ItemOrIdOneofCase.ItemId) {
+              subBuilder.MergeFrom(ItemId);
+            }
+            input.ReadMessage(subBuilder);
+            ItemId = subBuilder;
             break;
           }
           case 26: {
-            if (position_ == null) {
-              Position = new global::Mruv.Position();
+            global::Mruv.Item subBuilder = new global::Mruv.Item();
+            if (itemOrIdCase_ == ItemOrIdOneofCase.Item) {
+              subBuilder.MergeFrom(Item);
             }
-            input.ReadMessage(Position);
+            input.ReadMessage(subBuilder);
+            Item = subBuilder;
             break;
           }
-          case 34: {
-            if (rotation_ == null) {
-              Rotation = new global::Mruv.Rotation();
-            }
-            input.ReadMessage(Rotation);
+          case 32: {
+            Position = input.ReadInt32();
             break;
           }
         }
