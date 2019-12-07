@@ -26,16 +26,17 @@ namespace Mruv {
           string.Concat(
             "Chlncm91cHMvZ3JvdXBzX21vZGVsLnByb3RvEgRtcnV2IiAKBFVzZXISCgoC",
             "aWQYASABKAUSDAoEbmFtZRgCIAEoCSIoCgpQZXJtaXNzaW9uEgwKBG5hbWUY",
-            "ASABKAkSDAoEcm9sZRgCIAEoCSJVCgVHcm91cBIKCgJpZBgBIAEoBRIlCgtw",
-            "ZXJtaXNzaW9ucxgDIAMoCzIQLm1ydXYuUGVybWlzc2lvbhIZCgV1c2VycxgE",
-            "IAMoCzIKLm1ydXYuVXNlckImWiRnaXRodWIuY29tL01ydVYtUlAvbXJ1di1w",
-            "Yi1nby9ncm91cHNiBnByb3RvMw=="));
+            "ASABKAkSDAoEcm9sZRgCIAEoCSJ4CgVHcm91cBIKCgJpZBgBIAEoBRIMCgRu",
+            "YW1lGAMgASgJEhMKC2Rlc2NyaXB0aW9uGAQgASgJEiUKC3Blcm1pc3Npb25z",
+            "GAUgAygLMhAubXJ1di5QZXJtaXNzaW9uEhkKBXVzZXJzGAYgAygLMgoubXJ1",
+            "di5Vc2VyQiZaJGdpdGh1Yi5jb20vTXJ1Vi1SUC9tcnV2LXBiLWdvL2dyb3Vw",
+            "c2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.User), global::Mruv.User.Parser, new[]{ "Id", "Name" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Permission), global::Mruv.Permission.Parser, new[]{ "Name", "Role" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Group), global::Mruv.Group.Parser, new[]{ "Id", "Permissions", "Users" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Group), global::Mruv.Group.Parser, new[]{ "Id", "Name", "Description", "Permissions", "Users" }, null, null, null)
           }));
     }
     #endregion
@@ -382,6 +383,8 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public Group(Group other) : this() {
       id_ = other.id_;
+      name_ = other.name_;
+      description_ = other.description_;
       permissions_ = other.permissions_.Clone();
       users_ = other.users_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -403,10 +406,32 @@ namespace Mruv {
       }
     }
 
+    /// <summary>Field number for the "name" field.</summary>
+    public const int NameFieldNumber = 3;
+    private string name_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Name {
+      get { return name_; }
+      set {
+        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "description" field.</summary>
+    public const int DescriptionFieldNumber = 4;
+    private string description_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Description {
+      get { return description_; }
+      set {
+        description_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     /// <summary>Field number for the "permissions" field.</summary>
-    public const int PermissionsFieldNumber = 3;
+    public const int PermissionsFieldNumber = 5;
     private static readonly pb::FieldCodec<global::Mruv.Permission> _repeated_permissions_codec
-        = pb::FieldCodec.ForMessage(26, global::Mruv.Permission.Parser);
+        = pb::FieldCodec.ForMessage(42, global::Mruv.Permission.Parser);
     private readonly pbc::RepeatedField<global::Mruv.Permission> permissions_ = new pbc::RepeatedField<global::Mruv.Permission>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Mruv.Permission> Permissions {
@@ -414,9 +439,9 @@ namespace Mruv {
     }
 
     /// <summary>Field number for the "users" field.</summary>
-    public const int UsersFieldNumber = 4;
+    public const int UsersFieldNumber = 6;
     private static readonly pb::FieldCodec<global::Mruv.User> _repeated_users_codec
-        = pb::FieldCodec.ForMessage(34, global::Mruv.User.Parser);
+        = pb::FieldCodec.ForMessage(50, global::Mruv.User.Parser);
     private readonly pbc::RepeatedField<global::Mruv.User> users_ = new pbc::RepeatedField<global::Mruv.User>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Mruv.User> Users {
@@ -437,6 +462,8 @@ namespace Mruv {
         return true;
       }
       if (Id != other.Id) return false;
+      if (Name != other.Name) return false;
+      if (Description != other.Description) return false;
       if(!permissions_.Equals(other.permissions_)) return false;
       if(!users_.Equals(other.users_)) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -446,6 +473,8 @@ namespace Mruv {
     public override int GetHashCode() {
       int hash = 1;
       if (Id != 0) hash ^= Id.GetHashCode();
+      if (Name.Length != 0) hash ^= Name.GetHashCode();
+      if (Description.Length != 0) hash ^= Description.GetHashCode();
       hash ^= permissions_.GetHashCode();
       hash ^= users_.GetHashCode();
       if (_unknownFields != null) {
@@ -465,6 +494,14 @@ namespace Mruv {
         output.WriteRawTag(8);
         output.WriteInt32(Id);
       }
+      if (Name.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Name);
+      }
+      if (Description.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(Description);
+      }
       permissions_.WriteTo(output, _repeated_permissions_codec);
       users_.WriteTo(output, _repeated_users_codec);
       if (_unknownFields != null) {
@@ -477,6 +514,12 @@ namespace Mruv {
       int size = 0;
       if (Id != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
+      }
+      if (Name.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+      }
+      if (Description.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Description);
       }
       size += permissions_.CalculateSize(_repeated_permissions_codec);
       size += users_.CalculateSize(_repeated_users_codec);
@@ -493,6 +536,12 @@ namespace Mruv {
       }
       if (other.Id != 0) {
         Id = other.Id;
+      }
+      if (other.Name.Length != 0) {
+        Name = other.Name;
+      }
+      if (other.Description.Length != 0) {
+        Description = other.Description;
       }
       permissions_.Add(other.permissions_);
       users_.Add(other.users_);
@@ -512,10 +561,18 @@ namespace Mruv {
             break;
           }
           case 26: {
-            permissions_.AddEntriesFrom(input, _repeated_permissions_codec);
+            Name = input.ReadString();
             break;
           }
           case 34: {
+            Description = input.ReadString();
+            break;
+          }
+          case 42: {
+            permissions_.AddEntriesFrom(input, _repeated_permissions_codec);
+            break;
+          }
+          case 50: {
             users_.AddEntriesFrom(input, _repeated_users_codec);
             break;
           }

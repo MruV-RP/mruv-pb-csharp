@@ -27,86 +27,84 @@ namespace Mruv {
             "ChFpdGVtcy9pdGVtcy5wcm90bxIEbXJ1dhocZ29vZ2xlL2FwaS9hbm5vdGF0",
             "aW9ucy5wcm90bxoTY29tbW9uL2hlYWx0aC5wcm90bxoXaXRlbXMvaXRlbXNf",
             "bW9kZWwucHJvdG8aFGNvbW1vbi9zcGF0aWFsLnByb3RvIiAKD0dldEl0ZW1z",
-            "UmVxdWVzdBINCgVsaW1pdBgBIAEoBSItChBHZXRJdGVtc1Jlc3BvbnNlEhkK",
+            "UmVxdWVzdBINCgVsaW1pdBgBIAEoDSItChBHZXRJdGVtc1Jlc3BvbnNlEhkK",
             "BWl0ZW1zGAEgAygLMgoubXJ1di5JdGVtIiQKE0dldEl0ZW1UeXBlc1JlcXVl",
-            "c3QSDQoFbGltaXQYASABKAUiOgoUR2V0SXRlbVR5cGVzUmVzcG9uc2USIgoK",
+            "c3QSDQoFbGltaXQYASABKA0iOgoUR2V0SXRlbVR5cGVzUmVzcG9uc2USIgoK",
             "aXRlbV90eXBlcxgBIAMoCzIOLm1ydXYuSXRlbVR5cGUiJQoUR2V0Q29udGFp",
-            "bmVyc1JlcXVlc3QSDQoFbGltaXQYASABKAUiPAoVR2V0Q29udGFpbmVyc1Jl",
+            "bmVyc1JlcXVlc3QSDQoFbGltaXQYASABKA0iPAoVR2V0Q29udGFpbmVyc1Jl",
             "c3BvbnNlEiMKCmNvbnRhaW5lcnMYASADKAsyDy5tcnV2LkNvbnRhaW5lciIp",
-            "ChhHZXRDb250YWluZXJUeXBlc1JlcXVlc3QSDQoFbGltaXQYASABKAUiSQoZ",
+            "ChhHZXRDb250YWluZXJUeXBlc1JlcXVlc3QSDQoFbGltaXQYASABKA0iSQoZ",
             "R2V0Q29udGFpbmVyVHlwZXNSZXNwb25zZRIsCg9jb250YWluZXJfdHlwZXMY",
             "ASADKAsyEy5tcnV2LkNvbnRhaW5lclR5cGUicQoOUHV0SXRlbVJlcXVlc3QS",
             "JwoMY29udGFpbmVyX2lkGAEgASgLMhEubXJ1di5Db250YWluZXJJRBIdCgdp",
             "dGVtX2lkGAIgASgLMgwubXJ1di5JdGVtSUQSDgoEc2xvdBgDIAEoBUgAQgcK",
-            "BXdoZXJlIisKD1Rha2VJdGVtUmVxdWVzdBIYCgJpZBgBIAEoCzIMLm1ydXYu",
-            "SXRlbUlEIiwKEFRha2VJdGVtUmVzcG9uc2USGAoEaXRlbRgBIAEoCzIKLm1y",
-            "dXYuSXRlbSJSChhHZXRDb250YWluZXJJdGVtc1JlcXVlc3QSJwoMY29udGFp",
-            "bmVyX2lkGAEgASgLMhEubXJ1di5Db250YWluZXJJRBINCgVsaW1pdBgCIAEo",
-            "BSI8ChlHZXRDb250YWluZXJJdGVtc1Jlc3BvbnNlEh8KBWl0ZW1zGAEgAygL",
-            "MhAubXJ1di5JbnNpZGVJdGVtIlsKEVJlbW92ZUl0ZW1SZXF1ZXN0EicKDGNv",
-            "bnRhaW5lcl9pZBgBIAEoCzIRLm1ydXYuQ29udGFpbmVySUQSHQoHaXRlbV9p",
-            "ZBgCIAEoCzIMLm1ydXYuSXRlbUlEIkwKEFNvcnRJdGVtc1JlcXVlc3QSJwoM",
-            "Y29udGFpbmVyX2lkGAEgASgLMhEubXJ1di5Db250YWluZXJJRBIPCgdzb3J0",
-            "X2J5GAIgASgJIi4KEVNvcnRJdGVtc1Jlc3BvbnNlEhkKBWl0ZW1zGAEgAygL",
-            "MgoubXJ1di5JdGVtImoKFkdldE5lYXJlc3RJdGVtc1JlcXVlc3QSJwoPcGxh",
-            "eWVyX3Bvc2l0aW9uGAEgASgLMg4ubXJ1di5Qb3NpdGlvbhInCgxjb250YWlu",
-            "ZXJfaWQYAiABKAsyES5tcnV2LkNvbnRhaW5lcklEIjkKF0dldE5lYXJlc3RJ",
-            "dGVtc1Jlc3BvbnNlEh4KBGl0ZW0YASADKAsyEC5tcnV2Lkluc2lkZUl0ZW0i",
-            "LwoOVXNlSXRlbVJlcXVlc3QSHQoHaXRlbV9pZBgBIAEoCzIMLm1ydXYuSXRl",
-            "bUlEIiIKD1VzZUl0ZW1SZXNwb25zZRIPCgdzdWNjZXNzGAEgASgIMqUSCg9N",
-            "cnVWSXRlbVNlcnZpY2USOQoKQ3JlYXRlSXRlbRIKLm1ydXYuSXRlbRoMLm1y",
-            "dXYuSXRlbUlEIhGC0+STAgsiCS92MS9pdGVtcxI7CgdHZXRJdGVtEgwubXJ1",
-            "di5JdGVtSUQaCi5tcnV2Lkl0ZW0iFoLT5JMCEBIOL3YxL2l0ZW1zL3tpZH0S",
-            "QAoKRGVsZXRlSXRlbRIMLm1ydXYuSXRlbUlEGgwubXJ1di5JdGVtSUQiFoLT",
-            "5JMCECoOL3YxL2l0ZW1zL3tpZH0STAoIR2V0SXRlbXMSFS5tcnV2LkdldEl0",
-            "ZW1zUmVxdWVzdBoWLm1ydXYuR2V0SXRlbXNSZXNwb25zZSIRgtPkkwILEgkv",
-            "djEvaXRlbXMSSQoOQ3JlYXRlSXRlbVR5cGUSDi5tcnV2Lkl0ZW1UeXBlGhAu",
-            "bXJ1di5JdGVtVHlwZUlEIhWC0+STAg8iDS92MS9pdGVtVHlwZXMSSwoLR2V0",
-            "SXRlbVR5cGUSEC5tcnV2Lkl0ZW1UeXBlSUQaDi5tcnV2Lkl0ZW1UeXBlIhqC",
-            "0+STAhQSEi92MS9pdGVtVHlwZXMve2lkfRJQCg5EZWxldGVJdGVtVHlwZRIQ",
-            "Lm1ydXYuSXRlbVR5cGVJRBoQLm1ydXYuSXRlbVR5cGVJRCIagtPkkwIUKhIv",
-            "djEvaXRlbVR5cGVzL3tpZH0SXAoMR2V0SXRlbVR5cGVzEhkubXJ1di5HZXRJ",
-            "dGVtVHlwZXNSZXF1ZXN0GhoubXJ1di5HZXRJdGVtVHlwZXNSZXNwb25zZSIV",
-            "gtPkkwIPEg0vdjEvaXRlbVR5cGVzEk0KD0NyZWF0ZUNvbnRhaW5lchIPLm1y",
-            "dXYuQ29udGFpbmVyGhEubXJ1di5Db250YWluZXJJRCIWgtPkkwIQIg4vdjEv",
-            "Y29udGFpbmVycxJPCgxHZXRDb250YWluZXISES5tcnV2LkNvbnRhaW5lcklE",
-            "Gg8ubXJ1di5Db250YWluZXIiG4LT5JMCFRITL3YxL2NvbnRhaW5lcnMve2lk",
-            "fRJUCg9EZWxldGVDb250YWluZXISES5tcnV2LkNvbnRhaW5lcklEGhEubXJ1",
-            "di5Db250YWluZXJJRCIbgtPkkwIVKhMvdjEvY29udGFpbmVycy97aWR9EmAK",
-            "DUdldENvbnRhaW5lcnMSGi5tcnV2LkdldENvbnRhaW5lcnNSZXF1ZXN0Ghsu",
-            "bXJ1di5HZXRDb250YWluZXJzUmVzcG9uc2UiFoLT5JMCEBIOL3YxL2NvbnRh",
-            "aW5lcnMSXQoTQ3JlYXRlQ29udGFpbmVyVHlwZRITLm1ydXYuQ29udGFpbmVy",
-            "VHlwZRoVLm1ydXYuQ29udGFpbmVyVHlwZUlEIhqC0+STAhQiEi92MS9jb250",
-            "YWluZXJUeXBlcxJfChBHZXRDb250YWluZXJUeXBlEhUubXJ1di5Db250YWlu",
-            "ZXJUeXBlSUQaEy5tcnV2LkNvbnRhaW5lclR5cGUiH4LT5JMCGRIXL3YxL2Nv",
-            "bnRhaW5lclR5cGVzL3tpZH0SZAoTRGVsZXRlQ29udGFpbmVyVHlwZRIVLm1y",
-            "dXYuQ29udGFpbmVyVHlwZUlEGhUubXJ1di5Db250YWluZXJUeXBlSUQiH4LT",
-            "5JMCGSoXL3YxL2NvbnRhaW5lclR5cGVzL3tpZH0ScAoRR2V0Q29udGFpbmVy",
-            "VHlwZXMSHi5tcnV2LkdldENvbnRhaW5lclR5cGVzUmVxdWVzdBofLm1ydXYu",
-            "R2V0Q29udGFpbmVyVHlwZXNSZXNwb25zZSIagtPkkwIUEhIvdjEvY29udGFp",
-            "bmVyVHlwZXMShAEKEUdldENvbnRhaW5lckl0ZW1zEh4ubXJ1di5HZXRDb250",
-            "YWluZXJJdGVtc1JlcXVlc3QaHy5tcnV2LkdldENvbnRhaW5lckl0ZW1zUmVz",
-            "cG9uc2UiLoLT5JMCKBImL3YxL2NvbnRhaW5lcnMve2NvbnRhaW5lcl9pZC5p",
-            "ZH0vaXRlbXMSdwoTUmVtb3ZlQ29udGFpbmVySXRlbRIXLm1ydXYuUmVtb3Zl",
-            "SXRlbVJlcXVlc3QaCi5tcnV2Lkl0ZW0iO4LT5JMCNSozL3YxL2NvbnRhaW5l",
-            "cnMve2NvbnRhaW5lcl9pZC5pZH0vaXRlbXMve2l0ZW1faWQuaWR9EmoKB1B1",
-            "dEl0ZW0SFC5tcnV2LlB1dEl0ZW1SZXF1ZXN0GgwubXJ1di5JdGVtSUQiO4LT",
-            "5JMCNRozL3YxL2NvbnRhaW5lcnMve2NvbnRhaW5lcl9pZC5pZH0vaXRlbXMv",
-            "e2l0ZW1faWQuaWR9EnsKCVNvcnRJdGVtcxIWLm1ydXYuU29ydEl0ZW1zUmVx",
-            "dWVzdBoXLm1ydXYuU29ydEl0ZW1zUmVzcG9uc2UiPYLT5JMCNxI1L3YxL2Nv",
-            "bnRhaW5lcnMve2NvbnRhaW5lcl9pZC5pZH0vaXRlbXMvc29ydC97c29ydF9i",
-            "eX0SyAEKD0dldE5lYXJlc3RJdGVtcxIcLm1ydXYuR2V0TmVhcmVzdEl0ZW1z",
-            "UmVxdWVzdBodLm1ydXYuR2V0TmVhcmVzdEl0ZW1zUmVzcG9uc2UieILT5JMC",
-            "chJwL3YxL2NvbnRhaW5lcnMve2NvbnRhaW5lcl9pZC5pZH0vaXRlbXMvbmVh",
-            "cmVzdC94L3twbGF5ZXJfcG9zaXRpb24ueH0veS97cGxheWVyX3Bvc2l0aW9u",
-            "Lnl9L3ove3BsYXllcl9wb3NpdGlvbi56fRJaCgdVc2VJdGVtEhQubXJ1di5V",
-            "c2VJdGVtUmVxdWVzdBoVLm1ydXYuVXNlSXRlbVJlc3BvbnNlIiKC0+STAhwS",
-            "Gi92MS9pdGVtcy97aXRlbV9pZC5pZH0vdXNlEmUKEEdldFNlcnZpY2VTdGF0",
-            "dXMSGi5tcnV2LlNlcnZpY2VTdGF0dXNSZXF1ZXN0GhsubXJ1di5TZXJ2aWNl",
-            "U3RhdHVzUmVzcG9uc2UiGILT5JMCEhIQL3YxL2l0ZW1zL3N0YXR1cxJbChFH",
-            "ZXRTZXJ2aWNlVmVyc2lvbhIULm1ydXYuVmVyc2lvblJlcXVlc3QaFS5tcnV2",
-            "LlZlcnNpb25SZXNwb25zZSIZgtPkkwITEhEvdjEvaXRlbXMvdmVyc2lvbkIl",
-            "WiNnaXRodWIuY29tL01ydVYtUlAvbXJ1di1wYi1nby9pdGVtc2IGcHJvdG8z"));
+            "BXdoZXJlIlIKGEdldENvbnRhaW5lckl0ZW1zUmVxdWVzdBInCgxjb250YWlu",
+            "ZXJfaWQYASABKAsyES5tcnV2LkNvbnRhaW5lcklEEg0KBWxpbWl0GAIgASgN",
+            "IjwKGUdldENvbnRhaW5lckl0ZW1zUmVzcG9uc2USHwoFaXRlbXMYASADKAsy",
+            "EC5tcnV2Lkluc2lkZUl0ZW0iWQoPUHVsbEl0ZW1SZXF1ZXN0EicKDGNvbnRh",
+            "aW5lcl9pZBgBIAEoCzIRLm1ydXYuQ29udGFpbmVySUQSHQoHaXRlbV9pZBgC",
+            "IAEoCzIMLm1ydXYuSXRlbUlEIkwKEFNvcnRJdGVtc1JlcXVlc3QSJwoMY29u",
+            "dGFpbmVyX2lkGAEgASgLMhEubXJ1di5Db250YWluZXJJRBIPCgdzb3J0X2J5",
+            "GAIgASgJIi4KEVNvcnRJdGVtc1Jlc3BvbnNlEhkKBWl0ZW1zGAEgAygLMgou",
+            "bXJ1di5JdGVtInsKFkdldE5lYXJlc3RJdGVtc1JlcXVlc3QSIAoIcG9zaXRp",
+            "b24YASABKAsyDi5tcnV2LlBvc2l0aW9uEicKDGNvbnRhaW5lcl9pZBgCIAEo",
+            "CzIRLm1ydXYuQ29udGFpbmVySUQSFgoOZGlzdGFuY2VfbGltaXQYAyABKAEi",
+            "OQoXR2V0TmVhcmVzdEl0ZW1zUmVzcG9uc2USHgoEaXRlbRgBIAMoCzIQLm1y",
+            "dXYuSW5zaWRlSXRlbSIvCg5Vc2VJdGVtUmVxdWVzdBIdCgdpdGVtX2lkGAEg",
+            "ASgLMgwubXJ1di5JdGVtSUQiIgoPVXNlSXRlbVJlc3BvbnNlEg8KB3N1Y2Nl",
+            "c3MYASABKAgygxIKD01ydVZJdGVtU2VydmljZRI5CgpDcmVhdGVJdGVtEgou",
+            "bXJ1di5JdGVtGgwubXJ1di5JdGVtSUQiEYLT5JMCCyIJL3YxL2l0ZW1zEjsK",
+            "B0dldEl0ZW0SDC5tcnV2Lkl0ZW1JRBoKLm1ydXYuSXRlbSIWgtPkkwIQEg4v",
+            "djEvaXRlbXMve2lkfRJACgpEZWxldGVJdGVtEgwubXJ1di5JdGVtSUQaDC5t",
+            "cnV2Lkl0ZW1JRCIWgtPkkwIQKg4vdjEvaXRlbXMve2lkfRJMCghHZXRJdGVt",
+            "cxIVLm1ydXYuR2V0SXRlbXNSZXF1ZXN0GhYubXJ1di5HZXRJdGVtc1Jlc3Bv",
+            "bnNlIhGC0+STAgsSCS92MS9pdGVtcxJJCg5DcmVhdGVJdGVtVHlwZRIOLm1y",
+            "dXYuSXRlbVR5cGUaEC5tcnV2Lkl0ZW1UeXBlSUQiFYLT5JMCDyINL3YxL2l0",
+            "ZW1UeXBlcxJLCgtHZXRJdGVtVHlwZRIQLm1ydXYuSXRlbVR5cGVJRBoOLm1y",
+            "dXYuSXRlbVR5cGUiGoLT5JMCFBISL3YxL2l0ZW1UeXBlcy97aWR9ElAKDkRl",
+            "bGV0ZUl0ZW1UeXBlEhAubXJ1di5JdGVtVHlwZUlEGhAubXJ1di5JdGVtVHlw",
+            "ZUlEIhqC0+STAhQqEi92MS9pdGVtVHlwZXMve2lkfRJcCgxHZXRJdGVtVHlw",
+            "ZXMSGS5tcnV2LkdldEl0ZW1UeXBlc1JlcXVlc3QaGi5tcnV2LkdldEl0ZW1U",
+            "eXBlc1Jlc3BvbnNlIhWC0+STAg8SDS92MS9pdGVtVHlwZXMSTQoPQ3JlYXRl",
+            "Q29udGFpbmVyEg8ubXJ1di5Db250YWluZXIaES5tcnV2LkNvbnRhaW5lcklE",
+            "IhaC0+STAhAiDi92MS9jb250YWluZXJzEk8KDEdldENvbnRhaW5lchIRLm1y",
+            "dXYuQ29udGFpbmVySUQaDy5tcnV2LkNvbnRhaW5lciIbgtPkkwIVEhMvdjEv",
+            "Y29udGFpbmVycy97aWR9ElQKD0RlbGV0ZUNvbnRhaW5lchIRLm1ydXYuQ29u",
+            "dGFpbmVySUQaES5tcnV2LkNvbnRhaW5lcklEIhuC0+STAhUqEy92MS9jb250",
+            "YWluZXJzL3tpZH0SYAoNR2V0Q29udGFpbmVycxIaLm1ydXYuR2V0Q29udGFp",
+            "bmVyc1JlcXVlc3QaGy5tcnV2LkdldENvbnRhaW5lcnNSZXNwb25zZSIWgtPk",
+            "kwIQEg4vdjEvY29udGFpbmVycxJdChNDcmVhdGVDb250YWluZXJUeXBlEhMu",
+            "bXJ1di5Db250YWluZXJUeXBlGhUubXJ1di5Db250YWluZXJUeXBlSUQiGoLT",
+            "5JMCFCISL3YxL2NvbnRhaW5lclR5cGVzEl8KEEdldENvbnRhaW5lclR5cGUS",
+            "FS5tcnV2LkNvbnRhaW5lclR5cGVJRBoTLm1ydXYuQ29udGFpbmVyVHlwZSIf",
+            "gtPkkwIZEhcvdjEvY29udGFpbmVyVHlwZXMve2lkfRJkChNEZWxldGVDb250",
+            "YWluZXJUeXBlEhUubXJ1di5Db250YWluZXJUeXBlSUQaFS5tcnV2LkNvbnRh",
+            "aW5lclR5cGVJRCIfgtPkkwIZKhcvdjEvY29udGFpbmVyVHlwZXMve2lkfRJw",
+            "ChFHZXRDb250YWluZXJUeXBlcxIeLm1ydXYuR2V0Q29udGFpbmVyVHlwZXNS",
+            "ZXF1ZXN0Gh8ubXJ1di5HZXRDb250YWluZXJUeXBlc1Jlc3BvbnNlIhqC0+ST",
+            "AhQSEi92MS9jb250YWluZXJUeXBlcxKEAQoRR2V0Q29udGFpbmVySXRlbXMS",
+            "Hi5tcnV2LkdldENvbnRhaW5lckl0ZW1zUmVxdWVzdBofLm1ydXYuR2V0Q29u",
+            "dGFpbmVySXRlbXNSZXNwb25zZSIugtPkkwIoEiYvdjEvY29udGFpbmVycy97",
+            "Y29udGFpbmVyX2lkLmlkfS9pdGVtcxJqCghQdWxsSXRlbRIVLm1ydXYuUHVs",
+            "bEl0ZW1SZXF1ZXN0GgoubXJ1di5JdGVtIjuC0+STAjUqMy92MS9jb250YWlu",
+            "ZXJzL3tjb250YWluZXJfaWQuaWR9L2l0ZW1zL3tpdGVtX2lkLmlkfRJqCgdQ",
+            "dXRJdGVtEhQubXJ1di5QdXRJdGVtUmVxdWVzdBoMLm1ydXYuSXRlbUlEIjuC",
+            "0+STAjUaMy92MS9jb250YWluZXJzL3tjb250YWluZXJfaWQuaWR9L2l0ZW1z",
+            "L3tpdGVtX2lkLmlkfRJ7CglTb3J0SXRlbXMSFi5tcnV2LlNvcnRJdGVtc1Jl",
+            "cXVlc3QaFy5tcnV2LlNvcnRJdGVtc1Jlc3BvbnNlIj2C0+STAjcSNS92MS9j",
+            "b250YWluZXJzL3tjb250YWluZXJfaWQuaWR9L2l0ZW1zL3NvcnQve3NvcnRf",
+            "Ynl9ErMBCg9HZXROZWFyZXN0SXRlbXMSHC5tcnV2LkdldE5lYXJlc3RJdGVt",
+            "c1JlcXVlc3QaHS5tcnV2LkdldE5lYXJlc3RJdGVtc1Jlc3BvbnNlImOC0+ST",
+            "Al0SWy92MS9jb250YWluZXJzL3tjb250YWluZXJfaWQuaWR9L2l0ZW1zL25l",
+            "YXJlc3QveC97cG9zaXRpb24ueH0veS97cG9zaXRpb24ueX0vei97cG9zaXRp",
+            "b24uen0SWgoHVXNlSXRlbRIULm1ydXYuVXNlSXRlbVJlcXVlc3QaFS5tcnV2",
+            "LlVzZUl0ZW1SZXNwb25zZSIigtPkkwIcEhovdjEvaXRlbXMve2l0ZW1faWQu",
+            "aWR9L3VzZRJlChBHZXRTZXJ2aWNlU3RhdHVzEhoubXJ1di5TZXJ2aWNlU3Rh",
+            "dHVzUmVxdWVzdBobLm1ydXYuU2VydmljZVN0YXR1c1Jlc3BvbnNlIhiC0+ST",
+            "AhISEC92MS9pdGVtcy9zdGF0dXMSWwoRR2V0U2VydmljZVZlcnNpb24SFC5t",
+            "cnV2LlZlcnNpb25SZXF1ZXN0GhUubXJ1di5WZXJzaW9uUmVzcG9uc2UiGYLT",
+            "5JMCExIRL3YxL2l0ZW1zL3ZlcnNpb25CJVojZ2l0aHViLmNvbS9NcnVWLVJQ",
+            "L21ydXYtcGItZ28vaXRlbXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, global::Mruv.HealthReflection.Descriptor, global::Mruv.ItemsModelReflection.Descriptor, global::Mruv.SpatialReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -119,14 +117,12 @@ namespace Mruv {
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetContainerTypesRequest), global::Mruv.GetContainerTypesRequest.Parser, new[]{ "Limit" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetContainerTypesResponse), global::Mruv.GetContainerTypesResponse.Parser, new[]{ "ContainerTypes" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.PutItemRequest), global::Mruv.PutItemRequest.Parser, new[]{ "ContainerId", "ItemId", "Slot" }, new[]{ "Where" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.TakeItemRequest), global::Mruv.TakeItemRequest.Parser, new[]{ "Id" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.TakeItemResponse), global::Mruv.TakeItemResponse.Parser, new[]{ "Item" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetContainerItemsRequest), global::Mruv.GetContainerItemsRequest.Parser, new[]{ "ContainerId", "Limit" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetContainerItemsResponse), global::Mruv.GetContainerItemsResponse.Parser, new[]{ "Items" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.RemoveItemRequest), global::Mruv.RemoveItemRequest.Parser, new[]{ "ContainerId", "ItemId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.PullItemRequest), global::Mruv.PullItemRequest.Parser, new[]{ "ContainerId", "ItemId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.SortItemsRequest), global::Mruv.SortItemsRequest.Parser, new[]{ "ContainerId", "SortBy" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.SortItemsResponse), global::Mruv.SortItemsResponse.Parser, new[]{ "Items" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetNearestItemsRequest), global::Mruv.GetNearestItemsRequest.Parser, new[]{ "PlayerPosition", "ContainerId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetNearestItemsRequest), global::Mruv.GetNearestItemsRequest.Parser, new[]{ "Position", "ContainerId", "DistanceLimit" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetNearestItemsResponse), global::Mruv.GetNearestItemsResponse.Parser, new[]{ "Item" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.UseItemRequest), global::Mruv.UseItemRequest.Parser, new[]{ "ItemId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.UseItemResponse), global::Mruv.UseItemResponse.Parser, new[]{ "Success" }, null, null, null)
@@ -137,7 +133,7 @@ namespace Mruv {
   }
   #region Messages
   /// <summary>
-  /// Requests messages
+  /// Request message for `MruVItemsService.GetItems`.
   /// </summary>
   public sealed partial class GetItemsRequest : pb::IMessage<GetItemsRequest> {
     private static readonly pb::MessageParser<GetItemsRequest> _parser = new pb::MessageParser<GetItemsRequest>(() => new GetItemsRequest());
@@ -175,9 +171,12 @@ namespace Mruv {
 
     /// <summary>Field number for the "limit" field.</summary>
     public const int LimitFieldNumber = 1;
-    private int limit_;
+    private uint limit_;
+    /// <summary>
+    /// Limit of the returned items.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Limit {
+    public uint Limit {
       get { return limit_; }
       set {
         limit_ = value;
@@ -220,7 +219,7 @@ namespace Mruv {
     public void WriteTo(pb::CodedOutputStream output) {
       if (Limit != 0) {
         output.WriteRawTag(8);
-        output.WriteInt32(Limit);
+        output.WriteUInt32(Limit);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -231,7 +230,7 @@ namespace Mruv {
     public int CalculateSize() {
       int size = 0;
       if (Limit != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Limit);
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Limit);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -259,7 +258,7 @@ namespace Mruv {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Limit = input.ReadInt32();
+            Limit = input.ReadUInt32();
             break;
           }
         }
@@ -268,6 +267,9 @@ namespace Mruv {
 
   }
 
+  /// <summary>
+  /// Response message for `MruVItemsService.GetItems`.
+  /// </summary>
   public sealed partial class GetItemsResponse : pb::IMessage<GetItemsResponse> {
     private static readonly pb::MessageParser<GetItemsResponse> _parser = new pb::MessageParser<GetItemsResponse>(() => new GetItemsResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -307,6 +309,9 @@ namespace Mruv {
     private static readonly pb::FieldCodec<global::Mruv.Item> _repeated_items_codec
         = pb::FieldCodec.ForMessage(10, global::Mruv.Item.Parser);
     private readonly pbc::RepeatedField<global::Mruv.Item> items_ = new pbc::RepeatedField<global::Mruv.Item>();
+    /// <summary>
+    /// List of items.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Mruv.Item> Items {
       get { return items_; }
@@ -389,6 +394,9 @@ namespace Mruv {
 
   }
 
+  /// <summary>
+  /// Request message for `MruVItemsService.GetItemTypes`.
+  /// </summary>
   public sealed partial class GetItemTypesRequest : pb::IMessage<GetItemTypesRequest> {
     private static readonly pb::MessageParser<GetItemTypesRequest> _parser = new pb::MessageParser<GetItemTypesRequest>(() => new GetItemTypesRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -425,9 +433,12 @@ namespace Mruv {
 
     /// <summary>Field number for the "limit" field.</summary>
     public const int LimitFieldNumber = 1;
-    private int limit_;
+    private uint limit_;
+    /// <summary>
+    /// Limit of the returned item types.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Limit {
+    public uint Limit {
       get { return limit_; }
       set {
         limit_ = value;
@@ -470,7 +481,7 @@ namespace Mruv {
     public void WriteTo(pb::CodedOutputStream output) {
       if (Limit != 0) {
         output.WriteRawTag(8);
-        output.WriteInt32(Limit);
+        output.WriteUInt32(Limit);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -481,7 +492,7 @@ namespace Mruv {
     public int CalculateSize() {
       int size = 0;
       if (Limit != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Limit);
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Limit);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -509,7 +520,7 @@ namespace Mruv {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Limit = input.ReadInt32();
+            Limit = input.ReadUInt32();
             break;
           }
         }
@@ -518,6 +529,9 @@ namespace Mruv {
 
   }
 
+  /// <summary>
+  ///Response message for `MruVItemsService.GetItemTypes`.
+  /// </summary>
   public sealed partial class GetItemTypesResponse : pb::IMessage<GetItemTypesResponse> {
     private static readonly pb::MessageParser<GetItemTypesResponse> _parser = new pb::MessageParser<GetItemTypesResponse>(() => new GetItemTypesResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -557,6 +571,9 @@ namespace Mruv {
     private static readonly pb::FieldCodec<global::Mruv.ItemType> _repeated_itemTypes_codec
         = pb::FieldCodec.ForMessage(10, global::Mruv.ItemType.Parser);
     private readonly pbc::RepeatedField<global::Mruv.ItemType> itemTypes_ = new pbc::RepeatedField<global::Mruv.ItemType>();
+    /// <summary>
+    ///List of item types.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Mruv.ItemType> ItemTypes {
       get { return itemTypes_; }
@@ -639,6 +656,9 @@ namespace Mruv {
 
   }
 
+  /// <summary>
+  ///Request message for `MruVItemsService.GetContainers`.
+  /// </summary>
   public sealed partial class GetContainersRequest : pb::IMessage<GetContainersRequest> {
     private static readonly pb::MessageParser<GetContainersRequest> _parser = new pb::MessageParser<GetContainersRequest>(() => new GetContainersRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -675,9 +695,12 @@ namespace Mruv {
 
     /// <summary>Field number for the "limit" field.</summary>
     public const int LimitFieldNumber = 1;
-    private int limit_;
+    private uint limit_;
+    /// <summary>
+    ///Limit of the returned containers.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Limit {
+    public uint Limit {
       get { return limit_; }
       set {
         limit_ = value;
@@ -720,7 +743,7 @@ namespace Mruv {
     public void WriteTo(pb::CodedOutputStream output) {
       if (Limit != 0) {
         output.WriteRawTag(8);
-        output.WriteInt32(Limit);
+        output.WriteUInt32(Limit);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -731,7 +754,7 @@ namespace Mruv {
     public int CalculateSize() {
       int size = 0;
       if (Limit != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Limit);
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Limit);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -759,7 +782,7 @@ namespace Mruv {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Limit = input.ReadInt32();
+            Limit = input.ReadUInt32();
             break;
           }
         }
@@ -768,6 +791,9 @@ namespace Mruv {
 
   }
 
+  /// <summary>
+  ///Response message for `MruVItemsService.GetContainers`.
+  /// </summary>
   public sealed partial class GetContainersResponse : pb::IMessage<GetContainersResponse> {
     private static readonly pb::MessageParser<GetContainersResponse> _parser = new pb::MessageParser<GetContainersResponse>(() => new GetContainersResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -807,6 +833,9 @@ namespace Mruv {
     private static readonly pb::FieldCodec<global::Mruv.Container> _repeated_containers_codec
         = pb::FieldCodec.ForMessage(10, global::Mruv.Container.Parser);
     private readonly pbc::RepeatedField<global::Mruv.Container> containers_ = new pbc::RepeatedField<global::Mruv.Container>();
+    /// <summary>
+    ///List of containers.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Mruv.Container> Containers {
       get { return containers_; }
@@ -889,6 +918,9 @@ namespace Mruv {
 
   }
 
+  /// <summary>
+  ///Request message for `MruVItemsService.GetContainerTypes`.
+  /// </summary>
   public sealed partial class GetContainerTypesRequest : pb::IMessage<GetContainerTypesRequest> {
     private static readonly pb::MessageParser<GetContainerTypesRequest> _parser = new pb::MessageParser<GetContainerTypesRequest>(() => new GetContainerTypesRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -925,9 +957,12 @@ namespace Mruv {
 
     /// <summary>Field number for the "limit" field.</summary>
     public const int LimitFieldNumber = 1;
-    private int limit_;
+    private uint limit_;
+    /// <summary>
+    ///Limit of the returned container types.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Limit {
+    public uint Limit {
       get { return limit_; }
       set {
         limit_ = value;
@@ -970,7 +1005,7 @@ namespace Mruv {
     public void WriteTo(pb::CodedOutputStream output) {
       if (Limit != 0) {
         output.WriteRawTag(8);
-        output.WriteInt32(Limit);
+        output.WriteUInt32(Limit);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -981,7 +1016,7 @@ namespace Mruv {
     public int CalculateSize() {
       int size = 0;
       if (Limit != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Limit);
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Limit);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1009,7 +1044,7 @@ namespace Mruv {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Limit = input.ReadInt32();
+            Limit = input.ReadUInt32();
             break;
           }
         }
@@ -1018,6 +1053,9 @@ namespace Mruv {
 
   }
 
+  /// <summary>
+  ///Response message for `MruVItemsService.GetContainers`.
+  /// </summary>
   public sealed partial class GetContainerTypesResponse : pb::IMessage<GetContainerTypesResponse> {
     private static readonly pb::MessageParser<GetContainerTypesResponse> _parser = new pb::MessageParser<GetContainerTypesResponse>(() => new GetContainerTypesResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -1057,6 +1095,9 @@ namespace Mruv {
     private static readonly pb::FieldCodec<global::Mruv.ContainerType> _repeated_containerTypes_codec
         = pb::FieldCodec.ForMessage(10, global::Mruv.ContainerType.Parser);
     private readonly pbc::RepeatedField<global::Mruv.ContainerType> containerTypes_ = new pbc::RepeatedField<global::Mruv.ContainerType>();
+    /// <summary>
+    ///List of container types.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Mruv.ContainerType> ContainerTypes {
       get { return containerTypes_; }
@@ -1139,6 +1180,9 @@ namespace Mruv {
 
   }
 
+  /// <summary>
+  ///Request message for `MruVItemsService.PutItem`.
+  /// </summary>
   public sealed partial class PutItemRequest : pb::IMessage<PutItemRequest> {
     private static readonly pb::MessageParser<PutItemRequest> _parser = new pb::MessageParser<PutItemRequest>(() => new PutItemRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -1183,6 +1227,9 @@ namespace Mruv {
     /// <summary>Field number for the "container_id" field.</summary>
     public const int ContainerIdFieldNumber = 1;
     private global::Mruv.ContainerID containerId_;
+    /// <summary>
+    ///ID of container where to put item.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Mruv.ContainerID ContainerId {
       get { return containerId_; }
@@ -1194,6 +1241,9 @@ namespace Mruv {
     /// <summary>Field number for the "item_id" field.</summary>
     public const int ItemIdFieldNumber = 2;
     private global::Mruv.ItemID itemId_;
+    /// <summary>
+    ///ID of item we wan to put in.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Mruv.ItemID ItemId {
       get { return itemId_; }
@@ -1204,6 +1254,9 @@ namespace Mruv {
 
     /// <summary>Field number for the "slot" field.</summary>
     public const int SlotFieldNumber = 3;
+    /// <summary>
+    ///Position used for sorting items
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int Slot {
       get { return whereCase_ == WhereOneofCase.Slot ? (int) where_ : 0; }
@@ -1364,276 +1417,9 @@ namespace Mruv {
 
   }
 
-  public sealed partial class TakeItemRequest : pb::IMessage<TakeItemRequest> {
-    private static readonly pb::MessageParser<TakeItemRequest> _parser = new pb::MessageParser<TakeItemRequest>(() => new TakeItemRequest());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<TakeItemRequest> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[9]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public TakeItemRequest() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public TakeItemRequest(TakeItemRequest other) : this() {
-      id_ = other.id_ != null ? other.id_.Clone() : null;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public TakeItemRequest Clone() {
-      return new TakeItemRequest(this);
-    }
-
-    /// <summary>Field number for the "id" field.</summary>
-    public const int IdFieldNumber = 1;
-    private global::Mruv.ItemID id_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Mruv.ItemID Id {
-      get { return id_; }
-      set {
-        id_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as TakeItemRequest);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(TakeItemRequest other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (!object.Equals(Id, other.Id)) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (id_ != null) hash ^= Id.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-      if (id_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Id);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (id_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Id);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(TakeItemRequest other) {
-      if (other == null) {
-        return;
-      }
-      if (other.id_ != null) {
-        if (id_ == null) {
-          Id = new global::Mruv.ItemID();
-        }
-        Id.MergeFrom(other.Id);
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            if (id_ == null) {
-              Id = new global::Mruv.ItemID();
-            }
-            input.ReadMessage(Id);
-            break;
-          }
-        }
-      }
-    }
-
-  }
-
-  public sealed partial class TakeItemResponse : pb::IMessage<TakeItemResponse> {
-    private static readonly pb::MessageParser<TakeItemResponse> _parser = new pb::MessageParser<TakeItemResponse>(() => new TakeItemResponse());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<TakeItemResponse> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[10]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public TakeItemResponse() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public TakeItemResponse(TakeItemResponse other) : this() {
-      item_ = other.item_ != null ? other.item_.Clone() : null;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public TakeItemResponse Clone() {
-      return new TakeItemResponse(this);
-    }
-
-    /// <summary>Field number for the "item" field.</summary>
-    public const int ItemFieldNumber = 1;
-    private global::Mruv.Item item_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Mruv.Item Item {
-      get { return item_; }
-      set {
-        item_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as TakeItemResponse);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(TakeItemResponse other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (!object.Equals(Item, other.Item)) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (item_ != null) hash ^= Item.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-      if (item_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Item);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (item_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Item);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(TakeItemResponse other) {
-      if (other == null) {
-        return;
-      }
-      if (other.item_ != null) {
-        if (item_ == null) {
-          Item = new global::Mruv.Item();
-        }
-        Item.MergeFrom(other.Item);
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            if (item_ == null) {
-              Item = new global::Mruv.Item();
-            }
-            input.ReadMessage(Item);
-            break;
-          }
-        }
-      }
-    }
-
-  }
-
+  /// <summary>
+  ///Request message for `MruVItemsService.GetContainerItems`.
+  /// </summary>
   public sealed partial class GetContainerItemsRequest : pb::IMessage<GetContainerItemsRequest> {
     private static readonly pb::MessageParser<GetContainerItemsRequest> _parser = new pb::MessageParser<GetContainerItemsRequest>(() => new GetContainerItemsRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -1642,7 +1428,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[11]; }
+      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1672,6 +1458,9 @@ namespace Mruv {
     /// <summary>Field number for the "container_id" field.</summary>
     public const int ContainerIdFieldNumber = 1;
     private global::Mruv.ContainerID containerId_;
+    /// <summary>
+    ///ID of container with items.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Mruv.ContainerID ContainerId {
       get { return containerId_; }
@@ -1682,9 +1471,12 @@ namespace Mruv {
 
     /// <summary>Field number for the "limit" field.</summary>
     public const int LimitFieldNumber = 2;
-    private int limit_;
+    private uint limit_;
+    /// <summary>
+    ///Limit of the returned items.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Limit {
+    public uint Limit {
       get { return limit_; }
       set {
         limit_ = value;
@@ -1733,7 +1525,7 @@ namespace Mruv {
       }
       if (Limit != 0) {
         output.WriteRawTag(16);
-        output.WriteInt32(Limit);
+        output.WriteUInt32(Limit);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -1747,7 +1539,7 @@ namespace Mruv {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ContainerId);
       }
       if (Limit != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Limit);
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Limit);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1788,7 +1580,7 @@ namespace Mruv {
             break;
           }
           case 16: {
-            Limit = input.ReadInt32();
+            Limit = input.ReadUInt32();
             break;
           }
         }
@@ -1797,6 +1589,9 @@ namespace Mruv {
 
   }
 
+  /// <summary>
+  ///Request message for `MruVItemsService.GetContainerItems`.
+  /// </summary>
   public sealed partial class GetContainerItemsResponse : pb::IMessage<GetContainerItemsResponse> {
     private static readonly pb::MessageParser<GetContainerItemsResponse> _parser = new pb::MessageParser<GetContainerItemsResponse>(() => new GetContainerItemsResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -1805,7 +1600,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[12]; }
+      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1836,6 +1631,9 @@ namespace Mruv {
     private static readonly pb::FieldCodec<global::Mruv.InsideItem> _repeated_items_codec
         = pb::FieldCodec.ForMessage(10, global::Mruv.InsideItem.Parser);
     private readonly pbc::RepeatedField<global::Mruv.InsideItem> items_ = new pbc::RepeatedField<global::Mruv.InsideItem>();
+    /// <summary>
+    ///List of items inside containers.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Mruv.InsideItem> Items {
       get { return items_; }
@@ -1918,15 +1716,18 @@ namespace Mruv {
 
   }
 
-  public sealed partial class RemoveItemRequest : pb::IMessage<RemoveItemRequest> {
-    private static readonly pb::MessageParser<RemoveItemRequest> _parser = new pb::MessageParser<RemoveItemRequest>(() => new RemoveItemRequest());
+  /// <summary>
+  ///Request message for `MruVItemsService.PullItem`.
+  /// </summary>
+  public sealed partial class PullItemRequest : pb::IMessage<PullItemRequest> {
+    private static readonly pb::MessageParser<PullItemRequest> _parser = new pb::MessageParser<PullItemRequest>(() => new PullItemRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<RemoveItemRequest> Parser { get { return _parser; } }
+    public static pb::MessageParser<PullItemRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[13]; }
+      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1935,27 +1736,30 @@ namespace Mruv {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public RemoveItemRequest() {
+    public PullItemRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public RemoveItemRequest(RemoveItemRequest other) : this() {
+    public PullItemRequest(PullItemRequest other) : this() {
       containerId_ = other.containerId_ != null ? other.containerId_.Clone() : null;
       itemId_ = other.itemId_ != null ? other.itemId_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public RemoveItemRequest Clone() {
-      return new RemoveItemRequest(this);
+    public PullItemRequest Clone() {
+      return new PullItemRequest(this);
     }
 
     /// <summary>Field number for the "container_id" field.</summary>
     public const int ContainerIdFieldNumber = 1;
     private global::Mruv.ContainerID containerId_;
+    /// <summary>
+    ///ID of the container from which we pull out a item.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Mruv.ContainerID ContainerId {
       get { return containerId_; }
@@ -1967,6 +1771,9 @@ namespace Mruv {
     /// <summary>Field number for the "item_id" field.</summary>
     public const int ItemIdFieldNumber = 2;
     private global::Mruv.ItemID itemId_;
+    /// <summary>
+    ///ID of the item we want to pull out.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Mruv.ItemID ItemId {
       get { return itemId_; }
@@ -1977,11 +1784,11 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as RemoveItemRequest);
+      return Equals(other as PullItemRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(RemoveItemRequest other) {
+    public bool Equals(PullItemRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -2040,7 +1847,7 @@ namespace Mruv {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(RemoveItemRequest other) {
+    public void MergeFrom(PullItemRequest other) {
       if (other == null) {
         return;
       }
@@ -2087,6 +1894,9 @@ namespace Mruv {
 
   }
 
+  /// <summary>
+  ///Request message for `MruVItemsService.SortItems`.
+  /// </summary>
   public sealed partial class SortItemsRequest : pb::IMessage<SortItemsRequest> {
     private static readonly pb::MessageParser<SortItemsRequest> _parser = new pb::MessageParser<SortItemsRequest>(() => new SortItemsRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -2095,7 +1905,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[14]; }
+      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2125,6 +1935,9 @@ namespace Mruv {
     /// <summary>Field number for the "container_id" field.</summary>
     public const int ContainerIdFieldNumber = 1;
     private global::Mruv.ContainerID containerId_;
+    /// <summary>
+    ///ID of the container which contain items.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Mruv.ContainerID ContainerId {
       get { return containerId_; }
@@ -2136,6 +1949,9 @@ namespace Mruv {
     /// <summary>Field number for the "sort_by" field.</summary>
     public const int SortByFieldNumber = 2;
     private string sortBy_ = "";
+    /// <summary>
+    ///Sorting mode. TODO.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string SortBy {
       get { return sortBy_; }
@@ -2250,6 +2066,9 @@ namespace Mruv {
 
   }
 
+  /// <summary>
+  ///Response message for `MruVItemsService.SortItems`.
+  /// </summary>
   public sealed partial class SortItemsResponse : pb::IMessage<SortItemsResponse> {
     private static readonly pb::MessageParser<SortItemsResponse> _parser = new pb::MessageParser<SortItemsResponse>(() => new SortItemsResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -2258,7 +2077,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[15]; }
+      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2289,6 +2108,9 @@ namespace Mruv {
     private static readonly pb::FieldCodec<global::Mruv.Item> _repeated_items_codec
         = pb::FieldCodec.ForMessage(10, global::Mruv.Item.Parser);
     private readonly pbc::RepeatedField<global::Mruv.Item> items_ = new pbc::RepeatedField<global::Mruv.Item>();
+    /// <summary>
+    ///List of items in given order.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Mruv.Item> Items {
       get { return items_; }
@@ -2371,6 +2193,9 @@ namespace Mruv {
 
   }
 
+  /// <summary>
+  ///Request message for `MruVItemsService.GetNearestItems`.
+  /// </summary>
   public sealed partial class GetNearestItemsRequest : pb::IMessage<GetNearestItemsRequest> {
     private static readonly pb::MessageParser<GetNearestItemsRequest> _parser = new pb::MessageParser<GetNearestItemsRequest>(() => new GetNearestItemsRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -2379,7 +2204,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[16]; }
+      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2396,8 +2221,9 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GetNearestItemsRequest(GetNearestItemsRequest other) : this() {
-      playerPosition_ = other.playerPosition_ != null ? other.playerPosition_.Clone() : null;
+      position_ = other.position_ != null ? other.position_.Clone() : null;
       containerId_ = other.containerId_ != null ? other.containerId_.Clone() : null;
+      distanceLimit_ = other.distanceLimit_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2406,25 +2232,45 @@ namespace Mruv {
       return new GetNearestItemsRequest(this);
     }
 
-    /// <summary>Field number for the "player_position" field.</summary>
-    public const int PlayerPositionFieldNumber = 1;
-    private global::Mruv.Position playerPosition_;
+    /// <summary>Field number for the "position" field.</summary>
+    public const int PositionFieldNumber = 1;
+    private global::Mruv.Position position_;
+    /// <summary>
+    ///Position from which to calculate the distance
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Mruv.Position PlayerPosition {
-      get { return playerPosition_; }
+    public global::Mruv.Position Position {
+      get { return position_; }
       set {
-        playerPosition_ = value;
+        position_ = value;
       }
     }
 
     /// <summary>Field number for the "container_id" field.</summary>
     public const int ContainerIdFieldNumber = 2;
     private global::Mruv.ContainerID containerId_;
+    /// <summary>
+    ///ID of container that contains items.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Mruv.ContainerID ContainerId {
       get { return containerId_; }
       set {
         containerId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "distance_limit" field.</summary>
+    public const int DistanceLimitFieldNumber = 3;
+    private double distanceLimit_;
+    /// <summary>
+    ///The distance over which the items are ignored.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public double DistanceLimit {
+      get { return distanceLimit_; }
+      set {
+        distanceLimit_ = value;
       }
     }
 
@@ -2441,16 +2287,18 @@ namespace Mruv {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(PlayerPosition, other.PlayerPosition)) return false;
+      if (!object.Equals(Position, other.Position)) return false;
       if (!object.Equals(ContainerId, other.ContainerId)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(DistanceLimit, other.DistanceLimit)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (playerPosition_ != null) hash ^= PlayerPosition.GetHashCode();
+      if (position_ != null) hash ^= Position.GetHashCode();
       if (containerId_ != null) hash ^= ContainerId.GetHashCode();
+      if (DistanceLimit != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(DistanceLimit);
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2464,13 +2312,17 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (playerPosition_ != null) {
+      if (position_ != null) {
         output.WriteRawTag(10);
-        output.WriteMessage(PlayerPosition);
+        output.WriteMessage(Position);
       }
       if (containerId_ != null) {
         output.WriteRawTag(18);
         output.WriteMessage(ContainerId);
+      }
+      if (DistanceLimit != 0D) {
+        output.WriteRawTag(25);
+        output.WriteDouble(DistanceLimit);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -2480,11 +2332,14 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (playerPosition_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PlayerPosition);
+      if (position_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Position);
       }
       if (containerId_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ContainerId);
+      }
+      if (DistanceLimit != 0D) {
+        size += 1 + 8;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -2497,17 +2352,20 @@ namespace Mruv {
       if (other == null) {
         return;
       }
-      if (other.playerPosition_ != null) {
-        if (playerPosition_ == null) {
-          PlayerPosition = new global::Mruv.Position();
+      if (other.position_ != null) {
+        if (position_ == null) {
+          Position = new global::Mruv.Position();
         }
-        PlayerPosition.MergeFrom(other.PlayerPosition);
+        Position.MergeFrom(other.Position);
       }
       if (other.containerId_ != null) {
         if (containerId_ == null) {
           ContainerId = new global::Mruv.ContainerID();
         }
         ContainerId.MergeFrom(other.ContainerId);
+      }
+      if (other.DistanceLimit != 0D) {
+        DistanceLimit = other.DistanceLimit;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -2521,10 +2379,10 @@ namespace Mruv {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            if (playerPosition_ == null) {
-              PlayerPosition = new global::Mruv.Position();
+            if (position_ == null) {
+              Position = new global::Mruv.Position();
             }
-            input.ReadMessage(PlayerPosition);
+            input.ReadMessage(Position);
             break;
           }
           case 18: {
@@ -2534,12 +2392,19 @@ namespace Mruv {
             input.ReadMessage(ContainerId);
             break;
           }
+          case 25: {
+            DistanceLimit = input.ReadDouble();
+            break;
+          }
         }
       }
     }
 
   }
 
+  /// <summary>
+  ///Response message for `MruVItemsService.GetNearestItems`.
+  /// </summary>
   public sealed partial class GetNearestItemsResponse : pb::IMessage<GetNearestItemsResponse> {
     private static readonly pb::MessageParser<GetNearestItemsResponse> _parser = new pb::MessageParser<GetNearestItemsResponse>(() => new GetNearestItemsResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -2548,7 +2413,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[17]; }
+      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[15]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2579,6 +2444,9 @@ namespace Mruv {
     private static readonly pb::FieldCodec<global::Mruv.InsideItem> _repeated_item_codec
         = pb::FieldCodec.ForMessage(10, global::Mruv.InsideItem.Parser);
     private readonly pbc::RepeatedField<global::Mruv.InsideItem> item_ = new pbc::RepeatedField<global::Mruv.InsideItem>();
+    /// <summary>
+    ///List of items sorted from nearest to farthest.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Mruv.InsideItem> Item {
       get { return item_; }
@@ -2661,6 +2529,9 @@ namespace Mruv {
 
   }
 
+  /// <summary>
+  ///Request message for `MruVItemsService.UseItem`.
+  /// </summary>
   public sealed partial class UseItemRequest : pb::IMessage<UseItemRequest> {
     private static readonly pb::MessageParser<UseItemRequest> _parser = new pb::MessageParser<UseItemRequest>(() => new UseItemRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -2669,7 +2540,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[18]; }
+      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[16]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2796,6 +2667,9 @@ namespace Mruv {
 
   }
 
+  /// <summary>
+  ///Response message for `MruVItemsService.UseItem`.
+  /// </summary>
   public sealed partial class UseItemResponse : pb::IMessage<UseItemResponse> {
     private static readonly pb::MessageParser<UseItemResponse> _parser = new pb::MessageParser<UseItemResponse>(() => new UseItemResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -2804,7 +2678,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[19]; }
+      get { return global::Mruv.ItemsReflection.Descriptor.MessageTypes[17]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2833,6 +2707,9 @@ namespace Mruv {
     /// <summary>Field number for the "success" field.</summary>
     public const int SuccessFieldNumber = 1;
     private bool success_;
+    /// <summary>
+    ///Is item usage was successful.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Success {
       get { return success_; }

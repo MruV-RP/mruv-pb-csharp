@@ -24,26 +24,31 @@ namespace Mruv {
     static ItemsModelReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChdpdGVtcy9pdGVtc19tb2RlbC5wcm90bxIEbXJ1diKLAQoISXRlbVR5cGUS",
-            "CgoCaWQYASABKAUSDAoEbmFtZRgCIAEoCRITCgtkZXNjcmlwdGlvbhgDIAEo",
-            "CRITCgtiYXNlX3dlaWdodBgEIAEoAhITCgtiYXNlX3ZvbHVtZRgFIAEoAhIS",
-            "Cgptb2RlbF9uYW1lGAYgASgJEhIKCm1vZGVsX2hhc2gYByABKAUiGAoKSXRl",
-            "bVR5cGVJRBIKCgJpZBgBIAEoBSJICgRJdGVtEgoKAmlkGAEgASgDEhQKDGl0",
-            "ZW1fdHlwZV9pZBgCIAEoBRIOCgZ3ZWlnaHQYAyABKAISDgoGdm9sdW1lGAQg",
-            "ASgCIhQKBkl0ZW1JRBIKCgJpZBgBIAEoAyKRAQoNQ29udGFpbmVyVHlwZRIK",
-            "CgJpZBgBIAEoBRIeChZjb250YWluZXJfaXRlbV90eXBlX2lkGAIgASgFEhIK",
-            "Cm1heF9udW1iZXIYAyABKAUSEgoKbWF4X3ZvbHVtZRgEIAEoAhISCgptYXhf",
-            "d2VpZ2h0GAUgASgCEhgKEHZhbGlkX2l0ZW1fdHlwZXMYCCADKAUiHQoPQ29u",
-            "dGFpbmVyVHlwZUlEEgoKAmlkGAEgASgFInAKCUNvbnRhaW5lchIKCgJpZBgB",
-            "IAEoBRIPCgd0eXBlX2lkGAIgASgFEg8KB2l0ZW1faWQYAyABKAMSFAoMaXRl",
-            "bXNfaW5zaWRlGAQgASgFEh8KBWl0ZW1zGAUgAygLMhAubXJ1di5JbnNpZGVJ",
-            "dGVtIhkKC0NvbnRhaW5lcklEEgoKAmlkGAEgASgFIn8KCkluc2lkZUl0ZW0S",
-            "FAoMY29udGFpbmVyX2lkGAEgASgFEh8KB2l0ZW1faWQYAiABKAsyDC5tcnV2",
-            "Lkl0ZW1JREgAEhoKBGl0ZW0YAyABKAsyCi5tcnV2Lkl0ZW1IABIQCghwb3Np",
-            "dGlvbhgEIAEoBUIMCgppdGVtX29yX2lkQiVaI2dpdGh1Yi5jb20vTXJ1Vi1S",
-            "UC9tcnV2LXBiLWdvL2l0ZW1zYgZwcm90bzM="));
+            "ChdpdGVtcy9pdGVtc19tb2RlbC5wcm90bxIEbXJ1dhoXdmFsaWRhdGUvdmFs",
+            "aWRhdGUucHJvdG8inQEKCEl0ZW1UeXBlEhwKAmlkGAEgASgLMhAubXJ1di5J",
+            "dGVtVHlwZUlEEgwKBG5hbWUYAiABKAkSEwoLZGVzY3JpcHRpb24YAyABKAkS",
+            "EwoLYmFzZV93ZWlnaHQYBCABKAISEwoLYmFzZV92b2x1bWUYBSABKAISEgoK",
+            "bW9kZWxfbmFtZRgGIAEoCRISCgptb2RlbF9oYXNoGAcgASgFIhgKCkl0ZW1U",
+            "eXBlSUQSCgoCaWQYASABKA0iaAoESXRlbRIYCgJpZBgBIAEoCzIMLm1ydXYu",
+            "SXRlbUlEEiYKDGl0ZW1fdHlwZV9pZBgCIAEoCzIQLm1ydXYuSXRlbVR5cGVJ",
+            "RBIOCgZ3ZWlnaHQYAyABKAISDgoGdm9sdW1lGAQgASgCIhQKBkl0ZW1JRBIK",
+            "CgJpZBgBIAEoBCLMAQoNQ29udGFpbmVyVHlwZRIhCgJpZBgBIAEoCzIVLm1y",
+            "dXYuQ29udGFpbmVyVHlwZUlEEjAKFmNvbnRhaW5lcl9pdGVtX3R5cGVfaWQY",
+            "AiABKAsyEC5tcnV2Lkl0ZW1UeXBlSUQSEgoKbWF4X251bWJlchgDIAEoDRIS",
+            "CgptYXhfdm9sdW1lGAQgASgCEhIKCm1heF93ZWlnaHQYBSABKAISKgoQdmFs",
+            "aWRfaXRlbV90eXBlcxgIIAMoCzIQLm1ydXYuSXRlbVR5cGVJRCIdCg9Db250",
+            "YWluZXJUeXBlSUQSCgoCaWQYASABKA0iqAEKCUNvbnRhaW5lchIdCgJpZBgB",
+            "IAEoCzIRLm1ydXYuQ29udGFpbmVySUQSJgoHdHlwZV9pZBgCIAEoCzIVLm1y",
+            "dXYuQ29udGFpbmVyVHlwZUlEEh0KB2l0ZW1faWQYAyABKAsyDC5tcnV2Lkl0",
+            "ZW1JRBIUCgxpdGVtc19pbnNpZGUYBCABKA0SHwoFaXRlbXMYBSADKAsyEC5t",
+            "cnV2Lkluc2lkZUl0ZW0iGQoLQ29udGFpbmVySUQSCgoCaWQYASABKA0ikgEK",
+            "Ckluc2lkZUl0ZW0SJwoMY29udGFpbmVyX2lkGAEgASgLMhEubXJ1di5Db250",
+            "YWluZXJJRBIfCgdpdGVtX2lkGAIgASgLMgwubXJ1di5JdGVtSURIABIaCgRp",
+            "dGVtGAMgASgLMgoubXJ1di5JdGVtSAASEAoIcG9zaXRpb24YBCABKAVCDAoK",
+            "aXRlbV9vcl9pZEIlWiNnaXRodWIuY29tL01ydVYtUlAvbXJ1di1wYi1nby9p",
+            "dGVtc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Validate.ValidateReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.ItemType), global::Mruv.ItemType.Parser, new[]{ "Id", "Name", "Description", "BaseWeight", "BaseVolume", "ModelName", "ModelHash" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.ItemTypeID), global::Mruv.ItemTypeID.Parser, new[]{ "Id" }, null, null, null),
@@ -60,6 +65,9 @@ namespace Mruv {
 
   }
   #region Messages
+  /// <summary>
+  ///Item type data structure
+  /// </summary>
   public sealed partial class ItemType : pb::IMessage<ItemType> {
     private static readonly pb::MessageParser<ItemType> _parser = new pb::MessageParser<ItemType>(() => new ItemType());
     private pb::UnknownFieldSet _unknownFields;
@@ -85,7 +93,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ItemType(ItemType other) : this() {
-      id_ = other.id_;
+      id_ = other.id_ != null ? other.id_.Clone() : null;
       name_ = other.name_;
       description_ = other.description_;
       baseWeight_ = other.baseWeight_;
@@ -102,9 +110,9 @@ namespace Mruv {
 
     /// <summary>Field number for the "id" field.</summary>
     public const int IdFieldNumber = 1;
-    private int id_;
+    private global::Mruv.ItemTypeID id_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Id {
+    public global::Mruv.ItemTypeID Id {
       get { return id_; }
       set {
         id_ = value;
@@ -114,6 +122,9 @@ namespace Mruv {
     /// <summary>Field number for the "name" field.</summary>
     public const int NameFieldNumber = 2;
     private string name_ = "";
+    /// <summary>
+    ///Short name of item type.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Name {
       get { return name_; }
@@ -125,6 +136,9 @@ namespace Mruv {
     /// <summary>Field number for the "description" field.</summary>
     public const int DescriptionFieldNumber = 3;
     private string description_ = "";
+    /// <summary>
+    ///Description of item type.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Description {
       get { return description_; }
@@ -136,6 +150,9 @@ namespace Mruv {
     /// <summary>Field number for the "base_weight" field.</summary>
     public const int BaseWeightFieldNumber = 4;
     private float baseWeight_;
+    /// <summary>
+    ///Default weight of items created with that item type.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public float BaseWeight {
       get { return baseWeight_; }
@@ -147,6 +164,9 @@ namespace Mruv {
     /// <summary>Field number for the "base_volume" field.</summary>
     public const int BaseVolumeFieldNumber = 5;
     private float baseVolume_;
+    /// <summary>
+    ///Default volume of items created with that item type.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public float BaseVolume {
       get { return baseVolume_; }
@@ -158,6 +178,9 @@ namespace Mruv {
     /// <summary>Field number for the "model_name" field.</summary>
     public const int ModelNameFieldNumber = 6;
     private string modelName_ = "";
+    /// <summary>
+    ///GTA V model name.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ModelName {
       get { return modelName_; }
@@ -169,6 +192,9 @@ namespace Mruv {
     /// <summary>Field number for the "model_hash" field.</summary>
     public const int ModelHashFieldNumber = 7;
     private int modelHash_;
+    /// <summary>
+    ///GTA V model hash.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int ModelHash {
       get { return modelHash_; }
@@ -190,7 +216,7 @@ namespace Mruv {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Id != other.Id) return false;
+      if (!object.Equals(Id, other.Id)) return false;
       if (Name != other.Name) return false;
       if (Description != other.Description) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(BaseWeight, other.BaseWeight)) return false;
@@ -203,7 +229,7 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Id != 0) hash ^= Id.GetHashCode();
+      if (id_ != null) hash ^= Id.GetHashCode();
       if (Name.Length != 0) hash ^= Name.GetHashCode();
       if (Description.Length != 0) hash ^= Description.GetHashCode();
       if (BaseWeight != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(BaseWeight);
@@ -223,9 +249,9 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Id != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Id);
+      if (id_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Id);
       }
       if (Name.Length != 0) {
         output.WriteRawTag(18);
@@ -259,8 +285,8 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Id != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
+      if (id_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Id);
       }
       if (Name.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
@@ -291,8 +317,11 @@ namespace Mruv {
       if (other == null) {
         return;
       }
-      if (other.Id != 0) {
-        Id = other.Id;
+      if (other.id_ != null) {
+        if (id_ == null) {
+          Id = new global::Mruv.ItemTypeID();
+        }
+        Id.MergeFrom(other.Id);
       }
       if (other.Name.Length != 0) {
         Name = other.Name;
@@ -323,8 +352,11 @@ namespace Mruv {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            Id = input.ReadInt32();
+          case 10: {
+            if (id_ == null) {
+              Id = new global::Mruv.ItemTypeID();
+            }
+            input.ReadMessage(Id);
             break;
           }
           case 18: {
@@ -357,6 +389,9 @@ namespace Mruv {
 
   }
 
+  /// <summary>
+  ///Item type ID.
+  /// </summary>
   public sealed partial class ItemTypeID : pb::IMessage<ItemTypeID> {
     private static readonly pb::MessageParser<ItemTypeID> _parser = new pb::MessageParser<ItemTypeID>(() => new ItemTypeID());
     private pb::UnknownFieldSet _unknownFields;
@@ -393,9 +428,9 @@ namespace Mruv {
 
     /// <summary>Field number for the "id" field.</summary>
     public const int IdFieldNumber = 1;
-    private int id_;
+    private uint id_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Id {
+    public uint Id {
       get { return id_; }
       set {
         id_ = value;
@@ -438,7 +473,7 @@ namespace Mruv {
     public void WriteTo(pb::CodedOutputStream output) {
       if (Id != 0) {
         output.WriteRawTag(8);
-        output.WriteInt32(Id);
+        output.WriteUInt32(Id);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -449,7 +484,7 @@ namespace Mruv {
     public int CalculateSize() {
       int size = 0;
       if (Id != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Id);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -477,7 +512,7 @@ namespace Mruv {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Id = input.ReadInt32();
+            Id = input.ReadUInt32();
             break;
           }
         }
@@ -486,6 +521,9 @@ namespace Mruv {
 
   }
 
+  /// <summary>
+  ///Item data structure.
+  /// </summary>
   public sealed partial class Item : pb::IMessage<Item> {
     private static readonly pb::MessageParser<Item> _parser = new pb::MessageParser<Item>(() => new Item());
     private pb::UnknownFieldSet _unknownFields;
@@ -511,8 +549,8 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public Item(Item other) : this() {
-      id_ = other.id_;
-      itemTypeId_ = other.itemTypeId_;
+      id_ = other.id_ != null ? other.id_.Clone() : null;
+      itemTypeId_ = other.itemTypeId_ != null ? other.itemTypeId_.Clone() : null;
       weight_ = other.weight_;
       volume_ = other.volume_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -525,9 +563,9 @@ namespace Mruv {
 
     /// <summary>Field number for the "id" field.</summary>
     public const int IdFieldNumber = 1;
-    private long id_;
+    private global::Mruv.ItemID id_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long Id {
+    public global::Mruv.ItemID Id {
       get { return id_; }
       set {
         id_ = value;
@@ -536,9 +574,12 @@ namespace Mruv {
 
     /// <summary>Field number for the "item_type_id" field.</summary>
     public const int ItemTypeIdFieldNumber = 2;
-    private int itemTypeId_;
+    private global::Mruv.ItemTypeID itemTypeId_;
+    /// <summary>
+    ///ID of an item type.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int ItemTypeId {
+    public global::Mruv.ItemTypeID ItemTypeId {
       get { return itemTypeId_; }
       set {
         itemTypeId_ = value;
@@ -548,6 +589,9 @@ namespace Mruv {
     /// <summary>Field number for the "weight" field.</summary>
     public const int WeightFieldNumber = 3;
     private float weight_;
+    /// <summary>
+    ///Current weight of the item.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public float Weight {
       get { return weight_; }
@@ -559,6 +603,9 @@ namespace Mruv {
     /// <summary>Field number for the "volume" field.</summary>
     public const int VolumeFieldNumber = 4;
     private float volume_;
+    /// <summary>
+    ///Current volume of the item.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public float Volume {
       get { return volume_; }
@@ -580,8 +627,8 @@ namespace Mruv {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Id != other.Id) return false;
-      if (ItemTypeId != other.ItemTypeId) return false;
+      if (!object.Equals(Id, other.Id)) return false;
+      if (!object.Equals(ItemTypeId, other.ItemTypeId)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Weight, other.Weight)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Volume, other.Volume)) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -590,8 +637,8 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Id != 0L) hash ^= Id.GetHashCode();
-      if (ItemTypeId != 0) hash ^= ItemTypeId.GetHashCode();
+      if (id_ != null) hash ^= Id.GetHashCode();
+      if (itemTypeId_ != null) hash ^= ItemTypeId.GetHashCode();
       if (Weight != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Weight);
       if (Volume != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Volume);
       if (_unknownFields != null) {
@@ -607,13 +654,13 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Id != 0L) {
-        output.WriteRawTag(8);
-        output.WriteInt64(Id);
+      if (id_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Id);
       }
-      if (ItemTypeId != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(ItemTypeId);
+      if (itemTypeId_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(ItemTypeId);
       }
       if (Weight != 0F) {
         output.WriteRawTag(29);
@@ -631,11 +678,11 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Id != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Id);
+      if (id_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Id);
       }
-      if (ItemTypeId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ItemTypeId);
+      if (itemTypeId_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ItemTypeId);
       }
       if (Weight != 0F) {
         size += 1 + 4;
@@ -654,11 +701,17 @@ namespace Mruv {
       if (other == null) {
         return;
       }
-      if (other.Id != 0L) {
-        Id = other.Id;
+      if (other.id_ != null) {
+        if (id_ == null) {
+          Id = new global::Mruv.ItemID();
+        }
+        Id.MergeFrom(other.Id);
       }
-      if (other.ItemTypeId != 0) {
-        ItemTypeId = other.ItemTypeId;
+      if (other.itemTypeId_ != null) {
+        if (itemTypeId_ == null) {
+          ItemTypeId = new global::Mruv.ItemTypeID();
+        }
+        ItemTypeId.MergeFrom(other.ItemTypeId);
       }
       if (other.Weight != 0F) {
         Weight = other.Weight;
@@ -677,12 +730,18 @@ namespace Mruv {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            Id = input.ReadInt64();
+          case 10: {
+            if (id_ == null) {
+              Id = new global::Mruv.ItemID();
+            }
+            input.ReadMessage(Id);
             break;
           }
-          case 16: {
-            ItemTypeId = input.ReadInt32();
+          case 18: {
+            if (itemTypeId_ == null) {
+              ItemTypeId = new global::Mruv.ItemTypeID();
+            }
+            input.ReadMessage(ItemTypeId);
             break;
           }
           case 29: {
@@ -699,6 +758,9 @@ namespace Mruv {
 
   }
 
+  /// <summary>
+  ///Item ID.
+  /// </summary>
   public sealed partial class ItemID : pb::IMessage<ItemID> {
     private static readonly pb::MessageParser<ItemID> _parser = new pb::MessageParser<ItemID>(() => new ItemID());
     private pb::UnknownFieldSet _unknownFields;
@@ -735,9 +797,9 @@ namespace Mruv {
 
     /// <summary>Field number for the "id" field.</summary>
     public const int IdFieldNumber = 1;
-    private long id_;
+    private ulong id_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long Id {
+    public ulong Id {
       get { return id_; }
       set {
         id_ = value;
@@ -764,7 +826,7 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Id != 0L) hash ^= Id.GetHashCode();
+      if (Id != 0UL) hash ^= Id.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -778,9 +840,9 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Id != 0L) {
+      if (Id != 0UL) {
         output.WriteRawTag(8);
-        output.WriteInt64(Id);
+        output.WriteUInt64(Id);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -790,8 +852,8 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Id != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Id);
+      if (Id != 0UL) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(Id);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -804,7 +866,7 @@ namespace Mruv {
       if (other == null) {
         return;
       }
-      if (other.Id != 0L) {
+      if (other.Id != 0UL) {
         Id = other.Id;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -819,7 +881,7 @@ namespace Mruv {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Id = input.ReadInt64();
+            Id = input.ReadUInt64();
             break;
           }
         }
@@ -828,6 +890,9 @@ namespace Mruv {
 
   }
 
+  /// <summary>
+  ///Container type data structure.
+  /// </summary>
   public sealed partial class ContainerType : pb::IMessage<ContainerType> {
     private static readonly pb::MessageParser<ContainerType> _parser = new pb::MessageParser<ContainerType>(() => new ContainerType());
     private pb::UnknownFieldSet _unknownFields;
@@ -853,8 +918,8 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ContainerType(ContainerType other) : this() {
-      id_ = other.id_;
-      containerItemTypeId_ = other.containerItemTypeId_;
+      id_ = other.id_ != null ? other.id_.Clone() : null;
+      containerItemTypeId_ = other.containerItemTypeId_ != null ? other.containerItemTypeId_.Clone() : null;
       maxNumber_ = other.maxNumber_;
       maxVolume_ = other.maxVolume_;
       maxWeight_ = other.maxWeight_;
@@ -869,9 +934,9 @@ namespace Mruv {
 
     /// <summary>Field number for the "id" field.</summary>
     public const int IdFieldNumber = 1;
-    private int id_;
+    private global::Mruv.ContainerTypeID id_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Id {
+    public global::Mruv.ContainerTypeID Id {
       get { return id_; }
       set {
         id_ = value;
@@ -880,9 +945,12 @@ namespace Mruv {
 
     /// <summary>Field number for the "container_item_type_id" field.</summary>
     public const int ContainerItemTypeIdFieldNumber = 2;
-    private int containerItemTypeId_;
+    private global::Mruv.ItemTypeID containerItemTypeId_;
+    /// <summary>
+    ///ID of an item type.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int ContainerItemTypeId {
+    public global::Mruv.ItemTypeID ContainerItemTypeId {
       get { return containerItemTypeId_; }
       set {
         containerItemTypeId_ = value;
@@ -891,9 +959,12 @@ namespace Mruv {
 
     /// <summary>Field number for the "max_number" field.</summary>
     public const int MaxNumberFieldNumber = 3;
-    private int maxNumber_;
+    private uint maxNumber_;
+    /// <summary>
+    ///Max items in the container.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int MaxNumber {
+    public uint MaxNumber {
       get { return maxNumber_; }
       set {
         maxNumber_ = value;
@@ -903,6 +974,9 @@ namespace Mruv {
     /// <summary>Field number for the "max_volume" field.</summary>
     public const int MaxVolumeFieldNumber = 4;
     private float maxVolume_;
+    /// <summary>
+    ///Max volume of items in the container.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public float MaxVolume {
       get { return maxVolume_; }
@@ -914,6 +988,9 @@ namespace Mruv {
     /// <summary>Field number for the "max_weight" field.</summary>
     public const int MaxWeightFieldNumber = 5;
     private float maxWeight_;
+    /// <summary>
+    ///Max weight of items in the container.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public float MaxWeight {
       get { return maxWeight_; }
@@ -924,11 +1001,11 @@ namespace Mruv {
 
     /// <summary>Field number for the "valid_item_types" field.</summary>
     public const int ValidItemTypesFieldNumber = 8;
-    private static readonly pb::FieldCodec<int> _repeated_validItemTypes_codec
-        = pb::FieldCodec.ForInt32(66);
-    private readonly pbc::RepeatedField<int> validItemTypes_ = new pbc::RepeatedField<int>();
+    private static readonly pb::FieldCodec<global::Mruv.ItemTypeID> _repeated_validItemTypes_codec
+        = pb::FieldCodec.ForMessage(66, global::Mruv.ItemTypeID.Parser);
+    private readonly pbc::RepeatedField<global::Mruv.ItemTypeID> validItemTypes_ = new pbc::RepeatedField<global::Mruv.ItemTypeID>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<int> ValidItemTypes {
+    public pbc::RepeatedField<global::Mruv.ItemTypeID> ValidItemTypes {
       get { return validItemTypes_; }
     }
 
@@ -945,8 +1022,8 @@ namespace Mruv {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Id != other.Id) return false;
-      if (ContainerItemTypeId != other.ContainerItemTypeId) return false;
+      if (!object.Equals(Id, other.Id)) return false;
+      if (!object.Equals(ContainerItemTypeId, other.ContainerItemTypeId)) return false;
       if (MaxNumber != other.MaxNumber) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(MaxVolume, other.MaxVolume)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(MaxWeight, other.MaxWeight)) return false;
@@ -957,8 +1034,8 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Id != 0) hash ^= Id.GetHashCode();
-      if (ContainerItemTypeId != 0) hash ^= ContainerItemTypeId.GetHashCode();
+      if (id_ != null) hash ^= Id.GetHashCode();
+      if (containerItemTypeId_ != null) hash ^= ContainerItemTypeId.GetHashCode();
       if (MaxNumber != 0) hash ^= MaxNumber.GetHashCode();
       if (MaxVolume != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(MaxVolume);
       if (MaxWeight != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(MaxWeight);
@@ -976,17 +1053,17 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Id != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Id);
+      if (id_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Id);
       }
-      if (ContainerItemTypeId != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(ContainerItemTypeId);
+      if (containerItemTypeId_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(ContainerItemTypeId);
       }
       if (MaxNumber != 0) {
         output.WriteRawTag(24);
-        output.WriteInt32(MaxNumber);
+        output.WriteUInt32(MaxNumber);
       }
       if (MaxVolume != 0F) {
         output.WriteRawTag(37);
@@ -1005,14 +1082,14 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Id != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
+      if (id_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Id);
       }
-      if (ContainerItemTypeId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ContainerItemTypeId);
+      if (containerItemTypeId_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ContainerItemTypeId);
       }
       if (MaxNumber != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(MaxNumber);
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(MaxNumber);
       }
       if (MaxVolume != 0F) {
         size += 1 + 4;
@@ -1032,11 +1109,17 @@ namespace Mruv {
       if (other == null) {
         return;
       }
-      if (other.Id != 0) {
-        Id = other.Id;
+      if (other.id_ != null) {
+        if (id_ == null) {
+          Id = new global::Mruv.ContainerTypeID();
+        }
+        Id.MergeFrom(other.Id);
       }
-      if (other.ContainerItemTypeId != 0) {
-        ContainerItemTypeId = other.ContainerItemTypeId;
+      if (other.containerItemTypeId_ != null) {
+        if (containerItemTypeId_ == null) {
+          ContainerItemTypeId = new global::Mruv.ItemTypeID();
+        }
+        ContainerItemTypeId.MergeFrom(other.ContainerItemTypeId);
       }
       if (other.MaxNumber != 0) {
         MaxNumber = other.MaxNumber;
@@ -1059,16 +1142,22 @@ namespace Mruv {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            Id = input.ReadInt32();
+          case 10: {
+            if (id_ == null) {
+              Id = new global::Mruv.ContainerTypeID();
+            }
+            input.ReadMessage(Id);
             break;
           }
-          case 16: {
-            ContainerItemTypeId = input.ReadInt32();
+          case 18: {
+            if (containerItemTypeId_ == null) {
+              ContainerItemTypeId = new global::Mruv.ItemTypeID();
+            }
+            input.ReadMessage(ContainerItemTypeId);
             break;
           }
           case 24: {
-            MaxNumber = input.ReadInt32();
+            MaxNumber = input.ReadUInt32();
             break;
           }
           case 37: {
@@ -1079,8 +1168,7 @@ namespace Mruv {
             MaxWeight = input.ReadFloat();
             break;
           }
-          case 66:
-          case 64: {
+          case 66: {
             validItemTypes_.AddEntriesFrom(input, _repeated_validItemTypes_codec);
             break;
           }
@@ -1090,6 +1178,9 @@ namespace Mruv {
 
   }
 
+  /// <summary>
+  ///Container type ID.
+  /// </summary>
   public sealed partial class ContainerTypeID : pb::IMessage<ContainerTypeID> {
     private static readonly pb::MessageParser<ContainerTypeID> _parser = new pb::MessageParser<ContainerTypeID>(() => new ContainerTypeID());
     private pb::UnknownFieldSet _unknownFields;
@@ -1126,9 +1217,9 @@ namespace Mruv {
 
     /// <summary>Field number for the "id" field.</summary>
     public const int IdFieldNumber = 1;
-    private int id_;
+    private uint id_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Id {
+    public uint Id {
       get { return id_; }
       set {
         id_ = value;
@@ -1171,7 +1262,7 @@ namespace Mruv {
     public void WriteTo(pb::CodedOutputStream output) {
       if (Id != 0) {
         output.WriteRawTag(8);
-        output.WriteInt32(Id);
+        output.WriteUInt32(Id);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -1182,7 +1273,7 @@ namespace Mruv {
     public int CalculateSize() {
       int size = 0;
       if (Id != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Id);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1210,7 +1301,7 @@ namespace Mruv {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Id = input.ReadInt32();
+            Id = input.ReadUInt32();
             break;
           }
         }
@@ -1219,6 +1310,9 @@ namespace Mruv {
 
   }
 
+  /// <summary>
+  ///Container data structure.
+  /// </summary>
   public sealed partial class Container : pb::IMessage<Container> {
     private static readonly pb::MessageParser<Container> _parser = new pb::MessageParser<Container>(() => new Container());
     private pb::UnknownFieldSet _unknownFields;
@@ -1244,9 +1338,9 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public Container(Container other) : this() {
-      id_ = other.id_;
-      typeId_ = other.typeId_;
-      itemId_ = other.itemId_;
+      id_ = other.id_ != null ? other.id_.Clone() : null;
+      typeId_ = other.typeId_ != null ? other.typeId_.Clone() : null;
+      itemId_ = other.itemId_ != null ? other.itemId_.Clone() : null;
       itemsInside_ = other.itemsInside_;
       items_ = other.items_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -1259,9 +1353,9 @@ namespace Mruv {
 
     /// <summary>Field number for the "id" field.</summary>
     public const int IdFieldNumber = 1;
-    private int id_;
+    private global::Mruv.ContainerID id_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Id {
+    public global::Mruv.ContainerID Id {
       get { return id_; }
       set {
         id_ = value;
@@ -1270,9 +1364,12 @@ namespace Mruv {
 
     /// <summary>Field number for the "type_id" field.</summary>
     public const int TypeIdFieldNumber = 2;
-    private int typeId_;
+    private global::Mruv.ContainerTypeID typeId_;
+    /// <summary>
+    ///ID of an container type.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int TypeId {
+    public global::Mruv.ContainerTypeID TypeId {
       get { return typeId_; }
       set {
         typeId_ = value;
@@ -1281,9 +1378,12 @@ namespace Mruv {
 
     /// <summary>Field number for the "item_id" field.</summary>
     public const int ItemIdFieldNumber = 3;
-    private long itemId_;
+    private global::Mruv.ItemID itemId_;
+    /// <summary>
+    ///ID of container item representing container.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long ItemId {
+    public global::Mruv.ItemID ItemId {
       get { return itemId_; }
       set {
         itemId_ = value;
@@ -1292,9 +1392,12 @@ namespace Mruv {
 
     /// <summary>Field number for the "items_inside" field.</summary>
     public const int ItemsInsideFieldNumber = 4;
-    private int itemsInside_;
+    private uint itemsInside_;
+    /// <summary>
+    ///Number of items inside container.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int ItemsInside {
+    public uint ItemsInside {
       get { return itemsInside_; }
       set {
         itemsInside_ = value;
@@ -1306,6 +1409,9 @@ namespace Mruv {
     private static readonly pb::FieldCodec<global::Mruv.InsideItem> _repeated_items_codec
         = pb::FieldCodec.ForMessage(42, global::Mruv.InsideItem.Parser);
     private readonly pbc::RepeatedField<global::Mruv.InsideItem> items_ = new pbc::RepeatedField<global::Mruv.InsideItem>();
+    /// <summary>
+    ///List of items inside container.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Mruv.InsideItem> Items {
       get { return items_; }
@@ -1324,9 +1430,9 @@ namespace Mruv {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Id != other.Id) return false;
-      if (TypeId != other.TypeId) return false;
-      if (ItemId != other.ItemId) return false;
+      if (!object.Equals(Id, other.Id)) return false;
+      if (!object.Equals(TypeId, other.TypeId)) return false;
+      if (!object.Equals(ItemId, other.ItemId)) return false;
       if (ItemsInside != other.ItemsInside) return false;
       if(!items_.Equals(other.items_)) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -1335,9 +1441,9 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Id != 0) hash ^= Id.GetHashCode();
-      if (TypeId != 0) hash ^= TypeId.GetHashCode();
-      if (ItemId != 0L) hash ^= ItemId.GetHashCode();
+      if (id_ != null) hash ^= Id.GetHashCode();
+      if (typeId_ != null) hash ^= TypeId.GetHashCode();
+      if (itemId_ != null) hash ^= ItemId.GetHashCode();
       if (ItemsInside != 0) hash ^= ItemsInside.GetHashCode();
       hash ^= items_.GetHashCode();
       if (_unknownFields != null) {
@@ -1353,21 +1459,21 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Id != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Id);
+      if (id_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Id);
       }
-      if (TypeId != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(TypeId);
+      if (typeId_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(TypeId);
       }
-      if (ItemId != 0L) {
-        output.WriteRawTag(24);
-        output.WriteInt64(ItemId);
+      if (itemId_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(ItemId);
       }
       if (ItemsInside != 0) {
         output.WriteRawTag(32);
-        output.WriteInt32(ItemsInside);
+        output.WriteUInt32(ItemsInside);
       }
       items_.WriteTo(output, _repeated_items_codec);
       if (_unknownFields != null) {
@@ -1378,17 +1484,17 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Id != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
+      if (id_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Id);
       }
-      if (TypeId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(TypeId);
+      if (typeId_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(TypeId);
       }
-      if (ItemId != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(ItemId);
+      if (itemId_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ItemId);
       }
       if (ItemsInside != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ItemsInside);
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ItemsInside);
       }
       size += items_.CalculateSize(_repeated_items_codec);
       if (_unknownFields != null) {
@@ -1402,14 +1508,23 @@ namespace Mruv {
       if (other == null) {
         return;
       }
-      if (other.Id != 0) {
-        Id = other.Id;
+      if (other.id_ != null) {
+        if (id_ == null) {
+          Id = new global::Mruv.ContainerID();
+        }
+        Id.MergeFrom(other.Id);
       }
-      if (other.TypeId != 0) {
-        TypeId = other.TypeId;
+      if (other.typeId_ != null) {
+        if (typeId_ == null) {
+          TypeId = new global::Mruv.ContainerTypeID();
+        }
+        TypeId.MergeFrom(other.TypeId);
       }
-      if (other.ItemId != 0L) {
-        ItemId = other.ItemId;
+      if (other.itemId_ != null) {
+        if (itemId_ == null) {
+          ItemId = new global::Mruv.ItemID();
+        }
+        ItemId.MergeFrom(other.ItemId);
       }
       if (other.ItemsInside != 0) {
         ItemsInside = other.ItemsInside;
@@ -1426,20 +1541,29 @@ namespace Mruv {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            Id = input.ReadInt32();
+          case 10: {
+            if (id_ == null) {
+              Id = new global::Mruv.ContainerID();
+            }
+            input.ReadMessage(Id);
             break;
           }
-          case 16: {
-            TypeId = input.ReadInt32();
+          case 18: {
+            if (typeId_ == null) {
+              TypeId = new global::Mruv.ContainerTypeID();
+            }
+            input.ReadMessage(TypeId);
             break;
           }
-          case 24: {
-            ItemId = input.ReadInt64();
+          case 26: {
+            if (itemId_ == null) {
+              ItemId = new global::Mruv.ItemID();
+            }
+            input.ReadMessage(ItemId);
             break;
           }
           case 32: {
-            ItemsInside = input.ReadInt32();
+            ItemsInside = input.ReadUInt32();
             break;
           }
           case 42: {
@@ -1452,6 +1576,9 @@ namespace Mruv {
 
   }
 
+  /// <summary>
+  ///Container ID.
+  /// </summary>
   public sealed partial class ContainerID : pb::IMessage<ContainerID> {
     private static readonly pb::MessageParser<ContainerID> _parser = new pb::MessageParser<ContainerID>(() => new ContainerID());
     private pb::UnknownFieldSet _unknownFields;
@@ -1488,9 +1615,9 @@ namespace Mruv {
 
     /// <summary>Field number for the "id" field.</summary>
     public const int IdFieldNumber = 1;
-    private int id_;
+    private uint id_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Id {
+    public uint Id {
       get { return id_; }
       set {
         id_ = value;
@@ -1533,7 +1660,7 @@ namespace Mruv {
     public void WriteTo(pb::CodedOutputStream output) {
       if (Id != 0) {
         output.WriteRawTag(8);
-        output.WriteInt32(Id);
+        output.WriteUInt32(Id);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -1544,7 +1671,7 @@ namespace Mruv {
     public int CalculateSize() {
       int size = 0;
       if (Id != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Id);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1572,7 +1699,7 @@ namespace Mruv {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Id = input.ReadInt32();
+            Id = input.ReadUInt32();
             break;
           }
         }
@@ -1581,6 +1708,9 @@ namespace Mruv {
 
   }
 
+  /// <summary>
+  ///Item inside container data structure.
+  /// </summary>
   public sealed partial class InsideItem : pb::IMessage<InsideItem> {
     private static readonly pb::MessageParser<InsideItem> _parser = new pb::MessageParser<InsideItem>(() => new InsideItem());
     private pb::UnknownFieldSet _unknownFields;
@@ -1606,7 +1736,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public InsideItem(InsideItem other) : this() {
-      containerId_ = other.containerId_;
+      containerId_ = other.containerId_ != null ? other.containerId_.Clone() : null;
       position_ = other.position_;
       switch (other.ItemOrIdCase) {
         case ItemOrIdOneofCase.ItemId:
@@ -1627,9 +1757,12 @@ namespace Mruv {
 
     /// <summary>Field number for the "container_id" field.</summary>
     public const int ContainerIdFieldNumber = 1;
-    private int containerId_;
+    private global::Mruv.ContainerID containerId_;
+    /// <summary>
+    ///ID of container containing the item.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int ContainerId {
+    public global::Mruv.ContainerID ContainerId {
       get { return containerId_; }
       set {
         containerId_ = value;
@@ -1661,6 +1794,9 @@ namespace Mruv {
     /// <summary>Field number for the "position" field.</summary>
     public const int PositionFieldNumber = 4;
     private int position_;
+    /// <summary>
+    ///Position representing order in container. In ascending manner.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int Position {
       get { return position_; }
@@ -1701,7 +1837,7 @@ namespace Mruv {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (ContainerId != other.ContainerId) return false;
+      if (!object.Equals(ContainerId, other.ContainerId)) return false;
       if (!object.Equals(ItemId, other.ItemId)) return false;
       if (!object.Equals(Item, other.Item)) return false;
       if (Position != other.Position) return false;
@@ -1712,7 +1848,7 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (ContainerId != 0) hash ^= ContainerId.GetHashCode();
+      if (containerId_ != null) hash ^= ContainerId.GetHashCode();
       if (itemOrIdCase_ == ItemOrIdOneofCase.ItemId) hash ^= ItemId.GetHashCode();
       if (itemOrIdCase_ == ItemOrIdOneofCase.Item) hash ^= Item.GetHashCode();
       if (Position != 0) hash ^= Position.GetHashCode();
@@ -1730,9 +1866,9 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (ContainerId != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(ContainerId);
+      if (containerId_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(ContainerId);
       }
       if (itemOrIdCase_ == ItemOrIdOneofCase.ItemId) {
         output.WriteRawTag(18);
@@ -1754,8 +1890,8 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (ContainerId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ContainerId);
+      if (containerId_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ContainerId);
       }
       if (itemOrIdCase_ == ItemOrIdOneofCase.ItemId) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ItemId);
@@ -1777,8 +1913,11 @@ namespace Mruv {
       if (other == null) {
         return;
       }
-      if (other.ContainerId != 0) {
-        ContainerId = other.ContainerId;
+      if (other.containerId_ != null) {
+        if (containerId_ == null) {
+          ContainerId = new global::Mruv.ContainerID();
+        }
+        ContainerId.MergeFrom(other.ContainerId);
       }
       if (other.Position != 0) {
         Position = other.Position;
@@ -1809,8 +1948,11 @@ namespace Mruv {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            ContainerId = input.ReadInt32();
+          case 10: {
+            if (containerId_ == null) {
+              ContainerId = new global::Mruv.ContainerID();
+            }
+            input.ReadMessage(ContainerId);
             break;
           }
           case 18: {
