@@ -45,11 +45,13 @@ namespace Mruv {
             "Ckluc2lkZUl0ZW0SJwoMY29udGFpbmVyX2lkGAEgASgLMhEubXJ1di5Db250",
             "YWluZXJJRBIfCgdpdGVtX2lkGAIgASgLMgwubXJ1di5JdGVtSURIABIaCgRp",
             "dGVtGAMgASgLMgoubXJ1di5JdGVtSAASEAoIcG9zaXRpb24YBCABKAVCDAoK",
-            "aXRlbV9vcl9pZEIlWiNnaXRodWIuY29tL01ydVYtUlAvbXJ1di1wYi1nby9p",
-            "dGVtc2IGcHJvdG8z"));
+            "aXRlbV9vcl9pZCpcCgtTb3J0aW5nTW9kZRILCgdVTktOT1dOEAASDwoLV0VJ",
+            "R0hUX0RFU0MQARIOCgpXRUlHSFRfQVNDEAISDwoLVk9MVU1FX0RFU0MQAxIO",
+            "CgpWT0xVTUVfQVNDEARCJVojZ2l0aHViLmNvbS9NcnVWLVJQL21ydXYtcGIt",
+            "Z28vaXRlbXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Validate.ValidateReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Mruv.SortingMode), }, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.ItemType), global::Mruv.ItemType.Parser, new[]{ "Id", "Name", "Description", "BaseWeight", "BaseVolume", "ModelName", "ModelHash" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.ItemTypeID), global::Mruv.ItemTypeID.Parser, new[]{ "Id" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Item), global::Mruv.Item.Parser, new[]{ "Id", "ItemTypeId", "Weight", "Volume" }, null, null, null),
@@ -64,6 +66,35 @@ namespace Mruv {
     #endregion
 
   }
+  #region Enums
+  /// <summary>
+  ///Sorting modes for container items.
+  /// </summary>
+  public enum SortingMode {
+    /// <summary>
+    ///undefined behaviour
+    /// </summary>
+    [pbr::OriginalName("UNKNOWN")] Unknown = 0,
+    /// <summary>
+    ///sort by weight descending
+    /// </summary>
+    [pbr::OriginalName("WEIGHT_DESC")] WeightDesc = 1,
+    /// <summary>
+    ///sort by weight ascending
+    /// </summary>
+    [pbr::OriginalName("WEIGHT_ASC")] WeightAsc = 2,
+    /// <summary>
+    ///sort by volume descending
+    /// </summary>
+    [pbr::OriginalName("VOLUME_DESC")] VolumeDesc = 3,
+    /// <summary>
+    ///sort by volume ascending
+    /// </summary>
+    [pbr::OriginalName("VOLUME_ASC")] VolumeAsc = 4,
+  }
+
+  #endregion
+
   #region Messages
   /// <summary>
   ///Item type data structure
