@@ -24,17 +24,20 @@ namespace Mruv {
     static CharactersModelReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiFjaGFyYWN0ZXJzL2NoYXJhY3RlcnNfbW9kZWwucHJvdG8SBG1ydXYiWgoJ",
-            "Q2hhcmFjdGVyEgoKAmlkGAEgASgFEhIKCmZpcnN0X25hbWUYAiABKAkSEwoL",
-            "c2Vjb25kX25hbWUYAyABKAkSCwoDYWdlGAQgASgNEgsKA3NleBgFIAEoDSIZ",
-            "CgtDaGFyYWN0ZXJJRBIKCgJpZBgBIAEoBSpeCglEZWF0aFR5cGUSEwoPREVB",
-            "VEhfVFlQRV9OT05FEAASEQoNREVBVEhfVFlQRV9CVxABEhYKEkRFQVRIX1RZ",
-            "UEVfQldfS0lMTBACEhEKDURFQVRIX1RZUEVfQ0sQA0IqWihnaXRodWIuY29t",
-            "L01ydVYtUlAvbXJ1di1wYi1nby9jaGFyYWN0ZXJzYgZwcm90bzM="));
+            "CiFjaGFyYWN0ZXJzL2NoYXJhY3RlcnNfbW9kZWwucHJvdG8SBG1ydXYaHWFj",
+            "Y291bnRzL2FjY291bnRzX21vZGVsLnByb3RvGhRjb21tb24vc3BhdGlhbC5w",
+            "cm90byKyAQoJQ2hhcmFjdGVyEh0KAmlkGAEgASgLMhEubXJ1di5DaGFyYWN0",
+            "ZXJJRBIhCghvd25lcl9pZBgCIAEoCzIPLm1ydXYuQWNjb3VudElEEhIKCmZp",
+            "cnN0X25hbWUYAyABKAkSEwoLc2Vjb25kX25hbWUYBCABKAkSCwoDYWdlGAUg",
+            "ASgNEgsKA3NleBgGIAEoDRIgCghwb3NpdGlvbhgHIAEoCzIOLm1ydXYuUG9z",
+            "aXRpb24iGQoLQ2hhcmFjdGVySUQSCgoCaWQYASABKAMqXgoJRGVhdGhUeXBl",
+            "EhMKD0RFQVRIX1RZUEVfTk9ORRAAEhEKDURFQVRIX1RZUEVfQlcQARIWChJE",
+            "RUFUSF9UWVBFX0JXX0tJTEwQAhIRCg1ERUFUSF9UWVBFX0NLEANCKlooZ2l0",
+            "aHViLmNvbS9NcnVWLVJQL21ydXYtcGItZ28vY2hhcmFjdGVyc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Mruv.AccountsModelReflection.Descriptor, global::Mruv.SpatialReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Mruv.DeathType), }, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Character), global::Mruv.Character.Parser, new[]{ "Id", "FirstName", "SecondName", "Age", "Sex" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Character), global::Mruv.Character.Parser, new[]{ "Id", "OwnerId", "FirstName", "SecondName", "Age", "Sex", "Position" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.CharacterID), global::Mruv.CharacterID.Parser, new[]{ "Id" }, null, null, null)
           }));
     }
@@ -77,11 +80,13 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public Character(Character other) : this() {
-      id_ = other.id_;
+      id_ = other.id_ != null ? other.id_.Clone() : null;
+      ownerId_ = other.ownerId_ != null ? other.ownerId_.Clone() : null;
       firstName_ = other.firstName_;
       secondName_ = other.secondName_;
       age_ = other.age_;
       sex_ = other.sex_;
+      position_ = other.position_ != null ? other.position_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -92,17 +97,28 @@ namespace Mruv {
 
     /// <summary>Field number for the "id" field.</summary>
     public const int IdFieldNumber = 1;
-    private int id_;
+    private global::Mruv.CharacterID id_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Id {
+    public global::Mruv.CharacterID Id {
       get { return id_; }
       set {
         id_ = value;
       }
     }
 
+    /// <summary>Field number for the "owner_id" field.</summary>
+    public const int OwnerIdFieldNumber = 2;
+    private global::Mruv.AccountID ownerId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Mruv.AccountID OwnerId {
+      get { return ownerId_; }
+      set {
+        ownerId_ = value;
+      }
+    }
+
     /// <summary>Field number for the "first_name" field.</summary>
-    public const int FirstNameFieldNumber = 2;
+    public const int FirstNameFieldNumber = 3;
     private string firstName_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string FirstName {
@@ -113,7 +129,7 @@ namespace Mruv {
     }
 
     /// <summary>Field number for the "second_name" field.</summary>
-    public const int SecondNameFieldNumber = 3;
+    public const int SecondNameFieldNumber = 4;
     private string secondName_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string SecondName {
@@ -124,7 +140,7 @@ namespace Mruv {
     }
 
     /// <summary>Field number for the "age" field.</summary>
-    public const int AgeFieldNumber = 4;
+    public const int AgeFieldNumber = 5;
     private uint age_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Age {
@@ -135,13 +151,24 @@ namespace Mruv {
     }
 
     /// <summary>Field number for the "sex" field.</summary>
-    public const int SexFieldNumber = 5;
+    public const int SexFieldNumber = 6;
     private uint sex_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Sex {
       get { return sex_; }
       set {
         sex_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "position" field.</summary>
+    public const int PositionFieldNumber = 7;
+    private global::Mruv.Position position_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Mruv.Position Position {
+      get { return position_; }
+      set {
+        position_ = value;
       }
     }
 
@@ -158,22 +185,26 @@ namespace Mruv {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Id != other.Id) return false;
+      if (!object.Equals(Id, other.Id)) return false;
+      if (!object.Equals(OwnerId, other.OwnerId)) return false;
       if (FirstName != other.FirstName) return false;
       if (SecondName != other.SecondName) return false;
       if (Age != other.Age) return false;
       if (Sex != other.Sex) return false;
+      if (!object.Equals(Position, other.Position)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Id != 0) hash ^= Id.GetHashCode();
+      if (id_ != null) hash ^= Id.GetHashCode();
+      if (ownerId_ != null) hash ^= OwnerId.GetHashCode();
       if (FirstName.Length != 0) hash ^= FirstName.GetHashCode();
       if (SecondName.Length != 0) hash ^= SecondName.GetHashCode();
       if (Age != 0) hash ^= Age.GetHashCode();
       if (Sex != 0) hash ^= Sex.GetHashCode();
+      if (position_ != null) hash ^= Position.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -187,25 +218,33 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Id != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Id);
+      if (id_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Id);
+      }
+      if (ownerId_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(OwnerId);
       }
       if (FirstName.Length != 0) {
-        output.WriteRawTag(18);
+        output.WriteRawTag(26);
         output.WriteString(FirstName);
       }
       if (SecondName.Length != 0) {
-        output.WriteRawTag(26);
+        output.WriteRawTag(34);
         output.WriteString(SecondName);
       }
       if (Age != 0) {
-        output.WriteRawTag(32);
+        output.WriteRawTag(40);
         output.WriteUInt32(Age);
       }
       if (Sex != 0) {
-        output.WriteRawTag(40);
+        output.WriteRawTag(48);
         output.WriteUInt32(Sex);
+      }
+      if (position_ != null) {
+        output.WriteRawTag(58);
+        output.WriteMessage(Position);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -215,8 +254,11 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Id != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
+      if (id_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Id);
+      }
+      if (ownerId_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(OwnerId);
       }
       if (FirstName.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(FirstName);
@@ -230,6 +272,9 @@ namespace Mruv {
       if (Sex != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Sex);
       }
+      if (position_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Position);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -241,8 +286,17 @@ namespace Mruv {
       if (other == null) {
         return;
       }
-      if (other.Id != 0) {
-        Id = other.Id;
+      if (other.id_ != null) {
+        if (id_ == null) {
+          Id = new global::Mruv.CharacterID();
+        }
+        Id.MergeFrom(other.Id);
+      }
+      if (other.ownerId_ != null) {
+        if (ownerId_ == null) {
+          OwnerId = new global::Mruv.AccountID();
+        }
+        OwnerId.MergeFrom(other.OwnerId);
       }
       if (other.FirstName.Length != 0) {
         FirstName = other.FirstName;
@@ -256,6 +310,12 @@ namespace Mruv {
       if (other.Sex != 0) {
         Sex = other.Sex;
       }
+      if (other.position_ != null) {
+        if (position_ == null) {
+          Position = new global::Mruv.Position();
+        }
+        Position.MergeFrom(other.Position);
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -267,24 +327,41 @@ namespace Mruv {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            Id = input.ReadInt32();
+          case 10: {
+            if (id_ == null) {
+              Id = new global::Mruv.CharacterID();
+            }
+            input.ReadMessage(Id);
             break;
           }
           case 18: {
-            FirstName = input.ReadString();
+            if (ownerId_ == null) {
+              OwnerId = new global::Mruv.AccountID();
+            }
+            input.ReadMessage(OwnerId);
             break;
           }
           case 26: {
+            FirstName = input.ReadString();
+            break;
+          }
+          case 34: {
             SecondName = input.ReadString();
             break;
           }
-          case 32: {
+          case 40: {
             Age = input.ReadUInt32();
             break;
           }
-          case 40: {
+          case 48: {
             Sex = input.ReadUInt32();
+            break;
+          }
+          case 58: {
+            if (position_ == null) {
+              Position = new global::Mruv.Position();
+            }
+            input.ReadMessage(Position);
             break;
           }
         }
@@ -329,9 +406,9 @@ namespace Mruv {
 
     /// <summary>Field number for the "id" field.</summary>
     public const int IdFieldNumber = 1;
-    private int id_;
+    private long id_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Id {
+    public long Id {
       get { return id_; }
       set {
         id_ = value;
@@ -358,7 +435,7 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Id != 0) hash ^= Id.GetHashCode();
+      if (Id != 0L) hash ^= Id.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -372,9 +449,9 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Id != 0) {
+      if (Id != 0L) {
         output.WriteRawTag(8);
-        output.WriteInt32(Id);
+        output.WriteInt64(Id);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -384,8 +461,8 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Id != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
+      if (Id != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Id);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -398,7 +475,7 @@ namespace Mruv {
       if (other == null) {
         return;
       }
-      if (other.Id != 0) {
+      if (other.Id != 0L) {
         Id = other.Id;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -413,7 +490,7 @@ namespace Mruv {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Id = input.ReadInt32();
+            Id = input.ReadInt64();
             break;
           }
         }
