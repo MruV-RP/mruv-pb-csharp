@@ -36,8 +36,8 @@ namespace Mruv {
             "ZWdpc3RlckFjY291bnRSZXF1ZXN0Gh0ubXJ1di5SZWdpc3RlckFjY291bnRS",
             "ZXNwb25zZRIwCgVMb2dJbhISLm1ydXYuTG9nSW5SZXF1ZXN0GhMubXJ1di5M",
             "b2dJblJlc3BvbnNlEiwKCkdldEFjY291bnQSDy5tcnV2LkFjY291bnRJRBoN",
-            "Lm1ydXYuQWNjb3VudEIqWihnaXRodWIuY29tL01ydVYtUlAvbXJ1di1wYi1n",
-            "by9jaGFyYWN0ZXJzYgZwcm90bzM="));
+            "Lm1ydXYuQWNjb3VudEIoWiZnaXRodWIuY29tL01ydVYtUlAvbXJ1di1wYi1n",
+            "by9hY2NvdW50c2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, global::Mruv.AccountsModelReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {

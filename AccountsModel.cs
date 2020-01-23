@@ -27,8 +27,8 @@ namespace Mruv {
             "Ch1hY2NvdW50cy9hY2NvdW50c19tb2RlbC5wcm90bxIEbXJ1diIXCglBY2Nv",
             "dW50SUQSCgoCaWQYASABKAMiUgoHQWNjb3VudBIbCgJpZBgBIAEoCzIPLm1y",
             "dXYuQWNjb3VudElEEg0KBWxvZ2luGAIgASgJEgwKBG5pY2sYAyABKAkSDQoF",
-            "ZW1haWwYBCABKAlCKlooZ2l0aHViLmNvbS9NcnVWLVJQL21ydXYtcGItZ28v",
-            "Y2hhcmFjdGVyc2IGcHJvdG8z"));
+            "ZW1haWwYBCABKAlCKFomZ2l0aHViLmNvbS9NcnVWLVJQL21ydXYtcGItZ28v",
+            "YWNjb3VudHNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
