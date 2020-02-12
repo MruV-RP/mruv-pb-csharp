@@ -18,6 +18,7 @@ namespace Mruv {
     static readonly grpc::Marshaller<global::Mruv.LogInResponse> __Marshaller_mruv_LogInResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.LogInResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.AccountID> __Marshaller_mruv_AccountID = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.AccountID.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.Account> __Marshaller_mruv_Account = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Account.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.GetAccountCharactersResponse> __Marshaller_mruv_GetAccountCharactersResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.GetAccountCharactersResponse.Parser.ParseFrom);
 
     static readonly grpc::Method<global::Mruv.RegisterAccountRequest, global::Mruv.RegisterAccountResponse> __Method_RegisterAccount = new grpc::Method<global::Mruv.RegisterAccountRequest, global::Mruv.RegisterAccountResponse>(
         grpc::MethodType.Unary,
@@ -40,6 +41,13 @@ namespace Mruv {
         __Marshaller_mruv_AccountID,
         __Marshaller_mruv_Account);
 
+    static readonly grpc::Method<global::Mruv.AccountID, global::Mruv.GetAccountCharactersResponse> __Method_GetAccountCharacters = new grpc::Method<global::Mruv.AccountID, global::Mruv.GetAccountCharactersResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetAccountCharacters",
+        __Marshaller_mruv_AccountID,
+        __Marshaller_mruv_GetAccountCharactersResponse);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -61,6 +69,11 @@ namespace Mruv {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::Mruv.Account> GetAccount(global::Mruv.AccountID request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.GetAccountCharactersResponse> GetAccountCharacters(global::Mruv.AccountID request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -138,6 +151,22 @@ namespace Mruv {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetAccount, null, options, request);
       }
+      public virtual global::Mruv.GetAccountCharactersResponse GetAccountCharacters(global::Mruv.AccountID request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetAccountCharacters(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Mruv.GetAccountCharactersResponse GetAccountCharacters(global::Mruv.AccountID request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetAccountCharacters, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Mruv.GetAccountCharactersResponse> GetAccountCharactersAsync(global::Mruv.AccountID request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetAccountCharactersAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Mruv.GetAccountCharactersResponse> GetAccountCharactersAsync(global::Mruv.AccountID request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetAccountCharacters, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override MruVAccountsServiceClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -152,7 +181,8 @@ namespace Mruv {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_RegisterAccount, serviceImpl.RegisterAccount)
           .AddMethod(__Method_LogIn, serviceImpl.LogIn)
-          .AddMethod(__Method_GetAccount, serviceImpl.GetAccount).Build();
+          .AddMethod(__Method_GetAccount, serviceImpl.GetAccount)
+          .AddMethod(__Method_GetAccountCharacters, serviceImpl.GetAccountCharacters).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
@@ -164,6 +194,7 @@ namespace Mruv {
       serviceBinder.AddMethod(__Method_RegisterAccount, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.RegisterAccountRequest, global::Mruv.RegisterAccountResponse>(serviceImpl.RegisterAccount));
       serviceBinder.AddMethod(__Method_LogIn, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.LogInRequest, global::Mruv.LogInResponse>(serviceImpl.LogIn));
       serviceBinder.AddMethod(__Method_GetAccount, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.AccountID, global::Mruv.Account>(serviceImpl.GetAccount));
+      serviceBinder.AddMethod(__Method_GetAccountCharacters, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.AccountID, global::Mruv.GetAccountCharactersResponse>(serviceImpl.GetAccountCharacters));
     }
 
   }

@@ -16,6 +16,10 @@ namespace Mruv {
     static readonly grpc::Marshaller<global::Mruv.GroupID> __Marshaller_mruv_GroupID = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.GroupID.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.GetGroupsRequest> __Marshaller_mruv_GetGroupsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.GetGroupsRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.GetGroupsResponse> __Marshaller_mruv_GetGroupsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.GetGroupsResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.AddGroupMemberRequest> __Marshaller_mruv_AddGroupMemberRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.AddGroupMemberRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.AddGroupMemberResponse> __Marshaller_mruv_AddGroupMemberResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.AddGroupMemberResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.RemoveGroupMemberRequest> __Marshaller_mruv_RemoveGroupMemberRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.RemoveGroupMemberRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.RemoveGroupMemberResponse> __Marshaller_mruv_RemoveGroupMemberResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.RemoveGroupMemberResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.ServiceStatusRequest> __Marshaller_mruv_ServiceStatusRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.ServiceStatusRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.ServiceStatusResponse> __Marshaller_mruv_ServiceStatusResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.ServiceStatusResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.VersionRequest> __Marshaller_mruv_VersionRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.VersionRequest.Parser.ParseFrom);
@@ -35,13 +39,6 @@ namespace Mruv {
         __Marshaller_mruv_GroupID,
         __Marshaller_mruv_Group);
 
-    static readonly grpc::Method<global::Mruv.Group, global::Mruv.GroupID> __Method_UpdateGroup = new grpc::Method<global::Mruv.Group, global::Mruv.GroupID>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "UpdateGroup",
-        __Marshaller_mruv_Group,
-        __Marshaller_mruv_GroupID);
-
     static readonly grpc::Method<global::Mruv.GroupID, global::Mruv.GroupID> __Method_DeleteGroup = new grpc::Method<global::Mruv.GroupID, global::Mruv.GroupID>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -55,6 +52,20 @@ namespace Mruv {
         "GetGroups",
         __Marshaller_mruv_GetGroupsRequest,
         __Marshaller_mruv_GetGroupsResponse);
+
+    static readonly grpc::Method<global::Mruv.AddGroupMemberRequest, global::Mruv.AddGroupMemberResponse> __Method_AddGroupMember = new grpc::Method<global::Mruv.AddGroupMemberRequest, global::Mruv.AddGroupMemberResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "AddGroupMember",
+        __Marshaller_mruv_AddGroupMemberRequest,
+        __Marshaller_mruv_AddGroupMemberResponse);
+
+    static readonly grpc::Method<global::Mruv.RemoveGroupMemberRequest, global::Mruv.RemoveGroupMemberResponse> __Method_RemoveGroupMember = new grpc::Method<global::Mruv.RemoveGroupMemberRequest, global::Mruv.RemoveGroupMemberResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "RemoveGroupMember",
+        __Marshaller_mruv_RemoveGroupMemberRequest,
+        __Marshaller_mruv_RemoveGroupMemberResponse);
 
     static readonly grpc::Method<global::Mruv.ServiceStatusRequest, global::Mruv.ServiceStatusResponse> __Method_GetServiceStatus = new grpc::Method<global::Mruv.ServiceStatusRequest, global::Mruv.ServiceStatusResponse>(
         grpc::MethodType.Unary,
@@ -96,17 +107,22 @@ namespace Mruv {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.GroupID> UpdateGroup(global::Mruv.Group request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
       public virtual global::System.Threading.Tasks.Task<global::Mruv.GroupID> DeleteGroup(global::Mruv.GroupID request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       public virtual global::System.Threading.Tasks.Task<global::Mruv.GetGroupsResponse> GetGroups(global::Mruv.GetGroupsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.AddGroupMemberResponse> AddGroupMember(global::Mruv.AddGroupMemberRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.RemoveGroupMemberResponse> RemoveGroupMember(global::Mruv.RemoveGroupMemberRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -212,22 +228,6 @@ namespace Mruv {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetGroup, null, options, request);
       }
-      public virtual global::Mruv.GroupID UpdateGroup(global::Mruv.Group request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return UpdateGroup(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      public virtual global::Mruv.GroupID UpdateGroup(global::Mruv.Group request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_UpdateGroup, null, options, request);
-      }
-      public virtual grpc::AsyncUnaryCall<global::Mruv.GroupID> UpdateGroupAsync(global::Mruv.Group request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return UpdateGroupAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      public virtual grpc::AsyncUnaryCall<global::Mruv.GroupID> UpdateGroupAsync(global::Mruv.Group request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_UpdateGroup, null, options, request);
-      }
       public virtual global::Mruv.GroupID DeleteGroup(global::Mruv.GroupID request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return DeleteGroup(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -259,6 +259,38 @@ namespace Mruv {
       public virtual grpc::AsyncUnaryCall<global::Mruv.GetGroupsResponse> GetGroupsAsync(global::Mruv.GetGroupsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetGroups, null, options, request);
+      }
+      public virtual global::Mruv.AddGroupMemberResponse AddGroupMember(global::Mruv.AddGroupMemberRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return AddGroupMember(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Mruv.AddGroupMemberResponse AddGroupMember(global::Mruv.AddGroupMemberRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_AddGroupMember, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Mruv.AddGroupMemberResponse> AddGroupMemberAsync(global::Mruv.AddGroupMemberRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return AddGroupMemberAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Mruv.AddGroupMemberResponse> AddGroupMemberAsync(global::Mruv.AddGroupMemberRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_AddGroupMember, null, options, request);
+      }
+      public virtual global::Mruv.RemoveGroupMemberResponse RemoveGroupMember(global::Mruv.RemoveGroupMemberRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return RemoveGroupMember(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Mruv.RemoveGroupMemberResponse RemoveGroupMember(global::Mruv.RemoveGroupMemberRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_RemoveGroupMember, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Mruv.RemoveGroupMemberResponse> RemoveGroupMemberAsync(global::Mruv.RemoveGroupMemberRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return RemoveGroupMemberAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Mruv.RemoveGroupMemberResponse> RemoveGroupMemberAsync(global::Mruv.RemoveGroupMemberRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_RemoveGroupMember, null, options, request);
       }
       /// <summary>
       ///Service status
@@ -334,9 +366,10 @@ namespace Mruv {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_CreateGroup, serviceImpl.CreateGroup)
           .AddMethod(__Method_GetGroup, serviceImpl.GetGroup)
-          .AddMethod(__Method_UpdateGroup, serviceImpl.UpdateGroup)
           .AddMethod(__Method_DeleteGroup, serviceImpl.DeleteGroup)
           .AddMethod(__Method_GetGroups, serviceImpl.GetGroups)
+          .AddMethod(__Method_AddGroupMember, serviceImpl.AddGroupMember)
+          .AddMethod(__Method_RemoveGroupMember, serviceImpl.RemoveGroupMember)
           .AddMethod(__Method_GetServiceStatus, serviceImpl.GetServiceStatus)
           .AddMethod(__Method_GetServiceVersion, serviceImpl.GetServiceVersion).Build();
     }
@@ -349,9 +382,10 @@ namespace Mruv {
     {
       serviceBinder.AddMethod(__Method_CreateGroup, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Group, global::Mruv.GroupID>(serviceImpl.CreateGroup));
       serviceBinder.AddMethod(__Method_GetGroup, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.GroupID, global::Mruv.Group>(serviceImpl.GetGroup));
-      serviceBinder.AddMethod(__Method_UpdateGroup, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Group, global::Mruv.GroupID>(serviceImpl.UpdateGroup));
       serviceBinder.AddMethod(__Method_DeleteGroup, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.GroupID, global::Mruv.GroupID>(serviceImpl.DeleteGroup));
       serviceBinder.AddMethod(__Method_GetGroups, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.GetGroupsRequest, global::Mruv.GetGroupsResponse>(serviceImpl.GetGroups));
+      serviceBinder.AddMethod(__Method_AddGroupMember, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.AddGroupMemberRequest, global::Mruv.AddGroupMemberResponse>(serviceImpl.AddGroupMember));
+      serviceBinder.AddMethod(__Method_RemoveGroupMember, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.RemoveGroupMemberRequest, global::Mruv.RemoveGroupMemberResponse>(serviceImpl.RemoveGroupMember));
       serviceBinder.AddMethod(__Method_GetServiceStatus, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.ServiceStatusRequest, global::Mruv.ServiceStatusResponse>(serviceImpl.GetServiceStatus));
       serviceBinder.AddMethod(__Method_GetServiceVersion, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.VersionRequest, global::Mruv.VersionResponse>(serviceImpl.GetServiceVersion));
     }

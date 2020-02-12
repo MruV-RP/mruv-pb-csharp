@@ -26,25 +26,30 @@ namespace Mruv {
           string.Concat(
             "ChdhY2NvdW50cy9hY2NvdW50cy5wcm90bxIEbXJ1dhocZ29vZ2xlL2FwaS9h",
             "bm5vdGF0aW9ucy5wcm90bxodYWNjb3VudHMvYWNjb3VudHNfbW9kZWwucHJv",
-            "dG8iSgoWUmVnaXN0ZXJBY2NvdW50UmVxdWVzdBIeCgdhY2NvdW50GAEgASgL",
-            "Mg0ubXJ1di5BY2NvdW50EhAKCHBhc3N3b3JkGAIgASgJIkcKF1JlZ2lzdGVy",
-            "QWNjb3VudFJlc3BvbnNlEg8KB3N1Y2Nlc3MYASABKAgSGwoCaWQYAiABKAsy",
-            "Dy5tcnV2LkFjY291bnRJRCIvCgxMb2dJblJlcXVlc3QSDQoFbG9naW4YASAB",
-            "KAkSEAoIcGFzc3dvcmQYAiABKAkiPQoNTG9nSW5SZXNwb25zZRIPCgdzdWNj",
-            "ZXNzGAEgASgIEhsKAmlkGAIgASgLMg8ubXJ1di5BY2NvdW50SUQyxQEKE01y",
-            "dVZBY2NvdW50c1NlcnZpY2USTgoPUmVnaXN0ZXJBY2NvdW50EhwubXJ1di5S",
-            "ZWdpc3RlckFjY291bnRSZXF1ZXN0Gh0ubXJ1di5SZWdpc3RlckFjY291bnRS",
-            "ZXNwb25zZRIwCgVMb2dJbhISLm1ydXYuTG9nSW5SZXF1ZXN0GhMubXJ1di5M",
-            "b2dJblJlc3BvbnNlEiwKCkdldEFjY291bnQSDy5tcnV2LkFjY291bnRJRBoN",
-            "Lm1ydXYuQWNjb3VudEIoWiZnaXRodWIuY29tL01ydVYtUlAvbXJ1di1wYi1n",
-            "by9hY2NvdW50c2IGcHJvdG8z"));
+            "dG8aIWNoYXJhY3RlcnMvY2hhcmFjdGVyc19tb2RlbC5wcm90byJKChZSZWdp",
+            "c3RlckFjY291bnRSZXF1ZXN0Eh4KB2FjY291bnQYASABKAsyDS5tcnV2LkFj",
+            "Y291bnQSEAoIcGFzc3dvcmQYAiABKAkiRwoXUmVnaXN0ZXJBY2NvdW50UmVz",
+            "cG9uc2USDwoHc3VjY2VzcxgBIAEoCBIbCgJpZBgCIAEoCzIPLm1ydXYuQWNj",
+            "b3VudElEIi8KDExvZ0luUmVxdWVzdBINCgVsb2dpbhgBIAEoCRIQCghwYXNz",
+            "d29yZBgCIAEoCSI9Cg1Mb2dJblJlc3BvbnNlEg8KB3N1Y2Nlc3MYASABKAgS",
+            "GwoCaWQYAiABKAsyDy5tcnV2LkFjY291bnRJRCJDChxHZXRBY2NvdW50Q2hh",
+            "cmFjdGVyc1Jlc3BvbnNlEiMKCmNoYXJhY3RlcnMYASADKAsyDy5tcnV2LkNo",
+            "YXJhY3RlcjKSAgoTTXJ1VkFjY291bnRzU2VydmljZRJOCg9SZWdpc3RlckFj",
+            "Y291bnQSHC5tcnV2LlJlZ2lzdGVyQWNjb3VudFJlcXVlc3QaHS5tcnV2LlJl",
+            "Z2lzdGVyQWNjb3VudFJlc3BvbnNlEjAKBUxvZ0luEhIubXJ1di5Mb2dJblJl",
+            "cXVlc3QaEy5tcnV2LkxvZ0luUmVzcG9uc2USLAoKR2V0QWNjb3VudBIPLm1y",
+            "dXYuQWNjb3VudElEGg0ubXJ1di5BY2NvdW50EksKFEdldEFjY291bnRDaGFy",
+            "YWN0ZXJzEg8ubXJ1di5BY2NvdW50SUQaIi5tcnV2LkdldEFjY291bnRDaGFy",
+            "YWN0ZXJzUmVzcG9uc2VCKFomZ2l0aHViLmNvbS9NcnVWLVJQL21ydXYtcGIt",
+            "Z28vYWNjb3VudHNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, global::Mruv.AccountsModelReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, global::Mruv.AccountsModelReflection.Descriptor, global::Mruv.CharactersModelReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.RegisterAccountRequest), global::Mruv.RegisterAccountRequest.Parser, new[]{ "Account", "Password" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.RegisterAccountResponse), global::Mruv.RegisterAccountResponse.Parser, new[]{ "Success", "Id" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.LogInRequest), global::Mruv.LogInRequest.Parser, new[]{ "Login", "Password" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.LogInResponse), global::Mruv.LogInResponse.Parser, new[]{ "Success", "Id" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.LogInResponse), global::Mruv.LogInResponse.Parser, new[]{ "Success", "Id" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetAccountCharactersResponse), global::Mruv.GetAccountCharactersResponse.Parser, new[]{ "Characters" }, null, null, null)
           }));
     }
     #endregion
@@ -689,6 +694,127 @@ namespace Mruv {
               Id = new global::Mruv.AccountID();
             }
             input.ReadMessage(Id);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class GetAccountCharactersResponse : pb::IMessage<GetAccountCharactersResponse> {
+    private static readonly pb::MessageParser<GetAccountCharactersResponse> _parser = new pb::MessageParser<GetAccountCharactersResponse>(() => new GetAccountCharactersResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<GetAccountCharactersResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.AccountsReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetAccountCharactersResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetAccountCharactersResponse(GetAccountCharactersResponse other) : this() {
+      characters_ = other.characters_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetAccountCharactersResponse Clone() {
+      return new GetAccountCharactersResponse(this);
+    }
+
+    /// <summary>Field number for the "characters" field.</summary>
+    public const int CharactersFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Mruv.Character> _repeated_characters_codec
+        = pb::FieldCodec.ForMessage(10, global::Mruv.Character.Parser);
+    private readonly pbc::RepeatedField<global::Mruv.Character> characters_ = new pbc::RepeatedField<global::Mruv.Character>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Mruv.Character> Characters {
+      get { return characters_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as GetAccountCharactersResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(GetAccountCharactersResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!characters_.Equals(other.characters_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= characters_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      characters_.WriteTo(output, _repeated_characters_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += characters_.CalculateSize(_repeated_characters_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(GetAccountCharactersResponse other) {
+      if (other == null) {
+        return;
+      }
+      characters_.Add(other.characters_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            characters_.AddEntriesFrom(input, _repeated_characters_codec);
             break;
           }
         }
