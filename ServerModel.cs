@@ -25,7 +25,7 @@ namespace Mruv {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChlzZXJ2ZXIvc2VydmVyX21vZGVsLnByb3RvEgRtcnV2IhYKCFNlcnZlcklE",
-            "EgoKAmlkGAEgASgFIkgKClNlcnZlckluZm8SDAoEbmFtZRgBIAEoCRIMCgRo",
+            "EgoKAmlkGAEgASgDIkgKClNlcnZlckluZm8SDAoEbmFtZRgBIAEoCRIMCgRo",
             "b3N0GAIgASgJEgwKBHBvcnQYAyABKAkSEAoIcGxhdGZvcm0YBCABKAkiLwoM",
             "U2VydmVyU3RhdHVzEg4KBmFjdGl2ZRgBIAEoCBIPCgdwbGF5ZXJzGAIgASgF",
             "QiZaJGdpdGh1Yi5jb20vTXJ1Vi1SUC9tcnV2LXBiLWdvL3NlcnZlcmIGcHJv",
@@ -78,9 +78,9 @@ namespace Mruv {
 
     /// <summary>Field number for the "id" field.</summary>
     public const int IdFieldNumber = 1;
-    private int id_;
+    private long id_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Id {
+    public long Id {
       get { return id_; }
       set {
         id_ = value;
@@ -107,7 +107,7 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Id != 0) hash ^= Id.GetHashCode();
+      if (Id != 0L) hash ^= Id.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -121,9 +121,9 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Id != 0) {
+      if (Id != 0L) {
         output.WriteRawTag(8);
-        output.WriteInt32(Id);
+        output.WriteInt64(Id);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -133,8 +133,8 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Id != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
+      if (Id != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Id);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -147,7 +147,7 @@ namespace Mruv {
       if (other == null) {
         return;
       }
-      if (other.Id != 0) {
+      if (other.Id != 0L) {
         Id = other.Id;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -162,7 +162,7 @@ namespace Mruv {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Id = input.ReadInt32();
+            Id = input.ReadInt64();
             break;
           }
         }

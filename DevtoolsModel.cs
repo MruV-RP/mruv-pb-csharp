@@ -30,7 +30,7 @@ namespace Mruv.Devtools {
             "dBIMCgRuYW1lGAEgASgJEhAKCGNhdGVnb3J5GAIgASgJIlQKCUFuaW1hdGlv",
             "bhIMCgRkaWN0GAEgASgJEgwKBG5hbWUYAiABKAkSGQoRcmVhZGFibGVfY2F0",
             "ZWdvcnkYAyABKAkSEAoIY2F0ZWdvcnkYBCABKAkiMAoGUGxheWVyEgoKAmlk",
-            "GAEgASgFEgwKBG5hbWUYAiABKAkSDAoEaGFzaBgDIAEoCUIoWiZnaXRodWIu",
+            "GAEgASgNEgwKBG5hbWUYAiABKAkSDAoEaGFzaBgDIAEoCUIoWiZnaXRodWIu",
             "Y29tL01ydVYtUlAvbXJ1di1wYi1nby9kZXZ0b29sc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
@@ -729,12 +729,12 @@ namespace Mruv.Devtools {
 
     /// <summary>Field number for the "id" field.</summary>
     public const int IdFieldNumber = 1;
-    private int id_;
+    private uint id_;
     /// <summary>
     /// Unique id.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Id {
+    public uint Id {
       get { return id_; }
       set {
         id_ = value;
@@ -809,7 +809,7 @@ namespace Mruv.Devtools {
     public void WriteTo(pb::CodedOutputStream output) {
       if (Id != 0) {
         output.WriteRawTag(8);
-        output.WriteInt32(Id);
+        output.WriteUInt32(Id);
       }
       if (Name.Length != 0) {
         output.WriteRawTag(18);
@@ -828,7 +828,7 @@ namespace Mruv.Devtools {
     public int CalculateSize() {
       int size = 0;
       if (Id != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Id);
       }
       if (Name.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
@@ -868,7 +868,7 @@ namespace Mruv.Devtools {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Id = input.ReadInt32();
+            Id = input.ReadUInt32();
             break;
           }
           case 18: {

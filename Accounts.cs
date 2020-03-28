@@ -28,27 +28,27 @@ namespace Mruv {
             "bm5vdGF0aW9ucy5wcm90bxodYWNjb3VudHMvYWNjb3VudHNfbW9kZWwucHJv",
             "dG8aIWNoYXJhY3RlcnMvY2hhcmFjdGVyc19tb2RlbC5wcm90byJKChZSZWdp",
             "c3RlckFjY291bnRSZXF1ZXN0Eh4KB2FjY291bnQYASABKAsyDS5tcnV2LkFj",
-            "Y291bnQSEAoIcGFzc3dvcmQYAiABKAkiRwoXUmVnaXN0ZXJBY2NvdW50UmVz",
-            "cG9uc2USDwoHc3VjY2VzcxgBIAEoCBIbCgJpZBgCIAEoCzIPLm1ydXYuQWNj",
-            "b3VudElEIi8KDExvZ0luUmVxdWVzdBINCgVsb2dpbhgBIAEoCRIQCghwYXNz",
-            "d29yZBgCIAEoCSI9Cg1Mb2dJblJlc3BvbnNlEg8KB3N1Y2Nlc3MYASABKAgS",
-            "GwoCaWQYAiABKAsyDy5tcnV2LkFjY291bnRJRCJDChxHZXRBY2NvdW50Q2hh",
-            "cmFjdGVyc1Jlc3BvbnNlEiMKCmNoYXJhY3RlcnMYASADKAsyDy5tcnV2LkNo",
-            "YXJhY3RlcjKSAgoTTXJ1VkFjY291bnRzU2VydmljZRJOCg9SZWdpc3RlckFj",
-            "Y291bnQSHC5tcnV2LlJlZ2lzdGVyQWNjb3VudFJlcXVlc3QaHS5tcnV2LlJl",
-            "Z2lzdGVyQWNjb3VudFJlc3BvbnNlEjAKBUxvZ0luEhIubXJ1di5Mb2dJblJl",
-            "cXVlc3QaEy5tcnV2LkxvZ0luUmVzcG9uc2USLAoKR2V0QWNjb3VudBIPLm1y",
-            "dXYuQWNjb3VudElEGg0ubXJ1di5BY2NvdW50EksKFEdldEFjY291bnRDaGFy",
-            "YWN0ZXJzEg8ubXJ1di5BY2NvdW50SUQaIi5tcnV2LkdldEFjY291bnRDaGFy",
-            "YWN0ZXJzUmVzcG9uc2VCKFomZ2l0aHViLmNvbS9NcnVWLVJQL21ydXYtcGIt",
-            "Z28vYWNjb3VudHNiBnByb3RvMw=="));
+            "Y291bnQSEAoIcGFzc3dvcmQYAiABKAkiPgoXUmVnaXN0ZXJBY2NvdW50UmVz",
+            "cG9uc2USDwoHc3VjY2VzcxgBIAEoCBISCgphY2NvdW50X2lkGAIgASgNIi8K",
+            "DExvZ0luUmVxdWVzdBINCgVsb2dpbhgBIAEoCRIQCghwYXNzd29yZBgCIAEo",
+            "CSI0Cg1Mb2dJblJlc3BvbnNlEg8KB3N1Y2Nlc3MYASABKAgSEgoKYWNjb3Vu",
+            "dF9pZBgCIAEoDSJDChxHZXRBY2NvdW50Q2hhcmFjdGVyc1Jlc3BvbnNlEiMK",
+            "CmNoYXJhY3RlcnMYASADKAsyDy5tcnV2LkNoYXJhY3RlcjKSAgoTTXJ1VkFj",
+            "Y291bnRzU2VydmljZRJOCg9SZWdpc3RlckFjY291bnQSHC5tcnV2LlJlZ2lz",
+            "dGVyQWNjb3VudFJlcXVlc3QaHS5tcnV2LlJlZ2lzdGVyQWNjb3VudFJlc3Bv",
+            "bnNlEjAKBUxvZ0luEhIubXJ1di5Mb2dJblJlcXVlc3QaEy5tcnV2LkxvZ0lu",
+            "UmVzcG9uc2USLAoKR2V0QWNjb3VudBIPLm1ydXYuQWNjb3VudElEGg0ubXJ1",
+            "di5BY2NvdW50EksKFEdldEFjY291bnRDaGFyYWN0ZXJzEg8ubXJ1di5BY2Nv",
+            "dW50SUQaIi5tcnV2LkdldEFjY291bnRDaGFyYWN0ZXJzUmVzcG9uc2VCKFom",
+            "Z2l0aHViLmNvbS9NcnVWLVJQL21ydXYtcGItZ28vYWNjb3VudHNiBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, global::Mruv.AccountsModelReflection.Descriptor, global::Mruv.CharactersModelReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.RegisterAccountRequest), global::Mruv.RegisterAccountRequest.Parser, new[]{ "Account", "Password" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.RegisterAccountResponse), global::Mruv.RegisterAccountResponse.Parser, new[]{ "Success", "Id" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.RegisterAccountResponse), global::Mruv.RegisterAccountResponse.Parser, new[]{ "Success", "AccountId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.LogInRequest), global::Mruv.LogInRequest.Parser, new[]{ "Login", "Password" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.LogInResponse), global::Mruv.LogInResponse.Parser, new[]{ "Success", "Id" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.LogInResponse), global::Mruv.LogInResponse.Parser, new[]{ "Success", "AccountId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetAccountCharactersResponse), global::Mruv.GetAccountCharactersResponse.Parser, new[]{ "Characters" }, null, null, null)
           }));
     }
@@ -245,7 +245,7 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public RegisterAccountResponse(RegisterAccountResponse other) : this() {
       success_ = other.success_;
-      id_ = other.id_ != null ? other.id_.Clone() : null;
+      accountId_ = other.accountId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -265,14 +265,14 @@ namespace Mruv {
       }
     }
 
-    /// <summary>Field number for the "id" field.</summary>
-    public const int IdFieldNumber = 2;
-    private global::Mruv.AccountID id_;
+    /// <summary>Field number for the "account_id" field.</summary>
+    public const int AccountIdFieldNumber = 2;
+    private uint accountId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Mruv.AccountID Id {
-      get { return id_; }
+    public uint AccountId {
+      get { return accountId_; }
       set {
-        id_ = value;
+        accountId_ = value;
       }
     }
 
@@ -290,7 +290,7 @@ namespace Mruv {
         return true;
       }
       if (Success != other.Success) return false;
-      if (!object.Equals(Id, other.Id)) return false;
+      if (AccountId != other.AccountId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -298,7 +298,7 @@ namespace Mruv {
     public override int GetHashCode() {
       int hash = 1;
       if (Success != false) hash ^= Success.GetHashCode();
-      if (id_ != null) hash ^= Id.GetHashCode();
+      if (AccountId != 0) hash ^= AccountId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -316,9 +316,9 @@ namespace Mruv {
         output.WriteRawTag(8);
         output.WriteBool(Success);
       }
-      if (id_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(Id);
+      if (AccountId != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(AccountId);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -331,8 +331,8 @@ namespace Mruv {
       if (Success != false) {
         size += 1 + 1;
       }
-      if (id_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Id);
+      if (AccountId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(AccountId);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -348,11 +348,8 @@ namespace Mruv {
       if (other.Success != false) {
         Success = other.Success;
       }
-      if (other.id_ != null) {
-        if (id_ == null) {
-          Id = new global::Mruv.AccountID();
-        }
-        Id.MergeFrom(other.Id);
+      if (other.AccountId != 0) {
+        AccountId = other.AccountId;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -369,11 +366,8 @@ namespace Mruv {
             Success = input.ReadBool();
             break;
           }
-          case 18: {
-            if (id_ == null) {
-              Id = new global::Mruv.AccountID();
-            }
-            input.ReadMessage(Id);
+          case 16: {
+            AccountId = input.ReadUInt32();
             break;
           }
         }
@@ -565,7 +559,7 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public LogInResponse(LogInResponse other) : this() {
       success_ = other.success_;
-      id_ = other.id_ != null ? other.id_.Clone() : null;
+      accountId_ = other.accountId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -585,14 +579,14 @@ namespace Mruv {
       }
     }
 
-    /// <summary>Field number for the "id" field.</summary>
-    public const int IdFieldNumber = 2;
-    private global::Mruv.AccountID id_;
+    /// <summary>Field number for the "account_id" field.</summary>
+    public const int AccountIdFieldNumber = 2;
+    private uint accountId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Mruv.AccountID Id {
-      get { return id_; }
+    public uint AccountId {
+      get { return accountId_; }
       set {
-        id_ = value;
+        accountId_ = value;
       }
     }
 
@@ -610,7 +604,7 @@ namespace Mruv {
         return true;
       }
       if (Success != other.Success) return false;
-      if (!object.Equals(Id, other.Id)) return false;
+      if (AccountId != other.AccountId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -618,7 +612,7 @@ namespace Mruv {
     public override int GetHashCode() {
       int hash = 1;
       if (Success != false) hash ^= Success.GetHashCode();
-      if (id_ != null) hash ^= Id.GetHashCode();
+      if (AccountId != 0) hash ^= AccountId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -636,9 +630,9 @@ namespace Mruv {
         output.WriteRawTag(8);
         output.WriteBool(Success);
       }
-      if (id_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(Id);
+      if (AccountId != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(AccountId);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -651,8 +645,8 @@ namespace Mruv {
       if (Success != false) {
         size += 1 + 1;
       }
-      if (id_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Id);
+      if (AccountId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(AccountId);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -668,11 +662,8 @@ namespace Mruv {
       if (other.Success != false) {
         Success = other.Success;
       }
-      if (other.id_ != null) {
-        if (id_ == null) {
-          Id = new global::Mruv.AccountID();
-        }
-        Id.MergeFrom(other.Id);
+      if (other.AccountId != 0) {
+        AccountId = other.AccountId;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -689,11 +680,8 @@ namespace Mruv {
             Success = input.ReadBool();
             break;
           }
-          case 18: {
-            if (id_ == null) {
-              Id = new global::Mruv.AccountID();
-            }
-            input.ReadMessage(Id);
+          case 16: {
+            AccountId = input.ReadUInt32();
             break;
           }
         }

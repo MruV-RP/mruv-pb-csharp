@@ -25,10 +25,9 @@ namespace Mruv {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ch1hY2NvdW50cy9hY2NvdW50c19tb2RlbC5wcm90bxIEbXJ1diIXCglBY2Nv",
-            "dW50SUQSCgoCaWQYASABKAMiUgoHQWNjb3VudBIbCgJpZBgBIAEoCzIPLm1y",
-            "dXYuQWNjb3VudElEEg0KBWxvZ2luGAIgASgJEgwKBG5pY2sYAyABKAkSDQoF",
-            "ZW1haWwYBCABKAlCKFomZ2l0aHViLmNvbS9NcnVWLVJQL21ydXYtcGItZ28v",
-            "YWNjb3VudHNiBnByb3RvMw=="));
+            "dW50SUQSCgoCaWQYASABKA0iQQoHQWNjb3VudBIKCgJpZBgBIAEoDRINCgVs",
+            "b2dpbhgCIAEoCRIMCgRuaWNrGAMgASgJEg0KBWVtYWlsGAQgASgJQihaJmdp",
+            "dGh1Yi5jb20vTXJ1Vi1SUC9tcnV2LXBiLWdvL2FjY291bnRzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -76,9 +75,9 @@ namespace Mruv {
 
     /// <summary>Field number for the "id" field.</summary>
     public const int IdFieldNumber = 1;
-    private long id_;
+    private uint id_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long Id {
+    public uint Id {
       get { return id_; }
       set {
         id_ = value;
@@ -105,7 +104,7 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Id != 0L) hash ^= Id.GetHashCode();
+      if (Id != 0) hash ^= Id.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -119,9 +118,9 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Id != 0L) {
+      if (Id != 0) {
         output.WriteRawTag(8);
-        output.WriteInt64(Id);
+        output.WriteUInt32(Id);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -131,8 +130,8 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Id != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Id);
+      if (Id != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Id);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -145,7 +144,7 @@ namespace Mruv {
       if (other == null) {
         return;
       }
-      if (other.Id != 0L) {
+      if (other.Id != 0) {
         Id = other.Id;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -160,7 +159,7 @@ namespace Mruv {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Id = input.ReadInt64();
+            Id = input.ReadUInt32();
             break;
           }
         }
@@ -194,7 +193,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public Account(Account other) : this() {
-      id_ = other.id_ != null ? other.id_.Clone() : null;
+      id_ = other.id_;
       login_ = other.login_;
       nick_ = other.nick_;
       email_ = other.email_;
@@ -208,9 +207,9 @@ namespace Mruv {
 
     /// <summary>Field number for the "id" field.</summary>
     public const int IdFieldNumber = 1;
-    private global::Mruv.AccountID id_;
+    private uint id_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Mruv.AccountID Id {
+    public uint Id {
       get { return id_; }
       set {
         id_ = value;
@@ -263,7 +262,7 @@ namespace Mruv {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(Id, other.Id)) return false;
+      if (Id != other.Id) return false;
       if (Login != other.Login) return false;
       if (Nick != other.Nick) return false;
       if (Email != other.Email) return false;
@@ -273,7 +272,7 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (id_ != null) hash ^= Id.GetHashCode();
+      if (Id != 0) hash ^= Id.GetHashCode();
       if (Login.Length != 0) hash ^= Login.GetHashCode();
       if (Nick.Length != 0) hash ^= Nick.GetHashCode();
       if (Email.Length != 0) hash ^= Email.GetHashCode();
@@ -290,9 +289,9 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (id_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Id);
+      if (Id != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Id);
       }
       if (Login.Length != 0) {
         output.WriteRawTag(18);
@@ -314,8 +313,8 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (id_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Id);
+      if (Id != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Id);
       }
       if (Login.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Login);
@@ -337,11 +336,8 @@ namespace Mruv {
       if (other == null) {
         return;
       }
-      if (other.id_ != null) {
-        if (id_ == null) {
-          Id = new global::Mruv.AccountID();
-        }
-        Id.MergeFrom(other.Id);
+      if (other.Id != 0) {
+        Id = other.Id;
       }
       if (other.Login.Length != 0) {
         Login = other.Login;
@@ -363,11 +359,8 @@ namespace Mruv {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 10: {
-            if (id_ == null) {
-              Id = new global::Mruv.AccountID();
-            }
-            input.ReadMessage(Id);
+          case 8: {
+            Id = input.ReadUInt32();
             break;
           }
           case 18: {

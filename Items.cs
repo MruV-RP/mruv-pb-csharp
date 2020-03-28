@@ -35,78 +35,75 @@ namespace Mruv {
             "c3BvbnNlEiMKCmNvbnRhaW5lcnMYASADKAsyDy5tcnV2LkNvbnRhaW5lciIp",
             "ChhHZXRDb250YWluZXJUeXBlc1JlcXVlc3QSDQoFbGltaXQYASABKA0iSQoZ",
             "R2V0Q29udGFpbmVyVHlwZXNSZXNwb25zZRIsCg9jb250YWluZXJfdHlwZXMY",
-            "ASADKAsyEy5tcnV2LkNvbnRhaW5lclR5cGUicQoOUHV0SXRlbVJlcXVlc3QS",
-            "JwoMY29udGFpbmVyX2lkGAEgASgLMhEubXJ1di5Db250YWluZXJJRBIdCgdp",
-            "dGVtX2lkGAIgASgLMgwubXJ1di5JdGVtSUQSDgoEc2xvdBgDIAEoBUgAQgcK",
-            "BXdoZXJlIjgKD1B1dEl0ZW1SZXNwb25zZRIlCgtpbnNpZGVfaXRlbRgBIAEo",
-            "CzIQLm1ydXYuSW5zaWRlSXRlbSJSChhHZXRDb250YWluZXJJdGVtc1JlcXVl",
-            "c3QSJwoMY29udGFpbmVyX2lkGAEgASgLMhEubXJ1di5Db250YWluZXJJRBIN",
-            "CgVsaW1pdBgCIAEoDSI8ChlHZXRDb250YWluZXJJdGVtc1Jlc3BvbnNlEh8K",
-            "BWl0ZW1zGAEgAygLMhAubXJ1di5JbnNpZGVJdGVtIlkKD1B1bGxJdGVtUmVx",
-            "dWVzdBInCgxjb250YWluZXJfaWQYASABKAsyES5tcnV2LkNvbnRhaW5lcklE",
-            "Eh0KB2l0ZW1faWQYAiABKAsyDC5tcnV2Lkl0ZW1JRCJfChBTb3J0SXRlbXNS",
-            "ZXF1ZXN0EicKDGNvbnRhaW5lcl9pZBgBIAEoCzIRLm1ydXYuQ29udGFpbmVy",
-            "SUQSIgoHc29ydF9ieRgCIAEoDjIRLm1ydXYuU29ydGluZ01vZGUiNwoRU29y",
-            "dEl0ZW1zUmVzcG9uc2USIgoJY29udGFpbmVyGAEgASgLMg8ubXJ1di5Db250",
-            "YWluZXIiewoWR2V0TmVhcmVzdEl0ZW1zUmVxdWVzdBIgCghwb3NpdGlvbhgB",
-            "IAEoCzIOLm1ydXYuUG9zaXRpb24SJwoMY29udGFpbmVyX2lkGAIgASgLMhEu",
-            "bXJ1di5Db250YWluZXJJRBIWCg5kaXN0YW5jZV9saW1pdBgDIAEoASI5ChdH",
-            "ZXROZWFyZXN0SXRlbXNSZXNwb25zZRIeCgRpdGVtGAEgAygLMhAubXJ1di5J",
-            "bnNpZGVJdGVtIi8KDlVzZUl0ZW1SZXF1ZXN0Eh0KB2l0ZW1faWQYASABKAsy",
-            "DC5tcnV2Lkl0ZW1JRCIiCg9Vc2VJdGVtUmVzcG9uc2USDwoHc3VjY2VzcxgB",
-            "IAEoCDKMEgoPTXJ1Vkl0ZW1TZXJ2aWNlEjkKCkNyZWF0ZUl0ZW0SCi5tcnV2",
-            "Lkl0ZW0aDC5tcnV2Lkl0ZW1JRCIRgtPkkwILIgkvdjEvaXRlbXMSOwoHR2V0",
-            "SXRlbRIMLm1ydXYuSXRlbUlEGgoubXJ1di5JdGVtIhaC0+STAhASDi92MS9p",
-            "dGVtcy97aWR9EkAKCkRlbGV0ZUl0ZW0SDC5tcnV2Lkl0ZW1JRBoMLm1ydXYu",
-            "SXRlbUlEIhaC0+STAhAqDi92MS9pdGVtcy97aWR9EkwKCEdldEl0ZW1zEhUu",
-            "bXJ1di5HZXRJdGVtc1JlcXVlc3QaFi5tcnV2LkdldEl0ZW1zUmVzcG9uc2Ui",
-            "EYLT5JMCCxIJL3YxL2l0ZW1zEkkKDkNyZWF0ZUl0ZW1UeXBlEg4ubXJ1di5J",
-            "dGVtVHlwZRoQLm1ydXYuSXRlbVR5cGVJRCIVgtPkkwIPIg0vdjEvaXRlbVR5",
-            "cGVzEksKC0dldEl0ZW1UeXBlEhAubXJ1di5JdGVtVHlwZUlEGg4ubXJ1di5J",
-            "dGVtVHlwZSIagtPkkwIUEhIvdjEvaXRlbVR5cGVzL3tpZH0SUAoORGVsZXRl",
-            "SXRlbVR5cGUSEC5tcnV2Lkl0ZW1UeXBlSUQaEC5tcnV2Lkl0ZW1UeXBlSUQi",
-            "GoLT5JMCFCoSL3YxL2l0ZW1UeXBlcy97aWR9ElwKDEdldEl0ZW1UeXBlcxIZ",
-            "Lm1ydXYuR2V0SXRlbVR5cGVzUmVxdWVzdBoaLm1ydXYuR2V0SXRlbVR5cGVz",
-            "UmVzcG9uc2UiFYLT5JMCDxINL3YxL2l0ZW1UeXBlcxJNCg9DcmVhdGVDb250",
-            "YWluZXISDy5tcnV2LkNvbnRhaW5lchoRLm1ydXYuQ29udGFpbmVySUQiFoLT",
-            "5JMCECIOL3YxL2NvbnRhaW5lcnMSTwoMR2V0Q29udGFpbmVyEhEubXJ1di5D",
-            "b250YWluZXJJRBoPLm1ydXYuQ29udGFpbmVyIhuC0+STAhUSEy92MS9jb250",
-            "YWluZXJzL3tpZH0SVAoPRGVsZXRlQ29udGFpbmVyEhEubXJ1di5Db250YWlu",
-            "ZXJJRBoRLm1ydXYuQ29udGFpbmVySUQiG4LT5JMCFSoTL3YxL2NvbnRhaW5l",
-            "cnMve2lkfRJgCg1HZXRDb250YWluZXJzEhoubXJ1di5HZXRDb250YWluZXJz",
-            "UmVxdWVzdBobLm1ydXYuR2V0Q29udGFpbmVyc1Jlc3BvbnNlIhaC0+STAhAS",
-            "Di92MS9jb250YWluZXJzEl0KE0NyZWF0ZUNvbnRhaW5lclR5cGUSEy5tcnV2",
-            "LkNvbnRhaW5lclR5cGUaFS5tcnV2LkNvbnRhaW5lclR5cGVJRCIagtPkkwIU",
-            "IhIvdjEvY29udGFpbmVyVHlwZXMSXwoQR2V0Q29udGFpbmVyVHlwZRIVLm1y",
-            "dXYuQ29udGFpbmVyVHlwZUlEGhMubXJ1di5Db250YWluZXJUeXBlIh+C0+ST",
-            "AhkSFy92MS9jb250YWluZXJUeXBlcy97aWR9EmQKE0RlbGV0ZUNvbnRhaW5l",
-            "clR5cGUSFS5tcnV2LkNvbnRhaW5lclR5cGVJRBoVLm1ydXYuQ29udGFpbmVy",
-            "VHlwZUlEIh+C0+STAhkqFy92MS9jb250YWluZXJUeXBlcy97aWR9EnAKEUdl",
-            "dENvbnRhaW5lclR5cGVzEh4ubXJ1di5HZXRDb250YWluZXJUeXBlc1JlcXVl",
-            "c3QaHy5tcnV2LkdldENvbnRhaW5lclR5cGVzUmVzcG9uc2UiGoLT5JMCFBIS",
-            "L3YxL2NvbnRhaW5lclR5cGVzEoQBChFHZXRDb250YWluZXJJdGVtcxIeLm1y",
-            "dXYuR2V0Q29udGFpbmVySXRlbXNSZXF1ZXN0Gh8ubXJ1di5HZXRDb250YWlu",
-            "ZXJJdGVtc1Jlc3BvbnNlIi6C0+STAigSJi92MS9jb250YWluZXJzL3tjb250",
-            "YWluZXJfaWQuaWR9L2l0ZW1zEmoKCFB1bGxJdGVtEhUubXJ1di5QdWxsSXRl",
-            "bVJlcXVlc3QaCi5tcnV2Lkl0ZW0iO4LT5JMCNSozL3YxL2NvbnRhaW5lcnMv",
-            "e2NvbnRhaW5lcl9pZC5pZH0vaXRlbXMve2l0ZW1faWQuaWR9EnMKB1B1dEl0",
-            "ZW0SFC5tcnV2LlB1dEl0ZW1SZXF1ZXN0GhUubXJ1di5QdXRJdGVtUmVzcG9u",
-            "c2UiO4LT5JMCNRozL3YxL2NvbnRhaW5lcnMve2NvbnRhaW5lcl9pZC5pZH0v",
-            "aXRlbXMve2l0ZW1faWQuaWR9EnsKCVNvcnRJdGVtcxIWLm1ydXYuU29ydEl0",
-            "ZW1zUmVxdWVzdBoXLm1ydXYuU29ydEl0ZW1zUmVzcG9uc2UiPYLT5JMCNxI1",
-            "L3YxL2NvbnRhaW5lcnMve2NvbnRhaW5lcl9pZC5pZH0vaXRlbXMvc29ydC97",
-            "c29ydF9ieX0SswEKD0dldE5lYXJlc3RJdGVtcxIcLm1ydXYuR2V0TmVhcmVz",
-            "dEl0ZW1zUmVxdWVzdBodLm1ydXYuR2V0TmVhcmVzdEl0ZW1zUmVzcG9uc2Ui",
-            "Y4LT5JMCXRJbL3YxL2NvbnRhaW5lcnMve2NvbnRhaW5lcl9pZC5pZH0vaXRl",
-            "bXMvbmVhcmVzdC94L3twb3NpdGlvbi54fS95L3twb3NpdGlvbi55fS96L3tw",
-            "b3NpdGlvbi56fRJaCgdVc2VJdGVtEhQubXJ1di5Vc2VJdGVtUmVxdWVzdBoV",
-            "Lm1ydXYuVXNlSXRlbVJlc3BvbnNlIiKC0+STAhwSGi92MS9pdGVtcy97aXRl",
-            "bV9pZC5pZH0vdXNlEmUKEEdldFNlcnZpY2VTdGF0dXMSGi5tcnV2LlNlcnZp",
-            "Y2VTdGF0dXNSZXF1ZXN0GhsubXJ1di5TZXJ2aWNlU3RhdHVzUmVzcG9uc2Ui",
-            "GILT5JMCEhIQL3YxL2l0ZW1zL3N0YXR1cxJbChFHZXRTZXJ2aWNlVmVyc2lv",
-            "bhIULm1ydXYuVmVyc2lvblJlcXVlc3QaFS5tcnV2LlZlcnNpb25SZXNwb25z",
-            "ZSIZgtPkkwITEhEvdjEvaXRlbXMvdmVyc2lvbkIlWiNnaXRodWIuY29tL01y",
-            "dVYtUlAvbXJ1di1wYi1nby9pdGVtc2IGcHJvdG8z"));
+            "ASADKAsyEy5tcnV2LkNvbnRhaW5lclR5cGUiUAoOUHV0SXRlbVJlcXVlc3QS",
+            "FAoMY29udGFpbmVyX2lkGAEgASgNEg8KB2l0ZW1faWQYAiABKA0SDgoEc2xv",
+            "dBgDIAEoBUgAQgcKBXdoZXJlIjgKD1B1dEl0ZW1SZXNwb25zZRIlCgtpbnNp",
+            "ZGVfaXRlbRgBIAEoCzIQLm1ydXYuSW5zaWRlSXRlbSI/ChhHZXRDb250YWlu",
+            "ZXJJdGVtc1JlcXVlc3QSFAoMY29udGFpbmVyX2lkGAEgASgNEg0KBWxpbWl0",
+            "GAIgASgNIjwKGUdldENvbnRhaW5lckl0ZW1zUmVzcG9uc2USHwoFaXRlbXMY",
+            "ASADKAsyEC5tcnV2Lkluc2lkZUl0ZW0iOAoPUHVsbEl0ZW1SZXF1ZXN0EhQK",
+            "DGNvbnRhaW5lcl9pZBgBIAEoDRIPCgdpdGVtX2lkGAIgASgNIkwKEFNvcnRJ",
+            "dGVtc1JlcXVlc3QSFAoMY29udGFpbmVyX2lkGAEgASgNEiIKB3NvcnRfYnkY",
+            "AiABKA4yES5tcnV2LlNvcnRpbmdNb2RlIjcKEVNvcnRJdGVtc1Jlc3BvbnNl",
+            "EiIKCWNvbnRhaW5lchgBIAEoCzIPLm1ydXYuQ29udGFpbmVyImgKFkdldE5l",
+            "YXJlc3RJdGVtc1JlcXVlc3QSIAoIcG9zaXRpb24YASABKAsyDi5tcnV2LlBv",
+            "c2l0aW9uEhQKDGNvbnRhaW5lcl9pZBgCIAEoDRIWCg5kaXN0YW5jZV9saW1p",
+            "dBgDIAEoASI5ChdHZXROZWFyZXN0SXRlbXNSZXNwb25zZRIeCgRpdGVtGAEg",
+            "AygLMhAubXJ1di5JbnNpZGVJdGVtIiEKDlVzZUl0ZW1SZXF1ZXN0Eg8KB2l0",
+            "ZW1faWQYASABKA0iIgoPVXNlSXRlbVJlc3BvbnNlEg8KB3N1Y2Nlc3MYASAB",
+            "KAgy9BEKD01ydVZJdGVtU2VydmljZRI5CgpDcmVhdGVJdGVtEgoubXJ1di5J",
+            "dGVtGgwubXJ1di5JdGVtSUQiEYLT5JMCCyIJL3YxL2l0ZW1zEjsKB0dldEl0",
+            "ZW0SDC5tcnV2Lkl0ZW1JRBoKLm1ydXYuSXRlbSIWgtPkkwIQEg4vdjEvaXRl",
+            "bXMve2lkfRJACgpEZWxldGVJdGVtEgwubXJ1di5JdGVtSUQaDC5tcnV2Lkl0",
+            "ZW1JRCIWgtPkkwIQKg4vdjEvaXRlbXMve2lkfRJMCghHZXRJdGVtcxIVLm1y",
+            "dXYuR2V0SXRlbXNSZXF1ZXN0GhYubXJ1di5HZXRJdGVtc1Jlc3BvbnNlIhGC",
+            "0+STAgsSCS92MS9pdGVtcxJJCg5DcmVhdGVJdGVtVHlwZRIOLm1ydXYuSXRl",
+            "bVR5cGUaEC5tcnV2Lkl0ZW1UeXBlSUQiFYLT5JMCDyINL3YxL2l0ZW1UeXBl",
+            "cxJLCgtHZXRJdGVtVHlwZRIQLm1ydXYuSXRlbVR5cGVJRBoOLm1ydXYuSXRl",
+            "bVR5cGUiGoLT5JMCFBISL3YxL2l0ZW1UeXBlcy97aWR9ElAKDkRlbGV0ZUl0",
+            "ZW1UeXBlEhAubXJ1di5JdGVtVHlwZUlEGhAubXJ1di5JdGVtVHlwZUlEIhqC",
+            "0+STAhQqEi92MS9pdGVtVHlwZXMve2lkfRJcCgxHZXRJdGVtVHlwZXMSGS5t",
+            "cnV2LkdldEl0ZW1UeXBlc1JlcXVlc3QaGi5tcnV2LkdldEl0ZW1UeXBlc1Jl",
+            "c3BvbnNlIhWC0+STAg8SDS92MS9pdGVtVHlwZXMSTQoPQ3JlYXRlQ29udGFp",
+            "bmVyEg8ubXJ1di5Db250YWluZXIaES5tcnV2LkNvbnRhaW5lcklEIhaC0+ST",
+            "AhAiDi92MS9jb250YWluZXJzEk8KDEdldENvbnRhaW5lchIRLm1ydXYuQ29u",
+            "dGFpbmVySUQaDy5tcnV2LkNvbnRhaW5lciIbgtPkkwIVEhMvdjEvY29udGFp",
+            "bmVycy97aWR9ElQKD0RlbGV0ZUNvbnRhaW5lchIRLm1ydXYuQ29udGFpbmVy",
+            "SUQaES5tcnV2LkNvbnRhaW5lcklEIhuC0+STAhUqEy92MS9jb250YWluZXJz",
+            "L3tpZH0SYAoNR2V0Q29udGFpbmVycxIaLm1ydXYuR2V0Q29udGFpbmVyc1Jl",
+            "cXVlc3QaGy5tcnV2LkdldENvbnRhaW5lcnNSZXNwb25zZSIWgtPkkwIQEg4v",
+            "djEvY29udGFpbmVycxJdChNDcmVhdGVDb250YWluZXJUeXBlEhMubXJ1di5D",
+            "b250YWluZXJUeXBlGhUubXJ1di5Db250YWluZXJUeXBlSUQiGoLT5JMCFCIS",
+            "L3YxL2NvbnRhaW5lclR5cGVzEl8KEEdldENvbnRhaW5lclR5cGUSFS5tcnV2",
+            "LkNvbnRhaW5lclR5cGVJRBoTLm1ydXYuQ29udGFpbmVyVHlwZSIfgtPkkwIZ",
+            "EhcvdjEvY29udGFpbmVyVHlwZXMve2lkfRJkChNEZWxldGVDb250YWluZXJU",
+            "eXBlEhUubXJ1di5Db250YWluZXJUeXBlSUQaFS5tcnV2LkNvbnRhaW5lclR5",
+            "cGVJRCIfgtPkkwIZKhcvdjEvY29udGFpbmVyVHlwZXMve2lkfRJwChFHZXRD",
+            "b250YWluZXJUeXBlcxIeLm1ydXYuR2V0Q29udGFpbmVyVHlwZXNSZXF1ZXN0",
+            "Gh8ubXJ1di5HZXRDb250YWluZXJUeXBlc1Jlc3BvbnNlIhqC0+STAhQSEi92",
+            "MS9jb250YWluZXJUeXBlcxKBAQoRR2V0Q29udGFpbmVySXRlbXMSHi5tcnV2",
+            "LkdldENvbnRhaW5lckl0ZW1zUmVxdWVzdBofLm1ydXYuR2V0Q29udGFpbmVy",
+            "SXRlbXNSZXNwb25zZSIrgtPkkwIlEiMvdjEvY29udGFpbmVycy97Y29udGFp",
+            "bmVyX2lkfS9pdGVtcxJkCghQdWxsSXRlbRIVLm1ydXYuUHVsbEl0ZW1SZXF1",
+            "ZXN0GgoubXJ1di5JdGVtIjWC0+STAi8qLS92MS9jb250YWluZXJzL3tjb250",
+            "YWluZXJfaWR9L2l0ZW1zL3tpdGVtX2lkfRJtCgdQdXRJdGVtEhQubXJ1di5Q",
+            "dXRJdGVtUmVxdWVzdBoVLm1ydXYuUHV0SXRlbVJlc3BvbnNlIjWC0+STAi8a",
+            "LS92MS9jb250YWluZXJzL3tjb250YWluZXJfaWR9L2l0ZW1zL3tpdGVtX2lk",
+            "fRJ4CglTb3J0SXRlbXMSFi5tcnV2LlNvcnRJdGVtc1JlcXVlc3QaFy5tcnV2",
+            "LlNvcnRJdGVtc1Jlc3BvbnNlIjqC0+STAjQSMi92MS9jb250YWluZXJzL3tj",
+            "b250YWluZXJfaWR9L2l0ZW1zL3NvcnQve3NvcnRfYnl9ErABCg9HZXROZWFy",
+            "ZXN0SXRlbXMSHC5tcnV2LkdldE5lYXJlc3RJdGVtc1JlcXVlc3QaHS5tcnV2",
+            "LkdldE5lYXJlc3RJdGVtc1Jlc3BvbnNlImCC0+STAloSWC92MS9jb250YWlu",
+            "ZXJzL3tjb250YWluZXJfaWR9L2l0ZW1zL25lYXJlc3QveC97cG9zaXRpb24u",
+            "eH0veS97cG9zaXRpb24ueX0vei97cG9zaXRpb24uen0SVwoHVXNlSXRlbRIU",
+            "Lm1ydXYuVXNlSXRlbVJlcXVlc3QaFS5tcnV2LlVzZUl0ZW1SZXNwb25zZSIf",
+            "gtPkkwIZEhcvdjEvaXRlbXMve2l0ZW1faWR9L3VzZRJlChBHZXRTZXJ2aWNl",
+            "U3RhdHVzEhoubXJ1di5TZXJ2aWNlU3RhdHVzUmVxdWVzdBobLm1ydXYuU2Vy",
+            "dmljZVN0YXR1c1Jlc3BvbnNlIhiC0+STAhISEC92MS9pdGVtcy9zdGF0dXMS",
+            "WwoRR2V0U2VydmljZVZlcnNpb24SFC5tcnV2LlZlcnNpb25SZXF1ZXN0GhUu",
+            "bXJ1di5WZXJzaW9uUmVzcG9uc2UiGYLT5JMCExIRL3YxL2l0ZW1zL3ZlcnNp",
+            "b25CJVojZ2l0aHViLmNvbS9NcnVWLVJQL21ydXYtcGItZ28vaXRlbXNiBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, global::Mruv.HealthReflection.Descriptor, global::Mruv.ItemsModelReflection.Descriptor, global::Mruv.SpatialReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -1211,8 +1208,8 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public PutItemRequest(PutItemRequest other) : this() {
-      containerId_ = other.containerId_ != null ? other.containerId_.Clone() : null;
-      itemId_ = other.itemId_ != null ? other.itemId_.Clone() : null;
+      containerId_ = other.containerId_;
+      itemId_ = other.itemId_;
       switch (other.WhereCase) {
         case WhereOneofCase.Slot:
           Slot = other.Slot;
@@ -1229,12 +1226,12 @@ namespace Mruv {
 
     /// <summary>Field number for the "container_id" field.</summary>
     public const int ContainerIdFieldNumber = 1;
-    private global::Mruv.ContainerID containerId_;
+    private uint containerId_;
     /// <summary>
     ///ID of container where to put item.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Mruv.ContainerID ContainerId {
+    public uint ContainerId {
       get { return containerId_; }
       set {
         containerId_ = value;
@@ -1243,12 +1240,12 @@ namespace Mruv {
 
     /// <summary>Field number for the "item_id" field.</summary>
     public const int ItemIdFieldNumber = 2;
-    private global::Mruv.ItemID itemId_;
+    private uint itemId_;
     /// <summary>
     ///ID of item we wan to put in.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Mruv.ItemID ItemId {
+    public uint ItemId {
       get { return itemId_; }
       set {
         itemId_ = value;
@@ -1300,8 +1297,8 @@ namespace Mruv {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(ContainerId, other.ContainerId)) return false;
-      if (!object.Equals(ItemId, other.ItemId)) return false;
+      if (ContainerId != other.ContainerId) return false;
+      if (ItemId != other.ItemId) return false;
       if (Slot != other.Slot) return false;
       if (WhereCase != other.WhereCase) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -1310,8 +1307,8 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (containerId_ != null) hash ^= ContainerId.GetHashCode();
-      if (itemId_ != null) hash ^= ItemId.GetHashCode();
+      if (ContainerId != 0) hash ^= ContainerId.GetHashCode();
+      if (ItemId != 0) hash ^= ItemId.GetHashCode();
       if (whereCase_ == WhereOneofCase.Slot) hash ^= Slot.GetHashCode();
       hash ^= (int) whereCase_;
       if (_unknownFields != null) {
@@ -1327,13 +1324,13 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (containerId_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(ContainerId);
+      if (ContainerId != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(ContainerId);
       }
-      if (itemId_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(ItemId);
+      if (ItemId != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(ItemId);
       }
       if (whereCase_ == WhereOneofCase.Slot) {
         output.WriteRawTag(24);
@@ -1347,11 +1344,11 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (containerId_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ContainerId);
+      if (ContainerId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ContainerId);
       }
-      if (itemId_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ItemId);
+      if (ItemId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ItemId);
       }
       if (whereCase_ == WhereOneofCase.Slot) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Slot);
@@ -1367,17 +1364,11 @@ namespace Mruv {
       if (other == null) {
         return;
       }
-      if (other.containerId_ != null) {
-        if (containerId_ == null) {
-          ContainerId = new global::Mruv.ContainerID();
-        }
-        ContainerId.MergeFrom(other.ContainerId);
+      if (other.ContainerId != 0) {
+        ContainerId = other.ContainerId;
       }
-      if (other.itemId_ != null) {
-        if (itemId_ == null) {
-          ItemId = new global::Mruv.ItemID();
-        }
-        ItemId.MergeFrom(other.ItemId);
+      if (other.ItemId != 0) {
+        ItemId = other.ItemId;
       }
       switch (other.WhereCase) {
         case WhereOneofCase.Slot:
@@ -1396,18 +1387,12 @@ namespace Mruv {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 10: {
-            if (containerId_ == null) {
-              ContainerId = new global::Mruv.ContainerID();
-            }
-            input.ReadMessage(ContainerId);
+          case 8: {
+            ContainerId = input.ReadUInt32();
             break;
           }
-          case 18: {
-            if (itemId_ == null) {
-              ItemId = new global::Mruv.ItemID();
-            }
-            input.ReadMessage(ItemId);
+          case 16: {
+            ItemId = input.ReadUInt32();
             break;
           }
           case 24: {
@@ -1589,7 +1574,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GetContainerItemsRequest(GetContainerItemsRequest other) : this() {
-      containerId_ = other.containerId_ != null ? other.containerId_.Clone() : null;
+      containerId_ = other.containerId_;
       limit_ = other.limit_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -1601,12 +1586,12 @@ namespace Mruv {
 
     /// <summary>Field number for the "container_id" field.</summary>
     public const int ContainerIdFieldNumber = 1;
-    private global::Mruv.ContainerID containerId_;
+    private uint containerId_;
     /// <summary>
     ///ID of container with items.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Mruv.ContainerID ContainerId {
+    public uint ContainerId {
       get { return containerId_; }
       set {
         containerId_ = value;
@@ -1640,7 +1625,7 @@ namespace Mruv {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(ContainerId, other.ContainerId)) return false;
+      if (ContainerId != other.ContainerId) return false;
       if (Limit != other.Limit) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -1648,7 +1633,7 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (containerId_ != null) hash ^= ContainerId.GetHashCode();
+      if (ContainerId != 0) hash ^= ContainerId.GetHashCode();
       if (Limit != 0) hash ^= Limit.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -1663,9 +1648,9 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (containerId_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(ContainerId);
+      if (ContainerId != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(ContainerId);
       }
       if (Limit != 0) {
         output.WriteRawTag(16);
@@ -1679,8 +1664,8 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (containerId_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ContainerId);
+      if (ContainerId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ContainerId);
       }
       if (Limit != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Limit);
@@ -1696,11 +1681,8 @@ namespace Mruv {
       if (other == null) {
         return;
       }
-      if (other.containerId_ != null) {
-        if (containerId_ == null) {
-          ContainerId = new global::Mruv.ContainerID();
-        }
-        ContainerId.MergeFrom(other.ContainerId);
+      if (other.ContainerId != 0) {
+        ContainerId = other.ContainerId;
       }
       if (other.Limit != 0) {
         Limit = other.Limit;
@@ -1716,11 +1698,8 @@ namespace Mruv {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 10: {
-            if (containerId_ == null) {
-              ContainerId = new global::Mruv.ContainerID();
-            }
-            input.ReadMessage(ContainerId);
+          case 8: {
+            ContainerId = input.ReadUInt32();
             break;
           }
           case 16: {
@@ -1888,8 +1867,8 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public PullItemRequest(PullItemRequest other) : this() {
-      containerId_ = other.containerId_ != null ? other.containerId_.Clone() : null;
-      itemId_ = other.itemId_ != null ? other.itemId_.Clone() : null;
+      containerId_ = other.containerId_;
+      itemId_ = other.itemId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1900,12 +1879,12 @@ namespace Mruv {
 
     /// <summary>Field number for the "container_id" field.</summary>
     public const int ContainerIdFieldNumber = 1;
-    private global::Mruv.ContainerID containerId_;
+    private uint containerId_;
     /// <summary>
     ///ID of the container from which we pull out a item.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Mruv.ContainerID ContainerId {
+    public uint ContainerId {
       get { return containerId_; }
       set {
         containerId_ = value;
@@ -1914,13 +1893,13 @@ namespace Mruv {
 
     /// <summary>Field number for the "item_id" field.</summary>
     public const int ItemIdFieldNumber = 2;
-    private global::Mruv.ItemID itemId_;
+    private uint itemId_;
     /// <summary>
     ///ID of the item we want to pull out.
     ///That item must be inside the container.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Mruv.ItemID ItemId {
+    public uint ItemId {
       get { return itemId_; }
       set {
         itemId_ = value;
@@ -1940,16 +1919,16 @@ namespace Mruv {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(ContainerId, other.ContainerId)) return false;
-      if (!object.Equals(ItemId, other.ItemId)) return false;
+      if (ContainerId != other.ContainerId) return false;
+      if (ItemId != other.ItemId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (containerId_ != null) hash ^= ContainerId.GetHashCode();
-      if (itemId_ != null) hash ^= ItemId.GetHashCode();
+      if (ContainerId != 0) hash ^= ContainerId.GetHashCode();
+      if (ItemId != 0) hash ^= ItemId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1963,13 +1942,13 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (containerId_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(ContainerId);
+      if (ContainerId != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(ContainerId);
       }
-      if (itemId_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(ItemId);
+      if (ItemId != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(ItemId);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -1979,11 +1958,11 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (containerId_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ContainerId);
+      if (ContainerId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ContainerId);
       }
-      if (itemId_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ItemId);
+      if (ItemId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ItemId);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1996,17 +1975,11 @@ namespace Mruv {
       if (other == null) {
         return;
       }
-      if (other.containerId_ != null) {
-        if (containerId_ == null) {
-          ContainerId = new global::Mruv.ContainerID();
-        }
-        ContainerId.MergeFrom(other.ContainerId);
+      if (other.ContainerId != 0) {
+        ContainerId = other.ContainerId;
       }
-      if (other.itemId_ != null) {
-        if (itemId_ == null) {
-          ItemId = new global::Mruv.ItemID();
-        }
-        ItemId.MergeFrom(other.ItemId);
+      if (other.ItemId != 0) {
+        ItemId = other.ItemId;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -2019,18 +1992,12 @@ namespace Mruv {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 10: {
-            if (containerId_ == null) {
-              ContainerId = new global::Mruv.ContainerID();
-            }
-            input.ReadMessage(ContainerId);
+          case 8: {
+            ContainerId = input.ReadUInt32();
             break;
           }
-          case 18: {
-            if (itemId_ == null) {
-              ItemId = new global::Mruv.ItemID();
-            }
-            input.ReadMessage(ItemId);
+          case 16: {
+            ItemId = input.ReadUInt32();
             break;
           }
         }
@@ -2067,7 +2034,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SortItemsRequest(SortItemsRequest other) : this() {
-      containerId_ = other.containerId_ != null ? other.containerId_.Clone() : null;
+      containerId_ = other.containerId_;
       sortBy_ = other.sortBy_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -2079,12 +2046,12 @@ namespace Mruv {
 
     /// <summary>Field number for the "container_id" field.</summary>
     public const int ContainerIdFieldNumber = 1;
-    private global::Mruv.ContainerID containerId_;
+    private uint containerId_;
     /// <summary>
     ///ID of the container which contain items.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Mruv.ContainerID ContainerId {
+    public uint ContainerId {
       get { return containerId_; }
       set {
         containerId_ = value;
@@ -2118,7 +2085,7 @@ namespace Mruv {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(ContainerId, other.ContainerId)) return false;
+      if (ContainerId != other.ContainerId) return false;
       if (SortBy != other.SortBy) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -2126,7 +2093,7 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (containerId_ != null) hash ^= ContainerId.GetHashCode();
+      if (ContainerId != 0) hash ^= ContainerId.GetHashCode();
       if (SortBy != 0) hash ^= SortBy.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -2141,9 +2108,9 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (containerId_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(ContainerId);
+      if (ContainerId != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(ContainerId);
       }
       if (SortBy != 0) {
         output.WriteRawTag(16);
@@ -2157,8 +2124,8 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (containerId_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ContainerId);
+      if (ContainerId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ContainerId);
       }
       if (SortBy != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) SortBy);
@@ -2174,11 +2141,8 @@ namespace Mruv {
       if (other == null) {
         return;
       }
-      if (other.containerId_ != null) {
-        if (containerId_ == null) {
-          ContainerId = new global::Mruv.ContainerID();
-        }
-        ContainerId.MergeFrom(other.ContainerId);
+      if (other.ContainerId != 0) {
+        ContainerId = other.ContainerId;
       }
       if (other.SortBy != 0) {
         SortBy = other.SortBy;
@@ -2194,11 +2158,8 @@ namespace Mruv {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 10: {
-            if (containerId_ == null) {
-              ContainerId = new global::Mruv.ContainerID();
-            }
-            input.ReadMessage(ContainerId);
+          case 8: {
+            ContainerId = input.ReadUInt32();
             break;
           }
           case 16: {
@@ -2381,7 +2342,7 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GetNearestItemsRequest(GetNearestItemsRequest other) : this() {
       position_ = other.position_ != null ? other.position_.Clone() : null;
-      containerId_ = other.containerId_ != null ? other.containerId_.Clone() : null;
+      containerId_ = other.containerId_;
       distanceLimit_ = other.distanceLimit_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -2407,12 +2368,12 @@ namespace Mruv {
 
     /// <summary>Field number for the "container_id" field.</summary>
     public const int ContainerIdFieldNumber = 2;
-    private global::Mruv.ContainerID containerId_;
+    private uint containerId_;
     /// <summary>
     ///ID of container that contains items.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Mruv.ContainerID ContainerId {
+    public uint ContainerId {
       get { return containerId_; }
       set {
         containerId_ = value;
@@ -2447,7 +2408,7 @@ namespace Mruv {
         return true;
       }
       if (!object.Equals(Position, other.Position)) return false;
-      if (!object.Equals(ContainerId, other.ContainerId)) return false;
+      if (ContainerId != other.ContainerId) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(DistanceLimit, other.DistanceLimit)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -2456,7 +2417,7 @@ namespace Mruv {
     public override int GetHashCode() {
       int hash = 1;
       if (position_ != null) hash ^= Position.GetHashCode();
-      if (containerId_ != null) hash ^= ContainerId.GetHashCode();
+      if (ContainerId != 0) hash ^= ContainerId.GetHashCode();
       if (DistanceLimit != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(DistanceLimit);
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -2475,9 +2436,9 @@ namespace Mruv {
         output.WriteRawTag(10);
         output.WriteMessage(Position);
       }
-      if (containerId_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(ContainerId);
+      if (ContainerId != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(ContainerId);
       }
       if (DistanceLimit != 0D) {
         output.WriteRawTag(25);
@@ -2494,8 +2455,8 @@ namespace Mruv {
       if (position_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Position);
       }
-      if (containerId_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ContainerId);
+      if (ContainerId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ContainerId);
       }
       if (DistanceLimit != 0D) {
         size += 1 + 8;
@@ -2517,11 +2478,8 @@ namespace Mruv {
         }
         Position.MergeFrom(other.Position);
       }
-      if (other.containerId_ != null) {
-        if (containerId_ == null) {
-          ContainerId = new global::Mruv.ContainerID();
-        }
-        ContainerId.MergeFrom(other.ContainerId);
+      if (other.ContainerId != 0) {
+        ContainerId = other.ContainerId;
       }
       if (other.DistanceLimit != 0D) {
         DistanceLimit = other.DistanceLimit;
@@ -2544,11 +2502,8 @@ namespace Mruv {
             input.ReadMessage(Position);
             break;
           }
-          case 18: {
-            if (containerId_ == null) {
-              ContainerId = new global::Mruv.ContainerID();
-            }
-            input.ReadMessage(ContainerId);
+          case 16: {
+            ContainerId = input.ReadUInt32();
             break;
           }
           case 25: {
@@ -2716,7 +2671,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public UseItemRequest(UseItemRequest other) : this() {
-      itemId_ = other.itemId_ != null ? other.itemId_.Clone() : null;
+      itemId_ = other.itemId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2727,9 +2682,9 @@ namespace Mruv {
 
     /// <summary>Field number for the "item_id" field.</summary>
     public const int ItemIdFieldNumber = 1;
-    private global::Mruv.ItemID itemId_;
+    private uint itemId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Mruv.ItemID ItemId {
+    public uint ItemId {
       get { return itemId_; }
       set {
         itemId_ = value;
@@ -2749,14 +2704,14 @@ namespace Mruv {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(ItemId, other.ItemId)) return false;
+      if (ItemId != other.ItemId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (itemId_ != null) hash ^= ItemId.GetHashCode();
+      if (ItemId != 0) hash ^= ItemId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2770,9 +2725,9 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (itemId_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(ItemId);
+      if (ItemId != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(ItemId);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -2782,8 +2737,8 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (itemId_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ItemId);
+      if (ItemId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ItemId);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -2796,11 +2751,8 @@ namespace Mruv {
       if (other == null) {
         return;
       }
-      if (other.itemId_ != null) {
-        if (itemId_ == null) {
-          ItemId = new global::Mruv.ItemID();
-        }
-        ItemId.MergeFrom(other.ItemId);
+      if (other.ItemId != 0) {
+        ItemId = other.ItemId;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -2813,11 +2765,8 @@ namespace Mruv {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 10: {
-            if (itemId_ == null) {
-              ItemId = new global::Mruv.ItemID();
-            }
-            input.ReadMessage(ItemId);
+          case 8: {
+            ItemId = input.ReadUInt32();
             break;
           }
         }
