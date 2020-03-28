@@ -38,7 +38,7 @@ namespace Mruv {
             "IAEoDRIPCgd0eXBlX2lkGAIgASgNEg8KB2l0ZW1faWQYAyABKA0SFAoMaXRl",
             "bXNfaW5zaWRlGAQgASgNEh8KBWl0ZW1zGAUgAygLMhAubXJ1di5JbnNpZGVJ",
             "dGVtIhkKC0NvbnRhaW5lcklEEgoKAmlkGAEgASgNInEKCkluc2lkZUl0ZW0S",
-            "FAoMY29udGFpbmVyX2lkGAEgASgNEhEKB2l0ZW1faWQYAiABKANIABIaCgRp",
+            "FAoMY29udGFpbmVyX2lkGAEgASgNEhEKB2l0ZW1faWQYAiABKA1IABIaCgRp",
             "dGVtGAMgASgLMgoubXJ1di5JdGVtSAASEAoIcG9zaXRpb24YBCABKAVCDAoK",
             "aXRlbV9vcl9pZCpcCgtTb3J0aW5nTW9kZRILCgdVTktOT1dOEAASDwoLV0VJ",
             "R0hUX0RFU0MQARIOCgpXRUlHSFRfQVNDEAISDwoLVk9MVU1FX0RFU0MQAxIO",
@@ -1751,8 +1751,8 @@ namespace Mruv {
     /// <summary>Field number for the "item_id" field.</summary>
     public const int ItemIdFieldNumber = 2;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long ItemId {
-      get { return itemOrIdCase_ == ItemOrIdOneofCase.ItemId ? (long) itemOrId_ : 0L; }
+    public uint ItemId {
+      get { return itemOrIdCase_ == ItemOrIdOneofCase.ItemId ? (uint) itemOrId_ : 0; }
       set {
         itemOrId_ = value;
         itemOrIdCase_ = ItemOrIdOneofCase.ItemId;
@@ -1851,7 +1851,7 @@ namespace Mruv {
       }
       if (itemOrIdCase_ == ItemOrIdOneofCase.ItemId) {
         output.WriteRawTag(16);
-        output.WriteInt64(ItemId);
+        output.WriteUInt32(ItemId);
       }
       if (itemOrIdCase_ == ItemOrIdOneofCase.Item) {
         output.WriteRawTag(26);
@@ -1873,7 +1873,7 @@ namespace Mruv {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ContainerId);
       }
       if (itemOrIdCase_ == ItemOrIdOneofCase.ItemId) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(ItemId);
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ItemId);
       }
       if (itemOrIdCase_ == ItemOrIdOneofCase.Item) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Item);
@@ -1926,7 +1926,7 @@ namespace Mruv {
             break;
           }
           case 16: {
-            ItemId = input.ReadInt64();
+            ItemId = input.ReadUInt32();
             break;
           }
           case 26: {
