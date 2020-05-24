@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Mruv {
+namespace Mruv.Server {
 
   /// <summary>Holder for reflection information generated from server/server_model.proto</summary>
   public static partial class ServerModelReflection {
@@ -24,23 +24,32 @@ namespace Mruv {
     static ServerModelReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChlzZXJ2ZXIvc2VydmVyX21vZGVsLnByb3RvEgRtcnV2IhYKCFNlcnZlcklE",
-            "EgoKAmlkGAEgASgDIkgKClNlcnZlckluZm8SDAoEbmFtZRgBIAEoCRIMCgRo",
-            "b3N0GAIgASgJEgwKBHBvcnQYAyABKAkSEAoIcGxhdGZvcm0YBCABKAkiLwoM",
-            "U2VydmVyU3RhdHVzEg4KBmFjdGl2ZRgBIAEoCBIPCgdwbGF5ZXJzGAIgASgF",
-            "QiZaJGdpdGh1Yi5jb20vTXJ1Vi1SUC9tcnV2LXBiLWdvL3NlcnZlcmIGcHJv",
-            "dG8z"));
+            "ChlzZXJ2ZXIvc2VydmVyX21vZGVsLnByb3RvEgttcnV2LnNlcnZlciIWCghT",
+            "ZXJ2ZXJJRBIKCgJpZBgBIAEoAyKQAQoKU2VydmVySW5mbxIKCgJpZBgBIAEo",
+            "AxIMCgRuYW1lGAIgASgJEgwKBGhvc3QYAyABKAkSDAoEcG9ydBgEIAEoCRIQ",
+            "CghwbGF0Zm9ybRgFIAEoCRIpCgZzdGF0dXMYBiABKA4yGS5tcnV2LnNlcnZl",
+            "ci5TZXJ2ZXJTdGF0dXMSDwoHcGxheWVycxgHIAEoBSosCgxTZXJ2ZXJTdGF0",
+            "dXMSCwoHVU5LTk9XThAAEgYKAk9OEAESBwoDT0ZGEAJCJlokZ2l0aHViLmNv",
+            "bS9NcnVWLVJQL21ydXYtcGItZ28vc2VydmVyYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.ServerID), global::Mruv.ServerID.Parser, new[]{ "Id" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.ServerInfo), global::Mruv.ServerInfo.Parser, new[]{ "Name", "Host", "Port", "Platform" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.ServerStatus), global::Mruv.ServerStatus.Parser, new[]{ "Active", "Players" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Mruv.Server.ServerStatus), }, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Server.ServerID), global::Mruv.Server.ServerID.Parser, new[]{ "Id" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Server.ServerInfo), global::Mruv.Server.ServerInfo.Parser, new[]{ "Id", "Name", "Host", "Port", "Platform", "Status", "Players" }, null, null, null)
           }));
     }
     #endregion
 
   }
+  #region Enums
+  public enum ServerStatus {
+    [pbr::OriginalName("UNKNOWN")] Unknown = 0,
+    [pbr::OriginalName("ON")] On = 1,
+    [pbr::OriginalName("OFF")] Off = 2,
+  }
+
+  #endregion
+
   #region Messages
   public sealed partial class ServerID : pb::IMessage<ServerID> {
     private static readonly pb::MessageParser<ServerID> _parser = new pb::MessageParser<ServerID>(() => new ServerID());
@@ -50,7 +59,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.ServerModelReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Mruv.Server.ServerModelReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -172,7 +181,7 @@ namespace Mruv {
   }
 
   /// <summary>
-  /// Data that describe server
+  /// Data that describe server.
   /// </summary>
   public sealed partial class ServerInfo : pb::IMessage<ServerInfo> {
     private static readonly pb::MessageParser<ServerInfo> _parser = new pb::MessageParser<ServerInfo>(() => new ServerInfo());
@@ -182,7 +191,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.ServerModelReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Mruv.Server.ServerModelReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -199,10 +208,13 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ServerInfo(ServerInfo other) : this() {
+      id_ = other.id_;
       name_ = other.name_;
       host_ = other.host_;
       port_ = other.port_;
       platform_ = other.platform_;
+      status_ = other.status_;
+      players_ = other.players_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -211,11 +223,25 @@ namespace Mruv {
       return new ServerInfo(this);
     }
 
+    /// <summary>Field number for the "id" field.</summary>
+    public const int IdFieldNumber = 1;
+    private long id_;
+    /// <summary>
+    /// Id of the server.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long Id {
+      get { return id_; }
+      set {
+        id_ = value;
+      }
+    }
+
     /// <summary>Field number for the "name" field.</summary>
-    public const int NameFieldNumber = 1;
+    public const int NameFieldNumber = 2;
     private string name_ = "";
     /// <summary>
-    /// Short name of the server
+    /// Short name of the server.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Name {
@@ -226,10 +252,10 @@ namespace Mruv {
     }
 
     /// <summary>Field number for the "host" field.</summary>
-    public const int HostFieldNumber = 2;
+    public const int HostFieldNumber = 3;
     private string host_ = "";
     /// <summary>
-    /// Host (ip) of the server
+    /// Host (ip) of the server.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Host {
@@ -240,10 +266,10 @@ namespace Mruv {
     }
 
     /// <summary>Field number for the "port" field.</summary>
-    public const int PortFieldNumber = 3;
+    public const int PortFieldNumber = 4;
     private string port_ = "";
     /// <summary>
-    /// Port of the server
+    /// Port of the server.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Port {
@@ -254,16 +280,44 @@ namespace Mruv {
     }
 
     /// <summary>Field number for the "platform" field.</summary>
-    public const int PlatformFieldNumber = 4;
+    public const int PlatformFieldNumber = 5;
     private string platform_ = "";
     /// <summary>
-    /// Platform, on which server is running
+    /// Platform of the server.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Platform {
       get { return platform_; }
       set {
         platform_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "status" field.</summary>
+    public const int StatusFieldNumber = 6;
+    private global::Mruv.Server.ServerStatus status_ = 0;
+    /// <summary>
+    /// Status of the server.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Mruv.Server.ServerStatus Status {
+      get { return status_; }
+      set {
+        status_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "players" field.</summary>
+    public const int PlayersFieldNumber = 7;
+    private int players_;
+    /// <summary>
+    /// How many players are playing on the server.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int Players {
+      get { return players_; }
+      set {
+        players_ = value;
       }
     }
 
@@ -280,205 +334,12 @@ namespace Mruv {
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if (Id != other.Id) return false;
       if (Name != other.Name) return false;
       if (Host != other.Host) return false;
       if (Port != other.Port) return false;
       if (Platform != other.Platform) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (Name.Length != 0) hash ^= Name.GetHashCode();
-      if (Host.Length != 0) hash ^= Host.GetHashCode();
-      if (Port.Length != 0) hash ^= Port.GetHashCode();
-      if (Platform.Length != 0) hash ^= Platform.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-      if (Name.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(Name);
-      }
-      if (Host.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(Host);
-      }
-      if (Port.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(Port);
-      }
-      if (Platform.Length != 0) {
-        output.WriteRawTag(34);
-        output.WriteString(Platform);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (Name.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
-      }
-      if (Host.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Host);
-      }
-      if (Port.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Port);
-      }
-      if (Platform.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Platform);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(ServerInfo other) {
-      if (other == null) {
-        return;
-      }
-      if (other.Name.Length != 0) {
-        Name = other.Name;
-      }
-      if (other.Host.Length != 0) {
-        Host = other.Host;
-      }
-      if (other.Port.Length != 0) {
-        Port = other.Port;
-      }
-      if (other.Platform.Length != 0) {
-        Platform = other.Platform;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            Name = input.ReadString();
-            break;
-          }
-          case 18: {
-            Host = input.ReadString();
-            break;
-          }
-          case 26: {
-            Port = input.ReadString();
-            break;
-          }
-          case 34: {
-            Platform = input.ReadString();
-            break;
-          }
-        }
-      }
-    }
-
-  }
-
-  /// <summary>
-  /// State of the server
-  /// </summary>
-  public sealed partial class ServerStatus : pb::IMessage<ServerStatus> {
-    private static readonly pb::MessageParser<ServerStatus> _parser = new pb::MessageParser<ServerStatus>(() => new ServerStatus());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<ServerStatus> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.ServerModelReflection.Descriptor.MessageTypes[2]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public ServerStatus() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public ServerStatus(ServerStatus other) : this() {
-      active_ = other.active_;
-      players_ = other.players_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public ServerStatus Clone() {
-      return new ServerStatus(this);
-    }
-
-    /// <summary>Field number for the "active" field.</summary>
-    public const int ActiveFieldNumber = 1;
-    private bool active_;
-    /// <summary>
-    /// Is server active and working
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Active {
-      get { return active_; }
-      set {
-        active_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "players" field.</summary>
-    public const int PlayersFieldNumber = 2;
-    private int players_;
-    /// <summary>
-    /// How many players are registered on that server
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Players {
-      get { return players_; }
-      set {
-        players_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as ServerStatus);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(ServerStatus other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (Active != other.Active) return false;
+      if (Status != other.Status) return false;
       if (Players != other.Players) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -486,7 +347,12 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Active != false) hash ^= Active.GetHashCode();
+      if (Id != 0L) hash ^= Id.GetHashCode();
+      if (Name.Length != 0) hash ^= Name.GetHashCode();
+      if (Host.Length != 0) hash ^= Host.GetHashCode();
+      if (Port.Length != 0) hash ^= Port.GetHashCode();
+      if (Platform.Length != 0) hash ^= Platform.GetHashCode();
+      if (Status != 0) hash ^= Status.GetHashCode();
       if (Players != 0) hash ^= Players.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -501,12 +367,32 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Active != false) {
+      if (Id != 0L) {
         output.WriteRawTag(8);
-        output.WriteBool(Active);
+        output.WriteInt64(Id);
+      }
+      if (Name.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Name);
+      }
+      if (Host.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Host);
+      }
+      if (Port.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(Port);
+      }
+      if (Platform.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(Platform);
+      }
+      if (Status != 0) {
+        output.WriteRawTag(48);
+        output.WriteEnum((int) Status);
       }
       if (Players != 0) {
-        output.WriteRawTag(16);
+        output.WriteRawTag(56);
         output.WriteInt32(Players);
       }
       if (_unknownFields != null) {
@@ -517,8 +403,23 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Active != false) {
-        size += 1 + 1;
+      if (Id != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Id);
+      }
+      if (Name.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+      }
+      if (Host.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Host);
+      }
+      if (Port.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Port);
+      }
+      if (Platform.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Platform);
+      }
+      if (Status != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
       }
       if (Players != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Players);
@@ -530,12 +431,27 @@ namespace Mruv {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(ServerStatus other) {
+    public void MergeFrom(ServerInfo other) {
       if (other == null) {
         return;
       }
-      if (other.Active != false) {
-        Active = other.Active;
+      if (other.Id != 0L) {
+        Id = other.Id;
+      }
+      if (other.Name.Length != 0) {
+        Name = other.Name;
+      }
+      if (other.Host.Length != 0) {
+        Host = other.Host;
+      }
+      if (other.Port.Length != 0) {
+        Port = other.Port;
+      }
+      if (other.Platform.Length != 0) {
+        Platform = other.Platform;
+      }
+      if (other.Status != 0) {
+        Status = other.Status;
       }
       if (other.Players != 0) {
         Players = other.Players;
@@ -552,10 +468,30 @@ namespace Mruv {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Active = input.ReadBool();
+            Id = input.ReadInt64();
             break;
           }
-          case 16: {
+          case 18: {
+            Name = input.ReadString();
+            break;
+          }
+          case 26: {
+            Host = input.ReadString();
+            break;
+          }
+          case 34: {
+            Port = input.ReadString();
+            break;
+          }
+          case 42: {
+            Platform = input.ReadString();
+            break;
+          }
+          case 48: {
+            Status = (global::Mruv.Server.ServerStatus) input.ReadEnum();
+            break;
+          }
+          case 56: {
             Players = input.ReadInt32();
             break;
           }

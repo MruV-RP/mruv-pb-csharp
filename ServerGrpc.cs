@@ -7,37 +7,62 @@
 
 using grpc = global::Grpc.Core;
 
-namespace Mruv {
+namespace Mruv.Server {
   /// <summary>
-  /// The MruV server service provides procedures for managing game platform server actions
+  /// The MruV server service provides procedures for managing game platform server actions.
   /// </summary>
   public static partial class MruVServerService
   {
-    static readonly string __ServiceName = "mruv.MruVServerService";
+    static readonly string __ServiceName = "mruv.server.MruVServerService";
 
-    static readonly grpc::Marshaller<global::Mruv.RegisterServerRequest> __Marshaller_mruv_RegisterServerRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.RegisterServerRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.RegisterServerResponse> __Marshaller_mruv_RegisterServerResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.RegisterServerResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.ServerID> __Marshaller_mruv_ServerID = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.ServerID.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.ServerStatus> __Marshaller_mruv_ServerStatus = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.ServerStatus.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Server.ServerInfo> __Marshaller_mruv_server_ServerInfo = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Server.ServerInfo.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Server.ServerID> __Marshaller_mruv_server_ServerID = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Server.ServerID.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Server.GetRegisteredServersRequest> __Marshaller_mruv_server_GetRegisteredServersRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Server.GetRegisteredServersRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Server.GetRegisteredServersResponse> __Marshaller_mruv_server_GetRegisteredServersResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Server.GetRegisteredServersResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Server.UpdateServerStatusRequest> __Marshaller_mruv_server_UpdateServerStatusRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Server.UpdateServerStatusRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Server.UpdateServerStatusResponse> __Marshaller_mruv_server_UpdateServerStatusResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Server.UpdateServerStatusResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Server.ServerEventsStreamRequest> __Marshaller_mruv_server_ServerEventsStreamRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Server.ServerEventsStreamRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Server.ServerEvent> __Marshaller_mruv_server_ServerEvent = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Server.ServerEvent.Parser.ParseFrom);
 
-    static readonly grpc::Method<global::Mruv.RegisterServerRequest, global::Mruv.RegisterServerResponse> __Method_RegisterServer = new grpc::Method<global::Mruv.RegisterServerRequest, global::Mruv.RegisterServerResponse>(
+    static readonly grpc::Method<global::Mruv.Server.ServerInfo, global::Mruv.Server.ServerID> __Method_RegisterServer = new grpc::Method<global::Mruv.Server.ServerInfo, global::Mruv.Server.ServerID>(
         grpc::MethodType.Unary,
         __ServiceName,
         "RegisterServer",
-        __Marshaller_mruv_RegisterServerRequest,
-        __Marshaller_mruv_RegisterServerResponse);
+        __Marshaller_mruv_server_ServerInfo,
+        __Marshaller_mruv_server_ServerID);
 
-    static readonly grpc::Method<global::Mruv.ServerID, global::Mruv.ServerStatus> __Method_GetServerStatus = new grpc::Method<global::Mruv.ServerID, global::Mruv.ServerStatus>(
+    static readonly grpc::Method<global::Mruv.Server.GetRegisteredServersRequest, global::Mruv.Server.GetRegisteredServersResponse> __Method_GetRegisteredServers = new grpc::Method<global::Mruv.Server.GetRegisteredServersRequest, global::Mruv.Server.GetRegisteredServersResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
-        "GetServerStatus",
-        __Marshaller_mruv_ServerID,
-        __Marshaller_mruv_ServerStatus);
+        "GetRegisteredServers",
+        __Marshaller_mruv_server_GetRegisteredServersRequest,
+        __Marshaller_mruv_server_GetRegisteredServersResponse);
+
+    static readonly grpc::Method<global::Mruv.Server.ServerID, global::Mruv.Server.ServerInfo> __Method_GetServerInfo = new grpc::Method<global::Mruv.Server.ServerID, global::Mruv.Server.ServerInfo>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetServerInfo",
+        __Marshaller_mruv_server_ServerID,
+        __Marshaller_mruv_server_ServerInfo);
+
+    static readonly grpc::Method<global::Mruv.Server.UpdateServerStatusRequest, global::Mruv.Server.UpdateServerStatusResponse> __Method_UpdateServerStatus = new grpc::Method<global::Mruv.Server.UpdateServerStatusRequest, global::Mruv.Server.UpdateServerStatusResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "UpdateServerStatus",
+        __Marshaller_mruv_server_UpdateServerStatusRequest,
+        __Marshaller_mruv_server_UpdateServerStatusResponse);
+
+    static readonly grpc::Method<global::Mruv.Server.ServerEventsStreamRequest, global::Mruv.Server.ServerEvent> __Method_ServerEventsStream = new grpc::Method<global::Mruv.Server.ServerEventsStreamRequest, global::Mruv.Server.ServerEvent>(
+        grpc::MethodType.ServerStreaming,
+        __ServiceName,
+        "ServerEventsStream",
+        __Marshaller_mruv_server_ServerEventsStreamRequest,
+        __Marshaller_mruv_server_ServerEvent);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
-      get { return global::Mruv.ServerReflection.Descriptor.Services[0]; }
+      get { return global::Mruv.Server.ServerReflection.Descriptor.Services[0]; }
     }
 
     /// <summary>Base class for server-side implementations of MruVServerService</summary>
@@ -45,23 +70,57 @@ namespace Mruv {
     public abstract partial class MruVServerServiceBase
     {
       /// <summary>
-      /// Register instance of server for further managing
+      /// Register instance of server for further managing.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.RegisterServerResponse> RegisterServer(global::Mruv.RegisterServerRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.Server.ServerID> RegisterServer(global::Mruv.Server.ServerInfo request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       /// <summary>
-      /// Get game server status
+      /// Get all registered servers.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.ServerStatus> GetServerStatus(global::Mruv.ServerID request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.Server.GetRegisteredServersResponse> GetRegisteredServers(global::Mruv.Server.GetRegisteredServersRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Get game server status.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.Server.ServerInfo> GetServerInfo(global::Mruv.Server.ServerID request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Update game server status.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.Server.UpdateServerStatusResponse> UpdateServerStatus(global::Mruv.Server.UpdateServerStatusRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Stream of server events. Events are streamed back in real-time for chosen server.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="responseStream">Used for sending responses back to the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>A task indicating completion of the handler.</returns>
+      public virtual global::System.Threading.Tasks.Task ServerEventsStream(global::Mruv.Server.ServerEventsStreamRequest request, grpc::IServerStreamWriter<global::Mruv.Server.ServerEvent> responseStream, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -92,92 +151,202 @@ namespace Mruv {
       }
 
       /// <summary>
-      /// Register instance of server for further managing
+      /// Register instance of server for further managing.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.RegisterServerResponse RegisterServer(global::Mruv.RegisterServerRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.Server.ServerID RegisterServer(global::Mruv.Server.ServerInfo request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return RegisterServer(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Register instance of server for further managing
+      /// Register instance of server for further managing.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.RegisterServerResponse RegisterServer(global::Mruv.RegisterServerRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.Server.ServerID RegisterServer(global::Mruv.Server.ServerInfo request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_RegisterServer, null, options, request);
       }
       /// <summary>
-      /// Register instance of server for further managing
+      /// Register instance of server for further managing.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.RegisterServerResponse> RegisterServerAsync(global::Mruv.RegisterServerRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Server.ServerID> RegisterServerAsync(global::Mruv.Server.ServerInfo request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return RegisterServerAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Register instance of server for further managing
+      /// Register instance of server for further managing.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.RegisterServerResponse> RegisterServerAsync(global::Mruv.RegisterServerRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Server.ServerID> RegisterServerAsync(global::Mruv.Server.ServerInfo request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_RegisterServer, null, options, request);
       }
       /// <summary>
-      /// Get game server status
+      /// Get all registered servers.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.ServerStatus GetServerStatus(global::Mruv.ServerID request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.Server.GetRegisteredServersResponse GetRegisteredServers(global::Mruv.Server.GetRegisteredServersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return GetServerStatus(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return GetRegisteredServers(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get game server status
+      /// Get all registered servers.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.ServerStatus GetServerStatus(global::Mruv.ServerID request, grpc::CallOptions options)
+      public virtual global::Mruv.Server.GetRegisteredServersResponse GetRegisteredServers(global::Mruv.Server.GetRegisteredServersRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.BlockingUnaryCall(__Method_GetServerStatus, null, options, request);
+        return CallInvoker.BlockingUnaryCall(__Method_GetRegisteredServers, null, options, request);
       }
       /// <summary>
-      /// Get game server status
+      /// Get all registered servers.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.ServerStatus> GetServerStatusAsync(global::Mruv.ServerID request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Server.GetRegisteredServersResponse> GetRegisteredServersAsync(global::Mruv.Server.GetRegisteredServersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return GetServerStatusAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return GetRegisteredServersAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get game server status
+      /// Get all registered servers.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.ServerStatus> GetServerStatusAsync(global::Mruv.ServerID request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Server.GetRegisteredServersResponse> GetRegisteredServersAsync(global::Mruv.Server.GetRegisteredServersRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.AsyncUnaryCall(__Method_GetServerStatus, null, options, request);
+        return CallInvoker.AsyncUnaryCall(__Method_GetRegisteredServers, null, options, request);
+      }
+      /// <summary>
+      /// Get game server status.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Mruv.Server.ServerInfo GetServerInfo(global::Mruv.Server.ServerID request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetServerInfo(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get game server status.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Mruv.Server.ServerInfo GetServerInfo(global::Mruv.Server.ServerID request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetServerInfo, null, options, request);
+      }
+      /// <summary>
+      /// Get game server status.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Server.ServerInfo> GetServerInfoAsync(global::Mruv.Server.ServerID request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetServerInfoAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get game server status.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Server.ServerInfo> GetServerInfoAsync(global::Mruv.Server.ServerID request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetServerInfo, null, options, request);
+      }
+      /// <summary>
+      /// Update game server status.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Mruv.Server.UpdateServerStatusResponse UpdateServerStatus(global::Mruv.Server.UpdateServerStatusRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return UpdateServerStatus(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Update game server status.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Mruv.Server.UpdateServerStatusResponse UpdateServerStatus(global::Mruv.Server.UpdateServerStatusRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_UpdateServerStatus, null, options, request);
+      }
+      /// <summary>
+      /// Update game server status.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Server.UpdateServerStatusResponse> UpdateServerStatusAsync(global::Mruv.Server.UpdateServerStatusRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return UpdateServerStatusAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Update game server status.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Server.UpdateServerStatusResponse> UpdateServerStatusAsync(global::Mruv.Server.UpdateServerStatusRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_UpdateServerStatus, null, options, request);
+      }
+      /// <summary>
+      /// Stream of server events. Events are streamed back in real-time for chosen server.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Server.ServerEvent> ServerEventsStream(global::Mruv.Server.ServerEventsStreamRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ServerEventsStream(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Stream of server events. Events are streamed back in real-time for chosen server.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Server.ServerEvent> ServerEventsStream(global::Mruv.Server.ServerEventsStreamRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncServerStreamingCall(__Method_ServerEventsStream, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override MruVServerServiceClient NewInstance(ClientBaseConfiguration configuration)
@@ -192,7 +361,10 @@ namespace Mruv {
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_RegisterServer, serviceImpl.RegisterServer)
-          .AddMethod(__Method_GetServerStatus, serviceImpl.GetServerStatus).Build();
+          .AddMethod(__Method_GetRegisteredServers, serviceImpl.GetRegisteredServers)
+          .AddMethod(__Method_GetServerInfo, serviceImpl.GetServerInfo)
+          .AddMethod(__Method_UpdateServerStatus, serviceImpl.UpdateServerStatus)
+          .AddMethod(__Method_ServerEventsStream, serviceImpl.ServerEventsStream).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
@@ -201,8 +373,11 @@ namespace Mruv {
     /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
     public static void BindService(grpc::ServiceBinderBase serviceBinder, MruVServerServiceBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_RegisterServer, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.RegisterServerRequest, global::Mruv.RegisterServerResponse>(serviceImpl.RegisterServer));
-      serviceBinder.AddMethod(__Method_GetServerStatus, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.ServerID, global::Mruv.ServerStatus>(serviceImpl.GetServerStatus));
+      serviceBinder.AddMethod(__Method_RegisterServer, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Server.ServerInfo, global::Mruv.Server.ServerID>(serviceImpl.RegisterServer));
+      serviceBinder.AddMethod(__Method_GetRegisteredServers, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Server.GetRegisteredServersRequest, global::Mruv.Server.GetRegisteredServersResponse>(serviceImpl.GetRegisteredServers));
+      serviceBinder.AddMethod(__Method_GetServerInfo, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Server.ServerID, global::Mruv.Server.ServerInfo>(serviceImpl.GetServerInfo));
+      serviceBinder.AddMethod(__Method_UpdateServerStatus, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Server.UpdateServerStatusRequest, global::Mruv.Server.UpdateServerStatusResponse>(serviceImpl.UpdateServerStatus));
+      serviceBinder.AddMethod(__Method_ServerEventsStream, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Mruv.Server.ServerEventsStreamRequest, global::Mruv.Server.ServerEvent>(serviceImpl.ServerEventsStream));
     }
 
   }
