@@ -115,6 +115,7 @@ namespace Mruv.Server {
 
       /// <summary>
       /// Stream of server events. Events are streamed back in real-time for chosen server.
+      ///TODO: Change name to: SubscribeServerEvents
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="responseStream">Used for sending responses back to the client.</param>
@@ -328,6 +329,7 @@ namespace Mruv.Server {
       }
       /// <summary>
       /// Stream of server events. Events are streamed back in real-time for chosen server.
+      ///TODO: Change name to: SubscribeServerEvents
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -340,6 +342,7 @@ namespace Mruv.Server {
       }
       /// <summary>
       /// Stream of server events. Events are streamed back in real-time for chosen server.
+      ///TODO: Change name to: SubscribeServerEvents
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>

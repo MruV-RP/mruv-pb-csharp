@@ -1145,7 +1145,7 @@ namespace Mruv.Devtools {
   }
 
   /// <summary>
-  /// Get outgits request message.
+  /// Get outfits request message.
   /// </summary>
   public sealed partial class GetOutfitsRequest : pb::IMessage<GetOutfitsRequest> {
     private static readonly pb::MessageParser<GetOutfitsRequest> _parser = new pb::MessageParser<GetOutfitsRequest>(() => new GetOutfitsRequest());

@@ -29,10 +29,10 @@ namespace Mruv.Server {
             "byIdChtHZXRSZWdpc3RlcmVkU2VydmVyc1JlcXVlc3QiSAocR2V0UmVnaXN0",
             "ZXJlZFNlcnZlcnNSZXNwb25zZRIoCgdzZXJ2ZXJzGAEgAygLMhcubXJ1di5z",
             "ZXJ2ZXIuU2VydmVySW5mbyJjChlVcGRhdGVTZXJ2ZXJTdGF0dXNSZXF1ZXN0",
-            "EgoKAmlkGAEgASgDEikKBnN0YXR1cxgCIAEoDjIZLm1ydXYuc2VydmVyLlNl",
-            "cnZlclN0YXR1cxIPCgdwbGF5ZXJzGAMgASgFIhwKGlVwZGF0ZVNlcnZlclN0",
+            "EgoKAmlkGAEgASgNEikKBnN0YXR1cxgCIAEoDjIZLm1ydXYuc2VydmVyLlNl",
+            "cnZlclN0YXR1cxIPCgdwbGF5ZXJzGAMgASgNIhwKGlVwZGF0ZVNlcnZlclN0",
             "YXR1c1Jlc3BvbnNlIicKGVNlcnZlckV2ZW50c1N0cmVhbVJlcXVlc3QSCgoC",
-            "aWQYASABKAMiqgEKC1NlcnZlckV2ZW50EjYKBHR5cGUYASABKA4yKC5tcnV2",
+            "aWQYASABKA0iqgEKC1NlcnZlckV2ZW50EjYKBHR5cGUYASABKA4yKC5tcnV2",
             "LnNlcnZlci5TZXJ2ZXJFdmVudC5TZXJ2ZXJFdmVudFR5cGUiYwoPU2VydmVy",
             "RXZlbnRUeXBlEgsKB1VOS05PV04QABIOCgpSRUdJU1RFUkVEEAESDwoLU0VS",
             "VkVSX0RPV04QAhINCglTRVJWRVJfVVAQAxITCg9QTEFZRVJTX0NIQU5HRUQQ",
@@ -334,12 +334,12 @@ namespace Mruv.Server {
 
     /// <summary>Field number for the "id" field.</summary>
     public const int IdFieldNumber = 1;
-    private long id_;
+    private uint id_;
     /// <summary>
     /// Id of the server.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long Id {
+    public uint Id {
       get { return id_; }
       set {
         id_ = value;
@@ -362,12 +362,12 @@ namespace Mruv.Server {
 
     /// <summary>Field number for the "players" field.</summary>
     public const int PlayersFieldNumber = 3;
-    private int players_;
+    private uint players_;
     /// <summary>
     /// How many players are registered on that server.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Players {
+    public uint Players {
       get { return players_; }
       set {
         players_ = value;
@@ -396,7 +396,7 @@ namespace Mruv.Server {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Id != 0L) hash ^= Id.GetHashCode();
+      if (Id != 0) hash ^= Id.GetHashCode();
       if (Status != 0) hash ^= Status.GetHashCode();
       if (Players != 0) hash ^= Players.GetHashCode();
       if (_unknownFields != null) {
@@ -412,9 +412,9 @@ namespace Mruv.Server {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Id != 0L) {
+      if (Id != 0) {
         output.WriteRawTag(8);
-        output.WriteInt64(Id);
+        output.WriteUInt32(Id);
       }
       if (Status != 0) {
         output.WriteRawTag(16);
@@ -422,7 +422,7 @@ namespace Mruv.Server {
       }
       if (Players != 0) {
         output.WriteRawTag(24);
-        output.WriteInt32(Players);
+        output.WriteUInt32(Players);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -432,14 +432,14 @@ namespace Mruv.Server {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Id != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Id);
+      if (Id != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Id);
       }
       if (Status != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
       }
       if (Players != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Players);
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Players);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -452,7 +452,7 @@ namespace Mruv.Server {
       if (other == null) {
         return;
       }
-      if (other.Id != 0L) {
+      if (other.Id != 0) {
         Id = other.Id;
       }
       if (other.Status != 0) {
@@ -473,7 +473,7 @@ namespace Mruv.Server {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Id = input.ReadInt64();
+            Id = input.ReadUInt32();
             break;
           }
           case 16: {
@@ -481,7 +481,7 @@ namespace Mruv.Server {
             break;
           }
           case 24: {
-            Players = input.ReadInt32();
+            Players = input.ReadUInt32();
             break;
           }
         }
@@ -633,12 +633,12 @@ namespace Mruv.Server {
 
     /// <summary>Field number for the "id" field.</summary>
     public const int IdFieldNumber = 1;
-    private long id_;
+    private uint id_;
     /// <summary>
     /// The ID of the server from which we want to receive events.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long Id {
+    public uint Id {
       get { return id_; }
       set {
         id_ = value;
@@ -665,7 +665,7 @@ namespace Mruv.Server {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Id != 0L) hash ^= Id.GetHashCode();
+      if (Id != 0) hash ^= Id.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -679,9 +679,9 @@ namespace Mruv.Server {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Id != 0L) {
+      if (Id != 0) {
         output.WriteRawTag(8);
-        output.WriteInt64(Id);
+        output.WriteUInt32(Id);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -691,8 +691,8 @@ namespace Mruv.Server {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Id != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Id);
+      if (Id != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Id);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -705,7 +705,7 @@ namespace Mruv.Server {
       if (other == null) {
         return;
       }
-      if (other.Id != 0L) {
+      if (other.Id != 0) {
         Id = other.Id;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -720,7 +720,7 @@ namespace Mruv.Server {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Id = input.ReadInt64();
+            Id = input.ReadUInt32();
             break;
           }
         }

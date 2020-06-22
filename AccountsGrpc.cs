@@ -8,6 +8,10 @@
 using grpc = global::Grpc.Core;
 
 namespace Mruv {
+  /// <summary>
+  /// The MruV accounts service provides procedures for managing players accounts.
+  /// This service is an additional/intermediary service between the ORY Kratos &amp; ORY Hydra service.
+  /// </summary>
   public static partial class MruVAccountsService
   {
     static readonly string __ServiceName = "mruv.MruVAccountsService";

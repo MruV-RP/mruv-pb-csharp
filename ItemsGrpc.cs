@@ -226,7 +226,7 @@ namespace Mruv {
     public abstract partial class MruVItemServiceBase
     {
       /// <summary>
-      ///Create new item.
+      /// Create new item.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -237,7 +237,7 @@ namespace Mruv {
       }
 
       /// <summary>
-      ///Get item by id.
+      /// Get item by id.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -248,7 +248,7 @@ namespace Mruv {
       }
 
       /// <summary>
-      ///Delete item by id.
+      /// Delete item by id.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -259,7 +259,7 @@ namespace Mruv {
       }
 
       /// <summary>
-      ///Gets all items.
+      /// Gets all items.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -270,7 +270,7 @@ namespace Mruv {
       }
 
       /// <summary>
-      ///Create item type.
+      /// Create item type.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -281,7 +281,7 @@ namespace Mruv {
       }
 
       /// <summary>
-      ///Get item type by id.
+      /// Get item type by id.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -292,7 +292,7 @@ namespace Mruv {
       }
 
       /// <summary>
-      ///Delete item type by id.
+      /// Delete item type by id.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -303,7 +303,7 @@ namespace Mruv {
       }
 
       /// <summary>
-      ///Gets all item types.
+      /// Gets all item types.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -314,7 +314,7 @@ namespace Mruv {
       }
 
       /// <summary>
-      ///Create container.
+      /// Create container.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -325,7 +325,7 @@ namespace Mruv {
       }
 
       /// <summary>
-      ///Get container by id.
+      /// Get container by id.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -336,7 +336,7 @@ namespace Mruv {
       }
 
       /// <summary>
-      ///Delete container by id.
+      /// Delete container by id.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -347,7 +347,7 @@ namespace Mruv {
       }
 
       /// <summary>
-      ///Get all containers.
+      /// Get all containers.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -358,7 +358,7 @@ namespace Mruv {
       }
 
       /// <summary>
-      ///Create container type.
+      /// Create a container type.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -369,7 +369,7 @@ namespace Mruv {
       }
 
       /// <summary>
-      ///Get container type by id.
+      /// Get a container type by id.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -380,7 +380,7 @@ namespace Mruv {
       }
 
       /// <summary>
-      ///Detele container type by id.
+      /// Delete a container type by id.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -391,7 +391,7 @@ namespace Mruv {
       }
 
       /// <summary>
-      ///Get all container types.
+      /// Get all container types.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -402,7 +402,7 @@ namespace Mruv {
       }
 
       /// <summary>
-      ///Get items inside a container.
+      /// Get items inside a container.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -413,7 +413,7 @@ namespace Mruv {
       }
 
       /// <summary>
-      ///Pull item from container.
+      /// Pull an item from container.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -424,7 +424,7 @@ namespace Mruv {
       }
 
       /// <summary>
-      ///Put item into container.
+      /// Put an item into container.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -435,8 +435,8 @@ namespace Mruv {
       }
 
       /// <summary>
-      ///Sort items inside container.
-      ///This procedure change order of items inside container.
+      /// Sort items inside container.
+      /// This procedure change order of items inside container.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -447,7 +447,7 @@ namespace Mruv {
       }
 
       /// <summary>
-      ///Retrieves from the container the list of items nearest to the given position.
+      /// Retrieves from the container the list of items nearest to the given position.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -458,7 +458,7 @@ namespace Mruv {
       }
 
       /// <summary>
-      ///Trigger action associated with the item usage.
+      /// Trigger action associated with the item usage.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -469,7 +469,7 @@ namespace Mruv {
       }
 
       /// <summary>
-      ///Get service health status.
+      /// Get service health status.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -516,7 +516,7 @@ namespace Mruv {
       }
 
       /// <summary>
-      ///Create new item.
+      /// Create new item.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -528,7 +528,7 @@ namespace Mruv {
         return CreateItem(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Create new item.
+      /// Create new item.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -538,7 +538,7 @@ namespace Mruv {
         return CallInvoker.BlockingUnaryCall(__Method_CreateItem, null, options, request);
       }
       /// <summary>
-      ///Create new item.
+      /// Create new item.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -550,7 +550,7 @@ namespace Mruv {
         return CreateItemAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Create new item.
+      /// Create new item.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -560,7 +560,7 @@ namespace Mruv {
         return CallInvoker.AsyncUnaryCall(__Method_CreateItem, null, options, request);
       }
       /// <summary>
-      ///Get item by id.
+      /// Get item by id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -572,7 +572,7 @@ namespace Mruv {
         return GetItem(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Get item by id.
+      /// Get item by id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -582,7 +582,7 @@ namespace Mruv {
         return CallInvoker.BlockingUnaryCall(__Method_GetItem, null, options, request);
       }
       /// <summary>
-      ///Get item by id.
+      /// Get item by id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -594,7 +594,7 @@ namespace Mruv {
         return GetItemAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Get item by id.
+      /// Get item by id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -604,7 +604,7 @@ namespace Mruv {
         return CallInvoker.AsyncUnaryCall(__Method_GetItem, null, options, request);
       }
       /// <summary>
-      ///Delete item by id.
+      /// Delete item by id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -616,7 +616,7 @@ namespace Mruv {
         return DeleteItem(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Delete item by id.
+      /// Delete item by id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -626,7 +626,7 @@ namespace Mruv {
         return CallInvoker.BlockingUnaryCall(__Method_DeleteItem, null, options, request);
       }
       /// <summary>
-      ///Delete item by id.
+      /// Delete item by id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -638,7 +638,7 @@ namespace Mruv {
         return DeleteItemAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Delete item by id.
+      /// Delete item by id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -648,7 +648,7 @@ namespace Mruv {
         return CallInvoker.AsyncUnaryCall(__Method_DeleteItem, null, options, request);
       }
       /// <summary>
-      ///Gets all items.
+      /// Gets all items.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -660,7 +660,7 @@ namespace Mruv {
         return GetItems(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Gets all items.
+      /// Gets all items.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -670,7 +670,7 @@ namespace Mruv {
         return CallInvoker.BlockingUnaryCall(__Method_GetItems, null, options, request);
       }
       /// <summary>
-      ///Gets all items.
+      /// Gets all items.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -682,7 +682,7 @@ namespace Mruv {
         return GetItemsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Gets all items.
+      /// Gets all items.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -692,7 +692,7 @@ namespace Mruv {
         return CallInvoker.AsyncUnaryCall(__Method_GetItems, null, options, request);
       }
       /// <summary>
-      ///Create item type.
+      /// Create item type.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -704,7 +704,7 @@ namespace Mruv {
         return CreateItemType(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Create item type.
+      /// Create item type.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -714,7 +714,7 @@ namespace Mruv {
         return CallInvoker.BlockingUnaryCall(__Method_CreateItemType, null, options, request);
       }
       /// <summary>
-      ///Create item type.
+      /// Create item type.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -726,7 +726,7 @@ namespace Mruv {
         return CreateItemTypeAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Create item type.
+      /// Create item type.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -736,7 +736,7 @@ namespace Mruv {
         return CallInvoker.AsyncUnaryCall(__Method_CreateItemType, null, options, request);
       }
       /// <summary>
-      ///Get item type by id.
+      /// Get item type by id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -748,7 +748,7 @@ namespace Mruv {
         return GetItemType(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Get item type by id.
+      /// Get item type by id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -758,7 +758,7 @@ namespace Mruv {
         return CallInvoker.BlockingUnaryCall(__Method_GetItemType, null, options, request);
       }
       /// <summary>
-      ///Get item type by id.
+      /// Get item type by id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -770,7 +770,7 @@ namespace Mruv {
         return GetItemTypeAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Get item type by id.
+      /// Get item type by id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -780,7 +780,7 @@ namespace Mruv {
         return CallInvoker.AsyncUnaryCall(__Method_GetItemType, null, options, request);
       }
       /// <summary>
-      ///Delete item type by id.
+      /// Delete item type by id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -792,7 +792,7 @@ namespace Mruv {
         return DeleteItemType(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Delete item type by id.
+      /// Delete item type by id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -802,7 +802,7 @@ namespace Mruv {
         return CallInvoker.BlockingUnaryCall(__Method_DeleteItemType, null, options, request);
       }
       /// <summary>
-      ///Delete item type by id.
+      /// Delete item type by id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -814,7 +814,7 @@ namespace Mruv {
         return DeleteItemTypeAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Delete item type by id.
+      /// Delete item type by id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -824,7 +824,7 @@ namespace Mruv {
         return CallInvoker.AsyncUnaryCall(__Method_DeleteItemType, null, options, request);
       }
       /// <summary>
-      ///Gets all item types.
+      /// Gets all item types.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -836,7 +836,7 @@ namespace Mruv {
         return GetItemTypes(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Gets all item types.
+      /// Gets all item types.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -846,7 +846,7 @@ namespace Mruv {
         return CallInvoker.BlockingUnaryCall(__Method_GetItemTypes, null, options, request);
       }
       /// <summary>
-      ///Gets all item types.
+      /// Gets all item types.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -858,7 +858,7 @@ namespace Mruv {
         return GetItemTypesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Gets all item types.
+      /// Gets all item types.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -868,7 +868,7 @@ namespace Mruv {
         return CallInvoker.AsyncUnaryCall(__Method_GetItemTypes, null, options, request);
       }
       /// <summary>
-      ///Create container.
+      /// Create container.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -880,7 +880,7 @@ namespace Mruv {
         return CreateContainer(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Create container.
+      /// Create container.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -890,7 +890,7 @@ namespace Mruv {
         return CallInvoker.BlockingUnaryCall(__Method_CreateContainer, null, options, request);
       }
       /// <summary>
-      ///Create container.
+      /// Create container.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -902,7 +902,7 @@ namespace Mruv {
         return CreateContainerAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Create container.
+      /// Create container.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -912,7 +912,7 @@ namespace Mruv {
         return CallInvoker.AsyncUnaryCall(__Method_CreateContainer, null, options, request);
       }
       /// <summary>
-      ///Get container by id.
+      /// Get container by id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -924,7 +924,7 @@ namespace Mruv {
         return GetContainer(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Get container by id.
+      /// Get container by id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -934,7 +934,7 @@ namespace Mruv {
         return CallInvoker.BlockingUnaryCall(__Method_GetContainer, null, options, request);
       }
       /// <summary>
-      ///Get container by id.
+      /// Get container by id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -946,7 +946,7 @@ namespace Mruv {
         return GetContainerAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Get container by id.
+      /// Get container by id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -956,7 +956,7 @@ namespace Mruv {
         return CallInvoker.AsyncUnaryCall(__Method_GetContainer, null, options, request);
       }
       /// <summary>
-      ///Delete container by id.
+      /// Delete container by id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -968,7 +968,7 @@ namespace Mruv {
         return DeleteContainer(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Delete container by id.
+      /// Delete container by id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -978,7 +978,7 @@ namespace Mruv {
         return CallInvoker.BlockingUnaryCall(__Method_DeleteContainer, null, options, request);
       }
       /// <summary>
-      ///Delete container by id.
+      /// Delete container by id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -990,7 +990,7 @@ namespace Mruv {
         return DeleteContainerAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Delete container by id.
+      /// Delete container by id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1000,7 +1000,7 @@ namespace Mruv {
         return CallInvoker.AsyncUnaryCall(__Method_DeleteContainer, null, options, request);
       }
       /// <summary>
-      ///Get all containers.
+      /// Get all containers.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1012,7 +1012,7 @@ namespace Mruv {
         return GetContainers(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Get all containers.
+      /// Get all containers.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1022,7 +1022,7 @@ namespace Mruv {
         return CallInvoker.BlockingUnaryCall(__Method_GetContainers, null, options, request);
       }
       /// <summary>
-      ///Get all containers.
+      /// Get all containers.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1034,7 +1034,7 @@ namespace Mruv {
         return GetContainersAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Get all containers.
+      /// Get all containers.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1044,7 +1044,7 @@ namespace Mruv {
         return CallInvoker.AsyncUnaryCall(__Method_GetContainers, null, options, request);
       }
       /// <summary>
-      ///Create container type.
+      /// Create a container type.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1056,7 +1056,7 @@ namespace Mruv {
         return CreateContainerType(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Create container type.
+      /// Create a container type.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1066,7 +1066,7 @@ namespace Mruv {
         return CallInvoker.BlockingUnaryCall(__Method_CreateContainerType, null, options, request);
       }
       /// <summary>
-      ///Create container type.
+      /// Create a container type.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1078,7 +1078,7 @@ namespace Mruv {
         return CreateContainerTypeAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Create container type.
+      /// Create a container type.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1088,7 +1088,7 @@ namespace Mruv {
         return CallInvoker.AsyncUnaryCall(__Method_CreateContainerType, null, options, request);
       }
       /// <summary>
-      ///Get container type by id.
+      /// Get a container type by id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1100,7 +1100,7 @@ namespace Mruv {
         return GetContainerType(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Get container type by id.
+      /// Get a container type by id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1110,7 +1110,7 @@ namespace Mruv {
         return CallInvoker.BlockingUnaryCall(__Method_GetContainerType, null, options, request);
       }
       /// <summary>
-      ///Get container type by id.
+      /// Get a container type by id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1122,7 +1122,7 @@ namespace Mruv {
         return GetContainerTypeAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Get container type by id.
+      /// Get a container type by id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1132,7 +1132,7 @@ namespace Mruv {
         return CallInvoker.AsyncUnaryCall(__Method_GetContainerType, null, options, request);
       }
       /// <summary>
-      ///Detele container type by id.
+      /// Delete a container type by id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1144,7 +1144,7 @@ namespace Mruv {
         return DeleteContainerType(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Detele container type by id.
+      /// Delete a container type by id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1154,7 +1154,7 @@ namespace Mruv {
         return CallInvoker.BlockingUnaryCall(__Method_DeleteContainerType, null, options, request);
       }
       /// <summary>
-      ///Detele container type by id.
+      /// Delete a container type by id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1166,7 +1166,7 @@ namespace Mruv {
         return DeleteContainerTypeAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Detele container type by id.
+      /// Delete a container type by id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1176,7 +1176,7 @@ namespace Mruv {
         return CallInvoker.AsyncUnaryCall(__Method_DeleteContainerType, null, options, request);
       }
       /// <summary>
-      ///Get all container types.
+      /// Get all container types.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1188,7 +1188,7 @@ namespace Mruv {
         return GetContainerTypes(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Get all container types.
+      /// Get all container types.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1198,7 +1198,7 @@ namespace Mruv {
         return CallInvoker.BlockingUnaryCall(__Method_GetContainerTypes, null, options, request);
       }
       /// <summary>
-      ///Get all container types.
+      /// Get all container types.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1210,7 +1210,7 @@ namespace Mruv {
         return GetContainerTypesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Get all container types.
+      /// Get all container types.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1220,7 +1220,7 @@ namespace Mruv {
         return CallInvoker.AsyncUnaryCall(__Method_GetContainerTypes, null, options, request);
       }
       /// <summary>
-      ///Get items inside a container.
+      /// Get items inside a container.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1232,7 +1232,7 @@ namespace Mruv {
         return GetContainerItems(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Get items inside a container.
+      /// Get items inside a container.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1242,7 +1242,7 @@ namespace Mruv {
         return CallInvoker.BlockingUnaryCall(__Method_GetContainerItems, null, options, request);
       }
       /// <summary>
-      ///Get items inside a container.
+      /// Get items inside a container.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1254,7 +1254,7 @@ namespace Mruv {
         return GetContainerItemsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Get items inside a container.
+      /// Get items inside a container.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1264,7 +1264,7 @@ namespace Mruv {
         return CallInvoker.AsyncUnaryCall(__Method_GetContainerItems, null, options, request);
       }
       /// <summary>
-      ///Pull item from container.
+      /// Pull an item from container.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1276,7 +1276,7 @@ namespace Mruv {
         return PullItem(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Pull item from container.
+      /// Pull an item from container.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1286,7 +1286,7 @@ namespace Mruv {
         return CallInvoker.BlockingUnaryCall(__Method_PullItem, null, options, request);
       }
       /// <summary>
-      ///Pull item from container.
+      /// Pull an item from container.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1298,7 +1298,7 @@ namespace Mruv {
         return PullItemAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Pull item from container.
+      /// Pull an item from container.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1308,7 +1308,7 @@ namespace Mruv {
         return CallInvoker.AsyncUnaryCall(__Method_PullItem, null, options, request);
       }
       /// <summary>
-      ///Put item into container.
+      /// Put an item into container.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1320,7 +1320,7 @@ namespace Mruv {
         return PutItem(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Put item into container.
+      /// Put an item into container.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1330,7 +1330,7 @@ namespace Mruv {
         return CallInvoker.BlockingUnaryCall(__Method_PutItem, null, options, request);
       }
       /// <summary>
-      ///Put item into container.
+      /// Put an item into container.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1342,7 +1342,7 @@ namespace Mruv {
         return PutItemAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Put item into container.
+      /// Put an item into container.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1352,8 +1352,8 @@ namespace Mruv {
         return CallInvoker.AsyncUnaryCall(__Method_PutItem, null, options, request);
       }
       /// <summary>
-      ///Sort items inside container.
-      ///This procedure change order of items inside container.
+      /// Sort items inside container.
+      /// This procedure change order of items inside container.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1365,8 +1365,8 @@ namespace Mruv {
         return SortItems(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Sort items inside container.
-      ///This procedure change order of items inside container.
+      /// Sort items inside container.
+      /// This procedure change order of items inside container.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1376,8 +1376,8 @@ namespace Mruv {
         return CallInvoker.BlockingUnaryCall(__Method_SortItems, null, options, request);
       }
       /// <summary>
-      ///Sort items inside container.
-      ///This procedure change order of items inside container.
+      /// Sort items inside container.
+      /// This procedure change order of items inside container.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1389,8 +1389,8 @@ namespace Mruv {
         return SortItemsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Sort items inside container.
-      ///This procedure change order of items inside container.
+      /// Sort items inside container.
+      /// This procedure change order of items inside container.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1400,7 +1400,7 @@ namespace Mruv {
         return CallInvoker.AsyncUnaryCall(__Method_SortItems, null, options, request);
       }
       /// <summary>
-      ///Retrieves from the container the list of items nearest to the given position.
+      /// Retrieves from the container the list of items nearest to the given position.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1412,7 +1412,7 @@ namespace Mruv {
         return GetNearestItems(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Retrieves from the container the list of items nearest to the given position.
+      /// Retrieves from the container the list of items nearest to the given position.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1422,7 +1422,7 @@ namespace Mruv {
         return CallInvoker.BlockingUnaryCall(__Method_GetNearestItems, null, options, request);
       }
       /// <summary>
-      ///Retrieves from the container the list of items nearest to the given position.
+      /// Retrieves from the container the list of items nearest to the given position.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1434,7 +1434,7 @@ namespace Mruv {
         return GetNearestItemsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Retrieves from the container the list of items nearest to the given position.
+      /// Retrieves from the container the list of items nearest to the given position.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1444,7 +1444,7 @@ namespace Mruv {
         return CallInvoker.AsyncUnaryCall(__Method_GetNearestItems, null, options, request);
       }
       /// <summary>
-      ///Trigger action associated with the item usage.
+      /// Trigger action associated with the item usage.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1456,7 +1456,7 @@ namespace Mruv {
         return UseItem(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Trigger action associated with the item usage.
+      /// Trigger action associated with the item usage.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1466,7 +1466,7 @@ namespace Mruv {
         return CallInvoker.BlockingUnaryCall(__Method_UseItem, null, options, request);
       }
       /// <summary>
-      ///Trigger action associated with the item usage.
+      /// Trigger action associated with the item usage.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1478,7 +1478,7 @@ namespace Mruv {
         return UseItemAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Trigger action associated with the item usage.
+      /// Trigger action associated with the item usage.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1488,7 +1488,7 @@ namespace Mruv {
         return CallInvoker.AsyncUnaryCall(__Method_UseItem, null, options, request);
       }
       /// <summary>
-      ///Get service health status.
+      /// Get service health status.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1500,7 +1500,7 @@ namespace Mruv {
         return GetServiceStatus(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Get service health status.
+      /// Get service health status.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1510,7 +1510,7 @@ namespace Mruv {
         return CallInvoker.BlockingUnaryCall(__Method_GetServiceStatus, null, options, request);
       }
       /// <summary>
-      ///Get service health status.
+      /// Get service health status.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1522,7 +1522,7 @@ namespace Mruv {
         return GetServiceStatusAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Get service health status.
+      /// Get service health status.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>

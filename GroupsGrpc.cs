@@ -8,6 +8,9 @@
 using grpc = global::Grpc.Core;
 
 namespace Mruv {
+  /// <summary>
+  /// The MruV groups service provides procedures for managing groups.
+  /// </summary>
   public static partial class MruVGroupsService
   {
     static readonly string __ServiceName = "mruv.MruVGroupsService";
