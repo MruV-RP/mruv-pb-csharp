@@ -34,15 +34,20 @@ namespace Mruv {
             "ZBgCIAEoDSIvCgxMb2dJblJlcXVlc3QSDQoFbG9naW4YASABKAkSEAoIcGFz",
             "c3dvcmQYAiABKAkiNAoNTG9nSW5SZXNwb25zZRIPCgdzdWNjZXNzGAEgASgI",
             "EhIKCmFjY291bnRfaWQYAiABKA0iQwocR2V0QWNjb3VudENoYXJhY3RlcnNS",
-            "ZXNwb25zZRIjCgpjaGFyYWN0ZXJzGAEgAygLMg8ubXJ1di5DaGFyYWN0ZXIy",
-            "kgIKE01ydVZBY2NvdW50c1NlcnZpY2USTgoPUmVnaXN0ZXJBY2NvdW50Ehwu",
-            "bXJ1di5SZWdpc3RlckFjY291bnRSZXF1ZXN0Gh0ubXJ1di5SZWdpc3RlckFj",
-            "Y291bnRSZXNwb25zZRIwCgVMb2dJbhISLm1ydXYuTG9nSW5SZXF1ZXN0GhMu",
-            "bXJ1di5Mb2dJblJlc3BvbnNlEiwKCkdldEFjY291bnQSDy5tcnV2LkFjY291",
-            "bnRJRBoNLm1ydXYuQWNjb3VudBJLChRHZXRBY2NvdW50Q2hhcmFjdGVycxIP",
-            "Lm1ydXYuQWNjb3VudElEGiIubXJ1di5HZXRBY2NvdW50Q2hhcmFjdGVyc1Jl",
-            "c3BvbnNlQihaJmdpdGh1Yi5jb20vTXJ1Vi1SUC9tcnV2LXBiLWdvL2FjY291",
-            "bnRzYgZwcm90bzM="));
+            "ZXNwb25zZRIjCgpjaGFyYWN0ZXJzGAEgAygLMg8ubXJ1di5DaGFyYWN0ZXIi",
+            "JwoWSXNBY2NvdW50RXhpc3RzUmVxdWVzdBINCgVsb2dpbhgBIAEoCSI1ChdJ",
+            "c0FjY291bnRFeGlzdHNSZXNwb25zZRIOCgZleGlzdHMYASABKAgSCgoCaWQY",
+            "AiABKA0yiwMKE01ydVZBY2NvdW50c1NlcnZpY2USTgoPUmVnaXN0ZXJBY2Nv",
+            "dW50EhwubXJ1di5SZWdpc3RlckFjY291bnRSZXF1ZXN0Gh0ubXJ1di5SZWdp",
+            "c3RlckFjY291bnRSZXNwb25zZRIwCgVMb2dJbhISLm1ydXYuTG9nSW5SZXF1",
+            "ZXN0GhMubXJ1di5Mb2dJblJlc3BvbnNlEncKD0lzQWNjb3VudEV4aXN0cxIc",
+            "Lm1ydXYuSXNBY2NvdW50RXhpc3RzUmVxdWVzdBodLm1ydXYuSXNBY2NvdW50",
+            "RXhpc3RzUmVzcG9uc2UiJ4LT5JMCIRIfL3YxL2FjY291bnRzL3tsb2dpbn0v",
+            "cmVnaXN0ZXJlZBIsCgpHZXRBY2NvdW50Eg8ubXJ1di5BY2NvdW50SUQaDS5t",
+            "cnV2LkFjY291bnQSSwoUR2V0QWNjb3VudENoYXJhY3RlcnMSDy5tcnV2LkFj",
+            "Y291bnRJRBoiLm1ydXYuR2V0QWNjb3VudENoYXJhY3RlcnNSZXNwb25zZUIo",
+            "WiZnaXRodWIuY29tL01ydVYtUlAvbXJ1di1wYi1nby9hY2NvdW50c2IGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, global::Mruv.CharactersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -52,7 +57,9 @@ namespace Mruv {
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.RegisterAccountResponse), global::Mruv.RegisterAccountResponse.Parser, new[]{ "Success", "AccountId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.LogInRequest), global::Mruv.LogInRequest.Parser, new[]{ "Login", "Password" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.LogInResponse), global::Mruv.LogInResponse.Parser, new[]{ "Success", "AccountId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetAccountCharactersResponse), global::Mruv.GetAccountCharactersResponse.Parser, new[]{ "Characters" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetAccountCharactersResponse), global::Mruv.GetAccountCharactersResponse.Parser, new[]{ "Characters" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.IsAccountExistsRequest), global::Mruv.IsAccountExistsRequest.Parser, new[]{ "Login" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.IsAccountExistsResponse), global::Mruv.IsAccountExistsResponse.Parser, new[]{ "Exists", "Id" }, null, null, null)
           }));
     }
     #endregion
@@ -1148,6 +1155,298 @@ namespace Mruv {
             break;
           case 10: {
             characters_.AddEntriesFrom(input, _repeated_characters_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Request message for rpc `IsAccountExists`.
+  /// </summary>
+  public sealed partial class IsAccountExistsRequest : pb::IMessage<IsAccountExistsRequest> {
+    private static readonly pb::MessageParser<IsAccountExistsRequest> _parser = new pb::MessageParser<IsAccountExistsRequest>(() => new IsAccountExistsRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<IsAccountExistsRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.AccountsReflection.Descriptor.MessageTypes[7]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public IsAccountExistsRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public IsAccountExistsRequest(IsAccountExistsRequest other) : this() {
+      login_ = other.login_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public IsAccountExistsRequest Clone() {
+      return new IsAccountExistsRequest(this);
+    }
+
+    /// <summary>Field number for the "login" field.</summary>
+    public const int LoginFieldNumber = 1;
+    private string login_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Login {
+      get { return login_; }
+      set {
+        login_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as IsAccountExistsRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(IsAccountExistsRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Login != other.Login) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Login.Length != 0) hash ^= Login.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Login.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Login);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Login.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Login);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(IsAccountExistsRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Login.Length != 0) {
+        Login = other.Login;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Login = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Response message for rpc `IsAccountExists`.
+  /// </summary>
+  public sealed partial class IsAccountExistsResponse : pb::IMessage<IsAccountExistsResponse> {
+    private static readonly pb::MessageParser<IsAccountExistsResponse> _parser = new pb::MessageParser<IsAccountExistsResponse>(() => new IsAccountExistsResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<IsAccountExistsResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.AccountsReflection.Descriptor.MessageTypes[8]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public IsAccountExistsResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public IsAccountExistsResponse(IsAccountExistsResponse other) : this() {
+      exists_ = other.exists_;
+      id_ = other.id_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public IsAccountExistsResponse Clone() {
+      return new IsAccountExistsResponse(this);
+    }
+
+    /// <summary>Field number for the "exists" field.</summary>
+    public const int ExistsFieldNumber = 1;
+    private bool exists_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Exists {
+      get { return exists_; }
+      set {
+        exists_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "id" field.</summary>
+    public const int IdFieldNumber = 2;
+    private uint id_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint Id {
+      get { return id_; }
+      set {
+        id_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as IsAccountExistsResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(IsAccountExistsResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Exists != other.Exists) return false;
+      if (Id != other.Id) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Exists != false) hash ^= Exists.GetHashCode();
+      if (Id != 0) hash ^= Id.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Exists != false) {
+        output.WriteRawTag(8);
+        output.WriteBool(Exists);
+      }
+      if (Id != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(Id);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Exists != false) {
+        size += 1 + 1;
+      }
+      if (Id != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Id);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(IsAccountExistsResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Exists != false) {
+        Exists = other.Exists;
+      }
+      if (other.Id != 0) {
+        Id = other.Id;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Exists = input.ReadBool();
+            break;
+          }
+          case 16: {
+            Id = input.ReadUInt32();
             break;
           }
         }
