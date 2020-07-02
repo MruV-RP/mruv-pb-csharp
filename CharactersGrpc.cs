@@ -21,6 +21,8 @@ namespace Mruv {
     static readonly grpc::Marshaller<global::Mruv.DeleteCharacterRequest> __Marshaller_mruv_DeleteCharacterRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.DeleteCharacterRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.DeleteCharacterResponse> __Marshaller_mruv_DeleteCharacterResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.DeleteCharacterResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.CharacterID> __Marshaller_mruv_CharacterID = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.CharacterID.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.ChangeClothesRequest> __Marshaller_mruv_ChangeClothesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.ChangeClothesRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.ChangeClothesResponse> __Marshaller_mruv_ChangeClothesResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.ChangeClothesResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.DeathStreamRequest> __Marshaller_mruv_DeathStreamRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.DeathStreamRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.DeathStreamResponse> __Marshaller_mruv_DeathStreamResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.DeathStreamResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.ServiceStatusRequest> __Marshaller_mruv_ServiceStatusRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.ServiceStatusRequest.Parser.ParseFrom);
@@ -62,6 +64,13 @@ namespace Mruv {
         "PermanentCharacterKill",
         __Marshaller_mruv_CharacterID,
         __Marshaller_mruv_CharacterID);
+
+    static readonly grpc::Method<global::Mruv.ChangeClothesRequest, global::Mruv.ChangeClothesResponse> __Method_ChangeClothes = new grpc::Method<global::Mruv.ChangeClothesRequest, global::Mruv.ChangeClothesResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ChangeClothes",
+        __Marshaller_mruv_ChangeClothesRequest,
+        __Marshaller_mruv_ChangeClothesResponse);
 
     static readonly grpc::Method<global::Mruv.DeathStreamRequest, global::Mruv.DeathStreamResponse> __Method_DeathsStream = new grpc::Method<global::Mruv.DeathStreamRequest, global::Mruv.DeathStreamResponse>(
         grpc::MethodType.ServerStreaming,
@@ -145,6 +154,17 @@ namespace Mruv {
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       public virtual global::System.Threading.Tasks.Task<global::Mruv.CharacterID> PermanentCharacterKill(global::Mruv.CharacterID request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Change player clothes.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.ChangeClothesResponse> ChangeClothes(global::Mruv.ChangeClothesRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -423,6 +443,50 @@ namespace Mruv {
         return CallInvoker.AsyncUnaryCall(__Method_PermanentCharacterKill, null, options, request);
       }
       /// <summary>
+      /// Change player clothes.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Mruv.ChangeClothesResponse ChangeClothes(global::Mruv.ChangeClothesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ChangeClothes(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Change player clothes.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Mruv.ChangeClothesResponse ChangeClothes(global::Mruv.ChangeClothesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ChangeClothes, null, options, request);
+      }
+      /// <summary>
+      /// Change player clothes.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Mruv.ChangeClothesResponse> ChangeClothesAsync(global::Mruv.ChangeClothesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ChangeClothesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Change player clothes.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Mruv.ChangeClothesResponse> ChangeClothesAsync(global::Mruv.ChangeClothesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ChangeClothes, null, options, request);
+      }
+      /// <summary>
       /// Stream of deaths.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
@@ -521,6 +585,7 @@ namespace Mruv {
           .AddMethod(__Method_UpdateCharacter, serviceImpl.UpdateCharacter)
           .AddMethod(__Method_DeleteCharacter, serviceImpl.DeleteCharacter)
           .AddMethod(__Method_PermanentCharacterKill, serviceImpl.PermanentCharacterKill)
+          .AddMethod(__Method_ChangeClothes, serviceImpl.ChangeClothes)
           .AddMethod(__Method_DeathsStream, serviceImpl.DeathsStream)
           .AddMethod(__Method_GetServiceStatus, serviceImpl.GetServiceStatus)
           .AddMethod(__Method_GetServiceVersion, serviceImpl.GetServiceVersion).Build();
@@ -537,6 +602,7 @@ namespace Mruv {
       serviceBinder.AddMethod(__Method_UpdateCharacter, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.UpdateCharacterRequest, global::Mruv.UpdateCharacterResponse>(serviceImpl.UpdateCharacter));
       serviceBinder.AddMethod(__Method_DeleteCharacter, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.DeleteCharacterRequest, global::Mruv.DeleteCharacterResponse>(serviceImpl.DeleteCharacter));
       serviceBinder.AddMethod(__Method_PermanentCharacterKill, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.CharacterID, global::Mruv.CharacterID>(serviceImpl.PermanentCharacterKill));
+      serviceBinder.AddMethod(__Method_ChangeClothes, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.ChangeClothesRequest, global::Mruv.ChangeClothesResponse>(serviceImpl.ChangeClothes));
       serviceBinder.AddMethod(__Method_DeathsStream, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Mruv.DeathStreamRequest, global::Mruv.DeathStreamResponse>(serviceImpl.DeathsStream));
       serviceBinder.AddMethod(__Method_GetServiceStatus, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.ServiceStatusRequest, global::Mruv.ServiceStatusResponse>(serviceImpl.GetServiceStatus));
       serviceBinder.AddMethod(__Method_GetServiceVersion, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.VersionRequest, global::Mruv.VersionResponse>(serviceImpl.GetServiceVersion));

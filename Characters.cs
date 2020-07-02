@@ -25,61 +25,68 @@ namespace Mruv {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChtjaGFyYWN0ZXJzL2NoYXJhY3RlcnMucHJvdG8SBG1ydXYaHGdvb2dsZS9h",
-            "cGkvYW5ub3RhdGlvbnMucHJvdG8aE2NvbW1vbi9oZWFsdGgucHJvdG8aFGNv",
-            "bW1vbi9zcGF0aWFsLnByb3RvIo4BCglDaGFyYWN0ZXISCgoCaWQYASABKA0S",
-            "EAoIb3duZXJfaWQYAiABKA0SEgoKZmlyc3RfbmFtZRgDIAEoCRITCgtzZWNv",
-            "bmRfbmFtZRgEIAEoCRILCgNhZ2UYBSABKA0SCwoDc2V4GAYgASgNEiAKCHBv",
-            "c2l0aW9uGAcgASgLMg4ubXJ1di5Qb3NpdGlvbiIZCgtDaGFyYWN0ZXJJRBIK",
-            "CgJpZBgBIAEoDSJ5ChZDcmVhdGVDaGFyYWN0ZXJSZXF1ZXN0EgoKAmlkGAEg",
-            "ASgNEhAKCG93bmVyX2lkGAIgASgNEhIKCmZpcnN0X25hbWUYAyABKAkSEwoL",
-            "c2Vjb25kX25hbWUYBCABKAkSCwoDYWdlGAUgASgNEgsKA3NleBgGIAEoDSIl",
-            "ChdDcmVhdGVDaGFyYWN0ZXJSZXNwb25zZRIKCgJpZBgBIAEoDSIhChNHZXRD",
-            "aGFyYWN0ZXJSZXF1ZXN0EgoKAmlkGAEgASgNIpkBChRHZXRDaGFyYWN0ZXJS",
-            "ZXNwb25zZRIKCgJpZBgBIAEoDRIQCghvd25lcl9pZBgCIAEoDRISCgpmaXJz",
-            "dF9uYW1lGAMgASgJEhMKC3NlY29uZF9uYW1lGAQgASgJEgsKA2FnZRgFIAEo",
-            "DRILCgNzZXgYBiABKA0SIAoIcG9zaXRpb24YByABKAsyDi5tcnV2LlBvc2l0",
-            "aW9uIiQKFlVwZGF0ZUNoYXJhY3RlclJlcXVlc3QSCgoCaWQYASABKA0iGQoX",
-            "VXBkYXRlQ2hhcmFjdGVyUmVzcG9uc2UiJAoWRGVsZXRlQ2hhcmFjdGVyUmVx",
-            "dWVzdBIKCgJpZBgBIAEoDSIZChdEZWxldGVDaGFyYWN0ZXJSZXNwb25zZSI6",
-            "ChJEZWF0aFN0cmVhbVJlcXVlc3QSJAoLZGVhdGhfdHlwZXMYASADKA4yDy5t",
-            "cnV2LkRlYXRoVHlwZSJeChNEZWF0aFN0cmVhbVJlc3BvbnNlEiIKCWNoYXJh",
-            "Y3RlchgBIAEoCzIPLm1ydXYuQ2hhcmFjdGVyEiMKCmRlYXRoX3R5cGUYAiAB",
-            "KA4yDy5tcnV2LkRlYXRoVHlwZSpeCglEZWF0aFR5cGUSEwoPREVBVEhfVFlQ",
-            "RV9OT05FEAASEQoNREVBVEhfVFlQRV9CVxABEhYKEkRFQVRIX1RZUEVfQldf",
-            "S0lMTBACEhEKDURFQVRIX1RZUEVfQ0sQAzK/BgoVTXJ1VkNoYXJhY3RlcnNT",
-            "ZXJ2aWNlEmYKD0NyZWF0ZUNoYXJhY3RlchIcLm1ydXYuQ3JlYXRlQ2hhcmFj",
-            "dGVyUmVxdWVzdBodLm1ydXYuQ3JlYXRlQ2hhcmFjdGVyUmVzcG9uc2UiFoLT",
-            "5JMCECIOL3YxL2NoYXJhY3RlcnMSYgoMR2V0Q2hhcmFjdGVyEhkubXJ1di5H",
-            "ZXRDaGFyYWN0ZXJSZXF1ZXN0GhoubXJ1di5HZXRDaGFyYWN0ZXJSZXNwb25z",
-            "ZSIbgtPkkwIVEhMvdjEvY2hhcmFjdGVycy97aWR9EmsKD1VwZGF0ZUNoYXJh",
-            "Y3RlchIcLm1ydXYuVXBkYXRlQ2hhcmFjdGVyUmVxdWVzdBodLm1ydXYuVXBk",
-            "YXRlQ2hhcmFjdGVyUmVzcG9uc2UiG4LT5JMCFTITL3YxL2NoYXJhY3RlcnMv",
-            "e2lkfRJrCg9EZWxldGVDaGFyYWN0ZXISHC5tcnV2LkRlbGV0ZUNoYXJhY3Rl",
-            "clJlcXVlc3QaHS5tcnV2LkRlbGV0ZUNoYXJhY3RlclJlc3BvbnNlIhuC0+ST",
-            "AhUqEy92MS9jaGFyYWN0ZXJzL3tpZH0SaQoWUGVybWFuZW50Q2hhcmFjdGVy",
-            "S2lsbBIRLm1ydXYuQ2hhcmFjdGVySUQaES5tcnV2LkNoYXJhY3RlcklEIimC",
-            "0+STAiMqIS92MS9jaGFyYWN0ZXJzL3Blcm1hbmVudEtpbGwve2lkfRJHCgxE",
-            "ZWF0aHNTdHJlYW0SGC5tcnV2LkRlYXRoU3RyZWFtUmVxdWVzdBoZLm1ydXYu",
-            "RGVhdGhTdHJlYW1SZXNwb25zZSIAMAESagoQR2V0U2VydmljZVN0YXR1cxIa",
-            "Lm1ydXYuU2VydmljZVN0YXR1c1JlcXVlc3QaGy5tcnV2LlNlcnZpY2VTdGF0",
-            "dXNSZXNwb25zZSIdgtPkkwIXEhUvdjEvY2hhcmFjdGVycy9zdGF0dXMSYAoR",
-            "R2V0U2VydmljZVZlcnNpb24SFC5tcnV2LlZlcnNpb25SZXF1ZXN0GhUubXJ1",
-            "di5WZXJzaW9uUmVzcG9uc2UiHoLT5JMCGBIWL3YxL2NoYXJhY3RlcnMvdmVy",
-            "c2lvbkIqWihnaXRodWIuY29tL01ydVYtUlAvbXJ1di1wYi1nby9jaGFyYWN0",
-            "ZXJzYgZwcm90bzM="));
+            "cGkvYW5ub3RhdGlvbnMucHJvdG8aE2NvbW1vbi9oZWFsdGgucHJvdG8ioQEK",
+            "CUNoYXJhY3RlchIKCgJpZBgBIAEoDRIQCghvd25lcl9pZBgCIAEoDRISCgpm",
+            "aXJzdF9uYW1lGAMgASgJEhMKC3NlY29uZF9uYW1lGAQgASgJEgsKA2FnZRgF",
+            "IAEoDRILCgNzZXgYBiABKA0SEgoKY2xvdGhlc19pZBgHIAEoDRIJCgF4GAgg",
+            "ASgCEgkKAXkYCSABKAISCQoBehgKIAEoAiIZCgtDaGFyYWN0ZXJJRBIKCgJp",
+            "ZBgBIAEoDSJ5ChZDcmVhdGVDaGFyYWN0ZXJSZXF1ZXN0EgoKAmlkGAEgASgN",
+            "EhAKCG93bmVyX2lkGAIgASgNEhIKCmZpcnN0X25hbWUYAyABKAkSEwoLc2Vj",
+            "b25kX25hbWUYBCABKAkSCwoDYWdlGAUgASgNEgsKA3NleBgGIAEoDSIlChdD",
+            "cmVhdGVDaGFyYWN0ZXJSZXNwb25zZRIKCgJpZBgBIAEoDSIhChNHZXRDaGFy",
+            "YWN0ZXJSZXF1ZXN0EgoKAmlkGAEgASgNIqwBChRHZXRDaGFyYWN0ZXJSZXNw",
+            "b25zZRIKCgJpZBgBIAEoDRIQCghvd25lcl9pZBgCIAEoDRISCgpmaXJzdF9u",
+            "YW1lGAMgASgJEhMKC3NlY29uZF9uYW1lGAQgASgJEgsKA2FnZRgFIAEoDRIL",
+            "CgNzZXgYBiABKA0SEgoKY2xvdGhlc19pZBgHIAEoDRIJCgF4GAggASgCEgkK",
+            "AXkYCSABKAISCQoBehgKIAEoAiIkChZVcGRhdGVDaGFyYWN0ZXJSZXF1ZXN0",
+            "EgoKAmlkGAEgASgNIhkKF1VwZGF0ZUNoYXJhY3RlclJlc3BvbnNlIiQKFkRl",
+            "bGV0ZUNoYXJhY3RlclJlcXVlc3QSCgoCaWQYASABKA0iGQoXRGVsZXRlQ2hh",
+            "cmFjdGVyUmVzcG9uc2UiNgoUQ2hhbmdlQ2xvdGhlc1JlcXVlc3QSCgoCaWQY",
+            "ASABKA0SEgoKY2xvdGhlc19pZBgCIAEoDSIXChVDaGFuZ2VDbG90aGVzUmVz",
+            "cG9uc2UiOgoSRGVhdGhTdHJlYW1SZXF1ZXN0EiQKC2RlYXRoX3R5cGVzGAEg",
+            "AygOMg8ubXJ1di5EZWF0aFR5cGUiXgoTRGVhdGhTdHJlYW1SZXNwb25zZRIi",
+            "CgljaGFyYWN0ZXIYASABKAsyDy5tcnV2LkNoYXJhY3RlchIjCgpkZWF0aF90",
+            "eXBlGAIgASgOMg8ubXJ1di5EZWF0aFR5cGUqXgoJRGVhdGhUeXBlEhMKD0RF",
+            "QVRIX1RZUEVfTk9ORRAAEhEKDURFQVRIX1RZUEVfQlcQARIWChJERUFUSF9U",
+            "WVBFX0JXX0tJTEwQAhIRCg1ERUFUSF9UWVBFX0NLEAMyugcKFU1ydVZDaGFy",
+            "YWN0ZXJzU2VydmljZRJmCg9DcmVhdGVDaGFyYWN0ZXISHC5tcnV2LkNyZWF0",
+            "ZUNoYXJhY3RlclJlcXVlc3QaHS5tcnV2LkNyZWF0ZUNoYXJhY3RlclJlc3Bv",
+            "bnNlIhaC0+STAhAiDi92MS9jaGFyYWN0ZXJzEmIKDEdldENoYXJhY3RlchIZ",
+            "Lm1ydXYuR2V0Q2hhcmFjdGVyUmVxdWVzdBoaLm1ydXYuR2V0Q2hhcmFjdGVy",
+            "UmVzcG9uc2UiG4LT5JMCFRITL3YxL2NoYXJhY3RlcnMve2lkfRJrCg9VcGRh",
+            "dGVDaGFyYWN0ZXISHC5tcnV2LlVwZGF0ZUNoYXJhY3RlclJlcXVlc3QaHS5t",
+            "cnV2LlVwZGF0ZUNoYXJhY3RlclJlc3BvbnNlIhuC0+STAhUyEy92MS9jaGFy",
+            "YWN0ZXJzL3tpZH0SawoPRGVsZXRlQ2hhcmFjdGVyEhwubXJ1di5EZWxldGVD",
+            "aGFyYWN0ZXJSZXF1ZXN0Gh0ubXJ1di5EZWxldGVDaGFyYWN0ZXJSZXNwb25z",
+            "ZSIbgtPkkwIVKhMvdjEvY2hhcmFjdGVycy97aWR9EmkKFlBlcm1hbmVudENo",
+            "YXJhY3RlcktpbGwSES5tcnV2LkNoYXJhY3RlcklEGhEubXJ1di5DaGFyYWN0",
+            "ZXJJRCIpgtPkkwIjKiEvdjEvY2hhcmFjdGVycy9wZXJtYW5lbnRLaWxsL3tp",
+            "ZH0SeQoNQ2hhbmdlQ2xvdGhlcxIaLm1ydXYuQ2hhbmdlQ2xvdGhlc1JlcXVl",
+            "c3QaGy5tcnV2LkNoYW5nZUNsb3RoZXNSZXNwb25zZSIvgtPkkwIpGicvdjEv",
+            "Y2hhcmFjdGVyL3tpZH0vY2xvdGhlcy97Y2xvdGhlc19pZH0SRwoMRGVhdGhz",
+            "U3RyZWFtEhgubXJ1di5EZWF0aFN0cmVhbVJlcXVlc3QaGS5tcnV2LkRlYXRo",
+            "U3RyZWFtUmVzcG9uc2UiADABEmoKEEdldFNlcnZpY2VTdGF0dXMSGi5tcnV2",
+            "LlNlcnZpY2VTdGF0dXNSZXF1ZXN0GhsubXJ1di5TZXJ2aWNlU3RhdHVzUmVz",
+            "cG9uc2UiHYLT5JMCFxIVL3YxL2NoYXJhY3RlcnMvc3RhdHVzEmAKEUdldFNl",
+            "cnZpY2VWZXJzaW9uEhQubXJ1di5WZXJzaW9uUmVxdWVzdBoVLm1ydXYuVmVy",
+            "c2lvblJlc3BvbnNlIh6C0+STAhgSFi92MS9jaGFyYWN0ZXJzL3ZlcnNpb25C",
+            "KlooZ2l0aHViLmNvbS9NcnVWLVJQL21ydXYtcGItZ28vY2hhcmFjdGVyc2IG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, global::Mruv.HealthReflection.Descriptor, global::Mruv.SpatialReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, global::Mruv.HealthReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Mruv.DeathType), }, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Character), global::Mruv.Character.Parser, new[]{ "Id", "OwnerId", "FirstName", "SecondName", "Age", "Sex", "Position" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Character), global::Mruv.Character.Parser, new[]{ "Id", "OwnerId", "FirstName", "SecondName", "Age", "Sex", "ClothesId", "X", "Y", "Z" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.CharacterID), global::Mruv.CharacterID.Parser, new[]{ "Id" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.CreateCharacterRequest), global::Mruv.CreateCharacterRequest.Parser, new[]{ "Id", "OwnerId", "FirstName", "SecondName", "Age", "Sex" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.CreateCharacterResponse), global::Mruv.CreateCharacterResponse.Parser, new[]{ "Id" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetCharacterRequest), global::Mruv.GetCharacterRequest.Parser, new[]{ "Id" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetCharacterResponse), global::Mruv.GetCharacterResponse.Parser, new[]{ "Id", "OwnerId", "FirstName", "SecondName", "Age", "Sex", "Position" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetCharacterResponse), global::Mruv.GetCharacterResponse.Parser, new[]{ "Id", "OwnerId", "FirstName", "SecondName", "Age", "Sex", "ClothesId", "X", "Y", "Z" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.UpdateCharacterRequest), global::Mruv.UpdateCharacterRequest.Parser, new[]{ "Id" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.UpdateCharacterResponse), global::Mruv.UpdateCharacterResponse.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.DeleteCharacterRequest), global::Mruv.DeleteCharacterRequest.Parser, new[]{ "Id" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.DeleteCharacterResponse), global::Mruv.DeleteCharacterResponse.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.ChangeClothesRequest), global::Mruv.ChangeClothesRequest.Parser, new[]{ "Id", "ClothesId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.ChangeClothesResponse), global::Mruv.ChangeClothesResponse.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.DeathStreamRequest), global::Mruv.DeathStreamRequest.Parser, new[]{ "DeathTypes" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.DeathStreamResponse), global::Mruv.DeathStreamResponse.Parser, new[]{ "Character", "DeathType" }, null, null, null)
           }));
@@ -129,7 +136,10 @@ namespace Mruv {
       secondName_ = other.secondName_;
       age_ = other.age_;
       sex_ = other.sex_;
-      position_ = other.position_ != null ? other.position_.Clone() : null;
+      clothesId_ = other.clothesId_;
+      x_ = other.x_;
+      y_ = other.y_;
+      z_ = other.z_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -204,14 +214,50 @@ namespace Mruv {
       }
     }
 
-    /// <summary>Field number for the "position" field.</summary>
-    public const int PositionFieldNumber = 7;
-    private global::Mruv.Position position_;
+    /// <summary>Field number for the "clothes_id" field.</summary>
+    public const int ClothesIdFieldNumber = 7;
+    private uint clothesId_;
+    /// <summary>
+    ///TODO: create clothes api
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Mruv.Position Position {
-      get { return position_; }
+    public uint ClothesId {
+      get { return clothesId_; }
       set {
-        position_ = value;
+        clothesId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "x" field.</summary>
+    public const int XFieldNumber = 8;
+    private float x_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public float X {
+      get { return x_; }
+      set {
+        x_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "y" field.</summary>
+    public const int YFieldNumber = 9;
+    private float y_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public float Y {
+      get { return y_; }
+      set {
+        y_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "z" field.</summary>
+    public const int ZFieldNumber = 10;
+    private float z_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public float Z {
+      get { return z_; }
+      set {
+        z_ = value;
       }
     }
 
@@ -234,7 +280,10 @@ namespace Mruv {
       if (SecondName != other.SecondName) return false;
       if (Age != other.Age) return false;
       if (Sex != other.Sex) return false;
-      if (!object.Equals(Position, other.Position)) return false;
+      if (ClothesId != other.ClothesId) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(X, other.X)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Y, other.Y)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Z, other.Z)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -247,7 +296,10 @@ namespace Mruv {
       if (SecondName.Length != 0) hash ^= SecondName.GetHashCode();
       if (Age != 0) hash ^= Age.GetHashCode();
       if (Sex != 0) hash ^= Sex.GetHashCode();
-      if (position_ != null) hash ^= Position.GetHashCode();
+      if (ClothesId != 0) hash ^= ClothesId.GetHashCode();
+      if (X != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(X);
+      if (Y != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Y);
+      if (Z != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Z);
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -285,9 +337,21 @@ namespace Mruv {
         output.WriteRawTag(48);
         output.WriteUInt32(Sex);
       }
-      if (position_ != null) {
-        output.WriteRawTag(58);
-        output.WriteMessage(Position);
+      if (ClothesId != 0) {
+        output.WriteRawTag(56);
+        output.WriteUInt32(ClothesId);
+      }
+      if (X != 0F) {
+        output.WriteRawTag(69);
+        output.WriteFloat(X);
+      }
+      if (Y != 0F) {
+        output.WriteRawTag(77);
+        output.WriteFloat(Y);
+      }
+      if (Z != 0F) {
+        output.WriteRawTag(85);
+        output.WriteFloat(Z);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -315,8 +379,17 @@ namespace Mruv {
       if (Sex != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Sex);
       }
-      if (position_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Position);
+      if (ClothesId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ClothesId);
+      }
+      if (X != 0F) {
+        size += 1 + 4;
+      }
+      if (Y != 0F) {
+        size += 1 + 4;
+      }
+      if (Z != 0F) {
+        size += 1 + 4;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -347,11 +420,17 @@ namespace Mruv {
       if (other.Sex != 0) {
         Sex = other.Sex;
       }
-      if (other.position_ != null) {
-        if (position_ == null) {
-          Position = new global::Mruv.Position();
-        }
-        Position.MergeFrom(other.Position);
+      if (other.ClothesId != 0) {
+        ClothesId = other.ClothesId;
+      }
+      if (other.X != 0F) {
+        X = other.X;
+      }
+      if (other.Y != 0F) {
+        Y = other.Y;
+      }
+      if (other.Z != 0F) {
+        Z = other.Z;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -388,11 +467,20 @@ namespace Mruv {
             Sex = input.ReadUInt32();
             break;
           }
-          case 58: {
-            if (position_ == null) {
-              Position = new global::Mruv.Position();
-            }
-            input.ReadMessage(Position);
+          case 56: {
+            ClothesId = input.ReadUInt32();
+            break;
+          }
+          case 69: {
+            X = input.ReadFloat();
+            break;
+          }
+          case 77: {
+            Y = input.ReadFloat();
+            break;
+          }
+          case 85: {
+            Z = input.ReadFloat();
             break;
           }
         }
@@ -1100,7 +1188,10 @@ namespace Mruv {
       secondName_ = other.secondName_;
       age_ = other.age_;
       sex_ = other.sex_;
-      position_ = other.position_ != null ? other.position_.Clone() : null;
+      clothesId_ = other.clothesId_;
+      x_ = other.x_;
+      y_ = other.y_;
+      z_ = other.z_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1175,14 +1266,47 @@ namespace Mruv {
       }
     }
 
-    /// <summary>Field number for the "position" field.</summary>
-    public const int PositionFieldNumber = 7;
-    private global::Mruv.Position position_;
+    /// <summary>Field number for the "clothes_id" field.</summary>
+    public const int ClothesIdFieldNumber = 7;
+    private uint clothesId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Mruv.Position Position {
-      get { return position_; }
+    public uint ClothesId {
+      get { return clothesId_; }
       set {
-        position_ = value;
+        clothesId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "x" field.</summary>
+    public const int XFieldNumber = 8;
+    private float x_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public float X {
+      get { return x_; }
+      set {
+        x_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "y" field.</summary>
+    public const int YFieldNumber = 9;
+    private float y_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public float Y {
+      get { return y_; }
+      set {
+        y_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "z" field.</summary>
+    public const int ZFieldNumber = 10;
+    private float z_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public float Z {
+      get { return z_; }
+      set {
+        z_ = value;
       }
     }
 
@@ -1205,7 +1329,10 @@ namespace Mruv {
       if (SecondName != other.SecondName) return false;
       if (Age != other.Age) return false;
       if (Sex != other.Sex) return false;
-      if (!object.Equals(Position, other.Position)) return false;
+      if (ClothesId != other.ClothesId) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(X, other.X)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Y, other.Y)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Z, other.Z)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1218,7 +1345,10 @@ namespace Mruv {
       if (SecondName.Length != 0) hash ^= SecondName.GetHashCode();
       if (Age != 0) hash ^= Age.GetHashCode();
       if (Sex != 0) hash ^= Sex.GetHashCode();
-      if (position_ != null) hash ^= Position.GetHashCode();
+      if (ClothesId != 0) hash ^= ClothesId.GetHashCode();
+      if (X != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(X);
+      if (Y != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Y);
+      if (Z != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Z);
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1256,9 +1386,21 @@ namespace Mruv {
         output.WriteRawTag(48);
         output.WriteUInt32(Sex);
       }
-      if (position_ != null) {
-        output.WriteRawTag(58);
-        output.WriteMessage(Position);
+      if (ClothesId != 0) {
+        output.WriteRawTag(56);
+        output.WriteUInt32(ClothesId);
+      }
+      if (X != 0F) {
+        output.WriteRawTag(69);
+        output.WriteFloat(X);
+      }
+      if (Y != 0F) {
+        output.WriteRawTag(77);
+        output.WriteFloat(Y);
+      }
+      if (Z != 0F) {
+        output.WriteRawTag(85);
+        output.WriteFloat(Z);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -1286,8 +1428,17 @@ namespace Mruv {
       if (Sex != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Sex);
       }
-      if (position_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Position);
+      if (ClothesId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ClothesId);
+      }
+      if (X != 0F) {
+        size += 1 + 4;
+      }
+      if (Y != 0F) {
+        size += 1 + 4;
+      }
+      if (Z != 0F) {
+        size += 1 + 4;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1318,11 +1469,17 @@ namespace Mruv {
       if (other.Sex != 0) {
         Sex = other.Sex;
       }
-      if (other.position_ != null) {
-        if (position_ == null) {
-          Position = new global::Mruv.Position();
-        }
-        Position.MergeFrom(other.Position);
+      if (other.ClothesId != 0) {
+        ClothesId = other.ClothesId;
+      }
+      if (other.X != 0F) {
+        X = other.X;
+      }
+      if (other.Y != 0F) {
+        Y = other.Y;
+      }
+      if (other.Z != 0F) {
+        Z = other.Z;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1359,11 +1516,20 @@ namespace Mruv {
             Sex = input.ReadUInt32();
             break;
           }
-          case 58: {
-            if (position_ == null) {
-              Position = new global::Mruv.Position();
-            }
-            input.ReadMessage(Position);
+          case 56: {
+            ClothesId = input.ReadUInt32();
+            break;
+          }
+          case 69: {
+            X = input.ReadFloat();
+            break;
+          }
+          case 77: {
+            Y = input.ReadFloat();
+            break;
+          }
+          case 85: {
+            Z = input.ReadFloat();
             break;
           }
         }
@@ -1844,6 +2010,270 @@ namespace Mruv {
 
   }
 
+  /// <summary>
+  /// Request message for rpc `ChangeClothes`.
+  /// </summary>
+  public sealed partial class ChangeClothesRequest : pb::IMessage<ChangeClothesRequest> {
+    private static readonly pb::MessageParser<ChangeClothesRequest> _parser = new pb::MessageParser<ChangeClothesRequest>(() => new ChangeClothesRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ChangeClothesRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.CharactersReflection.Descriptor.MessageTypes[10]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ChangeClothesRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ChangeClothesRequest(ChangeClothesRequest other) : this() {
+      id_ = other.id_;
+      clothesId_ = other.clothesId_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ChangeClothesRequest Clone() {
+      return new ChangeClothesRequest(this);
+    }
+
+    /// <summary>Field number for the "id" field.</summary>
+    public const int IdFieldNumber = 1;
+    private uint id_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint Id {
+      get { return id_; }
+      set {
+        id_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "clothes_id" field.</summary>
+    public const int ClothesIdFieldNumber = 2;
+    private uint clothesId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint ClothesId {
+      get { return clothesId_; }
+      set {
+        clothesId_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ChangeClothesRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ChangeClothesRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Id != other.Id) return false;
+      if (ClothesId != other.ClothesId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Id != 0) hash ^= Id.GetHashCode();
+      if (ClothesId != 0) hash ^= ClothesId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Id != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Id);
+      }
+      if (ClothesId != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(ClothesId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Id != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Id);
+      }
+      if (ClothesId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ClothesId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ChangeClothesRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Id != 0) {
+        Id = other.Id;
+      }
+      if (other.ClothesId != 0) {
+        ClothesId = other.ClothesId;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Id = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            ClothesId = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Response message for rpc `ChangeClothes`.
+  /// </summary>
+  public sealed partial class ChangeClothesResponse : pb::IMessage<ChangeClothesResponse> {
+    private static readonly pb::MessageParser<ChangeClothesResponse> _parser = new pb::MessageParser<ChangeClothesResponse>(() => new ChangeClothesResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ChangeClothesResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.CharactersReflection.Descriptor.MessageTypes[11]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ChangeClothesResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ChangeClothesResponse(ChangeClothesResponse other) : this() {
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ChangeClothesResponse Clone() {
+      return new ChangeClothesResponse(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ChangeClothesResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ChangeClothesResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ChangeClothesResponse other) {
+      if (other == null) {
+        return;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+        }
+      }
+    }
+
+  }
+
   public sealed partial class DeathStreamRequest : pb::IMessage<DeathStreamRequest> {
     private static readonly pb::MessageParser<DeathStreamRequest> _parser = new pb::MessageParser<DeathStreamRequest>(() => new DeathStreamRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -1852,7 +2282,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.CharactersReflection.Descriptor.MessageTypes[10]; }
+      get { return global::Mruv.CharactersReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1974,7 +2404,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.CharactersReflection.Descriptor.MessageTypes[11]; }
+      get { return global::Mruv.CharactersReflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

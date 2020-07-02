@@ -25,56 +25,169 @@ namespace Mruv {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChNncm91cHMvZ3JvdXBzLnByb3RvEgRtcnV2Ghxnb29nbGUvYXBpL2Fubm90",
-            "YXRpb25zLnByb3RvGhNjb21tb24vaGVhbHRoLnByb3RvIhoKDFBlcm1pc3Np",
-            "b25JRBIKCgJpZBgBIAEoDSI0CgpQZXJtaXNzaW9uEgoKAmlkGAEgASgNEgwK",
-            "BG5hbWUYAiABKAkSDAoEcm9sZRgDIAEoCSIVCgdHcm91cElEEgoKAmlkGAEg",
-            "ASgNIm4KBUdyb3VwEgoKAmlkGAEgASgNEgwKBG5hbWUYAyABKAkSEwoLZGVz",
-            "Y3JpcHRpb24YBCABKAkSJQoLcGVybWlzc2lvbnMYBSADKAsyEC5tcnV2LlBl",
-            "cm1pc3Npb24SDwoHbWVtYmVycxgGIAMoDSIhChBHZXRHcm91cHNSZXF1ZXN0",
-            "Eg0KBWxpbWl0GAEgASgNIjAKEUdldEdyb3Vwc1Jlc3BvbnNlEhsKBmdyb3Vw",
-            "cxgBIAMoCzILLm1ydXYuR3JvdXAiFwoVQWRkR3JvdXBNZW1iZXJSZXF1ZXN0",
-            "IhgKFkFkZEdyb3VwTWVtYmVyUmVzcG9uc2UiGgoYUmVtb3ZlR3JvdXBNZW1i",
-            "ZXJSZXF1ZXN0IhsKGVJlbW92ZUdyb3VwTWVtYmVyUmVzcG9uc2UymAUKEU1y",
-            "dVZHcm91cHNTZXJ2aWNlEj0KC0NyZWF0ZUdyb3VwEgsubXJ1di5Hcm91cBoN",
-            "Lm1ydXYuR3JvdXBJRCISgtPkkwIMIgovdjEvZ3JvdXBzEj8KCEdldEdyb3Vw",
-            "Eg0ubXJ1di5Hcm91cElEGgsubXJ1di5Hcm91cCIXgtPkkwIREg8vdjEvZ3Jv",
-            "dXBzL3tpZH0SRAoLRGVsZXRlR3JvdXASDS5tcnV2Lkdyb3VwSUQaDS5tcnV2",
-            "Lkdyb3VwSUQiF4LT5JMCESoPL3YxL2dyb3Vwcy97aWR9ElAKCUdldEdyb3Vw",
-            "cxIWLm1ydXYuR2V0R3JvdXBzUmVxdWVzdBoXLm1ydXYuR2V0R3JvdXBzUmVz",
-            "cG9uc2UiEoLT5JMCDBIKL3YxL2dyb3VwcxJNCg5BZGRHcm91cE1lbWJlchIb",
-            "Lm1ydXYuQWRkR3JvdXBNZW1iZXJSZXF1ZXN0GhwubXJ1di5BZGRHcm91cE1l",
-            "bWJlclJlc3BvbnNlIgASVgoRUmVtb3ZlR3JvdXBNZW1iZXISHi5tcnV2LlJl",
-            "bW92ZUdyb3VwTWVtYmVyUmVxdWVzdBofLm1ydXYuUmVtb3ZlR3JvdXBNZW1i",
-            "ZXJSZXNwb25zZSIAEmYKEEdldFNlcnZpY2VTdGF0dXMSGi5tcnV2LlNlcnZp",
-            "Y2VTdGF0dXNSZXF1ZXN0GhsubXJ1di5TZXJ2aWNlU3RhdHVzUmVzcG9uc2Ui",
-            "GYLT5JMCExIRL3YxL2dyb3Vwcy9zdGF0dXMSXAoRR2V0U2VydmljZVZlcnNp",
-            "b24SFC5tcnV2LlZlcnNpb25SZXF1ZXN0GhUubXJ1di5WZXJzaW9uUmVzcG9u",
-            "c2UiGoLT5JMCFBISL3YxL2dyb3Vwcy92ZXJzaW9uQiZaJGdpdGh1Yi5jb20v",
-            "TXJ1Vi1SUC9tcnV2LXBiLWdvL2dyb3Vwc2IGcHJvdG8z"));
+            "YXRpb25zLnByb3RvGhNjb21tb24vaGVhbHRoLnByb3RvIiIKEkNyZWF0ZUdy",
+            "b3VwUmVxdWVzdBIMCgRuYW1lGAEgASgJIicKE0NyZWF0ZUdyb3VwUmVzcG9u",
+            "c2USEAoIZ3JvdXBfaWQYASABKA0iIwoPR2V0R3JvdXBSZXF1ZXN0EhAKCGdy",
+            "b3VwX2lkGAEgASgNIiAKEEdldEdyb3VwUmVzcG9uc2USDAoEbmFtZRgBIAEo",
+            "CSI0ChJVcGRhdGVHcm91cFJlcXVlc3QSEAoIZ3JvdXBfaWQYASABKA0SDAoE",
+            "bmFtZRgCIAEoCSIVChNVcGRhdGVHcm91cFJlc3BvbnNlIiYKEkRlbGV0ZUdy",
+            "b3VwUmVxdWVzdBIQCghncm91cF9pZBgBIAEoDSIVChNEZWxldGVHcm91cFJl",
+            "c3BvbnNlIhIKEEdldEdyb3Vwc1JlcXVlc3QiOwoRR2V0R3JvdXBzUmVzcG9u",
+            "c2USJgoGZ3JvdXBzGAEgAygLMhYubXJ1di5HZXRHcm91cFJlc3BvbnNlIl0K",
+            "EkFzc2lnbk93bmVyUmVxdWVzdBIQCghncm91cF9pZBgBIAEoDRIjCgpvd25l",
+            "cl90eXBlGAMgASgOMg8ubXJ1di5Pd25lclR5cGUSEAoIb3duZXJfaWQYAiAB",
+            "KA0iFQoTQXNzaWduT3duZXJSZXNwb25zZSIjCg9HZXRPd25lclJlcXVlc3QS",
+            "EAoIZ3JvdXBfaWQYASABKA0iSQoQR2V0T3duZXJSZXNwb25zZRIQCghvd25l",
+            "cl9pZBgBIAEoDRIjCgpvd25lcl90eXBlGAIgASgOMg8ubXJ1di5Pd25lclR5",
+            "cGUiNwoQQWRkTWVtYmVyUmVxdWVzdBIQCghncm91cF9pZBgBIAEoDRIRCglt",
+            "ZW1iZXJfaWQYAiABKA0iEwoRQWRkTWVtYmVyUmVzcG9uc2UiJQoRR2V0TWVt",
+            "YmVyc1JlcXVlc3QSEAoIZ3JvdXBfaWQYASABKA0iTwoSR2V0TWVtYmVyc1Jl",
+            "c3BvbnNlEiUKC21lbWJlcl90eXBlGAEgASgOMhAubXJ1di5NZW1iZXJUeXBl",
+            "EhIKCm1lbWJlcl9pZHMYAiADKA0iOgoTUmVtb3ZlTWVtYmVyUmVxdWVzdBIQ",
+            "Cghncm91cF9pZBgBIAEoDRIRCgltZW1iZXJfaWQYAiABKA0iFgoUUmVtb3Zl",
+            "TWVtYmVyUmVzcG9uc2UiSgoUQWRkUGVybWlzc2lvblJlcXVlc3QSEAoIZ3Jv",
+            "dXBfaWQYASABKA0SDAoEbmFtZRgCIAEoCRISCgpkZWZpbml0aW9uGAMgASgJ",
+            "Ii4KFUFkZFBlcm1pc3Npb25SZXNwb25zZRIVCg1wZXJtaXNzaW9uX2lkGAEg",
+            "ASgNIikKFUdldFBlcm1pc3Npb25zUmVxdWVzdBIQCghncm91cF9pZBgBIAEo",
+            "DSKSAQoWR2V0UGVybWlzc2lvbnNSZXNwb25zZRI8CgtwZXJtaXNzaW9ucxgB",
+            "IAMoCzInLm1ydXYuR2V0UGVybWlzc2lvbnNSZXNwb25zZS5QZXJtaXNzaW9u",
+            "GjoKClBlcm1pc3Npb24SCgoCaWQYASABKA0SDAoEbmFtZRgCIAEoCRISCgpk",
+            "ZWZpbml0aW9uGAMgASgJIkIKF1JlbW92ZVBlcm1pc3Npb25SZXF1ZXN0EhAK",
+            "CGdyb3VwX2lkGAEgASgNEhUKDXBlcm1pc3Npb25faWQYAiABKA0iGgoYUmVt",
+            "b3ZlUGVybWlzc2lvblJlc3BvbnNlIjsKEkFkZFN1Ymdyb3VwUmVxdWVzdBIQ",
+            "Cghncm91cF9pZBgBIAEoDRITCgtzdWJncm91cF9pZBgCIAEoDSIVChNBZGRT",
+            "dWJncm91cFJlc3BvbnNlIicKE0dldFN1Ymdyb3Vwc1JlcXVlc3QSEAoIZ3Jv",
+            "dXBfaWQYASABKA0iLAoUR2V0U3ViZ3JvdXBzUmVzcG9uc2USFAoMc3ViZ3Jv",
+            "dXBfaWRzGAEgAygNIj4KFVJlbW92ZVN1Ymdyb3VwUmVxdWVzdBIQCghncm91",
+            "cF9pZBgBIAEoDRITCgtzdWJncm91cF9pZBgCIAEoDSIYChZSZW1vdmVTdWJn",
+            "cm91cFJlc3BvbnNlIl4KEklzUGVybWl0dGVkUmVxdWVzdBIRCgltZW1iZXJf",
+            "aWQYASABKA0SJQoLbWVtYmVyX3R5cGUYAiABKA4yEC5tcnV2Lk1lbWJlclR5",
+            "cGUSDgoGYWN0aW9uGAMgASgJIigKE0lzUGVybWl0dGVkUmVzcG9uc2USEQoJ",
+            "cGVybWl0dGVkGAEgASgIKmsKCU93bmVyVHlwZRIWChJPV05FUl9UWVBFX1VO",
+            "S05PV04QABIWChJPV05FUl9UWVBFX0FDQ09VTlQQARIYChRPV05FUl9UWVBF",
+            "X0NIQVJBQ1RFUhACEhQKEE9XTkVSX1RZUEVfR1JPVVAQAypZCgpNZW1iZXJU",
+            "eXBlEhcKE01FTUJFUl9UWVBFX1VOS05PV04QABIXChNNRU1CRVJfVFlQRV9B",
+            "Q0NPVU5UEAESGQoVTUVNQkVSX1RZUEVfQ0hBUkFDVEVSEAIykBAKEU1ydVZH",
+            "cm91cHNTZXJ2aWNlElYKC0NyZWF0ZUdyb3VwEhgubXJ1di5DcmVhdGVHcm91",
+            "cFJlcXVlc3QaGS5tcnV2LkNyZWF0ZUdyb3VwUmVzcG9uc2UiEoLT5JMCDCIK",
+            "L3YxL2dyb3VwcxJYCghHZXRHcm91cBIVLm1ydXYuR2V0R3JvdXBSZXF1ZXN0",
+            "GhYubXJ1di5HZXRHcm91cFJlc3BvbnNlIh2C0+STAhcSFS92MS9ncm91cHMv",
+            "e2dyb3VwX2lkfRJhCgtVcGRhdGVHcm91cBIYLm1ydXYuVXBkYXRlR3JvdXBS",
+            "ZXF1ZXN0GhkubXJ1di5VcGRhdGVHcm91cFJlc3BvbnNlIh2C0+STAhcyFS92",
+            "MS9ncm91cHMve2dyb3VwX2lkfRJhCgtEZWxldGVHcm91cBIYLm1ydXYuRGVs",
+            "ZXRlR3JvdXBSZXF1ZXN0GhkubXJ1di5EZWxldGVHcm91cFJlc3BvbnNlIh2C",
+            "0+STAhcqFS92MS9ncm91cHMve2dyb3VwX2lkfRJQCglHZXRHcm91cHMSFi5t",
+            "cnV2LkdldEdyb3Vwc1JlcXVlc3QaFy5tcnV2LkdldEdyb3Vwc1Jlc3BvbnNl",
+            "IhKC0+STAgwSCi92MS9ncm91cHMSZwoLQXNzaWduT3duZXISGC5tcnV2LkFz",
+            "c2lnbk93bmVyUmVxdWVzdBoZLm1ydXYuQXNzaWduT3duZXJSZXNwb25zZSIj",
+            "gtPkkwIdGhsvdjEvZ3JvdXBzL3tncm91cF9pZH0vb3duZXISXgoIR2V0T3du",
+            "ZXISFS5tcnV2LkdldE93bmVyUmVxdWVzdBoWLm1ydXYuR2V0T3duZXJSZXNw",
+            "b25zZSIjgtPkkwIdEhsvdjEvZ3JvdXBzL3tncm91cF9pZH0vb3duZXISbwoJ",
+            "QWRkTWVtYmVyEhYubXJ1di5BZGRNZW1iZXJSZXF1ZXN0GhcubXJ1di5BZGRN",
+            "ZW1iZXJSZXNwb25zZSIxgtPkkwIrIikvdjEvZ3JvdXBzL3tncm91cF9pZH0v",
+            "bWVtYmVycy97bWVtYmVyX2lkfRJmCgpHZXRNZW1iZXJzEhcubXJ1di5HZXRN",
+            "ZW1iZXJzUmVxdWVzdBoYLm1ydXYuR2V0TWVtYmVyc1Jlc3BvbnNlIiWC0+ST",
+            "Ah8SHS92MS9ncm91cHMve2dyb3VwX2lkfS9tZW1iZXJzEngKDFJlbW92ZU1l",
+            "bWJlchIZLm1ydXYuUmVtb3ZlTWVtYmVyUmVxdWVzdBoaLm1ydXYuUmVtb3Zl",
+            "TWVtYmVyUmVzcG9uc2UiMYLT5JMCKyopL3YxL2dyb3Vwcy97Z3JvdXBfaWR9",
+            "L21lbWJlcnMve21lbWJlcl9pZH0ScwoNQWRkUGVybWlzc2lvbhIaLm1ydXYu",
+            "QWRkUGVybWlzc2lvblJlcXVlc3QaGy5tcnV2LkFkZFBlcm1pc3Npb25SZXNw",
+            "b25zZSIpgtPkkwIjIiEvdjEvZ3JvdXBzL3tncm91cF9pZH0vcGVybWlzc2lv",
+            "bnMSdgoOR2V0UGVybWlzc2lvbnMSGy5tcnV2LkdldFBlcm1pc3Npb25zUmVx",
+            "dWVzdBocLm1ydXYuR2V0UGVybWlzc2lvbnNSZXNwb25zZSIpgtPkkwIjEiEv",
+            "djEvZ3JvdXBzL3tncm91cF9pZH0vcGVybWlzc2lvbnMSfAoQUmVtb3ZlUGVy",
+            "bWlzc2lvbhIdLm1ydXYuUmVtb3ZlUGVybWlzc2lvblJlcXVlc3QaHi5tcnV2",
+            "LlJlbW92ZVBlcm1pc3Npb25SZXNwb25zZSIpgtPkkwIjKiEvdjEvZ3JvdXBz",
+            "L3tncm91cF9pZH0vcGVybWlzc2lvbnMSeQoLQWRkU3ViZ3JvdXASGC5tcnV2",
+            "LkFkZFN1Ymdyb3VwUmVxdWVzdBoZLm1ydXYuQWRkU3ViZ3JvdXBSZXNwb25z",
+            "ZSI1gtPkkwIvIi0vdjEvZ3JvdXBzL3tncm91cF9pZH0vc3ViZ3JvdXBzL3tz",
+            "dWJncm91cF9pZH0SbgoMR2V0U3ViZ3JvdXBzEhkubXJ1di5HZXRTdWJncm91",
+            "cHNSZXF1ZXN0GhoubXJ1di5HZXRTdWJncm91cHNSZXNwb25zZSIngtPkkwIh",
+            "Eh8vdjEvZ3JvdXBzL3tncm91cF9pZH0vc3ViZ3JvdXBzEoIBCg5SZW1vdmVT",
+            "dWJncm91cBIbLm1ydXYuUmVtb3ZlU3ViZ3JvdXBSZXF1ZXN0GhwubXJ1di5S",
+            "ZW1vdmVTdWJncm91cFJlc3BvbnNlIjWC0+STAi8qLS92MS9ncm91cHMve2dy",
+            "b3VwX2lkfS9zdWJncm91cHMve3N1Ymdyb3VwX2lkfRJ0CgtJc1Blcm1pdHRl",
+            "ZBIYLm1ydXYuSXNQZXJtaXR0ZWRSZXF1ZXN0GhkubXJ1di5Jc1Blcm1pdHRl",
+            "ZFJlc3BvbnNlIjCC0+STAioSKC92MS9ncm91cHMvbWVtYmVycy97bWVtYmVy",
+            "X2lkfS9wZXJtaXR0ZWQSZgoQR2V0U2VydmljZVN0YXR1cxIaLm1ydXYuU2Vy",
+            "dmljZVN0YXR1c1JlcXVlc3QaGy5tcnV2LlNlcnZpY2VTdGF0dXNSZXNwb25z",
+            "ZSIZgtPkkwITEhEvdjEvZ3JvdXBzL3N0YXR1cxJcChFHZXRTZXJ2aWNlVmVy",
+            "c2lvbhIULm1ydXYuVmVyc2lvblJlcXVlc3QaFS5tcnV2LlZlcnNpb25SZXNw",
+            "b25zZSIagtPkkwIUEhIvdjEvZ3JvdXBzL3ZlcnNpb25CJlokZ2l0aHViLmNv",
+            "bS9NcnVWLVJQL21ydXYtcGItZ28vZ3JvdXBzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, global::Mruv.HealthReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.PermissionID), global::Mruv.PermissionID.Parser, new[]{ "Id" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Permission), global::Mruv.Permission.Parser, new[]{ "Id", "Name", "Role" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GroupID), global::Mruv.GroupID.Parser, new[]{ "Id" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Group), global::Mruv.Group.Parser, new[]{ "Id", "Name", "Description", "Permissions", "Members" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetGroupsRequest), global::Mruv.GetGroupsRequest.Parser, new[]{ "Limit" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Mruv.OwnerType), typeof(global::Mruv.MemberType), }, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.CreateGroupRequest), global::Mruv.CreateGroupRequest.Parser, new[]{ "Name" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.CreateGroupResponse), global::Mruv.CreateGroupResponse.Parser, new[]{ "GroupId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetGroupRequest), global::Mruv.GetGroupRequest.Parser, new[]{ "GroupId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetGroupResponse), global::Mruv.GetGroupResponse.Parser, new[]{ "Name" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.UpdateGroupRequest), global::Mruv.UpdateGroupRequest.Parser, new[]{ "GroupId", "Name" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.UpdateGroupResponse), global::Mruv.UpdateGroupResponse.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.DeleteGroupRequest), global::Mruv.DeleteGroupRequest.Parser, new[]{ "GroupId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.DeleteGroupResponse), global::Mruv.DeleteGroupResponse.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetGroupsRequest), global::Mruv.GetGroupsRequest.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetGroupsResponse), global::Mruv.GetGroupsResponse.Parser, new[]{ "Groups" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.AddGroupMemberRequest), global::Mruv.AddGroupMemberRequest.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.AddGroupMemberResponse), global::Mruv.AddGroupMemberResponse.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.RemoveGroupMemberRequest), global::Mruv.RemoveGroupMemberRequest.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.RemoveGroupMemberResponse), global::Mruv.RemoveGroupMemberResponse.Parser, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.AssignOwnerRequest), global::Mruv.AssignOwnerRequest.Parser, new[]{ "GroupId", "OwnerType", "OwnerId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.AssignOwnerResponse), global::Mruv.AssignOwnerResponse.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetOwnerRequest), global::Mruv.GetOwnerRequest.Parser, new[]{ "GroupId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetOwnerResponse), global::Mruv.GetOwnerResponse.Parser, new[]{ "OwnerId", "OwnerType" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.AddMemberRequest), global::Mruv.AddMemberRequest.Parser, new[]{ "GroupId", "MemberId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.AddMemberResponse), global::Mruv.AddMemberResponse.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetMembersRequest), global::Mruv.GetMembersRequest.Parser, new[]{ "GroupId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetMembersResponse), global::Mruv.GetMembersResponse.Parser, new[]{ "MemberType", "MemberIds" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.RemoveMemberRequest), global::Mruv.RemoveMemberRequest.Parser, new[]{ "GroupId", "MemberId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.RemoveMemberResponse), global::Mruv.RemoveMemberResponse.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.AddPermissionRequest), global::Mruv.AddPermissionRequest.Parser, new[]{ "GroupId", "Name", "Definition" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.AddPermissionResponse), global::Mruv.AddPermissionResponse.Parser, new[]{ "PermissionId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetPermissionsRequest), global::Mruv.GetPermissionsRequest.Parser, new[]{ "GroupId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetPermissionsResponse), global::Mruv.GetPermissionsResponse.Parser, new[]{ "Permissions" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetPermissionsResponse.Types.Permission), global::Mruv.GetPermissionsResponse.Types.Permission.Parser, new[]{ "Id", "Name", "Definition" }, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.RemovePermissionRequest), global::Mruv.RemovePermissionRequest.Parser, new[]{ "GroupId", "PermissionId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.RemovePermissionResponse), global::Mruv.RemovePermissionResponse.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.AddSubgroupRequest), global::Mruv.AddSubgroupRequest.Parser, new[]{ "GroupId", "SubgroupId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.AddSubgroupResponse), global::Mruv.AddSubgroupResponse.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetSubgroupsRequest), global::Mruv.GetSubgroupsRequest.Parser, new[]{ "GroupId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetSubgroupsResponse), global::Mruv.GetSubgroupsResponse.Parser, new[]{ "SubgroupIds" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.RemoveSubgroupRequest), global::Mruv.RemoveSubgroupRequest.Parser, new[]{ "GroupId", "SubgroupId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.RemoveSubgroupResponse), global::Mruv.RemoveSubgroupResponse.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.IsPermittedRequest), global::Mruv.IsPermittedRequest.Parser, new[]{ "MemberId", "MemberType", "Action" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.IsPermittedResponse), global::Mruv.IsPermittedResponse.Parser, new[]{ "Permitted" }, null, null, null)
           }));
     }
     #endregion
 
   }
+  #region Enums
+  /// <summary>
+  /// Owner types.
+  /// </summary>
+  public enum OwnerType {
+    [pbr::OriginalName("OWNER_TYPE_UNKNOWN")] Unknown = 0,
+    [pbr::OriginalName("OWNER_TYPE_ACCOUNT")] Account = 1,
+    [pbr::OriginalName("OWNER_TYPE_CHARACTER")] Character = 2,
+    [pbr::OriginalName("OWNER_TYPE_GROUP")] Group = 3,
+  }
+
+  /// <summary>
+  /// Member type.
+  /// </summary>
+  public enum MemberType {
+    [pbr::OriginalName("MEMBER_TYPE_UNKNOWN")] Unknown = 0,
+    [pbr::OriginalName("MEMBER_TYPE_ACCOUNT")] Account = 1,
+    [pbr::OriginalName("MEMBER_TYPE_CHARACTER")] Character = 2,
+  }
+
+  #endregion
+
   #region Messages
-  public sealed partial class PermissionID : pb::IMessage<PermissionID> {
-    private static readonly pb::MessageParser<PermissionID> _parser = new pb::MessageParser<PermissionID>(() => new PermissionID());
+  /// <summary>
+  /// Request message for rpc `CreateGroup`.
+  /// </summary>
+  public sealed partial class CreateGroupRequest : pb::IMessage<CreateGroupRequest> {
+    private static readonly pb::MessageParser<CreateGroupRequest> _parser = new pb::MessageParser<CreateGroupRequest>(() => new CreateGroupRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<PermissionID> Parser { get { return _parser; } }
+    public static pb::MessageParser<CreateGroupRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
@@ -87,55 +200,55 @@ namespace Mruv {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public PermissionID() {
+    public CreateGroupRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public PermissionID(PermissionID other) : this() {
-      id_ = other.id_;
+    public CreateGroupRequest(CreateGroupRequest other) : this() {
+      name_ = other.name_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public PermissionID Clone() {
-      return new PermissionID(this);
+    public CreateGroupRequest Clone() {
+      return new CreateGroupRequest(this);
     }
 
-    /// <summary>Field number for the "id" field.</summary>
-    public const int IdFieldNumber = 1;
-    private uint id_;
+    /// <summary>Field number for the "name" field.</summary>
+    public const int NameFieldNumber = 1;
+    private string name_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint Id {
-      get { return id_; }
+    public string Name {
+      get { return name_; }
       set {
-        id_ = value;
+        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as PermissionID);
+      return Equals(other as CreateGroupRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(PermissionID other) {
+    public bool Equals(CreateGroupRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Id != other.Id) return false;
+      if (Name != other.Name) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Id != 0) hash ^= Id.GetHashCode();
+      if (Name.Length != 0) hash ^= Name.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -149,9 +262,9 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Id != 0) {
-        output.WriteRawTag(8);
-        output.WriteUInt32(Id);
+      if (Name.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Name);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -161,8 +274,8 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Id != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Id);
+      if (Name.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -171,12 +284,144 @@ namespace Mruv {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(PermissionID other) {
+    public void MergeFrom(CreateGroupRequest other) {
       if (other == null) {
         return;
       }
-      if (other.Id != 0) {
-        Id = other.Id;
+      if (other.Name.Length != 0) {
+        Name = other.Name;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Name = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Response message for rpc `CreateGroup`.
+  /// </summary>
+  public sealed partial class CreateGroupResponse : pb::IMessage<CreateGroupResponse> {
+    private static readonly pb::MessageParser<CreateGroupResponse> _parser = new pb::MessageParser<CreateGroupResponse>(() => new CreateGroupResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CreateGroupResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CreateGroupResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CreateGroupResponse(CreateGroupResponse other) : this() {
+      groupId_ = other.groupId_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CreateGroupResponse Clone() {
+      return new CreateGroupResponse(this);
+    }
+
+    /// <summary>Field number for the "group_id" field.</summary>
+    public const int GroupIdFieldNumber = 1;
+    private uint groupId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint GroupId {
+      get { return groupId_; }
+      set {
+        groupId_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CreateGroupResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CreateGroupResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (GroupId != other.GroupId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (GroupId != 0) hash ^= GroupId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (GroupId != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(GroupId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (GroupId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(GroupId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CreateGroupResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.GroupId != 0) {
+        GroupId = other.GroupId;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -190,7 +435,7 @@ namespace Mruv {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Id = input.ReadUInt32();
+            GroupId = input.ReadUInt32();
             break;
           }
         }
@@ -199,15 +444,18 @@ namespace Mruv {
 
   }
 
-  public sealed partial class Permission : pb::IMessage<Permission> {
-    private static readonly pb::MessageParser<Permission> _parser = new pb::MessageParser<Permission>(() => new Permission());
+  /// <summary>
+  /// Request message for rpc `GetGroup`.
+  /// </summary>
+  public sealed partial class GetGroupRequest : pb::IMessage<GetGroupRequest> {
+    private static readonly pb::MessageParser<GetGroupRequest> _parser = new pb::MessageParser<GetGroupRequest>(() => new GetGroupRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<Permission> Parser { get { return _parser; } }
+    public static pb::MessageParser<GetGroupRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -216,33 +464,296 @@ namespace Mruv {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public Permission() {
+    public GetGroupRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public Permission(Permission other) : this() {
-      id_ = other.id_;
-      name_ = other.name_;
-      role_ = other.role_;
+    public GetGroupRequest(GetGroupRequest other) : this() {
+      groupId_ = other.groupId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public Permission Clone() {
-      return new Permission(this);
+    public GetGroupRequest Clone() {
+      return new GetGroupRequest(this);
     }
 
-    /// <summary>Field number for the "id" field.</summary>
-    public const int IdFieldNumber = 1;
-    private uint id_;
+    /// <summary>Field number for the "group_id" field.</summary>
+    public const int GroupIdFieldNumber = 1;
+    private uint groupId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint Id {
-      get { return id_; }
+    public uint GroupId {
+      get { return groupId_; }
       set {
-        id_ = value;
+        groupId_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as GetGroupRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(GetGroupRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (GroupId != other.GroupId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (GroupId != 0) hash ^= GroupId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (GroupId != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(GroupId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (GroupId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(GroupId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(GetGroupRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.GroupId != 0) {
+        GroupId = other.GroupId;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            GroupId = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Response message for rpc `GetGroup`.
+  /// </summary>
+  public sealed partial class GetGroupResponse : pb::IMessage<GetGroupResponse> {
+    private static readonly pb::MessageParser<GetGroupResponse> _parser = new pb::MessageParser<GetGroupResponse>(() => new GetGroupResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<GetGroupResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetGroupResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetGroupResponse(GetGroupResponse other) : this() {
+      name_ = other.name_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetGroupResponse Clone() {
+      return new GetGroupResponse(this);
+    }
+
+    /// <summary>Field number for the "name" field.</summary>
+    public const int NameFieldNumber = 1;
+    private string name_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Name {
+      get { return name_; }
+      set {
+        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as GetGroupResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(GetGroupResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Name != other.Name) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Name.Length != 0) hash ^= Name.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Name.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Name);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Name.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(GetGroupResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Name.Length != 0) {
+        Name = other.Name;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Name = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Request message for rpc `UpdateGroup`.
+  /// </summary>
+  public sealed partial class UpdateGroupRequest : pb::IMessage<UpdateGroupRequest> {
+    private static readonly pb::MessageParser<UpdateGroupRequest> _parser = new pb::MessageParser<UpdateGroupRequest>(() => new UpdateGroupRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<UpdateGroupRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UpdateGroupRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UpdateGroupRequest(UpdateGroupRequest other) : this() {
+      groupId_ = other.groupId_;
+      name_ = other.name_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UpdateGroupRequest Clone() {
+      return new UpdateGroupRequest(this);
+    }
+
+    /// <summary>Field number for the "group_id" field.</summary>
+    public const int GroupIdFieldNumber = 1;
+    private uint groupId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint GroupId {
+      get { return groupId_; }
+      set {
+        groupId_ = value;
       }
     }
 
@@ -257,42 +768,29 @@ namespace Mruv {
       }
     }
 
-    /// <summary>Field number for the "role" field.</summary>
-    public const int RoleFieldNumber = 3;
-    private string role_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Role {
-      get { return role_; }
-      set {
-        role_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as Permission);
+      return Equals(other as UpdateGroupRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(Permission other) {
+    public bool Equals(UpdateGroupRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Id != other.Id) return false;
+      if (GroupId != other.GroupId) return false;
       if (Name != other.Name) return false;
-      if (Role != other.Role) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Id != 0) hash ^= Id.GetHashCode();
+      if (GroupId != 0) hash ^= GroupId.GetHashCode();
       if (Name.Length != 0) hash ^= Name.GetHashCode();
-      if (Role.Length != 0) hash ^= Role.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -306,17 +804,13 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Id != 0) {
+      if (GroupId != 0) {
         output.WriteRawTag(8);
-        output.WriteUInt32(Id);
+        output.WriteUInt32(GroupId);
       }
       if (Name.Length != 0) {
         output.WriteRawTag(18);
         output.WriteString(Name);
-      }
-      if (Role.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(Role);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -326,14 +820,11 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Id != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Id);
+      if (GroupId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(GroupId);
       }
       if (Name.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
-      }
-      if (Role.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Role);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -342,18 +833,15 @@ namespace Mruv {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(Permission other) {
+    public void MergeFrom(UpdateGroupRequest other) {
       if (other == null) {
         return;
       }
-      if (other.Id != 0) {
-        Id = other.Id;
+      if (other.GroupId != 0) {
+        GroupId = other.GroupId;
       }
       if (other.Name.Length != 0) {
         Name = other.Name;
-      }
-      if (other.Role.Length != 0) {
-        Role = other.Role;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -367,32 +855,31 @@ namespace Mruv {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Id = input.ReadUInt32();
+            GroupId = input.ReadUInt32();
             break;
           }
           case 18: {
             Name = input.ReadString();
             break;
           }
-          case 26: {
-            Role = input.ReadString();
-            break;
-          }
         }
       }
     }
 
   }
 
-  public sealed partial class GroupID : pb::IMessage<GroupID> {
-    private static readonly pb::MessageParser<GroupID> _parser = new pb::MessageParser<GroupID>(() => new GroupID());
+  /// <summary>
+  /// Response message for rpc `UpdateGroup`.
+  /// </summary>
+  public sealed partial class UpdateGroupResponse : pb::IMessage<UpdateGroupResponse> {
+    private static readonly pb::MessageParser<UpdateGroupResponse> _parser = new pb::MessageParser<UpdateGroupResponse>(() => new UpdateGroupResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<GroupID> Parser { get { return _parser; } }
+    public static pb::MessageParser<UpdateGroupResponse> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -401,55 +888,41 @@ namespace Mruv {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public GroupID() {
+    public UpdateGroupResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public GroupID(GroupID other) : this() {
-      id_ = other.id_;
+    public UpdateGroupResponse(UpdateGroupResponse other) : this() {
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public GroupID Clone() {
-      return new GroupID(this);
-    }
-
-    /// <summary>Field number for the "id" field.</summary>
-    public const int IdFieldNumber = 1;
-    private uint id_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint Id {
-      get { return id_; }
-      set {
-        id_ = value;
-      }
+    public UpdateGroupResponse Clone() {
+      return new UpdateGroupResponse(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as GroupID);
+      return Equals(other as UpdateGroupResponse);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(GroupID other) {
+    public bool Equals(UpdateGroupResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Id != other.Id) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Id != 0) hash ^= Id.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -463,10 +936,6 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Id != 0) {
-        output.WriteRawTag(8);
-        output.WriteUInt32(Id);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -475,9 +944,6 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Id != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Id);
-      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -485,12 +951,9 @@ namespace Mruv {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(GroupID other) {
+    public void MergeFrom(UpdateGroupResponse other) {
       if (other == null) {
         return;
-      }
-      if (other.Id != 0) {
-        Id = other.Id;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -503,25 +966,24 @@ namespace Mruv {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            Id = input.ReadUInt32();
-            break;
-          }
         }
       }
     }
 
   }
 
-  public sealed partial class Group : pb::IMessage<Group> {
-    private static readonly pb::MessageParser<Group> _parser = new pb::MessageParser<Group>(() => new Group());
+  /// <summary>
+  /// Request message for rpc `DeleteGroup`.
+  /// </summary>
+  public sealed partial class DeleteGroupRequest : pb::IMessage<DeleteGroupRequest> {
+    private static readonly pb::MessageParser<DeleteGroupRequest> _parser = new pb::MessageParser<DeleteGroupRequest>(() => new DeleteGroupRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<Group> Parser { get { return _parser; } }
+    public static pb::MessageParser<DeleteGroupRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -530,109 +992,55 @@ namespace Mruv {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public Group() {
+    public DeleteGroupRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public Group(Group other) : this() {
-      id_ = other.id_;
-      name_ = other.name_;
-      description_ = other.description_;
-      permissions_ = other.permissions_.Clone();
-      members_ = other.members_.Clone();
+    public DeleteGroupRequest(DeleteGroupRequest other) : this() {
+      groupId_ = other.groupId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public Group Clone() {
-      return new Group(this);
+    public DeleteGroupRequest Clone() {
+      return new DeleteGroupRequest(this);
     }
 
-    /// <summary>Field number for the "id" field.</summary>
-    public const int IdFieldNumber = 1;
-    private uint id_;
+    /// <summary>Field number for the "group_id" field.</summary>
+    public const int GroupIdFieldNumber = 1;
+    private uint groupId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint Id {
-      get { return id_; }
+    public uint GroupId {
+      get { return groupId_; }
       set {
-        id_ = value;
+        groupId_ = value;
       }
-    }
-
-    /// <summary>Field number for the "name" field.</summary>
-    public const int NameFieldNumber = 3;
-    private string name_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Name {
-      get { return name_; }
-      set {
-        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "description" field.</summary>
-    public const int DescriptionFieldNumber = 4;
-    private string description_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Description {
-      get { return description_; }
-      set {
-        description_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "permissions" field.</summary>
-    public const int PermissionsFieldNumber = 5;
-    private static readonly pb::FieldCodec<global::Mruv.Permission> _repeated_permissions_codec
-        = pb::FieldCodec.ForMessage(42, global::Mruv.Permission.Parser);
-    private readonly pbc::RepeatedField<global::Mruv.Permission> permissions_ = new pbc::RepeatedField<global::Mruv.Permission>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Mruv.Permission> Permissions {
-      get { return permissions_; }
-    }
-
-    /// <summary>Field number for the "members" field.</summary>
-    public const int MembersFieldNumber = 6;
-    private static readonly pb::FieldCodec<uint> _repeated_members_codec
-        = pb::FieldCodec.ForUInt32(50);
-    private readonly pbc::RepeatedField<uint> members_ = new pbc::RepeatedField<uint>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<uint> Members {
-      get { return members_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as Group);
+      return Equals(other as DeleteGroupRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(Group other) {
+    public bool Equals(DeleteGroupRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Id != other.Id) return false;
-      if (Name != other.Name) return false;
-      if (Description != other.Description) return false;
-      if(!permissions_.Equals(other.permissions_)) return false;
-      if(!members_.Equals(other.members_)) return false;
+      if (GroupId != other.GroupId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Id != 0) hash ^= Id.GetHashCode();
-      if (Name.Length != 0) hash ^= Name.GetHashCode();
-      if (Description.Length != 0) hash ^= Description.GetHashCode();
-      hash ^= permissions_.GetHashCode();
-      hash ^= members_.GetHashCode();
+      if (GroupId != 0) hash ^= GroupId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -646,20 +1054,10 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Id != 0) {
+      if (GroupId != 0) {
         output.WriteRawTag(8);
-        output.WriteUInt32(Id);
+        output.WriteUInt32(GroupId);
       }
-      if (Name.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(Name);
-      }
-      if (Description.Length != 0) {
-        output.WriteRawTag(34);
-        output.WriteString(Description);
-      }
-      permissions_.WriteTo(output, _repeated_permissions_codec);
-      members_.WriteTo(output, _repeated_members_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -668,17 +1066,9 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Id != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Id);
+      if (GroupId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(GroupId);
       }
-      if (Name.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
-      }
-      if (Description.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Description);
-      }
-      size += permissions_.CalculateSize(_repeated_permissions_codec);
-      size += members_.CalculateSize(_repeated_members_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -686,21 +1076,13 @@ namespace Mruv {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(Group other) {
+    public void MergeFrom(DeleteGroupRequest other) {
       if (other == null) {
         return;
       }
-      if (other.Id != 0) {
-        Id = other.Id;
+      if (other.GroupId != 0) {
+        GroupId = other.GroupId;
       }
-      if (other.Name.Length != 0) {
-        Name = other.Name;
-      }
-      if (other.Description.Length != 0) {
-        Description = other.Description;
-      }
-      permissions_.Add(other.permissions_);
-      members_.Add(other.members_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -713,24 +1095,7 @@ namespace Mruv {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Id = input.ReadUInt32();
-            break;
-          }
-          case 26: {
-            Name = input.ReadString();
-            break;
-          }
-          case 34: {
-            Description = input.ReadString();
-            break;
-          }
-          case 42: {
-            permissions_.AddEntriesFrom(input, _repeated_permissions_codec);
-            break;
-          }
-          case 50:
-          case 48: {
-            members_.AddEntriesFrom(input, _repeated_members_codec);
+            GroupId = input.ReadUInt32();
             break;
           }
         }
@@ -739,6 +1104,113 @@ namespace Mruv {
 
   }
 
+  /// <summary>
+  /// Response message for rpc `DeleteGroup`.
+  /// </summary>
+  public sealed partial class DeleteGroupResponse : pb::IMessage<DeleteGroupResponse> {
+    private static readonly pb::MessageParser<DeleteGroupResponse> _parser = new pb::MessageParser<DeleteGroupResponse>(() => new DeleteGroupResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<DeleteGroupResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[7]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public DeleteGroupResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public DeleteGroupResponse(DeleteGroupResponse other) : this() {
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public DeleteGroupResponse Clone() {
+      return new DeleteGroupResponse(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as DeleteGroupResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(DeleteGroupResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(DeleteGroupResponse other) {
+      if (other == null) {
+        return;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Request message for rpc `GetGroups`.
+  /// </summary>
   public sealed partial class GetGroupsRequest : pb::IMessage<GetGroupsRequest> {
     private static readonly pb::MessageParser<GetGroupsRequest> _parser = new pb::MessageParser<GetGroupsRequest>(() => new GetGroupsRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -747,7 +1219,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -764,24 +1236,12 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GetGroupsRequest(GetGroupsRequest other) : this() {
-      limit_ = other.limit_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GetGroupsRequest Clone() {
       return new GetGroupsRequest(this);
-    }
-
-    /// <summary>Field number for the "limit" field.</summary>
-    public const int LimitFieldNumber = 1;
-    private uint limit_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint Limit {
-      get { return limit_; }
-      set {
-        limit_ = value;
-      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -797,14 +1257,12 @@ namespace Mruv {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Limit != other.Limit) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Limit != 0) hash ^= Limit.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -818,10 +1276,6 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Limit != 0) {
-        output.WriteRawTag(8);
-        output.WriteUInt32(Limit);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -830,9 +1284,6 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Limit != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Limit);
-      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -843,9 +1294,6 @@ namespace Mruv {
     public void MergeFrom(GetGroupsRequest other) {
       if (other == null) {
         return;
-      }
-      if (other.Limit != 0) {
-        Limit = other.Limit;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -858,16 +1306,15 @@ namespace Mruv {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            Limit = input.ReadUInt32();
-            break;
-          }
         }
       }
     }
 
   }
 
+  /// <summary>
+  /// Response message for rpc `GetGroups`.
+  /// </summary>
   public sealed partial class GetGroupsResponse : pb::IMessage<GetGroupsResponse> {
     private static readonly pb::MessageParser<GetGroupsResponse> _parser = new pb::MessageParser<GetGroupsResponse>(() => new GetGroupsResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -876,7 +1323,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -904,11 +1351,11 @@ namespace Mruv {
 
     /// <summary>Field number for the "groups" field.</summary>
     public const int GroupsFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Mruv.Group> _repeated_groups_codec
-        = pb::FieldCodec.ForMessage(10, global::Mruv.Group.Parser);
-    private readonly pbc::RepeatedField<global::Mruv.Group> groups_ = new pbc::RepeatedField<global::Mruv.Group>();
+    private static readonly pb::FieldCodec<global::Mruv.GetGroupResponse> _repeated_groups_codec
+        = pb::FieldCodec.ForMessage(10, global::Mruv.GetGroupResponse.Parser);
+    private readonly pbc::RepeatedField<global::Mruv.GetGroupResponse> groups_ = new pbc::RepeatedField<global::Mruv.GetGroupResponse>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Mruv.Group> Groups {
+    public pbc::RepeatedField<global::Mruv.GetGroupResponse> Groups {
       get { return groups_; }
     }
 
@@ -989,15 +1436,18 @@ namespace Mruv {
 
   }
 
-  public sealed partial class AddGroupMemberRequest : pb::IMessage<AddGroupMemberRequest> {
-    private static readonly pb::MessageParser<AddGroupMemberRequest> _parser = new pb::MessageParser<AddGroupMemberRequest>(() => new AddGroupMemberRequest());
+  /// <summary>
+  /// Request message for rpc `AssignOwner`.
+  /// </summary>
+  public sealed partial class AssignOwnerRequest : pb::IMessage<AssignOwnerRequest> {
+    private static readonly pb::MessageParser<AssignOwnerRequest> _parser = new pb::MessageParser<AssignOwnerRequest>(() => new AssignOwnerRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<AddGroupMemberRequest> Parser { get { return _parser; } }
+    public static pb::MessageParser<AssignOwnerRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[6]; }
+      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1006,29 +1456,217 @@ namespace Mruv {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public AddGroupMemberRequest() {
+    public AssignOwnerRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public AddGroupMemberRequest(AddGroupMemberRequest other) : this() {
+    public AssignOwnerRequest(AssignOwnerRequest other) : this() {
+      groupId_ = other.groupId_;
+      ownerType_ = other.ownerType_;
+      ownerId_ = other.ownerId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public AddGroupMemberRequest Clone() {
-      return new AddGroupMemberRequest(this);
+    public AssignOwnerRequest Clone() {
+      return new AssignOwnerRequest(this);
+    }
+
+    /// <summary>Field number for the "group_id" field.</summary>
+    public const int GroupIdFieldNumber = 1;
+    private uint groupId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint GroupId {
+      get { return groupId_; }
+      set {
+        groupId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "owner_type" field.</summary>
+    public const int OwnerTypeFieldNumber = 3;
+    private global::Mruv.OwnerType ownerType_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Mruv.OwnerType OwnerType {
+      get { return ownerType_; }
+      set {
+        ownerType_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "owner_id" field.</summary>
+    public const int OwnerIdFieldNumber = 2;
+    private uint ownerId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint OwnerId {
+      get { return ownerId_; }
+      set {
+        ownerId_ = value;
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as AddGroupMemberRequest);
+      return Equals(other as AssignOwnerRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(AddGroupMemberRequest other) {
+    public bool Equals(AssignOwnerRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (GroupId != other.GroupId) return false;
+      if (OwnerType != other.OwnerType) return false;
+      if (OwnerId != other.OwnerId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (GroupId != 0) hash ^= GroupId.GetHashCode();
+      if (OwnerType != 0) hash ^= OwnerType.GetHashCode();
+      if (OwnerId != 0) hash ^= OwnerId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (GroupId != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(GroupId);
+      }
+      if (OwnerId != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(OwnerId);
+      }
+      if (OwnerType != 0) {
+        output.WriteRawTag(24);
+        output.WriteEnum((int) OwnerType);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (GroupId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(GroupId);
+      }
+      if (OwnerType != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) OwnerType);
+      }
+      if (OwnerId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(OwnerId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(AssignOwnerRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.GroupId != 0) {
+        GroupId = other.GroupId;
+      }
+      if (other.OwnerType != 0) {
+        OwnerType = other.OwnerType;
+      }
+      if (other.OwnerId != 0) {
+        OwnerId = other.OwnerId;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            GroupId = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            OwnerId = input.ReadUInt32();
+            break;
+          }
+          case 24: {
+            OwnerType = (global::Mruv.OwnerType) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Response message for rpc `AssignOwner`.
+  /// </summary>
+  public sealed partial class AssignOwnerResponse : pb::IMessage<AssignOwnerResponse> {
+    private static readonly pb::MessageParser<AssignOwnerResponse> _parser = new pb::MessageParser<AssignOwnerResponse>(() => new AssignOwnerResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<AssignOwnerResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[11]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AssignOwnerResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AssignOwnerResponse(AssignOwnerResponse other) : this() {
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AssignOwnerResponse Clone() {
+      return new AssignOwnerResponse(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as AssignOwnerResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(AssignOwnerResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -1069,7 +1707,7 @@ namespace Mruv {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(AddGroupMemberRequest other) {
+    public void MergeFrom(AssignOwnerResponse other) {
       if (other == null) {
         return;
       }
@@ -1090,15 +1728,18 @@ namespace Mruv {
 
   }
 
-  public sealed partial class AddGroupMemberResponse : pb::IMessage<AddGroupMemberResponse> {
-    private static readonly pb::MessageParser<AddGroupMemberResponse> _parser = new pb::MessageParser<AddGroupMemberResponse>(() => new AddGroupMemberResponse());
+  /// <summary>
+  /// Request message for rpc `GetOwner`.
+  /// </summary>
+  public sealed partial class GetOwnerRequest : pb::IMessage<GetOwnerRequest> {
+    private static readonly pb::MessageParser<GetOwnerRequest> _parser = new pb::MessageParser<GetOwnerRequest>(() => new GetOwnerRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<AddGroupMemberResponse> Parser { get { return _parser; } }
+    public static pb::MessageParser<GetOwnerRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[7]; }
+      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1107,29 +1748,481 @@ namespace Mruv {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public AddGroupMemberResponse() {
+    public GetOwnerRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public AddGroupMemberResponse(AddGroupMemberResponse other) : this() {
+    public GetOwnerRequest(GetOwnerRequest other) : this() {
+      groupId_ = other.groupId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public AddGroupMemberResponse Clone() {
-      return new AddGroupMemberResponse(this);
+    public GetOwnerRequest Clone() {
+      return new GetOwnerRequest(this);
+    }
+
+    /// <summary>Field number for the "group_id" field.</summary>
+    public const int GroupIdFieldNumber = 1;
+    private uint groupId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint GroupId {
+      get { return groupId_; }
+      set {
+        groupId_ = value;
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as AddGroupMemberResponse);
+      return Equals(other as GetOwnerRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(AddGroupMemberResponse other) {
+    public bool Equals(GetOwnerRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (GroupId != other.GroupId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (GroupId != 0) hash ^= GroupId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (GroupId != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(GroupId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (GroupId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(GroupId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(GetOwnerRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.GroupId != 0) {
+        GroupId = other.GroupId;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            GroupId = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Response message for rpc `GetOwner`.
+  /// </summary>
+  public sealed partial class GetOwnerResponse : pb::IMessage<GetOwnerResponse> {
+    private static readonly pb::MessageParser<GetOwnerResponse> _parser = new pb::MessageParser<GetOwnerResponse>(() => new GetOwnerResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<GetOwnerResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[13]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetOwnerResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetOwnerResponse(GetOwnerResponse other) : this() {
+      ownerId_ = other.ownerId_;
+      ownerType_ = other.ownerType_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetOwnerResponse Clone() {
+      return new GetOwnerResponse(this);
+    }
+
+    /// <summary>Field number for the "owner_id" field.</summary>
+    public const int OwnerIdFieldNumber = 1;
+    private uint ownerId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint OwnerId {
+      get { return ownerId_; }
+      set {
+        ownerId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "owner_type" field.</summary>
+    public const int OwnerTypeFieldNumber = 2;
+    private global::Mruv.OwnerType ownerType_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Mruv.OwnerType OwnerType {
+      get { return ownerType_; }
+      set {
+        ownerType_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as GetOwnerResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(GetOwnerResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (OwnerId != other.OwnerId) return false;
+      if (OwnerType != other.OwnerType) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (OwnerId != 0) hash ^= OwnerId.GetHashCode();
+      if (OwnerType != 0) hash ^= OwnerType.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (OwnerId != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(OwnerId);
+      }
+      if (OwnerType != 0) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) OwnerType);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (OwnerId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(OwnerId);
+      }
+      if (OwnerType != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) OwnerType);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(GetOwnerResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.OwnerId != 0) {
+        OwnerId = other.OwnerId;
+      }
+      if (other.OwnerType != 0) {
+        OwnerType = other.OwnerType;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            OwnerId = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            OwnerType = (global::Mruv.OwnerType) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Request message for rpc `AddMember`.
+  /// </summary>
+  public sealed partial class AddMemberRequest : pb::IMessage<AddMemberRequest> {
+    private static readonly pb::MessageParser<AddMemberRequest> _parser = new pb::MessageParser<AddMemberRequest>(() => new AddMemberRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<AddMemberRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[14]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AddMemberRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AddMemberRequest(AddMemberRequest other) : this() {
+      groupId_ = other.groupId_;
+      memberId_ = other.memberId_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AddMemberRequest Clone() {
+      return new AddMemberRequest(this);
+    }
+
+    /// <summary>Field number for the "group_id" field.</summary>
+    public const int GroupIdFieldNumber = 1;
+    private uint groupId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint GroupId {
+      get { return groupId_; }
+      set {
+        groupId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "member_id" field.</summary>
+    public const int MemberIdFieldNumber = 2;
+    private uint memberId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint MemberId {
+      get { return memberId_; }
+      set {
+        memberId_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as AddMemberRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(AddMemberRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (GroupId != other.GroupId) return false;
+      if (MemberId != other.MemberId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (GroupId != 0) hash ^= GroupId.GetHashCode();
+      if (MemberId != 0) hash ^= MemberId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (GroupId != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(GroupId);
+      }
+      if (MemberId != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(MemberId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (GroupId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(GroupId);
+      }
+      if (MemberId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(MemberId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(AddMemberRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.GroupId != 0) {
+        GroupId = other.GroupId;
+      }
+      if (other.MemberId != 0) {
+        MemberId = other.MemberId;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            GroupId = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            MemberId = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Response message for rpc `AddMember`.
+  /// </summary>
+  public sealed partial class AddMemberResponse : pb::IMessage<AddMemberResponse> {
+    private static readonly pb::MessageParser<AddMemberResponse> _parser = new pb::MessageParser<AddMemberResponse>(() => new AddMemberResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<AddMemberResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[15]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AddMemberResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AddMemberResponse(AddMemberResponse other) : this() {
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AddMemberResponse Clone() {
+      return new AddMemberResponse(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as AddMemberResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(AddMemberResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -1170,7 +2263,7 @@ namespace Mruv {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(AddGroupMemberResponse other) {
+    public void MergeFrom(AddMemberResponse other) {
       if (other == null) {
         return;
       }
@@ -1191,15 +2284,18 @@ namespace Mruv {
 
   }
 
-  public sealed partial class RemoveGroupMemberRequest : pb::IMessage<RemoveGroupMemberRequest> {
-    private static readonly pb::MessageParser<RemoveGroupMemberRequest> _parser = new pb::MessageParser<RemoveGroupMemberRequest>(() => new RemoveGroupMemberRequest());
+  /// <summary>
+  /// Request message for rpc `GetMembers`.
+  /// </summary>
+  public sealed partial class GetMembersRequest : pb::IMessage<GetMembersRequest> {
+    private static readonly pb::MessageParser<GetMembersRequest> _parser = new pb::MessageParser<GetMembersRequest>(() => new GetMembersRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<RemoveGroupMemberRequest> Parser { get { return _parser; } }
+    public static pb::MessageParser<GetMembersRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[8]; }
+      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[16]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1208,29 +2304,474 @@ namespace Mruv {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public RemoveGroupMemberRequest() {
+    public GetMembersRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public RemoveGroupMemberRequest(RemoveGroupMemberRequest other) : this() {
+    public GetMembersRequest(GetMembersRequest other) : this() {
+      groupId_ = other.groupId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public RemoveGroupMemberRequest Clone() {
-      return new RemoveGroupMemberRequest(this);
+    public GetMembersRequest Clone() {
+      return new GetMembersRequest(this);
+    }
+
+    /// <summary>Field number for the "group_id" field.</summary>
+    public const int GroupIdFieldNumber = 1;
+    private uint groupId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint GroupId {
+      get { return groupId_; }
+      set {
+        groupId_ = value;
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as RemoveGroupMemberRequest);
+      return Equals(other as GetMembersRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(RemoveGroupMemberRequest other) {
+    public bool Equals(GetMembersRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (GroupId != other.GroupId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (GroupId != 0) hash ^= GroupId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (GroupId != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(GroupId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (GroupId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(GroupId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(GetMembersRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.GroupId != 0) {
+        GroupId = other.GroupId;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            GroupId = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Response message for rpc `GetMembers`.
+  /// </summary>
+  public sealed partial class GetMembersResponse : pb::IMessage<GetMembersResponse> {
+    private static readonly pb::MessageParser<GetMembersResponse> _parser = new pb::MessageParser<GetMembersResponse>(() => new GetMembersResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<GetMembersResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[17]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetMembersResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetMembersResponse(GetMembersResponse other) : this() {
+      memberType_ = other.memberType_;
+      memberIds_ = other.memberIds_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetMembersResponse Clone() {
+      return new GetMembersResponse(this);
+    }
+
+    /// <summary>Field number for the "member_type" field.</summary>
+    public const int MemberTypeFieldNumber = 1;
+    private global::Mruv.MemberType memberType_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Mruv.MemberType MemberType {
+      get { return memberType_; }
+      set {
+        memberType_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "member_ids" field.</summary>
+    public const int MemberIdsFieldNumber = 2;
+    private static readonly pb::FieldCodec<uint> _repeated_memberIds_codec
+        = pb::FieldCodec.ForUInt32(18);
+    private readonly pbc::RepeatedField<uint> memberIds_ = new pbc::RepeatedField<uint>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<uint> MemberIds {
+      get { return memberIds_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as GetMembersResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(GetMembersResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (MemberType != other.MemberType) return false;
+      if(!memberIds_.Equals(other.memberIds_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (MemberType != 0) hash ^= MemberType.GetHashCode();
+      hash ^= memberIds_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (MemberType != 0) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) MemberType);
+      }
+      memberIds_.WriteTo(output, _repeated_memberIds_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (MemberType != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) MemberType);
+      }
+      size += memberIds_.CalculateSize(_repeated_memberIds_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(GetMembersResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.MemberType != 0) {
+        MemberType = other.MemberType;
+      }
+      memberIds_.Add(other.memberIds_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            MemberType = (global::Mruv.MemberType) input.ReadEnum();
+            break;
+          }
+          case 18:
+          case 16: {
+            memberIds_.AddEntriesFrom(input, _repeated_memberIds_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Request message for rpc `RemoveMember`.
+  /// </summary>
+  public sealed partial class RemoveMemberRequest : pb::IMessage<RemoveMemberRequest> {
+    private static readonly pb::MessageParser<RemoveMemberRequest> _parser = new pb::MessageParser<RemoveMemberRequest>(() => new RemoveMemberRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<RemoveMemberRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[18]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RemoveMemberRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RemoveMemberRequest(RemoveMemberRequest other) : this() {
+      groupId_ = other.groupId_;
+      memberId_ = other.memberId_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RemoveMemberRequest Clone() {
+      return new RemoveMemberRequest(this);
+    }
+
+    /// <summary>Field number for the "group_id" field.</summary>
+    public const int GroupIdFieldNumber = 1;
+    private uint groupId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint GroupId {
+      get { return groupId_; }
+      set {
+        groupId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "member_id" field.</summary>
+    public const int MemberIdFieldNumber = 2;
+    private uint memberId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint MemberId {
+      get { return memberId_; }
+      set {
+        memberId_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as RemoveMemberRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(RemoveMemberRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (GroupId != other.GroupId) return false;
+      if (MemberId != other.MemberId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (GroupId != 0) hash ^= GroupId.GetHashCode();
+      if (MemberId != 0) hash ^= MemberId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (GroupId != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(GroupId);
+      }
+      if (MemberId != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(MemberId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (GroupId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(GroupId);
+      }
+      if (MemberId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(MemberId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(RemoveMemberRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.GroupId != 0) {
+        GroupId = other.GroupId;
+      }
+      if (other.MemberId != 0) {
+        MemberId = other.MemberId;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            GroupId = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            MemberId = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Response message for rpc `RemoveMember`.
+  /// </summary>
+  public sealed partial class RemoveMemberResponse : pb::IMessage<RemoveMemberResponse> {
+    private static readonly pb::MessageParser<RemoveMemberResponse> _parser = new pb::MessageParser<RemoveMemberResponse>(() => new RemoveMemberResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<RemoveMemberResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[19]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RemoveMemberResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RemoveMemberResponse(RemoveMemberResponse other) : this() {
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RemoveMemberResponse Clone() {
+      return new RemoveMemberResponse(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as RemoveMemberResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(RemoveMemberResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -1271,7 +2812,7 @@ namespace Mruv {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(RemoveGroupMemberRequest other) {
+    public void MergeFrom(RemoveMemberResponse other) {
       if (other == null) {
         return;
       }
@@ -1292,15 +2833,18 @@ namespace Mruv {
 
   }
 
-  public sealed partial class RemoveGroupMemberResponse : pb::IMessage<RemoveGroupMemberResponse> {
-    private static readonly pb::MessageParser<RemoveGroupMemberResponse> _parser = new pb::MessageParser<RemoveGroupMemberResponse>(() => new RemoveGroupMemberResponse());
+  /// <summary>
+  /// Request message for rpc `AddPermission`.
+  /// </summary>
+  public sealed partial class AddPermissionRequest : pb::IMessage<AddPermissionRequest> {
+    private static readonly pb::MessageParser<AddPermissionRequest> _parser = new pb::MessageParser<AddPermissionRequest>(() => new AddPermissionRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<RemoveGroupMemberResponse> Parser { get { return _parser; } }
+    public static pb::MessageParser<AddPermissionRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[9]; }
+      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[20]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1309,29 +2853,957 @@ namespace Mruv {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public RemoveGroupMemberResponse() {
+    public AddPermissionRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public RemoveGroupMemberResponse(RemoveGroupMemberResponse other) : this() {
+    public AddPermissionRequest(AddPermissionRequest other) : this() {
+      groupId_ = other.groupId_;
+      name_ = other.name_;
+      definition_ = other.definition_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public RemoveGroupMemberResponse Clone() {
-      return new RemoveGroupMemberResponse(this);
+    public AddPermissionRequest Clone() {
+      return new AddPermissionRequest(this);
+    }
+
+    /// <summary>Field number for the "group_id" field.</summary>
+    public const int GroupIdFieldNumber = 1;
+    private uint groupId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint GroupId {
+      get { return groupId_; }
+      set {
+        groupId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "name" field.</summary>
+    public const int NameFieldNumber = 2;
+    private string name_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Name {
+      get { return name_; }
+      set {
+        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "definition" field.</summary>
+    public const int DefinitionFieldNumber = 3;
+    private string definition_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Definition {
+      get { return definition_; }
+      set {
+        definition_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as RemoveGroupMemberResponse);
+      return Equals(other as AddPermissionRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(RemoveGroupMemberResponse other) {
+    public bool Equals(AddPermissionRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (GroupId != other.GroupId) return false;
+      if (Name != other.Name) return false;
+      if (Definition != other.Definition) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (GroupId != 0) hash ^= GroupId.GetHashCode();
+      if (Name.Length != 0) hash ^= Name.GetHashCode();
+      if (Definition.Length != 0) hash ^= Definition.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (GroupId != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(GroupId);
+      }
+      if (Name.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Name);
+      }
+      if (Definition.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Definition);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (GroupId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(GroupId);
+      }
+      if (Name.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+      }
+      if (Definition.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Definition);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(AddPermissionRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.GroupId != 0) {
+        GroupId = other.GroupId;
+      }
+      if (other.Name.Length != 0) {
+        Name = other.Name;
+      }
+      if (other.Definition.Length != 0) {
+        Definition = other.Definition;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            GroupId = input.ReadUInt32();
+            break;
+          }
+          case 18: {
+            Name = input.ReadString();
+            break;
+          }
+          case 26: {
+            Definition = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Response message for rpc `AddPermission`.
+  /// </summary>
+  public sealed partial class AddPermissionResponse : pb::IMessage<AddPermissionResponse> {
+    private static readonly pb::MessageParser<AddPermissionResponse> _parser = new pb::MessageParser<AddPermissionResponse>(() => new AddPermissionResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<AddPermissionResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[21]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AddPermissionResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AddPermissionResponse(AddPermissionResponse other) : this() {
+      permissionId_ = other.permissionId_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AddPermissionResponse Clone() {
+      return new AddPermissionResponse(this);
+    }
+
+    /// <summary>Field number for the "permission_id" field.</summary>
+    public const int PermissionIdFieldNumber = 1;
+    private uint permissionId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint PermissionId {
+      get { return permissionId_; }
+      set {
+        permissionId_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as AddPermissionResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(AddPermissionResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (PermissionId != other.PermissionId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (PermissionId != 0) hash ^= PermissionId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (PermissionId != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(PermissionId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (PermissionId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(PermissionId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(AddPermissionResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.PermissionId != 0) {
+        PermissionId = other.PermissionId;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            PermissionId = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Request message for rpc `GetPermissions`.
+  /// </summary>
+  public sealed partial class GetPermissionsRequest : pb::IMessage<GetPermissionsRequest> {
+    private static readonly pb::MessageParser<GetPermissionsRequest> _parser = new pb::MessageParser<GetPermissionsRequest>(() => new GetPermissionsRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<GetPermissionsRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[22]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetPermissionsRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetPermissionsRequest(GetPermissionsRequest other) : this() {
+      groupId_ = other.groupId_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetPermissionsRequest Clone() {
+      return new GetPermissionsRequest(this);
+    }
+
+    /// <summary>Field number for the "group_id" field.</summary>
+    public const int GroupIdFieldNumber = 1;
+    private uint groupId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint GroupId {
+      get { return groupId_; }
+      set {
+        groupId_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as GetPermissionsRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(GetPermissionsRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (GroupId != other.GroupId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (GroupId != 0) hash ^= GroupId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (GroupId != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(GroupId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (GroupId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(GroupId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(GetPermissionsRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.GroupId != 0) {
+        GroupId = other.GroupId;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            GroupId = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Response message for rpc `GetPermissions`.
+  /// </summary>
+  public sealed partial class GetPermissionsResponse : pb::IMessage<GetPermissionsResponse> {
+    private static readonly pb::MessageParser<GetPermissionsResponse> _parser = new pb::MessageParser<GetPermissionsResponse>(() => new GetPermissionsResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<GetPermissionsResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[23]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetPermissionsResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetPermissionsResponse(GetPermissionsResponse other) : this() {
+      permissions_ = other.permissions_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetPermissionsResponse Clone() {
+      return new GetPermissionsResponse(this);
+    }
+
+    /// <summary>Field number for the "permissions" field.</summary>
+    public const int PermissionsFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Mruv.GetPermissionsResponse.Types.Permission> _repeated_permissions_codec
+        = pb::FieldCodec.ForMessage(10, global::Mruv.GetPermissionsResponse.Types.Permission.Parser);
+    private readonly pbc::RepeatedField<global::Mruv.GetPermissionsResponse.Types.Permission> permissions_ = new pbc::RepeatedField<global::Mruv.GetPermissionsResponse.Types.Permission>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Mruv.GetPermissionsResponse.Types.Permission> Permissions {
+      get { return permissions_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as GetPermissionsResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(GetPermissionsResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!permissions_.Equals(other.permissions_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= permissions_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      permissions_.WriteTo(output, _repeated_permissions_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += permissions_.CalculateSize(_repeated_permissions_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(GetPermissionsResponse other) {
+      if (other == null) {
+        return;
+      }
+      permissions_.Add(other.permissions_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            permissions_.AddEntriesFrom(input, _repeated_permissions_codec);
+            break;
+          }
+        }
+      }
+    }
+
+    #region Nested types
+    /// <summary>Container for nested types declared in the GetPermissionsResponse message type.</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static partial class Types {
+      public sealed partial class Permission : pb::IMessage<Permission> {
+        private static readonly pb::MessageParser<Permission> _parser = new pb::MessageParser<Permission>(() => new Permission());
+        private pb::UnknownFieldSet _unknownFields;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<Permission> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Mruv.GetPermissionsResponse.Descriptor.NestedTypes[0]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public Permission() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public Permission(Permission other) : this() {
+          id_ = other.id_;
+          name_ = other.name_;
+          definition_ = other.definition_;
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public Permission Clone() {
+          return new Permission(this);
+        }
+
+        /// <summary>Field number for the "id" field.</summary>
+        public const int IdFieldNumber = 1;
+        private uint id_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public uint Id {
+          get { return id_; }
+          set {
+            id_ = value;
+          }
+        }
+
+        /// <summary>Field number for the "name" field.</summary>
+        public const int NameFieldNumber = 2;
+        private string name_ = "";
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public string Name {
+          get { return name_; }
+          set {
+            name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+          }
+        }
+
+        /// <summary>Field number for the "definition" field.</summary>
+        public const int DefinitionFieldNumber = 3;
+        private string definition_ = "";
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public string Definition {
+          get { return definition_; }
+          set {
+            definition_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as Permission);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(Permission other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if (Id != other.Id) return false;
+          if (Name != other.Name) return false;
+          if (Definition != other.Definition) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          if (Id != 0) hash ^= Id.GetHashCode();
+          if (Name.Length != 0) hash ^= Name.GetHashCode();
+          if (Definition.Length != 0) hash ^= Definition.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+          if (Id != 0) {
+            output.WriteRawTag(8);
+            output.WriteUInt32(Id);
+          }
+          if (Name.Length != 0) {
+            output.WriteRawTag(18);
+            output.WriteString(Name);
+          }
+          if (Definition.Length != 0) {
+            output.WriteRawTag(26);
+            output.WriteString(Definition);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          if (Id != 0) {
+            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Id);
+          }
+          if (Name.Length != 0) {
+            size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+          }
+          if (Definition.Length != 0) {
+            size += 1 + pb::CodedOutputStream.ComputeStringSize(Definition);
+          }
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(Permission other) {
+          if (other == null) {
+            return;
+          }
+          if (other.Id != 0) {
+            Id = other.Id;
+          }
+          if (other.Name.Length != 0) {
+            Name = other.Name;
+          }
+          if (other.Definition.Length != 0) {
+            Definition = other.Definition;
+          }
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 8: {
+                Id = input.ReadUInt32();
+                break;
+              }
+              case 18: {
+                Name = input.ReadString();
+                break;
+              }
+              case 26: {
+                Definition = input.ReadString();
+                break;
+              }
+            }
+          }
+        }
+
+      }
+
+    }
+    #endregion
+
+  }
+
+  /// <summary>
+  /// Request message for rpc `RemovePermission`.
+  /// </summary>
+  public sealed partial class RemovePermissionRequest : pb::IMessage<RemovePermissionRequest> {
+    private static readonly pb::MessageParser<RemovePermissionRequest> _parser = new pb::MessageParser<RemovePermissionRequest>(() => new RemovePermissionRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<RemovePermissionRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[24]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RemovePermissionRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RemovePermissionRequest(RemovePermissionRequest other) : this() {
+      groupId_ = other.groupId_;
+      permissionId_ = other.permissionId_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RemovePermissionRequest Clone() {
+      return new RemovePermissionRequest(this);
+    }
+
+    /// <summary>Field number for the "group_id" field.</summary>
+    public const int GroupIdFieldNumber = 1;
+    private uint groupId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint GroupId {
+      get { return groupId_; }
+      set {
+        groupId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "permission_id" field.</summary>
+    public const int PermissionIdFieldNumber = 2;
+    private uint permissionId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint PermissionId {
+      get { return permissionId_; }
+      set {
+        permissionId_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as RemovePermissionRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(RemovePermissionRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (GroupId != other.GroupId) return false;
+      if (PermissionId != other.PermissionId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (GroupId != 0) hash ^= GroupId.GetHashCode();
+      if (PermissionId != 0) hash ^= PermissionId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (GroupId != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(GroupId);
+      }
+      if (PermissionId != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(PermissionId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (GroupId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(GroupId);
+      }
+      if (PermissionId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(PermissionId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(RemovePermissionRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.GroupId != 0) {
+        GroupId = other.GroupId;
+      }
+      if (other.PermissionId != 0) {
+        PermissionId = other.PermissionId;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            GroupId = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            PermissionId = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Response message for rpc `RemovePermission`.
+  /// </summary>
+  public sealed partial class RemovePermissionResponse : pb::IMessage<RemovePermissionResponse> {
+    private static readonly pb::MessageParser<RemovePermissionResponse> _parser = new pb::MessageParser<RemovePermissionResponse>(() => new RemovePermissionResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<RemovePermissionResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[25]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RemovePermissionResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RemovePermissionResponse(RemovePermissionResponse other) : this() {
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RemovePermissionResponse Clone() {
+      return new RemovePermissionResponse(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as RemovePermissionResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(RemovePermissionResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -1372,7 +3844,7 @@ namespace Mruv {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(RemoveGroupMemberResponse other) {
+    public void MergeFrom(RemovePermissionResponse other) {
       if (other == null) {
         return;
       }
@@ -1387,6 +3859,1111 @@ namespace Mruv {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Request message for rpc `AddSubgroup`.
+  /// </summary>
+  public sealed partial class AddSubgroupRequest : pb::IMessage<AddSubgroupRequest> {
+    private static readonly pb::MessageParser<AddSubgroupRequest> _parser = new pb::MessageParser<AddSubgroupRequest>(() => new AddSubgroupRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<AddSubgroupRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[26]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AddSubgroupRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AddSubgroupRequest(AddSubgroupRequest other) : this() {
+      groupId_ = other.groupId_;
+      subgroupId_ = other.subgroupId_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AddSubgroupRequest Clone() {
+      return new AddSubgroupRequest(this);
+    }
+
+    /// <summary>Field number for the "group_id" field.</summary>
+    public const int GroupIdFieldNumber = 1;
+    private uint groupId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint GroupId {
+      get { return groupId_; }
+      set {
+        groupId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "subgroup_id" field.</summary>
+    public const int SubgroupIdFieldNumber = 2;
+    private uint subgroupId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint SubgroupId {
+      get { return subgroupId_; }
+      set {
+        subgroupId_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as AddSubgroupRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(AddSubgroupRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (GroupId != other.GroupId) return false;
+      if (SubgroupId != other.SubgroupId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (GroupId != 0) hash ^= GroupId.GetHashCode();
+      if (SubgroupId != 0) hash ^= SubgroupId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (GroupId != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(GroupId);
+      }
+      if (SubgroupId != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(SubgroupId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (GroupId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(GroupId);
+      }
+      if (SubgroupId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(SubgroupId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(AddSubgroupRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.GroupId != 0) {
+        GroupId = other.GroupId;
+      }
+      if (other.SubgroupId != 0) {
+        SubgroupId = other.SubgroupId;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            GroupId = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            SubgroupId = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Response message for rpc `AddSubgroup`.
+  /// </summary>
+  public sealed partial class AddSubgroupResponse : pb::IMessage<AddSubgroupResponse> {
+    private static readonly pb::MessageParser<AddSubgroupResponse> _parser = new pb::MessageParser<AddSubgroupResponse>(() => new AddSubgroupResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<AddSubgroupResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[27]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AddSubgroupResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AddSubgroupResponse(AddSubgroupResponse other) : this() {
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AddSubgroupResponse Clone() {
+      return new AddSubgroupResponse(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as AddSubgroupResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(AddSubgroupResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(AddSubgroupResponse other) {
+      if (other == null) {
+        return;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Request message for rpc `GetSubgroups`.
+  /// </summary>
+  public sealed partial class GetSubgroupsRequest : pb::IMessage<GetSubgroupsRequest> {
+    private static readonly pb::MessageParser<GetSubgroupsRequest> _parser = new pb::MessageParser<GetSubgroupsRequest>(() => new GetSubgroupsRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<GetSubgroupsRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[28]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetSubgroupsRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetSubgroupsRequest(GetSubgroupsRequest other) : this() {
+      groupId_ = other.groupId_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetSubgroupsRequest Clone() {
+      return new GetSubgroupsRequest(this);
+    }
+
+    /// <summary>Field number for the "group_id" field.</summary>
+    public const int GroupIdFieldNumber = 1;
+    private uint groupId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint GroupId {
+      get { return groupId_; }
+      set {
+        groupId_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as GetSubgroupsRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(GetSubgroupsRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (GroupId != other.GroupId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (GroupId != 0) hash ^= GroupId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (GroupId != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(GroupId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (GroupId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(GroupId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(GetSubgroupsRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.GroupId != 0) {
+        GroupId = other.GroupId;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            GroupId = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Response message for rpc `GetSubgroups`.
+  /// </summary>
+  public sealed partial class GetSubgroupsResponse : pb::IMessage<GetSubgroupsResponse> {
+    private static readonly pb::MessageParser<GetSubgroupsResponse> _parser = new pb::MessageParser<GetSubgroupsResponse>(() => new GetSubgroupsResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<GetSubgroupsResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[29]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetSubgroupsResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetSubgroupsResponse(GetSubgroupsResponse other) : this() {
+      subgroupIds_ = other.subgroupIds_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetSubgroupsResponse Clone() {
+      return new GetSubgroupsResponse(this);
+    }
+
+    /// <summary>Field number for the "subgroup_ids" field.</summary>
+    public const int SubgroupIdsFieldNumber = 1;
+    private static readonly pb::FieldCodec<uint> _repeated_subgroupIds_codec
+        = pb::FieldCodec.ForUInt32(10);
+    private readonly pbc::RepeatedField<uint> subgroupIds_ = new pbc::RepeatedField<uint>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<uint> SubgroupIds {
+      get { return subgroupIds_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as GetSubgroupsResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(GetSubgroupsResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!subgroupIds_.Equals(other.subgroupIds_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= subgroupIds_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      subgroupIds_.WriteTo(output, _repeated_subgroupIds_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += subgroupIds_.CalculateSize(_repeated_subgroupIds_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(GetSubgroupsResponse other) {
+      if (other == null) {
+        return;
+      }
+      subgroupIds_.Add(other.subgroupIds_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10:
+          case 8: {
+            subgroupIds_.AddEntriesFrom(input, _repeated_subgroupIds_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Request message for rpc `RemoveSubgroup`.
+  /// </summary>
+  public sealed partial class RemoveSubgroupRequest : pb::IMessage<RemoveSubgroupRequest> {
+    private static readonly pb::MessageParser<RemoveSubgroupRequest> _parser = new pb::MessageParser<RemoveSubgroupRequest>(() => new RemoveSubgroupRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<RemoveSubgroupRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[30]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RemoveSubgroupRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RemoveSubgroupRequest(RemoveSubgroupRequest other) : this() {
+      groupId_ = other.groupId_;
+      subgroupId_ = other.subgroupId_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RemoveSubgroupRequest Clone() {
+      return new RemoveSubgroupRequest(this);
+    }
+
+    /// <summary>Field number for the "group_id" field.</summary>
+    public const int GroupIdFieldNumber = 1;
+    private uint groupId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint GroupId {
+      get { return groupId_; }
+      set {
+        groupId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "subgroup_id" field.</summary>
+    public const int SubgroupIdFieldNumber = 2;
+    private uint subgroupId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint SubgroupId {
+      get { return subgroupId_; }
+      set {
+        subgroupId_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as RemoveSubgroupRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(RemoveSubgroupRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (GroupId != other.GroupId) return false;
+      if (SubgroupId != other.SubgroupId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (GroupId != 0) hash ^= GroupId.GetHashCode();
+      if (SubgroupId != 0) hash ^= SubgroupId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (GroupId != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(GroupId);
+      }
+      if (SubgroupId != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(SubgroupId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (GroupId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(GroupId);
+      }
+      if (SubgroupId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(SubgroupId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(RemoveSubgroupRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.GroupId != 0) {
+        GroupId = other.GroupId;
+      }
+      if (other.SubgroupId != 0) {
+        SubgroupId = other.SubgroupId;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            GroupId = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            SubgroupId = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Response message for rpc `RemoveSubgroup`.
+  /// </summary>
+  public sealed partial class RemoveSubgroupResponse : pb::IMessage<RemoveSubgroupResponse> {
+    private static readonly pb::MessageParser<RemoveSubgroupResponse> _parser = new pb::MessageParser<RemoveSubgroupResponse>(() => new RemoveSubgroupResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<RemoveSubgroupResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[31]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RemoveSubgroupResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RemoveSubgroupResponse(RemoveSubgroupResponse other) : this() {
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RemoveSubgroupResponse Clone() {
+      return new RemoveSubgroupResponse(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as RemoveSubgroupResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(RemoveSubgroupResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(RemoveSubgroupResponse other) {
+      if (other == null) {
+        return;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Request message for rpc `IsPermitted`.
+  /// </summary>
+  public sealed partial class IsPermittedRequest : pb::IMessage<IsPermittedRequest> {
+    private static readonly pb::MessageParser<IsPermittedRequest> _parser = new pb::MessageParser<IsPermittedRequest>(() => new IsPermittedRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<IsPermittedRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[32]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public IsPermittedRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public IsPermittedRequest(IsPermittedRequest other) : this() {
+      memberId_ = other.memberId_;
+      memberType_ = other.memberType_;
+      action_ = other.action_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public IsPermittedRequest Clone() {
+      return new IsPermittedRequest(this);
+    }
+
+    /// <summary>Field number for the "member_id" field.</summary>
+    public const int MemberIdFieldNumber = 1;
+    private uint memberId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint MemberId {
+      get { return memberId_; }
+      set {
+        memberId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "member_type" field.</summary>
+    public const int MemberTypeFieldNumber = 2;
+    private global::Mruv.MemberType memberType_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Mruv.MemberType MemberType {
+      get { return memberType_; }
+      set {
+        memberType_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "action" field.</summary>
+    public const int ActionFieldNumber = 3;
+    private string action_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Action {
+      get { return action_; }
+      set {
+        action_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as IsPermittedRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(IsPermittedRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (MemberId != other.MemberId) return false;
+      if (MemberType != other.MemberType) return false;
+      if (Action != other.Action) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (MemberId != 0) hash ^= MemberId.GetHashCode();
+      if (MemberType != 0) hash ^= MemberType.GetHashCode();
+      if (Action.Length != 0) hash ^= Action.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (MemberId != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(MemberId);
+      }
+      if (MemberType != 0) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) MemberType);
+      }
+      if (Action.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Action);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (MemberId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(MemberId);
+      }
+      if (MemberType != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) MemberType);
+      }
+      if (Action.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Action);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(IsPermittedRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.MemberId != 0) {
+        MemberId = other.MemberId;
+      }
+      if (other.MemberType != 0) {
+        MemberType = other.MemberType;
+      }
+      if (other.Action.Length != 0) {
+        Action = other.Action;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            MemberId = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            MemberType = (global::Mruv.MemberType) input.ReadEnum();
+            break;
+          }
+          case 26: {
+            Action = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Response message for rpc `IsPermitted`.
+  /// </summary>
+  public sealed partial class IsPermittedResponse : pb::IMessage<IsPermittedResponse> {
+    private static readonly pb::MessageParser<IsPermittedResponse> _parser = new pb::MessageParser<IsPermittedResponse>(() => new IsPermittedResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<IsPermittedResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[33]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public IsPermittedResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public IsPermittedResponse(IsPermittedResponse other) : this() {
+      permitted_ = other.permitted_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public IsPermittedResponse Clone() {
+      return new IsPermittedResponse(this);
+    }
+
+    /// <summary>Field number for the "permitted" field.</summary>
+    public const int PermittedFieldNumber = 1;
+    private bool permitted_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Permitted {
+      get { return permitted_; }
+      set {
+        permitted_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as IsPermittedResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(IsPermittedResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Permitted != other.Permitted) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Permitted != false) hash ^= Permitted.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Permitted != false) {
+        output.WriteRawTag(8);
+        output.WriteBool(Permitted);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Permitted != false) {
+        size += 1 + 1;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(IsPermittedResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Permitted != false) {
+        Permitted = other.Permitted;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Permitted = input.ReadBool();
+            break;
+          }
         }
       }
     }
