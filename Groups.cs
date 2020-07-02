@@ -25,109 +25,113 @@ namespace Mruv {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChNncm91cHMvZ3JvdXBzLnByb3RvEgRtcnV2Ghxnb29nbGUvYXBpL2Fubm90",
-            "YXRpb25zLnByb3RvGhNjb21tb24vaGVhbHRoLnByb3RvIiIKEkNyZWF0ZUdy",
-            "b3VwUmVxdWVzdBIMCgRuYW1lGAEgASgJIicKE0NyZWF0ZUdyb3VwUmVzcG9u",
-            "c2USEAoIZ3JvdXBfaWQYASABKA0iIwoPR2V0R3JvdXBSZXF1ZXN0EhAKCGdy",
-            "b3VwX2lkGAEgASgNIiAKEEdldEdyb3VwUmVzcG9uc2USDAoEbmFtZRgBIAEo",
-            "CSI0ChJVcGRhdGVHcm91cFJlcXVlc3QSEAoIZ3JvdXBfaWQYASABKA0SDAoE",
-            "bmFtZRgCIAEoCSIVChNVcGRhdGVHcm91cFJlc3BvbnNlIiYKEkRlbGV0ZUdy",
-            "b3VwUmVxdWVzdBIQCghncm91cF9pZBgBIAEoDSIVChNEZWxldGVHcm91cFJl",
-            "c3BvbnNlIhIKEEdldEdyb3Vwc1JlcXVlc3QiOwoRR2V0R3JvdXBzUmVzcG9u",
-            "c2USJgoGZ3JvdXBzGAEgAygLMhYubXJ1di5HZXRHcm91cFJlc3BvbnNlIl0K",
-            "EkFzc2lnbk93bmVyUmVxdWVzdBIQCghncm91cF9pZBgBIAEoDRIjCgpvd25l",
-            "cl90eXBlGAMgASgOMg8ubXJ1di5Pd25lclR5cGUSEAoIb3duZXJfaWQYAiAB",
-            "KA0iFQoTQXNzaWduT3duZXJSZXNwb25zZSIjCg9HZXRPd25lclJlcXVlc3QS",
-            "EAoIZ3JvdXBfaWQYASABKA0iSQoQR2V0T3duZXJSZXNwb25zZRIQCghvd25l",
-            "cl9pZBgBIAEoDRIjCgpvd25lcl90eXBlGAIgASgOMg8ubXJ1di5Pd25lclR5",
-            "cGUiNwoQQWRkTWVtYmVyUmVxdWVzdBIQCghncm91cF9pZBgBIAEoDRIRCglt",
-            "ZW1iZXJfaWQYAiABKA0iEwoRQWRkTWVtYmVyUmVzcG9uc2UiJQoRR2V0TWVt",
-            "YmVyc1JlcXVlc3QSEAoIZ3JvdXBfaWQYASABKA0iTwoSR2V0TWVtYmVyc1Jl",
-            "c3BvbnNlEiUKC21lbWJlcl90eXBlGAEgASgOMhAubXJ1di5NZW1iZXJUeXBl",
-            "EhIKCm1lbWJlcl9pZHMYAiADKA0iOgoTUmVtb3ZlTWVtYmVyUmVxdWVzdBIQ",
-            "Cghncm91cF9pZBgBIAEoDRIRCgltZW1iZXJfaWQYAiABKA0iFgoUUmVtb3Zl",
-            "TWVtYmVyUmVzcG9uc2UiSgoUQWRkUGVybWlzc2lvblJlcXVlc3QSEAoIZ3Jv",
-            "dXBfaWQYASABKA0SDAoEbmFtZRgCIAEoCRISCgpkZWZpbml0aW9uGAMgASgJ",
-            "Ii4KFUFkZFBlcm1pc3Npb25SZXNwb25zZRIVCg1wZXJtaXNzaW9uX2lkGAEg",
-            "ASgNIikKFUdldFBlcm1pc3Npb25zUmVxdWVzdBIQCghncm91cF9pZBgBIAEo",
-            "DSKSAQoWR2V0UGVybWlzc2lvbnNSZXNwb25zZRI8CgtwZXJtaXNzaW9ucxgB",
-            "IAMoCzInLm1ydXYuR2V0UGVybWlzc2lvbnNSZXNwb25zZS5QZXJtaXNzaW9u",
-            "GjoKClBlcm1pc3Npb24SCgoCaWQYASABKA0SDAoEbmFtZRgCIAEoCRISCgpk",
-            "ZWZpbml0aW9uGAMgASgJIkIKF1JlbW92ZVBlcm1pc3Npb25SZXF1ZXN0EhAK",
-            "CGdyb3VwX2lkGAEgASgNEhUKDXBlcm1pc3Npb25faWQYAiABKA0iGgoYUmVt",
-            "b3ZlUGVybWlzc2lvblJlc3BvbnNlIjsKEkFkZFN1Ymdyb3VwUmVxdWVzdBIQ",
-            "Cghncm91cF9pZBgBIAEoDRITCgtzdWJncm91cF9pZBgCIAEoDSIVChNBZGRT",
-            "dWJncm91cFJlc3BvbnNlIicKE0dldFN1Ymdyb3Vwc1JlcXVlc3QSEAoIZ3Jv",
-            "dXBfaWQYASABKA0iLAoUR2V0U3ViZ3JvdXBzUmVzcG9uc2USFAoMc3ViZ3Jv",
-            "dXBfaWRzGAEgAygNIj4KFVJlbW92ZVN1Ymdyb3VwUmVxdWVzdBIQCghncm91",
-            "cF9pZBgBIAEoDRITCgtzdWJncm91cF9pZBgCIAEoDSIYChZSZW1vdmVTdWJn",
-            "cm91cFJlc3BvbnNlIl4KEklzUGVybWl0dGVkUmVxdWVzdBIRCgltZW1iZXJf",
-            "aWQYASABKA0SJQoLbWVtYmVyX3R5cGUYAiABKA4yEC5tcnV2Lk1lbWJlclR5",
-            "cGUSDgoGYWN0aW9uGAMgASgJIigKE0lzUGVybWl0dGVkUmVzcG9uc2USEQoJ",
-            "cGVybWl0dGVkGAEgASgIKmsKCU93bmVyVHlwZRIWChJPV05FUl9UWVBFX1VO",
-            "S05PV04QABIWChJPV05FUl9UWVBFX0FDQ09VTlQQARIYChRPV05FUl9UWVBF",
-            "X0NIQVJBQ1RFUhACEhQKEE9XTkVSX1RZUEVfR1JPVVAQAypZCgpNZW1iZXJU",
-            "eXBlEhcKE01FTUJFUl9UWVBFX1VOS05PV04QABIXChNNRU1CRVJfVFlQRV9B",
-            "Q0NPVU5UEAESGQoVTUVNQkVSX1RZUEVfQ0hBUkFDVEVSEAIykBAKEU1ydVZH",
-            "cm91cHNTZXJ2aWNlElYKC0NyZWF0ZUdyb3VwEhgubXJ1di5DcmVhdGVHcm91",
-            "cFJlcXVlc3QaGS5tcnV2LkNyZWF0ZUdyb3VwUmVzcG9uc2UiEoLT5JMCDCIK",
-            "L3YxL2dyb3VwcxJYCghHZXRHcm91cBIVLm1ydXYuR2V0R3JvdXBSZXF1ZXN0",
-            "GhYubXJ1di5HZXRHcm91cFJlc3BvbnNlIh2C0+STAhcSFS92MS9ncm91cHMv",
-            "e2dyb3VwX2lkfRJhCgtVcGRhdGVHcm91cBIYLm1ydXYuVXBkYXRlR3JvdXBS",
-            "ZXF1ZXN0GhkubXJ1di5VcGRhdGVHcm91cFJlc3BvbnNlIh2C0+STAhcyFS92",
-            "MS9ncm91cHMve2dyb3VwX2lkfRJhCgtEZWxldGVHcm91cBIYLm1ydXYuRGVs",
-            "ZXRlR3JvdXBSZXF1ZXN0GhkubXJ1di5EZWxldGVHcm91cFJlc3BvbnNlIh2C",
-            "0+STAhcqFS92MS9ncm91cHMve2dyb3VwX2lkfRJQCglHZXRHcm91cHMSFi5t",
-            "cnV2LkdldEdyb3Vwc1JlcXVlc3QaFy5tcnV2LkdldEdyb3Vwc1Jlc3BvbnNl",
-            "IhKC0+STAgwSCi92MS9ncm91cHMSZwoLQXNzaWduT3duZXISGC5tcnV2LkFz",
-            "c2lnbk93bmVyUmVxdWVzdBoZLm1ydXYuQXNzaWduT3duZXJSZXNwb25zZSIj",
-            "gtPkkwIdGhsvdjEvZ3JvdXBzL3tncm91cF9pZH0vb3duZXISXgoIR2V0T3du",
-            "ZXISFS5tcnV2LkdldE93bmVyUmVxdWVzdBoWLm1ydXYuR2V0T3duZXJSZXNw",
-            "b25zZSIjgtPkkwIdEhsvdjEvZ3JvdXBzL3tncm91cF9pZH0vb3duZXISbwoJ",
-            "QWRkTWVtYmVyEhYubXJ1di5BZGRNZW1iZXJSZXF1ZXN0GhcubXJ1di5BZGRN",
-            "ZW1iZXJSZXNwb25zZSIxgtPkkwIrIikvdjEvZ3JvdXBzL3tncm91cF9pZH0v",
-            "bWVtYmVycy97bWVtYmVyX2lkfRJmCgpHZXRNZW1iZXJzEhcubXJ1di5HZXRN",
-            "ZW1iZXJzUmVxdWVzdBoYLm1ydXYuR2V0TWVtYmVyc1Jlc3BvbnNlIiWC0+ST",
-            "Ah8SHS92MS9ncm91cHMve2dyb3VwX2lkfS9tZW1iZXJzEngKDFJlbW92ZU1l",
-            "bWJlchIZLm1ydXYuUmVtb3ZlTWVtYmVyUmVxdWVzdBoaLm1ydXYuUmVtb3Zl",
-            "TWVtYmVyUmVzcG9uc2UiMYLT5JMCKyopL3YxL2dyb3Vwcy97Z3JvdXBfaWR9",
-            "L21lbWJlcnMve21lbWJlcl9pZH0ScwoNQWRkUGVybWlzc2lvbhIaLm1ydXYu",
-            "QWRkUGVybWlzc2lvblJlcXVlc3QaGy5tcnV2LkFkZFBlcm1pc3Npb25SZXNw",
-            "b25zZSIpgtPkkwIjIiEvdjEvZ3JvdXBzL3tncm91cF9pZH0vcGVybWlzc2lv",
-            "bnMSdgoOR2V0UGVybWlzc2lvbnMSGy5tcnV2LkdldFBlcm1pc3Npb25zUmVx",
-            "dWVzdBocLm1ydXYuR2V0UGVybWlzc2lvbnNSZXNwb25zZSIpgtPkkwIjEiEv",
-            "djEvZ3JvdXBzL3tncm91cF9pZH0vcGVybWlzc2lvbnMSfAoQUmVtb3ZlUGVy",
-            "bWlzc2lvbhIdLm1ydXYuUmVtb3ZlUGVybWlzc2lvblJlcXVlc3QaHi5tcnV2",
-            "LlJlbW92ZVBlcm1pc3Npb25SZXNwb25zZSIpgtPkkwIjKiEvdjEvZ3JvdXBz",
-            "L3tncm91cF9pZH0vcGVybWlzc2lvbnMSeQoLQWRkU3ViZ3JvdXASGC5tcnV2",
-            "LkFkZFN1Ymdyb3VwUmVxdWVzdBoZLm1ydXYuQWRkU3ViZ3JvdXBSZXNwb25z",
-            "ZSI1gtPkkwIvIi0vdjEvZ3JvdXBzL3tncm91cF9pZH0vc3ViZ3JvdXBzL3tz",
-            "dWJncm91cF9pZH0SbgoMR2V0U3ViZ3JvdXBzEhkubXJ1di5HZXRTdWJncm91",
-            "cHNSZXF1ZXN0GhoubXJ1di5HZXRTdWJncm91cHNSZXNwb25zZSIngtPkkwIh",
-            "Eh8vdjEvZ3JvdXBzL3tncm91cF9pZH0vc3ViZ3JvdXBzEoIBCg5SZW1vdmVT",
-            "dWJncm91cBIbLm1ydXYuUmVtb3ZlU3ViZ3JvdXBSZXF1ZXN0GhwubXJ1di5S",
-            "ZW1vdmVTdWJncm91cFJlc3BvbnNlIjWC0+STAi8qLS92MS9ncm91cHMve2dy",
-            "b3VwX2lkfS9zdWJncm91cHMve3N1Ymdyb3VwX2lkfRJ0CgtJc1Blcm1pdHRl",
-            "ZBIYLm1ydXYuSXNQZXJtaXR0ZWRSZXF1ZXN0GhkubXJ1di5Jc1Blcm1pdHRl",
-            "ZFJlc3BvbnNlIjCC0+STAioSKC92MS9ncm91cHMvbWVtYmVycy97bWVtYmVy",
-            "X2lkfS9wZXJtaXR0ZWQSZgoQR2V0U2VydmljZVN0YXR1cxIaLm1ydXYuU2Vy",
-            "dmljZVN0YXR1c1JlcXVlc3QaGy5tcnV2LlNlcnZpY2VTdGF0dXNSZXNwb25z",
-            "ZSIZgtPkkwITEhEvdjEvZ3JvdXBzL3N0YXR1cxJcChFHZXRTZXJ2aWNlVmVy",
-            "c2lvbhIULm1ydXYuVmVyc2lvblJlcXVlc3QaFS5tcnV2LlZlcnNpb25SZXNw",
-            "b25zZSIagtPkkwIUEhIvdjEvZ3JvdXBzL3ZlcnNpb25CJlokZ2l0aHViLmNv",
-            "bS9NcnVWLVJQL21ydXYtcGItZ28vZ3JvdXBzYgZwcm90bzM="));
+            "YXRpb25zLnByb3RvGhNjb21tb24vaGVhbHRoLnByb3RvIjcKEkNyZWF0ZUdy",
+            "b3VwUmVxdWVzdBIMCgRuYW1lGAEgASgJEhMKC2Rlc2NyaXB0aW9uGAIgASgJ",
+            "IicKE0NyZWF0ZUdyb3VwUmVzcG9uc2USEAoIZ3JvdXBfaWQYASABKA0iIwoP",
+            "R2V0R3JvdXBSZXF1ZXN0EhAKCGdyb3VwX2lkGAEgASgNIjUKEEdldEdyb3Vw",
+            "UmVzcG9uc2USDAoEbmFtZRgBIAEoCRITCgtkZXNjcmlwdGlvbhgCIAEoCSJJ",
+            "ChJVcGRhdGVHcm91cFJlcXVlc3QSEAoIZ3JvdXBfaWQYASABKA0SDAoEbmFt",
+            "ZRgCIAEoCRITCgtkZXNjcmlwdGlvbhgDIAEoCSIVChNVcGRhdGVHcm91cFJl",
+            "c3BvbnNlIiYKEkRlbGV0ZUdyb3VwUmVxdWVzdBIQCghncm91cF9pZBgBIAEo",
+            "DSIVChNEZWxldGVHcm91cFJlc3BvbnNlIjUKEEdldEdyb3Vwc1JlcXVlc3QS",
+            "DQoFbGltaXQYASABKA0SEgoKYmVnaW5fZnJvbRgCIAEoDSJ6ChFHZXRHcm91",
+            "cHNSZXNwb25zZRItCgZncm91cHMYASADKAsyHS5tcnV2LkdldEdyb3Vwc1Jl",
+            "c3BvbnNlLkdyb3VwGjYKBUdyb3VwEgoKAmlkGAEgASgNEgwKBG5hbWUYAiAB",
+            "KAkSEwoLZGVzY3JpcHRpb24YAyABKAkiXQoSQXNzaWduT3duZXJSZXF1ZXN0",
+            "EhAKCGdyb3VwX2lkGAEgASgNEiMKCm93bmVyX3R5cGUYAyABKA4yDy5tcnV2",
+            "Lk93bmVyVHlwZRIQCghvd25lcl9pZBgCIAEoDSIVChNBc3NpZ25Pd25lclJl",
+            "c3BvbnNlIiMKD0dldE93bmVyUmVxdWVzdBIQCghncm91cF9pZBgBIAEoDSJJ",
+            "ChBHZXRPd25lclJlc3BvbnNlEhAKCG93bmVyX2lkGAEgASgNEiMKCm93bmVy",
+            "X3R5cGUYAiABKA4yDy5tcnV2Lk93bmVyVHlwZSI3ChBBZGRNZW1iZXJSZXF1",
+            "ZXN0EhAKCGdyb3VwX2lkGAEgASgNEhEKCW1lbWJlcl9pZBgCIAEoDSITChFB",
+            "ZGRNZW1iZXJSZXNwb25zZSIlChFHZXRNZW1iZXJzUmVxdWVzdBIQCghncm91",
+            "cF9pZBgBIAEoDSJPChJHZXRNZW1iZXJzUmVzcG9uc2USJQoLbWVtYmVyX3R5",
+            "cGUYASABKA4yEC5tcnV2Lk1lbWJlclR5cGUSEgoKbWVtYmVyX2lkcxgCIAMo",
+            "DSI6ChNSZW1vdmVNZW1iZXJSZXF1ZXN0EhAKCGdyb3VwX2lkGAEgASgNEhEK",
+            "CW1lbWJlcl9pZBgCIAEoDSIWChRSZW1vdmVNZW1iZXJSZXNwb25zZSJKChRB",
+            "ZGRQZXJtaXNzaW9uUmVxdWVzdBIQCghncm91cF9pZBgBIAEoDRIMCgRuYW1l",
+            "GAIgASgJEhIKCmRlZmluaXRpb24YAyABKAkiLgoVQWRkUGVybWlzc2lvblJl",
+            "c3BvbnNlEhUKDXBlcm1pc3Npb25faWQYASABKA0iKQoVR2V0UGVybWlzc2lv",
+            "bnNSZXF1ZXN0EhAKCGdyb3VwX2lkGAEgASgNIpIBChZHZXRQZXJtaXNzaW9u",
+            "c1Jlc3BvbnNlEjwKC3Blcm1pc3Npb25zGAEgAygLMicubXJ1di5HZXRQZXJt",
+            "aXNzaW9uc1Jlc3BvbnNlLlBlcm1pc3Npb24aOgoKUGVybWlzc2lvbhIKCgJp",
+            "ZBgBIAEoDRIMCgRuYW1lGAIgASgJEhIKCmRlZmluaXRpb24YAyABKAkiQgoX",
+            "UmVtb3ZlUGVybWlzc2lvblJlcXVlc3QSEAoIZ3JvdXBfaWQYASABKA0SFQoN",
+            "cGVybWlzc2lvbl9pZBgCIAEoDSIaChhSZW1vdmVQZXJtaXNzaW9uUmVzcG9u",
+            "c2UiOwoSQWRkU3ViZ3JvdXBSZXF1ZXN0EhAKCGdyb3VwX2lkGAEgASgNEhMK",
+            "C3N1Ymdyb3VwX2lkGAIgASgNIhUKE0FkZFN1Ymdyb3VwUmVzcG9uc2UiJwoT",
+            "R2V0U3ViZ3JvdXBzUmVxdWVzdBIQCghncm91cF9pZBgBIAEoDSIsChRHZXRT",
+            "dWJncm91cHNSZXNwb25zZRIUCgxzdWJncm91cF9pZHMYASADKA0iPgoVUmVt",
+            "b3ZlU3ViZ3JvdXBSZXF1ZXN0EhAKCGdyb3VwX2lkGAEgASgNEhMKC3N1Ymdy",
+            "b3VwX2lkGAIgASgNIhgKFlJlbW92ZVN1Ymdyb3VwUmVzcG9uc2UiXgoSSXNQ",
+            "ZXJtaXR0ZWRSZXF1ZXN0EhEKCW1lbWJlcl9pZBgBIAEoDRIlCgttZW1iZXJf",
+            "dHlwZRgCIAEoDjIQLm1ydXYuTWVtYmVyVHlwZRIOCgZhY3Rpb24YAyABKAki",
+            "KAoTSXNQZXJtaXR0ZWRSZXNwb25zZRIRCglwZXJtaXR0ZWQYASABKAgqawoJ",
+            "T3duZXJUeXBlEhYKEk9XTkVSX1RZUEVfVU5LTk9XThAAEhYKEk9XTkVSX1RZ",
+            "UEVfQUNDT1VOVBABEhgKFE9XTkVSX1RZUEVfQ0hBUkFDVEVSEAISFAoQT1dO",
+            "RVJfVFlQRV9HUk9VUBADKlkKCk1lbWJlclR5cGUSFwoTTUVNQkVSX1RZUEVf",
+            "VU5LTk9XThAAEhcKE01FTUJFUl9UWVBFX0FDQ09VTlQQARIZChVNRU1CRVJf",
+            "VFlQRV9DSEFSQUNURVIQAjKQEAoRTXJ1Vkdyb3Vwc1NlcnZpY2USVgoLQ3Jl",
+            "YXRlR3JvdXASGC5tcnV2LkNyZWF0ZUdyb3VwUmVxdWVzdBoZLm1ydXYuQ3Jl",
+            "YXRlR3JvdXBSZXNwb25zZSISgtPkkwIMIgovdjEvZ3JvdXBzElgKCEdldEdy",
+            "b3VwEhUubXJ1di5HZXRHcm91cFJlcXVlc3QaFi5tcnV2LkdldEdyb3VwUmVz",
+            "cG9uc2UiHYLT5JMCFxIVL3YxL2dyb3Vwcy97Z3JvdXBfaWR9EmEKC1VwZGF0",
+            "ZUdyb3VwEhgubXJ1di5VcGRhdGVHcm91cFJlcXVlc3QaGS5tcnV2LlVwZGF0",
+            "ZUdyb3VwUmVzcG9uc2UiHYLT5JMCFzIVL3YxL2dyb3Vwcy97Z3JvdXBfaWR9",
+            "EmEKC0RlbGV0ZUdyb3VwEhgubXJ1di5EZWxldGVHcm91cFJlcXVlc3QaGS5t",
+            "cnV2LkRlbGV0ZUdyb3VwUmVzcG9uc2UiHYLT5JMCFyoVL3YxL2dyb3Vwcy97",
+            "Z3JvdXBfaWR9ElAKCUdldEdyb3VwcxIWLm1ydXYuR2V0R3JvdXBzUmVxdWVz",
+            "dBoXLm1ydXYuR2V0R3JvdXBzUmVzcG9uc2UiEoLT5JMCDBIKL3YxL2dyb3Vw",
+            "cxJnCgtBc3NpZ25Pd25lchIYLm1ydXYuQXNzaWduT3duZXJSZXF1ZXN0Ghku",
+            "bXJ1di5Bc3NpZ25Pd25lclJlc3BvbnNlIiOC0+STAh0aGy92MS9ncm91cHMv",
+            "e2dyb3VwX2lkfS9vd25lchJeCghHZXRPd25lchIVLm1ydXYuR2V0T3duZXJS",
+            "ZXF1ZXN0GhYubXJ1di5HZXRPd25lclJlc3BvbnNlIiOC0+STAh0SGy92MS9n",
+            "cm91cHMve2dyb3VwX2lkfS9vd25lchJvCglBZGRNZW1iZXISFi5tcnV2LkFk",
+            "ZE1lbWJlclJlcXVlc3QaFy5tcnV2LkFkZE1lbWJlclJlc3BvbnNlIjGC0+ST",
+            "AisiKS92MS9ncm91cHMve2dyb3VwX2lkfS9tZW1iZXJzL3ttZW1iZXJfaWR9",
+            "EmYKCkdldE1lbWJlcnMSFy5tcnV2LkdldE1lbWJlcnNSZXF1ZXN0GhgubXJ1",
+            "di5HZXRNZW1iZXJzUmVzcG9uc2UiJYLT5JMCHxIdL3YxL2dyb3Vwcy97Z3Jv",
+            "dXBfaWR9L21lbWJlcnMSeAoMUmVtb3ZlTWVtYmVyEhkubXJ1di5SZW1vdmVN",
+            "ZW1iZXJSZXF1ZXN0GhoubXJ1di5SZW1vdmVNZW1iZXJSZXNwb25zZSIxgtPk",
+            "kwIrKikvdjEvZ3JvdXBzL3tncm91cF9pZH0vbWVtYmVycy97bWVtYmVyX2lk",
+            "fRJzCg1BZGRQZXJtaXNzaW9uEhoubXJ1di5BZGRQZXJtaXNzaW9uUmVxdWVz",
+            "dBobLm1ydXYuQWRkUGVybWlzc2lvblJlc3BvbnNlIimC0+STAiMiIS92MS9n",
+            "cm91cHMve2dyb3VwX2lkfS9wZXJtaXNzaW9ucxJ2Cg5HZXRQZXJtaXNzaW9u",
+            "cxIbLm1ydXYuR2V0UGVybWlzc2lvbnNSZXF1ZXN0GhwubXJ1di5HZXRQZXJt",
+            "aXNzaW9uc1Jlc3BvbnNlIimC0+STAiMSIS92MS9ncm91cHMve2dyb3VwX2lk",
+            "fS9wZXJtaXNzaW9ucxJ8ChBSZW1vdmVQZXJtaXNzaW9uEh0ubXJ1di5SZW1v",
+            "dmVQZXJtaXNzaW9uUmVxdWVzdBoeLm1ydXYuUmVtb3ZlUGVybWlzc2lvblJl",
+            "c3BvbnNlIimC0+STAiMqIS92MS9ncm91cHMve2dyb3VwX2lkfS9wZXJtaXNz",
+            "aW9ucxJ5CgtBZGRTdWJncm91cBIYLm1ydXYuQWRkU3ViZ3JvdXBSZXF1ZXN0",
+            "GhkubXJ1di5BZGRTdWJncm91cFJlc3BvbnNlIjWC0+STAi8iLS92MS9ncm91",
+            "cHMve2dyb3VwX2lkfS9zdWJncm91cHMve3N1Ymdyb3VwX2lkfRJuCgxHZXRT",
+            "dWJncm91cHMSGS5tcnV2LkdldFN1Ymdyb3Vwc1JlcXVlc3QaGi5tcnV2Lkdl",
+            "dFN1Ymdyb3Vwc1Jlc3BvbnNlIieC0+STAiESHy92MS9ncm91cHMve2dyb3Vw",
+            "X2lkfS9zdWJncm91cHMSggEKDlJlbW92ZVN1Ymdyb3VwEhsubXJ1di5SZW1v",
+            "dmVTdWJncm91cFJlcXVlc3QaHC5tcnV2LlJlbW92ZVN1Ymdyb3VwUmVzcG9u",
+            "c2UiNYLT5JMCLyotL3YxL2dyb3Vwcy97Z3JvdXBfaWR9L3N1Ymdyb3Vwcy97",
+            "c3ViZ3JvdXBfaWR9EnQKC0lzUGVybWl0dGVkEhgubXJ1di5Jc1Blcm1pdHRl",
+            "ZFJlcXVlc3QaGS5tcnV2LklzUGVybWl0dGVkUmVzcG9uc2UiMILT5JMCKhIo",
+            "L3YxL2dyb3Vwcy9tZW1iZXJzL3ttZW1iZXJfaWR9L3Blcm1pdHRlZBJmChBH",
+            "ZXRTZXJ2aWNlU3RhdHVzEhoubXJ1di5TZXJ2aWNlU3RhdHVzUmVxdWVzdBob",
+            "Lm1ydXYuU2VydmljZVN0YXR1c1Jlc3BvbnNlIhmC0+STAhMSES92MS9ncm91",
+            "cHMvc3RhdHVzElwKEUdldFNlcnZpY2VWZXJzaW9uEhQubXJ1di5WZXJzaW9u",
+            "UmVxdWVzdBoVLm1ydXYuVmVyc2lvblJlc3BvbnNlIhqC0+STAhQSEi92MS9n",
+            "cm91cHMvdmVyc2lvbkImWiRnaXRodWIuY29tL01ydVYtUlAvbXJ1di1wYi1n",
+            "by9ncm91cHNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, global::Mruv.HealthReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Mruv.OwnerType), typeof(global::Mruv.MemberType), }, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.CreateGroupRequest), global::Mruv.CreateGroupRequest.Parser, new[]{ "Name" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.CreateGroupRequest), global::Mruv.CreateGroupRequest.Parser, new[]{ "Name", "Description" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.CreateGroupResponse), global::Mruv.CreateGroupResponse.Parser, new[]{ "GroupId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetGroupRequest), global::Mruv.GetGroupRequest.Parser, new[]{ "GroupId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetGroupResponse), global::Mruv.GetGroupResponse.Parser, new[]{ "Name" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.UpdateGroupRequest), global::Mruv.UpdateGroupRequest.Parser, new[]{ "GroupId", "Name" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetGroupResponse), global::Mruv.GetGroupResponse.Parser, new[]{ "Name", "Description" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.UpdateGroupRequest), global::Mruv.UpdateGroupRequest.Parser, new[]{ "GroupId", "Name", "Description" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.UpdateGroupResponse), global::Mruv.UpdateGroupResponse.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.DeleteGroupRequest), global::Mruv.DeleteGroupRequest.Parser, new[]{ "GroupId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.DeleteGroupResponse), global::Mruv.DeleteGroupResponse.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetGroupsRequest), global::Mruv.GetGroupsRequest.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetGroupsResponse), global::Mruv.GetGroupsResponse.Parser, new[]{ "Groups" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetGroupsRequest), global::Mruv.GetGroupsRequest.Parser, new[]{ "Limit", "BeginFrom" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetGroupsResponse), global::Mruv.GetGroupsResponse.Parser, new[]{ "Groups" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetGroupsResponse.Types.Group), global::Mruv.GetGroupsResponse.Types.Group.Parser, new[]{ "Id", "Name", "Description" }, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.AssignOwnerRequest), global::Mruv.AssignOwnerRequest.Parser, new[]{ "GroupId", "OwnerType", "OwnerId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.AssignOwnerResponse), global::Mruv.AssignOwnerResponse.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetOwnerRequest), global::Mruv.GetOwnerRequest.Parser, new[]{ "GroupId" }, null, null, null),
@@ -209,6 +213,7 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public CreateGroupRequest(CreateGroupRequest other) : this() {
       name_ = other.name_;
+      description_ = other.description_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -228,6 +233,17 @@ namespace Mruv {
       }
     }
 
+    /// <summary>Field number for the "description" field.</summary>
+    public const int DescriptionFieldNumber = 2;
+    private string description_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Description {
+      get { return description_; }
+      set {
+        description_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as CreateGroupRequest);
@@ -242,6 +258,7 @@ namespace Mruv {
         return true;
       }
       if (Name != other.Name) return false;
+      if (Description != other.Description) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -249,6 +266,7 @@ namespace Mruv {
     public override int GetHashCode() {
       int hash = 1;
       if (Name.Length != 0) hash ^= Name.GetHashCode();
+      if (Description.Length != 0) hash ^= Description.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -266,6 +284,10 @@ namespace Mruv {
         output.WriteRawTag(10);
         output.WriteString(Name);
       }
+      if (Description.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Description);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -276,6 +298,9 @@ namespace Mruv {
       int size = 0;
       if (Name.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+      }
+      if (Description.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Description);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -291,6 +316,9 @@ namespace Mruv {
       if (other.Name.Length != 0) {
         Name = other.Name;
       }
+      if (other.Description.Length != 0) {
+        Description = other.Description;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -304,6 +332,10 @@ namespace Mruv {
             break;
           case 10: {
             Name = input.ReadString();
+            break;
+          }
+          case 18: {
+            Description = input.ReadString();
             break;
           }
         }
@@ -605,6 +637,7 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GetGroupResponse(GetGroupResponse other) : this() {
       name_ = other.name_;
+      description_ = other.description_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -624,6 +657,17 @@ namespace Mruv {
       }
     }
 
+    /// <summary>Field number for the "description" field.</summary>
+    public const int DescriptionFieldNumber = 2;
+    private string description_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Description {
+      get { return description_; }
+      set {
+        description_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as GetGroupResponse);
@@ -638,6 +682,7 @@ namespace Mruv {
         return true;
       }
       if (Name != other.Name) return false;
+      if (Description != other.Description) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -645,6 +690,7 @@ namespace Mruv {
     public override int GetHashCode() {
       int hash = 1;
       if (Name.Length != 0) hash ^= Name.GetHashCode();
+      if (Description.Length != 0) hash ^= Description.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -662,6 +708,10 @@ namespace Mruv {
         output.WriteRawTag(10);
         output.WriteString(Name);
       }
+      if (Description.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Description);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -672,6 +722,9 @@ namespace Mruv {
       int size = 0;
       if (Name.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+      }
+      if (Description.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Description);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -687,6 +740,9 @@ namespace Mruv {
       if (other.Name.Length != 0) {
         Name = other.Name;
       }
+      if (other.Description.Length != 0) {
+        Description = other.Description;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -700,6 +756,10 @@ namespace Mruv {
             break;
           case 10: {
             Name = input.ReadString();
+            break;
+          }
+          case 18: {
+            Description = input.ReadString();
             break;
           }
         }
@@ -738,6 +798,7 @@ namespace Mruv {
     public UpdateGroupRequest(UpdateGroupRequest other) : this() {
       groupId_ = other.groupId_;
       name_ = other.name_;
+      description_ = other.description_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -768,6 +829,17 @@ namespace Mruv {
       }
     }
 
+    /// <summary>Field number for the "description" field.</summary>
+    public const int DescriptionFieldNumber = 3;
+    private string description_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Description {
+      get { return description_; }
+      set {
+        description_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as UpdateGroupRequest);
@@ -783,6 +855,7 @@ namespace Mruv {
       }
       if (GroupId != other.GroupId) return false;
       if (Name != other.Name) return false;
+      if (Description != other.Description) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -791,6 +864,7 @@ namespace Mruv {
       int hash = 1;
       if (GroupId != 0) hash ^= GroupId.GetHashCode();
       if (Name.Length != 0) hash ^= Name.GetHashCode();
+      if (Description.Length != 0) hash ^= Description.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -812,6 +886,10 @@ namespace Mruv {
         output.WriteRawTag(18);
         output.WriteString(Name);
       }
+      if (Description.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Description);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -825,6 +903,9 @@ namespace Mruv {
       }
       if (Name.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+      }
+      if (Description.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Description);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -843,6 +924,9 @@ namespace Mruv {
       if (other.Name.Length != 0) {
         Name = other.Name;
       }
+      if (other.Description.Length != 0) {
+        Description = other.Description;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -860,6 +944,10 @@ namespace Mruv {
           }
           case 18: {
             Name = input.ReadString();
+            break;
+          }
+          case 26: {
+            Description = input.ReadString();
             break;
           }
         }
@@ -1236,12 +1324,36 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GetGroupsRequest(GetGroupsRequest other) : this() {
+      limit_ = other.limit_;
+      beginFrom_ = other.beginFrom_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GetGroupsRequest Clone() {
       return new GetGroupsRequest(this);
+    }
+
+    /// <summary>Field number for the "limit" field.</summary>
+    public const int LimitFieldNumber = 1;
+    private uint limit_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint Limit {
+      get { return limit_; }
+      set {
+        limit_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "begin_from" field.</summary>
+    public const int BeginFromFieldNumber = 2;
+    private uint beginFrom_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint BeginFrom {
+      get { return beginFrom_; }
+      set {
+        beginFrom_ = value;
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1257,12 +1369,16 @@ namespace Mruv {
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if (Limit != other.Limit) return false;
+      if (BeginFrom != other.BeginFrom) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
+      if (Limit != 0) hash ^= Limit.GetHashCode();
+      if (BeginFrom != 0) hash ^= BeginFrom.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1276,6 +1392,14 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+      if (Limit != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Limit);
+      }
+      if (BeginFrom != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(BeginFrom);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1284,6 +1408,12 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
+      if (Limit != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Limit);
+      }
+      if (BeginFrom != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(BeginFrom);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -1294,6 +1424,12 @@ namespace Mruv {
     public void MergeFrom(GetGroupsRequest other) {
       if (other == null) {
         return;
+      }
+      if (other.Limit != 0) {
+        Limit = other.Limit;
+      }
+      if (other.BeginFrom != 0) {
+        BeginFrom = other.BeginFrom;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1306,6 +1442,14 @@ namespace Mruv {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
+          case 8: {
+            Limit = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            BeginFrom = input.ReadUInt32();
+            break;
+          }
         }
       }
     }
@@ -1351,11 +1495,11 @@ namespace Mruv {
 
     /// <summary>Field number for the "groups" field.</summary>
     public const int GroupsFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Mruv.GetGroupResponse> _repeated_groups_codec
-        = pb::FieldCodec.ForMessage(10, global::Mruv.GetGroupResponse.Parser);
-    private readonly pbc::RepeatedField<global::Mruv.GetGroupResponse> groups_ = new pbc::RepeatedField<global::Mruv.GetGroupResponse>();
+    private static readonly pb::FieldCodec<global::Mruv.GetGroupsResponse.Types.Group> _repeated_groups_codec
+        = pb::FieldCodec.ForMessage(10, global::Mruv.GetGroupsResponse.Types.Group.Parser);
+    private readonly pbc::RepeatedField<global::Mruv.GetGroupsResponse.Types.Group> groups_ = new pbc::RepeatedField<global::Mruv.GetGroupsResponse.Types.Group>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Mruv.GetGroupResponse> Groups {
+    public pbc::RepeatedField<global::Mruv.GetGroupsResponse.Types.Group> Groups {
       get { return groups_; }
     }
 
@@ -1433,6 +1577,198 @@ namespace Mruv {
         }
       }
     }
+
+    #region Nested types
+    /// <summary>Container for nested types declared in the GetGroupsResponse message type.</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static partial class Types {
+      public sealed partial class Group : pb::IMessage<Group> {
+        private static readonly pb::MessageParser<Group> _parser = new pb::MessageParser<Group>(() => new Group());
+        private pb::UnknownFieldSet _unknownFields;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<Group> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Mruv.GetGroupsResponse.Descriptor.NestedTypes[0]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public Group() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public Group(Group other) : this() {
+          id_ = other.id_;
+          name_ = other.name_;
+          description_ = other.description_;
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public Group Clone() {
+          return new Group(this);
+        }
+
+        /// <summary>Field number for the "id" field.</summary>
+        public const int IdFieldNumber = 1;
+        private uint id_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public uint Id {
+          get { return id_; }
+          set {
+            id_ = value;
+          }
+        }
+
+        /// <summary>Field number for the "name" field.</summary>
+        public const int NameFieldNumber = 2;
+        private string name_ = "";
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public string Name {
+          get { return name_; }
+          set {
+            name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+          }
+        }
+
+        /// <summary>Field number for the "description" field.</summary>
+        public const int DescriptionFieldNumber = 3;
+        private string description_ = "";
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public string Description {
+          get { return description_; }
+          set {
+            description_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as Group);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(Group other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if (Id != other.Id) return false;
+          if (Name != other.Name) return false;
+          if (Description != other.Description) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          if (Id != 0) hash ^= Id.GetHashCode();
+          if (Name.Length != 0) hash ^= Name.GetHashCode();
+          if (Description.Length != 0) hash ^= Description.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+          if (Id != 0) {
+            output.WriteRawTag(8);
+            output.WriteUInt32(Id);
+          }
+          if (Name.Length != 0) {
+            output.WriteRawTag(18);
+            output.WriteString(Name);
+          }
+          if (Description.Length != 0) {
+            output.WriteRawTag(26);
+            output.WriteString(Description);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          if (Id != 0) {
+            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Id);
+          }
+          if (Name.Length != 0) {
+            size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+          }
+          if (Description.Length != 0) {
+            size += 1 + pb::CodedOutputStream.ComputeStringSize(Description);
+          }
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(Group other) {
+          if (other == null) {
+            return;
+          }
+          if (other.Id != 0) {
+            Id = other.Id;
+          }
+          if (other.Name.Length != 0) {
+            Name = other.Name;
+          }
+          if (other.Description.Length != 0) {
+            Description = other.Description;
+          }
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 8: {
+                Id = input.ReadUInt32();
+                break;
+              }
+              case 18: {
+                Name = input.ReadString();
+                break;
+              }
+              case 26: {
+                Description = input.ReadString();
+                break;
+              }
+            }
+          }
+        }
+
+      }
+
+    }
+    #endregion
 
   }
 
