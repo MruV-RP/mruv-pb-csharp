@@ -32,46 +32,47 @@ namespace Mruv.Entrances {
             "RW50cmFuY2VEb29yEgwKBG5hbWUYASABKAkSDwoHbWVzc2FnZRgCIAEoCRIM",
             "CgRpY29uGAMgASgFEg4KBm1hcmtlchgEIAEoBRIJCgF4GAUgASgCEgkKAXkY",
             "BiABKAISCQoBehgHIAEoAhIKCgJ2dxgIIAEoBRILCgNpbnQYCSABKAUSEQoJ",
-            "ZXN0YXRlX2lkGAogASgNIhcKFUNyZWF0ZUVudHJhbmNlUmVxdWVzdCIYChZD",
-            "cmVhdGVFbnRyYW5jZVJlc3BvbnNlIiAKEkdldEVudHJhbmNlUmVxdWVzdBIK",
-            "CgJpZBgBIAEoDSIVChNHZXRFbnRyYW5jZVJlc3BvbnNlIiMKFVVwZGF0ZUVu",
-            "dHJhbmNlUmVxdWVzdBIKCgJpZBgBIAEoDSIYChZVcGRhdGVFbnRyYW5jZVJl",
-            "c3BvbnNlIiMKFURlbGV0ZUVudHJhbmNlUmVxdWVzdBIKCgJpZBgBIAEoDSIY",
-            "ChZEZWxldGVFbnRyYW5jZVJlc3BvbnNlIhkKC0xvY2tSZXF1ZXN0EgoKAmlk",
-            "GAEgASgNIg4KDExvY2tSZXNwb25zZSIbCg1VbmxvY2tSZXF1ZXN0EgoKAmlk",
-            "GAEgASgNIhAKDlVubG9ja1Jlc3BvbnNlIlMKGkZpbmROZWFyZXN0RW50cmFu",
-            "Y2VSZXF1ZXN0EgkKAXgYASABKAISCQoBeRgCIAEoAhIJCgF6GAMgASgCEhQK",
-            "DG1heF9kaXN0YW5jZRgEIAEoAiI7ChtGaW5kTmVhcmVzdEVudHJhbmNlUmVz",
-            "cG9uc2USCgoCaWQYASABKA0SEAoIZGlzdGFuY2UYAiABKAIiGgoMRW50ZXJS",
-            "ZXF1ZXN0EgoKAmlkGAEgASgNIg8KDUVudGVyUmVzcG9uc2UyxAcKFE1ydVZF",
-            "bnRyYW5jZXNTZXJ2aWNlEnYKDkNyZWF0ZUVudHJhbmNlEiUubXJ1di5lbnRy",
-            "YW5jZXMuQ3JlYXRlRW50cmFuY2VSZXF1ZXN0GiYubXJ1di5lbnRyYW5jZXMu",
-            "Q3JlYXRlRW50cmFuY2VSZXNwb25zZSIVgtPkkwIPIg0vdjEvZW50cmFuY2Vz",
-            "EnIKC0dldEVudHJhbmNlEiIubXJ1di5lbnRyYW5jZXMuR2V0RW50cmFuY2VS",
-            "ZXF1ZXN0GiMubXJ1di5lbnRyYW5jZXMuR2V0RW50cmFuY2VSZXNwb25zZSIa",
-            "gtPkkwIUEhIvdjEvZW50cmFuY2VzL3tpZH0SewoOVXBkYXRlRW50cmFuY2US",
-            "JS5tcnV2LmVudHJhbmNlcy5VcGRhdGVFbnRyYW5jZVJlcXVlc3QaJi5tcnV2",
-            "LmVudHJhbmNlcy5VcGRhdGVFbnRyYW5jZVJlc3BvbnNlIhqC0+STAhQyEi92",
-            "MS9lbnRyYW5jZXMve2lkfRJ7Cg5EZWxldGVFbnRyYW5jZRIlLm1ydXYuZW50",
-            "cmFuY2VzLkRlbGV0ZUVudHJhbmNlUmVxdWVzdBomLm1ydXYuZW50cmFuY2Vz",
-            "LkRlbGV0ZUVudHJhbmNlUmVzcG9uc2UiGoLT5JMCFCoSL3YxL2VudHJhbmNl",
-            "cy97aWR9EmIKBExvY2sSGy5tcnV2LmVudHJhbmNlcy5Mb2NrUmVxdWVzdBoc",
-            "Lm1ydXYuZW50cmFuY2VzLkxvY2tSZXNwb25zZSIfgtPkkwIZIhcvdjEvZW50",
-            "cmFuY2VzL3tpZH0vbG9jaxJqCgZVbmxvY2sSHS5tcnV2LmVudHJhbmNlcy5V",
-            "bmxvY2tSZXF1ZXN0Gh4ubXJ1di5lbnRyYW5jZXMuVW5sb2NrUmVzcG9uc2Ui",
-            "IYLT5JMCGyIZL3YxL2VudHJhbmNlcy97aWR9L3VubG9jaxKNAQoTRmluZE5l",
-            "YXJlc3RFbnRyYW5jZRIqLm1ydXYuZW50cmFuY2VzLkZpbmROZWFyZXN0RW50",
-            "cmFuY2VSZXF1ZXN0GisubXJ1di5lbnRyYW5jZXMuRmluZE5lYXJlc3RFbnRy",
-            "YW5jZVJlc3BvbnNlIh2C0+STAhcSFS92MS9lbnRyYW5jZXMvbmVhcmVzdBJm",
-            "CgVFbnRlchIcLm1ydXYuZW50cmFuY2VzLkVudGVyUmVxdWVzdBodLm1ydXYu",
-            "ZW50cmFuY2VzLkVudGVyUmVzcG9uc2UiIILT5JMCGiIYL3YxL2VudHJhbmNl",
-            "cy97aWR9L2VudGVyQilaJ2dpdGh1Yi5jb20vTXJ1Vi1SUC9tcnV2LXBiLWdv",
-            "L2VudHJhbmNlc2IGcHJvdG8z"));
+            "ZXN0YXRlX2lkGAogASgNIkMKFUNyZWF0ZUVudHJhbmNlUmVxdWVzdBIqCghl",
+            "bnRyYW5jZRgBIAEoCzIYLm1ydXYuZW50cmFuY2VzLkVudHJhbmNlIhgKFkNy",
+            "ZWF0ZUVudHJhbmNlUmVzcG9uc2UiIAoSR2V0RW50cmFuY2VSZXF1ZXN0EgoK",
+            "AmlkGAEgASgNIhUKE0dldEVudHJhbmNlUmVzcG9uc2UiIwoVVXBkYXRlRW50",
+            "cmFuY2VSZXF1ZXN0EgoKAmlkGAEgASgNIhgKFlVwZGF0ZUVudHJhbmNlUmVz",
+            "cG9uc2UiIwoVRGVsZXRlRW50cmFuY2VSZXF1ZXN0EgoKAmlkGAEgASgNIhgK",
+            "FkRlbGV0ZUVudHJhbmNlUmVzcG9uc2UiGQoLTG9ja1JlcXVlc3QSCgoCaWQY",
+            "ASABKA0iDgoMTG9ja1Jlc3BvbnNlIhsKDVVubG9ja1JlcXVlc3QSCgoCaWQY",
+            "ASABKA0iEAoOVW5sb2NrUmVzcG9uc2UiUwoaRmluZE5lYXJlc3RFbnRyYW5j",
+            "ZVJlcXVlc3QSCQoBeBgBIAEoAhIJCgF5GAIgASgCEgkKAXoYAyABKAISFAoM",
+            "bWF4X2Rpc3RhbmNlGAQgASgCIjsKG0ZpbmROZWFyZXN0RW50cmFuY2VSZXNw",
+            "b25zZRIKCgJpZBgBIAEoDRIQCghkaXN0YW5jZRgCIAEoAiIaCgxFbnRlclJl",
+            "cXVlc3QSCgoCaWQYASABKA0iDwoNRW50ZXJSZXNwb25zZTLEBwoUTXJ1VkVu",
+            "dHJhbmNlc1NlcnZpY2USdgoOQ3JlYXRlRW50cmFuY2USJS5tcnV2LmVudHJh",
+            "bmNlcy5DcmVhdGVFbnRyYW5jZVJlcXVlc3QaJi5tcnV2LmVudHJhbmNlcy5D",
+            "cmVhdGVFbnRyYW5jZVJlc3BvbnNlIhWC0+STAg8iDS92MS9lbnRyYW5jZXMS",
+            "cgoLR2V0RW50cmFuY2USIi5tcnV2LmVudHJhbmNlcy5HZXRFbnRyYW5jZVJl",
+            "cXVlc3QaIy5tcnV2LmVudHJhbmNlcy5HZXRFbnRyYW5jZVJlc3BvbnNlIhqC",
+            "0+STAhQSEi92MS9lbnRyYW5jZXMve2lkfRJ7Cg5VcGRhdGVFbnRyYW5jZRIl",
+            "Lm1ydXYuZW50cmFuY2VzLlVwZGF0ZUVudHJhbmNlUmVxdWVzdBomLm1ydXYu",
+            "ZW50cmFuY2VzLlVwZGF0ZUVudHJhbmNlUmVzcG9uc2UiGoLT5JMCFDISL3Yx",
+            "L2VudHJhbmNlcy97aWR9EnsKDkRlbGV0ZUVudHJhbmNlEiUubXJ1di5lbnRy",
+            "YW5jZXMuRGVsZXRlRW50cmFuY2VSZXF1ZXN0GiYubXJ1di5lbnRyYW5jZXMu",
+            "RGVsZXRlRW50cmFuY2VSZXNwb25zZSIagtPkkwIUKhIvdjEvZW50cmFuY2Vz",
+            "L3tpZH0SYgoETG9jaxIbLm1ydXYuZW50cmFuY2VzLkxvY2tSZXF1ZXN0Ghwu",
+            "bXJ1di5lbnRyYW5jZXMuTG9ja1Jlc3BvbnNlIh+C0+STAhkiFy92MS9lbnRy",
+            "YW5jZXMve2lkfS9sb2NrEmoKBlVubG9jaxIdLm1ydXYuZW50cmFuY2VzLlVu",
+            "bG9ja1JlcXVlc3QaHi5tcnV2LmVudHJhbmNlcy5VbmxvY2tSZXNwb25zZSIh",
+            "gtPkkwIbIhkvdjEvZW50cmFuY2VzL3tpZH0vdW5sb2NrEo0BChNGaW5kTmVh",
+            "cmVzdEVudHJhbmNlEioubXJ1di5lbnRyYW5jZXMuRmluZE5lYXJlc3RFbnRy",
+            "YW5jZVJlcXVlc3QaKy5tcnV2LmVudHJhbmNlcy5GaW5kTmVhcmVzdEVudHJh",
+            "bmNlUmVzcG9uc2UiHYLT5JMCFxIVL3YxL2VudHJhbmNlcy9uZWFyZXN0EmYK",
+            "BUVudGVyEhwubXJ1di5lbnRyYW5jZXMuRW50ZXJSZXF1ZXN0Gh0ubXJ1di5l",
+            "bnRyYW5jZXMuRW50ZXJSZXNwb25zZSIggtPkkwIaIhgvdjEvZW50cmFuY2Vz",
+            "L3tpZH0vZW50ZXJCKVonZ2l0aHViLmNvbS9NcnVWLVJQL21ydXYtcGItZ28v",
+            "ZW50cmFuY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Entrances.Entrance), global::Mruv.Entrances.Entrance.Parser, new[]{ "Id", "EstateId", "Out", "In" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Entrances.Entrance.Types.EntranceDoor), global::Mruv.Entrances.Entrance.Types.EntranceDoor.Parser, new[]{ "Name", "Message", "Icon", "Marker", "X", "Y", "Z", "Vw", "Int", "EstateId" }, null, null, null)}),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Entrances.CreateEntranceRequest), global::Mruv.Entrances.CreateEntranceRequest.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Entrances.CreateEntranceRequest), global::Mruv.Entrances.CreateEntranceRequest.Parser, new[]{ "Entrance" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Entrances.CreateEntranceResponse), global::Mruv.Entrances.CreateEntranceResponse.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Entrances.GetEntranceRequest), global::Mruv.Entrances.GetEntranceRequest.Parser, new[]{ "Id" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Entrances.GetEntranceResponse), global::Mruv.Entrances.GetEntranceResponse.Parser, null, null, null, null),
@@ -734,12 +735,24 @@ namespace Mruv.Entrances {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public CreateEntranceRequest(CreateEntranceRequest other) : this() {
+      entrance_ = other.entrance_ != null ? other.entrance_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public CreateEntranceRequest Clone() {
       return new CreateEntranceRequest(this);
+    }
+
+    /// <summary>Field number for the "entrance" field.</summary>
+    public const int EntranceFieldNumber = 1;
+    private global::Mruv.Entrances.Entrance entrance_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Mruv.Entrances.Entrance Entrance {
+      get { return entrance_; }
+      set {
+        entrance_ = value;
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -755,12 +768,14 @@ namespace Mruv.Entrances {
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if (!object.Equals(Entrance, other.Entrance)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
+      if (entrance_ != null) hash ^= Entrance.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -774,6 +789,10 @@ namespace Mruv.Entrances {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+      if (entrance_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Entrance);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -782,6 +801,9 @@ namespace Mruv.Entrances {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
+      if (entrance_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Entrance);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -792,6 +814,12 @@ namespace Mruv.Entrances {
     public void MergeFrom(CreateEntranceRequest other) {
       if (other == null) {
         return;
+      }
+      if (other.entrance_ != null) {
+        if (entrance_ == null) {
+          Entrance = new global::Mruv.Entrances.Entrance();
+        }
+        Entrance.MergeFrom(other.Entrance);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -804,6 +832,13 @@ namespace Mruv.Entrances {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
+          case 10: {
+            if (entrance_ == null) {
+              Entrance = new global::Mruv.Entrances.Entrance();
+            }
+            input.ReadMessage(Entrance);
+            break;
+          }
         }
       }
     }
