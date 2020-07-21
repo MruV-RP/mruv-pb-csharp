@@ -34,52 +34,53 @@ namespace Mruv.Estates {
             "IAEoDSJEChNVcGRhdGVFc3RhdGVSZXF1ZXN0EgoKAmlkGAEgASgNEgwKBG5h",
             "bWUYAiABKAkSEwoLZGVzY3JpcHRpb24YAyABKAkiFgoUVXBkYXRlRXN0YXRl",
             "UmVzcG9uc2UiIQoTRGVsZXRlRXN0YXRlUmVxdWVzdBIKCgJpZBgBIAEoDSIW",
-            "ChREZWxldGVFc3RhdGVSZXNwb25zZSIfChFHZXRFc3RhdGVzUmVxdWVzdBIK",
-            "CgJpZBgBIAEoDSIUChJHZXRFc3RhdGVzUmVzcG9uc2UiNAoOQWRkR2F0ZVJl",
-            "cXVlc3QSEQoJZXN0YXRlX2lkGAEgASgNEg8KB2dhdGVfaWQYAiABKA0iJQoP",
-            "QWRkR2F0ZVJlc3BvbnNlEhIKCmdhdGVfY291bnQYASABKA0iNwoRRGVsZXRl",
-            "R2F0ZVJlcXVlc3QSEQoJZXN0YXRlX2lkGAEgASgNEg8KB2dhdGVfaWQYAiAB",
-            "KA0iKAoSRGVsZXRlR2F0ZVJlc3BvbnNlEhIKCmdhdGVfY291bnQYASABKA0i",
-            "KgoVR2V0RXN0YXRlR2F0ZXNSZXF1ZXN0EhEKCWVzdGF0ZV9pZBgBIAEoDSIY",
-            "ChZHZXRFc3RhdGVHYXRlc1Jlc3BvbnNlIjwKEkFkZEVudHJhbmNlUmVxdWVz",
-            "dBIRCgllc3RhdGVfaWQYASABKA0SEwoLZW50cmFuY2VfaWQYAiABKA0iLQoT",
-            "QWRkRW50cmFuY2VSZXNwb25zZRIWCg5lbnRyYW5jZV9jb3VudBgBIAEoDSI/",
-            "ChVSZW1vdmVFbnRyYW5jZVJlcXVlc3QSEQoJZXN0YXRlX2lkGAEgASgNEhMK",
-            "C2VudHJhbmNlX2lkGAIgASgNIjAKFlJlbW92ZUVudHJhbmNlUmVzcG9uc2US",
-            "FgoOZW50cmFuY2VfY291bnQYASABKA0iLgoZR2V0RXN0YXRlRW50cmFuY2Vz",
-            "UmVxdWVzdBIRCgllc3RhdGVfaWQYASABKA0iHAoaR2V0RXN0YXRlRW50cmFu",
-            "Y2VzUmVzcG9uc2UyxAoKEU1ydVZFc3RhdGVTZXJ2aWNlEmoKDENyZWF0ZUVz",
-            "dGF0ZRIhLm1ydXYuZXN0YXRlcy5DcmVhdGVFc3RhdGVSZXF1ZXN0GiIubXJ1",
-            "di5lc3RhdGVzLkNyZWF0ZUVzdGF0ZVJlc3BvbnNlIhOC0+STAg0iCy92MS9l",
-            "c3RhdGVzElsKCUdldEVzdGF0ZRIeLm1ydXYuZXN0YXRlcy5HZXRFc3RhdGVS",
-            "ZXF1ZXN0GhQubXJ1di5lc3RhdGVzLkVzdGF0ZSIYgtPkkwISEhAvdjEvZXN0",
-            "YXRlcy97aWR9Em8KDFVwZGF0ZUVzdGF0ZRIhLm1ydXYuZXN0YXRlcy5VcGRh",
-            "dGVFc3RhdGVSZXF1ZXN0GiIubXJ1di5lc3RhdGVzLlVwZGF0ZUVzdGF0ZVJl",
-            "c3BvbnNlIhiC0+STAhIyEC92MS9lc3RhdGVzL3tpZH0SbwoMRGVsZXRlRXN0",
-            "YXRlEiEubXJ1di5lc3RhdGVzLkRlbGV0ZUVzdGF0ZVJlcXVlc3QaIi5tcnV2",
-            "LmVzdGF0ZXMuRGVsZXRlRXN0YXRlUmVzcG9uc2UiGILT5JMCEioQL3YxL2Vz",
-            "dGF0ZXMve2lkfRJkCgpHZXRFc3RhdGVzEh8ubXJ1di5lc3RhdGVzLkdldEVz",
-            "dGF0ZXNSZXF1ZXN0GiAubXJ1di5lc3RhdGVzLkdldEVzdGF0ZXNSZXNwb25z",
-            "ZSITgtPkkwINEgsvdjEvZXN0YXRlcxJtCgdBZGRHYXRlEhwubXJ1di5lc3Rh",
-            "dGVzLkFkZEdhdGVSZXF1ZXN0Gh0ubXJ1di5lc3RhdGVzLkFkZEdhdGVSZXNw",
-            "b25zZSIlgtPkkwIfIh0vdjEvZXN0YXRlcy97ZXN0YXRlX2lkfS9nYXRlcxKA",
-            "AQoKRGVsZXRlR2F0ZRIfLm1ydXYuZXN0YXRlcy5EZWxldGVHYXRlUmVxdWVz",
-            "dBogLm1ydXYuZXN0YXRlcy5EZWxldGVHYXRlUmVzcG9uc2UiL4LT5JMCKSon",
-            "L3YxL2VzdGF0ZXMve2VzdGF0ZV9pZH0vZ2F0ZXMve2dhdGVfaWR9EoEBCg5H",
-            "ZXRFc3RhdGVHYXRlcxIjLm1ydXYuZXN0YXRlcy5HZXRFc3RhdGVHYXRlc1Jl",
-            "cXVlc3QaJC5tcnV2LmVzdGF0ZXMuR2V0RXN0YXRlR2F0ZXNSZXNwb25zZSIk",
-            "gtPkkwIeEhwvdjEvZXN0YXRlL3tlc3RhdGVfaWR9L2dhdGVzEn0KC0FkZEVu",
-            "dHJhbmNlEiAubXJ1di5lc3RhdGVzLkFkZEVudHJhbmNlUmVxdWVzdBohLm1y",
-            "dXYuZXN0YXRlcy5BZGRFbnRyYW5jZVJlc3BvbnNlIimC0+STAiMiIS92MS9l",
-            "c3RhdGVzL3tlc3RhdGVfaWR9L2VudHJhbmNlcxKUAQoOUmVtb3ZlRW50cmFu",
-            "Y2USIy5tcnV2LmVzdGF0ZXMuUmVtb3ZlRW50cmFuY2VSZXF1ZXN0GiQubXJ1",
-            "di5lc3RhdGVzLlJlbW92ZUVudHJhbmNlUmVzcG9uc2UiN4LT5JMCMSovL3Yx",
-            "L2VzdGF0ZXMve2VzdGF0ZV9pZH0vZW50cmFuY2VzL3tlbnRyYW5jZV9pZH0S",
-            "kQEKEkdldEVzdGF0ZUVudHJhbmNlcxInLm1ydXYuZXN0YXRlcy5HZXRFc3Rh",
-            "dGVFbnRyYW5jZXNSZXF1ZXN0GigubXJ1di5lc3RhdGVzLkdldEVzdGF0ZUVu",
-            "dHJhbmNlc1Jlc3BvbnNlIiiC0+STAiISIC92MS9lc3RhdGUve2VzdGF0ZV9p",
-            "ZH0vZW50cmFuY2VzQidaJWdpdGh1Yi5jb20vTXJ1Vi1SUC9tcnV2LXBiLWdv",
-            "L2VzdGF0ZXNiBnByb3RvMw=="));
+            "ChREZWxldGVFc3RhdGVSZXNwb25zZSIwChFHZXRFc3RhdGVzUmVxdWVzdBIM",
+            "CgRmcm9tGAEgASgNEg0KBWxpbWl0GAIgASgNIhQKEkdldEVzdGF0ZXNSZXNw",
+            "b25zZSI0Cg5BZGRHYXRlUmVxdWVzdBIRCgllc3RhdGVfaWQYASABKA0SDwoH",
+            "Z2F0ZV9pZBgCIAEoDSIlCg9BZGRHYXRlUmVzcG9uc2USEgoKZ2F0ZV9jb3Vu",
+            "dBgBIAEoDSI3ChFEZWxldGVHYXRlUmVxdWVzdBIRCgllc3RhdGVfaWQYASAB",
+            "KA0SDwoHZ2F0ZV9pZBgCIAEoDSIoChJEZWxldGVHYXRlUmVzcG9uc2USEgoK",
+            "Z2F0ZV9jb3VudBgBIAEoDSIqChVHZXRFc3RhdGVHYXRlc1JlcXVlc3QSEQoJ",
+            "ZXN0YXRlX2lkGAEgASgNIj8KFkdldEVzdGF0ZUdhdGVzUmVzcG9uc2USJQoH",
+            "ZXN0YXRlcxgBIAMoCzIULm1ydXYuZXN0YXRlcy5Fc3RhdGUiPAoSQWRkRW50",
+            "cmFuY2VSZXF1ZXN0EhEKCWVzdGF0ZV9pZBgBIAEoDRITCgtlbnRyYW5jZV9p",
+            "ZBgCIAEoDSItChNBZGRFbnRyYW5jZVJlc3BvbnNlEhYKDmVudHJhbmNlX2Nv",
+            "dW50GAEgASgNIj8KFVJlbW92ZUVudHJhbmNlUmVxdWVzdBIRCgllc3RhdGVf",
+            "aWQYASABKA0SEwoLZW50cmFuY2VfaWQYAiABKA0iMAoWUmVtb3ZlRW50cmFu",
+            "Y2VSZXNwb25zZRIWCg5lbnRyYW5jZV9jb3VudBgBIAEoDSIuChlHZXRFc3Rh",
+            "dGVFbnRyYW5jZXNSZXF1ZXN0EhEKCWVzdGF0ZV9pZBgBIAEoDSIcChpHZXRF",
+            "c3RhdGVFbnRyYW5jZXNSZXNwb25zZTLECgoRTXJ1VkVzdGF0ZVNlcnZpY2US",
+            "agoMQ3JlYXRlRXN0YXRlEiEubXJ1di5lc3RhdGVzLkNyZWF0ZUVzdGF0ZVJl",
+            "cXVlc3QaIi5tcnV2LmVzdGF0ZXMuQ3JlYXRlRXN0YXRlUmVzcG9uc2UiE4LT",
+            "5JMCDSILL3YxL2VzdGF0ZXMSWwoJR2V0RXN0YXRlEh4ubXJ1di5lc3RhdGVz",
+            "LkdldEVzdGF0ZVJlcXVlc3QaFC5tcnV2LmVzdGF0ZXMuRXN0YXRlIhiC0+ST",
+            "AhISEC92MS9lc3RhdGVzL3tpZH0SbwoMVXBkYXRlRXN0YXRlEiEubXJ1di5l",
+            "c3RhdGVzLlVwZGF0ZUVzdGF0ZVJlcXVlc3QaIi5tcnV2LmVzdGF0ZXMuVXBk",
+            "YXRlRXN0YXRlUmVzcG9uc2UiGILT5JMCEjIQL3YxL2VzdGF0ZXMve2lkfRJv",
+            "CgxEZWxldGVFc3RhdGUSIS5tcnV2LmVzdGF0ZXMuRGVsZXRlRXN0YXRlUmVx",
+            "dWVzdBoiLm1ydXYuZXN0YXRlcy5EZWxldGVFc3RhdGVSZXNwb25zZSIYgtPk",
+            "kwISKhAvdjEvZXN0YXRlcy97aWR9EmQKCkdldEVzdGF0ZXMSHy5tcnV2LmVz",
+            "dGF0ZXMuR2V0RXN0YXRlc1JlcXVlc3QaIC5tcnV2LmVzdGF0ZXMuR2V0RXN0",
+            "YXRlc1Jlc3BvbnNlIhOC0+STAg0SCy92MS9lc3RhdGVzEm0KB0FkZEdhdGUS",
+            "HC5tcnV2LmVzdGF0ZXMuQWRkR2F0ZVJlcXVlc3QaHS5tcnV2LmVzdGF0ZXMu",
+            "QWRkR2F0ZVJlc3BvbnNlIiWC0+STAh8iHS92MS9lc3RhdGVzL3tlc3RhdGVf",
+            "aWR9L2dhdGVzEoABCgpEZWxldGVHYXRlEh8ubXJ1di5lc3RhdGVzLkRlbGV0",
+            "ZUdhdGVSZXF1ZXN0GiAubXJ1di5lc3RhdGVzLkRlbGV0ZUdhdGVSZXNwb25z",
+            "ZSIvgtPkkwIpKicvdjEvZXN0YXRlcy97ZXN0YXRlX2lkfS9nYXRlcy97Z2F0",
+            "ZV9pZH0SgQEKDkdldEVzdGF0ZUdhdGVzEiMubXJ1di5lc3RhdGVzLkdldEVz",
+            "dGF0ZUdhdGVzUmVxdWVzdBokLm1ydXYuZXN0YXRlcy5HZXRFc3RhdGVHYXRl",
+            "c1Jlc3BvbnNlIiSC0+STAh4SHC92MS9lc3RhdGUve2VzdGF0ZV9pZH0vZ2F0",
+            "ZXMSfQoLQWRkRW50cmFuY2USIC5tcnV2LmVzdGF0ZXMuQWRkRW50cmFuY2VS",
+            "ZXF1ZXN0GiEubXJ1di5lc3RhdGVzLkFkZEVudHJhbmNlUmVzcG9uc2UiKYLT",
+            "5JMCIyIhL3YxL2VzdGF0ZXMve2VzdGF0ZV9pZH0vZW50cmFuY2VzEpQBCg5S",
+            "ZW1vdmVFbnRyYW5jZRIjLm1ydXYuZXN0YXRlcy5SZW1vdmVFbnRyYW5jZVJl",
+            "cXVlc3QaJC5tcnV2LmVzdGF0ZXMuUmVtb3ZlRW50cmFuY2VSZXNwb25zZSI3",
+            "gtPkkwIxKi8vdjEvZXN0YXRlcy97ZXN0YXRlX2lkfS9lbnRyYW5jZXMve2Vu",
+            "dHJhbmNlX2lkfRKRAQoSR2V0RXN0YXRlRW50cmFuY2VzEicubXJ1di5lc3Rh",
+            "dGVzLkdldEVzdGF0ZUVudHJhbmNlc1JlcXVlc3QaKC5tcnV2LmVzdGF0ZXMu",
+            "R2V0RXN0YXRlRW50cmFuY2VzUmVzcG9uc2UiKILT5JMCIhIgL3YxL2VzdGF0",
+            "ZS97ZXN0YXRlX2lkfS9lbnRyYW5jZXNCJ1olZ2l0aHViLmNvbS9NcnVWLVJQ",
+            "L21ydXYtcGItZ28vZXN0YXRlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -91,14 +92,14 @@ namespace Mruv.Estates {
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.UpdateEstateResponse), global::Mruv.Estates.UpdateEstateResponse.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.DeleteEstateRequest), global::Mruv.Estates.DeleteEstateRequest.Parser, new[]{ "Id" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.DeleteEstateResponse), global::Mruv.Estates.DeleteEstateResponse.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.GetEstatesRequest), global::Mruv.Estates.GetEstatesRequest.Parser, new[]{ "Id" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.GetEstatesRequest), global::Mruv.Estates.GetEstatesRequest.Parser, new[]{ "From", "Limit" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.GetEstatesResponse), global::Mruv.Estates.GetEstatesResponse.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.AddGateRequest), global::Mruv.Estates.AddGateRequest.Parser, new[]{ "EstateId", "GateId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.AddGateResponse), global::Mruv.Estates.AddGateResponse.Parser, new[]{ "GateCount" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.DeleteGateRequest), global::Mruv.Estates.DeleteGateRequest.Parser, new[]{ "EstateId", "GateId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.DeleteGateResponse), global::Mruv.Estates.DeleteGateResponse.Parser, new[]{ "GateCount" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.GetEstateGatesRequest), global::Mruv.Estates.GetEstateGatesRequest.Parser, new[]{ "EstateId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.GetEstateGatesResponse), global::Mruv.Estates.GetEstateGatesResponse.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.GetEstateGatesResponse), global::Mruv.Estates.GetEstateGatesResponse.Parser, new[]{ "Estates" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.AddEntranceRequest), global::Mruv.Estates.AddEntranceRequest.Parser, new[]{ "EstateId", "EntranceId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.AddEntranceResponse), global::Mruv.Estates.AddEntranceResponse.Parser, new[]{ "EntranceCount" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.RemoveEntranceRequest), global::Mruv.Estates.RemoveEntranceRequest.Parser, new[]{ "EstateId", "EntranceId" }, null, null, null),
@@ -1367,7 +1368,8 @@ namespace Mruv.Estates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GetEstatesRequest(GetEstatesRequest other) : this() {
-      id_ = other.id_;
+      from_ = other.from_;
+      limit_ = other.limit_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1376,14 +1378,25 @@ namespace Mruv.Estates {
       return new GetEstatesRequest(this);
     }
 
-    /// <summary>Field number for the "id" field.</summary>
-    public const int IdFieldNumber = 1;
-    private uint id_;
+    /// <summary>Field number for the "from" field.</summary>
+    public const int FromFieldNumber = 1;
+    private uint from_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint Id {
-      get { return id_; }
+    public uint From {
+      get { return from_; }
       set {
-        id_ = value;
+        from_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "limit" field.</summary>
+    public const int LimitFieldNumber = 2;
+    private uint limit_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint Limit {
+      get { return limit_; }
+      set {
+        limit_ = value;
       }
     }
 
@@ -1400,14 +1413,16 @@ namespace Mruv.Estates {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Id != other.Id) return false;
+      if (From != other.From) return false;
+      if (Limit != other.Limit) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Id != 0) hash ^= Id.GetHashCode();
+      if (From != 0) hash ^= From.GetHashCode();
+      if (Limit != 0) hash ^= Limit.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1421,9 +1436,13 @@ namespace Mruv.Estates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Id != 0) {
+      if (From != 0) {
         output.WriteRawTag(8);
-        output.WriteUInt32(Id);
+        output.WriteUInt32(From);
+      }
+      if (Limit != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(Limit);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -1433,8 +1452,11 @@ namespace Mruv.Estates {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Id != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Id);
+      if (From != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(From);
+      }
+      if (Limit != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Limit);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1447,8 +1469,11 @@ namespace Mruv.Estates {
       if (other == null) {
         return;
       }
-      if (other.Id != 0) {
-        Id = other.Id;
+      if (other.From != 0) {
+        From = other.From;
+      }
+      if (other.Limit != 0) {
+        Limit = other.Limit;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1462,7 +1487,11 @@ namespace Mruv.Estates {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Id = input.ReadUInt32();
+            From = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            Limit = input.ReadUInt32();
             break;
           }
         }
@@ -2319,12 +2348,23 @@ namespace Mruv.Estates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GetEstateGatesResponse(GetEstateGatesResponse other) : this() {
+      estates_ = other.estates_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GetEstateGatesResponse Clone() {
       return new GetEstateGatesResponse(this);
+    }
+
+    /// <summary>Field number for the "estates" field.</summary>
+    public const int EstatesFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Mruv.Estates.Estate> _repeated_estates_codec
+        = pb::FieldCodec.ForMessage(10, global::Mruv.Estates.Estate.Parser);
+    private readonly pbc::RepeatedField<global::Mruv.Estates.Estate> estates_ = new pbc::RepeatedField<global::Mruv.Estates.Estate>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Mruv.Estates.Estate> Estates {
+      get { return estates_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2340,12 +2380,14 @@ namespace Mruv.Estates {
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if(!estates_.Equals(other.estates_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
+      hash ^= estates_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2359,6 +2401,7 @@ namespace Mruv.Estates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+      estates_.WriteTo(output, _repeated_estates_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2367,6 +2410,7 @@ namespace Mruv.Estates {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
+      size += estates_.CalculateSize(_repeated_estates_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -2378,6 +2422,7 @@ namespace Mruv.Estates {
       if (other == null) {
         return;
       }
+      estates_.Add(other.estates_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -2389,6 +2434,10 @@ namespace Mruv.Estates {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
+          case 10: {
+            estates_.AddEntriesFrom(input, _repeated_estates_codec);
+            break;
+          }
         }
       }
     }
