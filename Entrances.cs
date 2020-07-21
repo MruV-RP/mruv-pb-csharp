@@ -25,58 +25,54 @@ namespace Mruv.Entrances {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChllbnRyYW5jZXMvZW50cmFuY2VzLnByb3RvEg5tcnV2LmVudHJhbmNlcxoc",
-            "Z29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byKrAgoIRW50cmFuY2USCgoC",
-            "aWQYASABKA0SEQoJZXN0YXRlX2lkGAIgASgNEjIKA291dBgDIAEoCzIlLm1y",
-            "dXYuZW50cmFuY2VzLkVudHJhbmNlLkVudHJhbmNlRG9vchIxCgJpbhgEIAEo",
-            "CzIlLm1ydXYuZW50cmFuY2VzLkVudHJhbmNlLkVudHJhbmNlRG9vchqYAQoM",
-            "RW50cmFuY2VEb29yEgwKBG5hbWUYASABKAkSDwoHbWVzc2FnZRgCIAEoCRIM",
-            "CgRpY29uGAMgASgFEg4KBm1hcmtlchgEIAEoBRIJCgF4GAUgASgCEgkKAXkY",
-            "BiABKAISCQoBehgHIAEoAhIKCgJ2dxgIIAEoBRILCgNpbnQYCSABKAUSEQoJ",
-            "ZXN0YXRlX2lkGAogASgNIkMKFUNyZWF0ZUVudHJhbmNlUmVxdWVzdBIqCghl",
-            "bnRyYW5jZRgBIAEoCzIYLm1ydXYuZW50cmFuY2VzLkVudHJhbmNlIiQKFkNy",
-            "ZWF0ZUVudHJhbmNlUmVzcG9uc2USCgoCaWQYASABKA0iIAoSR2V0RW50cmFu",
-            "Y2VSZXF1ZXN0EgoKAmlkGAEgASgNIhUKE0dldEVudHJhbmNlUmVzcG9uc2Ui",
-            "IwoVVXBkYXRlRW50cmFuY2VSZXF1ZXN0EgoKAmlkGAEgASgNIhgKFlVwZGF0",
-            "ZUVudHJhbmNlUmVzcG9uc2UiIwoVRGVsZXRlRW50cmFuY2VSZXF1ZXN0EgoK",
-            "AmlkGAEgASgNIhgKFkRlbGV0ZUVudHJhbmNlUmVzcG9uc2UiGQoLTG9ja1Jl",
-            "cXVlc3QSCgoCaWQYASABKA0iDgoMTG9ja1Jlc3BvbnNlIhsKDVVubG9ja1Jl",
-            "cXVlc3QSCgoCaWQYASABKA0iEAoOVW5sb2NrUmVzcG9uc2UiUwoaRmluZE5l",
-            "YXJlc3RFbnRyYW5jZVJlcXVlc3QSCQoBeBgBIAEoAhIJCgF5GAIgASgCEgkK",
-            "AXoYAyABKAISFAoMbWF4X2Rpc3RhbmNlGAQgASgCIjsKG0ZpbmROZWFyZXN0",
-            "RW50cmFuY2VSZXNwb25zZRIKCgJpZBgBIAEoDRIQCghkaXN0YW5jZRgCIAEo",
-            "AiIaCgxFbnRlclJlcXVlc3QSCgoCaWQYASABKA0iDwoNRW50ZXJSZXNwb25z",
-            "ZTLEBwoUTXJ1VkVudHJhbmNlc1NlcnZpY2USdgoOQ3JlYXRlRW50cmFuY2US",
-            "JS5tcnV2LmVudHJhbmNlcy5DcmVhdGVFbnRyYW5jZVJlcXVlc3QaJi5tcnV2",
-            "LmVudHJhbmNlcy5DcmVhdGVFbnRyYW5jZVJlc3BvbnNlIhWC0+STAg8iDS92",
-            "MS9lbnRyYW5jZXMScgoLR2V0RW50cmFuY2USIi5tcnV2LmVudHJhbmNlcy5H",
-            "ZXRFbnRyYW5jZVJlcXVlc3QaIy5tcnV2LmVudHJhbmNlcy5HZXRFbnRyYW5j",
-            "ZVJlc3BvbnNlIhqC0+STAhQSEi92MS9lbnRyYW5jZXMve2lkfRJ7Cg5VcGRh",
-            "dGVFbnRyYW5jZRIlLm1ydXYuZW50cmFuY2VzLlVwZGF0ZUVudHJhbmNlUmVx",
-            "dWVzdBomLm1ydXYuZW50cmFuY2VzLlVwZGF0ZUVudHJhbmNlUmVzcG9uc2Ui",
-            "GoLT5JMCFDISL3YxL2VudHJhbmNlcy97aWR9EnsKDkRlbGV0ZUVudHJhbmNl",
-            "EiUubXJ1di5lbnRyYW5jZXMuRGVsZXRlRW50cmFuY2VSZXF1ZXN0GiYubXJ1",
-            "di5lbnRyYW5jZXMuRGVsZXRlRW50cmFuY2VSZXNwb25zZSIagtPkkwIUKhIv",
-            "djEvZW50cmFuY2VzL3tpZH0SYgoETG9jaxIbLm1ydXYuZW50cmFuY2VzLkxv",
-            "Y2tSZXF1ZXN0GhwubXJ1di5lbnRyYW5jZXMuTG9ja1Jlc3BvbnNlIh+C0+ST",
-            "AhkiFy92MS9lbnRyYW5jZXMve2lkfS9sb2NrEmoKBlVubG9jaxIdLm1ydXYu",
-            "ZW50cmFuY2VzLlVubG9ja1JlcXVlc3QaHi5tcnV2LmVudHJhbmNlcy5Vbmxv",
-            "Y2tSZXNwb25zZSIhgtPkkwIbIhkvdjEvZW50cmFuY2VzL3tpZH0vdW5sb2Nr",
-            "Eo0BChNGaW5kTmVhcmVzdEVudHJhbmNlEioubXJ1di5lbnRyYW5jZXMuRmlu",
-            "ZE5lYXJlc3RFbnRyYW5jZVJlcXVlc3QaKy5tcnV2LmVudHJhbmNlcy5GaW5k",
-            "TmVhcmVzdEVudHJhbmNlUmVzcG9uc2UiHYLT5JMCFxIVL3YxL2VudHJhbmNl",
-            "cy9uZWFyZXN0EmYKBUVudGVyEhwubXJ1di5lbnRyYW5jZXMuRW50ZXJSZXF1",
-            "ZXN0Gh0ubXJ1di5lbnRyYW5jZXMuRW50ZXJSZXNwb25zZSIggtPkkwIaIhgv",
-            "djEvZW50cmFuY2VzL3tpZH0vZW50ZXJCKVonZ2l0aHViLmNvbS9NcnVWLVJQ",
-            "L21ydXYtcGItZ28vZW50cmFuY2VzYgZwcm90bzM="));
+            "Z29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90bxoRc3BvdHMvc3BvdHMucHJv",
+            "dG8iYgoVQ3JlYXRlRW50cmFuY2VSZXF1ZXN0EgwKBG5hbWUYASABKAkSHQoD",
+            "b3V0GAIgASgLMhAubXJ1di5zcG90cy5TcG90EhwKAmluGAMgASgLMhAubXJ1",
+            "di5zcG90cy5TcG90IiQKFkNyZWF0ZUVudHJhbmNlUmVzcG9uc2USCgoCaWQY",
+            "ASABKA0iIAoSR2V0RW50cmFuY2VSZXF1ZXN0EgoKAmlkGAEgASgNIkwKE0dl",
+            "dEVudHJhbmNlUmVzcG9uc2USDAoEbmFtZRgBIAEoCRISCgppbl9zcG90X2lk",
+            "GAIgASgNEhMKC291dF9zcG90X2lkGAMgASgNIkwKFVVwZGF0ZUVudHJhbmNl",
+            "UmVxdWVzdBIKCgJpZBgBIAEoDRISCgppbl9zcG90X2lkGAIgASgNEhMKC291",
+            "dF9zcG90X2lkGAMgASgNIhgKFlVwZGF0ZUVudHJhbmNlUmVzcG9uc2UiIwoV",
+            "RGVsZXRlRW50cmFuY2VSZXF1ZXN0EgoKAmlkGAEgASgNIhgKFkRlbGV0ZUVu",
+            "dHJhbmNlUmVzcG9uc2UiGQoLTG9ja1JlcXVlc3QSCgoCaWQYASABKA0iDgoM",
+            "TG9ja1Jlc3BvbnNlIhsKDVVubG9ja1JlcXVlc3QSCgoCaWQYASABKA0iEAoO",
+            "VW5sb2NrUmVzcG9uc2UiUwoaRmluZE5lYXJlc3RFbnRyYW5jZVJlcXVlc3QS",
+            "CQoBeBgBIAEoAhIJCgF5GAIgASgCEgkKAXoYAyABKAISFAoMbWF4X2Rpc3Rh",
+            "bmNlGAQgASgCIjsKG0ZpbmROZWFyZXN0RW50cmFuY2VSZXNwb25zZRIKCgJp",
+            "ZBgBIAEoDRIQCghkaXN0YW5jZRgCIAEoAiIaCgxFbnRlclJlcXVlc3QSCgoC",
+            "aWQYASABKA0iDwoNRW50ZXJSZXNwb25zZTLEBwoUTXJ1VkVudHJhbmNlc1Nl",
+            "cnZpY2USdgoOQ3JlYXRlRW50cmFuY2USJS5tcnV2LmVudHJhbmNlcy5DcmVh",
+            "dGVFbnRyYW5jZVJlcXVlc3QaJi5tcnV2LmVudHJhbmNlcy5DcmVhdGVFbnRy",
+            "YW5jZVJlc3BvbnNlIhWC0+STAg8iDS92MS9lbnRyYW5jZXMScgoLR2V0RW50",
+            "cmFuY2USIi5tcnV2LmVudHJhbmNlcy5HZXRFbnRyYW5jZVJlcXVlc3QaIy5t",
+            "cnV2LmVudHJhbmNlcy5HZXRFbnRyYW5jZVJlc3BvbnNlIhqC0+STAhQSEi92",
+            "MS9lbnRyYW5jZXMve2lkfRJ7Cg5VcGRhdGVFbnRyYW5jZRIlLm1ydXYuZW50",
+            "cmFuY2VzLlVwZGF0ZUVudHJhbmNlUmVxdWVzdBomLm1ydXYuZW50cmFuY2Vz",
+            "LlVwZGF0ZUVudHJhbmNlUmVzcG9uc2UiGoLT5JMCFDISL3YxL2VudHJhbmNl",
+            "cy97aWR9EnsKDkRlbGV0ZUVudHJhbmNlEiUubXJ1di5lbnRyYW5jZXMuRGVs",
+            "ZXRlRW50cmFuY2VSZXF1ZXN0GiYubXJ1di5lbnRyYW5jZXMuRGVsZXRlRW50",
+            "cmFuY2VSZXNwb25zZSIagtPkkwIUKhIvdjEvZW50cmFuY2VzL3tpZH0SYgoE",
+            "TG9jaxIbLm1ydXYuZW50cmFuY2VzLkxvY2tSZXF1ZXN0GhwubXJ1di5lbnRy",
+            "YW5jZXMuTG9ja1Jlc3BvbnNlIh+C0+STAhkiFy92MS9lbnRyYW5jZXMve2lk",
+            "fS9sb2NrEmoKBlVubG9jaxIdLm1ydXYuZW50cmFuY2VzLlVubG9ja1JlcXVl",
+            "c3QaHi5tcnV2LmVudHJhbmNlcy5VbmxvY2tSZXNwb25zZSIhgtPkkwIbIhkv",
+            "djEvZW50cmFuY2VzL3tpZH0vdW5sb2NrEo0BChNGaW5kTmVhcmVzdEVudHJh",
+            "bmNlEioubXJ1di5lbnRyYW5jZXMuRmluZE5lYXJlc3RFbnRyYW5jZVJlcXVl",
+            "c3QaKy5tcnV2LmVudHJhbmNlcy5GaW5kTmVhcmVzdEVudHJhbmNlUmVzcG9u",
+            "c2UiHYLT5JMCFxIVL3YxL2VudHJhbmNlcy9uZWFyZXN0EmYKBUVudGVyEhwu",
+            "bXJ1di5lbnRyYW5jZXMuRW50ZXJSZXF1ZXN0Gh0ubXJ1di5lbnRyYW5jZXMu",
+            "RW50ZXJSZXNwb25zZSIggtPkkwIaIhgvdjEvZW50cmFuY2VzL3tpZH0vZW50",
+            "ZXJCKVonZ2l0aHViLmNvbS9NcnVWLVJQL21ydXYtcGItZ28vZW50cmFuY2Vz",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, global::Mruv.Spots.SpotsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Entrances.Entrance), global::Mruv.Entrances.Entrance.Parser, new[]{ "Id", "EstateId", "Out", "In" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Entrances.Entrance.Types.EntranceDoor), global::Mruv.Entrances.Entrance.Types.EntranceDoor.Parser, new[]{ "Name", "Message", "Icon", "Marker", "X", "Y", "Z", "Vw", "Int", "EstateId" }, null, null, null)}),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Entrances.CreateEntranceRequest), global::Mruv.Entrances.CreateEntranceRequest.Parser, new[]{ "Entrance" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Entrances.CreateEntranceRequest), global::Mruv.Entrances.CreateEntranceRequest.Parser, new[]{ "Name", "Out", "In" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Entrances.CreateEntranceResponse), global::Mruv.Entrances.CreateEntranceResponse.Parser, new[]{ "Id" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Entrances.GetEntranceRequest), global::Mruv.Entrances.GetEntranceRequest.Parser, new[]{ "Id" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Entrances.GetEntranceResponse), global::Mruv.Entrances.GetEntranceResponse.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Entrances.UpdateEntranceRequest), global::Mruv.Entrances.UpdateEntranceRequest.Parser, new[]{ "Id" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Entrances.GetEntranceResponse), global::Mruv.Entrances.GetEntranceResponse.Parser, new[]{ "Name", "InSpotId", "OutSpotId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Entrances.UpdateEntranceRequest), global::Mruv.Entrances.UpdateEntranceRequest.Parser, new[]{ "Id", "InSpotId", "OutSpotId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Entrances.UpdateEntranceResponse), global::Mruv.Entrances.UpdateEntranceResponse.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Entrances.DeleteEntranceRequest), global::Mruv.Entrances.DeleteEntranceRequest.Parser, new[]{ "Id" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Entrances.DeleteEntranceResponse), global::Mruv.Entrances.DeleteEntranceResponse.Parser, null, null, null, null),
@@ -94,619 +90,6 @@ namespace Mruv.Entrances {
 
   }
   #region Messages
-  public sealed partial class Entrance : pb::IMessage<Entrance> {
-    private static readonly pb::MessageParser<Entrance> _parser = new pb::MessageParser<Entrance>(() => new Entrance());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<Entrance> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Entrances.EntrancesReflection.Descriptor.MessageTypes[0]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public Entrance() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public Entrance(Entrance other) : this() {
-      id_ = other.id_;
-      estateId_ = other.estateId_;
-      out_ = other.out_ != null ? other.out_.Clone() : null;
-      in_ = other.in_ != null ? other.in_.Clone() : null;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public Entrance Clone() {
-      return new Entrance(this);
-    }
-
-    /// <summary>Field number for the "id" field.</summary>
-    public const int IdFieldNumber = 1;
-    private uint id_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint Id {
-      get { return id_; }
-      set {
-        id_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "estate_id" field.</summary>
-    public const int EstateIdFieldNumber = 2;
-    private uint estateId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint EstateId {
-      get { return estateId_; }
-      set {
-        estateId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "out" field.</summary>
-    public const int OutFieldNumber = 3;
-    private global::Mruv.Entrances.Entrance.Types.EntranceDoor out_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Mruv.Entrances.Entrance.Types.EntranceDoor Out {
-      get { return out_; }
-      set {
-        out_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "in" field.</summary>
-    public const int InFieldNumber = 4;
-    private global::Mruv.Entrances.Entrance.Types.EntranceDoor in_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Mruv.Entrances.Entrance.Types.EntranceDoor In {
-      get { return in_; }
-      set {
-        in_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as Entrance);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(Entrance other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (Id != other.Id) return false;
-      if (EstateId != other.EstateId) return false;
-      if (!object.Equals(Out, other.Out)) return false;
-      if (!object.Equals(In, other.In)) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (Id != 0) hash ^= Id.GetHashCode();
-      if (EstateId != 0) hash ^= EstateId.GetHashCode();
-      if (out_ != null) hash ^= Out.GetHashCode();
-      if (in_ != null) hash ^= In.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-      if (Id != 0) {
-        output.WriteRawTag(8);
-        output.WriteUInt32(Id);
-      }
-      if (EstateId != 0) {
-        output.WriteRawTag(16);
-        output.WriteUInt32(EstateId);
-      }
-      if (out_ != null) {
-        output.WriteRawTag(26);
-        output.WriteMessage(Out);
-      }
-      if (in_ != null) {
-        output.WriteRawTag(34);
-        output.WriteMessage(In);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (Id != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Id);
-      }
-      if (EstateId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(EstateId);
-      }
-      if (out_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Out);
-      }
-      if (in_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(In);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(Entrance other) {
-      if (other == null) {
-        return;
-      }
-      if (other.Id != 0) {
-        Id = other.Id;
-      }
-      if (other.EstateId != 0) {
-        EstateId = other.EstateId;
-      }
-      if (other.out_ != null) {
-        if (out_ == null) {
-          Out = new global::Mruv.Entrances.Entrance.Types.EntranceDoor();
-        }
-        Out.MergeFrom(other.Out);
-      }
-      if (other.in_ != null) {
-        if (in_ == null) {
-          In = new global::Mruv.Entrances.Entrance.Types.EntranceDoor();
-        }
-        In.MergeFrom(other.In);
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 8: {
-            Id = input.ReadUInt32();
-            break;
-          }
-          case 16: {
-            EstateId = input.ReadUInt32();
-            break;
-          }
-          case 26: {
-            if (out_ == null) {
-              Out = new global::Mruv.Entrances.Entrance.Types.EntranceDoor();
-            }
-            input.ReadMessage(Out);
-            break;
-          }
-          case 34: {
-            if (in_ == null) {
-              In = new global::Mruv.Entrances.Entrance.Types.EntranceDoor();
-            }
-            input.ReadMessage(In);
-            break;
-          }
-        }
-      }
-    }
-
-    #region Nested types
-    /// <summary>Container for nested types declared in the Entrance message type.</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static partial class Types {
-      public sealed partial class EntranceDoor : pb::IMessage<EntranceDoor> {
-        private static readonly pb::MessageParser<EntranceDoor> _parser = new pb::MessageParser<EntranceDoor>(() => new EntranceDoor());
-        private pb::UnknownFieldSet _unknownFields;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pb::MessageParser<EntranceDoor> Parser { get { return _parser; } }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pbr::MessageDescriptor Descriptor {
-          get { return global::Mruv.Entrances.Entrance.Descriptor.NestedTypes[0]; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        pbr::MessageDescriptor pb::IMessage.Descriptor {
-          get { return Descriptor; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public EntranceDoor() {
-          OnConstruction();
-        }
-
-        partial void OnConstruction();
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public EntranceDoor(EntranceDoor other) : this() {
-          name_ = other.name_;
-          message_ = other.message_;
-          icon_ = other.icon_;
-          marker_ = other.marker_;
-          x_ = other.x_;
-          y_ = other.y_;
-          z_ = other.z_;
-          vw_ = other.vw_;
-          int_ = other.int_;
-          estateId_ = other.estateId_;
-          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public EntranceDoor Clone() {
-          return new EntranceDoor(this);
-        }
-
-        /// <summary>Field number for the "name" field.</summary>
-        public const int NameFieldNumber = 1;
-        private string name_ = "";
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public string Name {
-          get { return name_; }
-          set {
-            name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-          }
-        }
-
-        /// <summary>Field number for the "message" field.</summary>
-        public const int MessageFieldNumber = 2;
-        private string message_ = "";
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public string Message {
-          get { return message_; }
-          set {
-            message_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-          }
-        }
-
-        /// <summary>Field number for the "icon" field.</summary>
-        public const int IconFieldNumber = 3;
-        private int icon_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public int Icon {
-          get { return icon_; }
-          set {
-            icon_ = value;
-          }
-        }
-
-        /// <summary>Field number for the "marker" field.</summary>
-        public const int MarkerFieldNumber = 4;
-        private int marker_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public int Marker {
-          get { return marker_; }
-          set {
-            marker_ = value;
-          }
-        }
-
-        /// <summary>Field number for the "x" field.</summary>
-        public const int XFieldNumber = 5;
-        private float x_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public float X {
-          get { return x_; }
-          set {
-            x_ = value;
-          }
-        }
-
-        /// <summary>Field number for the "y" field.</summary>
-        public const int YFieldNumber = 6;
-        private float y_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public float Y {
-          get { return y_; }
-          set {
-            y_ = value;
-          }
-        }
-
-        /// <summary>Field number for the "z" field.</summary>
-        public const int ZFieldNumber = 7;
-        private float z_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public float Z {
-          get { return z_; }
-          set {
-            z_ = value;
-          }
-        }
-
-        /// <summary>Field number for the "vw" field.</summary>
-        public const int VwFieldNumber = 8;
-        private int vw_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public int Vw {
-          get { return vw_; }
-          set {
-            vw_ = value;
-          }
-        }
-
-        /// <summary>Field number for the "int" field.</summary>
-        public const int IntFieldNumber = 9;
-        private int int_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public int Int {
-          get { return int_; }
-          set {
-            int_ = value;
-          }
-        }
-
-        /// <summary>Field number for the "estate_id" field.</summary>
-        public const int EstateIdFieldNumber = 10;
-        private uint estateId_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public uint EstateId {
-          get { return estateId_; }
-          set {
-            estateId_ = value;
-          }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override bool Equals(object other) {
-          return Equals(other as EntranceDoor);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool Equals(EntranceDoor other) {
-          if (ReferenceEquals(other, null)) {
-            return false;
-          }
-          if (ReferenceEquals(other, this)) {
-            return true;
-          }
-          if (Name != other.Name) return false;
-          if (Message != other.Message) return false;
-          if (Icon != other.Icon) return false;
-          if (Marker != other.Marker) return false;
-          if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(X, other.X)) return false;
-          if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Y, other.Y)) return false;
-          if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Z, other.Z)) return false;
-          if (Vw != other.Vw) return false;
-          if (Int != other.Int) return false;
-          if (EstateId != other.EstateId) return false;
-          return Equals(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override int GetHashCode() {
-          int hash = 1;
-          if (Name.Length != 0) hash ^= Name.GetHashCode();
-          if (Message.Length != 0) hash ^= Message.GetHashCode();
-          if (Icon != 0) hash ^= Icon.GetHashCode();
-          if (Marker != 0) hash ^= Marker.GetHashCode();
-          if (X != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(X);
-          if (Y != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Y);
-          if (Z != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Z);
-          if (Vw != 0) hash ^= Vw.GetHashCode();
-          if (Int != 0) hash ^= Int.GetHashCode();
-          if (EstateId != 0) hash ^= EstateId.GetHashCode();
-          if (_unknownFields != null) {
-            hash ^= _unknownFields.GetHashCode();
-          }
-          return hash;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override string ToString() {
-          return pb::JsonFormatter.ToDiagnosticString(this);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void WriteTo(pb::CodedOutputStream output) {
-          if (Name.Length != 0) {
-            output.WriteRawTag(10);
-            output.WriteString(Name);
-          }
-          if (Message.Length != 0) {
-            output.WriteRawTag(18);
-            output.WriteString(Message);
-          }
-          if (Icon != 0) {
-            output.WriteRawTag(24);
-            output.WriteInt32(Icon);
-          }
-          if (Marker != 0) {
-            output.WriteRawTag(32);
-            output.WriteInt32(Marker);
-          }
-          if (X != 0F) {
-            output.WriteRawTag(45);
-            output.WriteFloat(X);
-          }
-          if (Y != 0F) {
-            output.WriteRawTag(53);
-            output.WriteFloat(Y);
-          }
-          if (Z != 0F) {
-            output.WriteRawTag(61);
-            output.WriteFloat(Z);
-          }
-          if (Vw != 0) {
-            output.WriteRawTag(64);
-            output.WriteInt32(Vw);
-          }
-          if (Int != 0) {
-            output.WriteRawTag(72);
-            output.WriteInt32(Int);
-          }
-          if (EstateId != 0) {
-            output.WriteRawTag(80);
-            output.WriteUInt32(EstateId);
-          }
-          if (_unknownFields != null) {
-            _unknownFields.WriteTo(output);
-          }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public int CalculateSize() {
-          int size = 0;
-          if (Name.Length != 0) {
-            size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
-          }
-          if (Message.Length != 0) {
-            size += 1 + pb::CodedOutputStream.ComputeStringSize(Message);
-          }
-          if (Icon != 0) {
-            size += 1 + pb::CodedOutputStream.ComputeInt32Size(Icon);
-          }
-          if (Marker != 0) {
-            size += 1 + pb::CodedOutputStream.ComputeInt32Size(Marker);
-          }
-          if (X != 0F) {
-            size += 1 + 4;
-          }
-          if (Y != 0F) {
-            size += 1 + 4;
-          }
-          if (Z != 0F) {
-            size += 1 + 4;
-          }
-          if (Vw != 0) {
-            size += 1 + pb::CodedOutputStream.ComputeInt32Size(Vw);
-          }
-          if (Int != 0) {
-            size += 1 + pb::CodedOutputStream.ComputeInt32Size(Int);
-          }
-          if (EstateId != 0) {
-            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(EstateId);
-          }
-          if (_unknownFields != null) {
-            size += _unknownFields.CalculateSize();
-          }
-          return size;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(EntranceDoor other) {
-          if (other == null) {
-            return;
-          }
-          if (other.Name.Length != 0) {
-            Name = other.Name;
-          }
-          if (other.Message.Length != 0) {
-            Message = other.Message;
-          }
-          if (other.Icon != 0) {
-            Icon = other.Icon;
-          }
-          if (other.Marker != 0) {
-            Marker = other.Marker;
-          }
-          if (other.X != 0F) {
-            X = other.X;
-          }
-          if (other.Y != 0F) {
-            Y = other.Y;
-          }
-          if (other.Z != 0F) {
-            Z = other.Z;
-          }
-          if (other.Vw != 0) {
-            Vw = other.Vw;
-          }
-          if (other.Int != 0) {
-            Int = other.Int;
-          }
-          if (other.EstateId != 0) {
-            EstateId = other.EstateId;
-          }
-          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(pb::CodedInputStream input) {
-          uint tag;
-          while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
-              default:
-                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-                break;
-              case 10: {
-                Name = input.ReadString();
-                break;
-              }
-              case 18: {
-                Message = input.ReadString();
-                break;
-              }
-              case 24: {
-                Icon = input.ReadInt32();
-                break;
-              }
-              case 32: {
-                Marker = input.ReadInt32();
-                break;
-              }
-              case 45: {
-                X = input.ReadFloat();
-                break;
-              }
-              case 53: {
-                Y = input.ReadFloat();
-                break;
-              }
-              case 61: {
-                Z = input.ReadFloat();
-                break;
-              }
-              case 64: {
-                Vw = input.ReadInt32();
-                break;
-              }
-              case 72: {
-                Int = input.ReadInt32();
-                break;
-              }
-              case 80: {
-                EstateId = input.ReadUInt32();
-                break;
-              }
-            }
-          }
-        }
-
-      }
-
-    }
-    #endregion
-
-  }
-
   /// <summary>
   /// Request message for rpc `CreateEntrance`.
   /// </summary>
@@ -718,7 +101,7 @@ namespace Mruv.Entrances {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Entrances.EntrancesReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Mruv.Entrances.EntrancesReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -735,7 +118,9 @@ namespace Mruv.Entrances {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public CreateEntranceRequest(CreateEntranceRequest other) : this() {
-      entrance_ = other.entrance_ != null ? other.entrance_.Clone() : null;
+      name_ = other.name_;
+      out_ = other.out_ != null ? other.out_.Clone() : null;
+      in_ = other.in_ != null ? other.in_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -744,14 +129,36 @@ namespace Mruv.Entrances {
       return new CreateEntranceRequest(this);
     }
 
-    /// <summary>Field number for the "entrance" field.</summary>
-    public const int EntranceFieldNumber = 1;
-    private global::Mruv.Entrances.Entrance entrance_;
+    /// <summary>Field number for the "name" field.</summary>
+    public const int NameFieldNumber = 1;
+    private string name_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Mruv.Entrances.Entrance Entrance {
-      get { return entrance_; }
+    public string Name {
+      get { return name_; }
       set {
-        entrance_ = value;
+        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "out" field.</summary>
+    public const int OutFieldNumber = 2;
+    private global::Mruv.Spots.Spot out_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Mruv.Spots.Spot Out {
+      get { return out_; }
+      set {
+        out_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "in" field.</summary>
+    public const int InFieldNumber = 3;
+    private global::Mruv.Spots.Spot in_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Mruv.Spots.Spot In {
+      get { return in_; }
+      set {
+        in_ = value;
       }
     }
 
@@ -768,14 +175,18 @@ namespace Mruv.Entrances {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(Entrance, other.Entrance)) return false;
+      if (Name != other.Name) return false;
+      if (!object.Equals(Out, other.Out)) return false;
+      if (!object.Equals(In, other.In)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (entrance_ != null) hash ^= Entrance.GetHashCode();
+      if (Name.Length != 0) hash ^= Name.GetHashCode();
+      if (out_ != null) hash ^= Out.GetHashCode();
+      if (in_ != null) hash ^= In.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -789,9 +200,17 @@ namespace Mruv.Entrances {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (entrance_ != null) {
+      if (Name.Length != 0) {
         output.WriteRawTag(10);
-        output.WriteMessage(Entrance);
+        output.WriteString(Name);
+      }
+      if (out_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Out);
+      }
+      if (in_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(In);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -801,8 +220,14 @@ namespace Mruv.Entrances {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (entrance_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Entrance);
+      if (Name.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+      }
+      if (out_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Out);
+      }
+      if (in_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(In);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -815,11 +240,20 @@ namespace Mruv.Entrances {
       if (other == null) {
         return;
       }
-      if (other.entrance_ != null) {
-        if (entrance_ == null) {
-          Entrance = new global::Mruv.Entrances.Entrance();
+      if (other.Name.Length != 0) {
+        Name = other.Name;
+      }
+      if (other.out_ != null) {
+        if (out_ == null) {
+          Out = new global::Mruv.Spots.Spot();
         }
-        Entrance.MergeFrom(other.Entrance);
+        Out.MergeFrom(other.Out);
+      }
+      if (other.in_ != null) {
+        if (in_ == null) {
+          In = new global::Mruv.Spots.Spot();
+        }
+        In.MergeFrom(other.In);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -833,10 +267,21 @@ namespace Mruv.Entrances {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            if (entrance_ == null) {
-              Entrance = new global::Mruv.Entrances.Entrance();
+            Name = input.ReadString();
+            break;
+          }
+          case 18: {
+            if (out_ == null) {
+              Out = new global::Mruv.Spots.Spot();
             }
-            input.ReadMessage(Entrance);
+            input.ReadMessage(Out);
+            break;
+          }
+          case 26: {
+            if (in_ == null) {
+              In = new global::Mruv.Spots.Spot();
+            }
+            input.ReadMessage(In);
             break;
           }
         }
@@ -856,7 +301,7 @@ namespace Mruv.Entrances {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Entrances.EntrancesReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Mruv.Entrances.EntrancesReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -988,7 +433,7 @@ namespace Mruv.Entrances {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Entrances.EntrancesReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Mruv.Entrances.EntrancesReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1120,7 +565,7 @@ namespace Mruv.Entrances {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Entrances.EntrancesReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Mruv.Entrances.EntrancesReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1137,12 +582,48 @@ namespace Mruv.Entrances {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GetEntranceResponse(GetEntranceResponse other) : this() {
+      name_ = other.name_;
+      inSpotId_ = other.inSpotId_;
+      outSpotId_ = other.outSpotId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GetEntranceResponse Clone() {
       return new GetEntranceResponse(this);
+    }
+
+    /// <summary>Field number for the "name" field.</summary>
+    public const int NameFieldNumber = 1;
+    private string name_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Name {
+      get { return name_; }
+      set {
+        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "in_spot_id" field.</summary>
+    public const int InSpotIdFieldNumber = 2;
+    private uint inSpotId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint InSpotId {
+      get { return inSpotId_; }
+      set {
+        inSpotId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "out_spot_id" field.</summary>
+    public const int OutSpotIdFieldNumber = 3;
+    private uint outSpotId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint OutSpotId {
+      get { return outSpotId_; }
+      set {
+        outSpotId_ = value;
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1158,12 +639,18 @@ namespace Mruv.Entrances {
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if (Name != other.Name) return false;
+      if (InSpotId != other.InSpotId) return false;
+      if (OutSpotId != other.OutSpotId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
+      if (Name.Length != 0) hash ^= Name.GetHashCode();
+      if (InSpotId != 0) hash ^= InSpotId.GetHashCode();
+      if (OutSpotId != 0) hash ^= OutSpotId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1177,6 +664,18 @@ namespace Mruv.Entrances {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+      if (Name.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Name);
+      }
+      if (InSpotId != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(InSpotId);
+      }
+      if (OutSpotId != 0) {
+        output.WriteRawTag(24);
+        output.WriteUInt32(OutSpotId);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1185,6 +684,15 @@ namespace Mruv.Entrances {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
+      if (Name.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+      }
+      if (InSpotId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(InSpotId);
+      }
+      if (OutSpotId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(OutSpotId);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -1195,6 +703,15 @@ namespace Mruv.Entrances {
     public void MergeFrom(GetEntranceResponse other) {
       if (other == null) {
         return;
+      }
+      if (other.Name.Length != 0) {
+        Name = other.Name;
+      }
+      if (other.InSpotId != 0) {
+        InSpotId = other.InSpotId;
+      }
+      if (other.OutSpotId != 0) {
+        OutSpotId = other.OutSpotId;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1207,6 +724,18 @@ namespace Mruv.Entrances {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
+          case 10: {
+            Name = input.ReadString();
+            break;
+          }
+          case 16: {
+            InSpotId = input.ReadUInt32();
+            break;
+          }
+          case 24: {
+            OutSpotId = input.ReadUInt32();
+            break;
+          }
         }
       }
     }
@@ -1224,7 +753,7 @@ namespace Mruv.Entrances {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Entrances.EntrancesReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Mruv.Entrances.EntrancesReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1242,6 +771,8 @@ namespace Mruv.Entrances {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public UpdateEntranceRequest(UpdateEntranceRequest other) : this() {
       id_ = other.id_;
+      inSpotId_ = other.inSpotId_;
+      outSpotId_ = other.outSpotId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1261,6 +792,28 @@ namespace Mruv.Entrances {
       }
     }
 
+    /// <summary>Field number for the "in_spot_id" field.</summary>
+    public const int InSpotIdFieldNumber = 2;
+    private uint inSpotId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint InSpotId {
+      get { return inSpotId_; }
+      set {
+        inSpotId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "out_spot_id" field.</summary>
+    public const int OutSpotIdFieldNumber = 3;
+    private uint outSpotId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint OutSpotId {
+      get { return outSpotId_; }
+      set {
+        outSpotId_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as UpdateEntranceRequest);
@@ -1275,6 +828,8 @@ namespace Mruv.Entrances {
         return true;
       }
       if (Id != other.Id) return false;
+      if (InSpotId != other.InSpotId) return false;
+      if (OutSpotId != other.OutSpotId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1282,6 +837,8 @@ namespace Mruv.Entrances {
     public override int GetHashCode() {
       int hash = 1;
       if (Id != 0) hash ^= Id.GetHashCode();
+      if (InSpotId != 0) hash ^= InSpotId.GetHashCode();
+      if (OutSpotId != 0) hash ^= OutSpotId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1299,6 +856,14 @@ namespace Mruv.Entrances {
         output.WriteRawTag(8);
         output.WriteUInt32(Id);
       }
+      if (InSpotId != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(InSpotId);
+      }
+      if (OutSpotId != 0) {
+        output.WriteRawTag(24);
+        output.WriteUInt32(OutSpotId);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1309,6 +874,12 @@ namespace Mruv.Entrances {
       int size = 0;
       if (Id != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Id);
+      }
+      if (InSpotId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(InSpotId);
+      }
+      if (OutSpotId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(OutSpotId);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1324,6 +895,12 @@ namespace Mruv.Entrances {
       if (other.Id != 0) {
         Id = other.Id;
       }
+      if (other.InSpotId != 0) {
+        InSpotId = other.InSpotId;
+      }
+      if (other.OutSpotId != 0) {
+        OutSpotId = other.OutSpotId;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -1337,6 +914,14 @@ namespace Mruv.Entrances {
             break;
           case 8: {
             Id = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            InSpotId = input.ReadUInt32();
+            break;
+          }
+          case 24: {
+            OutSpotId = input.ReadUInt32();
             break;
           }
         }
@@ -1356,7 +941,7 @@ namespace Mruv.Entrances {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Entrances.EntrancesReflection.Descriptor.MessageTypes[6]; }
+      get { return global::Mruv.Entrances.EntrancesReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1460,7 +1045,7 @@ namespace Mruv.Entrances {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Entrances.EntrancesReflection.Descriptor.MessageTypes[7]; }
+      get { return global::Mruv.Entrances.EntrancesReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1592,7 +1177,7 @@ namespace Mruv.Entrances {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Entrances.EntrancesReflection.Descriptor.MessageTypes[8]; }
+      get { return global::Mruv.Entrances.EntrancesReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1696,7 +1281,7 @@ namespace Mruv.Entrances {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Entrances.EntrancesReflection.Descriptor.MessageTypes[9]; }
+      get { return global::Mruv.Entrances.EntrancesReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1828,7 +1413,7 @@ namespace Mruv.Entrances {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Entrances.EntrancesReflection.Descriptor.MessageTypes[10]; }
+      get { return global::Mruv.Entrances.EntrancesReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1932,7 +1517,7 @@ namespace Mruv.Entrances {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Entrances.EntrancesReflection.Descriptor.MessageTypes[11]; }
+      get { return global::Mruv.Entrances.EntrancesReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2064,7 +1649,7 @@ namespace Mruv.Entrances {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Entrances.EntrancesReflection.Descriptor.MessageTypes[12]; }
+      get { return global::Mruv.Entrances.EntrancesReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2168,7 +1753,7 @@ namespace Mruv.Entrances {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Entrances.EntrancesReflection.Descriptor.MessageTypes[13]; }
+      get { return global::Mruv.Entrances.EntrancesReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2384,7 +1969,7 @@ namespace Mruv.Entrances {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Entrances.EntrancesReflection.Descriptor.MessageTypes[14]; }
+      get { return global::Mruv.Entrances.EntrancesReflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2544,7 +2129,7 @@ namespace Mruv.Entrances {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Entrances.EntrancesReflection.Descriptor.MessageTypes[15]; }
+      get { return global::Mruv.Entrances.EntrancesReflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2676,7 +2261,7 @@ namespace Mruv.Entrances {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Entrances.EntrancesReflection.Descriptor.MessageTypes[16]; }
+      get { return global::Mruv.Entrances.EntrancesReflection.Descriptor.MessageTypes[15]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

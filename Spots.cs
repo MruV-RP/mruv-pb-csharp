@@ -25,38 +25,36 @@ namespace Mruv.Spots {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChFzcG90cy9zcG90cy5wcm90bxIKbXJ1di5zcG90cxocZ29vZ2xlL2FwaS9h",
-            "bm5vdGF0aW9ucy5wcm90byKKAQoRQ3JlYXRlU3BvdFJlcXVlc3QSDAoEbmFt",
-            "ZRgBIAEoCRIPCgdtZXNzYWdlGAIgASgJEgwKBGljb24YAyABKAUSDgoGbWFy",
-            "a2VyGAQgASgFEgkKAXgYBSABKAISCQoBeRgGIAEoAhIJCgF6GAcgASgCEgoK",
-            "AnZ3GAggASgFEgsKA2ludBgJIAEoBSIgChJDcmVhdGVTcG90UmVzcG9uc2US",
-            "CgoCaWQYASABKA0iHAoOR2V0U3BvdFJlcXVlc3QSCgoCaWQYASABKA0iiAEK",
-            "D0dldFNwb3RSZXNwb25zZRIMCgRuYW1lGAEgASgJEg8KB21lc3NhZ2UYAiAB",
-            "KAkSDAoEaWNvbhgDIAEoBRIOCgZtYXJrZXIYBCABKAUSCQoBeBgFIAEoAhIJ",
-            "CgF5GAYgASgCEgkKAXoYByABKAISCgoCdncYCCABKAUSCwoDaW50GAkgASgF",
-            "IpYBChFVcGRhdGVTcG90UmVxdWVzdBIKCgJpZBgBIAEoDRIMCgRuYW1lGAIg",
-            "ASgJEg8KB21lc3NhZ2UYAyABKAkSDAoEaWNvbhgEIAEoBRIOCgZtYXJrZXIY",
-            "BSABKAUSCQoBeBgGIAEoAhIJCgF5GAcgASgCEgkKAXoYCCABKAISCgoCdncY",
-            "CSABKAUSCwoDaW50GAogASgFIhQKElVwZGF0ZVNwb3RSZXNwb25zZSIfChFE",
-            "ZWxldGVTcG90UmVxdWVzdBIKCgJpZBgBIAEoDSIUChJEZWxldGVTcG90UmVz",
-            "cG9uc2UymAMKEE1ydVZTcG90c1NlcnZpY2USXgoKQ3JlYXRlU3BvdBIdLm1y",
-            "dXYuc3BvdHMuQ3JlYXRlU3BvdFJlcXVlc3QaHi5tcnV2LnNwb3RzLkNyZWF0",
-            "ZVNwb3RSZXNwb25zZSIRgtPkkwILIgkvdjEvc3BvdHMSWgoHR2V0U3BvdBIa",
-            "Lm1ydXYuc3BvdHMuR2V0U3BvdFJlcXVlc3QaGy5tcnV2LnNwb3RzLkdldFNw",
-            "b3RSZXNwb25zZSIWgtPkkwIQEg4vdjEvc3BvdHMve2lkfRJjCgpVcGRhdGVT",
-            "cG90Eh0ubXJ1di5zcG90cy5VcGRhdGVTcG90UmVxdWVzdBoeLm1ydXYuc3Bv",
-            "dHMuVXBkYXRlU3BvdFJlc3BvbnNlIhaC0+STAhAyDi92MS9zcG90cy97aWR9",
-            "EmMKCkRlbGV0ZVNwb3QSHS5tcnV2LnNwb3RzLkRlbGV0ZVNwb3RSZXF1ZXN0",
-            "Gh4ubXJ1di5zcG90cy5EZWxldGVTcG90UmVzcG9uc2UiFoLT5JMCECoOL3Yx",
-            "L3Nwb3RzL3tpZH1CJVojZ2l0aHViLmNvbS9NcnVWLVJQL21ydXYtcGItZ28v",
-            "c3BvdHNiBnByb3RvMw=="));
+            "bm5vdGF0aW9ucy5wcm90byJ9CgRTcG90EgwKBG5hbWUYASABKAkSDwoHbWVz",
+            "c2FnZRgCIAEoCRIMCgRpY29uGAMgASgFEg4KBm1hcmtlchgEIAEoBRIJCgF4",
+            "GAUgASgCEgkKAXkYBiABKAISCQoBehgHIAEoAhIKCgJ2dxgIIAEoBRILCgNp",
+            "bnQYCSABKAUiMwoRQ3JlYXRlU3BvdFJlcXVlc3QSHgoEc3BvdBgBIAEoCzIQ",
+            "Lm1ydXYuc3BvdHMuU3BvdCIgChJDcmVhdGVTcG90UmVzcG9uc2USCgoCaWQY",
+            "ASABKA0iHAoOR2V0U3BvdFJlcXVlc3QSCgoCaWQYASABKA0iMQoPR2V0U3Bv",
+            "dFJlc3BvbnNlEh4KBHNwb3QYASABKAsyEC5tcnV2LnNwb3RzLlNwb3QiPwoR",
+            "VXBkYXRlU3BvdFJlcXVlc3QSCgoCaWQYASABKA0SHgoEc3BvdBgCIAEoCzIQ",
+            "Lm1ydXYuc3BvdHMuU3BvdCIUChJVcGRhdGVTcG90UmVzcG9uc2UiHwoRRGVs",
+            "ZXRlU3BvdFJlcXVlc3QSCgoCaWQYASABKA0iFAoSRGVsZXRlU3BvdFJlc3Bv",
+            "bnNlMpgDChBNcnVWU3BvdHNTZXJ2aWNlEl4KCkNyZWF0ZVNwb3QSHS5tcnV2",
+            "LnNwb3RzLkNyZWF0ZVNwb3RSZXF1ZXN0Gh4ubXJ1di5zcG90cy5DcmVhdGVT",
+            "cG90UmVzcG9uc2UiEYLT5JMCCyIJL3YxL3Nwb3RzEloKB0dldFNwb3QSGi5t",
+            "cnV2LnNwb3RzLkdldFNwb3RSZXF1ZXN0GhsubXJ1di5zcG90cy5HZXRTcG90",
+            "UmVzcG9uc2UiFoLT5JMCEBIOL3YxL3Nwb3RzL3tpZH0SYwoKVXBkYXRlU3Bv",
+            "dBIdLm1ydXYuc3BvdHMuVXBkYXRlU3BvdFJlcXVlc3QaHi5tcnV2LnNwb3Rz",
+            "LlVwZGF0ZVNwb3RSZXNwb25zZSIWgtPkkwIQMg4vdjEvc3BvdHMve2lkfRJj",
+            "CgpEZWxldGVTcG90Eh0ubXJ1di5zcG90cy5EZWxldGVTcG90UmVxdWVzdBoe",
+            "Lm1ydXYuc3BvdHMuRGVsZXRlU3BvdFJlc3BvbnNlIhaC0+STAhAqDi92MS9z",
+            "cG90cy97aWR9QiVaI2dpdGh1Yi5jb20vTXJ1Vi1SUC9tcnV2LXBiLWdvL3Nw",
+            "b3RzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Spots.CreateSpotRequest), global::Mruv.Spots.CreateSpotRequest.Parser, new[]{ "Name", "Message", "Icon", "Marker", "X", "Y", "Z", "Vw", "Int" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Spots.Spot), global::Mruv.Spots.Spot.Parser, new[]{ "Name", "Message", "Icon", "Marker", "X", "Y", "Z", "Vw", "Int" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Spots.CreateSpotRequest), global::Mruv.Spots.CreateSpotRequest.Parser, new[]{ "Spot" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Spots.CreateSpotResponse), global::Mruv.Spots.CreateSpotResponse.Parser, new[]{ "Id" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Spots.GetSpotRequest), global::Mruv.Spots.GetSpotRequest.Parser, new[]{ "Id" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Spots.GetSpotResponse), global::Mruv.Spots.GetSpotResponse.Parser, new[]{ "Name", "Message", "Icon", "Marker", "X", "Y", "Z", "Vw", "Int" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Spots.UpdateSpotRequest), global::Mruv.Spots.UpdateSpotRequest.Parser, new[]{ "Id", "Name", "Message", "Icon", "Marker", "X", "Y", "Z", "Vw", "Int" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Spots.GetSpotResponse), global::Mruv.Spots.GetSpotResponse.Parser, new[]{ "Spot" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Spots.UpdateSpotRequest), global::Mruv.Spots.UpdateSpotRequest.Parser, new[]{ "Id", "Spot" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Spots.UpdateSpotResponse), global::Mruv.Spots.UpdateSpotResponse.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Spots.DeleteSpotRequest), global::Mruv.Spots.DeleteSpotRequest.Parser, new[]{ "Id" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Spots.DeleteSpotResponse), global::Mruv.Spots.DeleteSpotResponse.Parser, null, null, null, null)
@@ -67,13 +65,13 @@ namespace Mruv.Spots {
   }
   #region Messages
   /// <summary>
-  /// Request message for rpc `CreateSpot`.
+  ///Spot.
   /// </summary>
-  public sealed partial class CreateSpotRequest : pb::IMessage<CreateSpotRequest> {
-    private static readonly pb::MessageParser<CreateSpotRequest> _parser = new pb::MessageParser<CreateSpotRequest>(() => new CreateSpotRequest());
+  public sealed partial class Spot : pb::IMessage<Spot> {
+    private static readonly pb::MessageParser<Spot> _parser = new pb::MessageParser<Spot>(() => new Spot());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<CreateSpotRequest> Parser { get { return _parser; } }
+    public static pb::MessageParser<Spot> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
@@ -86,14 +84,14 @@ namespace Mruv.Spots {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CreateSpotRequest() {
+    public Spot() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CreateSpotRequest(CreateSpotRequest other) : this() {
+    public Spot(Spot other) : this() {
       name_ = other.name_;
       message_ = other.message_;
       icon_ = other.icon_;
@@ -107,8 +105,8 @@ namespace Mruv.Spots {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CreateSpotRequest Clone() {
-      return new CreateSpotRequest(this);
+    public Spot Clone() {
+      return new Spot(this);
     }
 
     /// <summary>Field number for the "name" field.</summary>
@@ -212,11 +210,11 @@ namespace Mruv.Spots {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as CreateSpotRequest);
+      return Equals(other as Spot);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(CreateSpotRequest other) {
+    public bool Equals(Spot other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -338,7 +336,7 @@ namespace Mruv.Spots {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(CreateSpotRequest other) {
+    public void MergeFrom(Spot other) {
       if (other == null) {
         return;
       }
@@ -423,6 +421,144 @@ namespace Mruv.Spots {
   }
 
   /// <summary>
+  /// Request message for rpc `CreateSpot`.
+  /// </summary>
+  public sealed partial class CreateSpotRequest : pb::IMessage<CreateSpotRequest> {
+    private static readonly pb::MessageParser<CreateSpotRequest> _parser = new pb::MessageParser<CreateSpotRequest>(() => new CreateSpotRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CreateSpotRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.Spots.SpotsReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CreateSpotRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CreateSpotRequest(CreateSpotRequest other) : this() {
+      spot_ = other.spot_ != null ? other.spot_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CreateSpotRequest Clone() {
+      return new CreateSpotRequest(this);
+    }
+
+    /// <summary>Field number for the "spot" field.</summary>
+    public const int SpotFieldNumber = 1;
+    private global::Mruv.Spots.Spot spot_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Mruv.Spots.Spot Spot {
+      get { return spot_; }
+      set {
+        spot_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CreateSpotRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CreateSpotRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Spot, other.Spot)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (spot_ != null) hash ^= Spot.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (spot_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Spot);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (spot_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Spot);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CreateSpotRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.spot_ != null) {
+        if (spot_ == null) {
+          Spot = new global::Mruv.Spots.Spot();
+        }
+        Spot.MergeFrom(other.Spot);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (spot_ == null) {
+              Spot = new global::Mruv.Spots.Spot();
+            }
+            input.ReadMessage(Spot);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
   /// Response message for rpc `CreateSpot`.
   /// </summary>
   public sealed partial class CreateSpotResponse : pb::IMessage<CreateSpotResponse> {
@@ -433,7 +569,7 @@ namespace Mruv.Spots {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Spots.SpotsReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Mruv.Spots.SpotsReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -565,7 +701,7 @@ namespace Mruv.Spots {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Spots.SpotsReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Mruv.Spots.SpotsReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -697,7 +833,7 @@ namespace Mruv.Spots {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Spots.SpotsReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Mruv.Spots.SpotsReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -714,15 +850,7 @@ namespace Mruv.Spots {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GetSpotResponse(GetSpotResponse other) : this() {
-      name_ = other.name_;
-      message_ = other.message_;
-      icon_ = other.icon_;
-      marker_ = other.marker_;
-      x_ = other.x_;
-      y_ = other.y_;
-      z_ = other.z_;
-      vw_ = other.vw_;
-      int_ = other.int_;
+      spot_ = other.spot_ != null ? other.spot_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -731,102 +859,14 @@ namespace Mruv.Spots {
       return new GetSpotResponse(this);
     }
 
-    /// <summary>Field number for the "name" field.</summary>
-    public const int NameFieldNumber = 1;
-    private string name_ = "";
+    /// <summary>Field number for the "spot" field.</summary>
+    public const int SpotFieldNumber = 1;
+    private global::Mruv.Spots.Spot spot_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Name {
-      get { return name_; }
+    public global::Mruv.Spots.Spot Spot {
+      get { return spot_; }
       set {
-        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "message" field.</summary>
-    public const int MessageFieldNumber = 2;
-    private string message_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Message {
-      get { return message_; }
-      set {
-        message_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "icon" field.</summary>
-    public const int IconFieldNumber = 3;
-    private int icon_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Icon {
-      get { return icon_; }
-      set {
-        icon_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "marker" field.</summary>
-    public const int MarkerFieldNumber = 4;
-    private int marker_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Marker {
-      get { return marker_; }
-      set {
-        marker_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "x" field.</summary>
-    public const int XFieldNumber = 5;
-    private float x_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public float X {
-      get { return x_; }
-      set {
-        x_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "y" field.</summary>
-    public const int YFieldNumber = 6;
-    private float y_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public float Y {
-      get { return y_; }
-      set {
-        y_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "z" field.</summary>
-    public const int ZFieldNumber = 7;
-    private float z_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public float Z {
-      get { return z_; }
-      set {
-        z_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "vw" field.</summary>
-    public const int VwFieldNumber = 8;
-    private int vw_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Vw {
-      get { return vw_; }
-      set {
-        vw_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "int" field.</summary>
-    public const int IntFieldNumber = 9;
-    private int int_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Int {
-      get { return int_; }
-      set {
-        int_ = value;
+        spot_ = value;
       }
     }
 
@@ -843,30 +883,14 @@ namespace Mruv.Spots {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Name != other.Name) return false;
-      if (Message != other.Message) return false;
-      if (Icon != other.Icon) return false;
-      if (Marker != other.Marker) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(X, other.X)) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Y, other.Y)) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Z, other.Z)) return false;
-      if (Vw != other.Vw) return false;
-      if (Int != other.Int) return false;
+      if (!object.Equals(Spot, other.Spot)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Name.Length != 0) hash ^= Name.GetHashCode();
-      if (Message.Length != 0) hash ^= Message.GetHashCode();
-      if (Icon != 0) hash ^= Icon.GetHashCode();
-      if (Marker != 0) hash ^= Marker.GetHashCode();
-      if (X != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(X);
-      if (Y != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Y);
-      if (Z != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Z);
-      if (Vw != 0) hash ^= Vw.GetHashCode();
-      if (Int != 0) hash ^= Int.GetHashCode();
+      if (spot_ != null) hash ^= Spot.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -880,41 +904,9 @@ namespace Mruv.Spots {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Name.Length != 0) {
+      if (spot_ != null) {
         output.WriteRawTag(10);
-        output.WriteString(Name);
-      }
-      if (Message.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(Message);
-      }
-      if (Icon != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(Icon);
-      }
-      if (Marker != 0) {
-        output.WriteRawTag(32);
-        output.WriteInt32(Marker);
-      }
-      if (X != 0F) {
-        output.WriteRawTag(45);
-        output.WriteFloat(X);
-      }
-      if (Y != 0F) {
-        output.WriteRawTag(53);
-        output.WriteFloat(Y);
-      }
-      if (Z != 0F) {
-        output.WriteRawTag(61);
-        output.WriteFloat(Z);
-      }
-      if (Vw != 0) {
-        output.WriteRawTag(64);
-        output.WriteInt32(Vw);
-      }
-      if (Int != 0) {
-        output.WriteRawTag(72);
-        output.WriteInt32(Int);
+        output.WriteMessage(Spot);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -924,32 +916,8 @@ namespace Mruv.Spots {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Name.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
-      }
-      if (Message.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Message);
-      }
-      if (Icon != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Icon);
-      }
-      if (Marker != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Marker);
-      }
-      if (X != 0F) {
-        size += 1 + 4;
-      }
-      if (Y != 0F) {
-        size += 1 + 4;
-      }
-      if (Z != 0F) {
-        size += 1 + 4;
-      }
-      if (Vw != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Vw);
-      }
-      if (Int != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Int);
+      if (spot_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Spot);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -962,32 +930,11 @@ namespace Mruv.Spots {
       if (other == null) {
         return;
       }
-      if (other.Name.Length != 0) {
-        Name = other.Name;
-      }
-      if (other.Message.Length != 0) {
-        Message = other.Message;
-      }
-      if (other.Icon != 0) {
-        Icon = other.Icon;
-      }
-      if (other.Marker != 0) {
-        Marker = other.Marker;
-      }
-      if (other.X != 0F) {
-        X = other.X;
-      }
-      if (other.Y != 0F) {
-        Y = other.Y;
-      }
-      if (other.Z != 0F) {
-        Z = other.Z;
-      }
-      if (other.Vw != 0) {
-        Vw = other.Vw;
-      }
-      if (other.Int != 0) {
-        Int = other.Int;
+      if (other.spot_ != null) {
+        if (spot_ == null) {
+          Spot = new global::Mruv.Spots.Spot();
+        }
+        Spot.MergeFrom(other.Spot);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1001,39 +948,10 @@ namespace Mruv.Spots {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            Name = input.ReadString();
-            break;
-          }
-          case 18: {
-            Message = input.ReadString();
-            break;
-          }
-          case 24: {
-            Icon = input.ReadInt32();
-            break;
-          }
-          case 32: {
-            Marker = input.ReadInt32();
-            break;
-          }
-          case 45: {
-            X = input.ReadFloat();
-            break;
-          }
-          case 53: {
-            Y = input.ReadFloat();
-            break;
-          }
-          case 61: {
-            Z = input.ReadFloat();
-            break;
-          }
-          case 64: {
-            Vw = input.ReadInt32();
-            break;
-          }
-          case 72: {
-            Int = input.ReadInt32();
+            if (spot_ == null) {
+              Spot = new global::Mruv.Spots.Spot();
+            }
+            input.ReadMessage(Spot);
             break;
           }
         }
@@ -1053,7 +971,7 @@ namespace Mruv.Spots {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Spots.SpotsReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Mruv.Spots.SpotsReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1071,15 +989,7 @@ namespace Mruv.Spots {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public UpdateSpotRequest(UpdateSpotRequest other) : this() {
       id_ = other.id_;
-      name_ = other.name_;
-      message_ = other.message_;
-      icon_ = other.icon_;
-      marker_ = other.marker_;
-      x_ = other.x_;
-      y_ = other.y_;
-      z_ = other.z_;
-      vw_ = other.vw_;
-      int_ = other.int_;
+      spot_ = other.spot_ != null ? other.spot_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1099,102 +1009,14 @@ namespace Mruv.Spots {
       }
     }
 
-    /// <summary>Field number for the "name" field.</summary>
-    public const int NameFieldNumber = 2;
-    private string name_ = "";
+    /// <summary>Field number for the "spot" field.</summary>
+    public const int SpotFieldNumber = 2;
+    private global::Mruv.Spots.Spot spot_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Name {
-      get { return name_; }
+    public global::Mruv.Spots.Spot Spot {
+      get { return spot_; }
       set {
-        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "message" field.</summary>
-    public const int MessageFieldNumber = 3;
-    private string message_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Message {
-      get { return message_; }
-      set {
-        message_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "icon" field.</summary>
-    public const int IconFieldNumber = 4;
-    private int icon_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Icon {
-      get { return icon_; }
-      set {
-        icon_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "marker" field.</summary>
-    public const int MarkerFieldNumber = 5;
-    private int marker_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Marker {
-      get { return marker_; }
-      set {
-        marker_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "x" field.</summary>
-    public const int XFieldNumber = 6;
-    private float x_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public float X {
-      get { return x_; }
-      set {
-        x_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "y" field.</summary>
-    public const int YFieldNumber = 7;
-    private float y_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public float Y {
-      get { return y_; }
-      set {
-        y_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "z" field.</summary>
-    public const int ZFieldNumber = 8;
-    private float z_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public float Z {
-      get { return z_; }
-      set {
-        z_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "vw" field.</summary>
-    public const int VwFieldNumber = 9;
-    private int vw_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Vw {
-      get { return vw_; }
-      set {
-        vw_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "int" field.</summary>
-    public const int IntFieldNumber = 10;
-    private int int_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Int {
-      get { return int_; }
-      set {
-        int_ = value;
+        spot_ = value;
       }
     }
 
@@ -1212,15 +1034,7 @@ namespace Mruv.Spots {
         return true;
       }
       if (Id != other.Id) return false;
-      if (Name != other.Name) return false;
-      if (Message != other.Message) return false;
-      if (Icon != other.Icon) return false;
-      if (Marker != other.Marker) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(X, other.X)) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Y, other.Y)) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Z, other.Z)) return false;
-      if (Vw != other.Vw) return false;
-      if (Int != other.Int) return false;
+      if (!object.Equals(Spot, other.Spot)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1228,15 +1042,7 @@ namespace Mruv.Spots {
     public override int GetHashCode() {
       int hash = 1;
       if (Id != 0) hash ^= Id.GetHashCode();
-      if (Name.Length != 0) hash ^= Name.GetHashCode();
-      if (Message.Length != 0) hash ^= Message.GetHashCode();
-      if (Icon != 0) hash ^= Icon.GetHashCode();
-      if (Marker != 0) hash ^= Marker.GetHashCode();
-      if (X != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(X);
-      if (Y != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Y);
-      if (Z != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Z);
-      if (Vw != 0) hash ^= Vw.GetHashCode();
-      if (Int != 0) hash ^= Int.GetHashCode();
+      if (spot_ != null) hash ^= Spot.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1254,41 +1060,9 @@ namespace Mruv.Spots {
         output.WriteRawTag(8);
         output.WriteUInt32(Id);
       }
-      if (Name.Length != 0) {
+      if (spot_ != null) {
         output.WriteRawTag(18);
-        output.WriteString(Name);
-      }
-      if (Message.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(Message);
-      }
-      if (Icon != 0) {
-        output.WriteRawTag(32);
-        output.WriteInt32(Icon);
-      }
-      if (Marker != 0) {
-        output.WriteRawTag(40);
-        output.WriteInt32(Marker);
-      }
-      if (X != 0F) {
-        output.WriteRawTag(53);
-        output.WriteFloat(X);
-      }
-      if (Y != 0F) {
-        output.WriteRawTag(61);
-        output.WriteFloat(Y);
-      }
-      if (Z != 0F) {
-        output.WriteRawTag(69);
-        output.WriteFloat(Z);
-      }
-      if (Vw != 0) {
-        output.WriteRawTag(72);
-        output.WriteInt32(Vw);
-      }
-      if (Int != 0) {
-        output.WriteRawTag(80);
-        output.WriteInt32(Int);
+        output.WriteMessage(Spot);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -1301,32 +1075,8 @@ namespace Mruv.Spots {
       if (Id != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Id);
       }
-      if (Name.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
-      }
-      if (Message.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Message);
-      }
-      if (Icon != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Icon);
-      }
-      if (Marker != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Marker);
-      }
-      if (X != 0F) {
-        size += 1 + 4;
-      }
-      if (Y != 0F) {
-        size += 1 + 4;
-      }
-      if (Z != 0F) {
-        size += 1 + 4;
-      }
-      if (Vw != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Vw);
-      }
-      if (Int != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Int);
+      if (spot_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Spot);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1342,32 +1092,11 @@ namespace Mruv.Spots {
       if (other.Id != 0) {
         Id = other.Id;
       }
-      if (other.Name.Length != 0) {
-        Name = other.Name;
-      }
-      if (other.Message.Length != 0) {
-        Message = other.Message;
-      }
-      if (other.Icon != 0) {
-        Icon = other.Icon;
-      }
-      if (other.Marker != 0) {
-        Marker = other.Marker;
-      }
-      if (other.X != 0F) {
-        X = other.X;
-      }
-      if (other.Y != 0F) {
-        Y = other.Y;
-      }
-      if (other.Z != 0F) {
-        Z = other.Z;
-      }
-      if (other.Vw != 0) {
-        Vw = other.Vw;
-      }
-      if (other.Int != 0) {
-        Int = other.Int;
+      if (other.spot_ != null) {
+        if (spot_ == null) {
+          Spot = new global::Mruv.Spots.Spot();
+        }
+        Spot.MergeFrom(other.Spot);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1385,39 +1114,10 @@ namespace Mruv.Spots {
             break;
           }
           case 18: {
-            Name = input.ReadString();
-            break;
-          }
-          case 26: {
-            Message = input.ReadString();
-            break;
-          }
-          case 32: {
-            Icon = input.ReadInt32();
-            break;
-          }
-          case 40: {
-            Marker = input.ReadInt32();
-            break;
-          }
-          case 53: {
-            X = input.ReadFloat();
-            break;
-          }
-          case 61: {
-            Y = input.ReadFloat();
-            break;
-          }
-          case 69: {
-            Z = input.ReadFloat();
-            break;
-          }
-          case 72: {
-            Vw = input.ReadInt32();
-            break;
-          }
-          case 80: {
-            Int = input.ReadInt32();
+            if (spot_ == null) {
+              Spot = new global::Mruv.Spots.Spot();
+            }
+            input.ReadMessage(Spot);
             break;
           }
         }
@@ -1437,7 +1137,7 @@ namespace Mruv.Spots {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Spots.SpotsReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Mruv.Spots.SpotsReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1541,7 +1241,7 @@ namespace Mruv.Spots {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Spots.SpotsReflection.Descriptor.MessageTypes[6]; }
+      get { return global::Mruv.Spots.SpotsReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1673,7 +1373,7 @@ namespace Mruv.Spots {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Spots.SpotsReflection.Descriptor.MessageTypes[7]; }
+      get { return global::Mruv.Spots.SpotsReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
