@@ -25,64 +25,65 @@ namespace Mruv.Estates {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChVlc3RhdGVzL2VzdGF0ZXMucHJvdG8SDG1ydXYuZXN0YXRlcxocZ29vZ2xl",
-            "L2FwaS9hbm5vdGF0aW9ucy5wcm90byJ8CgZFc3RhdGUSCgoCaWQYASABKA0S",
-            "DAoEbmFtZRgCIAEoCRITCgtkZXNjcmlwdGlvbhgDIAEoCRIRCgllbnRyYW5j",
-            "ZXMYBCADKA0SDQoFZ2F0ZXMYBSADKA0SDQoFcm9vbXMYBiADKA0SEgoKcHJv",
-            "ZHVjdF9pZBgHIAEoDSI4ChNDcmVhdGVFc3RhdGVSZXF1ZXN0EgwKBG5hbWUY",
-            "ASABKAkSEwoLZGVzY3JpcHRpb24YAiABKAkiIgoUQ3JlYXRlRXN0YXRlUmVz",
-            "cG9uc2USCgoCaWQYASABKA0iHgoQR2V0RXN0YXRlUmVxdWVzdBIKCgJpZBgB",
-            "IAEoDSJEChNVcGRhdGVFc3RhdGVSZXF1ZXN0EgoKAmlkGAEgASgNEgwKBG5h",
-            "bWUYAiABKAkSEwoLZGVzY3JpcHRpb24YAyABKAkiFgoUVXBkYXRlRXN0YXRl",
-            "UmVzcG9uc2UiIQoTRGVsZXRlRXN0YXRlUmVxdWVzdBIKCgJpZBgBIAEoDSIW",
-            "ChREZWxldGVFc3RhdGVSZXNwb25zZSIwChFHZXRFc3RhdGVzUmVxdWVzdBIM",
-            "CgRmcm9tGAEgASgNEg0KBWxpbWl0GAIgASgNIhQKEkdldEVzdGF0ZXNSZXNw",
-            "b25zZSI0Cg5BZGRHYXRlUmVxdWVzdBIRCgllc3RhdGVfaWQYASABKA0SDwoH",
-            "Z2F0ZV9pZBgCIAEoDSIlCg9BZGRHYXRlUmVzcG9uc2USEgoKZ2F0ZV9jb3Vu",
-            "dBgBIAEoDSI3ChFEZWxldGVHYXRlUmVxdWVzdBIRCgllc3RhdGVfaWQYASAB",
-            "KA0SDwoHZ2F0ZV9pZBgCIAEoDSIoChJEZWxldGVHYXRlUmVzcG9uc2USEgoK",
-            "Z2F0ZV9jb3VudBgBIAEoDSIqChVHZXRFc3RhdGVHYXRlc1JlcXVlc3QSEQoJ",
-            "ZXN0YXRlX2lkGAEgASgNIj8KFkdldEVzdGF0ZUdhdGVzUmVzcG9uc2USJQoH",
-            "ZXN0YXRlcxgBIAMoCzIULm1ydXYuZXN0YXRlcy5Fc3RhdGUiPAoSQWRkRW50",
-            "cmFuY2VSZXF1ZXN0EhEKCWVzdGF0ZV9pZBgBIAEoDRITCgtlbnRyYW5jZV9p",
-            "ZBgCIAEoDSItChNBZGRFbnRyYW5jZVJlc3BvbnNlEhYKDmVudHJhbmNlX2Nv",
-            "dW50GAEgASgNIj8KFVJlbW92ZUVudHJhbmNlUmVxdWVzdBIRCgllc3RhdGVf",
-            "aWQYASABKA0SEwoLZW50cmFuY2VfaWQYAiABKA0iMAoWUmVtb3ZlRW50cmFu",
-            "Y2VSZXNwb25zZRIWCg5lbnRyYW5jZV9jb3VudBgBIAEoDSIuChlHZXRFc3Rh",
-            "dGVFbnRyYW5jZXNSZXF1ZXN0EhEKCWVzdGF0ZV9pZBgBIAEoDSIcChpHZXRF",
-            "c3RhdGVFbnRyYW5jZXNSZXNwb25zZTLECgoRTXJ1VkVzdGF0ZVNlcnZpY2US",
-            "agoMQ3JlYXRlRXN0YXRlEiEubXJ1di5lc3RhdGVzLkNyZWF0ZUVzdGF0ZVJl",
-            "cXVlc3QaIi5tcnV2LmVzdGF0ZXMuQ3JlYXRlRXN0YXRlUmVzcG9uc2UiE4LT",
-            "5JMCDSILL3YxL2VzdGF0ZXMSWwoJR2V0RXN0YXRlEh4ubXJ1di5lc3RhdGVz",
-            "LkdldEVzdGF0ZVJlcXVlc3QaFC5tcnV2LmVzdGF0ZXMuRXN0YXRlIhiC0+ST",
-            "AhISEC92MS9lc3RhdGVzL3tpZH0SbwoMVXBkYXRlRXN0YXRlEiEubXJ1di5l",
-            "c3RhdGVzLlVwZGF0ZUVzdGF0ZVJlcXVlc3QaIi5tcnV2LmVzdGF0ZXMuVXBk",
-            "YXRlRXN0YXRlUmVzcG9uc2UiGILT5JMCEjIQL3YxL2VzdGF0ZXMve2lkfRJv",
-            "CgxEZWxldGVFc3RhdGUSIS5tcnV2LmVzdGF0ZXMuRGVsZXRlRXN0YXRlUmVx",
-            "dWVzdBoiLm1ydXYuZXN0YXRlcy5EZWxldGVFc3RhdGVSZXNwb25zZSIYgtPk",
-            "kwISKhAvdjEvZXN0YXRlcy97aWR9EmQKCkdldEVzdGF0ZXMSHy5tcnV2LmVz",
-            "dGF0ZXMuR2V0RXN0YXRlc1JlcXVlc3QaIC5tcnV2LmVzdGF0ZXMuR2V0RXN0",
-            "YXRlc1Jlc3BvbnNlIhOC0+STAg0SCy92MS9lc3RhdGVzEm0KB0FkZEdhdGUS",
-            "HC5tcnV2LmVzdGF0ZXMuQWRkR2F0ZVJlcXVlc3QaHS5tcnV2LmVzdGF0ZXMu",
-            "QWRkR2F0ZVJlc3BvbnNlIiWC0+STAh8iHS92MS9lc3RhdGVzL3tlc3RhdGVf",
-            "aWR9L2dhdGVzEoABCgpEZWxldGVHYXRlEh8ubXJ1di5lc3RhdGVzLkRlbGV0",
-            "ZUdhdGVSZXF1ZXN0GiAubXJ1di5lc3RhdGVzLkRlbGV0ZUdhdGVSZXNwb25z",
-            "ZSIvgtPkkwIpKicvdjEvZXN0YXRlcy97ZXN0YXRlX2lkfS9nYXRlcy97Z2F0",
-            "ZV9pZH0SgQEKDkdldEVzdGF0ZUdhdGVzEiMubXJ1di5lc3RhdGVzLkdldEVz",
-            "dGF0ZUdhdGVzUmVxdWVzdBokLm1ydXYuZXN0YXRlcy5HZXRFc3RhdGVHYXRl",
-            "c1Jlc3BvbnNlIiSC0+STAh4SHC92MS9lc3RhdGUve2VzdGF0ZV9pZH0vZ2F0",
-            "ZXMSfQoLQWRkRW50cmFuY2USIC5tcnV2LmVzdGF0ZXMuQWRkRW50cmFuY2VS",
-            "ZXF1ZXN0GiEubXJ1di5lc3RhdGVzLkFkZEVudHJhbmNlUmVzcG9uc2UiKYLT",
-            "5JMCIyIhL3YxL2VzdGF0ZXMve2VzdGF0ZV9pZH0vZW50cmFuY2VzEpQBCg5S",
-            "ZW1vdmVFbnRyYW5jZRIjLm1ydXYuZXN0YXRlcy5SZW1vdmVFbnRyYW5jZVJl",
-            "cXVlc3QaJC5tcnV2LmVzdGF0ZXMuUmVtb3ZlRW50cmFuY2VSZXNwb25zZSI3",
-            "gtPkkwIxKi8vdjEvZXN0YXRlcy97ZXN0YXRlX2lkfS9lbnRyYW5jZXMve2Vu",
-            "dHJhbmNlX2lkfRKRAQoSR2V0RXN0YXRlRW50cmFuY2VzEicubXJ1di5lc3Rh",
-            "dGVzLkdldEVzdGF0ZUVudHJhbmNlc1JlcXVlc3QaKC5tcnV2LmVzdGF0ZXMu",
-            "R2V0RXN0YXRlRW50cmFuY2VzUmVzcG9uc2UiKILT5JMCIhIgL3YxL2VzdGF0",
-            "ZS97ZXN0YXRlX2lkfS9lbnRyYW5jZXNCJ1olZ2l0aHViLmNvbS9NcnVWLVJQ",
-            "L21ydXYtcGItZ28vZXN0YXRlc2IGcHJvdG8z"));
+            "L2FwaS9hbm5vdGF0aW9ucy5wcm90bxoZZW50cmFuY2VzL2VudHJhbmNlcy5w",
+            "cm90bxoRZ2F0ZXMvZ2F0ZXMucHJvdG8ifAoGRXN0YXRlEgoKAmlkGAEgASgN",
+            "EgwKBG5hbWUYAiABKAkSEwoLZGVzY3JpcHRpb24YAyABKAkSEQoJZW50cmFu",
+            "Y2VzGAQgAygNEg0KBWdhdGVzGAUgAygNEg0KBXJvb21zGAYgAygNEhIKCnBy",
+            "b2R1Y3RfaWQYByABKA0iOAoTQ3JlYXRlRXN0YXRlUmVxdWVzdBIMCgRuYW1l",
+            "GAEgASgJEhMKC2Rlc2NyaXB0aW9uGAIgASgJIiIKFENyZWF0ZUVzdGF0ZVJl",
+            "c3BvbnNlEgoKAmlkGAEgASgNIh4KEEdldEVzdGF0ZVJlcXVlc3QSCgoCaWQY",
+            "ASABKA0iRAoTVXBkYXRlRXN0YXRlUmVxdWVzdBIKCgJpZBgBIAEoDRIMCgRu",
+            "YW1lGAIgASgJEhMKC2Rlc2NyaXB0aW9uGAMgASgJIhYKFFVwZGF0ZUVzdGF0",
+            "ZVJlc3BvbnNlIiEKE0RlbGV0ZUVzdGF0ZVJlcXVlc3QSCgoCaWQYASABKA0i",
+            "FgoURGVsZXRlRXN0YXRlUmVzcG9uc2UiMAoRR2V0RXN0YXRlc1JlcXVlc3QS",
+            "DAoEZnJvbRgBIAEoDRINCgVsaW1pdBgCIAEoDSI7ChJHZXRFc3RhdGVzUmVz",
+            "cG9uc2USJQoHZXN0YXRlcxgBIAMoCzIULm1ydXYuZXN0YXRlcy5Fc3RhdGUi",
+            "NAoOQWRkR2F0ZVJlcXVlc3QSEQoJZXN0YXRlX2lkGAEgASgNEg8KB2dhdGVf",
+            "aWQYAiABKA0iEQoPQWRkR2F0ZVJlc3BvbnNlIjcKEVJlbW92ZUdhdGVSZXF1",
+            "ZXN0EhEKCWVzdGF0ZV9pZBgBIAEoDRIPCgdnYXRlX2lkGAIgASgNIhQKElJl",
+            "bW92ZUdhdGVSZXNwb25zZSIqChVHZXRFc3RhdGVHYXRlc1JlcXVlc3QSEQoJ",
+            "ZXN0YXRlX2lkGAEgASgNIjkKFkdldEVzdGF0ZUdhdGVzUmVzcG9uc2USHwoF",
+            "Z2F0ZXMYASADKAsyEC5tcnV2LmdhdGVzLkdhdGUiPAoSQWRkRW50cmFuY2VS",
+            "ZXF1ZXN0EhEKCWVzdGF0ZV9pZBgBIAEoDRITCgtlbnRyYW5jZV9pZBgCIAEo",
+            "DSIVChNBZGRFbnRyYW5jZVJlc3BvbnNlIj8KFVJlbW92ZUVudHJhbmNlUmVx",
+            "dWVzdBIRCgllc3RhdGVfaWQYASABKA0SEwoLZW50cmFuY2VfaWQYAiABKA0i",
+            "GAoWUmVtb3ZlRW50cmFuY2VSZXNwb25zZSIuChlHZXRFc3RhdGVFbnRyYW5j",
+            "ZXNSZXF1ZXN0EhEKCWVzdGF0ZV9pZBgBIAEoDSJJChpHZXRFc3RhdGVFbnRy",
+            "YW5jZXNSZXNwb25zZRIrCgllbnRyYW5jZXMYASADKAsyGC5tcnV2LmVudHJh",
+            "bmNlcy5FbnRyYW5jZTLECgoRTXJ1VkVzdGF0ZVNlcnZpY2USagoMQ3JlYXRl",
+            "RXN0YXRlEiEubXJ1di5lc3RhdGVzLkNyZWF0ZUVzdGF0ZVJlcXVlc3QaIi5t",
+            "cnV2LmVzdGF0ZXMuQ3JlYXRlRXN0YXRlUmVzcG9uc2UiE4LT5JMCDSILL3Yx",
+            "L2VzdGF0ZXMSWwoJR2V0RXN0YXRlEh4ubXJ1di5lc3RhdGVzLkdldEVzdGF0",
+            "ZVJlcXVlc3QaFC5tcnV2LmVzdGF0ZXMuRXN0YXRlIhiC0+STAhISEC92MS9l",
+            "c3RhdGVzL3tpZH0SbwoMVXBkYXRlRXN0YXRlEiEubXJ1di5lc3RhdGVzLlVw",
+            "ZGF0ZUVzdGF0ZVJlcXVlc3QaIi5tcnV2LmVzdGF0ZXMuVXBkYXRlRXN0YXRl",
+            "UmVzcG9uc2UiGILT5JMCEjIQL3YxL2VzdGF0ZXMve2lkfRJvCgxEZWxldGVF",
+            "c3RhdGUSIS5tcnV2LmVzdGF0ZXMuRGVsZXRlRXN0YXRlUmVxdWVzdBoiLm1y",
+            "dXYuZXN0YXRlcy5EZWxldGVFc3RhdGVSZXNwb25zZSIYgtPkkwISKhAvdjEv",
+            "ZXN0YXRlcy97aWR9EmQKCkdldEVzdGF0ZXMSHy5tcnV2LmVzdGF0ZXMuR2V0",
+            "RXN0YXRlc1JlcXVlc3QaIC5tcnV2LmVzdGF0ZXMuR2V0RXN0YXRlc1Jlc3Bv",
+            "bnNlIhOC0+STAg0SCy92MS9lc3RhdGVzEm0KB0FkZEdhdGUSHC5tcnV2LmVz",
+            "dGF0ZXMuQWRkR2F0ZVJlcXVlc3QaHS5tcnV2LmVzdGF0ZXMuQWRkR2F0ZVJl",
+            "c3BvbnNlIiWC0+STAh8iHS92MS9lc3RhdGVzL3tlc3RhdGVfaWR9L2dhdGVz",
+            "EoABCgpSZW1vdmVHYXRlEh8ubXJ1di5lc3RhdGVzLlJlbW92ZUdhdGVSZXF1",
+            "ZXN0GiAubXJ1di5lc3RhdGVzLlJlbW92ZUdhdGVSZXNwb25zZSIvgtPkkwIp",
+            "KicvdjEvZXN0YXRlcy97ZXN0YXRlX2lkfS9nYXRlcy97Z2F0ZV9pZH0SgQEK",
+            "DkdldEVzdGF0ZUdhdGVzEiMubXJ1di5lc3RhdGVzLkdldEVzdGF0ZUdhdGVz",
+            "UmVxdWVzdBokLm1ydXYuZXN0YXRlcy5HZXRFc3RhdGVHYXRlc1Jlc3BvbnNl",
+            "IiSC0+STAh4SHC92MS9lc3RhdGUve2VzdGF0ZV9pZH0vZ2F0ZXMSfQoLQWRk",
+            "RW50cmFuY2USIC5tcnV2LmVzdGF0ZXMuQWRkRW50cmFuY2VSZXF1ZXN0GiEu",
+            "bXJ1di5lc3RhdGVzLkFkZEVudHJhbmNlUmVzcG9uc2UiKYLT5JMCIyIhL3Yx",
+            "L2VzdGF0ZXMve2VzdGF0ZV9pZH0vZW50cmFuY2VzEpQBCg5SZW1vdmVFbnRy",
+            "YW5jZRIjLm1ydXYuZXN0YXRlcy5SZW1vdmVFbnRyYW5jZVJlcXVlc3QaJC5t",
+            "cnV2LmVzdGF0ZXMuUmVtb3ZlRW50cmFuY2VSZXNwb25zZSI3gtPkkwIxKi8v",
+            "djEvZXN0YXRlcy97ZXN0YXRlX2lkfS9lbnRyYW5jZXMve2VudHJhbmNlX2lk",
+            "fRKRAQoSR2V0RXN0YXRlRW50cmFuY2VzEicubXJ1di5lc3RhdGVzLkdldEVz",
+            "dGF0ZUVudHJhbmNlc1JlcXVlc3QaKC5tcnV2LmVzdGF0ZXMuR2V0RXN0YXRl",
+            "RW50cmFuY2VzUmVzcG9uc2UiKILT5JMCIhIgL3YxL2VzdGF0ZS97ZXN0YXRl",
+            "X2lkfS9lbnRyYW5jZXNCJ1olZ2l0aHViLmNvbS9NcnVWLVJQL21ydXYtcGIt",
+            "Z28vZXN0YXRlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, global::Mruv.Entrances.EntrancesReflection.Descriptor, global::Mruv.Gates.GatesReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.Estate), global::Mruv.Estates.Estate.Parser, new[]{ "Id", "Name", "Description", "Entrances", "Gates", "Rooms", "ProductId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.CreateEstateRequest), global::Mruv.Estates.CreateEstateRequest.Parser, new[]{ "Name", "Description" }, null, null, null),
@@ -93,19 +94,19 @@ namespace Mruv.Estates {
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.DeleteEstateRequest), global::Mruv.Estates.DeleteEstateRequest.Parser, new[]{ "Id" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.DeleteEstateResponse), global::Mruv.Estates.DeleteEstateResponse.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.GetEstatesRequest), global::Mruv.Estates.GetEstatesRequest.Parser, new[]{ "From", "Limit" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.GetEstatesResponse), global::Mruv.Estates.GetEstatesResponse.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.GetEstatesResponse), global::Mruv.Estates.GetEstatesResponse.Parser, new[]{ "Estates" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.AddGateRequest), global::Mruv.Estates.AddGateRequest.Parser, new[]{ "EstateId", "GateId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.AddGateResponse), global::Mruv.Estates.AddGateResponse.Parser, new[]{ "GateCount" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.DeleteGateRequest), global::Mruv.Estates.DeleteGateRequest.Parser, new[]{ "EstateId", "GateId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.DeleteGateResponse), global::Mruv.Estates.DeleteGateResponse.Parser, new[]{ "GateCount" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.AddGateResponse), global::Mruv.Estates.AddGateResponse.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.RemoveGateRequest), global::Mruv.Estates.RemoveGateRequest.Parser, new[]{ "EstateId", "GateId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.RemoveGateResponse), global::Mruv.Estates.RemoveGateResponse.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.GetEstateGatesRequest), global::Mruv.Estates.GetEstateGatesRequest.Parser, new[]{ "EstateId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.GetEstateGatesResponse), global::Mruv.Estates.GetEstateGatesResponse.Parser, new[]{ "Estates" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.GetEstateGatesResponse), global::Mruv.Estates.GetEstateGatesResponse.Parser, new[]{ "Gates" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.AddEntranceRequest), global::Mruv.Estates.AddEntranceRequest.Parser, new[]{ "EstateId", "EntranceId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.AddEntranceResponse), global::Mruv.Estates.AddEntranceResponse.Parser, new[]{ "EntranceCount" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.AddEntranceResponse), global::Mruv.Estates.AddEntranceResponse.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.RemoveEntranceRequest), global::Mruv.Estates.RemoveEntranceRequest.Parser, new[]{ "EstateId", "EntranceId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.RemoveEntranceResponse), global::Mruv.Estates.RemoveEntranceResponse.Parser, new[]{ "EntranceCount" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.RemoveEntranceResponse), global::Mruv.Estates.RemoveEntranceResponse.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.GetEstateEntrancesRequest), global::Mruv.Estates.GetEstateEntrancesRequest.Parser, new[]{ "EstateId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.GetEstateEntrancesResponse), global::Mruv.Estates.GetEstateEntrancesResponse.Parser, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.GetEstateEntrancesResponse), global::Mruv.Estates.GetEstateEntrancesResponse.Parser, new[]{ "Entrances" }, null, null, null)
           }));
     }
     #endregion
@@ -1528,12 +1529,23 @@ namespace Mruv.Estates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GetEstatesResponse(GetEstatesResponse other) : this() {
+      estates_ = other.estates_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GetEstatesResponse Clone() {
       return new GetEstatesResponse(this);
+    }
+
+    /// <summary>Field number for the "estates" field.</summary>
+    public const int EstatesFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Mruv.Estates.Estate> _repeated_estates_codec
+        = pb::FieldCodec.ForMessage(10, global::Mruv.Estates.Estate.Parser);
+    private readonly pbc::RepeatedField<global::Mruv.Estates.Estate> estates_ = new pbc::RepeatedField<global::Mruv.Estates.Estate>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Mruv.Estates.Estate> Estates {
+      get { return estates_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1549,12 +1561,14 @@ namespace Mruv.Estates {
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if(!estates_.Equals(other.estates_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
+      hash ^= estates_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1568,6 +1582,7 @@ namespace Mruv.Estates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+      estates_.WriteTo(output, _repeated_estates_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1576,6 +1591,7 @@ namespace Mruv.Estates {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
+      size += estates_.CalculateSize(_repeated_estates_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -1587,6 +1603,7 @@ namespace Mruv.Estates {
       if (other == null) {
         return;
       }
+      estates_.Add(other.estates_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -1598,6 +1615,10 @@ namespace Mruv.Estates {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
+          case 10: {
+            estates_.AddEntriesFrom(input, _repeated_estates_codec);
+            break;
+          }
         }
       }
     }
@@ -1792,24 +1813,12 @@ namespace Mruv.Estates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public AddGateResponse(AddGateResponse other) : this() {
-      gateCount_ = other.gateCount_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public AddGateResponse Clone() {
       return new AddGateResponse(this);
-    }
-
-    /// <summary>Field number for the "gate_count" field.</summary>
-    public const int GateCountFieldNumber = 1;
-    private uint gateCount_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint GateCount {
-      get { return gateCount_; }
-      set {
-        gateCount_ = value;
-      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1825,14 +1834,12 @@ namespace Mruv.Estates {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (GateCount != other.GateCount) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (GateCount != 0) hash ^= GateCount.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1846,10 +1853,6 @@ namespace Mruv.Estates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (GateCount != 0) {
-        output.WriteRawTag(8);
-        output.WriteUInt32(GateCount);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1858,9 +1861,6 @@ namespace Mruv.Estates {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (GateCount != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(GateCount);
-      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -1871,9 +1871,6 @@ namespace Mruv.Estates {
     public void MergeFrom(AddGateResponse other) {
       if (other == null) {
         return;
-      }
-      if (other.GateCount != 0) {
-        GateCount = other.GateCount;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1886,10 +1883,6 @@ namespace Mruv.Estates {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            GateCount = input.ReadUInt32();
-            break;
-          }
         }
       }
     }
@@ -1897,13 +1890,13 @@ namespace Mruv.Estates {
   }
 
   /// <summary>
-  /// Request message for rpc `DeleteGate`.
+  /// Request message for rpc `RemoveGate`.
   /// </summary>
-  public sealed partial class DeleteGateRequest : pb::IMessage<DeleteGateRequest> {
-    private static readonly pb::MessageParser<DeleteGateRequest> _parser = new pb::MessageParser<DeleteGateRequest>(() => new DeleteGateRequest());
+  public sealed partial class RemoveGateRequest : pb::IMessage<RemoveGateRequest> {
+    private static readonly pb::MessageParser<RemoveGateRequest> _parser = new pb::MessageParser<RemoveGateRequest>(() => new RemoveGateRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<DeleteGateRequest> Parser { get { return _parser; } }
+    public static pb::MessageParser<RemoveGateRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
@@ -1916,22 +1909,22 @@ namespace Mruv.Estates {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public DeleteGateRequest() {
+    public RemoveGateRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public DeleteGateRequest(DeleteGateRequest other) : this() {
+    public RemoveGateRequest(RemoveGateRequest other) : this() {
       estateId_ = other.estateId_;
       gateId_ = other.gateId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public DeleteGateRequest Clone() {
-      return new DeleteGateRequest(this);
+    public RemoveGateRequest Clone() {
+      return new RemoveGateRequest(this);
     }
 
     /// <summary>Field number for the "estate_id" field.</summary>
@@ -1958,11 +1951,11 @@ namespace Mruv.Estates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as DeleteGateRequest);
+      return Equals(other as RemoveGateRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(DeleteGateRequest other) {
+    public bool Equals(RemoveGateRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -2021,7 +2014,7 @@ namespace Mruv.Estates {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(DeleteGateRequest other) {
+    public void MergeFrom(RemoveGateRequest other) {
       if (other == null) {
         return;
       }
@@ -2057,13 +2050,13 @@ namespace Mruv.Estates {
   }
 
   /// <summary>
-  /// Response message for rpc `DeleteGate`.
+  /// Response message for rpc `RemoveGate`.
   /// </summary>
-  public sealed partial class DeleteGateResponse : pb::IMessage<DeleteGateResponse> {
-    private static readonly pb::MessageParser<DeleteGateResponse> _parser = new pb::MessageParser<DeleteGateResponse>(() => new DeleteGateResponse());
+  public sealed partial class RemoveGateResponse : pb::IMessage<RemoveGateResponse> {
+    private static readonly pb::MessageParser<RemoveGateResponse> _parser = new pb::MessageParser<RemoveGateResponse>(() => new RemoveGateResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<DeleteGateResponse> Parser { get { return _parser; } }
+    public static pb::MessageParser<RemoveGateResponse> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
@@ -2076,55 +2069,41 @@ namespace Mruv.Estates {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public DeleteGateResponse() {
+    public RemoveGateResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public DeleteGateResponse(DeleteGateResponse other) : this() {
-      gateCount_ = other.gateCount_;
+    public RemoveGateResponse(RemoveGateResponse other) : this() {
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public DeleteGateResponse Clone() {
-      return new DeleteGateResponse(this);
-    }
-
-    /// <summary>Field number for the "gate_count" field.</summary>
-    public const int GateCountFieldNumber = 1;
-    private uint gateCount_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint GateCount {
-      get { return gateCount_; }
-      set {
-        gateCount_ = value;
-      }
+    public RemoveGateResponse Clone() {
+      return new RemoveGateResponse(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as DeleteGateResponse);
+      return Equals(other as RemoveGateResponse);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(DeleteGateResponse other) {
+    public bool Equals(RemoveGateResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (GateCount != other.GateCount) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (GateCount != 0) hash ^= GateCount.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2138,10 +2117,6 @@ namespace Mruv.Estates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (GateCount != 0) {
-        output.WriteRawTag(8);
-        output.WriteUInt32(GateCount);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2150,9 +2125,6 @@ namespace Mruv.Estates {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (GateCount != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(GateCount);
-      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -2160,12 +2132,9 @@ namespace Mruv.Estates {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(DeleteGateResponse other) {
+    public void MergeFrom(RemoveGateResponse other) {
       if (other == null) {
         return;
-      }
-      if (other.GateCount != 0) {
-        GateCount = other.GateCount;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -2178,10 +2147,6 @@ namespace Mruv.Estates {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            GateCount = input.ReadUInt32();
-            break;
-          }
         }
       }
     }
@@ -2348,7 +2313,7 @@ namespace Mruv.Estates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GetEstateGatesResponse(GetEstateGatesResponse other) : this() {
-      estates_ = other.estates_.Clone();
+      gates_ = other.gates_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2357,14 +2322,14 @@ namespace Mruv.Estates {
       return new GetEstateGatesResponse(this);
     }
 
-    /// <summary>Field number for the "estates" field.</summary>
-    public const int EstatesFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Mruv.Estates.Estate> _repeated_estates_codec
-        = pb::FieldCodec.ForMessage(10, global::Mruv.Estates.Estate.Parser);
-    private readonly pbc::RepeatedField<global::Mruv.Estates.Estate> estates_ = new pbc::RepeatedField<global::Mruv.Estates.Estate>();
+    /// <summary>Field number for the "gates" field.</summary>
+    public const int GatesFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Mruv.Gates.Gate> _repeated_gates_codec
+        = pb::FieldCodec.ForMessage(10, global::Mruv.Gates.Gate.Parser);
+    private readonly pbc::RepeatedField<global::Mruv.Gates.Gate> gates_ = new pbc::RepeatedField<global::Mruv.Gates.Gate>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Mruv.Estates.Estate> Estates {
-      get { return estates_; }
+    public pbc::RepeatedField<global::Mruv.Gates.Gate> Gates {
+      get { return gates_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2380,14 +2345,14 @@ namespace Mruv.Estates {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if(!estates_.Equals(other.estates_)) return false;
+      if(!gates_.Equals(other.gates_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      hash ^= estates_.GetHashCode();
+      hash ^= gates_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2401,7 +2366,7 @@ namespace Mruv.Estates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      estates_.WriteTo(output, _repeated_estates_codec);
+      gates_.WriteTo(output, _repeated_gates_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2410,7 +2375,7 @@ namespace Mruv.Estates {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      size += estates_.CalculateSize(_repeated_estates_codec);
+      size += gates_.CalculateSize(_repeated_gates_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -2422,7 +2387,7 @@ namespace Mruv.Estates {
       if (other == null) {
         return;
       }
-      estates_.Add(other.estates_);
+      gates_.Add(other.gates_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -2435,7 +2400,7 @@ namespace Mruv.Estates {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            estates_.AddEntriesFrom(input, _repeated_estates_codec);
+            gates_.AddEntriesFrom(input, _repeated_gates_codec);
             break;
           }
         }
@@ -2632,24 +2597,12 @@ namespace Mruv.Estates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public AddEntranceResponse(AddEntranceResponse other) : this() {
-      entranceCount_ = other.entranceCount_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public AddEntranceResponse Clone() {
       return new AddEntranceResponse(this);
-    }
-
-    /// <summary>Field number for the "entrance_count" field.</summary>
-    public const int EntranceCountFieldNumber = 1;
-    private uint entranceCount_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint EntranceCount {
-      get { return entranceCount_; }
-      set {
-        entranceCount_ = value;
-      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2665,14 +2618,12 @@ namespace Mruv.Estates {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (EntranceCount != other.EntranceCount) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (EntranceCount != 0) hash ^= EntranceCount.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2686,10 +2637,6 @@ namespace Mruv.Estates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (EntranceCount != 0) {
-        output.WriteRawTag(8);
-        output.WriteUInt32(EntranceCount);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2698,9 +2645,6 @@ namespace Mruv.Estates {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (EntranceCount != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(EntranceCount);
-      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -2711,9 +2655,6 @@ namespace Mruv.Estates {
     public void MergeFrom(AddEntranceResponse other) {
       if (other == null) {
         return;
-      }
-      if (other.EntranceCount != 0) {
-        EntranceCount = other.EntranceCount;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -2726,10 +2667,6 @@ namespace Mruv.Estates {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            EntranceCount = input.ReadUInt32();
-            break;
-          }
         }
       }
     }
@@ -2924,24 +2861,12 @@ namespace Mruv.Estates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public RemoveEntranceResponse(RemoveEntranceResponse other) : this() {
-      entranceCount_ = other.entranceCount_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public RemoveEntranceResponse Clone() {
       return new RemoveEntranceResponse(this);
-    }
-
-    /// <summary>Field number for the "entrance_count" field.</summary>
-    public const int EntranceCountFieldNumber = 1;
-    private uint entranceCount_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint EntranceCount {
-      get { return entranceCount_; }
-      set {
-        entranceCount_ = value;
-      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2957,14 +2882,12 @@ namespace Mruv.Estates {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (EntranceCount != other.EntranceCount) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (EntranceCount != 0) hash ^= EntranceCount.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2978,10 +2901,6 @@ namespace Mruv.Estates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (EntranceCount != 0) {
-        output.WriteRawTag(8);
-        output.WriteUInt32(EntranceCount);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2990,9 +2909,6 @@ namespace Mruv.Estates {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (EntranceCount != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(EntranceCount);
-      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -3003,9 +2919,6 @@ namespace Mruv.Estates {
     public void MergeFrom(RemoveEntranceResponse other) {
       if (other == null) {
         return;
-      }
-      if (other.EntranceCount != 0) {
-        EntranceCount = other.EntranceCount;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -3018,10 +2931,6 @@ namespace Mruv.Estates {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            EntranceCount = input.ReadUInt32();
-            break;
-          }
         }
       }
     }
@@ -3188,12 +3097,23 @@ namespace Mruv.Estates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GetEstateEntrancesResponse(GetEstateEntrancesResponse other) : this() {
+      entrances_ = other.entrances_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GetEstateEntrancesResponse Clone() {
       return new GetEstateEntrancesResponse(this);
+    }
+
+    /// <summary>Field number for the "entrances" field.</summary>
+    public const int EntrancesFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Mruv.Entrances.Entrance> _repeated_entrances_codec
+        = pb::FieldCodec.ForMessage(10, global::Mruv.Entrances.Entrance.Parser);
+    private readonly pbc::RepeatedField<global::Mruv.Entrances.Entrance> entrances_ = new pbc::RepeatedField<global::Mruv.Entrances.Entrance>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Mruv.Entrances.Entrance> Entrances {
+      get { return entrances_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3209,12 +3129,14 @@ namespace Mruv.Estates {
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if(!entrances_.Equals(other.entrances_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
+      hash ^= entrances_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -3228,6 +3150,7 @@ namespace Mruv.Estates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+      entrances_.WriteTo(output, _repeated_entrances_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -3236,6 +3159,7 @@ namespace Mruv.Estates {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
+      size += entrances_.CalculateSize(_repeated_entrances_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -3247,6 +3171,7 @@ namespace Mruv.Estates {
       if (other == null) {
         return;
       }
+      entrances_.Add(other.entrances_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -3258,6 +3183,10 @@ namespace Mruv.Estates {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
+          case 10: {
+            entrances_.AddEntriesFrom(input, _repeated_entrances_codec);
+            break;
+          }
         }
       }
     }

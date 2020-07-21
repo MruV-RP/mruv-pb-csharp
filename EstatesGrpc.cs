@@ -27,8 +27,8 @@ namespace Mruv.Estates {
     static readonly grpc::Marshaller<global::Mruv.Estates.GetEstatesResponse> __Marshaller_mruv_estates_GetEstatesResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Estates.GetEstatesResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.Estates.AddGateRequest> __Marshaller_mruv_estates_AddGateRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Estates.AddGateRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.Estates.AddGateResponse> __Marshaller_mruv_estates_AddGateResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Estates.AddGateResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Estates.DeleteGateRequest> __Marshaller_mruv_estates_DeleteGateRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Estates.DeleteGateRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Estates.DeleteGateResponse> __Marshaller_mruv_estates_DeleteGateResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Estates.DeleteGateResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Estates.RemoveGateRequest> __Marshaller_mruv_estates_RemoveGateRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Estates.RemoveGateRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Estates.RemoveGateResponse> __Marshaller_mruv_estates_RemoveGateResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Estates.RemoveGateResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.Estates.GetEstateGatesRequest> __Marshaller_mruv_estates_GetEstateGatesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Estates.GetEstateGatesRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.Estates.GetEstateGatesResponse> __Marshaller_mruv_estates_GetEstateGatesResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Estates.GetEstateGatesResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.Estates.AddEntranceRequest> __Marshaller_mruv_estates_AddEntranceRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Estates.AddEntranceRequest.Parser.ParseFrom);
@@ -80,12 +80,12 @@ namespace Mruv.Estates {
         __Marshaller_mruv_estates_AddGateRequest,
         __Marshaller_mruv_estates_AddGateResponse);
 
-    static readonly grpc::Method<global::Mruv.Estates.DeleteGateRequest, global::Mruv.Estates.DeleteGateResponse> __Method_DeleteGate = new grpc::Method<global::Mruv.Estates.DeleteGateRequest, global::Mruv.Estates.DeleteGateResponse>(
+    static readonly grpc::Method<global::Mruv.Estates.RemoveGateRequest, global::Mruv.Estates.RemoveGateResponse> __Method_RemoveGate = new grpc::Method<global::Mruv.Estates.RemoveGateRequest, global::Mruv.Estates.RemoveGateResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
-        "DeleteGate",
-        __Marshaller_mruv_estates_DeleteGateRequest,
-        __Marshaller_mruv_estates_DeleteGateResponse);
+        "RemoveGate",
+        __Marshaller_mruv_estates_RemoveGateRequest,
+        __Marshaller_mruv_estates_RemoveGateResponse);
 
     static readonly grpc::Method<global::Mruv.Estates.GetEstateGatesRequest, global::Mruv.Estates.GetEstateGatesResponse> __Method_GetEstateGates = new grpc::Method<global::Mruv.Estates.GetEstateGatesRequest, global::Mruv.Estates.GetEstateGatesResponse>(
         grpc::MethodType.Unary,
@@ -197,7 +197,7 @@ namespace Mruv.Estates {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Estates.DeleteGateResponse> DeleteGate(global::Mruv.Estates.DeleteGateRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.Estates.RemoveGateResponse> RemoveGate(global::Mruv.Estates.RemoveGateRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -543,9 +543,9 @@ namespace Mruv.Estates {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Estates.DeleteGateResponse DeleteGate(global::Mruv.Estates.DeleteGateRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.Estates.RemoveGateResponse RemoveGate(global::Mruv.Estates.RemoveGateRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return DeleteGate(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return RemoveGate(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
       /// Delete a gate from estate.
@@ -553,9 +553,9 @@ namespace Mruv.Estates {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Estates.DeleteGateResponse DeleteGate(global::Mruv.Estates.DeleteGateRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.Estates.RemoveGateResponse RemoveGate(global::Mruv.Estates.RemoveGateRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.BlockingUnaryCall(__Method_DeleteGate, null, options, request);
+        return CallInvoker.BlockingUnaryCall(__Method_RemoveGate, null, options, request);
       }
       /// <summary>
       /// Delete a gate from estate.
@@ -565,9 +565,9 @@ namespace Mruv.Estates {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Estates.DeleteGateResponse> DeleteGateAsync(global::Mruv.Estates.DeleteGateRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Estates.RemoveGateResponse> RemoveGateAsync(global::Mruv.Estates.RemoveGateRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return DeleteGateAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return RemoveGateAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
       /// Delete a gate from estate.
@@ -575,9 +575,9 @@ namespace Mruv.Estates {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Estates.DeleteGateResponse> DeleteGateAsync(global::Mruv.Estates.DeleteGateRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Estates.RemoveGateResponse> RemoveGateAsync(global::Mruv.Estates.RemoveGateRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.AsyncUnaryCall(__Method_DeleteGate, null, options, request);
+        return CallInvoker.AsyncUnaryCall(__Method_RemoveGate, null, options, request);
       }
       /// <summary>
       /// Get all estate gates.
@@ -773,7 +773,7 @@ namespace Mruv.Estates {
           .AddMethod(__Method_DeleteEstate, serviceImpl.DeleteEstate)
           .AddMethod(__Method_GetEstates, serviceImpl.GetEstates)
           .AddMethod(__Method_AddGate, serviceImpl.AddGate)
-          .AddMethod(__Method_DeleteGate, serviceImpl.DeleteGate)
+          .AddMethod(__Method_RemoveGate, serviceImpl.RemoveGate)
           .AddMethod(__Method_GetEstateGates, serviceImpl.GetEstateGates)
           .AddMethod(__Method_AddEntrance, serviceImpl.AddEntrance)
           .AddMethod(__Method_RemoveEntrance, serviceImpl.RemoveEntrance)
@@ -792,7 +792,7 @@ namespace Mruv.Estates {
       serviceBinder.AddMethod(__Method_DeleteEstate, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Estates.DeleteEstateRequest, global::Mruv.Estates.DeleteEstateResponse>(serviceImpl.DeleteEstate));
       serviceBinder.AddMethod(__Method_GetEstates, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Estates.GetEstatesRequest, global::Mruv.Estates.GetEstatesResponse>(serviceImpl.GetEstates));
       serviceBinder.AddMethod(__Method_AddGate, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Estates.AddGateRequest, global::Mruv.Estates.AddGateResponse>(serviceImpl.AddGate));
-      serviceBinder.AddMethod(__Method_DeleteGate, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Estates.DeleteGateRequest, global::Mruv.Estates.DeleteGateResponse>(serviceImpl.DeleteGate));
+      serviceBinder.AddMethod(__Method_RemoveGate, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Estates.RemoveGateRequest, global::Mruv.Estates.RemoveGateResponse>(serviceImpl.RemoveGate));
       serviceBinder.AddMethod(__Method_GetEstateGates, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Estates.GetEstateGatesRequest, global::Mruv.Estates.GetEstateGatesResponse>(serviceImpl.GetEstateGates));
       serviceBinder.AddMethod(__Method_AddEntrance, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Estates.AddEntranceRequest, global::Mruv.Estates.AddEntranceResponse>(serviceImpl.AddEntrance));
       serviceBinder.AddMethod(__Method_RemoveEntrance, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Estates.RemoveEntranceRequest, global::Mruv.Estates.RemoveEntranceResponse>(serviceImpl.RemoveEntrance));
