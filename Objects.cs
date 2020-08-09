@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Mruv.Gates {
+namespace Mruv.Objects {
 
   /// <summary>Holder for reflection information generated from objects/objects.proto</summary>
   public static partial class ObjectsReflection {
@@ -24,80 +24,82 @@ namespace Mruv.Gates {
     static ObjectsReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChVvYmplY3RzL29iamVjdHMucHJvdG8SCm1ydXYuZ2F0ZXMaHGdvb2dsZS9h",
-            "cGkvYW5ub3RhdGlvbnMucHJvdG8itwIKC09iamVjdE1vZGVsEg0KBW1vZGVs",
-            "GAEgASgNEhIKCm1vZGVsX25hbWUYAiABKAkSDAoEbmFtZRgDIAEoCRIQCghj",
-            "YXRlZ29yeRgNIAEoCRISCgpwcm9kdWN0X2lkGAQgASgNEg4KBmxlbmd0aBgF",
-            "IAEoARINCgV3aWR0aBgGIAEoARIOCgZoZWlnaHQYByABKAESDAoEc2l6ZRgI",
-            "IAEoARIMCgR0YWdzGAkgAygJEhUKDWhhc19jb2xsaXNpb24YCiABKAgSFQoN",
-            "YnJlYWtzX29uX2hpdBgLIAEoCBIVCg1oYXNfYW5pbWF0aW9uGAwgASgIEhcK",
-            "D3Zpc2libGVfYnlfdGltZRgQIAEoCBIUCgx2aXNpYmxlX2Zyb20YESABKA0S",
-            "EgoKdmlzaWJsZV90bxgSIAEoDSL8AQoGT2JqZWN0Eg0KBW1vZGVsGAEgASgN",
-            "EhEKCWVzdGF0ZV9pZBgCIAEoDRIJCgF4GAMgASgCEgkKAXkYBCABKAISCQoB",
-            "ehgFIAEoAhIKCgJyeBgGIAEoAhIKCgJyeRgHIAEoAhIKCgJyehgIIAEoAhIQ",
-            "Cgh3b3JsZF9pZBgJIAEoBRITCgtpbnRlcmlvcl9pZBgKIAEoBRIRCglwbGF5",
-            "ZXJfaWQYCyABKAUSDwoHYXJlYV9pZBgMIAEoBRIXCg9zdHJlYW1fZGlzdGFu",
-            "Y2UYDSABKAISFQoNZHJhd19kaXN0YW5jZRgOIAEoAhIQCghwcmlvcml0eRgP",
-            "IAEoBSJIChhDcmVhdGVPYmplY3RNb2RlbFJlcXVlc3QSLAoLb2JqZWN0X3R5",
-            "cGUYASABKAsyFy5tcnV2LmdhdGVzLk9iamVjdE1vZGVsIicKGUNyZWF0ZU9i",
-            "amVjdE1vZGVsUmVzcG9uc2USCgoCaWQYASABKA0iJgoVR2V0T2JqZWN0TW9k",
-            "ZWxSZXF1ZXN0Eg0KBW1vZGVsGAEgASgNIkYKFkdldE9iamVjdE1vZGVsUmVz",
-            "cG9uc2USLAoLb2JqZWN0X3R5cGUYASABKAsyFy5tcnV2LmdhdGVzLk9iamVj",
-            "dE1vZGVsIkgKGFVwZGF0ZU9iamVjdE1vZGVsUmVxdWVzdBIsCgtvYmplY3Rf",
-            "dHlwZRgBIAEoCzIXLm1ydXYuZ2F0ZXMuT2JqZWN0TW9kZWwiGwoZVXBkYXRl",
-            "T2JqZWN0TW9kZWxSZXNwb25zZSIpChhEZWxldGVPYmplY3RNb2RlbFJlcXVl",
-            "c3QSDQoFbW9kZWwYASABKA0iGwoZRGVsZXRlT2JqZWN0TW9kZWxSZXNwb25z",
-            "ZSI5ChNDcmVhdGVPYmplY3RSZXF1ZXN0EiIKBm9iamVjdBgBIAEoCzISLm1y",
-            "dXYuZ2F0ZXMuT2JqZWN0IiIKFENyZWF0ZU9iamVjdFJlc3BvbnNlEgoKAmlk",
-            "GAEgASgNIh4KEEdldE9iamVjdFJlcXVlc3QSCgoCaWQYASABKA0iNwoRR2V0",
-            "T2JqZWN0UmVzcG9uc2USIgoGb2JqZWN0GAEgASgLMhIubXJ1di5nYXRlcy5P",
-            "YmplY3QiRQoTVXBkYXRlT2JqZWN0UmVxdWVzdBIKCgJpZBgBIAEoDRIiCgZv",
-            "YmplY3QYAiABKAsyEi5tcnV2LmdhdGVzLk9iamVjdCIWChRVcGRhdGVPYmpl",
-            "Y3RSZXNwb25zZSIhChNEZWxldGVPYmplY3RSZXF1ZXN0EgoKAmlkGAEgASgN",
-            "IhYKFERlbGV0ZU9iamVjdFJlc3BvbnNlMsEHChJNcnVWT2JqZWN0c1NlcnZp",
-            "Y2USeQoRQ3JlYXRlT2JqZWN0TW9kZWwSJC5tcnV2LmdhdGVzLkNyZWF0ZU9i",
-            "amVjdE1vZGVsUmVxdWVzdBolLm1ydXYuZ2F0ZXMuQ3JlYXRlT2JqZWN0TW9k",
-            "ZWxSZXNwb25zZSIXgtPkkwIRIg8vdjEvb2JqZWN0VHlwZXMSeAoOR2V0T2Jq",
-            "ZWN0TW9kZWwSIS5tcnV2LmdhdGVzLkdldE9iamVjdE1vZGVsUmVxdWVzdBoi",
-            "Lm1ydXYuZ2F0ZXMuR2V0T2JqZWN0TW9kZWxSZXNwb25zZSIfgtPkkwIZEhcv",
-            "djEvb2JqZWN0VHlwZXMve21vZGVsfRKNAQoRVXBkYXRlT2JqZWN0TW9kZWwS",
-            "JC5tcnV2LmdhdGVzLlVwZGF0ZU9iamVjdE1vZGVsUmVxdWVzdBolLm1ydXYu",
-            "Z2F0ZXMuVXBkYXRlT2JqZWN0TW9kZWxSZXNwb25zZSIrgtPkkwIlMiMvdjEv",
-            "b2JqZWN0VHlwZXMve29iamVjdF90eXBlLm1vZGVsfRKBAQoRRGVsZXRlT2Jq",
-            "ZWN0TW9kZWwSJC5tcnV2LmdhdGVzLkRlbGV0ZU9iamVjdE1vZGVsUmVxdWVz",
-            "dBolLm1ydXYuZ2F0ZXMuRGVsZXRlT2JqZWN0TW9kZWxSZXNwb25zZSIfgtPk",
-            "kwIZKhcvdjEvb2JqZWN0VHlwZXMve21vZGVsfRJlCgxDcmVhdGVPYmplY3QS",
-            "Hy5tcnV2LmdhdGVzLkNyZWF0ZU9iamVjdFJlcXVlc3QaIC5tcnV2LmdhdGVz",
-            "LkNyZWF0ZU9iamVjdFJlc3BvbnNlIhKC0+STAgwiCi92MS9vYmplY3QSYQoJ",
-            "R2V0T2JqZWN0EhwubXJ1di5nYXRlcy5HZXRPYmplY3RSZXF1ZXN0Gh0ubXJ1",
-            "di5nYXRlcy5HZXRPYmplY3RSZXNwb25zZSIXgtPkkwIREg8vdjEvb2JqZWN0",
-            "L3tpZH0SawoMVXBkYXRlT2JqZWN0Eh8ubXJ1di5nYXRlcy5VcGRhdGVPYmpl",
-            "Y3RSZXF1ZXN0GiAubXJ1di5nYXRlcy5VcGRhdGVPYmplY3RSZXNwb25zZSIY",
-            "gtPkkwISMhAvdjEvb2JqZWN0cy97aWR9EmsKDERlbGV0ZU9iamVjdBIfLm1y",
-            "dXYuZ2F0ZXMuRGVsZXRlT2JqZWN0UmVxdWVzdBogLm1ydXYuZ2F0ZXMuRGVs",
-            "ZXRlT2JqZWN0UmVzcG9uc2UiGILT5JMCEioQL3YxL29iamVjdHMve2lkfUIl",
-            "WiNnaXRodWIuY29tL01ydVYtUlAvbXJ1di1wYi1nby9nYXRlc2IGcHJvdG8z"));
+            "ChVvYmplY3RzL29iamVjdHMucHJvdG8SDG1ydXYub2JqZWN0cxocZ29vZ2xl",
+            "L2FwaS9hbm5vdGF0aW9ucy5wcm90byK3AgoLT2JqZWN0TW9kZWwSDQoFbW9k",
+            "ZWwYASABKA0SEgoKbW9kZWxfbmFtZRgCIAEoCRIMCgRuYW1lGAMgASgJEhAK",
+            "CGNhdGVnb3J5GA0gASgJEhIKCnByb2R1Y3RfaWQYBCABKA0SDgoGbGVuZ3Ro",
+            "GAUgASgBEg0KBXdpZHRoGAYgASgBEg4KBmhlaWdodBgHIAEoARIMCgRzaXpl",
+            "GAggASgBEgwKBHRhZ3MYCSADKAkSFQoNaGFzX2NvbGxpc2lvbhgKIAEoCBIV",
+            "Cg1icmVha3Nfb25faGl0GAsgASgIEhUKDWhhc19hbmltYXRpb24YDCABKAgS",
+            "FwoPdmlzaWJsZV9ieV90aW1lGBAgASgIEhQKDHZpc2libGVfZnJvbRgRIAEo",
+            "DRISCgp2aXNpYmxlX3RvGBIgASgNIvwBCgZPYmplY3QSDQoFbW9kZWwYASAB",
+            "KA0SEQoJZXN0YXRlX2lkGAIgASgNEgkKAXgYAyABKAISCQoBeRgEIAEoAhIJ",
+            "CgF6GAUgASgCEgoKAnJ4GAYgASgCEgoKAnJ5GAcgASgCEgoKAnJ6GAggASgC",
+            "EhAKCHdvcmxkX2lkGAkgASgFEhMKC2ludGVyaW9yX2lkGAogASgFEhEKCXBs",
+            "YXllcl9pZBgLIAEoBRIPCgdhcmVhX2lkGAwgASgFEhcKD3N0cmVhbV9kaXN0",
+            "YW5jZRgNIAEoAhIVCg1kcmF3X2Rpc3RhbmNlGA4gASgCEhAKCHByaW9yaXR5",
+            "GA8gASgFIkoKGENyZWF0ZU9iamVjdE1vZGVsUmVxdWVzdBIuCgtvYmplY3Rf",
+            "dHlwZRgBIAEoCzIZLm1ydXYub2JqZWN0cy5PYmplY3RNb2RlbCInChlDcmVh",
+            "dGVPYmplY3RNb2RlbFJlc3BvbnNlEgoKAmlkGAEgASgNIiYKFUdldE9iamVj",
+            "dE1vZGVsUmVxdWVzdBINCgVtb2RlbBgBIAEoDSJIChZHZXRPYmplY3RNb2Rl",
+            "bFJlc3BvbnNlEi4KC29iamVjdF90eXBlGAEgASgLMhkubXJ1di5vYmplY3Rz",
+            "Lk9iamVjdE1vZGVsIkoKGFVwZGF0ZU9iamVjdE1vZGVsUmVxdWVzdBIuCgtv",
+            "YmplY3RfdHlwZRgBIAEoCzIZLm1ydXYub2JqZWN0cy5PYmplY3RNb2RlbCIb",
+            "ChlVcGRhdGVPYmplY3RNb2RlbFJlc3BvbnNlIikKGERlbGV0ZU9iamVjdE1v",
+            "ZGVsUmVxdWVzdBINCgVtb2RlbBgBIAEoDSIbChlEZWxldGVPYmplY3RNb2Rl",
+            "bFJlc3BvbnNlIjsKE0NyZWF0ZU9iamVjdFJlcXVlc3QSJAoGb2JqZWN0GAEg",
+            "ASgLMhQubXJ1di5vYmplY3RzLk9iamVjdCIiChRDcmVhdGVPYmplY3RSZXNw",
+            "b25zZRIKCgJpZBgBIAEoDSIeChBHZXRPYmplY3RSZXF1ZXN0EgoKAmlkGAEg",
+            "ASgNIjkKEUdldE9iamVjdFJlc3BvbnNlEiQKBm9iamVjdBgBIAEoCzIULm1y",
+            "dXYub2JqZWN0cy5PYmplY3QiRwoTVXBkYXRlT2JqZWN0UmVxdWVzdBIKCgJp",
+            "ZBgBIAEoDRIkCgZvYmplY3QYAiABKAsyFC5tcnV2Lm9iamVjdHMuT2JqZWN0",
+            "IhYKFFVwZGF0ZU9iamVjdFJlc3BvbnNlIiEKE0RlbGV0ZU9iamVjdFJlcXVl",
+            "c3QSCgoCaWQYASABKA0iFgoURGVsZXRlT2JqZWN0UmVzcG9uc2Uy4QcKEk1y",
+            "dVZPYmplY3RzU2VydmljZRJ9ChFDcmVhdGVPYmplY3RNb2RlbBImLm1ydXYu",
+            "b2JqZWN0cy5DcmVhdGVPYmplY3RNb2RlbFJlcXVlc3QaJy5tcnV2Lm9iamVj",
+            "dHMuQ3JlYXRlT2JqZWN0TW9kZWxSZXNwb25zZSIXgtPkkwIRIg8vdjEvb2Jq",
+            "ZWN0VHlwZXMSfAoOR2V0T2JqZWN0TW9kZWwSIy5tcnV2Lm9iamVjdHMuR2V0",
+            "T2JqZWN0TW9kZWxSZXF1ZXN0GiQubXJ1di5vYmplY3RzLkdldE9iamVjdE1v",
+            "ZGVsUmVzcG9uc2UiH4LT5JMCGRIXL3YxL29iamVjdFR5cGVzL3ttb2RlbH0S",
+            "kQEKEVVwZGF0ZU9iamVjdE1vZGVsEiYubXJ1di5vYmplY3RzLlVwZGF0ZU9i",
+            "amVjdE1vZGVsUmVxdWVzdBonLm1ydXYub2JqZWN0cy5VcGRhdGVPYmplY3RN",
+            "b2RlbFJlc3BvbnNlIiuC0+STAiUyIy92MS9vYmplY3RUeXBlcy97b2JqZWN0",
+            "X3R5cGUubW9kZWx9EoUBChFEZWxldGVPYmplY3RNb2RlbBImLm1ydXYub2Jq",
+            "ZWN0cy5EZWxldGVPYmplY3RNb2RlbFJlcXVlc3QaJy5tcnV2Lm9iamVjdHMu",
+            "RGVsZXRlT2JqZWN0TW9kZWxSZXNwb25zZSIfgtPkkwIZKhcvdjEvb2JqZWN0",
+            "VHlwZXMve21vZGVsfRJpCgxDcmVhdGVPYmplY3QSIS5tcnV2Lm9iamVjdHMu",
+            "Q3JlYXRlT2JqZWN0UmVxdWVzdBoiLm1ydXYub2JqZWN0cy5DcmVhdGVPYmpl",
+            "Y3RSZXNwb25zZSISgtPkkwIMIgovdjEvb2JqZWN0EmUKCUdldE9iamVjdBIe",
+            "Lm1ydXYub2JqZWN0cy5HZXRPYmplY3RSZXF1ZXN0Gh8ubXJ1di5vYmplY3Rz",
+            "LkdldE9iamVjdFJlc3BvbnNlIheC0+STAhESDy92MS9vYmplY3Qve2lkfRJv",
+            "CgxVcGRhdGVPYmplY3QSIS5tcnV2Lm9iamVjdHMuVXBkYXRlT2JqZWN0UmVx",
+            "dWVzdBoiLm1ydXYub2JqZWN0cy5VcGRhdGVPYmplY3RSZXNwb25zZSIYgtPk",
+            "kwISMhAvdjEvb2JqZWN0cy97aWR9Em8KDERlbGV0ZU9iamVjdBIhLm1ydXYu",
+            "b2JqZWN0cy5EZWxldGVPYmplY3RSZXF1ZXN0GiIubXJ1di5vYmplY3RzLkRl",
+            "bGV0ZU9iamVjdFJlc3BvbnNlIhiC0+STAhIqEC92MS9vYmplY3RzL3tpZH1C",
+            "J1olZ2l0aHViLmNvbS9NcnVWLVJQL21ydXYtcGItZ28vb2JqZWN0c2IGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Gates.ObjectModel), global::Mruv.Gates.ObjectModel.Parser, new[]{ "Model", "ModelName", "Name", "Category", "ProductId", "Length", "Width", "Height", "Size", "Tags", "HasCollision", "BreaksOnHit", "HasAnimation", "VisibleByTime", "VisibleFrom", "VisibleTo" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Gates.Object), global::Mruv.Gates.Object.Parser, new[]{ "Model", "EstateId", "X", "Y", "Z", "Rx", "Ry", "Rz", "WorldId", "InteriorId", "PlayerId", "AreaId", "StreamDistance", "DrawDistance", "Priority" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Gates.CreateObjectModelRequest), global::Mruv.Gates.CreateObjectModelRequest.Parser, new[]{ "ObjectType" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Gates.CreateObjectModelResponse), global::Mruv.Gates.CreateObjectModelResponse.Parser, new[]{ "Id" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Gates.GetObjectModelRequest), global::Mruv.Gates.GetObjectModelRequest.Parser, new[]{ "Model" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Gates.GetObjectModelResponse), global::Mruv.Gates.GetObjectModelResponse.Parser, new[]{ "ObjectType" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Gates.UpdateObjectModelRequest), global::Mruv.Gates.UpdateObjectModelRequest.Parser, new[]{ "ObjectType" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Gates.UpdateObjectModelResponse), global::Mruv.Gates.UpdateObjectModelResponse.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Gates.DeleteObjectModelRequest), global::Mruv.Gates.DeleteObjectModelRequest.Parser, new[]{ "Model" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Gates.DeleteObjectModelResponse), global::Mruv.Gates.DeleteObjectModelResponse.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Gates.CreateObjectRequest), global::Mruv.Gates.CreateObjectRequest.Parser, new[]{ "Object" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Gates.CreateObjectResponse), global::Mruv.Gates.CreateObjectResponse.Parser, new[]{ "Id" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Gates.GetObjectRequest), global::Mruv.Gates.GetObjectRequest.Parser, new[]{ "Id" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Gates.GetObjectResponse), global::Mruv.Gates.GetObjectResponse.Parser, new[]{ "Object" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Gates.UpdateObjectRequest), global::Mruv.Gates.UpdateObjectRequest.Parser, new[]{ "Id", "Object" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Gates.UpdateObjectResponse), global::Mruv.Gates.UpdateObjectResponse.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Gates.DeleteObjectRequest), global::Mruv.Gates.DeleteObjectRequest.Parser, new[]{ "Id" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Gates.DeleteObjectResponse), global::Mruv.Gates.DeleteObjectResponse.Parser, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.ObjectModel), global::Mruv.Objects.ObjectModel.Parser, new[]{ "Model", "ModelName", "Name", "Category", "ProductId", "Length", "Width", "Height", "Size", "Tags", "HasCollision", "BreaksOnHit", "HasAnimation", "VisibleByTime", "VisibleFrom", "VisibleTo" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.Object), global::Mruv.Objects.Object.Parser, new[]{ "Model", "EstateId", "X", "Y", "Z", "Rx", "Ry", "Rz", "WorldId", "InteriorId", "PlayerId", "AreaId", "StreamDistance", "DrawDistance", "Priority" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.CreateObjectModelRequest), global::Mruv.Objects.CreateObjectModelRequest.Parser, new[]{ "ObjectType" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.CreateObjectModelResponse), global::Mruv.Objects.CreateObjectModelResponse.Parser, new[]{ "Id" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.GetObjectModelRequest), global::Mruv.Objects.GetObjectModelRequest.Parser, new[]{ "Model" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.GetObjectModelResponse), global::Mruv.Objects.GetObjectModelResponse.Parser, new[]{ "ObjectType" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.UpdateObjectModelRequest), global::Mruv.Objects.UpdateObjectModelRequest.Parser, new[]{ "ObjectType" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.UpdateObjectModelResponse), global::Mruv.Objects.UpdateObjectModelResponse.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.DeleteObjectModelRequest), global::Mruv.Objects.DeleteObjectModelRequest.Parser, new[]{ "Model" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.DeleteObjectModelResponse), global::Mruv.Objects.DeleteObjectModelResponse.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.CreateObjectRequest), global::Mruv.Objects.CreateObjectRequest.Parser, new[]{ "Object" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.CreateObjectResponse), global::Mruv.Objects.CreateObjectResponse.Parser, new[]{ "Id" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.GetObjectRequest), global::Mruv.Objects.GetObjectRequest.Parser, new[]{ "Id" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.GetObjectResponse), global::Mruv.Objects.GetObjectResponse.Parser, new[]{ "Object" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.UpdateObjectRequest), global::Mruv.Objects.UpdateObjectRequest.Parser, new[]{ "Id", "Object" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.UpdateObjectResponse), global::Mruv.Objects.UpdateObjectResponse.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.DeleteObjectRequest), global::Mruv.Objects.DeleteObjectRequest.Parser, new[]{ "Id" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.DeleteObjectResponse), global::Mruv.Objects.DeleteObjectResponse.Parser, null, null, null, null)
           }));
     }
     #endregion
@@ -115,7 +117,7 @@ namespace Mruv.Gates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Gates.ObjectsReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Mruv.Objects.ObjectsReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -659,7 +661,7 @@ namespace Mruv.Gates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Gates.ObjectsReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Mruv.Objects.ObjectsReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1201,7 +1203,7 @@ namespace Mruv.Gates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Gates.ObjectsReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Mruv.Objects.ObjectsReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1229,9 +1231,9 @@ namespace Mruv.Gates {
 
     /// <summary>Field number for the "object_type" field.</summary>
     public const int ObjectTypeFieldNumber = 1;
-    private global::Mruv.Gates.ObjectModel objectType_;
+    private global::Mruv.Objects.ObjectModel objectType_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Mruv.Gates.ObjectModel ObjectType {
+    public global::Mruv.Objects.ObjectModel ObjectType {
       get { return objectType_; }
       set {
         objectType_ = value;
@@ -1300,7 +1302,7 @@ namespace Mruv.Gates {
       }
       if (other.objectType_ != null) {
         if (objectType_ == null) {
-          ObjectType = new global::Mruv.Gates.ObjectModel();
+          ObjectType = new global::Mruv.Objects.ObjectModel();
         }
         ObjectType.MergeFrom(other.ObjectType);
       }
@@ -1317,7 +1319,7 @@ namespace Mruv.Gates {
             break;
           case 10: {
             if (objectType_ == null) {
-              ObjectType = new global::Mruv.Gates.ObjectModel();
+              ObjectType = new global::Mruv.Objects.ObjectModel();
             }
             input.ReadMessage(ObjectType);
             break;
@@ -1339,7 +1341,7 @@ namespace Mruv.Gates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Gates.ObjectsReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Mruv.Objects.ObjectsReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1471,7 +1473,7 @@ namespace Mruv.Gates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Gates.ObjectsReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Mruv.Objects.ObjectsReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1603,7 +1605,7 @@ namespace Mruv.Gates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Gates.ObjectsReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Mruv.Objects.ObjectsReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1631,9 +1633,9 @@ namespace Mruv.Gates {
 
     /// <summary>Field number for the "object_type" field.</summary>
     public const int ObjectTypeFieldNumber = 1;
-    private global::Mruv.Gates.ObjectModel objectType_;
+    private global::Mruv.Objects.ObjectModel objectType_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Mruv.Gates.ObjectModel ObjectType {
+    public global::Mruv.Objects.ObjectModel ObjectType {
       get { return objectType_; }
       set {
         objectType_ = value;
@@ -1702,7 +1704,7 @@ namespace Mruv.Gates {
       }
       if (other.objectType_ != null) {
         if (objectType_ == null) {
-          ObjectType = new global::Mruv.Gates.ObjectModel();
+          ObjectType = new global::Mruv.Objects.ObjectModel();
         }
         ObjectType.MergeFrom(other.ObjectType);
       }
@@ -1719,7 +1721,7 @@ namespace Mruv.Gates {
             break;
           case 10: {
             if (objectType_ == null) {
-              ObjectType = new global::Mruv.Gates.ObjectModel();
+              ObjectType = new global::Mruv.Objects.ObjectModel();
             }
             input.ReadMessage(ObjectType);
             break;
@@ -1741,7 +1743,7 @@ namespace Mruv.Gates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Gates.ObjectsReflection.Descriptor.MessageTypes[6]; }
+      get { return global::Mruv.Objects.ObjectsReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1769,9 +1771,9 @@ namespace Mruv.Gates {
 
     /// <summary>Field number for the "object_type" field.</summary>
     public const int ObjectTypeFieldNumber = 1;
-    private global::Mruv.Gates.ObjectModel objectType_;
+    private global::Mruv.Objects.ObjectModel objectType_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Mruv.Gates.ObjectModel ObjectType {
+    public global::Mruv.Objects.ObjectModel ObjectType {
       get { return objectType_; }
       set {
         objectType_ = value;
@@ -1840,7 +1842,7 @@ namespace Mruv.Gates {
       }
       if (other.objectType_ != null) {
         if (objectType_ == null) {
-          ObjectType = new global::Mruv.Gates.ObjectModel();
+          ObjectType = new global::Mruv.Objects.ObjectModel();
         }
         ObjectType.MergeFrom(other.ObjectType);
       }
@@ -1857,7 +1859,7 @@ namespace Mruv.Gates {
             break;
           case 10: {
             if (objectType_ == null) {
-              ObjectType = new global::Mruv.Gates.ObjectModel();
+              ObjectType = new global::Mruv.Objects.ObjectModel();
             }
             input.ReadMessage(ObjectType);
             break;
@@ -1879,7 +1881,7 @@ namespace Mruv.Gates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Gates.ObjectsReflection.Descriptor.MessageTypes[7]; }
+      get { return global::Mruv.Objects.ObjectsReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1983,7 +1985,7 @@ namespace Mruv.Gates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Gates.ObjectsReflection.Descriptor.MessageTypes[8]; }
+      get { return global::Mruv.Objects.ObjectsReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2115,7 +2117,7 @@ namespace Mruv.Gates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Gates.ObjectsReflection.Descriptor.MessageTypes[9]; }
+      get { return global::Mruv.Objects.ObjectsReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2219,7 +2221,7 @@ namespace Mruv.Gates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Gates.ObjectsReflection.Descriptor.MessageTypes[10]; }
+      get { return global::Mruv.Objects.ObjectsReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2247,9 +2249,9 @@ namespace Mruv.Gates {
 
     /// <summary>Field number for the "object" field.</summary>
     public const int ObjectFieldNumber = 1;
-    private global::Mruv.Gates.Object object_;
+    private global::Mruv.Objects.Object object_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Mruv.Gates.Object Object {
+    public global::Mruv.Objects.Object Object {
       get { return object_; }
       set {
         object_ = value;
@@ -2318,7 +2320,7 @@ namespace Mruv.Gates {
       }
       if (other.object_ != null) {
         if (object_ == null) {
-          Object = new global::Mruv.Gates.Object();
+          Object = new global::Mruv.Objects.Object();
         }
         Object.MergeFrom(other.Object);
       }
@@ -2335,7 +2337,7 @@ namespace Mruv.Gates {
             break;
           case 10: {
             if (object_ == null) {
-              Object = new global::Mruv.Gates.Object();
+              Object = new global::Mruv.Objects.Object();
             }
             input.ReadMessage(Object);
             break;
@@ -2357,7 +2359,7 @@ namespace Mruv.Gates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Gates.ObjectsReflection.Descriptor.MessageTypes[11]; }
+      get { return global::Mruv.Objects.ObjectsReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2489,7 +2491,7 @@ namespace Mruv.Gates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Gates.ObjectsReflection.Descriptor.MessageTypes[12]; }
+      get { return global::Mruv.Objects.ObjectsReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2621,7 +2623,7 @@ namespace Mruv.Gates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Gates.ObjectsReflection.Descriptor.MessageTypes[13]; }
+      get { return global::Mruv.Objects.ObjectsReflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2649,9 +2651,9 @@ namespace Mruv.Gates {
 
     /// <summary>Field number for the "object" field.</summary>
     public const int ObjectFieldNumber = 1;
-    private global::Mruv.Gates.Object object_;
+    private global::Mruv.Objects.Object object_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Mruv.Gates.Object Object {
+    public global::Mruv.Objects.Object Object {
       get { return object_; }
       set {
         object_ = value;
@@ -2720,7 +2722,7 @@ namespace Mruv.Gates {
       }
       if (other.object_ != null) {
         if (object_ == null) {
-          Object = new global::Mruv.Gates.Object();
+          Object = new global::Mruv.Objects.Object();
         }
         Object.MergeFrom(other.Object);
       }
@@ -2737,7 +2739,7 @@ namespace Mruv.Gates {
             break;
           case 10: {
             if (object_ == null) {
-              Object = new global::Mruv.Gates.Object();
+              Object = new global::Mruv.Objects.Object();
             }
             input.ReadMessage(Object);
             break;
@@ -2759,7 +2761,7 @@ namespace Mruv.Gates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Gates.ObjectsReflection.Descriptor.MessageTypes[14]; }
+      get { return global::Mruv.Objects.ObjectsReflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2799,9 +2801,9 @@ namespace Mruv.Gates {
 
     /// <summary>Field number for the "object" field.</summary>
     public const int ObjectFieldNumber = 2;
-    private global::Mruv.Gates.Object object_;
+    private global::Mruv.Objects.Object object_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Mruv.Gates.Object Object {
+    public global::Mruv.Objects.Object Object {
       get { return object_; }
       set {
         object_ = value;
@@ -2882,7 +2884,7 @@ namespace Mruv.Gates {
       }
       if (other.object_ != null) {
         if (object_ == null) {
-          Object = new global::Mruv.Gates.Object();
+          Object = new global::Mruv.Objects.Object();
         }
         Object.MergeFrom(other.Object);
       }
@@ -2903,7 +2905,7 @@ namespace Mruv.Gates {
           }
           case 18: {
             if (object_ == null) {
-              Object = new global::Mruv.Gates.Object();
+              Object = new global::Mruv.Objects.Object();
             }
             input.ReadMessage(Object);
             break;
@@ -2925,7 +2927,7 @@ namespace Mruv.Gates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Gates.ObjectsReflection.Descriptor.MessageTypes[15]; }
+      get { return global::Mruv.Objects.ObjectsReflection.Descriptor.MessageTypes[15]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3029,7 +3031,7 @@ namespace Mruv.Gates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Gates.ObjectsReflection.Descriptor.MessageTypes[16]; }
+      get { return global::Mruv.Objects.ObjectsReflection.Descriptor.MessageTypes[16]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3161,7 +3163,7 @@ namespace Mruv.Gates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Gates.ObjectsReflection.Descriptor.MessageTypes[17]; }
+      get { return global::Mruv.Objects.ObjectsReflection.Descriptor.MessageTypes[17]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
