@@ -26,55 +26,56 @@ namespace Mruv.Objects {
           string.Concat(
             "ChVvYmplY3RzL21vdmFibGUucHJvdG8SDG1ydXYub2JqZWN0cxocZ29vZ2xl",
             "L2FwaS9hbm5vdGF0aW9ucy5wcm90bxoVb2JqZWN0cy9vYmplY3RzLnByb3Rv",
-            "IloKBVN0YXRlEgwKBG5hbWUYASABKAkSCQoBeBgCIAEoAhIJCgF5GAMgASgC",
+            "InQKBVN0YXRlEgwKBG5hbWUYASABKAkSCQoBeBgCIAEoAhIJCgF5GAMgASgC",
             "EgkKAXoYBCABKAISCgoCcngYBSABKAISCgoCcnkYBiABKAISCgoCcnoYByAB",
-            "KAIiWgoNTW92YWJsZU9iamVjdBIkCgZvYmplY3QYASABKAsyFC5tcnV2Lm9i",
-            "amVjdHMuT2JqZWN0EiMKBnN0YXRlcxgCIAMoCzITLm1ydXYub2JqZWN0cy5T",
-            "dGF0ZSJnChpDcmVhdGVNb3ZhYmxlT2JqZWN0UmVxdWVzdBIkCgZvYmplY3QY",
-            "ASABKAsyFC5tcnV2Lm9iamVjdHMuT2JqZWN0EiMKBnN0YXRlcxgCIAMoCzIT",
-            "Lm1ydXYub2JqZWN0cy5TdGF0ZSIpChtDcmVhdGVNb3ZhYmxlT2JqZWN0UmVz",
-            "cG9uc2USCgoCaWQYASABKA0iJQoXR2V0TW92YWJsZU9iamVjdFJlcXVlc3QS",
-            "CgoCaWQYASABKA0imwEKGEdldE1vdmFibGVPYmplY3RSZXNwb25zZRIkCgZv",
-            "YmplY3QYASABKAsyFC5tcnV2Lm9iamVjdHMuT2JqZWN0EiMKBnN0YXRlcxgC",
-            "IAMoCzITLm1ydXYub2JqZWN0cy5TdGF0ZRIYChBjdXJyZW50X3N0YXRlX2lk",
-            "GAMgASgNEhoKEmN1cnJlbnRfc3RhdGVfbmFtZRgEIAEoCSJgChpVcGRhdGVN",
-            "b3ZhYmxlT2JqZWN0UmVxdWVzdBIKCgJpZBgBIAEoDRIRCglvYmplY3RfaWQY",
-            "AiABKA0SIwoGc3RhdGVzGAMgAygLMhMubXJ1di5vYmplY3RzLlN0YXRlIh0K",
-            "G1VwZGF0ZU1vdmFibGVPYmplY3RSZXNwb25zZSIoChpEZWxldGVNb3ZhYmxl",
-            "T2JqZWN0UmVxdWVzdBIKCgJpZBgBIAEoDSIdChtEZWxldGVNb3ZhYmxlT2Jq",
-            "ZWN0UmVzcG9uc2UiIgoRTW92ZU9iamVjdFJlcXVlc3QSDQoFc3RhdGUYASAB",
-            "KA0iFAoSTW92ZU9iamVjdFJlc3BvbnNlIiMKFU1vdmVPYmplY3ROZXh0UmVx",
-            "dWVzdBIKCgJpZBgBIAEoDSI+ChZNb3ZlT2JqZWN0TmV4dFJlc3BvbnNlEhAK",
-            "CHN0YXRlX2lkGAEgASgNEhIKCnN0YXRlX25hbWUYAiABKAkiJwoZTW92ZU9i",
-            "amVjdFByZXZpb3VzUmVxdWVzdBIKCgJpZBgBIAEoDSJCChpNb3ZlT2JqZWN0",
-            "UHJldmlvdXNSZXNwb25zZRIQCghzdGF0ZV9pZBgBIAEoDRISCgpzdGF0ZV9u",
-            "YW1lGAIgASgJMsIHChlNcnVWTW92YWJsZU9iamVjdHNTZXJ2aWNlEoYBChND",
-            "cmVhdGVNb3ZhYmxlT2JqZWN0EigubXJ1di5vYmplY3RzLkNyZWF0ZU1vdmFi",
-            "bGVPYmplY3RSZXF1ZXN0GikubXJ1di5vYmplY3RzLkNyZWF0ZU1vdmFibGVP",
-            "YmplY3RSZXNwb25zZSIagtPkkwIUIhIvdjEvbW92YWJsZU9iamVjdHMSfQoQ",
-            "R2V0TW92YWJsZU9iamVjdBIlLm1ydXYub2JqZWN0cy5HZXRNb3ZhYmxlT2Jq",
-            "ZWN0UmVxdWVzdBomLm1ydXYub2JqZWN0cy5HZXRNb3ZhYmxlT2JqZWN0UmVz",
-            "cG9uc2UiGoLT5JMCFBISL3YxL21vdmFibGVPYmplY3RzEoYBChNVcGRhdGVN",
-            "b3ZhYmxlT2JqZWN0EigubXJ1di5vYmplY3RzLlVwZGF0ZU1vdmFibGVPYmpl",
-            "Y3RSZXF1ZXN0GikubXJ1di5vYmplY3RzLlVwZGF0ZU1vdmFibGVPYmplY3RS",
-            "ZXNwb25zZSIagtPkkwIUMhIvdjEvbW92YWJsZU9iamVjdHMShgEKE0RlbGV0",
-            "ZU1vdmFibGVPYmplY3QSKC5tcnV2Lm9iamVjdHMuRGVsZXRlTW92YWJsZU9i",
-            "amVjdFJlcXVlc3QaKS5tcnV2Lm9iamVjdHMuRGVsZXRlTW92YWJsZU9iamVj",
-            "dFJlc3BvbnNlIhqC0+STAhQqEi92MS9tb3ZhYmxlT2JqZWN0cxJxCgpNb3Zl",
-            "T2JqZWN0Eh8ubXJ1di5vYmplY3RzLk1vdmVPYmplY3RSZXF1ZXN0GiAubXJ1",
-            "di5vYmplY3RzLk1vdmVPYmplY3RSZXNwb25zZSIggtPkkwIaIhgvdjEvbW92",
-            "YWJsZU9iamVjdHMvbW92ZXMSggEKDk1vdmVPYmplY3ROZXh0EiMubXJ1di5v",
-            "YmplY3RzLk1vdmVPYmplY3ROZXh0UmVxdWVzdBokLm1ydXYub2JqZWN0cy5N",
-            "b3ZlT2JqZWN0TmV4dFJlc3BvbnNlIiWC0+STAh8iHS92MS9tb3ZhYmxlT2Jq",
-            "ZWN0cy9tb3Zlcy9uZXh0EpIBChJNb3ZlT2JqZWN0UHJldmlvdXMSJy5tcnV2",
-            "Lm9iamVjdHMuTW92ZU9iamVjdFByZXZpb3VzUmVxdWVzdBooLm1ydXYub2Jq",
-            "ZWN0cy5Nb3ZlT2JqZWN0UHJldmlvdXNSZXNwb25zZSIpgtPkkwIjIiEvdjEv",
-            "bW92YWJsZU9iamVjdHMvbW92ZXMvcHJldmlvdXNCJ1olZ2l0aHViLmNvbS9N",
-            "cnVWLVJQL21ydXYtcGItZ28vb2JqZWN0c2IGcHJvdG8z"));
+            "KAISGAoQdHJhbnNpdGlvbl9zcGVlZBgIIAEoAiJaCg1Nb3ZhYmxlT2JqZWN0",
+            "EiQKBm9iamVjdBgBIAEoCzIULm1ydXYub2JqZWN0cy5PYmplY3QSIwoGc3Rh",
+            "dGVzGAIgAygLMhMubXJ1di5vYmplY3RzLlN0YXRlImcKGkNyZWF0ZU1vdmFi",
+            "bGVPYmplY3RSZXF1ZXN0EiQKBm9iamVjdBgBIAEoCzIULm1ydXYub2JqZWN0",
+            "cy5PYmplY3QSIwoGc3RhdGVzGAIgAygLMhMubXJ1di5vYmplY3RzLlN0YXRl",
+            "IikKG0NyZWF0ZU1vdmFibGVPYmplY3RSZXNwb25zZRIKCgJpZBgBIAEoDSIl",
+            "ChdHZXRNb3ZhYmxlT2JqZWN0UmVxdWVzdBIKCgJpZBgBIAEoDSKbAQoYR2V0",
+            "TW92YWJsZU9iamVjdFJlc3BvbnNlEiQKBm9iamVjdBgBIAEoCzIULm1ydXYu",
+            "b2JqZWN0cy5PYmplY3QSIwoGc3RhdGVzGAIgAygLMhMubXJ1di5vYmplY3Rz",
+            "LlN0YXRlEhgKEGN1cnJlbnRfc3RhdGVfaWQYAyABKA0SGgoSY3VycmVudF9z",
+            "dGF0ZV9uYW1lGAQgASgJImAKGlVwZGF0ZU1vdmFibGVPYmplY3RSZXF1ZXN0",
+            "EgoKAmlkGAEgASgNEhEKCW9iamVjdF9pZBgCIAEoDRIjCgZzdGF0ZXMYAyAD",
+            "KAsyEy5tcnV2Lm9iamVjdHMuU3RhdGUiHQobVXBkYXRlTW92YWJsZU9iamVj",
+            "dFJlc3BvbnNlIigKGkRlbGV0ZU1vdmFibGVPYmplY3RSZXF1ZXN0EgoKAmlk",
+            "GAEgASgNIh0KG0RlbGV0ZU1vdmFibGVPYmplY3RSZXNwb25zZSIiChFNb3Zl",
+            "T2JqZWN0UmVxdWVzdBINCgVzdGF0ZRgBIAEoDSIUChJNb3ZlT2JqZWN0UmVz",
+            "cG9uc2UiIwoVTW92ZU9iamVjdE5leHRSZXF1ZXN0EgoKAmlkGAEgASgNIj4K",
+            "Fk1vdmVPYmplY3ROZXh0UmVzcG9uc2USEAoIc3RhdGVfaWQYASABKA0SEgoK",
+            "c3RhdGVfbmFtZRgCIAEoCSInChlNb3ZlT2JqZWN0UHJldmlvdXNSZXF1ZXN0",
+            "EgoKAmlkGAEgASgNIkIKGk1vdmVPYmplY3RQcmV2aW91c1Jlc3BvbnNlEhAK",
+            "CHN0YXRlX2lkGAEgASgNEhIKCnN0YXRlX25hbWUYAiABKAkywgcKGU1ydVZN",
+            "b3ZhYmxlT2JqZWN0c1NlcnZpY2UShgEKE0NyZWF0ZU1vdmFibGVPYmplY3QS",
+            "KC5tcnV2Lm9iamVjdHMuQ3JlYXRlTW92YWJsZU9iamVjdFJlcXVlc3QaKS5t",
+            "cnV2Lm9iamVjdHMuQ3JlYXRlTW92YWJsZU9iamVjdFJlc3BvbnNlIhqC0+ST",
+            "AhQiEi92MS9tb3ZhYmxlT2JqZWN0cxJ9ChBHZXRNb3ZhYmxlT2JqZWN0EiUu",
+            "bXJ1di5vYmplY3RzLkdldE1vdmFibGVPYmplY3RSZXF1ZXN0GiYubXJ1di5v",
+            "YmplY3RzLkdldE1vdmFibGVPYmplY3RSZXNwb25zZSIagtPkkwIUEhIvdjEv",
+            "bW92YWJsZU9iamVjdHMShgEKE1VwZGF0ZU1vdmFibGVPYmplY3QSKC5tcnV2",
+            "Lm9iamVjdHMuVXBkYXRlTW92YWJsZU9iamVjdFJlcXVlc3QaKS5tcnV2Lm9i",
+            "amVjdHMuVXBkYXRlTW92YWJsZU9iamVjdFJlc3BvbnNlIhqC0+STAhQyEi92",
+            "MS9tb3ZhYmxlT2JqZWN0cxKGAQoTRGVsZXRlTW92YWJsZU9iamVjdBIoLm1y",
+            "dXYub2JqZWN0cy5EZWxldGVNb3ZhYmxlT2JqZWN0UmVxdWVzdBopLm1ydXYu",
+            "b2JqZWN0cy5EZWxldGVNb3ZhYmxlT2JqZWN0UmVzcG9uc2UiGoLT5JMCFCoS",
+            "L3YxL21vdmFibGVPYmplY3RzEnEKCk1vdmVPYmplY3QSHy5tcnV2Lm9iamVj",
+            "dHMuTW92ZU9iamVjdFJlcXVlc3QaIC5tcnV2Lm9iamVjdHMuTW92ZU9iamVj",
+            "dFJlc3BvbnNlIiCC0+STAhoiGC92MS9tb3ZhYmxlT2JqZWN0cy9tb3ZlcxKC",
+            "AQoOTW92ZU9iamVjdE5leHQSIy5tcnV2Lm9iamVjdHMuTW92ZU9iamVjdE5l",
+            "eHRSZXF1ZXN0GiQubXJ1di5vYmplY3RzLk1vdmVPYmplY3ROZXh0UmVzcG9u",
+            "c2UiJYLT5JMCHyIdL3YxL21vdmFibGVPYmplY3RzL21vdmVzL25leHQSkgEK",
+            "Ek1vdmVPYmplY3RQcmV2aW91cxInLm1ydXYub2JqZWN0cy5Nb3ZlT2JqZWN0",
+            "UHJldmlvdXNSZXF1ZXN0GigubXJ1di5vYmplY3RzLk1vdmVPYmplY3RQcmV2",
+            "aW91c1Jlc3BvbnNlIimC0+STAiMiIS92MS9tb3ZhYmxlT2JqZWN0cy9tb3Zl",
+            "cy9wcmV2aW91c0InWiVnaXRodWIuY29tL01ydVYtUlAvbXJ1di1wYi1nby9v",
+            "YmplY3RzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, global::Mruv.Objects.ObjectsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.State), global::Mruv.Objects.State.Parser, new[]{ "Name", "X", "Y", "Z", "Rx", "Ry", "Rz" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.State), global::Mruv.Objects.State.Parser, new[]{ "Name", "X", "Y", "Z", "Rx", "Ry", "Rz", "TransitionSpeed" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.MovableObject), global::Mruv.Objects.MovableObject.Parser, new[]{ "Object", "States" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.CreateMovableObjectRequest), global::Mruv.Objects.CreateMovableObjectRequest.Parser, new[]{ "Object", "States" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.CreateMovableObjectResponse), global::Mruv.Objects.CreateMovableObjectResponse.Parser, new[]{ "Id" }, null, null, null),
@@ -131,6 +132,7 @@ namespace Mruv.Objects {
       rx_ = other.rx_;
       ry_ = other.ry_;
       rz_ = other.rz_;
+      transitionSpeed_ = other.transitionSpeed_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -216,6 +218,17 @@ namespace Mruv.Objects {
       }
     }
 
+    /// <summary>Field number for the "transition_speed" field.</summary>
+    public const int TransitionSpeedFieldNumber = 8;
+    private float transitionSpeed_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public float TransitionSpeed {
+      get { return transitionSpeed_; }
+      set {
+        transitionSpeed_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as State);
@@ -236,6 +249,7 @@ namespace Mruv.Objects {
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Rx, other.Rx)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Ry, other.Ry)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Rz, other.Rz)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(TransitionSpeed, other.TransitionSpeed)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -249,6 +263,7 @@ namespace Mruv.Objects {
       if (Rx != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Rx);
       if (Ry != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Ry);
       if (Rz != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Rz);
+      if (TransitionSpeed != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(TransitionSpeed);
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -290,6 +305,10 @@ namespace Mruv.Objects {
         output.WriteRawTag(61);
         output.WriteFloat(Rz);
       }
+      if (TransitionSpeed != 0F) {
+        output.WriteRawTag(69);
+        output.WriteFloat(TransitionSpeed);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -317,6 +336,9 @@ namespace Mruv.Objects {
         size += 1 + 4;
       }
       if (Rz != 0F) {
+        size += 1 + 4;
+      }
+      if (TransitionSpeed != 0F) {
         size += 1 + 4;
       }
       if (_unknownFields != null) {
@@ -350,6 +372,9 @@ namespace Mruv.Objects {
       }
       if (other.Rz != 0F) {
         Rz = other.Rz;
+      }
+      if (other.TransitionSpeed != 0F) {
+        TransitionSpeed = other.TransitionSpeed;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -388,6 +413,10 @@ namespace Mruv.Objects {
           }
           case 61: {
             Rz = input.ReadFloat();
+            break;
+          }
+          case 69: {
+            TransitionSpeed = input.ReadFloat();
             break;
           }
         }

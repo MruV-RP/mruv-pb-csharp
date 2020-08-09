@@ -15,14 +15,6 @@ namespace Mruv.Objects {
   {
     static readonly string __ServiceName = "mruv.objects.MruVObjectsService";
 
-    static readonly grpc::Marshaller<global::Mruv.Objects.CreateObjectModelRequest> __Marshaller_mruv_objects_CreateObjectModelRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.CreateObjectModelRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Objects.CreateObjectModelResponse> __Marshaller_mruv_objects_CreateObjectModelResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.CreateObjectModelResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Objects.GetObjectModelRequest> __Marshaller_mruv_objects_GetObjectModelRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.GetObjectModelRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Objects.GetObjectModelResponse> __Marshaller_mruv_objects_GetObjectModelResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.GetObjectModelResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Objects.UpdateObjectModelRequest> __Marshaller_mruv_objects_UpdateObjectModelRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.UpdateObjectModelRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Objects.UpdateObjectModelResponse> __Marshaller_mruv_objects_UpdateObjectModelResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.UpdateObjectModelResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Objects.DeleteObjectModelRequest> __Marshaller_mruv_objects_DeleteObjectModelRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.DeleteObjectModelRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Objects.DeleteObjectModelResponse> __Marshaller_mruv_objects_DeleteObjectModelResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.DeleteObjectModelResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.Objects.CreateObjectRequest> __Marshaller_mruv_objects_CreateObjectRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.CreateObjectRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.Objects.CreateObjectResponse> __Marshaller_mruv_objects_CreateObjectResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.CreateObjectResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.Objects.GetObjectRequest> __Marshaller_mruv_objects_GetObjectRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.GetObjectRequest.Parser.ParseFrom);
@@ -31,34 +23,6 @@ namespace Mruv.Objects {
     static readonly grpc::Marshaller<global::Mruv.Objects.UpdateObjectResponse> __Marshaller_mruv_objects_UpdateObjectResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.UpdateObjectResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.Objects.DeleteObjectRequest> __Marshaller_mruv_objects_DeleteObjectRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.DeleteObjectRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.Objects.DeleteObjectResponse> __Marshaller_mruv_objects_DeleteObjectResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.DeleteObjectResponse.Parser.ParseFrom);
-
-    static readonly grpc::Method<global::Mruv.Objects.CreateObjectModelRequest, global::Mruv.Objects.CreateObjectModelResponse> __Method_CreateObjectModel = new grpc::Method<global::Mruv.Objects.CreateObjectModelRequest, global::Mruv.Objects.CreateObjectModelResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "CreateObjectModel",
-        __Marshaller_mruv_objects_CreateObjectModelRequest,
-        __Marshaller_mruv_objects_CreateObjectModelResponse);
-
-    static readonly grpc::Method<global::Mruv.Objects.GetObjectModelRequest, global::Mruv.Objects.GetObjectModelResponse> __Method_GetObjectModel = new grpc::Method<global::Mruv.Objects.GetObjectModelRequest, global::Mruv.Objects.GetObjectModelResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "GetObjectModel",
-        __Marshaller_mruv_objects_GetObjectModelRequest,
-        __Marshaller_mruv_objects_GetObjectModelResponse);
-
-    static readonly grpc::Method<global::Mruv.Objects.UpdateObjectModelRequest, global::Mruv.Objects.UpdateObjectModelResponse> __Method_UpdateObjectModel = new grpc::Method<global::Mruv.Objects.UpdateObjectModelRequest, global::Mruv.Objects.UpdateObjectModelResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "UpdateObjectModel",
-        __Marshaller_mruv_objects_UpdateObjectModelRequest,
-        __Marshaller_mruv_objects_UpdateObjectModelResponse);
-
-    static readonly grpc::Method<global::Mruv.Objects.DeleteObjectModelRequest, global::Mruv.Objects.DeleteObjectModelResponse> __Method_DeleteObjectModel = new grpc::Method<global::Mruv.Objects.DeleteObjectModelRequest, global::Mruv.Objects.DeleteObjectModelResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "DeleteObjectModel",
-        __Marshaller_mruv_objects_DeleteObjectModelRequest,
-        __Marshaller_mruv_objects_DeleteObjectModelResponse);
 
     static readonly grpc::Method<global::Mruv.Objects.CreateObjectRequest, global::Mruv.Objects.CreateObjectResponse> __Method_CreateObject = new grpc::Method<global::Mruv.Objects.CreateObjectRequest, global::Mruv.Objects.CreateObjectResponse>(
         grpc::MethodType.Unary,
@@ -98,50 +62,6 @@ namespace Mruv.Objects {
     [grpc::BindServiceMethod(typeof(MruVObjectsService), "BindService")]
     public abstract partial class MruVObjectsServiceBase
     {
-      /// <summary>
-      /// Create an object model.
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Objects.CreateObjectModelResponse> CreateObjectModel(global::Mruv.Objects.CreateObjectModelRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      /// Get an object model.
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Objects.GetObjectModelResponse> GetObjectModel(global::Mruv.Objects.GetObjectModelRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      /// Update an object model.
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Objects.UpdateObjectModelResponse> UpdateObjectModel(global::Mruv.Objects.UpdateObjectModelRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      /// Delete an object model.
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Objects.DeleteObjectModelResponse> DeleteObjectModel(global::Mruv.Objects.DeleteObjectModelRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
       /// <summary>
       /// Create an object.
       /// </summary>
@@ -211,182 +131,6 @@ namespace Mruv.Objects {
       {
       }
 
-      /// <summary>
-      /// Create an object model.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Objects.CreateObjectModelResponse CreateObjectModel(global::Mruv.Objects.CreateObjectModelRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return CreateObjectModel(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Create an object model.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Objects.CreateObjectModelResponse CreateObjectModel(global::Mruv.Objects.CreateObjectModelRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_CreateObjectModel, null, options, request);
-      }
-      /// <summary>
-      /// Create an object model.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Objects.CreateObjectModelResponse> CreateObjectModelAsync(global::Mruv.Objects.CreateObjectModelRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return CreateObjectModelAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Create an object model.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Objects.CreateObjectModelResponse> CreateObjectModelAsync(global::Mruv.Objects.CreateObjectModelRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_CreateObjectModel, null, options, request);
-      }
-      /// <summary>
-      /// Get an object model.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Objects.GetObjectModelResponse GetObjectModel(global::Mruv.Objects.GetObjectModelRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GetObjectModel(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Get an object model.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Objects.GetObjectModelResponse GetObjectModel(global::Mruv.Objects.GetObjectModelRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_GetObjectModel, null, options, request);
-      }
-      /// <summary>
-      /// Get an object model.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Objects.GetObjectModelResponse> GetObjectModelAsync(global::Mruv.Objects.GetObjectModelRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GetObjectModelAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Get an object model.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Objects.GetObjectModelResponse> GetObjectModelAsync(global::Mruv.Objects.GetObjectModelRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_GetObjectModel, null, options, request);
-      }
-      /// <summary>
-      /// Update an object model.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Objects.UpdateObjectModelResponse UpdateObjectModel(global::Mruv.Objects.UpdateObjectModelRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return UpdateObjectModel(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Update an object model.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Objects.UpdateObjectModelResponse UpdateObjectModel(global::Mruv.Objects.UpdateObjectModelRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_UpdateObjectModel, null, options, request);
-      }
-      /// <summary>
-      /// Update an object model.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Objects.UpdateObjectModelResponse> UpdateObjectModelAsync(global::Mruv.Objects.UpdateObjectModelRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return UpdateObjectModelAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Update an object model.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Objects.UpdateObjectModelResponse> UpdateObjectModelAsync(global::Mruv.Objects.UpdateObjectModelRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_UpdateObjectModel, null, options, request);
-      }
-      /// <summary>
-      /// Delete an object model.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Objects.DeleteObjectModelResponse DeleteObjectModel(global::Mruv.Objects.DeleteObjectModelRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return DeleteObjectModel(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Delete an object model.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Objects.DeleteObjectModelResponse DeleteObjectModel(global::Mruv.Objects.DeleteObjectModelRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_DeleteObjectModel, null, options, request);
-      }
-      /// <summary>
-      /// Delete an object model.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Objects.DeleteObjectModelResponse> DeleteObjectModelAsync(global::Mruv.Objects.DeleteObjectModelRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return DeleteObjectModelAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Delete an object model.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Objects.DeleteObjectModelResponse> DeleteObjectModelAsync(global::Mruv.Objects.DeleteObjectModelRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_DeleteObjectModel, null, options, request);
-      }
       /// <summary>
       /// Create an object.
       /// </summary>
@@ -575,10 +319,6 @@ namespace Mruv.Objects {
     public static grpc::ServerServiceDefinition BindService(MruVObjectsServiceBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_CreateObjectModel, serviceImpl.CreateObjectModel)
-          .AddMethod(__Method_GetObjectModel, serviceImpl.GetObjectModel)
-          .AddMethod(__Method_UpdateObjectModel, serviceImpl.UpdateObjectModel)
-          .AddMethod(__Method_DeleteObjectModel, serviceImpl.DeleteObjectModel)
           .AddMethod(__Method_CreateObject, serviceImpl.CreateObject)
           .AddMethod(__Method_GetObject, serviceImpl.GetObject)
           .AddMethod(__Method_UpdateObject, serviceImpl.UpdateObject)
@@ -591,10 +331,6 @@ namespace Mruv.Objects {
     /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
     public static void BindService(grpc::ServiceBinderBase serviceBinder, MruVObjectsServiceBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_CreateObjectModel, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Objects.CreateObjectModelRequest, global::Mruv.Objects.CreateObjectModelResponse>(serviceImpl.CreateObjectModel));
-      serviceBinder.AddMethod(__Method_GetObjectModel, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Objects.GetObjectModelRequest, global::Mruv.Objects.GetObjectModelResponse>(serviceImpl.GetObjectModel));
-      serviceBinder.AddMethod(__Method_UpdateObjectModel, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Objects.UpdateObjectModelRequest, global::Mruv.Objects.UpdateObjectModelResponse>(serviceImpl.UpdateObjectModel));
-      serviceBinder.AddMethod(__Method_DeleteObjectModel, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Objects.DeleteObjectModelRequest, global::Mruv.Objects.DeleteObjectModelResponse>(serviceImpl.DeleteObjectModel));
       serviceBinder.AddMethod(__Method_CreateObject, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Objects.CreateObjectRequest, global::Mruv.Objects.CreateObjectResponse>(serviceImpl.CreateObject));
       serviceBinder.AddMethod(__Method_GetObject, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Objects.GetObjectRequest, global::Mruv.Objects.GetObjectResponse>(serviceImpl.GetObject));
       serviceBinder.AddMethod(__Method_UpdateObject, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Objects.UpdateObjectRequest, global::Mruv.Objects.UpdateObjectResponse>(serviceImpl.UpdateObject));
