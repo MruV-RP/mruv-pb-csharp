@@ -29,29 +29,29 @@ namespace Mruv.Plots {
             "YXRlUGxvdFJlcXVlc3QSDAoEbmFtZRgBIAEoCRITCgtkZXNjcmlwdGlvbhgC",
             "IAEoCRIeCgZwb2ludHMYAyADKAsyDi5tcnV2LlBvc2l0aW9uIiAKEkNyZWF0",
             "ZVBsb3RSZXNwb25zZRIKCgJpZBgBIAEoDSIcCg5HZXRQbG90UmVxdWVzdBIK",
-            "CgJpZBgBIAEoDSJUCg9HZXRQbG90UmVzcG9uc2USDAoEbmFtZRgBIAEoCRIT",
+            "CgJpZBgBIAEoDSJiCg9HZXRQbG90UmVzcG9uc2USDAoEbmFtZRgBIAEoCRIT",
             "CgtkZXNjcmlwdGlvbhgCIAEoCRIeCgZwb2ludHMYAyADKAsyDi5tcnV2LlBv",
-            "c2l0aW9uIkIKEVVwZGF0ZVBsb3RSZXF1ZXN0EgoKAmlkGAEgASgNEgwKBG5h",
-            "bWUYAiABKAkSEwoLZGVzY3JpcHRpb24YAyABKAkiFAoSVXBkYXRlUGxvdFJl",
-            "c3BvbnNlIh8KEURlbGV0ZVBsb3RSZXF1ZXN0EgoKAmlkGAEgASgNIhQKEkRl",
-            "bGV0ZVBsb3RSZXNwb25zZTKYAwoQTXJ1VlBsb3RzU2VydmljZRJeCgpDcmVh",
-            "dGVQbG90Eh0ubXJ1di5wbG90cy5DcmVhdGVQbG90UmVxdWVzdBoeLm1ydXYu",
-            "cGxvdHMuQ3JlYXRlUGxvdFJlc3BvbnNlIhGC0+STAgsiCS92MS9wbG90cxJa",
-            "CgdHZXRQbG90EhoubXJ1di5wbG90cy5HZXRQbG90UmVxdWVzdBobLm1ydXYu",
-            "cGxvdHMuR2V0UGxvdFJlc3BvbnNlIhaC0+STAhASDi92MS9wbG90cy97aWR9",
-            "EmMKClVwZGF0ZVBsb3QSHS5tcnV2LnBsb3RzLlVwZGF0ZVBsb3RSZXF1ZXN0",
-            "Gh4ubXJ1di5wbG90cy5VcGRhdGVQbG90UmVzcG9uc2UiFoLT5JMCEDIOL3Yx",
-            "L3Bsb3RzL3tpZH0SYwoKRGVsZXRlUGxvdBIdLm1ydXYucGxvdHMuRGVsZXRl",
-            "UGxvdFJlcXVlc3QaHi5tcnV2LnBsb3RzLkRlbGV0ZVBsb3RSZXNwb25zZSIW",
-            "gtPkkwIQKg4vdjEvcGxvdHMve2lkfUIlWiNnaXRodWIuY29tL01ydVYtUlAv",
-            "bXJ1di1wYi1nby9wbG90c2IGcHJvdG8z"));
+            "c2l0aW9uEgwKBGFyZWEYBCABKAEiQgoRVXBkYXRlUGxvdFJlcXVlc3QSCgoC",
+            "aWQYASABKA0SDAoEbmFtZRgCIAEoCRITCgtkZXNjcmlwdGlvbhgDIAEoCSIU",
+            "ChJVcGRhdGVQbG90UmVzcG9uc2UiHwoRRGVsZXRlUGxvdFJlcXVlc3QSCgoC",
+            "aWQYASABKA0iFAoSRGVsZXRlUGxvdFJlc3BvbnNlMpgDChBNcnVWUGxvdHNT",
+            "ZXJ2aWNlEl4KCkNyZWF0ZVBsb3QSHS5tcnV2LnBsb3RzLkNyZWF0ZVBsb3RS",
+            "ZXF1ZXN0Gh4ubXJ1di5wbG90cy5DcmVhdGVQbG90UmVzcG9uc2UiEYLT5JMC",
+            "CyIJL3YxL3Bsb3RzEloKB0dldFBsb3QSGi5tcnV2LnBsb3RzLkdldFBsb3RS",
+            "ZXF1ZXN0GhsubXJ1di5wbG90cy5HZXRQbG90UmVzcG9uc2UiFoLT5JMCEBIO",
+            "L3YxL3Bsb3RzL3tpZH0SYwoKVXBkYXRlUGxvdBIdLm1ydXYucGxvdHMuVXBk",
+            "YXRlUGxvdFJlcXVlc3QaHi5tcnV2LnBsb3RzLlVwZGF0ZVBsb3RSZXNwb25z",
+            "ZSIWgtPkkwIQMg4vdjEvcGxvdHMve2lkfRJjCgpEZWxldGVQbG90Eh0ubXJ1",
+            "di5wbG90cy5EZWxldGVQbG90UmVxdWVzdBoeLm1ydXYucGxvdHMuRGVsZXRl",
+            "UGxvdFJlc3BvbnNlIhaC0+STAhAqDi92MS9wbG90cy97aWR9QiVaI2dpdGh1",
+            "Yi5jb20vTXJ1Vi1SUC9tcnV2LXBiLWdvL3Bsb3RzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, global::Mruv.SpatialReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Plots.CreatePlotRequest), global::Mruv.Plots.CreatePlotRequest.Parser, new[]{ "Name", "Description", "Points" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Plots.CreatePlotResponse), global::Mruv.Plots.CreatePlotResponse.Parser, new[]{ "Id" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Plots.GetPlotRequest), global::Mruv.Plots.GetPlotRequest.Parser, new[]{ "Id" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Plots.GetPlotResponse), global::Mruv.Plots.GetPlotResponse.Parser, new[]{ "Name", "Description", "Points" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Plots.GetPlotResponse), global::Mruv.Plots.GetPlotResponse.Parser, new[]{ "Name", "Description", "Points", "Area" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Plots.UpdatePlotRequest), global::Mruv.Plots.UpdatePlotRequest.Parser, new[]{ "Id", "Name", "Description" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Plots.UpdatePlotResponse), global::Mruv.Plots.UpdatePlotResponse.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Plots.DeletePlotRequest), global::Mruv.Plots.DeletePlotRequest.Parser, new[]{ "Id" }, null, null, null),
@@ -537,6 +537,7 @@ namespace Mruv.Plots {
       name_ = other.name_;
       description_ = other.description_;
       points_ = other.points_.Clone();
+      area_ = other.area_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -577,6 +578,17 @@ namespace Mruv.Plots {
       get { return points_; }
     }
 
+    /// <summary>Field number for the "area" field.</summary>
+    public const int AreaFieldNumber = 4;
+    private double area_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public double Area {
+      get { return area_; }
+      set {
+        area_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as GetPlotResponse);
@@ -593,6 +605,7 @@ namespace Mruv.Plots {
       if (Name != other.Name) return false;
       if (Description != other.Description) return false;
       if(!points_.Equals(other.points_)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(Area, other.Area)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -602,6 +615,7 @@ namespace Mruv.Plots {
       if (Name.Length != 0) hash ^= Name.GetHashCode();
       if (Description.Length != 0) hash ^= Description.GetHashCode();
       hash ^= points_.GetHashCode();
+      if (Area != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(Area);
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -624,6 +638,10 @@ namespace Mruv.Plots {
         output.WriteString(Description);
       }
       points_.WriteTo(output, _repeated_points_codec);
+      if (Area != 0D) {
+        output.WriteRawTag(33);
+        output.WriteDouble(Area);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -639,6 +657,9 @@ namespace Mruv.Plots {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Description);
       }
       size += points_.CalculateSize(_repeated_points_codec);
+      if (Area != 0D) {
+        size += 1 + 8;
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -657,6 +678,9 @@ namespace Mruv.Plots {
         Description = other.Description;
       }
       points_.Add(other.points_);
+      if (other.Area != 0D) {
+        Area = other.Area;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -678,6 +702,10 @@ namespace Mruv.Plots {
           }
           case 26: {
             points_.AddEntriesFrom(input, _repeated_points_codec);
+            break;
+          }
+          case 33: {
+            Area = input.ReadDouble();
             break;
           }
         }
