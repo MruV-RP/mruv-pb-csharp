@@ -41,32 +41,36 @@ namespace Mruv.Entrances {
             "TG9ja1JlcXVlc3QSCgoCaWQYASABKA0iDgoMTG9ja1Jlc3BvbnNlIhsKDVVu",
             "bG9ja1JlcXVlc3QSCgoCaWQYASABKA0iEAoOVW5sb2NrUmVzcG9uc2UiUwoa",
             "RmluZE5lYXJlc3RFbnRyYW5jZVJlcXVlc3QSCQoBeBgBIAEoAhIJCgF5GAIg",
-            "ASgCEgkKAXoYAyABKAISFAoMbWF4X2Rpc3RhbmNlGAQgASgCIjsKG0ZpbmRO",
+            "ASgCEgkKAXoYAyABKAISFAoMbWF4X2Rpc3RhbmNlGAQgASgCIksKG0ZpbmRO",
             "ZWFyZXN0RW50cmFuY2VSZXNwb25zZRIKCgJpZBgBIAEoDRIQCghkaXN0YW5j",
-            "ZRgCIAEoAiIaCgxFbnRlclJlcXVlc3QSCgoCaWQYASABKA0iDwoNRW50ZXJS",
-            "ZXNwb25zZTLEBwoUTXJ1VkVudHJhbmNlc1NlcnZpY2USdgoOQ3JlYXRlRW50",
-            "cmFuY2USJS5tcnV2LmVudHJhbmNlcy5DcmVhdGVFbnRyYW5jZVJlcXVlc3Qa",
-            "Ji5tcnV2LmVudHJhbmNlcy5DcmVhdGVFbnRyYW5jZVJlc3BvbnNlIhWC0+ST",
-            "Ag8iDS92MS9lbnRyYW5jZXMScgoLR2V0RW50cmFuY2USIi5tcnV2LmVudHJh",
-            "bmNlcy5HZXRFbnRyYW5jZVJlcXVlc3QaIy5tcnV2LmVudHJhbmNlcy5HZXRF",
-            "bnRyYW5jZVJlc3BvbnNlIhqC0+STAhQSEi92MS9lbnRyYW5jZXMve2lkfRJ7",
-            "Cg5VcGRhdGVFbnRyYW5jZRIlLm1ydXYuZW50cmFuY2VzLlVwZGF0ZUVudHJh",
-            "bmNlUmVxdWVzdBomLm1ydXYuZW50cmFuY2VzLlVwZGF0ZUVudHJhbmNlUmVz",
-            "cG9uc2UiGoLT5JMCFDISL3YxL2VudHJhbmNlcy97aWR9EnsKDkRlbGV0ZUVu",
-            "dHJhbmNlEiUubXJ1di5lbnRyYW5jZXMuRGVsZXRlRW50cmFuY2VSZXF1ZXN0",
-            "GiYubXJ1di5lbnRyYW5jZXMuRGVsZXRlRW50cmFuY2VSZXNwb25zZSIagtPk",
-            "kwIUKhIvdjEvZW50cmFuY2VzL3tpZH0SYgoETG9jaxIbLm1ydXYuZW50cmFu",
-            "Y2VzLkxvY2tSZXF1ZXN0GhwubXJ1di5lbnRyYW5jZXMuTG9ja1Jlc3BvbnNl",
-            "Ih+C0+STAhkiFy92MS9lbnRyYW5jZXMve2lkfS9sb2NrEmoKBlVubG9jaxId",
-            "Lm1ydXYuZW50cmFuY2VzLlVubG9ja1JlcXVlc3QaHi5tcnV2LmVudHJhbmNl",
-            "cy5VbmxvY2tSZXNwb25zZSIhgtPkkwIbIhkvdjEvZW50cmFuY2VzL3tpZH0v",
-            "dW5sb2NrEo0BChNGaW5kTmVhcmVzdEVudHJhbmNlEioubXJ1di5lbnRyYW5j",
-            "ZXMuRmluZE5lYXJlc3RFbnRyYW5jZVJlcXVlc3QaKy5tcnV2LmVudHJhbmNl",
-            "cy5GaW5kTmVhcmVzdEVudHJhbmNlUmVzcG9uc2UiHYLT5JMCFxIVL3YxL2Vu",
-            "dHJhbmNlcy9uZWFyZXN0EmYKBUVudGVyEhwubXJ1di5lbnRyYW5jZXMuRW50",
-            "ZXJSZXF1ZXN0Gh0ubXJ1di5lbnRyYW5jZXMuRW50ZXJSZXNwb25zZSIggtPk",
-            "kwIaIhgvdjEvZW50cmFuY2VzL3tpZH0vZW50ZXJCKVonZ2l0aHViLmNvbS9N",
-            "cnVWLVJQL21ydXYtcGItZ28vZW50cmFuY2VzYgZwcm90bzM="));
+            "ZRgCIAEoAhIOCgZpbnNpZGUYAyABKAgiGgoMRW50ZXJSZXF1ZXN0EgoKAmlk",
+            "GAEgASgNIg8KDUVudGVyUmVzcG9uc2UiGQoLRXhpdFJlcXVlc3QSCgoCaWQY",
+            "ASABKA0iDgoMRXhpdFJlc3BvbnNlMqgIChRNcnVWRW50cmFuY2VzU2Vydmlj",
+            "ZRJ2Cg5DcmVhdGVFbnRyYW5jZRIlLm1ydXYuZW50cmFuY2VzLkNyZWF0ZUVu",
+            "dHJhbmNlUmVxdWVzdBomLm1ydXYuZW50cmFuY2VzLkNyZWF0ZUVudHJhbmNl",
+            "UmVzcG9uc2UiFYLT5JMCDyINL3YxL2VudHJhbmNlcxJyCgtHZXRFbnRyYW5j",
+            "ZRIiLm1ydXYuZW50cmFuY2VzLkdldEVudHJhbmNlUmVxdWVzdBojLm1ydXYu",
+            "ZW50cmFuY2VzLkdldEVudHJhbmNlUmVzcG9uc2UiGoLT5JMCFBISL3YxL2Vu",
+            "dHJhbmNlcy97aWR9EnsKDlVwZGF0ZUVudHJhbmNlEiUubXJ1di5lbnRyYW5j",
+            "ZXMuVXBkYXRlRW50cmFuY2VSZXF1ZXN0GiYubXJ1di5lbnRyYW5jZXMuVXBk",
+            "YXRlRW50cmFuY2VSZXNwb25zZSIagtPkkwIUMhIvdjEvZW50cmFuY2VzL3tp",
+            "ZH0SewoORGVsZXRlRW50cmFuY2USJS5tcnV2LmVudHJhbmNlcy5EZWxldGVF",
+            "bnRyYW5jZVJlcXVlc3QaJi5tcnV2LmVudHJhbmNlcy5EZWxldGVFbnRyYW5j",
+            "ZVJlc3BvbnNlIhqC0+STAhQqEi92MS9lbnRyYW5jZXMve2lkfRJiCgRMb2Nr",
+            "EhsubXJ1di5lbnRyYW5jZXMuTG9ja1JlcXVlc3QaHC5tcnV2LmVudHJhbmNl",
+            "cy5Mb2NrUmVzcG9uc2UiH4LT5JMCGSIXL3YxL2VudHJhbmNlcy97aWR9L2xv",
+            "Y2sSagoGVW5sb2NrEh0ubXJ1di5lbnRyYW5jZXMuVW5sb2NrUmVxdWVzdBoe",
+            "Lm1ydXYuZW50cmFuY2VzLlVubG9ja1Jlc3BvbnNlIiGC0+STAhsiGS92MS9l",
+            "bnRyYW5jZXMve2lkfS91bmxvY2sSjQEKE0ZpbmROZWFyZXN0RW50cmFuY2US",
+            "Ki5tcnV2LmVudHJhbmNlcy5GaW5kTmVhcmVzdEVudHJhbmNlUmVxdWVzdBor",
+            "Lm1ydXYuZW50cmFuY2VzLkZpbmROZWFyZXN0RW50cmFuY2VSZXNwb25zZSId",
+            "gtPkkwIXEhUvdjEvZW50cmFuY2VzL25lYXJlc3QSZgoFRW50ZXISHC5tcnV2",
+            "LmVudHJhbmNlcy5FbnRlclJlcXVlc3QaHS5tcnV2LmVudHJhbmNlcy5FbnRl",
+            "clJlc3BvbnNlIiCC0+STAhoiGC92MS9lbnRyYW5jZXMve2lkfS9lbnRlchJi",
+            "CgRFeGl0EhsubXJ1di5lbnRyYW5jZXMuRXhpdFJlcXVlc3QaHC5tcnV2LmVu",
+            "dHJhbmNlcy5FeGl0UmVzcG9uc2UiH4LT5JMCGSIXL3YxL2VudHJhbmNlcy97",
+            "aWR9L2V4aXRCKVonZ2l0aHViLmNvbS9NcnVWLVJQL21ydXYtcGItZ28vZW50",
+            "cmFuY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, global::Mruv.Spots.SpotsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -84,9 +88,11 @@ namespace Mruv.Entrances {
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Entrances.UnlockRequest), global::Mruv.Entrances.UnlockRequest.Parser, new[]{ "Id" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Entrances.UnlockResponse), global::Mruv.Entrances.UnlockResponse.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Entrances.FindNearestEntranceRequest), global::Mruv.Entrances.FindNearestEntranceRequest.Parser, new[]{ "X", "Y", "Z", "MaxDistance" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Entrances.FindNearestEntranceResponse), global::Mruv.Entrances.FindNearestEntranceResponse.Parser, new[]{ "Id", "Distance" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Entrances.FindNearestEntranceResponse), global::Mruv.Entrances.FindNearestEntranceResponse.Parser, new[]{ "Id", "Distance", "Inside" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Entrances.EnterRequest), global::Mruv.Entrances.EnterRequest.Parser, new[]{ "Id" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Entrances.EnterResponse), global::Mruv.Entrances.EnterResponse.Parser, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Entrances.EnterResponse), global::Mruv.Entrances.EnterResponse.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Entrances.ExitRequest), global::Mruv.Entrances.ExitRequest.Parser, new[]{ "Id" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Entrances.ExitResponse), global::Mruv.Entrances.ExitResponse.Parser, null, null, null, null)
           }));
     }
     #endregion
@@ -2200,6 +2206,7 @@ namespace Mruv.Entrances {
     public FindNearestEntranceResponse(FindNearestEntranceResponse other) : this() {
       id_ = other.id_;
       distance_ = other.distance_;
+      inside_ = other.inside_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2230,6 +2237,20 @@ namespace Mruv.Entrances {
       }
     }
 
+    /// <summary>Field number for the "inside" field.</summary>
+    public const int InsideFieldNumber = 3;
+    private bool inside_;
+    /// <summary>
+    /// Is found entrance position is in spot (out spot otherwise)
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Inside {
+      get { return inside_; }
+      set {
+        inside_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as FindNearestEntranceResponse);
@@ -2245,6 +2266,7 @@ namespace Mruv.Entrances {
       }
       if (Id != other.Id) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Distance, other.Distance)) return false;
+      if (Inside != other.Inside) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2253,6 +2275,7 @@ namespace Mruv.Entrances {
       int hash = 1;
       if (Id != 0) hash ^= Id.GetHashCode();
       if (Distance != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Distance);
+      if (Inside != false) hash ^= Inside.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2274,6 +2297,10 @@ namespace Mruv.Entrances {
         output.WriteRawTag(21);
         output.WriteFloat(Distance);
       }
+      if (Inside != false) {
+        output.WriteRawTag(24);
+        output.WriteBool(Inside);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2287,6 +2314,9 @@ namespace Mruv.Entrances {
       }
       if (Distance != 0F) {
         size += 1 + 4;
+      }
+      if (Inside != false) {
+        size += 1 + 1;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -2305,6 +2335,9 @@ namespace Mruv.Entrances {
       if (other.Distance != 0F) {
         Distance = other.Distance;
       }
+      if (other.Inside != false) {
+        Inside = other.Inside;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -2322,6 +2355,10 @@ namespace Mruv.Entrances {
           }
           case 21: {
             Distance = input.ReadFloat();
+            break;
+          }
+          case 24: {
+            Inside = input.ReadBool();
             break;
           }
         }
@@ -2546,6 +2583,242 @@ namespace Mruv.Entrances {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(EnterResponse other) {
+      if (other == null) {
+        return;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Request message for rpc `Exit`.
+  /// </summary>
+  public sealed partial class ExitRequest : pb::IMessage<ExitRequest> {
+    private static readonly pb::MessageParser<ExitRequest> _parser = new pb::MessageParser<ExitRequest>(() => new ExitRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ExitRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.Entrances.EntrancesReflection.Descriptor.MessageTypes[17]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ExitRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ExitRequest(ExitRequest other) : this() {
+      id_ = other.id_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ExitRequest Clone() {
+      return new ExitRequest(this);
+    }
+
+    /// <summary>Field number for the "id" field.</summary>
+    public const int IdFieldNumber = 1;
+    private uint id_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint Id {
+      get { return id_; }
+      set {
+        id_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ExitRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ExitRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Id != other.Id) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Id != 0) hash ^= Id.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Id != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Id);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Id != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Id);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ExitRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Id != 0) {
+        Id = other.Id;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Id = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Response message for rpc `Exit`.
+  /// </summary>
+  public sealed partial class ExitResponse : pb::IMessage<ExitResponse> {
+    private static readonly pb::MessageParser<ExitResponse> _parser = new pb::MessageParser<ExitResponse>(() => new ExitResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ExitResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.Entrances.EntrancesReflection.Descriptor.MessageTypes[18]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ExitResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ExitResponse(ExitResponse other) : this() {
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ExitResponse Clone() {
+      return new ExitResponse(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ExitResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ExitResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ExitResponse other) {
       if (other == null) {
         return;
       }

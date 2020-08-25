@@ -33,41 +33,42 @@ namespace Mruv.Gates {
             "GAEgASgJEjEKDGdhdGVfb2JqZWN0cxgCIAMoCzIbLm1ydXYub2JqZWN0cy5N",
             "b3ZhYmxlT2JqZWN0Eh4KBHNwb3QYAyABKAsyEC5tcnV2LnNwb3RzLlNwb3Qi",
             "IAoSQ3JlYXRlR2F0ZVJlc3BvbnNlEgoKAmlkGAEgASgNIhwKDkdldEdhdGVS",
-            "ZXF1ZXN0EgoKAmlkGAEgASgNIn0KD0dldEdhdGVSZXNwb25zZRIMCgRuYW1l",
-            "GAEgASgJEhwKFGdhdGVfbW92YWJsZV9vYmplY3RzGAIgAygNEh4KBHNwb3QY",
-            "AyABKAsyEC5tcnV2LnNwb3RzLlNwb3QSDgoGb3BlbmVkGAQgASgIEg4KBmxv",
-            "Y2tlZBgFIAEoCCJcChFVcGRhdGVHYXRlUmVxdWVzdBIKCgJpZBgBIAEoDRIM",
-            "CgRuYW1lGAIgASgJEg8KB3Nwb3RfaWQYAyABKA0SHAoUZ2F0ZV9tb3ZhYmxl",
-            "X29iamVjdHMYBCADKA0iFAoSVXBkYXRlR2F0ZVJlc3BvbnNlIh8KEURlbGV0",
-            "ZUdhdGVSZXF1ZXN0EgoKAmlkGAEgASgNIhQKEkRlbGV0ZUdhdGVSZXNwb25z",
-            "ZSIZCgtMb2NrUmVxdWVzdBIKCgJpZBgBIAEoDSIOCgxMb2NrUmVzcG9uc2Ui",
-            "GwoNVW5sb2NrUmVxdWVzdBIKCgJpZBgBIAEoDSIQCg5VbmxvY2tSZXNwb25z",
-            "ZSIZCgtPcGVuUmVxdWVzdBIKCgJpZBgBIAEoDSIOCgxPcGVuUmVzcG9uc2Ui",
-            "GgoMQ2xvc2VSZXF1ZXN0EgoKAmlkGAEgASgNIg8KDUNsb3NlUmVzcG9uc2Ui",
-            "TwoWRmluZE5lYXJlc3RHYXRlUmVxdWVzdBIJCgF4GAEgASgCEgkKAXkYAiAB",
-            "KAISCQoBehgDIAEoAhIUCgxtYXhfZGlzdGFuY2UYBCABKAIiNwoXRmluZE5l",
-            "YXJlc3RHYXRlUmVzcG9uc2USCgoCaWQYASABKA0SEAoIZGlzdGFuY2UYAiAB",
-            "KAIy+wYKEE1ydVZHYXRlc1NlcnZpY2USXgoKQ3JlYXRlR2F0ZRIdLm1ydXYu",
-            "Z2F0ZXMuQ3JlYXRlR2F0ZVJlcXVlc3QaHi5tcnV2LmdhdGVzLkNyZWF0ZUdh",
-            "dGVSZXNwb25zZSIRgtPkkwILIgkvdjEvZ2F0ZXMSWgoHR2V0R2F0ZRIaLm1y",
-            "dXYuZ2F0ZXMuR2V0R2F0ZVJlcXVlc3QaGy5tcnV2LmdhdGVzLkdldEdhdGVS",
-            "ZXNwb25zZSIWgtPkkwIQEg4vdjEvZ2F0ZXMve2lkfRJjCgpVcGRhdGVHYXRl",
-            "Eh0ubXJ1di5nYXRlcy5VcGRhdGVHYXRlUmVxdWVzdBoeLm1ydXYuZ2F0ZXMu",
-            "VXBkYXRlR2F0ZVJlc3BvbnNlIhaC0+STAhAyDi92MS9nYXRlcy97aWR9EmMK",
-            "CkRlbGV0ZUdhdGUSHS5tcnV2LmdhdGVzLkRlbGV0ZUdhdGVSZXF1ZXN0Gh4u",
-            "bXJ1di5nYXRlcy5EZWxldGVHYXRlUmVzcG9uc2UiFoLT5JMCECoOL3YxL2dh",
-            "dGVzL3tpZH0SVgoETG9jaxIXLm1ydXYuZ2F0ZXMuTG9ja1JlcXVlc3QaGC5t",
-            "cnV2LmdhdGVzLkxvY2tSZXNwb25zZSIbgtPkkwIVIhMvdjEvZ2F0ZXMve2lk",
-            "fS9sb2NrEl4KBlVubG9jaxIZLm1ydXYuZ2F0ZXMuVW5sb2NrUmVxdWVzdBoa",
-            "Lm1ydXYuZ2F0ZXMuVW5sb2NrUmVzcG9uc2UiHYLT5JMCFyIVL3YxL2dhdGVz",
-            "L3tpZH0vdW5sb2NrElYKBE9wZW4SFy5tcnV2LmdhdGVzLk9wZW5SZXF1ZXN0",
-            "GhgubXJ1di5nYXRlcy5PcGVuUmVzcG9uc2UiG4LT5JMCFSITL3YxL2dhdGVz",
-            "L3tpZH0vb3BlbhJaCgVDbG9zZRIYLm1ydXYuZ2F0ZXMuQ2xvc2VSZXF1ZXN0",
-            "GhkubXJ1di5nYXRlcy5DbG9zZVJlc3BvbnNlIhyC0+STAhYiFC92MS9nYXRl",
-            "cy97aWR9L2Nsb3NlEnUKD0ZpbmROZWFyZXN0R2F0ZRIiLm1ydXYuZ2F0ZXMu",
-            "RmluZE5lYXJlc3RHYXRlUmVxdWVzdBojLm1ydXYuZ2F0ZXMuRmluZE5lYXJl",
-            "c3RHYXRlUmVzcG9uc2UiGYLT5JMCExIRL3YxL2dhdGVzL25lYXJlc3RCJVoj",
-            "Z2l0aHViLmNvbS9NcnVWLVJQL21ydXYtcGItZ28vZ2F0ZXNiBnByb3RvMw=="));
+            "ZXF1ZXN0EgoKAmlkGAEgASgNIpUBCg9HZXRHYXRlUmVzcG9uc2USDAoEbmFt",
+            "ZRgBIAEoCRI0Cg9tb3ZhYmxlX29iamVjdHMYAiADKAsyGy5tcnV2Lm9iamVj",
+            "dHMuTW92YWJsZU9iamVjdBIeCgRzcG90GAMgASgLMhAubXJ1di5zcG90cy5T",
+            "cG90Eg4KBm9wZW5lZBgEIAEoCBIOCgZsb2NrZWQYBSABKAgiXAoRVXBkYXRl",
+            "R2F0ZVJlcXVlc3QSCgoCaWQYASABKA0SDAoEbmFtZRgCIAEoCRIPCgdzcG90",
+            "X2lkGAMgASgNEhwKFGdhdGVfbW92YWJsZV9vYmplY3RzGAQgAygNIhQKElVw",
+            "ZGF0ZUdhdGVSZXNwb25zZSIfChFEZWxldGVHYXRlUmVxdWVzdBIKCgJpZBgB",
+            "IAEoDSIUChJEZWxldGVHYXRlUmVzcG9uc2UiGQoLTG9ja1JlcXVlc3QSCgoC",
+            "aWQYASABKA0iDgoMTG9ja1Jlc3BvbnNlIhsKDVVubG9ja1JlcXVlc3QSCgoC",
+            "aWQYASABKA0iEAoOVW5sb2NrUmVzcG9uc2UiGQoLT3BlblJlcXVlc3QSCgoC",
+            "aWQYASABKA0iDgoMT3BlblJlc3BvbnNlIhoKDENsb3NlUmVxdWVzdBIKCgJp",
+            "ZBgBIAEoDSIPCg1DbG9zZVJlc3BvbnNlIk8KFkZpbmROZWFyZXN0R2F0ZVJl",
+            "cXVlc3QSCQoBeBgBIAEoAhIJCgF5GAIgASgCEgkKAXoYAyABKAISFAoMbWF4",
+            "X2Rpc3RhbmNlGAQgASgCIjcKF0ZpbmROZWFyZXN0R2F0ZVJlc3BvbnNlEgoK",
+            "AmlkGAEgASgNEhAKCGRpc3RhbmNlGAIgASgCMvsGChBNcnVWR2F0ZXNTZXJ2",
+            "aWNlEl4KCkNyZWF0ZUdhdGUSHS5tcnV2LmdhdGVzLkNyZWF0ZUdhdGVSZXF1",
+            "ZXN0Gh4ubXJ1di5nYXRlcy5DcmVhdGVHYXRlUmVzcG9uc2UiEYLT5JMCCyIJ",
+            "L3YxL2dhdGVzEloKB0dldEdhdGUSGi5tcnV2LmdhdGVzLkdldEdhdGVSZXF1",
+            "ZXN0GhsubXJ1di5nYXRlcy5HZXRHYXRlUmVzcG9uc2UiFoLT5JMCEBIOL3Yx",
+            "L2dhdGVzL3tpZH0SYwoKVXBkYXRlR2F0ZRIdLm1ydXYuZ2F0ZXMuVXBkYXRl",
+            "R2F0ZVJlcXVlc3QaHi5tcnV2LmdhdGVzLlVwZGF0ZUdhdGVSZXNwb25zZSIW",
+            "gtPkkwIQMg4vdjEvZ2F0ZXMve2lkfRJjCgpEZWxldGVHYXRlEh0ubXJ1di5n",
+            "YXRlcy5EZWxldGVHYXRlUmVxdWVzdBoeLm1ydXYuZ2F0ZXMuRGVsZXRlR2F0",
+            "ZVJlc3BvbnNlIhaC0+STAhAqDi92MS9nYXRlcy97aWR9ElYKBExvY2sSFy5t",
+            "cnV2LmdhdGVzLkxvY2tSZXF1ZXN0GhgubXJ1di5nYXRlcy5Mb2NrUmVzcG9u",
+            "c2UiG4LT5JMCFSITL3YxL2dhdGVzL3tpZH0vbG9jaxJeCgZVbmxvY2sSGS5t",
+            "cnV2LmdhdGVzLlVubG9ja1JlcXVlc3QaGi5tcnV2LmdhdGVzLlVubG9ja1Jl",
+            "c3BvbnNlIh2C0+STAhciFS92MS9nYXRlcy97aWR9L3VubG9jaxJWCgRPcGVu",
+            "EhcubXJ1di5nYXRlcy5PcGVuUmVxdWVzdBoYLm1ydXYuZ2F0ZXMuT3BlblJl",
+            "c3BvbnNlIhuC0+STAhUiEy92MS9nYXRlcy97aWR9L29wZW4SWgoFQ2xvc2US",
+            "GC5tcnV2LmdhdGVzLkNsb3NlUmVxdWVzdBoZLm1ydXYuZ2F0ZXMuQ2xvc2VS",
+            "ZXNwb25zZSIcgtPkkwIWIhQvdjEvZ2F0ZXMve2lkfS9jbG9zZRJ1Cg9GaW5k",
+            "TmVhcmVzdEdhdGUSIi5tcnV2LmdhdGVzLkZpbmROZWFyZXN0R2F0ZVJlcXVl",
+            "c3QaIy5tcnV2LmdhdGVzLkZpbmROZWFyZXN0R2F0ZVJlc3BvbnNlIhmC0+ST",
+            "AhMSES92MS9nYXRlcy9uZWFyZXN0QiVaI2dpdGh1Yi5jb20vTXJ1Vi1SUC9t",
+            "cnV2LXBiLWdvL2dhdGVzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, global::Mruv.Objects.MovableReflection.Descriptor, global::Mruv.Spots.SpotsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -75,7 +76,7 @@ namespace Mruv.Gates {
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Gates.CreateGateRequest), global::Mruv.Gates.CreateGateRequest.Parser, new[]{ "Name", "GateObjects", "Spot" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Gates.CreateGateResponse), global::Mruv.Gates.CreateGateResponse.Parser, new[]{ "Id" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Gates.GetGateRequest), global::Mruv.Gates.GetGateRequest.Parser, new[]{ "Id" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Gates.GetGateResponse), global::Mruv.Gates.GetGateResponse.Parser, new[]{ "Name", "GateMovableObjects", "Spot", "Opened", "Locked" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Gates.GetGateResponse), global::Mruv.Gates.GetGateResponse.Parser, new[]{ "Name", "MovableObjects", "Spot", "Opened", "Locked" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Gates.UpdateGateRequest), global::Mruv.Gates.UpdateGateRequest.Parser, new[]{ "Id", "Name", "SpotId", "GateMovableObjects" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Gates.UpdateGateResponse), global::Mruv.Gates.UpdateGateResponse.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Gates.DeleteGateRequest), global::Mruv.Gates.DeleteGateRequest.Parser, new[]{ "Id" }, null, null, null),
@@ -820,7 +821,7 @@ namespace Mruv.Gates {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GetGateResponse(GetGateResponse other) : this() {
       name_ = other.name_;
-      gateMovableObjects_ = other.gateMovableObjects_.Clone();
+      movableObjects_ = other.movableObjects_.Clone();
       spot_ = other.spot_ != null ? other.spot_.Clone() : null;
       opened_ = other.opened_;
       locked_ = other.locked_;
@@ -843,17 +844,17 @@ namespace Mruv.Gates {
       }
     }
 
-    /// <summary>Field number for the "gate_movable_objects" field.</summary>
-    public const int GateMovableObjectsFieldNumber = 2;
-    private static readonly pb::FieldCodec<uint> _repeated_gateMovableObjects_codec
-        = pb::FieldCodec.ForUInt32(18);
-    private readonly pbc::RepeatedField<uint> gateMovableObjects_ = new pbc::RepeatedField<uint>();
+    /// <summary>Field number for the "movable_objects" field.</summary>
+    public const int MovableObjectsFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::Mruv.Objects.MovableObject> _repeated_movableObjects_codec
+        = pb::FieldCodec.ForMessage(18, global::Mruv.Objects.MovableObject.Parser);
+    private readonly pbc::RepeatedField<global::Mruv.Objects.MovableObject> movableObjects_ = new pbc::RepeatedField<global::Mruv.Objects.MovableObject>();
     /// <summary>
     /// List of objects to move on gate close/open. Every object should have only 2 states: opened, closed.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<uint> GateMovableObjects {
-      get { return gateMovableObjects_; }
+    public pbc::RepeatedField<global::Mruv.Objects.MovableObject> MovableObjects {
+      get { return movableObjects_; }
     }
 
     /// <summary>Field number for the "spot" field.</summary>
@@ -903,7 +904,7 @@ namespace Mruv.Gates {
         return true;
       }
       if (Name != other.Name) return false;
-      if(!gateMovableObjects_.Equals(other.gateMovableObjects_)) return false;
+      if(!movableObjects_.Equals(other.movableObjects_)) return false;
       if (!object.Equals(Spot, other.Spot)) return false;
       if (Opened != other.Opened) return false;
       if (Locked != other.Locked) return false;
@@ -914,7 +915,7 @@ namespace Mruv.Gates {
     public override int GetHashCode() {
       int hash = 1;
       if (Name.Length != 0) hash ^= Name.GetHashCode();
-      hash ^= gateMovableObjects_.GetHashCode();
+      hash ^= movableObjects_.GetHashCode();
       if (spot_ != null) hash ^= Spot.GetHashCode();
       if (Opened != false) hash ^= Opened.GetHashCode();
       if (Locked != false) hash ^= Locked.GetHashCode();
@@ -935,7 +936,7 @@ namespace Mruv.Gates {
         output.WriteRawTag(10);
         output.WriteString(Name);
       }
-      gateMovableObjects_.WriteTo(output, _repeated_gateMovableObjects_codec);
+      movableObjects_.WriteTo(output, _repeated_movableObjects_codec);
       if (spot_ != null) {
         output.WriteRawTag(26);
         output.WriteMessage(Spot);
@@ -959,7 +960,7 @@ namespace Mruv.Gates {
       if (Name.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
       }
-      size += gateMovableObjects_.CalculateSize(_repeated_gateMovableObjects_codec);
+      size += movableObjects_.CalculateSize(_repeated_movableObjects_codec);
       if (spot_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Spot);
       }
@@ -983,7 +984,7 @@ namespace Mruv.Gates {
       if (other.Name.Length != 0) {
         Name = other.Name;
       }
-      gateMovableObjects_.Add(other.gateMovableObjects_);
+      movableObjects_.Add(other.movableObjects_);
       if (other.spot_ != null) {
         if (spot_ == null) {
           Spot = new global::Mruv.Spots.Spot();
@@ -1011,9 +1012,8 @@ namespace Mruv.Gates {
             Name = input.ReadString();
             break;
           }
-          case 18:
-          case 16: {
-            gateMovableObjects_.AddEntriesFrom(input, _repeated_gateMovableObjects_codec);
+          case 18: {
+            movableObjects_.AddEntriesFrom(input, _repeated_movableObjects_codec);
             break;
           }
           case 26: {

@@ -31,6 +31,8 @@ namespace Mruv.Entrances {
     static readonly grpc::Marshaller<global::Mruv.Entrances.FindNearestEntranceResponse> __Marshaller_mruv_entrances_FindNearestEntranceResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Entrances.FindNearestEntranceResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.Entrances.EnterRequest> __Marshaller_mruv_entrances_EnterRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Entrances.EnterRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.Entrances.EnterResponse> __Marshaller_mruv_entrances_EnterResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Entrances.EnterResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Entrances.ExitRequest> __Marshaller_mruv_entrances_ExitRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Entrances.ExitRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Entrances.ExitResponse> __Marshaller_mruv_entrances_ExitResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Entrances.ExitResponse.Parser.ParseFrom);
 
     static readonly grpc::Method<global::Mruv.Entrances.CreateEntranceRequest, global::Mruv.Entrances.CreateEntranceResponse> __Method_CreateEntrance = new grpc::Method<global::Mruv.Entrances.CreateEntranceRequest, global::Mruv.Entrances.CreateEntranceResponse>(
         grpc::MethodType.Unary,
@@ -87,6 +89,13 @@ namespace Mruv.Entrances {
         "Enter",
         __Marshaller_mruv_entrances_EnterRequest,
         __Marshaller_mruv_entrances_EnterResponse);
+
+    static readonly grpc::Method<global::Mruv.Entrances.ExitRequest, global::Mruv.Entrances.ExitResponse> __Method_Exit = new grpc::Method<global::Mruv.Entrances.ExitRequest, global::Mruv.Entrances.ExitResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "Exit",
+        __Marshaller_mruv_entrances_ExitRequest,
+        __Marshaller_mruv_entrances_ExitResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -176,12 +185,23 @@ namespace Mruv.Entrances {
       }
 
       /// <summary>
-      /// Enter an entrance
+      /// Enter an entrance (player teleport from in spot position to out spot position).
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       public virtual global::System.Threading.Tasks.Task<global::Mruv.Entrances.EnterResponse> Enter(global::Mruv.Entrances.EnterRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Exit from entrance (player teleport from out spot position to in spot position).
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.Entrances.ExitResponse> Exit(global::Mruv.Entrances.ExitRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -520,7 +540,7 @@ namespace Mruv.Entrances {
         return CallInvoker.AsyncUnaryCall(__Method_FindNearestEntrance, null, options, request);
       }
       /// <summary>
-      /// Enter an entrance
+      /// Enter an entrance (player teleport from in spot position to out spot position).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -532,7 +552,7 @@ namespace Mruv.Entrances {
         return Enter(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Enter an entrance
+      /// Enter an entrance (player teleport from in spot position to out spot position).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -542,7 +562,7 @@ namespace Mruv.Entrances {
         return CallInvoker.BlockingUnaryCall(__Method_Enter, null, options, request);
       }
       /// <summary>
-      /// Enter an entrance
+      /// Enter an entrance (player teleport from in spot position to out spot position).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -554,7 +574,7 @@ namespace Mruv.Entrances {
         return EnterAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Enter an entrance
+      /// Enter an entrance (player teleport from in spot position to out spot position).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -562,6 +582,50 @@ namespace Mruv.Entrances {
       public virtual grpc::AsyncUnaryCall<global::Mruv.Entrances.EnterResponse> EnterAsync(global::Mruv.Entrances.EnterRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_Enter, null, options, request);
+      }
+      /// <summary>
+      /// Exit from entrance (player teleport from out spot position to in spot position).
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Mruv.Entrances.ExitResponse Exit(global::Mruv.Entrances.ExitRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return Exit(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Exit from entrance (player teleport from out spot position to in spot position).
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Mruv.Entrances.ExitResponse Exit(global::Mruv.Entrances.ExitRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_Exit, null, options, request);
+      }
+      /// <summary>
+      /// Exit from entrance (player teleport from out spot position to in spot position).
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Entrances.ExitResponse> ExitAsync(global::Mruv.Entrances.ExitRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ExitAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Exit from entrance (player teleport from out spot position to in spot position).
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Entrances.ExitResponse> ExitAsync(global::Mruv.Entrances.ExitRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_Exit, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override MruVEntrancesServiceClient NewInstance(ClientBaseConfiguration configuration)
@@ -582,7 +646,8 @@ namespace Mruv.Entrances {
           .AddMethod(__Method_Lock, serviceImpl.Lock)
           .AddMethod(__Method_Unlock, serviceImpl.Unlock)
           .AddMethod(__Method_FindNearestEntrance, serviceImpl.FindNearestEntrance)
-          .AddMethod(__Method_Enter, serviceImpl.Enter).Build();
+          .AddMethod(__Method_Enter, serviceImpl.Enter)
+          .AddMethod(__Method_Exit, serviceImpl.Exit).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
@@ -599,6 +664,7 @@ namespace Mruv.Entrances {
       serviceBinder.AddMethod(__Method_Unlock, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Entrances.UnlockRequest, global::Mruv.Entrances.UnlockResponse>(serviceImpl.Unlock));
       serviceBinder.AddMethod(__Method_FindNearestEntrance, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Entrances.FindNearestEntranceRequest, global::Mruv.Entrances.FindNearestEntranceResponse>(serviceImpl.FindNearestEntrance));
       serviceBinder.AddMethod(__Method_Enter, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Entrances.EnterRequest, global::Mruv.Entrances.EnterResponse>(serviceImpl.Enter));
+      serviceBinder.AddMethod(__Method_Exit, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Entrances.ExitRequest, global::Mruv.Entrances.ExitResponse>(serviceImpl.Exit));
     }
 
   }
