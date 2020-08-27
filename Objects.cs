@@ -25,35 +25,36 @@ namespace Mruv.Objects {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChVvYmplY3RzL29iamVjdHMucHJvdG8SDG1ydXYub2JqZWN0cxocZ29vZ2xl",
-            "L2FwaS9hbm5vdGF0aW9ucy5wcm90byLpAQoGT2JqZWN0Eg0KBW1vZGVsGAEg",
+            "L2FwaS9hbm5vdGF0aW9ucy5wcm90byL8AQoGT2JqZWN0Eg0KBW1vZGVsGAEg",
             "ASgNEgkKAXgYAiABKAISCQoBeRgDIAEoAhIJCgF6GAQgASgCEgoKAnJ4GAUg",
             "ASgCEgoKAnJ5GAYgASgCEgoKAnJ6GAcgASgCEhAKCHdvcmxkX2lkGAggASgF",
             "EhMKC2ludGVyaW9yX2lkGAkgASgFEhEKCXBsYXllcl9pZBgKIAEoBRIPCgdh",
             "cmVhX2lkGAsgASgFEhcKD3N0cmVhbV9kaXN0YW5jZRgMIAEoAhIVCg1kcmF3",
-            "X2Rpc3RhbmNlGA0gASgCEhAKCHByaW9yaXR5GA8gASgFIjsKE0NyZWF0ZU9i",
-            "amVjdFJlcXVlc3QSJAoGb2JqZWN0GAEgASgLMhQubXJ1di5vYmplY3RzLk9i",
-            "amVjdCIiChRDcmVhdGVPYmplY3RSZXNwb25zZRIKCgJpZBgBIAEoDSIeChBH",
-            "ZXRPYmplY3RSZXF1ZXN0EgoKAmlkGAEgASgNIjkKEUdldE9iamVjdFJlc3Bv",
-            "bnNlEiQKBm9iamVjdBgBIAEoCzIULm1ydXYub2JqZWN0cy5PYmplY3QiRwoT",
-            "VXBkYXRlT2JqZWN0UmVxdWVzdBIKCgJpZBgBIAEoDRIkCgZvYmplY3QYAiAB",
-            "KAsyFC5tcnV2Lm9iamVjdHMuT2JqZWN0IhYKFFVwZGF0ZU9iamVjdFJlc3Bv",
-            "bnNlIiEKE0RlbGV0ZU9iamVjdFJlcXVlc3QSCgoCaWQYASABKA0iFgoURGVs",
-            "ZXRlT2JqZWN0UmVzcG9uc2UyyAMKEk1ydVZPYmplY3RzU2VydmljZRJpCgxD",
-            "cmVhdGVPYmplY3QSIS5tcnV2Lm9iamVjdHMuQ3JlYXRlT2JqZWN0UmVxdWVz",
-            "dBoiLm1ydXYub2JqZWN0cy5DcmVhdGVPYmplY3RSZXNwb25zZSISgtPkkwIM",
-            "IgovdjEvb2JqZWN0EmUKCUdldE9iamVjdBIeLm1ydXYub2JqZWN0cy5HZXRP",
-            "YmplY3RSZXF1ZXN0Gh8ubXJ1di5vYmplY3RzLkdldE9iamVjdFJlc3BvbnNl",
-            "IheC0+STAhESDy92MS9vYmplY3Qve2lkfRJvCgxVcGRhdGVPYmplY3QSIS5t",
-            "cnV2Lm9iamVjdHMuVXBkYXRlT2JqZWN0UmVxdWVzdBoiLm1ydXYub2JqZWN0",
-            "cy5VcGRhdGVPYmplY3RSZXNwb25zZSIYgtPkkwISMhAvdjEvb2JqZWN0cy97",
-            "aWR9Em8KDERlbGV0ZU9iamVjdBIhLm1ydXYub2JqZWN0cy5EZWxldGVPYmpl",
-            "Y3RSZXF1ZXN0GiIubXJ1di5vYmplY3RzLkRlbGV0ZU9iamVjdFJlc3BvbnNl",
-            "IhiC0+STAhIqEC92MS9vYmplY3RzL3tpZH1CJ1olZ2l0aHViLmNvbS9NcnVW",
-            "LVJQL21ydXYtcGItZ28vb2JqZWN0c2IGcHJvdG8z"));
+            "X2Rpc3RhbmNlGA0gASgCEhAKCHByaW9yaXR5GA8gASgFEhEKCWVzdGF0ZV9p",
+            "ZBgQIAEoDSI7ChNDcmVhdGVPYmplY3RSZXF1ZXN0EiQKBm9iamVjdBgBIAEo",
+            "CzIULm1ydXYub2JqZWN0cy5PYmplY3QiIgoUQ3JlYXRlT2JqZWN0UmVzcG9u",
+            "c2USCgoCaWQYASABKA0iHgoQR2V0T2JqZWN0UmVxdWVzdBIKCgJpZBgBIAEo",
+            "DSI5ChFHZXRPYmplY3RSZXNwb25zZRIkCgZvYmplY3QYASABKAsyFC5tcnV2",
+            "Lm9iamVjdHMuT2JqZWN0IkcKE1VwZGF0ZU9iamVjdFJlcXVlc3QSCgoCaWQY",
+            "ASABKA0SJAoGb2JqZWN0GAIgASgLMhQubXJ1di5vYmplY3RzLk9iamVjdCIW",
+            "ChRVcGRhdGVPYmplY3RSZXNwb25zZSIhChNEZWxldGVPYmplY3RSZXF1ZXN0",
+            "EgoKAmlkGAEgASgNIhYKFERlbGV0ZU9iamVjdFJlc3BvbnNlMsgDChJNcnVW",
+            "T2JqZWN0c1NlcnZpY2USaQoMQ3JlYXRlT2JqZWN0EiEubXJ1di5vYmplY3Rz",
+            "LkNyZWF0ZU9iamVjdFJlcXVlc3QaIi5tcnV2Lm9iamVjdHMuQ3JlYXRlT2Jq",
+            "ZWN0UmVzcG9uc2UiEoLT5JMCDCIKL3YxL29iamVjdBJlCglHZXRPYmplY3QS",
+            "Hi5tcnV2Lm9iamVjdHMuR2V0T2JqZWN0UmVxdWVzdBofLm1ydXYub2JqZWN0",
+            "cy5HZXRPYmplY3RSZXNwb25zZSIXgtPkkwIREg8vdjEvb2JqZWN0L3tpZH0S",
+            "bwoMVXBkYXRlT2JqZWN0EiEubXJ1di5vYmplY3RzLlVwZGF0ZU9iamVjdFJl",
+            "cXVlc3QaIi5tcnV2Lm9iamVjdHMuVXBkYXRlT2JqZWN0UmVzcG9uc2UiGILT",
+            "5JMCEjIQL3YxL29iamVjdHMve2lkfRJvCgxEZWxldGVPYmplY3QSIS5tcnV2",
+            "Lm9iamVjdHMuRGVsZXRlT2JqZWN0UmVxdWVzdBoiLm1ydXYub2JqZWN0cy5E",
+            "ZWxldGVPYmplY3RSZXNwb25zZSIYgtPkkwISKhAvdjEvb2JqZWN0cy97aWR9",
+            "QidaJWdpdGh1Yi5jb20vTXJ1Vi1SUC9tcnV2LXBiLWdvL29iamVjdHNiBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.Object), global::Mruv.Objects.Object.Parser, new[]{ "Model", "X", "Y", "Z", "Rx", "Ry", "Rz", "WorldId", "InteriorId", "PlayerId", "AreaId", "StreamDistance", "DrawDistance", "Priority" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.Object), global::Mruv.Objects.Object.Parser, new[]{ "Model", "X", "Y", "Z", "Rx", "Ry", "Rz", "WorldId", "InteriorId", "PlayerId", "AreaId", "StreamDistance", "DrawDistance", "Priority", "EstateId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.CreateObjectRequest), global::Mruv.Objects.CreateObjectRequest.Parser, new[]{ "Object" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.CreateObjectResponse), global::Mruv.Objects.CreateObjectResponse.Parser, new[]{ "Id" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.GetObjectRequest), global::Mruv.Objects.GetObjectRequest.Parser, new[]{ "Id" }, null, null, null),
@@ -110,6 +111,7 @@ namespace Mruv.Objects {
       streamDistance_ = other.streamDistance_;
       drawDistance_ = other.drawDistance_;
       priority_ = other.priority_;
+      estateId_ = other.estateId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -290,6 +292,17 @@ namespace Mruv.Objects {
       }
     }
 
+    /// <summary>Field number for the "estate_id" field.</summary>
+    public const int EstateIdFieldNumber = 16;
+    private uint estateId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint EstateId {
+      get { return estateId_; }
+      set {
+        estateId_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as Object);
@@ -317,6 +330,7 @@ namespace Mruv.Objects {
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(StreamDistance, other.StreamDistance)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(DrawDistance, other.DrawDistance)) return false;
       if (Priority != other.Priority) return false;
+      if (EstateId != other.EstateId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -337,6 +351,7 @@ namespace Mruv.Objects {
       if (StreamDistance != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(StreamDistance);
       if (DrawDistance != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(DrawDistance);
       if (Priority != 0) hash ^= Priority.GetHashCode();
+      if (EstateId != 0) hash ^= EstateId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -406,6 +421,10 @@ namespace Mruv.Objects {
         output.WriteRawTag(120);
         output.WriteInt32(Priority);
       }
+      if (EstateId != 0) {
+        output.WriteRawTag(128, 1);
+        output.WriteUInt32(EstateId);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -455,6 +474,9 @@ namespace Mruv.Objects {
       }
       if (Priority != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Priority);
+      }
+      if (EstateId != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(EstateId);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -508,6 +530,9 @@ namespace Mruv.Objects {
       }
       if (other.Priority != 0) {
         Priority = other.Priority;
+      }
+      if (other.EstateId != 0) {
+        EstateId = other.EstateId;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -574,6 +599,10 @@ namespace Mruv.Objects {
           }
           case 120: {
             Priority = input.ReadInt32();
+            break;
+          }
+          case 128: {
+            EstateId = input.ReadUInt32();
             break;
           }
         }
