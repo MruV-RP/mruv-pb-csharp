@@ -23,6 +23,20 @@ namespace Mruv.Objects {
     static readonly grpc::Marshaller<global::Mruv.Objects.UpdateObjectResponse> __Marshaller_mruv_objects_UpdateObjectResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.UpdateObjectResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.Objects.DeleteObjectRequest> __Marshaller_mruv_objects_DeleteObjectRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.DeleteObjectRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.Objects.DeleteObjectResponse> __Marshaller_mruv_objects_DeleteObjectResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.DeleteObjectResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Objects.AddObjectMaterialRequest> __Marshaller_mruv_objects_AddObjectMaterialRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.AddObjectMaterialRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Objects.AddObjectMaterialResponse> __Marshaller_mruv_objects_AddObjectMaterialResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.AddObjectMaterialResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Objects.GetObjectMaterialsRequest> __Marshaller_mruv_objects_GetObjectMaterialsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.GetObjectMaterialsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Objects.GetObjectMaterialsResponse> __Marshaller_mruv_objects_GetObjectMaterialsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.GetObjectMaterialsResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Objects.DeleteObjectMaterialRequest> __Marshaller_mruv_objects_DeleteObjectMaterialRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.DeleteObjectMaterialRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Objects.DeleteObjectMaterialResponse> __Marshaller_mruv_objects_DeleteObjectMaterialResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.DeleteObjectMaterialResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Objects.AddObjectMaterialTextRequest> __Marshaller_mruv_objects_AddObjectMaterialTextRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.AddObjectMaterialTextRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Objects.AddObjectMaterialTextResponse> __Marshaller_mruv_objects_AddObjectMaterialTextResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.AddObjectMaterialTextResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Objects.GetObjectMaterialTextsRequest> __Marshaller_mruv_objects_GetObjectMaterialTextsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.GetObjectMaterialTextsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Objects.GetObjectMaterialTextsResponse> __Marshaller_mruv_objects_GetObjectMaterialTextsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.GetObjectMaterialTextsResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Objects.DeleteObjectMaterialTextRequest> __Marshaller_mruv_objects_DeleteObjectMaterialTextRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.DeleteObjectMaterialTextRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Objects.DeleteObjectMaterialTextResponse> __Marshaller_mruv_objects_DeleteObjectMaterialTextResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.DeleteObjectMaterialTextResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Objects.FetchAllRequest> __Marshaller_mruv_objects_FetchAllRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.FetchAllRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Objects.FetchAllResponse> __Marshaller_mruv_objects_FetchAllResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.FetchAllResponse.Parser.ParseFrom);
 
     static readonly grpc::Method<global::Mruv.Objects.CreateObjectRequest, global::Mruv.Objects.CreateObjectResponse> __Method_CreateObject = new grpc::Method<global::Mruv.Objects.CreateObjectRequest, global::Mruv.Objects.CreateObjectResponse>(
         grpc::MethodType.Unary,
@@ -51,6 +65,55 @@ namespace Mruv.Objects {
         "DeleteObject",
         __Marshaller_mruv_objects_DeleteObjectRequest,
         __Marshaller_mruv_objects_DeleteObjectResponse);
+
+    static readonly grpc::Method<global::Mruv.Objects.AddObjectMaterialRequest, global::Mruv.Objects.AddObjectMaterialResponse> __Method_AddObjectMaterial = new grpc::Method<global::Mruv.Objects.AddObjectMaterialRequest, global::Mruv.Objects.AddObjectMaterialResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "AddObjectMaterial",
+        __Marshaller_mruv_objects_AddObjectMaterialRequest,
+        __Marshaller_mruv_objects_AddObjectMaterialResponse);
+
+    static readonly grpc::Method<global::Mruv.Objects.GetObjectMaterialsRequest, global::Mruv.Objects.GetObjectMaterialsResponse> __Method_GetObjectMaterials = new grpc::Method<global::Mruv.Objects.GetObjectMaterialsRequest, global::Mruv.Objects.GetObjectMaterialsResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetObjectMaterials",
+        __Marshaller_mruv_objects_GetObjectMaterialsRequest,
+        __Marshaller_mruv_objects_GetObjectMaterialsResponse);
+
+    static readonly grpc::Method<global::Mruv.Objects.DeleteObjectMaterialRequest, global::Mruv.Objects.DeleteObjectMaterialResponse> __Method_DeleteObjectMaterial = new grpc::Method<global::Mruv.Objects.DeleteObjectMaterialRequest, global::Mruv.Objects.DeleteObjectMaterialResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "DeleteObjectMaterial",
+        __Marshaller_mruv_objects_DeleteObjectMaterialRequest,
+        __Marshaller_mruv_objects_DeleteObjectMaterialResponse);
+
+    static readonly grpc::Method<global::Mruv.Objects.AddObjectMaterialTextRequest, global::Mruv.Objects.AddObjectMaterialTextResponse> __Method_AddObjectMaterialText = new grpc::Method<global::Mruv.Objects.AddObjectMaterialTextRequest, global::Mruv.Objects.AddObjectMaterialTextResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "AddObjectMaterialText",
+        __Marshaller_mruv_objects_AddObjectMaterialTextRequest,
+        __Marshaller_mruv_objects_AddObjectMaterialTextResponse);
+
+    static readonly grpc::Method<global::Mruv.Objects.GetObjectMaterialTextsRequest, global::Mruv.Objects.GetObjectMaterialTextsResponse> __Method_GetObjectMaterialTexts = new grpc::Method<global::Mruv.Objects.GetObjectMaterialTextsRequest, global::Mruv.Objects.GetObjectMaterialTextsResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetObjectMaterialTexts",
+        __Marshaller_mruv_objects_GetObjectMaterialTextsRequest,
+        __Marshaller_mruv_objects_GetObjectMaterialTextsResponse);
+
+    static readonly grpc::Method<global::Mruv.Objects.DeleteObjectMaterialTextRequest, global::Mruv.Objects.DeleteObjectMaterialTextResponse> __Method_DeleteObjectMaterialText = new grpc::Method<global::Mruv.Objects.DeleteObjectMaterialTextRequest, global::Mruv.Objects.DeleteObjectMaterialTextResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "DeleteObjectMaterialText",
+        __Marshaller_mruv_objects_DeleteObjectMaterialTextRequest,
+        __Marshaller_mruv_objects_DeleteObjectMaterialTextResponse);
+
+    static readonly grpc::Method<global::Mruv.Objects.FetchAllRequest, global::Mruv.Objects.FetchAllResponse> __Method_FetchAll = new grpc::Method<global::Mruv.Objects.FetchAllRequest, global::Mruv.Objects.FetchAllResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "FetchAll",
+        __Marshaller_mruv_objects_FetchAllRequest,
+        __Marshaller_mruv_objects_FetchAllResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -102,6 +165,83 @@ namespace Mruv.Objects {
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       public virtual global::System.Threading.Tasks.Task<global::Mruv.Objects.DeleteObjectResponse> DeleteObject(global::Mruv.Objects.DeleteObjectRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Add a material to existing object.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.Objects.AddObjectMaterialResponse> AddObjectMaterial(global::Mruv.Objects.AddObjectMaterialRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Get all object materials.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.Objects.GetObjectMaterialsResponse> GetObjectMaterials(global::Mruv.Objects.GetObjectMaterialsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Delete a material assigned to an object.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.Objects.DeleteObjectMaterialResponse> DeleteObjectMaterial(global::Mruv.Objects.DeleteObjectMaterialRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Add a material text to existing object.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.Objects.AddObjectMaterialTextResponse> AddObjectMaterialText(global::Mruv.Objects.AddObjectMaterialTextRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Get all object material texts.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.Objects.GetObjectMaterialTextsResponse> GetObjectMaterialTexts(global::Mruv.Objects.GetObjectMaterialTextsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Delete a material text assigned to an object.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.Objects.DeleteObjectMaterialTextResponse> DeleteObjectMaterialText(global::Mruv.Objects.DeleteObjectMaterialTextRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Fetch all existing objects.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.Objects.FetchAllResponse> FetchAll(global::Mruv.Objects.FetchAllRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -307,6 +447,314 @@ namespace Mruv.Objects {
       {
         return CallInvoker.AsyncUnaryCall(__Method_DeleteObject, null, options, request);
       }
+      /// <summary>
+      /// Add a material to existing object.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Mruv.Objects.AddObjectMaterialResponse AddObjectMaterial(global::Mruv.Objects.AddObjectMaterialRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return AddObjectMaterial(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Add a material to existing object.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Mruv.Objects.AddObjectMaterialResponse AddObjectMaterial(global::Mruv.Objects.AddObjectMaterialRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_AddObjectMaterial, null, options, request);
+      }
+      /// <summary>
+      /// Add a material to existing object.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Objects.AddObjectMaterialResponse> AddObjectMaterialAsync(global::Mruv.Objects.AddObjectMaterialRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return AddObjectMaterialAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Add a material to existing object.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Objects.AddObjectMaterialResponse> AddObjectMaterialAsync(global::Mruv.Objects.AddObjectMaterialRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_AddObjectMaterial, null, options, request);
+      }
+      /// <summary>
+      /// Get all object materials.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Mruv.Objects.GetObjectMaterialsResponse GetObjectMaterials(global::Mruv.Objects.GetObjectMaterialsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetObjectMaterials(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get all object materials.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Mruv.Objects.GetObjectMaterialsResponse GetObjectMaterials(global::Mruv.Objects.GetObjectMaterialsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetObjectMaterials, null, options, request);
+      }
+      /// <summary>
+      /// Get all object materials.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Objects.GetObjectMaterialsResponse> GetObjectMaterialsAsync(global::Mruv.Objects.GetObjectMaterialsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetObjectMaterialsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get all object materials.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Objects.GetObjectMaterialsResponse> GetObjectMaterialsAsync(global::Mruv.Objects.GetObjectMaterialsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetObjectMaterials, null, options, request);
+      }
+      /// <summary>
+      /// Delete a material assigned to an object.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Mruv.Objects.DeleteObjectMaterialResponse DeleteObjectMaterial(global::Mruv.Objects.DeleteObjectMaterialRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteObjectMaterial(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Delete a material assigned to an object.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Mruv.Objects.DeleteObjectMaterialResponse DeleteObjectMaterial(global::Mruv.Objects.DeleteObjectMaterialRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_DeleteObjectMaterial, null, options, request);
+      }
+      /// <summary>
+      /// Delete a material assigned to an object.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Objects.DeleteObjectMaterialResponse> DeleteObjectMaterialAsync(global::Mruv.Objects.DeleteObjectMaterialRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteObjectMaterialAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Delete a material assigned to an object.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Objects.DeleteObjectMaterialResponse> DeleteObjectMaterialAsync(global::Mruv.Objects.DeleteObjectMaterialRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_DeleteObjectMaterial, null, options, request);
+      }
+      /// <summary>
+      /// Add a material text to existing object.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Mruv.Objects.AddObjectMaterialTextResponse AddObjectMaterialText(global::Mruv.Objects.AddObjectMaterialTextRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return AddObjectMaterialText(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Add a material text to existing object.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Mruv.Objects.AddObjectMaterialTextResponse AddObjectMaterialText(global::Mruv.Objects.AddObjectMaterialTextRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_AddObjectMaterialText, null, options, request);
+      }
+      /// <summary>
+      /// Add a material text to existing object.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Objects.AddObjectMaterialTextResponse> AddObjectMaterialTextAsync(global::Mruv.Objects.AddObjectMaterialTextRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return AddObjectMaterialTextAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Add a material text to existing object.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Objects.AddObjectMaterialTextResponse> AddObjectMaterialTextAsync(global::Mruv.Objects.AddObjectMaterialTextRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_AddObjectMaterialText, null, options, request);
+      }
+      /// <summary>
+      /// Get all object material texts.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Mruv.Objects.GetObjectMaterialTextsResponse GetObjectMaterialTexts(global::Mruv.Objects.GetObjectMaterialTextsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetObjectMaterialTexts(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get all object material texts.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Mruv.Objects.GetObjectMaterialTextsResponse GetObjectMaterialTexts(global::Mruv.Objects.GetObjectMaterialTextsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetObjectMaterialTexts, null, options, request);
+      }
+      /// <summary>
+      /// Get all object material texts.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Objects.GetObjectMaterialTextsResponse> GetObjectMaterialTextsAsync(global::Mruv.Objects.GetObjectMaterialTextsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetObjectMaterialTextsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get all object material texts.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Objects.GetObjectMaterialTextsResponse> GetObjectMaterialTextsAsync(global::Mruv.Objects.GetObjectMaterialTextsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetObjectMaterialTexts, null, options, request);
+      }
+      /// <summary>
+      /// Delete a material text assigned to an object.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Mruv.Objects.DeleteObjectMaterialTextResponse DeleteObjectMaterialText(global::Mruv.Objects.DeleteObjectMaterialTextRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteObjectMaterialText(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Delete a material text assigned to an object.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Mruv.Objects.DeleteObjectMaterialTextResponse DeleteObjectMaterialText(global::Mruv.Objects.DeleteObjectMaterialTextRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_DeleteObjectMaterialText, null, options, request);
+      }
+      /// <summary>
+      /// Delete a material text assigned to an object.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Objects.DeleteObjectMaterialTextResponse> DeleteObjectMaterialTextAsync(global::Mruv.Objects.DeleteObjectMaterialTextRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteObjectMaterialTextAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Delete a material text assigned to an object.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Objects.DeleteObjectMaterialTextResponse> DeleteObjectMaterialTextAsync(global::Mruv.Objects.DeleteObjectMaterialTextRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_DeleteObjectMaterialText, null, options, request);
+      }
+      /// <summary>
+      /// Fetch all existing objects.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Mruv.Objects.FetchAllResponse FetchAll(global::Mruv.Objects.FetchAllRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return FetchAll(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Fetch all existing objects.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Mruv.Objects.FetchAllResponse FetchAll(global::Mruv.Objects.FetchAllRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_FetchAll, null, options, request);
+      }
+      /// <summary>
+      /// Fetch all existing objects.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Objects.FetchAllResponse> FetchAllAsync(global::Mruv.Objects.FetchAllRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return FetchAllAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Fetch all existing objects.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Objects.FetchAllResponse> FetchAllAsync(global::Mruv.Objects.FetchAllRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_FetchAll, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override MruVObjectsServiceClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -322,7 +770,14 @@ namespace Mruv.Objects {
           .AddMethod(__Method_CreateObject, serviceImpl.CreateObject)
           .AddMethod(__Method_GetObject, serviceImpl.GetObject)
           .AddMethod(__Method_UpdateObject, serviceImpl.UpdateObject)
-          .AddMethod(__Method_DeleteObject, serviceImpl.DeleteObject).Build();
+          .AddMethod(__Method_DeleteObject, serviceImpl.DeleteObject)
+          .AddMethod(__Method_AddObjectMaterial, serviceImpl.AddObjectMaterial)
+          .AddMethod(__Method_GetObjectMaterials, serviceImpl.GetObjectMaterials)
+          .AddMethod(__Method_DeleteObjectMaterial, serviceImpl.DeleteObjectMaterial)
+          .AddMethod(__Method_AddObjectMaterialText, serviceImpl.AddObjectMaterialText)
+          .AddMethod(__Method_GetObjectMaterialTexts, serviceImpl.GetObjectMaterialTexts)
+          .AddMethod(__Method_DeleteObjectMaterialText, serviceImpl.DeleteObjectMaterialText)
+          .AddMethod(__Method_FetchAll, serviceImpl.FetchAll).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
@@ -335,6 +790,13 @@ namespace Mruv.Objects {
       serviceBinder.AddMethod(__Method_GetObject, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Objects.GetObjectRequest, global::Mruv.Objects.GetObjectResponse>(serviceImpl.GetObject));
       serviceBinder.AddMethod(__Method_UpdateObject, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Objects.UpdateObjectRequest, global::Mruv.Objects.UpdateObjectResponse>(serviceImpl.UpdateObject));
       serviceBinder.AddMethod(__Method_DeleteObject, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Objects.DeleteObjectRequest, global::Mruv.Objects.DeleteObjectResponse>(serviceImpl.DeleteObject));
+      serviceBinder.AddMethod(__Method_AddObjectMaterial, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Objects.AddObjectMaterialRequest, global::Mruv.Objects.AddObjectMaterialResponse>(serviceImpl.AddObjectMaterial));
+      serviceBinder.AddMethod(__Method_GetObjectMaterials, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Objects.GetObjectMaterialsRequest, global::Mruv.Objects.GetObjectMaterialsResponse>(serviceImpl.GetObjectMaterials));
+      serviceBinder.AddMethod(__Method_DeleteObjectMaterial, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Objects.DeleteObjectMaterialRequest, global::Mruv.Objects.DeleteObjectMaterialResponse>(serviceImpl.DeleteObjectMaterial));
+      serviceBinder.AddMethod(__Method_AddObjectMaterialText, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Objects.AddObjectMaterialTextRequest, global::Mruv.Objects.AddObjectMaterialTextResponse>(serviceImpl.AddObjectMaterialText));
+      serviceBinder.AddMethod(__Method_GetObjectMaterialTexts, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Objects.GetObjectMaterialTextsRequest, global::Mruv.Objects.GetObjectMaterialTextsResponse>(serviceImpl.GetObjectMaterialTexts));
+      serviceBinder.AddMethod(__Method_DeleteObjectMaterialText, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Objects.DeleteObjectMaterialTextRequest, global::Mruv.Objects.DeleteObjectMaterialTextResponse>(serviceImpl.DeleteObjectMaterialText));
+      serviceBinder.AddMethod(__Method_FetchAll, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Objects.FetchAllRequest, global::Mruv.Objects.FetchAllResponse>(serviceImpl.FetchAll));
     }
 
   }
