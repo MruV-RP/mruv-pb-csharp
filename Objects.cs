@@ -37,16 +37,16 @@ namespace Mruv.Objects {
             "ZXJpYWxzRW50cnkSCwoDa2V5GAEgASgNEiUKBXZhbHVlGAIgASgLMhYubXJ1",
             "di5vYmplY3RzLk1hdGVyaWFsOgI4ARpQChJNYXRlcmlhbFRleHRzRW50cnkS",
             "CwoDa2V5GAEgASgNEikKBXZhbHVlGAIgASgLMhoubXJ1di5vYmplY3RzLk1h",
-            "dGVyaWFsVGV4dDoCOAEibwoITWF0ZXJpYWwSEAoIbW9kZWxfaWQYASABKAUS",
+            "dGVyaWFsVGV4dDoCOAEiXAoITWF0ZXJpYWwSEAoIbW9kZWxfaWQYASABKAUS",
             "EAoIdHhkX25hbWUYAiABKAkSFAoMdGV4dHVyZV9uYW1lGAMgASgJEhYKDm1h",
-            "dGVyaWFsX2NvbG9yGAQgASgFEhEKCWVzdGF0ZV9pZBgFIAEoDSLDAQoMTWF0",
-            "ZXJpYWxUZXh0EgwKBHRleHQYASABKAkSMQoNbWF0ZXJpYWxfc2l6ZRgCIAEo",
-            "DjIaLm1ydXYub2JqZWN0cy5NYXRlcmlhbFNpemUSEQoJZm9udF9mYWNlGAMg",
-            "ASgJEhEKCWZvbnRfc2l6ZRgEIAEoDRIMCgRib2xkGAUgASgIEhIKCmZvbnRf",
-            "Y29sb3IYBiABKAUSEgoKYmFja19jb2xvchgHIAEoBRIWCg50ZXh0X2FsaWdu",
-            "bWVudBgIIAEoBSJRCg9SZW1vdmVkQnVpbGRpbmcSDQoFbW9kZWwYASABKA0S",
-            "CQoBeBgCIAEoAhIJCgF5GAMgASgCEgkKAXoYBCABKAISDgoGcmFkaXVzGAUg",
-            "ASgCIjsKE0NyZWF0ZU9iamVjdFJlcXVlc3QSJAoGb2JqZWN0GAEgASgLMhQu",
+            "dGVyaWFsX2NvbG9yGAQgASgFIsMBCgxNYXRlcmlhbFRleHQSDAoEdGV4dBgB",
+            "IAEoCRIxCg1tYXRlcmlhbF9zaXplGAIgASgOMhoubXJ1di5vYmplY3RzLk1h",
+            "dGVyaWFsU2l6ZRIRCglmb250X2ZhY2UYAyABKAkSEQoJZm9udF9zaXplGAQg",
+            "ASgNEgwKBGJvbGQYBSABKAgSEgoKZm9udF9jb2xvchgGIAEoBRISCgpiYWNr",
+            "X2NvbG9yGAcgASgFEhYKDnRleHRfYWxpZ25tZW50GAggASgFImQKD1JlbW92",
+            "ZWRCdWlsZGluZxINCgVtb2RlbBgBIAEoDRIJCgF4GAIgASgCEgkKAXkYAyAB",
+            "KAISCQoBehgEIAEoAhIOCgZyYWRpdXMYBSABKAISEQoJZXN0YXRlX2lkGAYg",
+            "ASgNIjsKE0NyZWF0ZU9iamVjdFJlcXVlc3QSJAoGb2JqZWN0GAEgASgLMhQu",
             "bXJ1di5vYmplY3RzLk9iamVjdCIiChRDcmVhdGVPYmplY3RSZXNwb25zZRIK",
             "CgJpZBgBIAEoDSIeChBHZXRPYmplY3RSZXF1ZXN0EgoKAmlkGAEgASgNIjkK",
             "EUdldE9iamVjdFJlc3BvbnNlEiQKBm9iamVjdBgBIAEoCzIULm1ydXYub2Jq",
@@ -144,9 +144,9 @@ namespace Mruv.Objects {
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Mruv.Objects.MaterialSize), }, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.Object), global::Mruv.Objects.Object.Parser, new[]{ "Model", "X", "Y", "Z", "Rx", "Ry", "Rz", "WorldId", "InteriorId", "PlayerId", "AreaId", "StreamDistance", "DrawDistance", "Priority", "EstateId", "Materials", "MaterialTexts" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, null, }),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.Material), global::Mruv.Objects.Material.Parser, new[]{ "ModelId", "TxdName", "TextureName", "MaterialColor", "EstateId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.Material), global::Mruv.Objects.Material.Parser, new[]{ "ModelId", "TxdName", "TextureName", "MaterialColor" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.MaterialText), global::Mruv.Objects.MaterialText.Parser, new[]{ "Text", "MaterialSize", "FontFace", "FontSize", "Bold", "FontColor", "BackColor", "TextAlignment" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.RemovedBuilding), global::Mruv.Objects.RemovedBuilding.Parser, new[]{ "Model", "X", "Y", "Z", "Radius" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.RemovedBuilding), global::Mruv.Objects.RemovedBuilding.Parser, new[]{ "Model", "X", "Y", "Z", "Radius", "EstateId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.CreateObjectRequest), global::Mruv.Objects.CreateObjectRequest.Parser, new[]{ "Object" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.CreateObjectResponse), global::Mruv.Objects.CreateObjectResponse.Parser, new[]{ "Id" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.GetObjectRequest), global::Mruv.Objects.GetObjectRequest.Parser, new[]{ "Id" }, null, null, null),
@@ -816,7 +816,6 @@ namespace Mruv.Objects {
       txdName_ = other.txdName_;
       textureName_ = other.textureName_;
       materialColor_ = other.materialColor_;
-      estateId_ = other.estateId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -881,20 +880,6 @@ namespace Mruv.Objects {
       }
     }
 
-    /// <summary>Field number for the "estate_id" field.</summary>
-    public const int EstateIdFieldNumber = 5;
-    private uint estateId_;
-    /// <summary>
-    /// Estate to with removed object belong.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint EstateId {
-      get { return estateId_; }
-      set {
-        estateId_ = value;
-      }
-    }
-
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as Material);
@@ -912,7 +897,6 @@ namespace Mruv.Objects {
       if (TxdName != other.TxdName) return false;
       if (TextureName != other.TextureName) return false;
       if (MaterialColor != other.MaterialColor) return false;
-      if (EstateId != other.EstateId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -923,7 +907,6 @@ namespace Mruv.Objects {
       if (TxdName.Length != 0) hash ^= TxdName.GetHashCode();
       if (TextureName.Length != 0) hash ^= TextureName.GetHashCode();
       if (MaterialColor != 0) hash ^= MaterialColor.GetHashCode();
-      if (EstateId != 0) hash ^= EstateId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -953,10 +936,6 @@ namespace Mruv.Objects {
         output.WriteRawTag(32);
         output.WriteInt32(MaterialColor);
       }
-      if (EstateId != 0) {
-        output.WriteRawTag(40);
-        output.WriteUInt32(EstateId);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -976,9 +955,6 @@ namespace Mruv.Objects {
       }
       if (MaterialColor != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(MaterialColor);
-      }
-      if (EstateId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(EstateId);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1002,9 +978,6 @@ namespace Mruv.Objects {
       }
       if (other.MaterialColor != 0) {
         MaterialColor = other.MaterialColor;
-      }
-      if (other.EstateId != 0) {
-        EstateId = other.EstateId;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1031,10 +1004,6 @@ namespace Mruv.Objects {
           }
           case 32: {
             MaterialColor = input.ReadInt32();
-            break;
-          }
-          case 40: {
-            EstateId = input.ReadUInt32();
             break;
           }
         }
@@ -1428,6 +1397,7 @@ namespace Mruv.Objects {
       y_ = other.y_;
       z_ = other.z_;
       radius_ = other.radius_;
+      estateId_ = other.estateId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1506,6 +1476,20 @@ namespace Mruv.Objects {
       }
     }
 
+    /// <summary>Field number for the "estate_id" field.</summary>
+    public const int EstateIdFieldNumber = 6;
+    private uint estateId_;
+    /// <summary>
+    /// Estate to with removed object belong.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint EstateId {
+      get { return estateId_; }
+      set {
+        estateId_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as RemovedBuilding);
@@ -1524,6 +1508,7 @@ namespace Mruv.Objects {
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Y, other.Y)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Z, other.Z)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Radius, other.Radius)) return false;
+      if (EstateId != other.EstateId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1535,6 +1520,7 @@ namespace Mruv.Objects {
       if (Y != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Y);
       if (Z != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Z);
       if (Radius != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Radius);
+      if (EstateId != 0) hash ^= EstateId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1568,6 +1554,10 @@ namespace Mruv.Objects {
         output.WriteRawTag(45);
         output.WriteFloat(Radius);
       }
+      if (EstateId != 0) {
+        output.WriteRawTag(48);
+        output.WriteUInt32(EstateId);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1590,6 +1580,9 @@ namespace Mruv.Objects {
       }
       if (Radius != 0F) {
         size += 1 + 4;
+      }
+      if (EstateId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(EstateId);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1616,6 +1609,9 @@ namespace Mruv.Objects {
       }
       if (other.Radius != 0F) {
         Radius = other.Radius;
+      }
+      if (other.EstateId != 0) {
+        EstateId = other.EstateId;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1646,6 +1642,10 @@ namespace Mruv.Objects {
           }
           case 45: {
             Radius = input.ReadFloat();
+            break;
+          }
+          case 48: {
+            EstateId = input.ReadUInt32();
             break;
           }
         }
