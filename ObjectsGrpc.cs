@@ -35,6 +35,12 @@ namespace Mruv.Objects {
     static readonly grpc::Marshaller<global::Mruv.Objects.GetObjectMaterialTextsResponse> __Marshaller_mruv_objects_GetObjectMaterialTextsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.GetObjectMaterialTextsResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.Objects.DeleteObjectMaterialTextRequest> __Marshaller_mruv_objects_DeleteObjectMaterialTextRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.DeleteObjectMaterialTextRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.Objects.DeleteObjectMaterialTextResponse> __Marshaller_mruv_objects_DeleteObjectMaterialTextResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.DeleteObjectMaterialTextResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Objects.AddRemoveBuildingRequest> __Marshaller_mruv_objects_AddRemoveBuildingRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.AddRemoveBuildingRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Objects.AddRemoveBuildingResponse> __Marshaller_mruv_objects_AddRemoveBuildingResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.AddRemoveBuildingResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Objects.GetRemovedBuildingsRequest> __Marshaller_mruv_objects_GetRemovedBuildingsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.GetRemovedBuildingsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Objects.GetRemovedBuildingsResponse> __Marshaller_mruv_objects_GetRemovedBuildingsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.GetRemovedBuildingsResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Objects.DeleteRemoveBuildingRequest> __Marshaller_mruv_objects_DeleteRemoveBuildingRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.DeleteRemoveBuildingRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Objects.DeleteRemoveBuildingResponse> __Marshaller_mruv_objects_DeleteRemoveBuildingResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.DeleteRemoveBuildingResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.Objects.FetchAllRequest> __Marshaller_mruv_objects_FetchAllRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.FetchAllRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.Objects.FetchAllResponse> __Marshaller_mruv_objects_FetchAllResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.FetchAllResponse.Parser.ParseFrom);
 
@@ -107,6 +113,27 @@ namespace Mruv.Objects {
         "DeleteObjectMaterialText",
         __Marshaller_mruv_objects_DeleteObjectMaterialTextRequest,
         __Marshaller_mruv_objects_DeleteObjectMaterialTextResponse);
+
+    static readonly grpc::Method<global::Mruv.Objects.AddRemoveBuildingRequest, global::Mruv.Objects.AddRemoveBuildingResponse> __Method_AddRemoveBuilding = new grpc::Method<global::Mruv.Objects.AddRemoveBuildingRequest, global::Mruv.Objects.AddRemoveBuildingResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "AddRemoveBuilding",
+        __Marshaller_mruv_objects_AddRemoveBuildingRequest,
+        __Marshaller_mruv_objects_AddRemoveBuildingResponse);
+
+    static readonly grpc::Method<global::Mruv.Objects.GetRemovedBuildingsRequest, global::Mruv.Objects.GetRemovedBuildingsResponse> __Method_GetRemovedBuildings = new grpc::Method<global::Mruv.Objects.GetRemovedBuildingsRequest, global::Mruv.Objects.GetRemovedBuildingsResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetRemovedBuildings",
+        __Marshaller_mruv_objects_GetRemovedBuildingsRequest,
+        __Marshaller_mruv_objects_GetRemovedBuildingsResponse);
+
+    static readonly grpc::Method<global::Mruv.Objects.DeleteRemoveBuildingRequest, global::Mruv.Objects.DeleteRemoveBuildingResponse> __Method_DeleteRemoveBuilding = new grpc::Method<global::Mruv.Objects.DeleteRemoveBuildingRequest, global::Mruv.Objects.DeleteRemoveBuildingResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "DeleteRemoveBuilding",
+        __Marshaller_mruv_objects_DeleteRemoveBuildingRequest,
+        __Marshaller_mruv_objects_DeleteRemoveBuildingResponse);
 
     static readonly grpc::Method<global::Mruv.Objects.FetchAllRequest, global::Mruv.Objects.FetchAllResponse> __Method_FetchAll = new grpc::Method<global::Mruv.Objects.FetchAllRequest, global::Mruv.Objects.FetchAllResponse>(
         grpc::MethodType.Unary,
@@ -231,6 +258,39 @@ namespace Mruv.Objects {
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       public virtual global::System.Threading.Tasks.Task<global::Mruv.Objects.DeleteObjectMaterialTextResponse> DeleteObjectMaterialText(global::Mruv.Objects.DeleteObjectMaterialTextRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Removes a object from GTA SA map.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.Objects.AddRemoveBuildingResponse> AddRemoveBuilding(global::Mruv.Objects.AddRemoveBuildingRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Get all removed objects.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.Objects.GetRemovedBuildingsResponse> GetRemovedBuildings(global::Mruv.Objects.GetRemovedBuildingsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Delete removed buildings.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.Objects.DeleteRemoveBuildingResponse> DeleteRemoveBuilding(global::Mruv.Objects.DeleteRemoveBuildingRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -712,6 +772,138 @@ namespace Mruv.Objects {
         return CallInvoker.AsyncUnaryCall(__Method_DeleteObjectMaterialText, null, options, request);
       }
       /// <summary>
+      /// Removes a object from GTA SA map.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Mruv.Objects.AddRemoveBuildingResponse AddRemoveBuilding(global::Mruv.Objects.AddRemoveBuildingRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return AddRemoveBuilding(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Removes a object from GTA SA map.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Mruv.Objects.AddRemoveBuildingResponse AddRemoveBuilding(global::Mruv.Objects.AddRemoveBuildingRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_AddRemoveBuilding, null, options, request);
+      }
+      /// <summary>
+      /// Removes a object from GTA SA map.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Objects.AddRemoveBuildingResponse> AddRemoveBuildingAsync(global::Mruv.Objects.AddRemoveBuildingRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return AddRemoveBuildingAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Removes a object from GTA SA map.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Objects.AddRemoveBuildingResponse> AddRemoveBuildingAsync(global::Mruv.Objects.AddRemoveBuildingRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_AddRemoveBuilding, null, options, request);
+      }
+      /// <summary>
+      /// Get all removed objects.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Mruv.Objects.GetRemovedBuildingsResponse GetRemovedBuildings(global::Mruv.Objects.GetRemovedBuildingsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetRemovedBuildings(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get all removed objects.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Mruv.Objects.GetRemovedBuildingsResponse GetRemovedBuildings(global::Mruv.Objects.GetRemovedBuildingsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetRemovedBuildings, null, options, request);
+      }
+      /// <summary>
+      /// Get all removed objects.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Objects.GetRemovedBuildingsResponse> GetRemovedBuildingsAsync(global::Mruv.Objects.GetRemovedBuildingsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetRemovedBuildingsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get all removed objects.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Objects.GetRemovedBuildingsResponse> GetRemovedBuildingsAsync(global::Mruv.Objects.GetRemovedBuildingsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetRemovedBuildings, null, options, request);
+      }
+      /// <summary>
+      /// Delete removed buildings.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Mruv.Objects.DeleteRemoveBuildingResponse DeleteRemoveBuilding(global::Mruv.Objects.DeleteRemoveBuildingRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteRemoveBuilding(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Delete removed buildings.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Mruv.Objects.DeleteRemoveBuildingResponse DeleteRemoveBuilding(global::Mruv.Objects.DeleteRemoveBuildingRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_DeleteRemoveBuilding, null, options, request);
+      }
+      /// <summary>
+      /// Delete removed buildings.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Objects.DeleteRemoveBuildingResponse> DeleteRemoveBuildingAsync(global::Mruv.Objects.DeleteRemoveBuildingRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteRemoveBuildingAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Delete removed buildings.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Objects.DeleteRemoveBuildingResponse> DeleteRemoveBuildingAsync(global::Mruv.Objects.DeleteRemoveBuildingRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_DeleteRemoveBuilding, null, options, request);
+      }
+      /// <summary>
       /// Fetch all existing objects.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
@@ -777,6 +969,9 @@ namespace Mruv.Objects {
           .AddMethod(__Method_AddObjectMaterialText, serviceImpl.AddObjectMaterialText)
           .AddMethod(__Method_GetObjectMaterialTexts, serviceImpl.GetObjectMaterialTexts)
           .AddMethod(__Method_DeleteObjectMaterialText, serviceImpl.DeleteObjectMaterialText)
+          .AddMethod(__Method_AddRemoveBuilding, serviceImpl.AddRemoveBuilding)
+          .AddMethod(__Method_GetRemovedBuildings, serviceImpl.GetRemovedBuildings)
+          .AddMethod(__Method_DeleteRemoveBuilding, serviceImpl.DeleteRemoveBuilding)
           .AddMethod(__Method_FetchAll, serviceImpl.FetchAll).Build();
     }
 
@@ -796,6 +991,9 @@ namespace Mruv.Objects {
       serviceBinder.AddMethod(__Method_AddObjectMaterialText, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Objects.AddObjectMaterialTextRequest, global::Mruv.Objects.AddObjectMaterialTextResponse>(serviceImpl.AddObjectMaterialText));
       serviceBinder.AddMethod(__Method_GetObjectMaterialTexts, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Objects.GetObjectMaterialTextsRequest, global::Mruv.Objects.GetObjectMaterialTextsResponse>(serviceImpl.GetObjectMaterialTexts));
       serviceBinder.AddMethod(__Method_DeleteObjectMaterialText, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Objects.DeleteObjectMaterialTextRequest, global::Mruv.Objects.DeleteObjectMaterialTextResponse>(serviceImpl.DeleteObjectMaterialText));
+      serviceBinder.AddMethod(__Method_AddRemoveBuilding, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Objects.AddRemoveBuildingRequest, global::Mruv.Objects.AddRemoveBuildingResponse>(serviceImpl.AddRemoveBuilding));
+      serviceBinder.AddMethod(__Method_GetRemovedBuildings, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Objects.GetRemovedBuildingsRequest, global::Mruv.Objects.GetRemovedBuildingsResponse>(serviceImpl.GetRemovedBuildings));
+      serviceBinder.AddMethod(__Method_DeleteRemoveBuilding, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Objects.DeleteRemoveBuildingRequest, global::Mruv.Objects.DeleteRemoveBuildingResponse>(serviceImpl.DeleteRemoveBuilding));
       serviceBinder.AddMethod(__Method_FetchAll, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Objects.FetchAllRequest, global::Mruv.Objects.FetchAllResponse>(serviceImpl.FetchAll));
     }
 
