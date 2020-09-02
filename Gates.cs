@@ -47,28 +47,34 @@ namespace Mruv.Gates {
             "ZBgBIAEoDSIPCg1DbG9zZVJlc3BvbnNlIk8KFkZpbmROZWFyZXN0R2F0ZVJl",
             "cXVlc3QSCQoBeBgBIAEoAhIJCgF5GAIgASgCEgkKAXoYAyABKAISFAoMbWF4",
             "X2Rpc3RhbmNlGAQgASgCIjcKF0ZpbmROZWFyZXN0R2F0ZVJlc3BvbnNlEgoK",
-            "AmlkGAEgASgNEhAKCGRpc3RhbmNlGAIgASgCMvsGChBNcnVWR2F0ZXNTZXJ2",
-            "aWNlEl4KCkNyZWF0ZUdhdGUSHS5tcnV2LmdhdGVzLkNyZWF0ZUdhdGVSZXF1",
-            "ZXN0Gh4ubXJ1di5nYXRlcy5DcmVhdGVHYXRlUmVzcG9uc2UiEYLT5JMCCyIJ",
-            "L3YxL2dhdGVzEloKB0dldEdhdGUSGi5tcnV2LmdhdGVzLkdldEdhdGVSZXF1",
-            "ZXN0GhsubXJ1di5nYXRlcy5HZXRHYXRlUmVzcG9uc2UiFoLT5JMCEBIOL3Yx",
-            "L2dhdGVzL3tpZH0SYwoKVXBkYXRlR2F0ZRIdLm1ydXYuZ2F0ZXMuVXBkYXRl",
-            "R2F0ZVJlcXVlc3QaHi5tcnV2LmdhdGVzLlVwZGF0ZUdhdGVSZXNwb25zZSIW",
-            "gtPkkwIQMg4vdjEvZ2F0ZXMve2lkfRJjCgpEZWxldGVHYXRlEh0ubXJ1di5n",
-            "YXRlcy5EZWxldGVHYXRlUmVxdWVzdBoeLm1ydXYuZ2F0ZXMuRGVsZXRlR2F0",
-            "ZVJlc3BvbnNlIhaC0+STAhAqDi92MS9nYXRlcy97aWR9ElYKBExvY2sSFy5t",
-            "cnV2LmdhdGVzLkxvY2tSZXF1ZXN0GhgubXJ1di5nYXRlcy5Mb2NrUmVzcG9u",
-            "c2UiG4LT5JMCFSITL3YxL2dhdGVzL3tpZH0vbG9jaxJeCgZVbmxvY2sSGS5t",
-            "cnV2LmdhdGVzLlVubG9ja1JlcXVlc3QaGi5tcnV2LmdhdGVzLlVubG9ja1Jl",
-            "c3BvbnNlIh2C0+STAhciFS92MS9nYXRlcy97aWR9L3VubG9jaxJWCgRPcGVu",
-            "EhcubXJ1di5nYXRlcy5PcGVuUmVxdWVzdBoYLm1ydXYuZ2F0ZXMuT3BlblJl",
-            "c3BvbnNlIhuC0+STAhUiEy92MS9nYXRlcy97aWR9L29wZW4SWgoFQ2xvc2US",
-            "GC5tcnV2LmdhdGVzLkNsb3NlUmVxdWVzdBoZLm1ydXYuZ2F0ZXMuQ2xvc2VS",
-            "ZXNwb25zZSIcgtPkkwIWIhQvdjEvZ2F0ZXMve2lkfS9jbG9zZRJ1Cg9GaW5k",
-            "TmVhcmVzdEdhdGUSIi5tcnV2LmdhdGVzLkZpbmROZWFyZXN0R2F0ZVJlcXVl",
-            "c3QaIy5tcnV2LmdhdGVzLkZpbmROZWFyZXN0R2F0ZVJlc3BvbnNlIhmC0+ST",
-            "AhMSES92MS9nYXRlcy9uZWFyZXN0QiVaI2dpdGh1Yi5jb20vTXJ1Vi1SUC9t",
-            "cnV2LXBiLWdvL2dhdGVzYgZwcm90bzM="));
+            "AmlkGAEgASgNEhAKCGRpc3RhbmNlGAIgASgCIioKFEZldGNoQWxsR2F0ZXNS",
+            "ZXF1ZXN0EhIKCmNodW5rX3NpemUYASABKA0ilAEKFUZldGNoQWxsR2F0ZXNS",
+            "ZXNwb25zZRI7CgVnYXRlcxgBIAMoCzIsLm1ydXYuZ2F0ZXMuRmV0Y2hBbGxH",
+            "YXRlc1Jlc3BvbnNlLkdhdGVzRW50cnkaPgoKR2F0ZXNFbnRyeRILCgNrZXkY",
+            "ASABKA0SHwoFdmFsdWUYAiABKAsyEC5tcnV2LmdhdGVzLkdhdGU6AjgBMtAH",
+            "ChBNcnVWR2F0ZXNTZXJ2aWNlEl4KCkNyZWF0ZUdhdGUSHS5tcnV2LmdhdGVz",
+            "LkNyZWF0ZUdhdGVSZXF1ZXN0Gh4ubXJ1di5nYXRlcy5DcmVhdGVHYXRlUmVz",
+            "cG9uc2UiEYLT5JMCCyIJL3YxL2dhdGVzEloKB0dldEdhdGUSGi5tcnV2Lmdh",
+            "dGVzLkdldEdhdGVSZXF1ZXN0GhsubXJ1di5nYXRlcy5HZXRHYXRlUmVzcG9u",
+            "c2UiFoLT5JMCEBIOL3YxL2dhdGVzL3tpZH0SYwoKVXBkYXRlR2F0ZRIdLm1y",
+            "dXYuZ2F0ZXMuVXBkYXRlR2F0ZVJlcXVlc3QaHi5tcnV2LmdhdGVzLlVwZGF0",
+            "ZUdhdGVSZXNwb25zZSIWgtPkkwIQMg4vdjEvZ2F0ZXMve2lkfRJjCgpEZWxl",
+            "dGVHYXRlEh0ubXJ1di5nYXRlcy5EZWxldGVHYXRlUmVxdWVzdBoeLm1ydXYu",
+            "Z2F0ZXMuRGVsZXRlR2F0ZVJlc3BvbnNlIhaC0+STAhAqDi92MS9nYXRlcy97",
+            "aWR9ElYKBExvY2sSFy5tcnV2LmdhdGVzLkxvY2tSZXF1ZXN0GhgubXJ1di5n",
+            "YXRlcy5Mb2NrUmVzcG9uc2UiG4LT5JMCFSITL3YxL2dhdGVzL3tpZH0vbG9j",
+            "axJeCgZVbmxvY2sSGS5tcnV2LmdhdGVzLlVubG9ja1JlcXVlc3QaGi5tcnV2",
+            "LmdhdGVzLlVubG9ja1Jlc3BvbnNlIh2C0+STAhciFS92MS9nYXRlcy97aWR9",
+            "L3VubG9jaxJWCgRPcGVuEhcubXJ1di5nYXRlcy5PcGVuUmVxdWVzdBoYLm1y",
+            "dXYuZ2F0ZXMuT3BlblJlc3BvbnNlIhuC0+STAhUiEy92MS9nYXRlcy97aWR9",
+            "L29wZW4SWgoFQ2xvc2USGC5tcnV2LmdhdGVzLkNsb3NlUmVxdWVzdBoZLm1y",
+            "dXYuZ2F0ZXMuQ2xvc2VSZXNwb25zZSIcgtPkkwIWIhQvdjEvZ2F0ZXMve2lk",
+            "fS9jbG9zZRJ1Cg9GaW5kTmVhcmVzdEdhdGUSIi5tcnV2LmdhdGVzLkZpbmRO",
+            "ZWFyZXN0R2F0ZVJlcXVlc3QaIy5tcnV2LmdhdGVzLkZpbmROZWFyZXN0R2F0",
+            "ZVJlc3BvbnNlIhmC0+STAhMSES92MS9nYXRlcy9uZWFyZXN0ElMKCEZldGNo",
+            "QWxsEiAubXJ1di5nYXRlcy5GZXRjaEFsbEdhdGVzUmVxdWVzdBohLm1ydXYu",
+            "Z2F0ZXMuRmV0Y2hBbGxHYXRlc1Jlc3BvbnNlIgAwAUIlWiNnaXRodWIuY29t",
+            "L01ydVYtUlAvbXJ1di1wYi1nby9nYXRlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, global::Mruv.Objects.MovableReflection.Descriptor, global::Mruv.Spots.SpotsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -90,7 +96,9 @@ namespace Mruv.Gates {
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Gates.CloseRequest), global::Mruv.Gates.CloseRequest.Parser, new[]{ "Id" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Gates.CloseResponse), global::Mruv.Gates.CloseResponse.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Gates.FindNearestGateRequest), global::Mruv.Gates.FindNearestGateRequest.Parser, new[]{ "X", "Y", "Z", "MaxDistance" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Gates.FindNearestGateResponse), global::Mruv.Gates.FindNearestGateResponse.Parser, new[]{ "Id", "Distance" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Gates.FindNearestGateResponse), global::Mruv.Gates.FindNearestGateResponse.Parser, new[]{ "Id", "Distance" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Gates.FetchAllGatesRequest), global::Mruv.Gates.FetchAllGatesRequest.Parser, new[]{ "ChunkSize" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Gates.FetchAllGatesResponse), global::Mruv.Gates.FetchAllGatesResponse.Parser, new[]{ "Gates" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
           }));
     }
     #endregion
@@ -2898,6 +2906,262 @@ namespace Mruv.Gates {
           }
           case 21: {
             Distance = input.ReadFloat();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Request message for rpc `FetchAllGates`.
+  /// </summary>
+  public sealed partial class FetchAllGatesRequest : pb::IMessage<FetchAllGatesRequest> {
+    private static readonly pb::MessageParser<FetchAllGatesRequest> _parser = new pb::MessageParser<FetchAllGatesRequest>(() => new FetchAllGatesRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<FetchAllGatesRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.Gates.GatesReflection.Descriptor.MessageTypes[19]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FetchAllGatesRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FetchAllGatesRequest(FetchAllGatesRequest other) : this() {
+      chunkSize_ = other.chunkSize_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FetchAllGatesRequest Clone() {
+      return new FetchAllGatesRequest(this);
+    }
+
+    /// <summary>Field number for the "chunk_size" field.</summary>
+    public const int ChunkSizeFieldNumber = 1;
+    private uint chunkSize_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint ChunkSize {
+      get { return chunkSize_; }
+      set {
+        chunkSize_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as FetchAllGatesRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(FetchAllGatesRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (ChunkSize != other.ChunkSize) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (ChunkSize != 0) hash ^= ChunkSize.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (ChunkSize != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(ChunkSize);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (ChunkSize != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ChunkSize);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(FetchAllGatesRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.ChunkSize != 0) {
+        ChunkSize = other.ChunkSize;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            ChunkSize = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Response message for rpc `FetchAllGates`.
+  /// </summary>
+  public sealed partial class FetchAllGatesResponse : pb::IMessage<FetchAllGatesResponse> {
+    private static readonly pb::MessageParser<FetchAllGatesResponse> _parser = new pb::MessageParser<FetchAllGatesResponse>(() => new FetchAllGatesResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<FetchAllGatesResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.Gates.GatesReflection.Descriptor.MessageTypes[20]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FetchAllGatesResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FetchAllGatesResponse(FetchAllGatesResponse other) : this() {
+      gates_ = other.gates_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FetchAllGatesResponse Clone() {
+      return new FetchAllGatesResponse(this);
+    }
+
+    /// <summary>Field number for the "gates" field.</summary>
+    public const int GatesFieldNumber = 1;
+    private static readonly pbc::MapField<uint, global::Mruv.Gates.Gate>.Codec _map_gates_codec
+        = new pbc::MapField<uint, global::Mruv.Gates.Gate>.Codec(pb::FieldCodec.ForUInt32(8), pb::FieldCodec.ForMessage(18, global::Mruv.Gates.Gate.Parser), 10);
+    private readonly pbc::MapField<uint, global::Mruv.Gates.Gate> gates_ = new pbc::MapField<uint, global::Mruv.Gates.Gate>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::MapField<uint, global::Mruv.Gates.Gate> Gates {
+      get { return gates_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as FetchAllGatesResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(FetchAllGatesResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!Gates.Equals(other.Gates)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= Gates.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      gates_.WriteTo(output, _map_gates_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += gates_.CalculateSize(_map_gates_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(FetchAllGatesResponse other) {
+      if (other == null) {
+        return;
+      }
+      gates_.Add(other.gates_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            gates_.AddEntriesFrom(input, _map_gates_codec);
             break;
           }
         }

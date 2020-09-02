@@ -25,29 +25,32 @@ namespace Mruv.Plots {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChFwbG90cy9wbG90cy5wcm90bxIKbXJ1di5wbG90cxocZ29vZ2xlL2FwaS9h",
-            "bm5vdGF0aW9ucy5wcm90bxoUY29tbW9uL3NwYXRpYWwucHJvdG8iVgoRQ3Jl",
-            "YXRlUGxvdFJlcXVlc3QSDAoEbmFtZRgBIAEoCRITCgtkZXNjcmlwdGlvbhgC",
-            "IAEoCRIeCgZwb2ludHMYAyADKAsyDi5tcnV2LlBvc2l0aW9uIiAKEkNyZWF0",
-            "ZVBsb3RSZXNwb25zZRIKCgJpZBgBIAEoDSIcCg5HZXRQbG90UmVxdWVzdBIK",
-            "CgJpZBgBIAEoDSJiCg9HZXRQbG90UmVzcG9uc2USDAoEbmFtZRgBIAEoCRIT",
-            "CgtkZXNjcmlwdGlvbhgCIAEoCRIeCgZwb2ludHMYAyADKAsyDi5tcnV2LlBv",
-            "c2l0aW9uEgwKBGFyZWEYBCABKAEiQgoRVXBkYXRlUGxvdFJlcXVlc3QSCgoC",
-            "aWQYASABKA0SDAoEbmFtZRgCIAEoCRITCgtkZXNjcmlwdGlvbhgDIAEoCSIU",
-            "ChJVcGRhdGVQbG90UmVzcG9uc2UiHwoRRGVsZXRlUGxvdFJlcXVlc3QSCgoC",
-            "aWQYASABKA0iFAoSRGVsZXRlUGxvdFJlc3BvbnNlMpgDChBNcnVWUGxvdHNT",
-            "ZXJ2aWNlEl4KCkNyZWF0ZVBsb3QSHS5tcnV2LnBsb3RzLkNyZWF0ZVBsb3RS",
-            "ZXF1ZXN0Gh4ubXJ1di5wbG90cy5DcmVhdGVQbG90UmVzcG9uc2UiEYLT5JMC",
-            "CyIJL3YxL3Bsb3RzEloKB0dldFBsb3QSGi5tcnV2LnBsb3RzLkdldFBsb3RS",
-            "ZXF1ZXN0GhsubXJ1di5wbG90cy5HZXRQbG90UmVzcG9uc2UiFoLT5JMCEBIO",
-            "L3YxL3Bsb3RzL3tpZH0SYwoKVXBkYXRlUGxvdBIdLm1ydXYucGxvdHMuVXBk",
-            "YXRlUGxvdFJlcXVlc3QaHi5tcnV2LnBsb3RzLlVwZGF0ZVBsb3RSZXNwb25z",
-            "ZSIWgtPkkwIQMg4vdjEvcGxvdHMve2lkfRJjCgpEZWxldGVQbG90Eh0ubXJ1",
-            "di5wbG90cy5EZWxldGVQbG90UmVxdWVzdBoeLm1ydXYucGxvdHMuRGVsZXRl",
-            "UGxvdFJlc3BvbnNlIhaC0+STAhAqDi92MS9wbG90cy97aWR9QiVaI2dpdGh1",
-            "Yi5jb20vTXJ1Vi1SUC9tcnV2LXBiLWdvL3Bsb3RzYgZwcm90bzM="));
+            "bm5vdGF0aW9ucy5wcm90bxoUY29tbW9uL3NwYXRpYWwucHJvdG8iSQoEUGxv",
+            "dBIMCgRuYW1lGAEgASgJEhMKC2Rlc2NyaXB0aW9uGAIgASgJEh4KBnBvaW50",
+            "cxgDIAMoCzIOLm1ydXYuUG9zaXRpb24iVgoRQ3JlYXRlUGxvdFJlcXVlc3QS",
+            "DAoEbmFtZRgBIAEoCRITCgtkZXNjcmlwdGlvbhgCIAEoCRIeCgZwb2ludHMY",
+            "AyADKAsyDi5tcnV2LlBvc2l0aW9uIiAKEkNyZWF0ZVBsb3RSZXNwb25zZRIK",
+            "CgJpZBgBIAEoDSIcCg5HZXRQbG90UmVxdWVzdBIKCgJpZBgBIAEoDSJiCg9H",
+            "ZXRQbG90UmVzcG9uc2USDAoEbmFtZRgBIAEoCRITCgtkZXNjcmlwdGlvbhgC",
+            "IAEoCRIeCgZwb2ludHMYAyADKAsyDi5tcnV2LlBvc2l0aW9uEgwKBGFyZWEY",
+            "BCABKAEiQgoRVXBkYXRlUGxvdFJlcXVlc3QSCgoCaWQYASABKA0SDAoEbmFt",
+            "ZRgCIAEoCRITCgtkZXNjcmlwdGlvbhgDIAEoCSIUChJVcGRhdGVQbG90UmVz",
+            "cG9uc2UiHwoRRGVsZXRlUGxvdFJlcXVlc3QSCgoCaWQYASABKA0iFAoSRGVs",
+            "ZXRlUGxvdFJlc3BvbnNlMpgDChBNcnVWUGxvdHNTZXJ2aWNlEl4KCkNyZWF0",
+            "ZVBsb3QSHS5tcnV2LnBsb3RzLkNyZWF0ZVBsb3RSZXF1ZXN0Gh4ubXJ1di5w",
+            "bG90cy5DcmVhdGVQbG90UmVzcG9uc2UiEYLT5JMCCyIJL3YxL3Bsb3RzEloK",
+            "B0dldFBsb3QSGi5tcnV2LnBsb3RzLkdldFBsb3RSZXF1ZXN0GhsubXJ1di5w",
+            "bG90cy5HZXRQbG90UmVzcG9uc2UiFoLT5JMCEBIOL3YxL3Bsb3RzL3tpZH0S",
+            "YwoKVXBkYXRlUGxvdBIdLm1ydXYucGxvdHMuVXBkYXRlUGxvdFJlcXVlc3Qa",
+            "Hi5tcnV2LnBsb3RzLlVwZGF0ZVBsb3RSZXNwb25zZSIWgtPkkwIQMg4vdjEv",
+            "cGxvdHMve2lkfRJjCgpEZWxldGVQbG90Eh0ubXJ1di5wbG90cy5EZWxldGVQ",
+            "bG90UmVxdWVzdBoeLm1ydXYucGxvdHMuRGVsZXRlUGxvdFJlc3BvbnNlIhaC",
+            "0+STAhAqDi92MS9wbG90cy97aWR9QiVaI2dpdGh1Yi5jb20vTXJ1Vi1SUC9t",
+            "cnV2LXBiLWdvL3Bsb3RzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, global::Mruv.SpatialReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Plots.Plot), global::Mruv.Plots.Plot.Parser, new[]{ "Name", "Description", "Points" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Plots.CreatePlotRequest), global::Mruv.Plots.CreatePlotRequest.Parser, new[]{ "Name", "Description", "Points" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Plots.CreatePlotResponse), global::Mruv.Plots.CreatePlotResponse.Parser, new[]{ "Id" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Plots.GetPlotRequest), global::Mruv.Plots.GetPlotRequest.Parser, new[]{ "Id" }, null, null, null),
@@ -62,6 +65,183 @@ namespace Mruv.Plots {
 
   }
   #region Messages
+  public sealed partial class Plot : pb::IMessage<Plot> {
+    private static readonly pb::MessageParser<Plot> _parser = new pb::MessageParser<Plot>(() => new Plot());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<Plot> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.Plots.PlotsReflection.Descriptor.MessageTypes[0]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Plot() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Plot(Plot other) : this() {
+      name_ = other.name_;
+      description_ = other.description_;
+      points_ = other.points_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Plot Clone() {
+      return new Plot(this);
+    }
+
+    /// <summary>Field number for the "name" field.</summary>
+    public const int NameFieldNumber = 1;
+    private string name_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Name {
+      get { return name_; }
+      set {
+        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "description" field.</summary>
+    public const int DescriptionFieldNumber = 2;
+    private string description_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Description {
+      get { return description_; }
+      set {
+        description_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "points" field.</summary>
+    public const int PointsFieldNumber = 3;
+    private static readonly pb::FieldCodec<global::Mruv.Position> _repeated_points_codec
+        = pb::FieldCodec.ForMessage(26, global::Mruv.Position.Parser);
+    private readonly pbc::RepeatedField<global::Mruv.Position> points_ = new pbc::RepeatedField<global::Mruv.Position>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Mruv.Position> Points {
+      get { return points_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as Plot);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(Plot other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Name != other.Name) return false;
+      if (Description != other.Description) return false;
+      if(!points_.Equals(other.points_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Name.Length != 0) hash ^= Name.GetHashCode();
+      if (Description.Length != 0) hash ^= Description.GetHashCode();
+      hash ^= points_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Name.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Name);
+      }
+      if (Description.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Description);
+      }
+      points_.WriteTo(output, _repeated_points_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Name.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+      }
+      if (Description.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Description);
+      }
+      size += points_.CalculateSize(_repeated_points_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(Plot other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Name.Length != 0) {
+        Name = other.Name;
+      }
+      if (other.Description.Length != 0) {
+        Description = other.Description;
+      }
+      points_.Add(other.points_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Name = input.ReadString();
+            break;
+          }
+          case 18: {
+            Description = input.ReadString();
+            break;
+          }
+          case 26: {
+            points_.AddEntriesFrom(input, _repeated_points_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
   /// <summary>
   /// Request message for rpc `CreatePlot`.
   /// </summary>
@@ -73,7 +253,7 @@ namespace Mruv.Plots {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Plots.PlotsReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Mruv.Plots.PlotsReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -253,7 +433,7 @@ namespace Mruv.Plots {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Plots.PlotsReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Mruv.Plots.PlotsReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -385,7 +565,7 @@ namespace Mruv.Plots {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Plots.PlotsReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Mruv.Plots.PlotsReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -517,7 +697,7 @@ namespace Mruv.Plots {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Plots.PlotsReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Mruv.Plots.PlotsReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -725,7 +905,7 @@ namespace Mruv.Plots {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Plots.PlotsReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Mruv.Plots.PlotsReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -913,7 +1093,7 @@ namespace Mruv.Plots {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Plots.PlotsReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Mruv.Plots.PlotsReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1017,7 +1197,7 @@ namespace Mruv.Plots {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Plots.PlotsReflection.Descriptor.MessageTypes[6]; }
+      get { return global::Mruv.Plots.PlotsReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1149,7 +1329,7 @@ namespace Mruv.Plots {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Plots.PlotsReflection.Descriptor.MessageTypes[7]; }
+      get { return global::Mruv.Plots.PlotsReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

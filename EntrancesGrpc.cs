@@ -33,6 +33,8 @@ namespace Mruv.Entrances {
     static readonly grpc::Marshaller<global::Mruv.Entrances.EnterResponse> __Marshaller_mruv_entrances_EnterResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Entrances.EnterResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.Entrances.ExitRequest> __Marshaller_mruv_entrances_ExitRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Entrances.ExitRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.Entrances.ExitResponse> __Marshaller_mruv_entrances_ExitResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Entrances.ExitResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Entrances.FetchAllEntrancesRequest> __Marshaller_mruv_entrances_FetchAllEntrancesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Entrances.FetchAllEntrancesRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Entrances.FetchAllEntrancesResponse> __Marshaller_mruv_entrances_FetchAllEntrancesResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Entrances.FetchAllEntrancesResponse.Parser.ParseFrom);
 
     static readonly grpc::Method<global::Mruv.Entrances.CreateEntranceRequest, global::Mruv.Entrances.CreateEntranceResponse> __Method_CreateEntrance = new grpc::Method<global::Mruv.Entrances.CreateEntranceRequest, global::Mruv.Entrances.CreateEntranceResponse>(
         grpc::MethodType.Unary,
@@ -96,6 +98,13 @@ namespace Mruv.Entrances {
         "Exit",
         __Marshaller_mruv_entrances_ExitRequest,
         __Marshaller_mruv_entrances_ExitResponse);
+
+    static readonly grpc::Method<global::Mruv.Entrances.FetchAllEntrancesRequest, global::Mruv.Entrances.FetchAllEntrancesResponse> __Method_FetchAll = new grpc::Method<global::Mruv.Entrances.FetchAllEntrancesRequest, global::Mruv.Entrances.FetchAllEntrancesResponse>(
+        grpc::MethodType.ServerStreaming,
+        __ServiceName,
+        "FetchAll",
+        __Marshaller_mruv_entrances_FetchAllEntrancesRequest,
+        __Marshaller_mruv_entrances_FetchAllEntrancesResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -202,6 +211,17 @@ namespace Mruv.Entrances {
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       public virtual global::System.Threading.Tasks.Task<global::Mruv.Entrances.ExitResponse> Exit(global::Mruv.Entrances.ExitRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="responseStream">Used for sending responses back to the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>A task indicating completion of the handler.</returns>
+      public virtual global::System.Threading.Tasks.Task FetchAll(global::Mruv.Entrances.FetchAllEntrancesRequest request, grpc::IServerStreamWriter<global::Mruv.Entrances.FetchAllEntrancesResponse> responseStream, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -627,6 +647,26 @@ namespace Mruv.Entrances {
       {
         return CallInvoker.AsyncUnaryCall(__Method_Exit, null, options, request);
       }
+      /// <summary>
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Entrances.FetchAllEntrancesResponse> FetchAll(global::Mruv.Entrances.FetchAllEntrancesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return FetchAll(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Entrances.FetchAllEntrancesResponse> FetchAll(global::Mruv.Entrances.FetchAllEntrancesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncServerStreamingCall(__Method_FetchAll, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override MruVEntrancesServiceClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -647,7 +687,8 @@ namespace Mruv.Entrances {
           .AddMethod(__Method_Unlock, serviceImpl.Unlock)
           .AddMethod(__Method_FindNearestEntrance, serviceImpl.FindNearestEntrance)
           .AddMethod(__Method_Enter, serviceImpl.Enter)
-          .AddMethod(__Method_Exit, serviceImpl.Exit).Build();
+          .AddMethod(__Method_Exit, serviceImpl.Exit)
+          .AddMethod(__Method_FetchAll, serviceImpl.FetchAll).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
@@ -665,6 +706,7 @@ namespace Mruv.Entrances {
       serviceBinder.AddMethod(__Method_FindNearestEntrance, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Entrances.FindNearestEntranceRequest, global::Mruv.Entrances.FindNearestEntranceResponse>(serviceImpl.FindNearestEntrance));
       serviceBinder.AddMethod(__Method_Enter, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Entrances.EnterRequest, global::Mruv.Entrances.EnterResponse>(serviceImpl.Enter));
       serviceBinder.AddMethod(__Method_Exit, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Entrances.ExitRequest, global::Mruv.Entrances.ExitResponse>(serviceImpl.Exit));
+      serviceBinder.AddMethod(__Method_FetchAll, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Mruv.Entrances.FetchAllEntrancesRequest, global::Mruv.Entrances.FetchAllEntrancesResponse>(serviceImpl.FetchAll));
     }
 
   }

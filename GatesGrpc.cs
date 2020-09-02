@@ -33,6 +33,8 @@ namespace Mruv.Gates {
     static readonly grpc::Marshaller<global::Mruv.Gates.CloseResponse> __Marshaller_mruv_gates_CloseResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Gates.CloseResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.Gates.FindNearestGateRequest> __Marshaller_mruv_gates_FindNearestGateRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Gates.FindNearestGateRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.Gates.FindNearestGateResponse> __Marshaller_mruv_gates_FindNearestGateResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Gates.FindNearestGateResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Gates.FetchAllGatesRequest> __Marshaller_mruv_gates_FetchAllGatesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Gates.FetchAllGatesRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Gates.FetchAllGatesResponse> __Marshaller_mruv_gates_FetchAllGatesResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Gates.FetchAllGatesResponse.Parser.ParseFrom);
 
     static readonly grpc::Method<global::Mruv.Gates.CreateGateRequest, global::Mruv.Gates.CreateGateResponse> __Method_CreateGate = new grpc::Method<global::Mruv.Gates.CreateGateRequest, global::Mruv.Gates.CreateGateResponse>(
         grpc::MethodType.Unary,
@@ -96,6 +98,13 @@ namespace Mruv.Gates {
         "FindNearestGate",
         __Marshaller_mruv_gates_FindNearestGateRequest,
         __Marshaller_mruv_gates_FindNearestGateResponse);
+
+    static readonly grpc::Method<global::Mruv.Gates.FetchAllGatesRequest, global::Mruv.Gates.FetchAllGatesResponse> __Method_FetchAll = new grpc::Method<global::Mruv.Gates.FetchAllGatesRequest, global::Mruv.Gates.FetchAllGatesResponse>(
+        grpc::MethodType.ServerStreaming,
+        __ServiceName,
+        "FetchAll",
+        __Marshaller_mruv_gates_FetchAllGatesRequest,
+        __Marshaller_mruv_gates_FetchAllGatesResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -202,6 +211,17 @@ namespace Mruv.Gates {
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       public virtual global::System.Threading.Tasks.Task<global::Mruv.Gates.FindNearestGateResponse> FindNearestGate(global::Mruv.Gates.FindNearestGateRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="responseStream">Used for sending responses back to the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>A task indicating completion of the handler.</returns>
+      public virtual global::System.Threading.Tasks.Task FetchAll(global::Mruv.Gates.FetchAllGatesRequest request, grpc::IServerStreamWriter<global::Mruv.Gates.FetchAllGatesResponse> responseStream, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -627,6 +647,26 @@ namespace Mruv.Gates {
       {
         return CallInvoker.AsyncUnaryCall(__Method_FindNearestGate, null, options, request);
       }
+      /// <summary>
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Gates.FetchAllGatesResponse> FetchAll(global::Mruv.Gates.FetchAllGatesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return FetchAll(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Gates.FetchAllGatesResponse> FetchAll(global::Mruv.Gates.FetchAllGatesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncServerStreamingCall(__Method_FetchAll, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override MruVGatesServiceClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -647,7 +687,8 @@ namespace Mruv.Gates {
           .AddMethod(__Method_Unlock, serviceImpl.Unlock)
           .AddMethod(__Method_Open, serviceImpl.Open)
           .AddMethod(__Method_Close, serviceImpl.Close)
-          .AddMethod(__Method_FindNearestGate, serviceImpl.FindNearestGate).Build();
+          .AddMethod(__Method_FindNearestGate, serviceImpl.FindNearestGate)
+          .AddMethod(__Method_FetchAll, serviceImpl.FetchAll).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
@@ -665,6 +706,7 @@ namespace Mruv.Gates {
       serviceBinder.AddMethod(__Method_Open, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Gates.OpenRequest, global::Mruv.Gates.OpenResponse>(serviceImpl.Open));
       serviceBinder.AddMethod(__Method_Close, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Gates.CloseRequest, global::Mruv.Gates.CloseResponse>(serviceImpl.Close));
       serviceBinder.AddMethod(__Method_FindNearestGate, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Gates.FindNearestGateRequest, global::Mruv.Gates.FindNearestGateResponse>(serviceImpl.FindNearestGate));
+      serviceBinder.AddMethod(__Method_FetchAll, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Mruv.Gates.FetchAllGatesRequest, global::Mruv.Gates.FetchAllGatesResponse>(serviceImpl.FetchAll));
     }
 
   }

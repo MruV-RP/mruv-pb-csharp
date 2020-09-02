@@ -29,6 +29,8 @@ namespace Mruv.Objects {
     static readonly grpc::Marshaller<global::Mruv.Objects.MoveObjectNextResponse> __Marshaller_mruv_objects_MoveObjectNextResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.MoveObjectNextResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.Objects.MoveObjectPreviousRequest> __Marshaller_mruv_objects_MoveObjectPreviousRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.MoveObjectPreviousRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.Objects.MoveObjectPreviousResponse> __Marshaller_mruv_objects_MoveObjectPreviousResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.MoveObjectPreviousResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Objects.FetchAllMovableObjectsRequest> __Marshaller_mruv_objects_FetchAllMovableObjectsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.FetchAllMovableObjectsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Objects.FetchAllMovableObjectsResponse> __Marshaller_mruv_objects_FetchAllMovableObjectsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.FetchAllMovableObjectsResponse.Parser.ParseFrom);
 
     static readonly grpc::Method<global::Mruv.Objects.CreateMovableObjectRequest, global::Mruv.Objects.CreateMovableObjectResponse> __Method_CreateMovableObject = new grpc::Method<global::Mruv.Objects.CreateMovableObjectRequest, global::Mruv.Objects.CreateMovableObjectResponse>(
         grpc::MethodType.Unary,
@@ -78,6 +80,13 @@ namespace Mruv.Objects {
         "MoveObjectPrevious",
         __Marshaller_mruv_objects_MoveObjectPreviousRequest,
         __Marshaller_mruv_objects_MoveObjectPreviousResponse);
+
+    static readonly grpc::Method<global::Mruv.Objects.FetchAllMovableObjectsRequest, global::Mruv.Objects.FetchAllMovableObjectsResponse> __Method_FetchAll = new grpc::Method<global::Mruv.Objects.FetchAllMovableObjectsRequest, global::Mruv.Objects.FetchAllMovableObjectsResponse>(
+        grpc::MethodType.ServerStreaming,
+        __ServiceName,
+        "FetchAll",
+        __Marshaller_mruv_objects_FetchAllMovableObjectsRequest,
+        __Marshaller_mruv_objects_FetchAllMovableObjectsResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -162,6 +171,17 @@ namespace Mruv.Objects {
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       public virtual global::System.Threading.Tasks.Task<global::Mruv.Objects.MoveObjectPreviousResponse> MoveObjectPrevious(global::Mruv.Objects.MoveObjectPreviousRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="responseStream">Used for sending responses back to the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>A task indicating completion of the handler.</returns>
+      public virtual global::System.Threading.Tasks.Task FetchAll(global::Mruv.Objects.FetchAllMovableObjectsRequest request, grpc::IServerStreamWriter<global::Mruv.Objects.FetchAllMovableObjectsResponse> responseStream, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -499,6 +519,26 @@ namespace Mruv.Objects {
       {
         return CallInvoker.AsyncUnaryCall(__Method_MoveObjectPrevious, null, options, request);
       }
+      /// <summary>
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Objects.FetchAllMovableObjectsResponse> FetchAll(global::Mruv.Objects.FetchAllMovableObjectsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return FetchAll(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Objects.FetchAllMovableObjectsResponse> FetchAll(global::Mruv.Objects.FetchAllMovableObjectsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncServerStreamingCall(__Method_FetchAll, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override MruVMovableObjectsServiceClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -517,7 +557,8 @@ namespace Mruv.Objects {
           .AddMethod(__Method_DeleteMovableObject, serviceImpl.DeleteMovableObject)
           .AddMethod(__Method_MoveObject, serviceImpl.MoveObject)
           .AddMethod(__Method_MoveObjectNext, serviceImpl.MoveObjectNext)
-          .AddMethod(__Method_MoveObjectPrevious, serviceImpl.MoveObjectPrevious).Build();
+          .AddMethod(__Method_MoveObjectPrevious, serviceImpl.MoveObjectPrevious)
+          .AddMethod(__Method_FetchAll, serviceImpl.FetchAll).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
@@ -533,6 +574,7 @@ namespace Mruv.Objects {
       serviceBinder.AddMethod(__Method_MoveObject, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Objects.MoveObjectRequest, global::Mruv.Objects.MoveObjectResponse>(serviceImpl.MoveObject));
       serviceBinder.AddMethod(__Method_MoveObjectNext, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Objects.MoveObjectNextRequest, global::Mruv.Objects.MoveObjectNextResponse>(serviceImpl.MoveObjectNext));
       serviceBinder.AddMethod(__Method_MoveObjectPrevious, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Objects.MoveObjectPreviousRequest, global::Mruv.Objects.MoveObjectPreviousResponse>(serviceImpl.MoveObjectPrevious));
+      serviceBinder.AddMethod(__Method_FetchAll, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Mruv.Objects.FetchAllMovableObjectsRequest, global::Mruv.Objects.FetchAllMovableObjectsResponse>(serviceImpl.FetchAll));
     }
 
   }

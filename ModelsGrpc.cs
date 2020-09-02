@@ -23,6 +23,8 @@ namespace Mruv.Objects {
     static readonly grpc::Marshaller<global::Mruv.Objects.UpdateObjectModelResponse> __Marshaller_mruv_objects_UpdateObjectModelResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.UpdateObjectModelResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.Objects.DeleteObjectModelRequest> __Marshaller_mruv_objects_DeleteObjectModelRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.DeleteObjectModelRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.Objects.DeleteObjectModelResponse> __Marshaller_mruv_objects_DeleteObjectModelResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.DeleteObjectModelResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Objects.FetchAllModelsRequest> __Marshaller_mruv_objects_FetchAllModelsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.FetchAllModelsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Objects.FetchAllModelsResponse> __Marshaller_mruv_objects_FetchAllModelsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.FetchAllModelsResponse.Parser.ParseFrom);
 
     static readonly grpc::Method<global::Mruv.Objects.CreateObjectModelRequest, global::Mruv.Objects.CreateObjectModelResponse> __Method_CreateObjectModel = new grpc::Method<global::Mruv.Objects.CreateObjectModelRequest, global::Mruv.Objects.CreateObjectModelResponse>(
         grpc::MethodType.Unary,
@@ -51,6 +53,13 @@ namespace Mruv.Objects {
         "DeleteObjectModel",
         __Marshaller_mruv_objects_DeleteObjectModelRequest,
         __Marshaller_mruv_objects_DeleteObjectModelResponse);
+
+    static readonly grpc::Method<global::Mruv.Objects.FetchAllModelsRequest, global::Mruv.Objects.FetchAllModelsResponse> __Method_FetchAll = new grpc::Method<global::Mruv.Objects.FetchAllModelsRequest, global::Mruv.Objects.FetchAllModelsResponse>(
+        grpc::MethodType.ServerStreaming,
+        __ServiceName,
+        "FetchAll",
+        __Marshaller_mruv_objects_FetchAllModelsRequest,
+        __Marshaller_mruv_objects_FetchAllModelsResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -102,6 +111,18 @@ namespace Mruv.Objects {
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       public virtual global::System.Threading.Tasks.Task<global::Mruv.Objects.DeleteObjectModelResponse> DeleteObjectModel(global::Mruv.Objects.DeleteObjectModelRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Get all models.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="responseStream">Used for sending responses back to the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>A task indicating completion of the handler.</returns>
+      public virtual global::System.Threading.Tasks.Task FetchAll(global::Mruv.Objects.FetchAllModelsRequest request, grpc::IServerStreamWriter<global::Mruv.Objects.FetchAllModelsResponse> responseStream, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -307,6 +328,28 @@ namespace Mruv.Objects {
       {
         return CallInvoker.AsyncUnaryCall(__Method_DeleteObjectModel, null, options, request);
       }
+      /// <summary>
+      /// Get all models.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Objects.FetchAllModelsResponse> FetchAll(global::Mruv.Objects.FetchAllModelsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return FetchAll(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get all models.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Objects.FetchAllModelsResponse> FetchAll(global::Mruv.Objects.FetchAllModelsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncServerStreamingCall(__Method_FetchAll, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override MruVObjectModelsServiceClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -322,7 +365,8 @@ namespace Mruv.Objects {
           .AddMethod(__Method_CreateObjectModel, serviceImpl.CreateObjectModel)
           .AddMethod(__Method_GetObjectModel, serviceImpl.GetObjectModel)
           .AddMethod(__Method_UpdateObjectModel, serviceImpl.UpdateObjectModel)
-          .AddMethod(__Method_DeleteObjectModel, serviceImpl.DeleteObjectModel).Build();
+          .AddMethod(__Method_DeleteObjectModel, serviceImpl.DeleteObjectModel)
+          .AddMethod(__Method_FetchAll, serviceImpl.FetchAll).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
@@ -335,6 +379,7 @@ namespace Mruv.Objects {
       serviceBinder.AddMethod(__Method_GetObjectModel, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Objects.GetObjectModelRequest, global::Mruv.Objects.GetObjectModelResponse>(serviceImpl.GetObjectModel));
       serviceBinder.AddMethod(__Method_UpdateObjectModel, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Objects.UpdateObjectModelRequest, global::Mruv.Objects.UpdateObjectModelResponse>(serviceImpl.UpdateObjectModel));
       serviceBinder.AddMethod(__Method_DeleteObjectModel, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Objects.DeleteObjectModelRequest, global::Mruv.Objects.DeleteObjectModelResponse>(serviceImpl.DeleteObjectModel));
+      serviceBinder.AddMethod(__Method_FetchAll, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Mruv.Objects.FetchAllModelsRequest, global::Mruv.Objects.FetchAllModelsResponse>(serviceImpl.FetchAll));
     }
 
   }
