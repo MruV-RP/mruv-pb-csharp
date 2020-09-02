@@ -99,7 +99,7 @@ namespace Mruv.Objects {
             "X1NJWkVfMjU2WDI1NhBkEh8KG09CSkVDVF9NQVRFUklBTF9TSVpFXzUxMlg2",
             "NBBuEiAKHE9CSkVDVF9NQVRFUklBTF9TSVpFXzUxMlgxMjgQeBIhChxPQkpF",
             "Q1RfTUFURVJJQUxfU0laRV81MTJYMjU2EIIBEiEKHE9CSkVDVF9NQVRFUklB",
-            "TF9TSVpFXzUxMlg1MTIQjAEylg8KEk1ydVZPYmplY3RzU2VydmljZRJqCgxD",
+            "TF9TSVpFXzUxMlg1MTIQjAEynQ8KEk1ydVZPYmplY3RzU2VydmljZRJqCgxD",
             "cmVhdGVPYmplY3QSIS5tcnV2Lm9iamVjdHMuQ3JlYXRlT2JqZWN0UmVxdWVz",
             "dBoiLm1ydXYub2JqZWN0cy5DcmVhdGVPYmplY3RSZXNwb25zZSITgtPkkwIN",
             "IgsvdjEvb2JqZWN0cxJmCglHZXRPYmplY3QSHi5tcnV2Lm9iamVjdHMuR2V0",
@@ -140,10 +140,10 @@ namespace Mruv.Objects {
             "ZWxldGVSZW1vdmVCdWlsZGluZxIpLm1ydXYub2JqZWN0cy5EZWxldGVSZW1v",
             "dmVCdWlsZGluZ1JlcXVlc3QaKi5tcnV2Lm9iamVjdHMuRGVsZXRlUmVtb3Zl",
             "QnVpbGRpbmdSZXNwb25zZSIggtPkkwIaKhgvdjEvb2JqZWN0cy9yZW1vdmVk",
-            "L3tpZH0SbgoIRmV0Y2hBbGwSJC5tcnV2Lm9iamVjdHMuRmV0Y2hBbGxPYmpl",
-            "Y3RzUmVxdWVzdBolLm1ydXYub2JqZWN0cy5GZXRjaEFsbE9iamVjdHNSZXNw",
-            "b25zZSITgtPkkwINEgsvdjEvb2JqZWN0czABQidaJWdpdGh1Yi5jb20vTXJ1",
-            "Vi1SUC9tcnV2LXBiLWdvL29iamVjdHNiBnByb3RvMw=="));
+            "L3tpZH0SdQoPRmV0Y2hBbGxPYmplY3RzEiQubXJ1di5vYmplY3RzLkZldGNo",
+            "QWxsT2JqZWN0c1JlcXVlc3QaJS5tcnV2Lm9iamVjdHMuRmV0Y2hBbGxPYmpl",
+            "Y3RzUmVzcG9uc2UiE4LT5JMCDRILL3YxL29iamVjdHMwAUInWiVnaXRodWIu",
+            "Y29tL01ydVYtUlAvbXJ1di1wYi1nby9vYmplY3RzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Mruv.Objects.MaterialSize), }, new pbr::GeneratedClrTypeInfo[] {

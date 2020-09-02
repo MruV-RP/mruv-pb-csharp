@@ -135,10 +135,10 @@ namespace Mruv.Objects {
         __Marshaller_mruv_objects_DeleteRemoveBuildingRequest,
         __Marshaller_mruv_objects_DeleteRemoveBuildingResponse);
 
-    static readonly grpc::Method<global::Mruv.Objects.FetchAllObjectsRequest, global::Mruv.Objects.FetchAllObjectsResponse> __Method_FetchAll = new grpc::Method<global::Mruv.Objects.FetchAllObjectsRequest, global::Mruv.Objects.FetchAllObjectsResponse>(
+    static readonly grpc::Method<global::Mruv.Objects.FetchAllObjectsRequest, global::Mruv.Objects.FetchAllObjectsResponse> __Method_FetchAllObjects = new grpc::Method<global::Mruv.Objects.FetchAllObjectsRequest, global::Mruv.Objects.FetchAllObjectsResponse>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
-        "FetchAll",
+        "FetchAllObjects",
         __Marshaller_mruv_objects_FetchAllObjectsRequest,
         __Marshaller_mruv_objects_FetchAllObjectsResponse);
 
@@ -302,7 +302,7 @@ namespace Mruv.Objects {
       /// <param name="responseStream">Used for sending responses back to the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>A task indicating completion of the handler.</returns>
-      public virtual global::System.Threading.Tasks.Task FetchAll(global::Mruv.Objects.FetchAllObjectsRequest request, grpc::IServerStreamWriter<global::Mruv.Objects.FetchAllObjectsResponse> responseStream, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task FetchAllObjects(global::Mruv.Objects.FetchAllObjectsRequest request, grpc::IServerStreamWriter<global::Mruv.Objects.FetchAllObjectsResponse> responseStream, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -912,9 +912,9 @@ namespace Mruv.Objects {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Objects.FetchAllObjectsResponse> FetchAll(global::Mruv.Objects.FetchAllObjectsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Objects.FetchAllObjectsResponse> FetchAllObjects(global::Mruv.Objects.FetchAllObjectsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return FetchAll(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return FetchAllObjects(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
       /// Fetch all existing objects.
@@ -922,9 +922,9 @@ namespace Mruv.Objects {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Objects.FetchAllObjectsResponse> FetchAll(global::Mruv.Objects.FetchAllObjectsRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Objects.FetchAllObjectsResponse> FetchAllObjects(global::Mruv.Objects.FetchAllObjectsRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.AsyncServerStreamingCall(__Method_FetchAll, null, options, request);
+        return CallInvoker.AsyncServerStreamingCall(__Method_FetchAllObjects, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override MruVObjectsServiceClient NewInstance(ClientBaseConfiguration configuration)
@@ -951,7 +951,7 @@ namespace Mruv.Objects {
           .AddMethod(__Method_AddRemoveBuilding, serviceImpl.AddRemoveBuilding)
           .AddMethod(__Method_GetRemovedBuildings, serviceImpl.GetRemovedBuildings)
           .AddMethod(__Method_DeleteRemoveBuilding, serviceImpl.DeleteRemoveBuilding)
-          .AddMethod(__Method_FetchAll, serviceImpl.FetchAll).Build();
+          .AddMethod(__Method_FetchAllObjects, serviceImpl.FetchAllObjects).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
@@ -973,7 +973,7 @@ namespace Mruv.Objects {
       serviceBinder.AddMethod(__Method_AddRemoveBuilding, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Objects.AddRemoveBuildingRequest, global::Mruv.Objects.AddRemoveBuildingResponse>(serviceImpl.AddRemoveBuilding));
       serviceBinder.AddMethod(__Method_GetRemovedBuildings, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Objects.GetRemovedBuildingsRequest, global::Mruv.Objects.GetRemovedBuildingsResponse>(serviceImpl.GetRemovedBuildings));
       serviceBinder.AddMethod(__Method_DeleteRemoveBuilding, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Objects.DeleteRemoveBuildingRequest, global::Mruv.Objects.DeleteRemoveBuildingResponse>(serviceImpl.DeleteRemoveBuilding));
-      serviceBinder.AddMethod(__Method_FetchAll, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Mruv.Objects.FetchAllObjectsRequest, global::Mruv.Objects.FetchAllObjectsResponse>(serviceImpl.FetchAll));
+      serviceBinder.AddMethod(__Method_FetchAllObjects, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Mruv.Objects.FetchAllObjectsRequest, global::Mruv.Objects.FetchAllObjectsResponse>(serviceImpl.FetchAllObjects));
     }
 
   }
