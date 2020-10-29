@@ -26,7 +26,7 @@ namespace Mruv.Objects {
           string.Concat(
             "ChRvYmplY3RzL21vZGVscy5wcm90bxIMbXJ1di5vYmplY3RzGhxnb29nbGUv",
             "YXBpL2Fubm90YXRpb25zLnByb3RvIqMCCgtPYmplY3RNb2RlbBINCgVtb2Rl",
-            "bBgBIAEoDRISCgptb2RlbF9uYW1lGAIgASgJEgwKBG5hbWUYAyABKAkSEAoI",
+            "bBgBIAEoBRISCgptb2RlbF9uYW1lGAIgASgJEgwKBG5hbWUYAyABKAkSEAoI",
             "Y2F0ZWdvcnkYBCABKAkSDgoGbGVuZ3RoGAUgASgBEg0KBXdpZHRoGAYgASgB",
             "Eg4KBmhlaWdodBgHIAEoARIMCgRzaXplGAggASgBEgwKBHRhZ3MYCSADKAkS",
             "FQoNaGFzX2NvbGxpc2lvbhgKIAEoCBIVCg1icmVha3Nfb25faGl0GAsgASgI",
@@ -35,26 +35,34 @@ namespace Mruv.Objects {
             "IkoKGENyZWF0ZU9iamVjdE1vZGVsUmVxdWVzdBIuCgtvYmplY3RfdHlwZRgB",
             "IAEoCzIZLm1ydXYub2JqZWN0cy5PYmplY3RNb2RlbCInChlDcmVhdGVPYmpl",
             "Y3RNb2RlbFJlc3BvbnNlEgoKAmlkGAEgASgNIiYKFUdldE9iamVjdE1vZGVs",
-            "UmVxdWVzdBINCgVtb2RlbBgBIAEoDSJIChZHZXRPYmplY3RNb2RlbFJlc3Bv",
+            "UmVxdWVzdBINCgVtb2RlbBgBIAEoBSJIChZHZXRPYmplY3RNb2RlbFJlc3Bv",
             "bnNlEi4KC29iamVjdF90eXBlGAEgASgLMhkubXJ1di5vYmplY3RzLk9iamVj",
             "dE1vZGVsIkoKGFVwZGF0ZU9iamVjdE1vZGVsUmVxdWVzdBIuCgtvYmplY3Rf",
             "dHlwZRgBIAEoCzIZLm1ydXYub2JqZWN0cy5PYmplY3RNb2RlbCIbChlVcGRh",
             "dGVPYmplY3RNb2RlbFJlc3BvbnNlIikKGERlbGV0ZU9iamVjdE1vZGVsUmVx",
-            "dWVzdBINCgVtb2RlbBgBIAEoDSIbChlEZWxldGVPYmplY3RNb2RlbFJlc3Bv",
-            "bnNlMrIEChdNcnVWT2JqZWN0TW9kZWxzU2VydmljZRJ9ChFDcmVhdGVPYmpl",
-            "Y3RNb2RlbBImLm1ydXYub2JqZWN0cy5DcmVhdGVPYmplY3RNb2RlbFJlcXVl",
-            "c3QaJy5tcnV2Lm9iamVjdHMuQ3JlYXRlT2JqZWN0TW9kZWxSZXNwb25zZSIX",
-            "gtPkkwIRIg8vdjEvb2JqZWN0VHlwZXMSfAoOR2V0T2JqZWN0TW9kZWwSIy5t",
-            "cnV2Lm9iamVjdHMuR2V0T2JqZWN0TW9kZWxSZXF1ZXN0GiQubXJ1di5vYmpl",
-            "Y3RzLkdldE9iamVjdE1vZGVsUmVzcG9uc2UiH4LT5JMCGRIXL3YxL29iamVj",
-            "dFR5cGVzL3ttb2RlbH0SkQEKEVVwZGF0ZU9iamVjdE1vZGVsEiYubXJ1di5v",
-            "YmplY3RzLlVwZGF0ZU9iamVjdE1vZGVsUmVxdWVzdBonLm1ydXYub2JqZWN0",
-            "cy5VcGRhdGVPYmplY3RNb2RlbFJlc3BvbnNlIiuC0+STAiUyIy92MS9vYmpl",
-            "Y3RUeXBlcy97b2JqZWN0X3R5cGUubW9kZWx9EoUBChFEZWxldGVPYmplY3RN",
-            "b2RlbBImLm1ydXYub2JqZWN0cy5EZWxldGVPYmplY3RNb2RlbFJlcXVlc3Qa",
-            "Jy5tcnV2Lm9iamVjdHMuRGVsZXRlT2JqZWN0TW9kZWxSZXNwb25zZSIfgtPk",
-            "kwIZKhcvdjEvb2JqZWN0VHlwZXMve21vZGVsfUInWiVnaXRodWIuY29tL01y",
-            "dVYtUlAvbXJ1di1wYi1nby9vYmplY3RzYgZwcm90bzM="));
+            "dWVzdBINCgVtb2RlbBgBIAEoBSIbChlEZWxldGVPYmplY3RNb2RlbFJlc3Bv",
+            "bnNlIisKFUZldGNoQWxsTW9kZWxzUmVxdWVzdBISCgpjaHVua19zaXplGAEg",
+            "ASgNIqQBChZGZXRjaEFsbE1vZGVsc1Jlc3BvbnNlEkAKBm1vZGVscxgBIAMo",
+            "CzIwLm1ydXYub2JqZWN0cy5GZXRjaEFsbE1vZGVsc1Jlc3BvbnNlLk1vZGVs",
+            "c0VudHJ5GkgKC01vZGVsc0VudHJ5EgsKA2tleRgBIAEoBRIoCgV2YWx1ZRgC",
+            "IAEoCzIZLm1ydXYub2JqZWN0cy5PYmplY3RNb2RlbDoCOAEyqgUKF01ydVZP",
+            "YmplY3RNb2RlbHNTZXJ2aWNlEn0KEUNyZWF0ZU9iamVjdE1vZGVsEiYubXJ1",
+            "di5vYmplY3RzLkNyZWF0ZU9iamVjdE1vZGVsUmVxdWVzdBonLm1ydXYub2Jq",
+            "ZWN0cy5DcmVhdGVPYmplY3RNb2RlbFJlc3BvbnNlIheC0+STAhEiDy92MS9v",
+            "YmplY3RUeXBlcxJ8Cg5HZXRPYmplY3RNb2RlbBIjLm1ydXYub2JqZWN0cy5H",
+            "ZXRPYmplY3RNb2RlbFJlcXVlc3QaJC5tcnV2Lm9iamVjdHMuR2V0T2JqZWN0",
+            "TW9kZWxSZXNwb25zZSIfgtPkkwIZEhcvdjEvb2JqZWN0VHlwZXMve21vZGVs",
+            "fRKRAQoRVXBkYXRlT2JqZWN0TW9kZWwSJi5tcnV2Lm9iamVjdHMuVXBkYXRl",
+            "T2JqZWN0TW9kZWxSZXF1ZXN0GicubXJ1di5vYmplY3RzLlVwZGF0ZU9iamVj",
+            "dE1vZGVsUmVzcG9uc2UiK4LT5JMCJTIjL3YxL29iamVjdFR5cGVzL3tvYmpl",
+            "Y3RfdHlwZS5tb2RlbH0ShQEKEURlbGV0ZU9iamVjdE1vZGVsEiYubXJ1di5v",
+            "YmplY3RzLkRlbGV0ZU9iamVjdE1vZGVsUmVxdWVzdBonLm1ydXYub2JqZWN0",
+            "cy5EZWxldGVPYmplY3RNb2RlbFJlc3BvbnNlIh+C0+STAhkqFy92MS9vYmpl",
+            "Y3RUeXBlcy97bW9kZWx9EnYKDkZldGNoQWxsTW9kZWxzEiMubXJ1di5vYmpl",
+            "Y3RzLkZldGNoQWxsTW9kZWxzUmVxdWVzdBokLm1ydXYub2JqZWN0cy5GZXRj",
+            "aEFsbE1vZGVsc1Jlc3BvbnNlIheC0+STAhESDy92MS9vYmplY3RUeXBlczAB",
+            "QidaJWdpdGh1Yi5jb20vTXJ1Vi1SUC9tcnV2LXBiLWdvL29iamVjdHNiBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -66,7 +74,9 @@ namespace Mruv.Objects {
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.UpdateObjectModelRequest), global::Mruv.Objects.UpdateObjectModelRequest.Parser, new[]{ "ObjectType" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.UpdateObjectModelResponse), global::Mruv.Objects.UpdateObjectModelResponse.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.DeleteObjectModelRequest), global::Mruv.Objects.DeleteObjectModelRequest.Parser, new[]{ "Model" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.DeleteObjectModelResponse), global::Mruv.Objects.DeleteObjectModelResponse.Parser, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.DeleteObjectModelResponse), global::Mruv.Objects.DeleteObjectModelResponse.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.FetchAllModelsRequest), global::Mruv.Objects.FetchAllModelsRequest.Parser, new[]{ "ChunkSize" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.FetchAllModelsResponse), global::Mruv.Objects.FetchAllModelsResponse.Parser, new[]{ "Models" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
           }));
     }
     #endregion
@@ -126,9 +136,9 @@ namespace Mruv.Objects {
 
     /// <summary>Field number for the "model" field.</summary>
     public const int ModelFieldNumber = 1;
-    private uint model_;
+    private int model_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint Model {
+    public int Model {
       get { return model_; }
       set {
         model_ = value;
@@ -355,7 +365,7 @@ namespace Mruv.Objects {
     public void WriteTo(pb::CodedOutputStream output) {
       if (Model != 0) {
         output.WriteRawTag(8);
-        output.WriteUInt32(Model);
+        output.WriteInt32(Model);
       }
       if (ModelName.Length != 0) {
         output.WriteRawTag(18);
@@ -419,7 +429,7 @@ namespace Mruv.Objects {
     public int CalculateSize() {
       int size = 0;
       if (Model != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Model);
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Model);
       }
       if (ModelName.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(ModelName);
@@ -527,7 +537,7 @@ namespace Mruv.Objects {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Model = input.ReadUInt32();
+            Model = input.ReadInt32();
             break;
           }
           case 18: {
@@ -901,9 +911,9 @@ namespace Mruv.Objects {
 
     /// <summary>Field number for the "model" field.</summary>
     public const int ModelFieldNumber = 1;
-    private uint model_;
+    private int model_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint Model {
+    public int Model {
       get { return model_; }
       set {
         model_ = value;
@@ -946,7 +956,7 @@ namespace Mruv.Objects {
     public void WriteTo(pb::CodedOutputStream output) {
       if (Model != 0) {
         output.WriteRawTag(8);
-        output.WriteUInt32(Model);
+        output.WriteInt32(Model);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -957,7 +967,7 @@ namespace Mruv.Objects {
     public int CalculateSize() {
       int size = 0;
       if (Model != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Model);
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Model);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -985,7 +995,7 @@ namespace Mruv.Objects {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Model = input.ReadUInt32();
+            Model = input.ReadInt32();
             break;
           }
         }
@@ -1413,9 +1423,9 @@ namespace Mruv.Objects {
 
     /// <summary>Field number for the "model" field.</summary>
     public const int ModelFieldNumber = 1;
-    private uint model_;
+    private int model_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint Model {
+    public int Model {
       get { return model_; }
       set {
         model_ = value;
@@ -1458,7 +1468,7 @@ namespace Mruv.Objects {
     public void WriteTo(pb::CodedOutputStream output) {
       if (Model != 0) {
         output.WriteRawTag(8);
-        output.WriteUInt32(Model);
+        output.WriteInt32(Model);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -1469,7 +1479,7 @@ namespace Mruv.Objects {
     public int CalculateSize() {
       int size = 0;
       if (Model != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Model);
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Model);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1497,7 +1507,7 @@ namespace Mruv.Objects {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Model = input.ReadUInt32();
+            Model = input.ReadInt32();
             break;
           }
         }
@@ -1604,6 +1614,262 @@ namespace Mruv.Objects {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Request message for rpc `FetchAll`.
+  /// </summary>
+  public sealed partial class FetchAllModelsRequest : pb::IMessage<FetchAllModelsRequest> {
+    private static readonly pb::MessageParser<FetchAllModelsRequest> _parser = new pb::MessageParser<FetchAllModelsRequest>(() => new FetchAllModelsRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<FetchAllModelsRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.Objects.ModelsReflection.Descriptor.MessageTypes[9]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FetchAllModelsRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FetchAllModelsRequest(FetchAllModelsRequest other) : this() {
+      chunkSize_ = other.chunkSize_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FetchAllModelsRequest Clone() {
+      return new FetchAllModelsRequest(this);
+    }
+
+    /// <summary>Field number for the "chunk_size" field.</summary>
+    public const int ChunkSizeFieldNumber = 1;
+    private uint chunkSize_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint ChunkSize {
+      get { return chunkSize_; }
+      set {
+        chunkSize_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as FetchAllModelsRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(FetchAllModelsRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (ChunkSize != other.ChunkSize) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (ChunkSize != 0) hash ^= ChunkSize.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (ChunkSize != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(ChunkSize);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (ChunkSize != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ChunkSize);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(FetchAllModelsRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.ChunkSize != 0) {
+        ChunkSize = other.ChunkSize;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            ChunkSize = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Response message for rpc `FetchAll`.
+  /// </summary>
+  public sealed partial class FetchAllModelsResponse : pb::IMessage<FetchAllModelsResponse> {
+    private static readonly pb::MessageParser<FetchAllModelsResponse> _parser = new pb::MessageParser<FetchAllModelsResponse>(() => new FetchAllModelsResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<FetchAllModelsResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.Objects.ModelsReflection.Descriptor.MessageTypes[10]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FetchAllModelsResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FetchAllModelsResponse(FetchAllModelsResponse other) : this() {
+      models_ = other.models_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FetchAllModelsResponse Clone() {
+      return new FetchAllModelsResponse(this);
+    }
+
+    /// <summary>Field number for the "models" field.</summary>
+    public const int ModelsFieldNumber = 1;
+    private static readonly pbc::MapField<int, global::Mruv.Objects.ObjectModel>.Codec _map_models_codec
+        = new pbc::MapField<int, global::Mruv.Objects.ObjectModel>.Codec(pb::FieldCodec.ForInt32(8), pb::FieldCodec.ForMessage(18, global::Mruv.Objects.ObjectModel.Parser), 10);
+    private readonly pbc::MapField<int, global::Mruv.Objects.ObjectModel> models_ = new pbc::MapField<int, global::Mruv.Objects.ObjectModel>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::MapField<int, global::Mruv.Objects.ObjectModel> Models {
+      get { return models_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as FetchAllModelsResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(FetchAllModelsResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!Models.Equals(other.Models)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= Models.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      models_.WriteTo(output, _map_models_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += models_.CalculateSize(_map_models_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(FetchAllModelsResponse other) {
+      if (other == null) {
+        return;
+      }
+      models_.Add(other.models_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            models_.AddEntriesFrom(input, _map_models_codec);
+            break;
+          }
         }
       }
     }

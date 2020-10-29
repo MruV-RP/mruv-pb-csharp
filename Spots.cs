@@ -35,17 +35,23 @@ namespace Mruv.Spots {
             "VXBkYXRlU3BvdFJlcXVlc3QSCgoCaWQYASABKA0SHgoEc3BvdBgCIAEoCzIQ",
             "Lm1ydXYuc3BvdHMuU3BvdCIUChJVcGRhdGVTcG90UmVzcG9uc2UiHwoRRGVs",
             "ZXRlU3BvdFJlcXVlc3QSCgoCaWQYASABKA0iFAoSRGVsZXRlU3BvdFJlc3Bv",
-            "bnNlMpgDChBNcnVWU3BvdHNTZXJ2aWNlEl4KCkNyZWF0ZVNwb3QSHS5tcnV2",
-            "LnNwb3RzLkNyZWF0ZVNwb3RSZXF1ZXN0Gh4ubXJ1di5zcG90cy5DcmVhdGVT",
-            "cG90UmVzcG9uc2UiEYLT5JMCCyIJL3YxL3Nwb3RzEloKB0dldFNwb3QSGi5t",
-            "cnV2LnNwb3RzLkdldFNwb3RSZXF1ZXN0GhsubXJ1di5zcG90cy5HZXRTcG90",
-            "UmVzcG9uc2UiFoLT5JMCEBIOL3YxL3Nwb3RzL3tpZH0SYwoKVXBkYXRlU3Bv",
-            "dBIdLm1ydXYuc3BvdHMuVXBkYXRlU3BvdFJlcXVlc3QaHi5tcnV2LnNwb3Rz",
-            "LlVwZGF0ZVNwb3RSZXNwb25zZSIWgtPkkwIQMg4vdjEvc3BvdHMve2lkfRJj",
-            "CgpEZWxldGVTcG90Eh0ubXJ1di5zcG90cy5EZWxldGVTcG90UmVxdWVzdBoe",
-            "Lm1ydXYuc3BvdHMuRGVsZXRlU3BvdFJlc3BvbnNlIhaC0+STAhAqDi92MS9z",
-            "cG90cy97aWR9QiVaI2dpdGh1Yi5jb20vTXJ1Vi1SUC9tcnV2LXBiLWdvL3Nw",
-            "b3RzYgZwcm90bzM="));
+            "bnNlIioKFEZldGNoQWxsU3BvdHNSZXF1ZXN0EhIKCmNodW5rX3NpemUYASAB",
+            "KA0ilAEKFUZldGNoQWxsU3BvdHNSZXNwb25zZRI7CgVzcG90cxgBIAMoCzIs",
+            "Lm1ydXYuc3BvdHMuRmV0Y2hBbGxTcG90c1Jlc3BvbnNlLlNwb3RzRW50cnka",
+            "PgoKU3BvdHNFbnRyeRILCgNrZXkYASABKA0SHwoFdmFsdWUYAiABKAsyEC5t",
+            "cnV2LnNwb3RzLlNwb3Q6AjgBMu0DChBNcnVWU3BvdHNTZXJ2aWNlEl4KCkNy",
+            "ZWF0ZVNwb3QSHS5tcnV2LnNwb3RzLkNyZWF0ZVNwb3RSZXF1ZXN0Gh4ubXJ1",
+            "di5zcG90cy5DcmVhdGVTcG90UmVzcG9uc2UiEYLT5JMCCyIJL3YxL3Nwb3Rz",
+            "EloKB0dldFNwb3QSGi5tcnV2LnNwb3RzLkdldFNwb3RSZXF1ZXN0GhsubXJ1",
+            "di5zcG90cy5HZXRTcG90UmVzcG9uc2UiFoLT5JMCEBIOL3YxL3Nwb3RzL3tp",
+            "ZH0SYwoKVXBkYXRlU3BvdBIdLm1ydXYuc3BvdHMuVXBkYXRlU3BvdFJlcXVl",
+            "c3QaHi5tcnV2LnNwb3RzLlVwZGF0ZVNwb3RSZXNwb25zZSIWgtPkkwIQMg4v",
+            "djEvc3BvdHMve2lkfRJjCgpEZWxldGVTcG90Eh0ubXJ1di5zcG90cy5EZWxl",
+            "dGVTcG90UmVxdWVzdBoeLm1ydXYuc3BvdHMuRGVsZXRlU3BvdFJlc3BvbnNl",
+            "IhaC0+STAhAqDi92MS9zcG90cy97aWR9ElMKCEZldGNoQWxsEiAubXJ1di5z",
+            "cG90cy5GZXRjaEFsbFNwb3RzUmVxdWVzdBohLm1ydXYuc3BvdHMuRmV0Y2hB",
+            "bGxTcG90c1Jlc3BvbnNlIgAwAUIlWiNnaXRodWIuY29tL01ydVYtUlAvbXJ1",
+            "di1wYi1nby9zcG90c2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -57,7 +63,9 @@ namespace Mruv.Spots {
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Spots.UpdateSpotRequest), global::Mruv.Spots.UpdateSpotRequest.Parser, new[]{ "Id", "Spot" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Spots.UpdateSpotResponse), global::Mruv.Spots.UpdateSpotResponse.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Spots.DeleteSpotRequest), global::Mruv.Spots.DeleteSpotRequest.Parser, new[]{ "Id" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Spots.DeleteSpotResponse), global::Mruv.Spots.DeleteSpotResponse.Parser, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Spots.DeleteSpotResponse), global::Mruv.Spots.DeleteSpotResponse.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Spots.FetchAllSpotsRequest), global::Mruv.Spots.FetchAllSpotsRequest.Parser, new[]{ "ChunkSize" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Spots.FetchAllSpotsResponse), global::Mruv.Spots.FetchAllSpotsResponse.Parser, new[]{ "Spots" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
           }));
     }
     #endregion
@@ -1460,6 +1468,262 @@ namespace Mruv.Spots {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Request message for rpc `FetchAllSpots`.
+  /// </summary>
+  public sealed partial class FetchAllSpotsRequest : pb::IMessage<FetchAllSpotsRequest> {
+    private static readonly pb::MessageParser<FetchAllSpotsRequest> _parser = new pb::MessageParser<FetchAllSpotsRequest>(() => new FetchAllSpotsRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<FetchAllSpotsRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.Spots.SpotsReflection.Descriptor.MessageTypes[9]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FetchAllSpotsRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FetchAllSpotsRequest(FetchAllSpotsRequest other) : this() {
+      chunkSize_ = other.chunkSize_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FetchAllSpotsRequest Clone() {
+      return new FetchAllSpotsRequest(this);
+    }
+
+    /// <summary>Field number for the "chunk_size" field.</summary>
+    public const int ChunkSizeFieldNumber = 1;
+    private uint chunkSize_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint ChunkSize {
+      get { return chunkSize_; }
+      set {
+        chunkSize_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as FetchAllSpotsRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(FetchAllSpotsRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (ChunkSize != other.ChunkSize) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (ChunkSize != 0) hash ^= ChunkSize.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (ChunkSize != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(ChunkSize);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (ChunkSize != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ChunkSize);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(FetchAllSpotsRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.ChunkSize != 0) {
+        ChunkSize = other.ChunkSize;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            ChunkSize = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Response message for rpc `FetchAllSpots`.
+  /// </summary>
+  public sealed partial class FetchAllSpotsResponse : pb::IMessage<FetchAllSpotsResponse> {
+    private static readonly pb::MessageParser<FetchAllSpotsResponse> _parser = new pb::MessageParser<FetchAllSpotsResponse>(() => new FetchAllSpotsResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<FetchAllSpotsResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.Spots.SpotsReflection.Descriptor.MessageTypes[10]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FetchAllSpotsResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FetchAllSpotsResponse(FetchAllSpotsResponse other) : this() {
+      spots_ = other.spots_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FetchAllSpotsResponse Clone() {
+      return new FetchAllSpotsResponse(this);
+    }
+
+    /// <summary>Field number for the "spots" field.</summary>
+    public const int SpotsFieldNumber = 1;
+    private static readonly pbc::MapField<uint, global::Mruv.Spots.Spot>.Codec _map_spots_codec
+        = new pbc::MapField<uint, global::Mruv.Spots.Spot>.Codec(pb::FieldCodec.ForUInt32(8), pb::FieldCodec.ForMessage(18, global::Mruv.Spots.Spot.Parser), 10);
+    private readonly pbc::MapField<uint, global::Mruv.Spots.Spot> spots_ = new pbc::MapField<uint, global::Mruv.Spots.Spot>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::MapField<uint, global::Mruv.Spots.Spot> Spots {
+      get { return spots_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as FetchAllSpotsResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(FetchAllSpotsResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!Spots.Equals(other.Spots)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= Spots.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      spots_.WriteTo(output, _map_spots_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += spots_.CalculateSize(_map_spots_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(FetchAllSpotsResponse other) {
+      if (other == null) {
+        return;
+      }
+      spots_.Add(other.spots_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            spots_.AddEntriesFrom(input, _map_spots_codec);
+            break;
+          }
         }
       }
     }

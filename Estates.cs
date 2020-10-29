@@ -25,67 +25,86 @@ namespace Mruv.Estates {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChVlc3RhdGVzL2VzdGF0ZXMucHJvdG8SDG1ydXYuZXN0YXRlcxocZ29vZ2xl",
-            "L2FwaS9hbm5vdGF0aW9ucy5wcm90bxoZZW50cmFuY2VzL2VudHJhbmNlcy5w",
-            "cm90bxoRZ2F0ZXMvZ2F0ZXMucHJvdG8ifAoGRXN0YXRlEgoKAmlkGAEgASgN",
-            "EgwKBG5hbWUYAiABKAkSEwoLZGVzY3JpcHRpb24YAyABKAkSEQoJZW50cmFu",
-            "Y2VzGAQgAygNEg0KBWdhdGVzGAUgAygNEg0KBXJvb21zGAYgAygNEhIKCnBy",
-            "b2R1Y3RfaWQYByABKA0iOAoTQ3JlYXRlRXN0YXRlUmVxdWVzdBIMCgRuYW1l",
-            "GAEgASgJEhMKC2Rlc2NyaXB0aW9uGAIgASgJIiIKFENyZWF0ZUVzdGF0ZVJl",
-            "c3BvbnNlEgoKAmlkGAEgASgNIh4KEEdldEVzdGF0ZVJlcXVlc3QSCgoCaWQY",
-            "ASABKA0iRAoTVXBkYXRlRXN0YXRlUmVxdWVzdBIKCgJpZBgBIAEoDRIMCgRu",
-            "YW1lGAIgASgJEhMKC2Rlc2NyaXB0aW9uGAMgASgJIhYKFFVwZGF0ZUVzdGF0",
-            "ZVJlc3BvbnNlIiEKE0RlbGV0ZUVzdGF0ZVJlcXVlc3QSCgoCaWQYASABKA0i",
-            "FgoURGVsZXRlRXN0YXRlUmVzcG9uc2UiMAoRR2V0RXN0YXRlc1JlcXVlc3QS",
-            "DAoEZnJvbRgBIAEoDRINCgVsaW1pdBgCIAEoDSI7ChJHZXRFc3RhdGVzUmVz",
-            "cG9uc2USJQoHZXN0YXRlcxgBIAMoCzIULm1ydXYuZXN0YXRlcy5Fc3RhdGUi",
-            "NAoOQWRkR2F0ZVJlcXVlc3QSEQoJZXN0YXRlX2lkGAEgASgNEg8KB2dhdGVf",
-            "aWQYAiABKA0iEQoPQWRkR2F0ZVJlc3BvbnNlIjcKEVJlbW92ZUdhdGVSZXF1",
-            "ZXN0EhEKCWVzdGF0ZV9pZBgBIAEoDRIPCgdnYXRlX2lkGAIgASgNIhQKElJl",
-            "bW92ZUdhdGVSZXNwb25zZSIqChVHZXRFc3RhdGVHYXRlc1JlcXVlc3QSEQoJ",
-            "ZXN0YXRlX2lkGAEgASgNIjkKFkdldEVzdGF0ZUdhdGVzUmVzcG9uc2USHwoF",
-            "Z2F0ZXMYASADKAsyEC5tcnV2LmdhdGVzLkdhdGUiPAoSQWRkRW50cmFuY2VS",
-            "ZXF1ZXN0EhEKCWVzdGF0ZV9pZBgBIAEoDRITCgtlbnRyYW5jZV9pZBgCIAEo",
-            "DSIVChNBZGRFbnRyYW5jZVJlc3BvbnNlIj8KFVJlbW92ZUVudHJhbmNlUmVx",
-            "dWVzdBIRCgllc3RhdGVfaWQYASABKA0SEwoLZW50cmFuY2VfaWQYAiABKA0i",
-            "GAoWUmVtb3ZlRW50cmFuY2VSZXNwb25zZSIuChlHZXRFc3RhdGVFbnRyYW5j",
-            "ZXNSZXF1ZXN0EhEKCWVzdGF0ZV9pZBgBIAEoDSJJChpHZXRFc3RhdGVFbnRy",
-            "YW5jZXNSZXNwb25zZRIrCgllbnRyYW5jZXMYASADKAsyGC5tcnV2LmVudHJh",
-            "bmNlcy5FbnRyYW5jZTLECgoRTXJ1VkVzdGF0ZVNlcnZpY2USagoMQ3JlYXRl",
-            "RXN0YXRlEiEubXJ1di5lc3RhdGVzLkNyZWF0ZUVzdGF0ZVJlcXVlc3QaIi5t",
-            "cnV2LmVzdGF0ZXMuQ3JlYXRlRXN0YXRlUmVzcG9uc2UiE4LT5JMCDSILL3Yx",
-            "L2VzdGF0ZXMSWwoJR2V0RXN0YXRlEh4ubXJ1di5lc3RhdGVzLkdldEVzdGF0",
-            "ZVJlcXVlc3QaFC5tcnV2LmVzdGF0ZXMuRXN0YXRlIhiC0+STAhISEC92MS9l",
-            "c3RhdGVzL3tpZH0SbwoMVXBkYXRlRXN0YXRlEiEubXJ1di5lc3RhdGVzLlVw",
-            "ZGF0ZUVzdGF0ZVJlcXVlc3QaIi5tcnV2LmVzdGF0ZXMuVXBkYXRlRXN0YXRl",
-            "UmVzcG9uc2UiGILT5JMCEjIQL3YxL2VzdGF0ZXMve2lkfRJvCgxEZWxldGVF",
-            "c3RhdGUSIS5tcnV2LmVzdGF0ZXMuRGVsZXRlRXN0YXRlUmVxdWVzdBoiLm1y",
-            "dXYuZXN0YXRlcy5EZWxldGVFc3RhdGVSZXNwb25zZSIYgtPkkwISKhAvdjEv",
-            "ZXN0YXRlcy97aWR9EmQKCkdldEVzdGF0ZXMSHy5tcnV2LmVzdGF0ZXMuR2V0",
-            "RXN0YXRlc1JlcXVlc3QaIC5tcnV2LmVzdGF0ZXMuR2V0RXN0YXRlc1Jlc3Bv",
-            "bnNlIhOC0+STAg0SCy92MS9lc3RhdGVzEm0KB0FkZEdhdGUSHC5tcnV2LmVz",
-            "dGF0ZXMuQWRkR2F0ZVJlcXVlc3QaHS5tcnV2LmVzdGF0ZXMuQWRkR2F0ZVJl",
-            "c3BvbnNlIiWC0+STAh8iHS92MS9lc3RhdGVzL3tlc3RhdGVfaWR9L2dhdGVz",
-            "EoABCgpSZW1vdmVHYXRlEh8ubXJ1di5lc3RhdGVzLlJlbW92ZUdhdGVSZXF1",
-            "ZXN0GiAubXJ1di5lc3RhdGVzLlJlbW92ZUdhdGVSZXNwb25zZSIvgtPkkwIp",
-            "KicvdjEvZXN0YXRlcy97ZXN0YXRlX2lkfS9nYXRlcy97Z2F0ZV9pZH0SgQEK",
-            "DkdldEVzdGF0ZUdhdGVzEiMubXJ1di5lc3RhdGVzLkdldEVzdGF0ZUdhdGVz",
-            "UmVxdWVzdBokLm1ydXYuZXN0YXRlcy5HZXRFc3RhdGVHYXRlc1Jlc3BvbnNl",
-            "IiSC0+STAh4SHC92MS9lc3RhdGUve2VzdGF0ZV9pZH0vZ2F0ZXMSfQoLQWRk",
-            "RW50cmFuY2USIC5tcnV2LmVzdGF0ZXMuQWRkRW50cmFuY2VSZXF1ZXN0GiEu",
-            "bXJ1di5lc3RhdGVzLkFkZEVudHJhbmNlUmVzcG9uc2UiKYLT5JMCIyIhL3Yx",
-            "L2VzdGF0ZXMve2VzdGF0ZV9pZH0vZW50cmFuY2VzEpQBCg5SZW1vdmVFbnRy",
-            "YW5jZRIjLm1ydXYuZXN0YXRlcy5SZW1vdmVFbnRyYW5jZVJlcXVlc3QaJC5t",
-            "cnV2LmVzdGF0ZXMuUmVtb3ZlRW50cmFuY2VSZXNwb25zZSI3gtPkkwIxKi8v",
-            "djEvZXN0YXRlcy97ZXN0YXRlX2lkfS9lbnRyYW5jZXMve2VudHJhbmNlX2lk",
-            "fRKRAQoSR2V0RXN0YXRlRW50cmFuY2VzEicubXJ1di5lc3RhdGVzLkdldEVz",
-            "dGF0ZUVudHJhbmNlc1JlcXVlc3QaKC5tcnV2LmVzdGF0ZXMuR2V0RXN0YXRl",
-            "RW50cmFuY2VzUmVzcG9uc2UiKILT5JMCIhIgL3YxL2VzdGF0ZS97ZXN0YXRl",
-            "X2lkfS9lbnRyYW5jZXNCJ1olZ2l0aHViLmNvbS9NcnVWLVJQL21ydXYtcGIt",
-            "Z28vZXN0YXRlc2IGcHJvdG8z"));
+            "L2FwaS9hbm5vdGF0aW9ucy5wcm90bxoVb2JqZWN0cy9vYmplY3RzLnByb3Rv",
+            "GhllbnRyYW5jZXMvZW50cmFuY2VzLnByb3RvGhFnYXRlcy9nYXRlcy5wcm90",
+            "byJ8CgZFc3RhdGUSCgoCaWQYASABKA0SDAoEbmFtZRgCIAEoCRITCgtkZXNj",
+            "cmlwdGlvbhgDIAEoCRIRCgllbnRyYW5jZXMYBCADKA0SDQoFZ2F0ZXMYBSAD",
+            "KA0SDQoFcm9vbXMYBiADKA0SEgoKcHJvZHVjdF9pZBgHIAEoDSLYBAoKRnVs",
+            "bEVzdGF0ZRIKCgJpZBgBIAEoDRIMCgRuYW1lGAIgASgJEhMKC2Rlc2NyaXB0",
+            "aW9uGAMgASgJEjYKB29iamVjdHMYBCADKAsyJS5tcnV2LmVzdGF0ZXMuRnVs",
+            "bEVzdGF0ZS5PYmplY3RzRW50cnkSSQoRcmVtb3ZlZF9idWlsZGluZ3MYBSAD",
+            "KAsyLi5tcnV2LmVzdGF0ZXMuRnVsbEVzdGF0ZS5SZW1vdmVkQnVpbGRpbmdz",
+            "RW50cnkSOgoJZW50cmFuY2VzGAYgAygLMicubXJ1di5lc3RhdGVzLkZ1bGxF",
+            "c3RhdGUuRW50cmFuY2VzRW50cnkSMgoFZ2F0ZXMYByADKAsyIy5tcnV2LmVz",
+            "dGF0ZXMuRnVsbEVzdGF0ZS5HYXRlc0VudHJ5GkQKDE9iamVjdHNFbnRyeRIL",
+            "CgNrZXkYASABKA0SIwoFdmFsdWUYAiABKAsyFC5tcnV2Lm9iamVjdHMuT2Jq",
+            "ZWN0OgI4ARpWChVSZW1vdmVkQnVpbGRpbmdzRW50cnkSCwoDa2V5GAEgASgN",
+            "EiwKBXZhbHVlGAIgASgLMh0ubXJ1di5vYmplY3RzLlJlbW92ZWRCdWlsZGlu",
+            "ZzoCOAEaSgoORW50cmFuY2VzRW50cnkSCwoDa2V5GAEgASgNEicKBXZhbHVl",
+            "GAIgASgLMhgubXJ1di5lbnRyYW5jZXMuRW50cmFuY2U6AjgBGj4KCkdhdGVz",
+            "RW50cnkSCwoDa2V5GAEgASgNEh8KBXZhbHVlGAIgASgLMhAubXJ1di5nYXRl",
+            "cy5HYXRlOgI4ASI4ChNDcmVhdGVFc3RhdGVSZXF1ZXN0EgwKBG5hbWUYASAB",
+            "KAkSEwoLZGVzY3JpcHRpb24YAiABKAkiIgoUQ3JlYXRlRXN0YXRlUmVzcG9u",
+            "c2USCgoCaWQYASABKA0iHgoQR2V0RXN0YXRlUmVxdWVzdBIKCgJpZBgBIAEo",
+            "DSJEChNVcGRhdGVFc3RhdGVSZXF1ZXN0EgoKAmlkGAEgASgNEgwKBG5hbWUY",
+            "AiABKAkSEwoLZGVzY3JpcHRpb24YAyABKAkiFgoUVXBkYXRlRXN0YXRlUmVz",
+            "cG9uc2UiIQoTRGVsZXRlRXN0YXRlUmVxdWVzdBIKCgJpZBgBIAEoDSIWChRE",
+            "ZWxldGVFc3RhdGVSZXNwb25zZSIwChFHZXRFc3RhdGVzUmVxdWVzdBIMCgRm",
+            "cm9tGAEgASgNEg0KBWxpbWl0GAIgASgNIjsKEkdldEVzdGF0ZXNSZXNwb25z",
+            "ZRIlCgdlc3RhdGVzGAEgAygLMhQubXJ1di5lc3RhdGVzLkVzdGF0ZSI0Cg5B",
+            "ZGRHYXRlUmVxdWVzdBIRCgllc3RhdGVfaWQYASABKA0SDwoHZ2F0ZV9pZBgC",
+            "IAEoDSIRCg9BZGRHYXRlUmVzcG9uc2UiNwoRUmVtb3ZlR2F0ZVJlcXVlc3QS",
+            "EQoJZXN0YXRlX2lkGAEgASgNEg8KB2dhdGVfaWQYAiABKA0iFAoSUmVtb3Zl",
+            "R2F0ZVJlc3BvbnNlIioKFUdldEVzdGF0ZUdhdGVzUmVxdWVzdBIRCgllc3Rh",
+            "dGVfaWQYASABKA0iOQoWR2V0RXN0YXRlR2F0ZXNSZXNwb25zZRIfCgVnYXRl",
+            "cxgBIAMoCzIQLm1ydXYuZ2F0ZXMuR2F0ZSI8ChJBZGRFbnRyYW5jZVJlcXVl",
+            "c3QSEQoJZXN0YXRlX2lkGAEgASgNEhMKC2VudHJhbmNlX2lkGAIgASgNIhUK",
+            "E0FkZEVudHJhbmNlUmVzcG9uc2UiPwoVUmVtb3ZlRW50cmFuY2VSZXF1ZXN0",
+            "EhEKCWVzdGF0ZV9pZBgBIAEoDRITCgtlbnRyYW5jZV9pZBgCIAEoDSIYChZS",
+            "ZW1vdmVFbnRyYW5jZVJlc3BvbnNlIi4KGUdldEVzdGF0ZUVudHJhbmNlc1Jl",
+            "cXVlc3QSEQoJZXN0YXRlX2lkGAEgASgNIkkKGkdldEVzdGF0ZUVudHJhbmNl",
+            "c1Jlc3BvbnNlEisKCWVudHJhbmNlcxgBIAMoCzIYLm1ydXYuZW50cmFuY2Vz",
+            "LkVudHJhbmNlIiwKFkZldGNoQWxsRXN0YXRlc1JlcXVlc3QSEgoKY2h1bmtf",
+            "c2l6ZRgBIAEoDSJEChdGZXRjaEFsbEVzdGF0ZXNSZXNwb25zZRIpCgdlc3Rh",
+            "dGVzGAEgAygLMhgubXJ1di5lc3RhdGVzLkZ1bGxFc3RhdGUyoQsKEU1ydVZF",
+            "c3RhdGVTZXJ2aWNlEmoKDENyZWF0ZUVzdGF0ZRIhLm1ydXYuZXN0YXRlcy5D",
+            "cmVhdGVFc3RhdGVSZXF1ZXN0GiIubXJ1di5lc3RhdGVzLkNyZWF0ZUVzdGF0",
+            "ZVJlc3BvbnNlIhOC0+STAg0iCy92MS9lc3RhdGVzElsKCUdldEVzdGF0ZRIe",
+            "Lm1ydXYuZXN0YXRlcy5HZXRFc3RhdGVSZXF1ZXN0GhQubXJ1di5lc3RhdGVz",
+            "LkVzdGF0ZSIYgtPkkwISEhAvdjEvZXN0YXRlcy97aWR9Em8KDFVwZGF0ZUVz",
+            "dGF0ZRIhLm1ydXYuZXN0YXRlcy5VcGRhdGVFc3RhdGVSZXF1ZXN0GiIubXJ1",
+            "di5lc3RhdGVzLlVwZGF0ZUVzdGF0ZVJlc3BvbnNlIhiC0+STAhIyEC92MS9l",
+            "c3RhdGVzL3tpZH0SbwoMRGVsZXRlRXN0YXRlEiEubXJ1di5lc3RhdGVzLkRl",
+            "bGV0ZUVzdGF0ZVJlcXVlc3QaIi5tcnV2LmVzdGF0ZXMuRGVsZXRlRXN0YXRl",
+            "UmVzcG9uc2UiGILT5JMCEioQL3YxL2VzdGF0ZXMve2lkfRJkCgpHZXRFc3Rh",
+            "dGVzEh8ubXJ1di5lc3RhdGVzLkdldEVzdGF0ZXNSZXF1ZXN0GiAubXJ1di5l",
+            "c3RhdGVzLkdldEVzdGF0ZXNSZXNwb25zZSITgtPkkwINEgsvdjEvZXN0YXRl",
+            "cxJtCgdBZGRHYXRlEhwubXJ1di5lc3RhdGVzLkFkZEdhdGVSZXF1ZXN0Gh0u",
+            "bXJ1di5lc3RhdGVzLkFkZEdhdGVSZXNwb25zZSIlgtPkkwIfIh0vdjEvZXN0",
+            "YXRlcy97ZXN0YXRlX2lkfS9nYXRlcxKAAQoKUmVtb3ZlR2F0ZRIfLm1ydXYu",
+            "ZXN0YXRlcy5SZW1vdmVHYXRlUmVxdWVzdBogLm1ydXYuZXN0YXRlcy5SZW1v",
+            "dmVHYXRlUmVzcG9uc2UiL4LT5JMCKSonL3YxL2VzdGF0ZXMve2VzdGF0ZV9p",
+            "ZH0vZ2F0ZXMve2dhdGVfaWR9EoEBCg5HZXRFc3RhdGVHYXRlcxIjLm1ydXYu",
+            "ZXN0YXRlcy5HZXRFc3RhdGVHYXRlc1JlcXVlc3QaJC5tcnV2LmVzdGF0ZXMu",
+            "R2V0RXN0YXRlR2F0ZXNSZXNwb25zZSIkgtPkkwIeEhwvdjEvZXN0YXRlL3tl",
+            "c3RhdGVfaWR9L2dhdGVzEn0KC0FkZEVudHJhbmNlEiAubXJ1di5lc3RhdGVz",
+            "LkFkZEVudHJhbmNlUmVxdWVzdBohLm1ydXYuZXN0YXRlcy5BZGRFbnRyYW5j",
+            "ZVJlc3BvbnNlIimC0+STAiMiIS92MS9lc3RhdGVzL3tlc3RhdGVfaWR9L2Vu",
+            "dHJhbmNlcxKUAQoOUmVtb3ZlRW50cmFuY2USIy5tcnV2LmVzdGF0ZXMuUmVt",
+            "b3ZlRW50cmFuY2VSZXF1ZXN0GiQubXJ1di5lc3RhdGVzLlJlbW92ZUVudHJh",
+            "bmNlUmVzcG9uc2UiN4LT5JMCMSovL3YxL2VzdGF0ZXMve2VzdGF0ZV9pZH0v",
+            "ZW50cmFuY2VzL3tlbnRyYW5jZV9pZH0SkQEKEkdldEVzdGF0ZUVudHJhbmNl",
+            "cxInLm1ydXYuZXN0YXRlcy5HZXRFc3RhdGVFbnRyYW5jZXNSZXF1ZXN0Gigu",
+            "bXJ1di5lc3RhdGVzLkdldEVzdGF0ZUVudHJhbmNlc1Jlc3BvbnNlIiiC0+ST",
+            "AiISIC92MS9lc3RhdGUve2VzdGF0ZV9pZH0vZW50cmFuY2VzElsKCEZldGNo",
+            "QWxsEiQubXJ1di5lc3RhdGVzLkZldGNoQWxsRXN0YXRlc1JlcXVlc3QaJS5t",
+            "cnV2LmVzdGF0ZXMuRmV0Y2hBbGxFc3RhdGVzUmVzcG9uc2UiADABQidaJWdp",
+            "dGh1Yi5jb20vTXJ1Vi1SUC9tcnV2LXBiLWdvL2VzdGF0ZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, global::Mruv.Entrances.EntrancesReflection.Descriptor, global::Mruv.Gates.GatesReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, global::Mruv.Objects.ObjectsReflection.Descriptor, global::Mruv.Entrances.EntrancesReflection.Descriptor, global::Mruv.Gates.GatesReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.Estate), global::Mruv.Estates.Estate.Parser, new[]{ "Id", "Name", "Description", "Entrances", "Gates", "Rooms", "ProductId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.FullEstate), global::Mruv.Estates.FullEstate.Parser, new[]{ "Id", "Name", "Description", "Objects", "RemovedBuildings", "Entrances", "Gates" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, null, null, null, }),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.CreateEstateRequest), global::Mruv.Estates.CreateEstateRequest.Parser, new[]{ "Name", "Description" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.CreateEstateResponse), global::Mruv.Estates.CreateEstateResponse.Parser, new[]{ "Id" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.GetEstateRequest), global::Mruv.Estates.GetEstateRequest.Parser, new[]{ "Id" }, null, null, null),
@@ -106,7 +125,9 @@ namespace Mruv.Estates {
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.RemoveEntranceRequest), global::Mruv.Estates.RemoveEntranceRequest.Parser, new[]{ "EstateId", "EntranceId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.RemoveEntranceResponse), global::Mruv.Estates.RemoveEntranceResponse.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.GetEstateEntrancesRequest), global::Mruv.Estates.GetEstateEntrancesRequest.Parser, new[]{ "EstateId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.GetEstateEntrancesResponse), global::Mruv.Estates.GetEstateEntrancesResponse.Parser, new[]{ "Entrances" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.GetEstateEntrancesResponse), global::Mruv.Estates.GetEstateEntrancesResponse.Parser, new[]{ "Entrances" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.FetchAllEstatesRequest), global::Mruv.Estates.FetchAllEstatesRequest.Parser, new[]{ "ChunkSize" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Estates.FetchAllEstatesResponse), global::Mruv.Estates.FetchAllEstatesResponse.Parser, new[]{ "Estates" }, null, null, null)
           }));
     }
     #endregion
@@ -389,6 +410,274 @@ namespace Mruv.Estates {
 
   }
 
+  public sealed partial class FullEstate : pb::IMessage<FullEstate> {
+    private static readonly pb::MessageParser<FullEstate> _parser = new pb::MessageParser<FullEstate>(() => new FullEstate());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<FullEstate> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.Estates.EstatesReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FullEstate() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FullEstate(FullEstate other) : this() {
+      id_ = other.id_;
+      name_ = other.name_;
+      description_ = other.description_;
+      objects_ = other.objects_.Clone();
+      removedBuildings_ = other.removedBuildings_.Clone();
+      entrances_ = other.entrances_.Clone();
+      gates_ = other.gates_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FullEstate Clone() {
+      return new FullEstate(this);
+    }
+
+    /// <summary>Field number for the "id" field.</summary>
+    public const int IdFieldNumber = 1;
+    private uint id_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint Id {
+      get { return id_; }
+      set {
+        id_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "name" field.</summary>
+    public const int NameFieldNumber = 2;
+    private string name_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Name {
+      get { return name_; }
+      set {
+        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "description" field.</summary>
+    public const int DescriptionFieldNumber = 3;
+    private string description_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Description {
+      get { return description_; }
+      set {
+        description_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "objects" field.</summary>
+    public const int ObjectsFieldNumber = 4;
+    private static readonly pbc::MapField<uint, global::Mruv.Objects.Object>.Codec _map_objects_codec
+        = new pbc::MapField<uint, global::Mruv.Objects.Object>.Codec(pb::FieldCodec.ForUInt32(8), pb::FieldCodec.ForMessage(18, global::Mruv.Objects.Object.Parser), 34);
+    private readonly pbc::MapField<uint, global::Mruv.Objects.Object> objects_ = new pbc::MapField<uint, global::Mruv.Objects.Object>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::MapField<uint, global::Mruv.Objects.Object> Objects {
+      get { return objects_; }
+    }
+
+    /// <summary>Field number for the "removed_buildings" field.</summary>
+    public const int RemovedBuildingsFieldNumber = 5;
+    private static readonly pbc::MapField<uint, global::Mruv.Objects.RemovedBuilding>.Codec _map_removedBuildings_codec
+        = new pbc::MapField<uint, global::Mruv.Objects.RemovedBuilding>.Codec(pb::FieldCodec.ForUInt32(8), pb::FieldCodec.ForMessage(18, global::Mruv.Objects.RemovedBuilding.Parser), 42);
+    private readonly pbc::MapField<uint, global::Mruv.Objects.RemovedBuilding> removedBuildings_ = new pbc::MapField<uint, global::Mruv.Objects.RemovedBuilding>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::MapField<uint, global::Mruv.Objects.RemovedBuilding> RemovedBuildings {
+      get { return removedBuildings_; }
+    }
+
+    /// <summary>Field number for the "entrances" field.</summary>
+    public const int EntrancesFieldNumber = 6;
+    private static readonly pbc::MapField<uint, global::Mruv.Entrances.Entrance>.Codec _map_entrances_codec
+        = new pbc::MapField<uint, global::Mruv.Entrances.Entrance>.Codec(pb::FieldCodec.ForUInt32(8), pb::FieldCodec.ForMessage(18, global::Mruv.Entrances.Entrance.Parser), 50);
+    private readonly pbc::MapField<uint, global::Mruv.Entrances.Entrance> entrances_ = new pbc::MapField<uint, global::Mruv.Entrances.Entrance>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::MapField<uint, global::Mruv.Entrances.Entrance> Entrances {
+      get { return entrances_; }
+    }
+
+    /// <summary>Field number for the "gates" field.</summary>
+    public const int GatesFieldNumber = 7;
+    private static readonly pbc::MapField<uint, global::Mruv.Gates.Gate>.Codec _map_gates_codec
+        = new pbc::MapField<uint, global::Mruv.Gates.Gate>.Codec(pb::FieldCodec.ForUInt32(8), pb::FieldCodec.ForMessage(18, global::Mruv.Gates.Gate.Parser), 58);
+    private readonly pbc::MapField<uint, global::Mruv.Gates.Gate> gates_ = new pbc::MapField<uint, global::Mruv.Gates.Gate>();
+    /// <summary>
+    /// TODO: map&lt;uint32, mruv.plots.Plot> rooms = 8;
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::MapField<uint, global::Mruv.Gates.Gate> Gates {
+      get { return gates_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as FullEstate);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(FullEstate other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Id != other.Id) return false;
+      if (Name != other.Name) return false;
+      if (Description != other.Description) return false;
+      if (!Objects.Equals(other.Objects)) return false;
+      if (!RemovedBuildings.Equals(other.RemovedBuildings)) return false;
+      if (!Entrances.Equals(other.Entrances)) return false;
+      if (!Gates.Equals(other.Gates)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Id != 0) hash ^= Id.GetHashCode();
+      if (Name.Length != 0) hash ^= Name.GetHashCode();
+      if (Description.Length != 0) hash ^= Description.GetHashCode();
+      hash ^= Objects.GetHashCode();
+      hash ^= RemovedBuildings.GetHashCode();
+      hash ^= Entrances.GetHashCode();
+      hash ^= Gates.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Id != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Id);
+      }
+      if (Name.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Name);
+      }
+      if (Description.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Description);
+      }
+      objects_.WriteTo(output, _map_objects_codec);
+      removedBuildings_.WriteTo(output, _map_removedBuildings_codec);
+      entrances_.WriteTo(output, _map_entrances_codec);
+      gates_.WriteTo(output, _map_gates_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Id != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Id);
+      }
+      if (Name.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+      }
+      if (Description.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Description);
+      }
+      size += objects_.CalculateSize(_map_objects_codec);
+      size += removedBuildings_.CalculateSize(_map_removedBuildings_codec);
+      size += entrances_.CalculateSize(_map_entrances_codec);
+      size += gates_.CalculateSize(_map_gates_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(FullEstate other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Id != 0) {
+        Id = other.Id;
+      }
+      if (other.Name.Length != 0) {
+        Name = other.Name;
+      }
+      if (other.Description.Length != 0) {
+        Description = other.Description;
+      }
+      objects_.Add(other.objects_);
+      removedBuildings_.Add(other.removedBuildings_);
+      entrances_.Add(other.entrances_);
+      gates_.Add(other.gates_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Id = input.ReadUInt32();
+            break;
+          }
+          case 18: {
+            Name = input.ReadString();
+            break;
+          }
+          case 26: {
+            Description = input.ReadString();
+            break;
+          }
+          case 34: {
+            objects_.AddEntriesFrom(input, _map_objects_codec);
+            break;
+          }
+          case 42: {
+            removedBuildings_.AddEntriesFrom(input, _map_removedBuildings_codec);
+            break;
+          }
+          case 50: {
+            entrances_.AddEntriesFrom(input, _map_entrances_codec);
+            break;
+          }
+          case 58: {
+            gates_.AddEntriesFrom(input, _map_gates_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
   /// <summary>
   /// Request message for rpc `CreateEstate`.
   /// </summary>
@@ -400,7 +689,7 @@ namespace Mruv.Estates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Estates.EstatesReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Mruv.Estates.EstatesReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -560,7 +849,7 @@ namespace Mruv.Estates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Estates.EstatesReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Mruv.Estates.EstatesReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -692,7 +981,7 @@ namespace Mruv.Estates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Estates.EstatesReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Mruv.Estates.EstatesReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -824,7 +1113,7 @@ namespace Mruv.Estates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Estates.EstatesReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Mruv.Estates.EstatesReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1012,7 +1301,7 @@ namespace Mruv.Estates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Estates.EstatesReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Mruv.Estates.EstatesReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1116,7 +1405,7 @@ namespace Mruv.Estates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Estates.EstatesReflection.Descriptor.MessageTypes[6]; }
+      get { return global::Mruv.Estates.EstatesReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1248,7 +1537,7 @@ namespace Mruv.Estates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Estates.EstatesReflection.Descriptor.MessageTypes[7]; }
+      get { return global::Mruv.Estates.EstatesReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1352,7 +1641,7 @@ namespace Mruv.Estates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Estates.EstatesReflection.Descriptor.MessageTypes[8]; }
+      get { return global::Mruv.Estates.EstatesReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1512,7 +1801,7 @@ namespace Mruv.Estates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Estates.EstatesReflection.Descriptor.MessageTypes[9]; }
+      get { return global::Mruv.Estates.EstatesReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1636,7 +1925,7 @@ namespace Mruv.Estates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Estates.EstatesReflection.Descriptor.MessageTypes[10]; }
+      get { return global::Mruv.Estates.EstatesReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1796,7 +2085,7 @@ namespace Mruv.Estates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Estates.EstatesReflection.Descriptor.MessageTypes[11]; }
+      get { return global::Mruv.Estates.EstatesReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1900,7 +2189,7 @@ namespace Mruv.Estates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Estates.EstatesReflection.Descriptor.MessageTypes[12]; }
+      get { return global::Mruv.Estates.EstatesReflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2060,7 +2349,7 @@ namespace Mruv.Estates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Estates.EstatesReflection.Descriptor.MessageTypes[13]; }
+      get { return global::Mruv.Estates.EstatesReflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2164,7 +2453,7 @@ namespace Mruv.Estates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Estates.EstatesReflection.Descriptor.MessageTypes[14]; }
+      get { return global::Mruv.Estates.EstatesReflection.Descriptor.MessageTypes[15]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2296,7 +2585,7 @@ namespace Mruv.Estates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Estates.EstatesReflection.Descriptor.MessageTypes[15]; }
+      get { return global::Mruv.Estates.EstatesReflection.Descriptor.MessageTypes[16]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2420,7 +2709,7 @@ namespace Mruv.Estates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Estates.EstatesReflection.Descriptor.MessageTypes[16]; }
+      get { return global::Mruv.Estates.EstatesReflection.Descriptor.MessageTypes[17]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2580,7 +2869,7 @@ namespace Mruv.Estates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Estates.EstatesReflection.Descriptor.MessageTypes[17]; }
+      get { return global::Mruv.Estates.EstatesReflection.Descriptor.MessageTypes[18]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2684,7 +2973,7 @@ namespace Mruv.Estates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Estates.EstatesReflection.Descriptor.MessageTypes[18]; }
+      get { return global::Mruv.Estates.EstatesReflection.Descriptor.MessageTypes[19]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2844,7 +3133,7 @@ namespace Mruv.Estates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Estates.EstatesReflection.Descriptor.MessageTypes[19]; }
+      get { return global::Mruv.Estates.EstatesReflection.Descriptor.MessageTypes[20]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2948,7 +3237,7 @@ namespace Mruv.Estates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Estates.EstatesReflection.Descriptor.MessageTypes[20]; }
+      get { return global::Mruv.Estates.EstatesReflection.Descriptor.MessageTypes[21]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3080,7 +3369,7 @@ namespace Mruv.Estates {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.Estates.EstatesReflection.Descriptor.MessageTypes[21]; }
+      get { return global::Mruv.Estates.EstatesReflection.Descriptor.MessageTypes[22]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3185,6 +3474,262 @@ namespace Mruv.Estates {
             break;
           case 10: {
             entrances_.AddEntriesFrom(input, _repeated_entrances_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Request message for rpc `FetchAll`.
+  /// </summary>
+  public sealed partial class FetchAllEstatesRequest : pb::IMessage<FetchAllEstatesRequest> {
+    private static readonly pb::MessageParser<FetchAllEstatesRequest> _parser = new pb::MessageParser<FetchAllEstatesRequest>(() => new FetchAllEstatesRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<FetchAllEstatesRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.Estates.EstatesReflection.Descriptor.MessageTypes[23]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FetchAllEstatesRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FetchAllEstatesRequest(FetchAllEstatesRequest other) : this() {
+      chunkSize_ = other.chunkSize_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FetchAllEstatesRequest Clone() {
+      return new FetchAllEstatesRequest(this);
+    }
+
+    /// <summary>Field number for the "chunk_size" field.</summary>
+    public const int ChunkSizeFieldNumber = 1;
+    private uint chunkSize_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint ChunkSize {
+      get { return chunkSize_; }
+      set {
+        chunkSize_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as FetchAllEstatesRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(FetchAllEstatesRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (ChunkSize != other.ChunkSize) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (ChunkSize != 0) hash ^= ChunkSize.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (ChunkSize != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(ChunkSize);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (ChunkSize != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ChunkSize);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(FetchAllEstatesRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.ChunkSize != 0) {
+        ChunkSize = other.ChunkSize;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            ChunkSize = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Response message for rpc `FetchAll`.
+  /// </summary>
+  public sealed partial class FetchAllEstatesResponse : pb::IMessage<FetchAllEstatesResponse> {
+    private static readonly pb::MessageParser<FetchAllEstatesResponse> _parser = new pb::MessageParser<FetchAllEstatesResponse>(() => new FetchAllEstatesResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<FetchAllEstatesResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Mruv.Estates.EstatesReflection.Descriptor.MessageTypes[24]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FetchAllEstatesResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FetchAllEstatesResponse(FetchAllEstatesResponse other) : this() {
+      estates_ = other.estates_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FetchAllEstatesResponse Clone() {
+      return new FetchAllEstatesResponse(this);
+    }
+
+    /// <summary>Field number for the "estates" field.</summary>
+    public const int EstatesFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Mruv.Estates.FullEstate> _repeated_estates_codec
+        = pb::FieldCodec.ForMessage(10, global::Mruv.Estates.FullEstate.Parser);
+    private readonly pbc::RepeatedField<global::Mruv.Estates.FullEstate> estates_ = new pbc::RepeatedField<global::Mruv.Estates.FullEstate>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Mruv.Estates.FullEstate> Estates {
+      get { return estates_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as FetchAllEstatesResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(FetchAllEstatesResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!estates_.Equals(other.estates_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= estates_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      estates_.WriteTo(output, _repeated_estates_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += estates_.CalculateSize(_repeated_estates_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(FetchAllEstatesResponse other) {
+      if (other == null) {
+        return;
+      }
+      estates_.Add(other.estates_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            estates_.AddEntriesFrom(input, _repeated_estates_codec);
             break;
           }
         }

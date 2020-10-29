@@ -23,6 +23,8 @@ namespace Mruv.Spots {
     static readonly grpc::Marshaller<global::Mruv.Spots.UpdateSpotResponse> __Marshaller_mruv_spots_UpdateSpotResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Spots.UpdateSpotResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.Spots.DeleteSpotRequest> __Marshaller_mruv_spots_DeleteSpotRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Spots.DeleteSpotRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.Spots.DeleteSpotResponse> __Marshaller_mruv_spots_DeleteSpotResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Spots.DeleteSpotResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Spots.FetchAllSpotsRequest> __Marshaller_mruv_spots_FetchAllSpotsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Spots.FetchAllSpotsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Spots.FetchAllSpotsResponse> __Marshaller_mruv_spots_FetchAllSpotsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Spots.FetchAllSpotsResponse.Parser.ParseFrom);
 
     static readonly grpc::Method<global::Mruv.Spots.CreateSpotRequest, global::Mruv.Spots.CreateSpotResponse> __Method_CreateSpot = new grpc::Method<global::Mruv.Spots.CreateSpotRequest, global::Mruv.Spots.CreateSpotResponse>(
         grpc::MethodType.Unary,
@@ -51,6 +53,13 @@ namespace Mruv.Spots {
         "DeleteSpot",
         __Marshaller_mruv_spots_DeleteSpotRequest,
         __Marshaller_mruv_spots_DeleteSpotResponse);
+
+    static readonly grpc::Method<global::Mruv.Spots.FetchAllSpotsRequest, global::Mruv.Spots.FetchAllSpotsResponse> __Method_FetchAll = new grpc::Method<global::Mruv.Spots.FetchAllSpotsRequest, global::Mruv.Spots.FetchAllSpotsResponse>(
+        grpc::MethodType.ServerStreaming,
+        __ServiceName,
+        "FetchAll",
+        __Marshaller_mruv_spots_FetchAllSpotsRequest,
+        __Marshaller_mruv_spots_FetchAllSpotsResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -102,6 +111,18 @@ namespace Mruv.Spots {
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       public virtual global::System.Threading.Tasks.Task<global::Mruv.Spots.DeleteSpotResponse> DeleteSpot(global::Mruv.Spots.DeleteSpotRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Fetch all spots.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="responseStream">Used for sending responses back to the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>A task indicating completion of the handler.</returns>
+      public virtual global::System.Threading.Tasks.Task FetchAll(global::Mruv.Spots.FetchAllSpotsRequest request, grpc::IServerStreamWriter<global::Mruv.Spots.FetchAllSpotsResponse> responseStream, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -307,6 +328,28 @@ namespace Mruv.Spots {
       {
         return CallInvoker.AsyncUnaryCall(__Method_DeleteSpot, null, options, request);
       }
+      /// <summary>
+      /// Fetch all spots.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Spots.FetchAllSpotsResponse> FetchAll(global::Mruv.Spots.FetchAllSpotsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return FetchAll(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Fetch all spots.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Spots.FetchAllSpotsResponse> FetchAll(global::Mruv.Spots.FetchAllSpotsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncServerStreamingCall(__Method_FetchAll, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override MruVSpotsServiceClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -322,7 +365,8 @@ namespace Mruv.Spots {
           .AddMethod(__Method_CreateSpot, serviceImpl.CreateSpot)
           .AddMethod(__Method_GetSpot, serviceImpl.GetSpot)
           .AddMethod(__Method_UpdateSpot, serviceImpl.UpdateSpot)
-          .AddMethod(__Method_DeleteSpot, serviceImpl.DeleteSpot).Build();
+          .AddMethod(__Method_DeleteSpot, serviceImpl.DeleteSpot)
+          .AddMethod(__Method_FetchAll, serviceImpl.FetchAll).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
@@ -335,6 +379,7 @@ namespace Mruv.Spots {
       serviceBinder.AddMethod(__Method_GetSpot, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Spots.GetSpotRequest, global::Mruv.Spots.GetSpotResponse>(serviceImpl.GetSpot));
       serviceBinder.AddMethod(__Method_UpdateSpot, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Spots.UpdateSpotRequest, global::Mruv.Spots.UpdateSpotResponse>(serviceImpl.UpdateSpot));
       serviceBinder.AddMethod(__Method_DeleteSpot, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Spots.DeleteSpotRequest, global::Mruv.Spots.DeleteSpotResponse>(serviceImpl.DeleteSpot));
+      serviceBinder.AddMethod(__Method_FetchAll, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Mruv.Spots.FetchAllSpotsRequest, global::Mruv.Spots.FetchAllSpotsResponse>(serviceImpl.FetchAll));
     }
 
   }
