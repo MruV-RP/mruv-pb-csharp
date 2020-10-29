@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Mruv {
+namespace Mruv.Characters {
 
   /// <summary>Holder for reflection information generated from characters/characters.proto</summary>
   public static partial class CharactersReflection {
@@ -24,71 +24,75 @@ namespace Mruv {
     static CharactersReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChtjaGFyYWN0ZXJzL2NoYXJhY3RlcnMucHJvdG8SBG1ydXYaHGdvb2dsZS9h",
-            "cGkvYW5ub3RhdGlvbnMucHJvdG8aE2NvbW1vbi9oZWFsdGgucHJvdG8ioQEK",
-            "CUNoYXJhY3RlchIKCgJpZBgBIAEoDRIQCghvd25lcl9pZBgCIAEoDRISCgpm",
-            "aXJzdF9uYW1lGAMgASgJEhMKC3NlY29uZF9uYW1lGAQgASgJEgsKA2FnZRgF",
-            "IAEoDRILCgNzZXgYBiABKA0SEgoKY2xvdGhlc19pZBgHIAEoDRIJCgF4GAgg",
-            "ASgCEgkKAXkYCSABKAISCQoBehgKIAEoAiIZCgtDaGFyYWN0ZXJJRBIKCgJp",
-            "ZBgBIAEoDSJ5ChZDcmVhdGVDaGFyYWN0ZXJSZXF1ZXN0EgoKAmlkGAEgASgN",
-            "EhAKCG93bmVyX2lkGAIgASgNEhIKCmZpcnN0X25hbWUYAyABKAkSEwoLc2Vj",
-            "b25kX25hbWUYBCABKAkSCwoDYWdlGAUgASgNEgsKA3NleBgGIAEoDSIlChdD",
-            "cmVhdGVDaGFyYWN0ZXJSZXNwb25zZRIKCgJpZBgBIAEoDSIhChNHZXRDaGFy",
-            "YWN0ZXJSZXF1ZXN0EgoKAmlkGAEgASgNIqwBChRHZXRDaGFyYWN0ZXJSZXNw",
-            "b25zZRIKCgJpZBgBIAEoDRIQCghvd25lcl9pZBgCIAEoDRISCgpmaXJzdF9u",
-            "YW1lGAMgASgJEhMKC3NlY29uZF9uYW1lGAQgASgJEgsKA2FnZRgFIAEoDRIL",
-            "CgNzZXgYBiABKA0SEgoKY2xvdGhlc19pZBgHIAEoDRIJCgF4GAggASgCEgkK",
-            "AXkYCSABKAISCQoBehgKIAEoAiIkChZVcGRhdGVDaGFyYWN0ZXJSZXF1ZXN0",
-            "EgoKAmlkGAEgASgNIhkKF1VwZGF0ZUNoYXJhY3RlclJlc3BvbnNlIiQKFkRl",
-            "bGV0ZUNoYXJhY3RlclJlcXVlc3QSCgoCaWQYASABKA0iGQoXRGVsZXRlQ2hh",
-            "cmFjdGVyUmVzcG9uc2UiNgoUQ2hhbmdlQ2xvdGhlc1JlcXVlc3QSCgoCaWQY",
-            "ASABKA0SEgoKY2xvdGhlc19pZBgCIAEoDSIXChVDaGFuZ2VDbG90aGVzUmVz",
-            "cG9uc2UiOgoSRGVhdGhTdHJlYW1SZXF1ZXN0EiQKC2RlYXRoX3R5cGVzGAEg",
-            "AygOMg8ubXJ1di5EZWF0aFR5cGUiXgoTRGVhdGhTdHJlYW1SZXNwb25zZRIi",
-            "CgljaGFyYWN0ZXIYASABKAsyDy5tcnV2LkNoYXJhY3RlchIjCgpkZWF0aF90",
-            "eXBlGAIgASgOMg8ubXJ1di5EZWF0aFR5cGUqXgoJRGVhdGhUeXBlEhMKD0RF",
-            "QVRIX1RZUEVfTk9ORRAAEhEKDURFQVRIX1RZUEVfQlcQARIWChJERUFUSF9U",
-            "WVBFX0JXX0tJTEwQAhIRCg1ERUFUSF9UWVBFX0NLEAMyugcKFU1ydVZDaGFy",
-            "YWN0ZXJzU2VydmljZRJmCg9DcmVhdGVDaGFyYWN0ZXISHC5tcnV2LkNyZWF0",
-            "ZUNoYXJhY3RlclJlcXVlc3QaHS5tcnV2LkNyZWF0ZUNoYXJhY3RlclJlc3Bv",
-            "bnNlIhaC0+STAhAiDi92MS9jaGFyYWN0ZXJzEmIKDEdldENoYXJhY3RlchIZ",
-            "Lm1ydXYuR2V0Q2hhcmFjdGVyUmVxdWVzdBoaLm1ydXYuR2V0Q2hhcmFjdGVy",
-            "UmVzcG9uc2UiG4LT5JMCFRITL3YxL2NoYXJhY3RlcnMve2lkfRJrCg9VcGRh",
-            "dGVDaGFyYWN0ZXISHC5tcnV2LlVwZGF0ZUNoYXJhY3RlclJlcXVlc3QaHS5t",
-            "cnV2LlVwZGF0ZUNoYXJhY3RlclJlc3BvbnNlIhuC0+STAhUyEy92MS9jaGFy",
-            "YWN0ZXJzL3tpZH0SawoPRGVsZXRlQ2hhcmFjdGVyEhwubXJ1di5EZWxldGVD",
-            "aGFyYWN0ZXJSZXF1ZXN0Gh0ubXJ1di5EZWxldGVDaGFyYWN0ZXJSZXNwb25z",
-            "ZSIbgtPkkwIVKhMvdjEvY2hhcmFjdGVycy97aWR9EmkKFlBlcm1hbmVudENo",
-            "YXJhY3RlcktpbGwSES5tcnV2LkNoYXJhY3RlcklEGhEubXJ1di5DaGFyYWN0",
-            "ZXJJRCIpgtPkkwIjKiEvdjEvY2hhcmFjdGVycy9wZXJtYW5lbnRLaWxsL3tp",
-            "ZH0SeQoNQ2hhbmdlQ2xvdGhlcxIaLm1ydXYuQ2hhbmdlQ2xvdGhlc1JlcXVl",
-            "c3QaGy5tcnV2LkNoYW5nZUNsb3RoZXNSZXNwb25zZSIvgtPkkwIpGicvdjEv",
-            "Y2hhcmFjdGVyL3tpZH0vY2xvdGhlcy97Y2xvdGhlc19pZH0SRwoMRGVhdGhz",
-            "U3RyZWFtEhgubXJ1di5EZWF0aFN0cmVhbVJlcXVlc3QaGS5tcnV2LkRlYXRo",
-            "U3RyZWFtUmVzcG9uc2UiADABEmoKEEdldFNlcnZpY2VTdGF0dXMSGi5tcnV2",
-            "LlNlcnZpY2VTdGF0dXNSZXF1ZXN0GhsubXJ1di5TZXJ2aWNlU3RhdHVzUmVz",
-            "cG9uc2UiHYLT5JMCFxIVL3YxL2NoYXJhY3RlcnMvc3RhdHVzEmAKEUdldFNl",
-            "cnZpY2VWZXJzaW9uEhQubXJ1di5WZXJzaW9uUmVxdWVzdBoVLm1ydXYuVmVy",
-            "c2lvblJlc3BvbnNlIh6C0+STAhgSFi92MS9jaGFyYWN0ZXJzL3ZlcnNpb25C",
-            "KlooZ2l0aHViLmNvbS9NcnVWLVJQL21ydXYtcGItZ28vY2hhcmFjdGVyc2IG",
-            "cHJvdG8z"));
+            "ChtjaGFyYWN0ZXJzL2NoYXJhY3RlcnMucHJvdG8SD21ydXYuY2hhcmFjdGVy",
+            "cxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90bxoTY29tbW9uL2hlYWx0",
+            "aC5wcm90byKhAQoJQ2hhcmFjdGVyEgoKAmlkGAEgASgNEhAKCG93bmVyX2lk",
+            "GAIgASgNEhIKCmZpcnN0X25hbWUYAyABKAkSEwoLc2Vjb25kX25hbWUYBCAB",
+            "KAkSCwoDYWdlGAUgASgNEgsKA3NleBgGIAEoDRISCgpjbG90aGVzX2lkGAcg",
+            "ASgNEgkKAXgYCCABKAISCQoBeRgJIAEoAhIJCgF6GAogASgCIhkKC0NoYXJh",
+            "Y3RlcklEEgoKAmlkGAEgASgNInkKFkNyZWF0ZUNoYXJhY3RlclJlcXVlc3QS",
+            "CgoCaWQYASABKA0SEAoIb3duZXJfaWQYAiABKA0SEgoKZmlyc3RfbmFtZRgD",
+            "IAEoCRITCgtzZWNvbmRfbmFtZRgEIAEoCRILCgNhZ2UYBSABKA0SCwoDc2V4",
+            "GAYgASgNIiUKF0NyZWF0ZUNoYXJhY3RlclJlc3BvbnNlEgoKAmlkGAEgASgN",
+            "IiEKE0dldENoYXJhY3RlclJlcXVlc3QSCgoCaWQYASABKA0irAEKFEdldENo",
+            "YXJhY3RlclJlc3BvbnNlEgoKAmlkGAEgASgNEhAKCG93bmVyX2lkGAIgASgN",
+            "EhIKCmZpcnN0X25hbWUYAyABKAkSEwoLc2Vjb25kX25hbWUYBCABKAkSCwoD",
+            "YWdlGAUgASgNEgsKA3NleBgGIAEoDRISCgpjbG90aGVzX2lkGAcgASgNEgkK",
+            "AXgYCCABKAISCQoBeRgJIAEoAhIJCgF6GAogASgCIiQKFlVwZGF0ZUNoYXJh",
+            "Y3RlclJlcXVlc3QSCgoCaWQYASABKA0iGQoXVXBkYXRlQ2hhcmFjdGVyUmVz",
+            "cG9uc2UiJAoWRGVsZXRlQ2hhcmFjdGVyUmVxdWVzdBIKCgJpZBgBIAEoDSIZ",
+            "ChdEZWxldGVDaGFyYWN0ZXJSZXNwb25zZSI2ChRDaGFuZ2VDbG90aGVzUmVx",
+            "dWVzdBIKCgJpZBgBIAEoDRISCgpjbG90aGVzX2lkGAIgASgNIhcKFUNoYW5n",
+            "ZUNsb3RoZXNSZXNwb25zZSJFChJEZWF0aFN0cmVhbVJlcXVlc3QSLwoLZGVh",
+            "dGhfdHlwZXMYASADKA4yGi5tcnV2LmNoYXJhY3RlcnMuRGVhdGhUeXBlInQK",
+            "E0RlYXRoU3RyZWFtUmVzcG9uc2USLQoJY2hhcmFjdGVyGAEgASgLMhoubXJ1",
+            "di5jaGFyYWN0ZXJzLkNoYXJhY3RlchIuCgpkZWF0aF90eXBlGAIgASgOMhou",
+            "bXJ1di5jaGFyYWN0ZXJzLkRlYXRoVHlwZSpeCglEZWF0aFR5cGUSEwoPREVB",
+            "VEhfVFlQRV9OT05FEAASEQoNREVBVEhfVFlQRV9CVxABEhYKEkRFQVRIX1RZ",
+            "UEVfQldfS0lMTBACEhEKDURFQVRIX1RZUEVfQ0sQAzLXCAoVTXJ1VkNoYXJh",
+            "Y3RlcnNTZXJ2aWNlEnwKD0NyZWF0ZUNoYXJhY3RlchInLm1ydXYuY2hhcmFj",
+            "dGVycy5DcmVhdGVDaGFyYWN0ZXJSZXF1ZXN0GigubXJ1di5jaGFyYWN0ZXJz",
+            "LkNyZWF0ZUNoYXJhY3RlclJlc3BvbnNlIhaC0+STAhAiDi92MS9jaGFyYWN0",
+            "ZXJzEngKDEdldENoYXJhY3RlchIkLm1ydXYuY2hhcmFjdGVycy5HZXRDaGFy",
+            "YWN0ZXJSZXF1ZXN0GiUubXJ1di5jaGFyYWN0ZXJzLkdldENoYXJhY3RlclJl",
+            "c3BvbnNlIhuC0+STAhUSEy92MS9jaGFyYWN0ZXJzL3tpZH0SgQEKD1VwZGF0",
+            "ZUNoYXJhY3RlchInLm1ydXYuY2hhcmFjdGVycy5VcGRhdGVDaGFyYWN0ZXJS",
+            "ZXF1ZXN0GigubXJ1di5jaGFyYWN0ZXJzLlVwZGF0ZUNoYXJhY3RlclJlc3Bv",
+            "bnNlIhuC0+STAhUyEy92MS9jaGFyYWN0ZXJzL3tpZH0SgQEKD0RlbGV0ZUNo",
+            "YXJhY3RlchInLm1ydXYuY2hhcmFjdGVycy5EZWxldGVDaGFyYWN0ZXJSZXF1",
+            "ZXN0GigubXJ1di5jaGFyYWN0ZXJzLkRlbGV0ZUNoYXJhY3RlclJlc3BvbnNl",
+            "IhuC0+STAhUqEy92MS9jaGFyYWN0ZXJzL3tpZH0SfwoWUGVybWFuZW50Q2hh",
+            "cmFjdGVyS2lsbBIcLm1ydXYuY2hhcmFjdGVycy5DaGFyYWN0ZXJJRBocLm1y",
+            "dXYuY2hhcmFjdGVycy5DaGFyYWN0ZXJJRCIpgtPkkwIjKiEvdjEvY2hhcmFj",
+            "dGVycy9wZXJtYW5lbnRLaWxsL3tpZH0SjwEKDUNoYW5nZUNsb3RoZXMSJS5t",
+            "cnV2LmNoYXJhY3RlcnMuQ2hhbmdlQ2xvdGhlc1JlcXVlc3QaJi5tcnV2LmNo",
+            "YXJhY3RlcnMuQ2hhbmdlQ2xvdGhlc1Jlc3BvbnNlIi+C0+STAikaJy92MS9j",
+            "aGFyYWN0ZXIve2lkfS9jbG90aGVzL3tjbG90aGVzX2lkfRJdCgxEZWF0aHNT",
+            "dHJlYW0SIy5tcnV2LmNoYXJhY3RlcnMuRGVhdGhTdHJlYW1SZXF1ZXN0GiQu",
+            "bXJ1di5jaGFyYWN0ZXJzLkRlYXRoU3RyZWFtUmVzcG9uc2UiADABEmoKEEdl",
+            "dFNlcnZpY2VTdGF0dXMSGi5tcnV2LlNlcnZpY2VTdGF0dXNSZXF1ZXN0Ghsu",
+            "bXJ1di5TZXJ2aWNlU3RhdHVzUmVzcG9uc2UiHYLT5JMCFxIVL3YxL2NoYXJh",
+            "Y3RlcnMvc3RhdHVzEmAKEUdldFNlcnZpY2VWZXJzaW9uEhQubXJ1di5WZXJz",
+            "aW9uUmVxdWVzdBoVLm1ydXYuVmVyc2lvblJlc3BvbnNlIh6C0+STAhgSFi92",
+            "MS9jaGFyYWN0ZXJzL3ZlcnNpb25CKlooZ2l0aHViLmNvbS9NcnVWLVJQL21y",
+            "dXYtcGItZ28vY2hhcmFjdGVyc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, global::Mruv.HealthReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Mruv.DeathType), }, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Character), global::Mruv.Character.Parser, new[]{ "Id", "OwnerId", "FirstName", "SecondName", "Age", "Sex", "ClothesId", "X", "Y", "Z" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.CharacterID), global::Mruv.CharacterID.Parser, new[]{ "Id" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.CreateCharacterRequest), global::Mruv.CreateCharacterRequest.Parser, new[]{ "Id", "OwnerId", "FirstName", "SecondName", "Age", "Sex" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.CreateCharacterResponse), global::Mruv.CreateCharacterResponse.Parser, new[]{ "Id" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetCharacterRequest), global::Mruv.GetCharacterRequest.Parser, new[]{ "Id" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetCharacterResponse), global::Mruv.GetCharacterResponse.Parser, new[]{ "Id", "OwnerId", "FirstName", "SecondName", "Age", "Sex", "ClothesId", "X", "Y", "Z" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.UpdateCharacterRequest), global::Mruv.UpdateCharacterRequest.Parser, new[]{ "Id" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.UpdateCharacterResponse), global::Mruv.UpdateCharacterResponse.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.DeleteCharacterRequest), global::Mruv.DeleteCharacterRequest.Parser, new[]{ "Id" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.DeleteCharacterResponse), global::Mruv.DeleteCharacterResponse.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.ChangeClothesRequest), global::Mruv.ChangeClothesRequest.Parser, new[]{ "Id", "ClothesId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.ChangeClothesResponse), global::Mruv.ChangeClothesResponse.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.DeathStreamRequest), global::Mruv.DeathStreamRequest.Parser, new[]{ "DeathTypes" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.DeathStreamResponse), global::Mruv.DeathStreamResponse.Parser, new[]{ "Character", "DeathType" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Mruv.Characters.DeathType), }, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Characters.Character), global::Mruv.Characters.Character.Parser, new[]{ "Id", "OwnerId", "FirstName", "SecondName", "Age", "Sex", "ClothesId", "X", "Y", "Z" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Characters.CharacterID), global::Mruv.Characters.CharacterID.Parser, new[]{ "Id" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Characters.CreateCharacterRequest), global::Mruv.Characters.CreateCharacterRequest.Parser, new[]{ "Id", "OwnerId", "FirstName", "SecondName", "Age", "Sex" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Characters.CreateCharacterResponse), global::Mruv.Characters.CreateCharacterResponse.Parser, new[]{ "Id" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Characters.GetCharacterRequest), global::Mruv.Characters.GetCharacterRequest.Parser, new[]{ "Id" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Characters.GetCharacterResponse), global::Mruv.Characters.GetCharacterResponse.Parser, new[]{ "Id", "OwnerId", "FirstName", "SecondName", "Age", "Sex", "ClothesId", "X", "Y", "Z" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Characters.UpdateCharacterRequest), global::Mruv.Characters.UpdateCharacterRequest.Parser, new[]{ "Id" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Characters.UpdateCharacterResponse), global::Mruv.Characters.UpdateCharacterResponse.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Characters.DeleteCharacterRequest), global::Mruv.Characters.DeleteCharacterRequest.Parser, new[]{ "Id" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Characters.DeleteCharacterResponse), global::Mruv.Characters.DeleteCharacterResponse.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Characters.ChangeClothesRequest), global::Mruv.Characters.ChangeClothesRequest.Parser, new[]{ "Id", "ClothesId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Characters.ChangeClothesResponse), global::Mruv.Characters.ChangeClothesResponse.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Characters.DeathStreamRequest), global::Mruv.Characters.DeathStreamRequest.Parser, new[]{ "DeathTypes" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Characters.DeathStreamResponse), global::Mruv.Characters.DeathStreamResponse.Parser, new[]{ "Character", "DeathType" }, null, null, null)
           }));
     }
     #endregion
@@ -113,7 +117,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.CharactersReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Mruv.Characters.CharactersReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -497,7 +501,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.CharactersReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Mruv.Characters.CharactersReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -629,7 +633,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.CharactersReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Mruv.Characters.CharactersReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -901,7 +905,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.CharactersReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Mruv.Characters.CharactersReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1033,7 +1037,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.CharactersReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Mruv.Characters.CharactersReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1165,7 +1169,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.CharactersReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Mruv.Characters.CharactersReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1549,7 +1553,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.CharactersReflection.Descriptor.MessageTypes[6]; }
+      get { return global::Mruv.Characters.CharactersReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1681,7 +1685,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.CharactersReflection.Descriptor.MessageTypes[7]; }
+      get { return global::Mruv.Characters.CharactersReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1785,7 +1789,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.CharactersReflection.Descriptor.MessageTypes[8]; }
+      get { return global::Mruv.Characters.CharactersReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1917,7 +1921,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.CharactersReflection.Descriptor.MessageTypes[9]; }
+      get { return global::Mruv.Characters.CharactersReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2021,7 +2025,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.CharactersReflection.Descriptor.MessageTypes[10]; }
+      get { return global::Mruv.Characters.CharactersReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2181,7 +2185,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.CharactersReflection.Descriptor.MessageTypes[11]; }
+      get { return global::Mruv.Characters.CharactersReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2282,7 +2286,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.CharactersReflection.Descriptor.MessageTypes[12]; }
+      get { return global::Mruv.Characters.CharactersReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2310,11 +2314,11 @@ namespace Mruv {
 
     /// <summary>Field number for the "death_types" field.</summary>
     public const int DeathTypesFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Mruv.DeathType> _repeated_deathTypes_codec
-        = pb::FieldCodec.ForEnum(10, x => (int) x, x => (global::Mruv.DeathType) x);
-    private readonly pbc::RepeatedField<global::Mruv.DeathType> deathTypes_ = new pbc::RepeatedField<global::Mruv.DeathType>();
+    private static readonly pb::FieldCodec<global::Mruv.Characters.DeathType> _repeated_deathTypes_codec
+        = pb::FieldCodec.ForEnum(10, x => (int) x, x => (global::Mruv.Characters.DeathType) x);
+    private readonly pbc::RepeatedField<global::Mruv.Characters.DeathType> deathTypes_ = new pbc::RepeatedField<global::Mruv.Characters.DeathType>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Mruv.DeathType> DeathTypes {
+    public pbc::RepeatedField<global::Mruv.Characters.DeathType> DeathTypes {
       get { return deathTypes_; }
     }
 
@@ -2404,7 +2408,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.CharactersReflection.Descriptor.MessageTypes[13]; }
+      get { return global::Mruv.Characters.CharactersReflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2433,9 +2437,9 @@ namespace Mruv {
 
     /// <summary>Field number for the "character" field.</summary>
     public const int CharacterFieldNumber = 1;
-    private global::Mruv.Character character_;
+    private global::Mruv.Characters.Character character_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Mruv.Character Character {
+    public global::Mruv.Characters.Character Character {
       get { return character_; }
       set {
         character_ = value;
@@ -2444,9 +2448,9 @@ namespace Mruv {
 
     /// <summary>Field number for the "death_type" field.</summary>
     public const int DeathTypeFieldNumber = 2;
-    private global::Mruv.DeathType deathType_ = 0;
+    private global::Mruv.Characters.DeathType deathType_ = 0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Mruv.DeathType DeathType {
+    public global::Mruv.Characters.DeathType DeathType {
       get { return deathType_; }
       set {
         deathType_ = value;
@@ -2524,7 +2528,7 @@ namespace Mruv {
       }
       if (other.character_ != null) {
         if (character_ == null) {
-          Character = new global::Mruv.Character();
+          Character = new global::Mruv.Characters.Character();
         }
         Character.MergeFrom(other.Character);
       }
@@ -2544,13 +2548,13 @@ namespace Mruv {
             break;
           case 10: {
             if (character_ == null) {
-              Character = new global::Mruv.Character();
+              Character = new global::Mruv.Characters.Character();
             }
             input.ReadMessage(Character);
             break;
           }
           case 16: {
-            DeathType = (global::Mruv.DeathType) input.ReadEnum();
+            DeathType = (global::Mruv.Characters.DeathType) input.ReadEnum();
             break;
           }
         }

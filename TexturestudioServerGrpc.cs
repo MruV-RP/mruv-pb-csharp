@@ -7,91 +7,91 @@
 
 using grpc = global::Grpc.Core;
 
-namespace TextureStudio {
+namespace Mruv.TextureStudio {
   /// <summary>
   /// Service to manage texture studio server.
   /// </summary>
   public static partial class TextureStudioServerService
   {
-    static readonly string __ServiceName = "texture_studio.TextureStudioServerService";
+    static readonly string __ServiceName = "mruv.texture_studio.TextureStudioServerService";
 
-    static readonly grpc::Marshaller<global::TextureStudio.StartServerRequest> __Marshaller_texture_studio_StartServerRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::TextureStudio.StartServerRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::TextureStudio.StartServerResponse> __Marshaller_texture_studio_StartServerResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::TextureStudio.StartServerResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::TextureStudio.StopServerRequest> __Marshaller_texture_studio_StopServerRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::TextureStudio.StopServerRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::TextureStudio.StopServerResponse> __Marshaller_texture_studio_StopServerResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::TextureStudio.StopServerResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::TextureStudio.RestartServerRequest> __Marshaller_texture_studio_RestartServerRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::TextureStudio.RestartServerRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::TextureStudio.RestartServerResponse> __Marshaller_texture_studio_RestartServerResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::TextureStudio.RestartServerResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::TextureStudio.ServerStatusRequest> __Marshaller_texture_studio_ServerStatusRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::TextureStudio.ServerStatusRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::TextureStudio.ServerStatusResponse> __Marshaller_texture_studio_ServerStatusResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::TextureStudio.ServerStatusResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::TextureStudio.UploadProjectRequest> __Marshaller_texture_studio_UploadProjectRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::TextureStudio.UploadProjectRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::TextureStudio.UploadProjectResponse> __Marshaller_texture_studio_UploadProjectResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::TextureStudio.UploadProjectResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::TextureStudio.GetProjectRequest> __Marshaller_texture_studio_GetProjectRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::TextureStudio.GetProjectRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::TextureStudio.GetProjectResponse> __Marshaller_texture_studio_GetProjectResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::TextureStudio.GetProjectResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::TextureStudio.GetProjectsRequest> __Marshaller_texture_studio_GetProjectsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::TextureStudio.GetProjectsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::TextureStudio.GetProjectsResponse> __Marshaller_texture_studio_GetProjectsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::TextureStudio.GetProjectsResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::TextureStudio.SubscribeToProjectsChangesRequest> __Marshaller_texture_studio_SubscribeToProjectsChangesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::TextureStudio.SubscribeToProjectsChangesRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::TextureStudio.SubscribeToProjectsChangesResponse> __Marshaller_texture_studio_SubscribeToProjectsChangesResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::TextureStudio.SubscribeToProjectsChangesResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.TextureStudio.StartServerRequest> __Marshaller_mruv_texture_studio_StartServerRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.TextureStudio.StartServerRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.TextureStudio.StartServerResponse> __Marshaller_mruv_texture_studio_StartServerResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.TextureStudio.StartServerResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.TextureStudio.StopServerRequest> __Marshaller_mruv_texture_studio_StopServerRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.TextureStudio.StopServerRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.TextureStudio.StopServerResponse> __Marshaller_mruv_texture_studio_StopServerResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.TextureStudio.StopServerResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.TextureStudio.RestartServerRequest> __Marshaller_mruv_texture_studio_RestartServerRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.TextureStudio.RestartServerRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.TextureStudio.RestartServerResponse> __Marshaller_mruv_texture_studio_RestartServerResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.TextureStudio.RestartServerResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.TextureStudio.ServerStatusRequest> __Marshaller_mruv_texture_studio_ServerStatusRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.TextureStudio.ServerStatusRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.TextureStudio.ServerStatusResponse> __Marshaller_mruv_texture_studio_ServerStatusResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.TextureStudio.ServerStatusResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.TextureStudio.UploadProjectRequest> __Marshaller_mruv_texture_studio_UploadProjectRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.TextureStudio.UploadProjectRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.TextureStudio.UploadProjectResponse> __Marshaller_mruv_texture_studio_UploadProjectResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.TextureStudio.UploadProjectResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.TextureStudio.GetProjectRequest> __Marshaller_mruv_texture_studio_GetProjectRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.TextureStudio.GetProjectRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.TextureStudio.GetProjectResponse> __Marshaller_mruv_texture_studio_GetProjectResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.TextureStudio.GetProjectResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.TextureStudio.GetProjectsRequest> __Marshaller_mruv_texture_studio_GetProjectsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.TextureStudio.GetProjectsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.TextureStudio.GetProjectsResponse> __Marshaller_mruv_texture_studio_GetProjectsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.TextureStudio.GetProjectsResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.TextureStudio.SubscribeToProjectsChangesRequest> __Marshaller_mruv_texture_studio_SubscribeToProjectsChangesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.TextureStudio.SubscribeToProjectsChangesRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.TextureStudio.SubscribeToProjectsChangesResponse> __Marshaller_mruv_texture_studio_SubscribeToProjectsChangesResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.TextureStudio.SubscribeToProjectsChangesResponse.Parser.ParseFrom);
 
-    static readonly grpc::Method<global::TextureStudio.StartServerRequest, global::TextureStudio.StartServerResponse> __Method_StartServer = new grpc::Method<global::TextureStudio.StartServerRequest, global::TextureStudio.StartServerResponse>(
+    static readonly grpc::Method<global::Mruv.TextureStudio.StartServerRequest, global::Mruv.TextureStudio.StartServerResponse> __Method_StartServer = new grpc::Method<global::Mruv.TextureStudio.StartServerRequest, global::Mruv.TextureStudio.StartServerResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "StartServer",
-        __Marshaller_texture_studio_StartServerRequest,
-        __Marshaller_texture_studio_StartServerResponse);
+        __Marshaller_mruv_texture_studio_StartServerRequest,
+        __Marshaller_mruv_texture_studio_StartServerResponse);
 
-    static readonly grpc::Method<global::TextureStudio.StopServerRequest, global::TextureStudio.StopServerResponse> __Method_StopServer = new grpc::Method<global::TextureStudio.StopServerRequest, global::TextureStudio.StopServerResponse>(
+    static readonly grpc::Method<global::Mruv.TextureStudio.StopServerRequest, global::Mruv.TextureStudio.StopServerResponse> __Method_StopServer = new grpc::Method<global::Mruv.TextureStudio.StopServerRequest, global::Mruv.TextureStudio.StopServerResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "StopServer",
-        __Marshaller_texture_studio_StopServerRequest,
-        __Marshaller_texture_studio_StopServerResponse);
+        __Marshaller_mruv_texture_studio_StopServerRequest,
+        __Marshaller_mruv_texture_studio_StopServerResponse);
 
-    static readonly grpc::Method<global::TextureStudio.RestartServerRequest, global::TextureStudio.RestartServerResponse> __Method_RestartServer = new grpc::Method<global::TextureStudio.RestartServerRequest, global::TextureStudio.RestartServerResponse>(
+    static readonly grpc::Method<global::Mruv.TextureStudio.RestartServerRequest, global::Mruv.TextureStudio.RestartServerResponse> __Method_RestartServer = new grpc::Method<global::Mruv.TextureStudio.RestartServerRequest, global::Mruv.TextureStudio.RestartServerResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "RestartServer",
-        __Marshaller_texture_studio_RestartServerRequest,
-        __Marshaller_texture_studio_RestartServerResponse);
+        __Marshaller_mruv_texture_studio_RestartServerRequest,
+        __Marshaller_mruv_texture_studio_RestartServerResponse);
 
-    static readonly grpc::Method<global::TextureStudio.ServerStatusRequest, global::TextureStudio.ServerStatusResponse> __Method_ServerStatus = new grpc::Method<global::TextureStudio.ServerStatusRequest, global::TextureStudio.ServerStatusResponse>(
+    static readonly grpc::Method<global::Mruv.TextureStudio.ServerStatusRequest, global::Mruv.TextureStudio.ServerStatusResponse> __Method_ServerStatus = new grpc::Method<global::Mruv.TextureStudio.ServerStatusRequest, global::Mruv.TextureStudio.ServerStatusResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "ServerStatus",
-        __Marshaller_texture_studio_ServerStatusRequest,
-        __Marshaller_texture_studio_ServerStatusResponse);
+        __Marshaller_mruv_texture_studio_ServerStatusRequest,
+        __Marshaller_mruv_texture_studio_ServerStatusResponse);
 
-    static readonly grpc::Method<global::TextureStudio.UploadProjectRequest, global::TextureStudio.UploadProjectResponse> __Method_UploadProject = new grpc::Method<global::TextureStudio.UploadProjectRequest, global::TextureStudio.UploadProjectResponse>(
+    static readonly grpc::Method<global::Mruv.TextureStudio.UploadProjectRequest, global::Mruv.TextureStudio.UploadProjectResponse> __Method_UploadProject = new grpc::Method<global::Mruv.TextureStudio.UploadProjectRequest, global::Mruv.TextureStudio.UploadProjectResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "UploadProject",
-        __Marshaller_texture_studio_UploadProjectRequest,
-        __Marshaller_texture_studio_UploadProjectResponse);
+        __Marshaller_mruv_texture_studio_UploadProjectRequest,
+        __Marshaller_mruv_texture_studio_UploadProjectResponse);
 
-    static readonly grpc::Method<global::TextureStudio.GetProjectRequest, global::TextureStudio.GetProjectResponse> __Method_GetProject = new grpc::Method<global::TextureStudio.GetProjectRequest, global::TextureStudio.GetProjectResponse>(
+    static readonly grpc::Method<global::Mruv.TextureStudio.GetProjectRequest, global::Mruv.TextureStudio.GetProjectResponse> __Method_GetProject = new grpc::Method<global::Mruv.TextureStudio.GetProjectRequest, global::Mruv.TextureStudio.GetProjectResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetProject",
-        __Marshaller_texture_studio_GetProjectRequest,
-        __Marshaller_texture_studio_GetProjectResponse);
+        __Marshaller_mruv_texture_studio_GetProjectRequest,
+        __Marshaller_mruv_texture_studio_GetProjectResponse);
 
-    static readonly grpc::Method<global::TextureStudio.GetProjectsRequest, global::TextureStudio.GetProjectsResponse> __Method_GetProjects = new grpc::Method<global::TextureStudio.GetProjectsRequest, global::TextureStudio.GetProjectsResponse>(
+    static readonly grpc::Method<global::Mruv.TextureStudio.GetProjectsRequest, global::Mruv.TextureStudio.GetProjectsResponse> __Method_GetProjects = new grpc::Method<global::Mruv.TextureStudio.GetProjectsRequest, global::Mruv.TextureStudio.GetProjectsResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetProjects",
-        __Marshaller_texture_studio_GetProjectsRequest,
-        __Marshaller_texture_studio_GetProjectsResponse);
+        __Marshaller_mruv_texture_studio_GetProjectsRequest,
+        __Marshaller_mruv_texture_studio_GetProjectsResponse);
 
-    static readonly grpc::Method<global::TextureStudio.SubscribeToProjectsChangesRequest, global::TextureStudio.SubscribeToProjectsChangesResponse> __Method_SubscribeToProjectsChanges = new grpc::Method<global::TextureStudio.SubscribeToProjectsChangesRequest, global::TextureStudio.SubscribeToProjectsChangesResponse>(
+    static readonly grpc::Method<global::Mruv.TextureStudio.SubscribeToProjectsChangesRequest, global::Mruv.TextureStudio.SubscribeToProjectsChangesResponse> __Method_SubscribeToProjectsChanges = new grpc::Method<global::Mruv.TextureStudio.SubscribeToProjectsChangesRequest, global::Mruv.TextureStudio.SubscribeToProjectsChangesResponse>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
         "SubscribeToProjectsChanges",
-        __Marshaller_texture_studio_SubscribeToProjectsChangesRequest,
-        __Marshaller_texture_studio_SubscribeToProjectsChangesResponse);
+        __Marshaller_mruv_texture_studio_SubscribeToProjectsChangesRequest,
+        __Marshaller_mruv_texture_studio_SubscribeToProjectsChangesResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
-      get { return global::TextureStudio.TexturestudioServerReflection.Descriptor.Services[0]; }
+      get { return global::Mruv.TextureStudio.TexturestudioServerReflection.Descriptor.Services[0]; }
     }
 
     /// <summary>Base class for server-side implementations of TextureStudioServerService</summary>
@@ -104,7 +104,7 @@ namespace TextureStudio {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::TextureStudio.StartServerResponse> StartServer(global::TextureStudio.StartServerRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.TextureStudio.StartServerResponse> StartServer(global::Mruv.TextureStudio.StartServerRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -115,7 +115,7 @@ namespace TextureStudio {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::TextureStudio.StopServerResponse> StopServer(global::TextureStudio.StopServerRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.TextureStudio.StopServerResponse> StopServer(global::Mruv.TextureStudio.StopServerRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -126,7 +126,7 @@ namespace TextureStudio {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::TextureStudio.RestartServerResponse> RestartServer(global::TextureStudio.RestartServerRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.TextureStudio.RestartServerResponse> RestartServer(global::Mruv.TextureStudio.RestartServerRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -137,7 +137,7 @@ namespace TextureStudio {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::TextureStudio.ServerStatusResponse> ServerStatus(global::TextureStudio.ServerStatusRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.TextureStudio.ServerStatusResponse> ServerStatus(global::Mruv.TextureStudio.ServerStatusRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -148,7 +148,7 @@ namespace TextureStudio {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::TextureStudio.UploadProjectResponse> UploadProject(global::TextureStudio.UploadProjectRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.TextureStudio.UploadProjectResponse> UploadProject(global::Mruv.TextureStudio.UploadProjectRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -159,7 +159,7 @@ namespace TextureStudio {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::TextureStudio.GetProjectResponse> GetProject(global::TextureStudio.GetProjectRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.TextureStudio.GetProjectResponse> GetProject(global::Mruv.TextureStudio.GetProjectRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -170,7 +170,7 @@ namespace TextureStudio {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::TextureStudio.GetProjectsResponse> GetProjects(global::TextureStudio.GetProjectsRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.TextureStudio.GetProjectsResponse> GetProjects(global::Mruv.TextureStudio.GetProjectsRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -182,7 +182,7 @@ namespace TextureStudio {
       /// <param name="responseStream">Used for sending responses back to the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>A task indicating completion of the handler.</returns>
-      public virtual global::System.Threading.Tasks.Task SubscribeToProjectsChanges(global::TextureStudio.SubscribeToProjectsChangesRequest request, grpc::IServerStreamWriter<global::TextureStudio.SubscribeToProjectsChangesResponse> responseStream, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task SubscribeToProjectsChanges(global::Mruv.TextureStudio.SubscribeToProjectsChangesRequest request, grpc::IServerStreamWriter<global::Mruv.TextureStudio.SubscribeToProjectsChangesResponse> responseStream, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -220,7 +220,7 @@ namespace TextureStudio {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::TextureStudio.StartServerResponse StartServer(global::TextureStudio.StartServerRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.TextureStudio.StartServerResponse StartServer(global::Mruv.TextureStudio.StartServerRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return StartServer(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -230,7 +230,7 @@ namespace TextureStudio {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::TextureStudio.StartServerResponse StartServer(global::TextureStudio.StartServerRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.TextureStudio.StartServerResponse StartServer(global::Mruv.TextureStudio.StartServerRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_StartServer, null, options, request);
       }
@@ -242,7 +242,7 @@ namespace TextureStudio {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::TextureStudio.StartServerResponse> StartServerAsync(global::TextureStudio.StartServerRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.TextureStudio.StartServerResponse> StartServerAsync(global::Mruv.TextureStudio.StartServerRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return StartServerAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -252,7 +252,7 @@ namespace TextureStudio {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::TextureStudio.StartServerResponse> StartServerAsync(global::TextureStudio.StartServerRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.TextureStudio.StartServerResponse> StartServerAsync(global::Mruv.TextureStudio.StartServerRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_StartServer, null, options, request);
       }
@@ -264,7 +264,7 @@ namespace TextureStudio {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::TextureStudio.StopServerResponse StopServer(global::TextureStudio.StopServerRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.TextureStudio.StopServerResponse StopServer(global::Mruv.TextureStudio.StopServerRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return StopServer(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -274,7 +274,7 @@ namespace TextureStudio {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::TextureStudio.StopServerResponse StopServer(global::TextureStudio.StopServerRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.TextureStudio.StopServerResponse StopServer(global::Mruv.TextureStudio.StopServerRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_StopServer, null, options, request);
       }
@@ -286,7 +286,7 @@ namespace TextureStudio {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::TextureStudio.StopServerResponse> StopServerAsync(global::TextureStudio.StopServerRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.TextureStudio.StopServerResponse> StopServerAsync(global::Mruv.TextureStudio.StopServerRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return StopServerAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -296,7 +296,7 @@ namespace TextureStudio {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::TextureStudio.StopServerResponse> StopServerAsync(global::TextureStudio.StopServerRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.TextureStudio.StopServerResponse> StopServerAsync(global::Mruv.TextureStudio.StopServerRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_StopServer, null, options, request);
       }
@@ -308,7 +308,7 @@ namespace TextureStudio {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::TextureStudio.RestartServerResponse RestartServer(global::TextureStudio.RestartServerRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.TextureStudio.RestartServerResponse RestartServer(global::Mruv.TextureStudio.RestartServerRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return RestartServer(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -318,7 +318,7 @@ namespace TextureStudio {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::TextureStudio.RestartServerResponse RestartServer(global::TextureStudio.RestartServerRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.TextureStudio.RestartServerResponse RestartServer(global::Mruv.TextureStudio.RestartServerRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_RestartServer, null, options, request);
       }
@@ -330,7 +330,7 @@ namespace TextureStudio {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::TextureStudio.RestartServerResponse> RestartServerAsync(global::TextureStudio.RestartServerRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.TextureStudio.RestartServerResponse> RestartServerAsync(global::Mruv.TextureStudio.RestartServerRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return RestartServerAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -340,7 +340,7 @@ namespace TextureStudio {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::TextureStudio.RestartServerResponse> RestartServerAsync(global::TextureStudio.RestartServerRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.TextureStudio.RestartServerResponse> RestartServerAsync(global::Mruv.TextureStudio.RestartServerRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_RestartServer, null, options, request);
       }
@@ -352,7 +352,7 @@ namespace TextureStudio {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::TextureStudio.ServerStatusResponse ServerStatus(global::TextureStudio.ServerStatusRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.TextureStudio.ServerStatusResponse ServerStatus(global::Mruv.TextureStudio.ServerStatusRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return ServerStatus(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -362,7 +362,7 @@ namespace TextureStudio {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::TextureStudio.ServerStatusResponse ServerStatus(global::TextureStudio.ServerStatusRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.TextureStudio.ServerStatusResponse ServerStatus(global::Mruv.TextureStudio.ServerStatusRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_ServerStatus, null, options, request);
       }
@@ -374,7 +374,7 @@ namespace TextureStudio {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::TextureStudio.ServerStatusResponse> ServerStatusAsync(global::TextureStudio.ServerStatusRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.TextureStudio.ServerStatusResponse> ServerStatusAsync(global::Mruv.TextureStudio.ServerStatusRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return ServerStatusAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -384,7 +384,7 @@ namespace TextureStudio {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::TextureStudio.ServerStatusResponse> ServerStatusAsync(global::TextureStudio.ServerStatusRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.TextureStudio.ServerStatusResponse> ServerStatusAsync(global::Mruv.TextureStudio.ServerStatusRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_ServerStatus, null, options, request);
       }
@@ -396,7 +396,7 @@ namespace TextureStudio {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::TextureStudio.UploadProjectResponse UploadProject(global::TextureStudio.UploadProjectRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.TextureStudio.UploadProjectResponse UploadProject(global::Mruv.TextureStudio.UploadProjectRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return UploadProject(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -406,7 +406,7 @@ namespace TextureStudio {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::TextureStudio.UploadProjectResponse UploadProject(global::TextureStudio.UploadProjectRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.TextureStudio.UploadProjectResponse UploadProject(global::Mruv.TextureStudio.UploadProjectRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_UploadProject, null, options, request);
       }
@@ -418,7 +418,7 @@ namespace TextureStudio {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::TextureStudio.UploadProjectResponse> UploadProjectAsync(global::TextureStudio.UploadProjectRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.TextureStudio.UploadProjectResponse> UploadProjectAsync(global::Mruv.TextureStudio.UploadProjectRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return UploadProjectAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -428,7 +428,7 @@ namespace TextureStudio {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::TextureStudio.UploadProjectResponse> UploadProjectAsync(global::TextureStudio.UploadProjectRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.TextureStudio.UploadProjectResponse> UploadProjectAsync(global::Mruv.TextureStudio.UploadProjectRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_UploadProject, null, options, request);
       }
@@ -440,7 +440,7 @@ namespace TextureStudio {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::TextureStudio.GetProjectResponse GetProject(global::TextureStudio.GetProjectRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.TextureStudio.GetProjectResponse GetProject(global::Mruv.TextureStudio.GetProjectRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetProject(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -450,7 +450,7 @@ namespace TextureStudio {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::TextureStudio.GetProjectResponse GetProject(global::TextureStudio.GetProjectRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.TextureStudio.GetProjectResponse GetProject(global::Mruv.TextureStudio.GetProjectRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetProject, null, options, request);
       }
@@ -462,7 +462,7 @@ namespace TextureStudio {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::TextureStudio.GetProjectResponse> GetProjectAsync(global::TextureStudio.GetProjectRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.TextureStudio.GetProjectResponse> GetProjectAsync(global::Mruv.TextureStudio.GetProjectRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetProjectAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -472,7 +472,7 @@ namespace TextureStudio {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::TextureStudio.GetProjectResponse> GetProjectAsync(global::TextureStudio.GetProjectRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.TextureStudio.GetProjectResponse> GetProjectAsync(global::Mruv.TextureStudio.GetProjectRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetProject, null, options, request);
       }
@@ -484,7 +484,7 @@ namespace TextureStudio {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::TextureStudio.GetProjectsResponse GetProjects(global::TextureStudio.GetProjectsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.TextureStudio.GetProjectsResponse GetProjects(global::Mruv.TextureStudio.GetProjectsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetProjects(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -494,7 +494,7 @@ namespace TextureStudio {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::TextureStudio.GetProjectsResponse GetProjects(global::TextureStudio.GetProjectsRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.TextureStudio.GetProjectsResponse GetProjects(global::Mruv.TextureStudio.GetProjectsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetProjects, null, options, request);
       }
@@ -506,7 +506,7 @@ namespace TextureStudio {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::TextureStudio.GetProjectsResponse> GetProjectsAsync(global::TextureStudio.GetProjectsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.TextureStudio.GetProjectsResponse> GetProjectsAsync(global::Mruv.TextureStudio.GetProjectsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetProjectsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -516,7 +516,7 @@ namespace TextureStudio {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::TextureStudio.GetProjectsResponse> GetProjectsAsync(global::TextureStudio.GetProjectsRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.TextureStudio.GetProjectsResponse> GetProjectsAsync(global::Mruv.TextureStudio.GetProjectsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetProjects, null, options, request);
       }
@@ -528,7 +528,7 @@ namespace TextureStudio {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncServerStreamingCall<global::TextureStudio.SubscribeToProjectsChangesResponse> SubscribeToProjectsChanges(global::TextureStudio.SubscribeToProjectsChangesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncServerStreamingCall<global::Mruv.TextureStudio.SubscribeToProjectsChangesResponse> SubscribeToProjectsChanges(global::Mruv.TextureStudio.SubscribeToProjectsChangesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return SubscribeToProjectsChanges(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -538,7 +538,7 @@ namespace TextureStudio {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncServerStreamingCall<global::TextureStudio.SubscribeToProjectsChangesResponse> SubscribeToProjectsChanges(global::TextureStudio.SubscribeToProjectsChangesRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncServerStreamingCall<global::Mruv.TextureStudio.SubscribeToProjectsChangesResponse> SubscribeToProjectsChanges(global::Mruv.TextureStudio.SubscribeToProjectsChangesRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_SubscribeToProjectsChanges, null, options, request);
       }
@@ -570,14 +570,14 @@ namespace TextureStudio {
     /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
     public static void BindService(grpc::ServiceBinderBase serviceBinder, TextureStudioServerServiceBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_StartServer, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::TextureStudio.StartServerRequest, global::TextureStudio.StartServerResponse>(serviceImpl.StartServer));
-      serviceBinder.AddMethod(__Method_StopServer, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::TextureStudio.StopServerRequest, global::TextureStudio.StopServerResponse>(serviceImpl.StopServer));
-      serviceBinder.AddMethod(__Method_RestartServer, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::TextureStudio.RestartServerRequest, global::TextureStudio.RestartServerResponse>(serviceImpl.RestartServer));
-      serviceBinder.AddMethod(__Method_ServerStatus, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::TextureStudio.ServerStatusRequest, global::TextureStudio.ServerStatusResponse>(serviceImpl.ServerStatus));
-      serviceBinder.AddMethod(__Method_UploadProject, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::TextureStudio.UploadProjectRequest, global::TextureStudio.UploadProjectResponse>(serviceImpl.UploadProject));
-      serviceBinder.AddMethod(__Method_GetProject, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::TextureStudio.GetProjectRequest, global::TextureStudio.GetProjectResponse>(serviceImpl.GetProject));
-      serviceBinder.AddMethod(__Method_GetProjects, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::TextureStudio.GetProjectsRequest, global::TextureStudio.GetProjectsResponse>(serviceImpl.GetProjects));
-      serviceBinder.AddMethod(__Method_SubscribeToProjectsChanges, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::TextureStudio.SubscribeToProjectsChangesRequest, global::TextureStudio.SubscribeToProjectsChangesResponse>(serviceImpl.SubscribeToProjectsChanges));
+      serviceBinder.AddMethod(__Method_StartServer, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.TextureStudio.StartServerRequest, global::Mruv.TextureStudio.StartServerResponse>(serviceImpl.StartServer));
+      serviceBinder.AddMethod(__Method_StopServer, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.TextureStudio.StopServerRequest, global::Mruv.TextureStudio.StopServerResponse>(serviceImpl.StopServer));
+      serviceBinder.AddMethod(__Method_RestartServer, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.TextureStudio.RestartServerRequest, global::Mruv.TextureStudio.RestartServerResponse>(serviceImpl.RestartServer));
+      serviceBinder.AddMethod(__Method_ServerStatus, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.TextureStudio.ServerStatusRequest, global::Mruv.TextureStudio.ServerStatusResponse>(serviceImpl.ServerStatus));
+      serviceBinder.AddMethod(__Method_UploadProject, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.TextureStudio.UploadProjectRequest, global::Mruv.TextureStudio.UploadProjectResponse>(serviceImpl.UploadProject));
+      serviceBinder.AddMethod(__Method_GetProject, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.TextureStudio.GetProjectRequest, global::Mruv.TextureStudio.GetProjectResponse>(serviceImpl.GetProject));
+      serviceBinder.AddMethod(__Method_GetProjects, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.TextureStudio.GetProjectsRequest, global::Mruv.TextureStudio.GetProjectsResponse>(serviceImpl.GetProjects));
+      serviceBinder.AddMethod(__Method_SubscribeToProjectsChanges, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Mruv.TextureStudio.SubscribeToProjectsChangesRequest, global::Mruv.TextureStudio.SubscribeToProjectsChangesResponse>(serviceImpl.SubscribeToProjectsChanges));
     }
 
   }

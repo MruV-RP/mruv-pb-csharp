@@ -7,286 +7,304 @@
 
 using grpc = global::Grpc.Core;
 
-namespace Mruv.Economy {
+namespace Mruv.Punishments {
   /// <summary>
   /// This service provides interface for managing punishments for players.
   /// </summary>
   public static partial class MruVPunishmentsService
   {
-    static readonly string __ServiceName = "mruv.economy.MruVPunishmentsService";
+    static readonly string __ServiceName = "mruv.punishments.MruVPunishmentsService";
 
-    static readonly grpc::Marshaller<global::Mruv.Economy.BanRequest> __Marshaller_mruv_economy_BanRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.BanRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.BanResponse> __Marshaller_mruv_economy_BanResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.BanResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.BlockRequest> __Marshaller_mruv_economy_BlockRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.BlockRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.BlockResponse> __Marshaller_mruv_economy_BlockResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.BlockResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.WarnRequest> __Marshaller_mruv_economy_WarnRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.WarnRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.WarnResponse> __Marshaller_mruv_economy_WarnResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.WarnResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.AdminJailRequest> __Marshaller_mruv_economy_AdminJailRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.AdminJailRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.AdminJailResponse> __Marshaller_mruv_economy_AdminJailResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.AdminJailResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.MuteGlobalChatsRequest> __Marshaller_mruv_economy_MuteGlobalChatsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.MuteGlobalChatsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.MuteGlobalChatsResponse> __Marshaller_mruv_economy_MuteGlobalChatsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.MuteGlobalChatsResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.UnBanRequest> __Marshaller_mruv_economy_UnBanRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.UnBanRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.UnBanResponse> __Marshaller_mruv_economy_UnBanResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.UnBanResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.UnBlockRequest> __Marshaller_mruv_economy_UnBlockRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.UnBlockRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.UnBlockResponse> __Marshaller_mruv_economy_UnBlockResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.UnBlockResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.UnWarnRequest> __Marshaller_mruv_economy_UnWarnRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.UnWarnRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.UnWarnResponse> __Marshaller_mruv_economy_UnWarnResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.UnWarnResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.UnAdminJailRequest> __Marshaller_mruv_economy_UnAdminJailRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.UnAdminJailRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.UnAdminJailResponse> __Marshaller_mruv_economy_UnAdminJailResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.UnAdminJailResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.UnMuteGlobalChatsRequest> __Marshaller_mruv_economy_UnMuteGlobalChatsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.UnMuteGlobalChatsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.UnMuteGlobalChatsResponse> __Marshaller_mruv_economy_UnMuteGlobalChatsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.UnMuteGlobalChatsResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.GetPlayerBansRequest> __Marshaller_mruv_economy_GetPlayerBansRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.GetPlayerBansRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.GetPlayerBansResponse> __Marshaller_mruv_economy_GetPlayerBansResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.GetPlayerBansResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.GetPlayerWarnsRequest> __Marshaller_mruv_economy_GetPlayerWarnsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.GetPlayerWarnsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.GetPlayerWarnsResponse> __Marshaller_mruv_economy_GetPlayerWarnsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.GetPlayerWarnsResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.GetPlayerAdminJailRequest> __Marshaller_mruv_economy_GetPlayerAdminJailRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.GetPlayerAdminJailRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.GetPlayerAdminJailResponse> __Marshaller_mruv_economy_GetPlayerAdminJailResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.GetPlayerAdminJailResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.GetBanRequest> __Marshaller_mruv_economy_GetBanRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.GetBanRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.BanMessage> __Marshaller_mruv_economy_BanMessage = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.BanMessage.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.GetWarnRequest> __Marshaller_mruv_economy_GetWarnRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.GetWarnRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.WarnMessage> __Marshaller_mruv_economy_WarnMessage = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.WarnMessage.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.GetBlockRequest> __Marshaller_mruv_economy_GetBlockRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.GetBlockRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.BlockMessage> __Marshaller_mruv_economy_BlockMessage = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.BlockMessage.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.IsPlayerBannedRequest> __Marshaller_mruv_economy_IsPlayerBannedRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.IsPlayerBannedRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.IsPlayerBannedResponse> __Marshaller_mruv_economy_IsPlayerBannedResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.IsPlayerBannedResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.IsCharacterBlockedRequest> __Marshaller_mruv_economy_IsCharacterBlockedRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.IsCharacterBlockedRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.IsCharacterBlockedResponse> __Marshaller_mruv_economy_IsCharacterBlockedResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.IsCharacterBlockedResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.IsCharacterJailedRequest> __Marshaller_mruv_economy_IsCharacterJailedRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.IsCharacterJailedRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.IsCharacterJailedResponse> __Marshaller_mruv_economy_IsCharacterJailedResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.IsCharacterJailedResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.WatchBansRequest> __Marshaller_mruv_economy_WatchBansRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.WatchBansRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.WatchBlocksRequest> __Marshaller_mruv_economy_WatchBlocksRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.WatchBlocksRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.WatchWarnsRequest> __Marshaller_mruv_economy_WatchWarnsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.WatchWarnsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.WatchAdminJailsRequest> __Marshaller_mruv_economy_WatchAdminJailsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.WatchAdminJailsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.AdminJailMessage> __Marshaller_mruv_economy_AdminJailMessage = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.AdminJailMessage.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.WatchUnBansRequest> __Marshaller_mruv_economy_WatchUnBansRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.WatchUnBansRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.UnBanMessage> __Marshaller_mruv_economy_UnBanMessage = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.UnBanMessage.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.WatchUnBlocksRequest> __Marshaller_mruv_economy_WatchUnBlocksRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.WatchUnBlocksRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.UnBlockMessage> __Marshaller_mruv_economy_UnBlockMessage = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.UnBlockMessage.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.WatchUnWarnsRequest> __Marshaller_mruv_economy_WatchUnWarnsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.WatchUnWarnsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.UnWarnMessage> __Marshaller_mruv_economy_UnWarnMessage = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.UnWarnMessage.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.WatchUnAdminJailsRequest> __Marshaller_mruv_economy_WatchUnAdminJailsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.WatchUnAdminJailsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.UnAdminJailMessage> __Marshaller_mruv_economy_UnAdminJailMessage = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.UnAdminJailMessage.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.WatchPlayerPunishmentsRequest> __Marshaller_mruv_economy_WatchPlayerPunishmentsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.WatchPlayerPunishmentsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.WatchPlayerPunishmentsResponse> __Marshaller_mruv_economy_WatchPlayerPunishmentsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.WatchPlayerPunishmentsResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.WatchPlayerAcquittalsRequest> __Marshaller_mruv_economy_WatchPlayerAcquittalsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.WatchPlayerAcquittalsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.WatchPlayerAcquittalsResponse> __Marshaller_mruv_economy_WatchPlayerAcquittalsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.WatchPlayerAcquittalsResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.WatchPunishmentsRequest> __Marshaller_mruv_economy_WatchPunishmentsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.WatchPunishmentsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.WatchPunishmentsResponse> __Marshaller_mruv_economy_WatchPunishmentsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.WatchPunishmentsResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.PunishRequest> __Marshaller_mruv_punishments_PunishRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.PunishRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.PunishResponse> __Marshaller_mruv_punishments_PunishResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.PunishResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.BanRequest> __Marshaller_mruv_punishments_BanRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.BanRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.BanResponse> __Marshaller_mruv_punishments_BanResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.BanResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.BlockRequest> __Marshaller_mruv_punishments_BlockRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.BlockRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.BlockResponse> __Marshaller_mruv_punishments_BlockResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.BlockResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.WarnRequest> __Marshaller_mruv_punishments_WarnRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.WarnRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.WarnResponse> __Marshaller_mruv_punishments_WarnResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.WarnResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.AdminJailRequest> __Marshaller_mruv_punishments_AdminJailRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.AdminJailRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.AdminJailResponse> __Marshaller_mruv_punishments_AdminJailResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.AdminJailResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.MuteGlobalChatsRequest> __Marshaller_mruv_punishments_MuteGlobalChatsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.MuteGlobalChatsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.MuteGlobalChatsResponse> __Marshaller_mruv_punishments_MuteGlobalChatsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.MuteGlobalChatsResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.UnBanRequest> __Marshaller_mruv_punishments_UnBanRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.UnBanRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.UnBanResponse> __Marshaller_mruv_punishments_UnBanResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.UnBanResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.UnBlockRequest> __Marshaller_mruv_punishments_UnBlockRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.UnBlockRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.UnBlockResponse> __Marshaller_mruv_punishments_UnBlockResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.UnBlockResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.UnWarnRequest> __Marshaller_mruv_punishments_UnWarnRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.UnWarnRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.UnWarnResponse> __Marshaller_mruv_punishments_UnWarnResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.UnWarnResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.UnAdminJailRequest> __Marshaller_mruv_punishments_UnAdminJailRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.UnAdminJailRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.UnAdminJailResponse> __Marshaller_mruv_punishments_UnAdminJailResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.UnAdminJailResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.UnMuteGlobalChatsRequest> __Marshaller_mruv_punishments_UnMuteGlobalChatsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.UnMuteGlobalChatsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.UnMuteGlobalChatsResponse> __Marshaller_mruv_punishments_UnMuteGlobalChatsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.UnMuteGlobalChatsResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.GetPlayerBansRequest> __Marshaller_mruv_punishments_GetPlayerBansRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.GetPlayerBansRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.GetPlayerBansResponse> __Marshaller_mruv_punishments_GetPlayerBansResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.GetPlayerBansResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.GetPlayerWarnsRequest> __Marshaller_mruv_punishments_GetPlayerWarnsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.GetPlayerWarnsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.GetPlayerWarnsResponse> __Marshaller_mruv_punishments_GetPlayerWarnsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.GetPlayerWarnsResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.GetPlayerAdminJailRequest> __Marshaller_mruv_punishments_GetPlayerAdminJailRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.GetPlayerAdminJailRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.GetPlayerAdminJailResponse> __Marshaller_mruv_punishments_GetPlayerAdminJailResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.GetPlayerAdminJailResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.GetBanRequest> __Marshaller_mruv_punishments_GetBanRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.GetBanRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.BanMessage> __Marshaller_mruv_punishments_BanMessage = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.BanMessage.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.GetWarnRequest> __Marshaller_mruv_punishments_GetWarnRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.GetWarnRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.WarnMessage> __Marshaller_mruv_punishments_WarnMessage = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.WarnMessage.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.GetBlockRequest> __Marshaller_mruv_punishments_GetBlockRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.GetBlockRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.BlockMessage> __Marshaller_mruv_punishments_BlockMessage = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.BlockMessage.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.IsPlayerBannedRequest> __Marshaller_mruv_punishments_IsPlayerBannedRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.IsPlayerBannedRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.IsPlayerBannedResponse> __Marshaller_mruv_punishments_IsPlayerBannedResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.IsPlayerBannedResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.IsCharacterBlockedRequest> __Marshaller_mruv_punishments_IsCharacterBlockedRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.IsCharacterBlockedRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.IsCharacterBlockedResponse> __Marshaller_mruv_punishments_IsCharacterBlockedResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.IsCharacterBlockedResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.IsCharacterJailedRequest> __Marshaller_mruv_punishments_IsCharacterJailedRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.IsCharacterJailedRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.IsCharacterJailedResponse> __Marshaller_mruv_punishments_IsCharacterJailedResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.IsCharacterJailedResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.WatchBansRequest> __Marshaller_mruv_punishments_WatchBansRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.WatchBansRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.WatchBlocksRequest> __Marshaller_mruv_punishments_WatchBlocksRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.WatchBlocksRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.WatchWarnsRequest> __Marshaller_mruv_punishments_WatchWarnsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.WatchWarnsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.WatchAdminJailsRequest> __Marshaller_mruv_punishments_WatchAdminJailsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.WatchAdminJailsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.AdminJailMessage> __Marshaller_mruv_punishments_AdminJailMessage = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.AdminJailMessage.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.WatchUnBansRequest> __Marshaller_mruv_punishments_WatchUnBansRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.WatchUnBansRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.UnBanMessage> __Marshaller_mruv_punishments_UnBanMessage = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.UnBanMessage.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.WatchUnBlocksRequest> __Marshaller_mruv_punishments_WatchUnBlocksRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.WatchUnBlocksRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.UnBlockMessage> __Marshaller_mruv_punishments_UnBlockMessage = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.UnBlockMessage.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.WatchUnWarnsRequest> __Marshaller_mruv_punishments_WatchUnWarnsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.WatchUnWarnsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.UnWarnMessage> __Marshaller_mruv_punishments_UnWarnMessage = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.UnWarnMessage.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.WatchUnAdminJailsRequest> __Marshaller_mruv_punishments_WatchUnAdminJailsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.WatchUnAdminJailsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.UnAdminJailMessage> __Marshaller_mruv_punishments_UnAdminJailMessage = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.UnAdminJailMessage.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.WatchPlayerPunishmentsRequest> __Marshaller_mruv_punishments_WatchPlayerPunishmentsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.WatchPlayerPunishmentsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.WatchPlayerPunishmentsResponse> __Marshaller_mruv_punishments_WatchPlayerPunishmentsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.WatchPlayerPunishmentsResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.WatchPlayerAcquittalsRequest> __Marshaller_mruv_punishments_WatchPlayerAcquittalsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.WatchPlayerAcquittalsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.WatchPlayerAcquittalsResponse> __Marshaller_mruv_punishments_WatchPlayerAcquittalsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.WatchPlayerAcquittalsResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.WatchPunishmentsRequest> __Marshaller_mruv_punishments_WatchPunishmentsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.WatchPunishmentsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.WatchPunishmentsResponse> __Marshaller_mruv_punishments_WatchPunishmentsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.WatchPunishmentsResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.WatchAcquittalsRequest> __Marshaller_mruv_punishments_WatchAcquittalsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.WatchAcquittalsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.Punishments.WatchAcquittalsResponse> __Marshaller_mruv_punishments_WatchAcquittalsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.WatchAcquittalsResponse.Parser.ParseFrom);
 
-    static readonly grpc::Method<global::Mruv.Economy.BanRequest, global::Mruv.Economy.BanResponse> __Method_Ban = new grpc::Method<global::Mruv.Economy.BanRequest, global::Mruv.Economy.BanResponse>(
+    static readonly grpc::Method<global::Mruv.Punishments.PunishRequest, global::Mruv.Punishments.PunishResponse> __Method_Punish = new grpc::Method<global::Mruv.Punishments.PunishRequest, global::Mruv.Punishments.PunishResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "Punish",
+        __Marshaller_mruv_punishments_PunishRequest,
+        __Marshaller_mruv_punishments_PunishResponse);
+
+    static readonly grpc::Method<global::Mruv.Punishments.BanRequest, global::Mruv.Punishments.BanResponse> __Method_Ban = new grpc::Method<global::Mruv.Punishments.BanRequest, global::Mruv.Punishments.BanResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "Ban",
-        __Marshaller_mruv_economy_BanRequest,
-        __Marshaller_mruv_economy_BanResponse);
+        __Marshaller_mruv_punishments_BanRequest,
+        __Marshaller_mruv_punishments_BanResponse);
 
-    static readonly grpc::Method<global::Mruv.Economy.BlockRequest, global::Mruv.Economy.BlockResponse> __Method_Block = new grpc::Method<global::Mruv.Economy.BlockRequest, global::Mruv.Economy.BlockResponse>(
+    static readonly grpc::Method<global::Mruv.Punishments.BlockRequest, global::Mruv.Punishments.BlockResponse> __Method_Block = new grpc::Method<global::Mruv.Punishments.BlockRequest, global::Mruv.Punishments.BlockResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "Block",
-        __Marshaller_mruv_economy_BlockRequest,
-        __Marshaller_mruv_economy_BlockResponse);
+        __Marshaller_mruv_punishments_BlockRequest,
+        __Marshaller_mruv_punishments_BlockResponse);
 
-    static readonly grpc::Method<global::Mruv.Economy.WarnRequest, global::Mruv.Economy.WarnResponse> __Method_Warn = new grpc::Method<global::Mruv.Economy.WarnRequest, global::Mruv.Economy.WarnResponse>(
+    static readonly grpc::Method<global::Mruv.Punishments.WarnRequest, global::Mruv.Punishments.WarnResponse> __Method_Warn = new grpc::Method<global::Mruv.Punishments.WarnRequest, global::Mruv.Punishments.WarnResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "Warn",
-        __Marshaller_mruv_economy_WarnRequest,
-        __Marshaller_mruv_economy_WarnResponse);
+        __Marshaller_mruv_punishments_WarnRequest,
+        __Marshaller_mruv_punishments_WarnResponse);
 
-    static readonly grpc::Method<global::Mruv.Economy.AdminJailRequest, global::Mruv.Economy.AdminJailResponse> __Method_AdminJail = new grpc::Method<global::Mruv.Economy.AdminJailRequest, global::Mruv.Economy.AdminJailResponse>(
+    static readonly grpc::Method<global::Mruv.Punishments.AdminJailRequest, global::Mruv.Punishments.AdminJailResponse> __Method_AdminJail = new grpc::Method<global::Mruv.Punishments.AdminJailRequest, global::Mruv.Punishments.AdminJailResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "AdminJail",
-        __Marshaller_mruv_economy_AdminJailRequest,
-        __Marshaller_mruv_economy_AdminJailResponse);
+        __Marshaller_mruv_punishments_AdminJailRequest,
+        __Marshaller_mruv_punishments_AdminJailResponse);
 
-    static readonly grpc::Method<global::Mruv.Economy.MuteGlobalChatsRequest, global::Mruv.Economy.MuteGlobalChatsResponse> __Method_MuteGlobalChats = new grpc::Method<global::Mruv.Economy.MuteGlobalChatsRequest, global::Mruv.Economy.MuteGlobalChatsResponse>(
+    static readonly grpc::Method<global::Mruv.Punishments.MuteGlobalChatsRequest, global::Mruv.Punishments.MuteGlobalChatsResponse> __Method_MuteGlobalChats = new grpc::Method<global::Mruv.Punishments.MuteGlobalChatsRequest, global::Mruv.Punishments.MuteGlobalChatsResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "MuteGlobalChats",
-        __Marshaller_mruv_economy_MuteGlobalChatsRequest,
-        __Marshaller_mruv_economy_MuteGlobalChatsResponse);
+        __Marshaller_mruv_punishments_MuteGlobalChatsRequest,
+        __Marshaller_mruv_punishments_MuteGlobalChatsResponse);
 
-    static readonly grpc::Method<global::Mruv.Economy.UnBanRequest, global::Mruv.Economy.UnBanResponse> __Method_UnBan = new grpc::Method<global::Mruv.Economy.UnBanRequest, global::Mruv.Economy.UnBanResponse>(
+    static readonly grpc::Method<global::Mruv.Punishments.UnBanRequest, global::Mruv.Punishments.UnBanResponse> __Method_UnBan = new grpc::Method<global::Mruv.Punishments.UnBanRequest, global::Mruv.Punishments.UnBanResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "UnBan",
-        __Marshaller_mruv_economy_UnBanRequest,
-        __Marshaller_mruv_economy_UnBanResponse);
+        __Marshaller_mruv_punishments_UnBanRequest,
+        __Marshaller_mruv_punishments_UnBanResponse);
 
-    static readonly grpc::Method<global::Mruv.Economy.UnBlockRequest, global::Mruv.Economy.UnBlockResponse> __Method_UnBlock = new grpc::Method<global::Mruv.Economy.UnBlockRequest, global::Mruv.Economy.UnBlockResponse>(
+    static readonly grpc::Method<global::Mruv.Punishments.UnBlockRequest, global::Mruv.Punishments.UnBlockResponse> __Method_UnBlock = new grpc::Method<global::Mruv.Punishments.UnBlockRequest, global::Mruv.Punishments.UnBlockResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "UnBlock",
-        __Marshaller_mruv_economy_UnBlockRequest,
-        __Marshaller_mruv_economy_UnBlockResponse);
+        __Marshaller_mruv_punishments_UnBlockRequest,
+        __Marshaller_mruv_punishments_UnBlockResponse);
 
-    static readonly grpc::Method<global::Mruv.Economy.UnWarnRequest, global::Mruv.Economy.UnWarnResponse> __Method_UnWarn = new grpc::Method<global::Mruv.Economy.UnWarnRequest, global::Mruv.Economy.UnWarnResponse>(
+    static readonly grpc::Method<global::Mruv.Punishments.UnWarnRequest, global::Mruv.Punishments.UnWarnResponse> __Method_UnWarn = new grpc::Method<global::Mruv.Punishments.UnWarnRequest, global::Mruv.Punishments.UnWarnResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "UnWarn",
-        __Marshaller_mruv_economy_UnWarnRequest,
-        __Marshaller_mruv_economy_UnWarnResponse);
+        __Marshaller_mruv_punishments_UnWarnRequest,
+        __Marshaller_mruv_punishments_UnWarnResponse);
 
-    static readonly grpc::Method<global::Mruv.Economy.UnAdminJailRequest, global::Mruv.Economy.UnAdminJailResponse> __Method_UnAdminJail = new grpc::Method<global::Mruv.Economy.UnAdminJailRequest, global::Mruv.Economy.UnAdminJailResponse>(
+    static readonly grpc::Method<global::Mruv.Punishments.UnAdminJailRequest, global::Mruv.Punishments.UnAdminJailResponse> __Method_UnAdminJail = new grpc::Method<global::Mruv.Punishments.UnAdminJailRequest, global::Mruv.Punishments.UnAdminJailResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "UnAdminJail",
-        __Marshaller_mruv_economy_UnAdminJailRequest,
-        __Marshaller_mruv_economy_UnAdminJailResponse);
+        __Marshaller_mruv_punishments_UnAdminJailRequest,
+        __Marshaller_mruv_punishments_UnAdminJailResponse);
 
-    static readonly grpc::Method<global::Mruv.Economy.UnMuteGlobalChatsRequest, global::Mruv.Economy.UnMuteGlobalChatsResponse> __Method_UnMuteGlobalChats = new grpc::Method<global::Mruv.Economy.UnMuteGlobalChatsRequest, global::Mruv.Economy.UnMuteGlobalChatsResponse>(
+    static readonly grpc::Method<global::Mruv.Punishments.UnMuteGlobalChatsRequest, global::Mruv.Punishments.UnMuteGlobalChatsResponse> __Method_UnMuteGlobalChats = new grpc::Method<global::Mruv.Punishments.UnMuteGlobalChatsRequest, global::Mruv.Punishments.UnMuteGlobalChatsResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "UnMuteGlobalChats",
-        __Marshaller_mruv_economy_UnMuteGlobalChatsRequest,
-        __Marshaller_mruv_economy_UnMuteGlobalChatsResponse);
+        __Marshaller_mruv_punishments_UnMuteGlobalChatsRequest,
+        __Marshaller_mruv_punishments_UnMuteGlobalChatsResponse);
 
-    static readonly grpc::Method<global::Mruv.Economy.GetPlayerBansRequest, global::Mruv.Economy.GetPlayerBansResponse> __Method_GetPlayerBans = new grpc::Method<global::Mruv.Economy.GetPlayerBansRequest, global::Mruv.Economy.GetPlayerBansResponse>(
+    static readonly grpc::Method<global::Mruv.Punishments.GetPlayerBansRequest, global::Mruv.Punishments.GetPlayerBansResponse> __Method_GetPlayerBans = new grpc::Method<global::Mruv.Punishments.GetPlayerBansRequest, global::Mruv.Punishments.GetPlayerBansResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetPlayerBans",
-        __Marshaller_mruv_economy_GetPlayerBansRequest,
-        __Marshaller_mruv_economy_GetPlayerBansResponse);
+        __Marshaller_mruv_punishments_GetPlayerBansRequest,
+        __Marshaller_mruv_punishments_GetPlayerBansResponse);
 
-    static readonly grpc::Method<global::Mruv.Economy.GetPlayerWarnsRequest, global::Mruv.Economy.GetPlayerWarnsResponse> __Method_GetPlayerWarns = new grpc::Method<global::Mruv.Economy.GetPlayerWarnsRequest, global::Mruv.Economy.GetPlayerWarnsResponse>(
+    static readonly grpc::Method<global::Mruv.Punishments.GetPlayerWarnsRequest, global::Mruv.Punishments.GetPlayerWarnsResponse> __Method_GetPlayerWarns = new grpc::Method<global::Mruv.Punishments.GetPlayerWarnsRequest, global::Mruv.Punishments.GetPlayerWarnsResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetPlayerWarns",
-        __Marshaller_mruv_economy_GetPlayerWarnsRequest,
-        __Marshaller_mruv_economy_GetPlayerWarnsResponse);
+        __Marshaller_mruv_punishments_GetPlayerWarnsRequest,
+        __Marshaller_mruv_punishments_GetPlayerWarnsResponse);
 
-    static readonly grpc::Method<global::Mruv.Economy.GetPlayerAdminJailRequest, global::Mruv.Economy.GetPlayerAdminJailResponse> __Method_GetPlayerAdminJail = new grpc::Method<global::Mruv.Economy.GetPlayerAdminJailRequest, global::Mruv.Economy.GetPlayerAdminJailResponse>(
+    static readonly grpc::Method<global::Mruv.Punishments.GetPlayerAdminJailRequest, global::Mruv.Punishments.GetPlayerAdminJailResponse> __Method_GetPlayerAdminJail = new grpc::Method<global::Mruv.Punishments.GetPlayerAdminJailRequest, global::Mruv.Punishments.GetPlayerAdminJailResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetPlayerAdminJail",
-        __Marshaller_mruv_economy_GetPlayerAdminJailRequest,
-        __Marshaller_mruv_economy_GetPlayerAdminJailResponse);
+        __Marshaller_mruv_punishments_GetPlayerAdminJailRequest,
+        __Marshaller_mruv_punishments_GetPlayerAdminJailResponse);
 
-    static readonly grpc::Method<global::Mruv.Economy.GetBanRequest, global::Mruv.Economy.BanMessage> __Method_GetBan = new grpc::Method<global::Mruv.Economy.GetBanRequest, global::Mruv.Economy.BanMessage>(
+    static readonly grpc::Method<global::Mruv.Punishments.GetBanRequest, global::Mruv.Punishments.BanMessage> __Method_GetBan = new grpc::Method<global::Mruv.Punishments.GetBanRequest, global::Mruv.Punishments.BanMessage>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetBan",
-        __Marshaller_mruv_economy_GetBanRequest,
-        __Marshaller_mruv_economy_BanMessage);
+        __Marshaller_mruv_punishments_GetBanRequest,
+        __Marshaller_mruv_punishments_BanMessage);
 
-    static readonly grpc::Method<global::Mruv.Economy.GetWarnRequest, global::Mruv.Economy.WarnMessage> __Method_GetWarn = new grpc::Method<global::Mruv.Economy.GetWarnRequest, global::Mruv.Economy.WarnMessage>(
+    static readonly grpc::Method<global::Mruv.Punishments.GetWarnRequest, global::Mruv.Punishments.WarnMessage> __Method_GetWarn = new grpc::Method<global::Mruv.Punishments.GetWarnRequest, global::Mruv.Punishments.WarnMessage>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetWarn",
-        __Marshaller_mruv_economy_GetWarnRequest,
-        __Marshaller_mruv_economy_WarnMessage);
+        __Marshaller_mruv_punishments_GetWarnRequest,
+        __Marshaller_mruv_punishments_WarnMessage);
 
-    static readonly grpc::Method<global::Mruv.Economy.GetBlockRequest, global::Mruv.Economy.BlockMessage> __Method_GetBlock = new grpc::Method<global::Mruv.Economy.GetBlockRequest, global::Mruv.Economy.BlockMessage>(
+    static readonly grpc::Method<global::Mruv.Punishments.GetBlockRequest, global::Mruv.Punishments.BlockMessage> __Method_GetBlock = new grpc::Method<global::Mruv.Punishments.GetBlockRequest, global::Mruv.Punishments.BlockMessage>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetBlock",
-        __Marshaller_mruv_economy_GetBlockRequest,
-        __Marshaller_mruv_economy_BlockMessage);
+        __Marshaller_mruv_punishments_GetBlockRequest,
+        __Marshaller_mruv_punishments_BlockMessage);
 
-    static readonly grpc::Method<global::Mruv.Economy.IsPlayerBannedRequest, global::Mruv.Economy.IsPlayerBannedResponse> __Method_IsPlayerBanned = new grpc::Method<global::Mruv.Economy.IsPlayerBannedRequest, global::Mruv.Economy.IsPlayerBannedResponse>(
+    static readonly grpc::Method<global::Mruv.Punishments.IsPlayerBannedRequest, global::Mruv.Punishments.IsPlayerBannedResponse> __Method_IsPlayerBanned = new grpc::Method<global::Mruv.Punishments.IsPlayerBannedRequest, global::Mruv.Punishments.IsPlayerBannedResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "IsPlayerBanned",
-        __Marshaller_mruv_economy_IsPlayerBannedRequest,
-        __Marshaller_mruv_economy_IsPlayerBannedResponse);
+        __Marshaller_mruv_punishments_IsPlayerBannedRequest,
+        __Marshaller_mruv_punishments_IsPlayerBannedResponse);
 
-    static readonly grpc::Method<global::Mruv.Economy.IsCharacterBlockedRequest, global::Mruv.Economy.IsCharacterBlockedResponse> __Method_IsCharacterBlocked = new grpc::Method<global::Mruv.Economy.IsCharacterBlockedRequest, global::Mruv.Economy.IsCharacterBlockedResponse>(
+    static readonly grpc::Method<global::Mruv.Punishments.IsCharacterBlockedRequest, global::Mruv.Punishments.IsCharacterBlockedResponse> __Method_IsCharacterBlocked = new grpc::Method<global::Mruv.Punishments.IsCharacterBlockedRequest, global::Mruv.Punishments.IsCharacterBlockedResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "IsCharacterBlocked",
-        __Marshaller_mruv_economy_IsCharacterBlockedRequest,
-        __Marshaller_mruv_economy_IsCharacterBlockedResponse);
+        __Marshaller_mruv_punishments_IsCharacterBlockedRequest,
+        __Marshaller_mruv_punishments_IsCharacterBlockedResponse);
 
-    static readonly grpc::Method<global::Mruv.Economy.IsCharacterJailedRequest, global::Mruv.Economy.IsCharacterJailedResponse> __Method_IsCharacterJailed = new grpc::Method<global::Mruv.Economy.IsCharacterJailedRequest, global::Mruv.Economy.IsCharacterJailedResponse>(
+    static readonly grpc::Method<global::Mruv.Punishments.IsCharacterJailedRequest, global::Mruv.Punishments.IsCharacterJailedResponse> __Method_IsCharacterJailed = new grpc::Method<global::Mruv.Punishments.IsCharacterJailedRequest, global::Mruv.Punishments.IsCharacterJailedResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "IsCharacterJailed",
-        __Marshaller_mruv_economy_IsCharacterJailedRequest,
-        __Marshaller_mruv_economy_IsCharacterJailedResponse);
+        __Marshaller_mruv_punishments_IsCharacterJailedRequest,
+        __Marshaller_mruv_punishments_IsCharacterJailedResponse);
 
-    static readonly grpc::Method<global::Mruv.Economy.WatchBansRequest, global::Mruv.Economy.BanMessage> __Method_WatchBans = new grpc::Method<global::Mruv.Economy.WatchBansRequest, global::Mruv.Economy.BanMessage>(
+    static readonly grpc::Method<global::Mruv.Punishments.WatchBansRequest, global::Mruv.Punishments.BanMessage> __Method_WatchBans = new grpc::Method<global::Mruv.Punishments.WatchBansRequest, global::Mruv.Punishments.BanMessage>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
         "WatchBans",
-        __Marshaller_mruv_economy_WatchBansRequest,
-        __Marshaller_mruv_economy_BanMessage);
+        __Marshaller_mruv_punishments_WatchBansRequest,
+        __Marshaller_mruv_punishments_BanMessage);
 
-    static readonly grpc::Method<global::Mruv.Economy.WatchBlocksRequest, global::Mruv.Economy.BlockMessage> __Method_WatchBlocks = new grpc::Method<global::Mruv.Economy.WatchBlocksRequest, global::Mruv.Economy.BlockMessage>(
+    static readonly grpc::Method<global::Mruv.Punishments.WatchBlocksRequest, global::Mruv.Punishments.BlockMessage> __Method_WatchBlocks = new grpc::Method<global::Mruv.Punishments.WatchBlocksRequest, global::Mruv.Punishments.BlockMessage>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
         "WatchBlocks",
-        __Marshaller_mruv_economy_WatchBlocksRequest,
-        __Marshaller_mruv_economy_BlockMessage);
+        __Marshaller_mruv_punishments_WatchBlocksRequest,
+        __Marshaller_mruv_punishments_BlockMessage);
 
-    static readonly grpc::Method<global::Mruv.Economy.WatchWarnsRequest, global::Mruv.Economy.WarnMessage> __Method_WatchWarns = new grpc::Method<global::Mruv.Economy.WatchWarnsRequest, global::Mruv.Economy.WarnMessage>(
+    static readonly grpc::Method<global::Mruv.Punishments.WatchWarnsRequest, global::Mruv.Punishments.WarnMessage> __Method_WatchWarns = new grpc::Method<global::Mruv.Punishments.WatchWarnsRequest, global::Mruv.Punishments.WarnMessage>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
         "WatchWarns",
-        __Marshaller_mruv_economy_WatchWarnsRequest,
-        __Marshaller_mruv_economy_WarnMessage);
+        __Marshaller_mruv_punishments_WatchWarnsRequest,
+        __Marshaller_mruv_punishments_WarnMessage);
 
-    static readonly grpc::Method<global::Mruv.Economy.WatchAdminJailsRequest, global::Mruv.Economy.AdminJailMessage> __Method_WatchAdminJails = new grpc::Method<global::Mruv.Economy.WatchAdminJailsRequest, global::Mruv.Economy.AdminJailMessage>(
+    static readonly grpc::Method<global::Mruv.Punishments.WatchAdminJailsRequest, global::Mruv.Punishments.AdminJailMessage> __Method_WatchAdminJails = new grpc::Method<global::Mruv.Punishments.WatchAdminJailsRequest, global::Mruv.Punishments.AdminJailMessage>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
         "WatchAdminJails",
-        __Marshaller_mruv_economy_WatchAdminJailsRequest,
-        __Marshaller_mruv_economy_AdminJailMessage);
+        __Marshaller_mruv_punishments_WatchAdminJailsRequest,
+        __Marshaller_mruv_punishments_AdminJailMessage);
 
-    static readonly grpc::Method<global::Mruv.Economy.WatchUnBansRequest, global::Mruv.Economy.UnBanMessage> __Method_WatchUnBans = new grpc::Method<global::Mruv.Economy.WatchUnBansRequest, global::Mruv.Economy.UnBanMessage>(
+    static readonly grpc::Method<global::Mruv.Punishments.WatchUnBansRequest, global::Mruv.Punishments.UnBanMessage> __Method_WatchUnBans = new grpc::Method<global::Mruv.Punishments.WatchUnBansRequest, global::Mruv.Punishments.UnBanMessage>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
         "WatchUnBans",
-        __Marshaller_mruv_economy_WatchUnBansRequest,
-        __Marshaller_mruv_economy_UnBanMessage);
+        __Marshaller_mruv_punishments_WatchUnBansRequest,
+        __Marshaller_mruv_punishments_UnBanMessage);
 
-    static readonly grpc::Method<global::Mruv.Economy.WatchUnBlocksRequest, global::Mruv.Economy.UnBlockMessage> __Method_WatchUnBlocks = new grpc::Method<global::Mruv.Economy.WatchUnBlocksRequest, global::Mruv.Economy.UnBlockMessage>(
+    static readonly grpc::Method<global::Mruv.Punishments.WatchUnBlocksRequest, global::Mruv.Punishments.UnBlockMessage> __Method_WatchUnBlocks = new grpc::Method<global::Mruv.Punishments.WatchUnBlocksRequest, global::Mruv.Punishments.UnBlockMessage>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
         "WatchUnBlocks",
-        __Marshaller_mruv_economy_WatchUnBlocksRequest,
-        __Marshaller_mruv_economy_UnBlockMessage);
+        __Marshaller_mruv_punishments_WatchUnBlocksRequest,
+        __Marshaller_mruv_punishments_UnBlockMessage);
 
-    static readonly grpc::Method<global::Mruv.Economy.WatchUnWarnsRequest, global::Mruv.Economy.UnWarnMessage> __Method_WatchUnWarns = new grpc::Method<global::Mruv.Economy.WatchUnWarnsRequest, global::Mruv.Economy.UnWarnMessage>(
+    static readonly grpc::Method<global::Mruv.Punishments.WatchUnWarnsRequest, global::Mruv.Punishments.UnWarnMessage> __Method_WatchUnWarns = new grpc::Method<global::Mruv.Punishments.WatchUnWarnsRequest, global::Mruv.Punishments.UnWarnMessage>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
         "WatchUnWarns",
-        __Marshaller_mruv_economy_WatchUnWarnsRequest,
-        __Marshaller_mruv_economy_UnWarnMessage);
+        __Marshaller_mruv_punishments_WatchUnWarnsRequest,
+        __Marshaller_mruv_punishments_UnWarnMessage);
 
-    static readonly grpc::Method<global::Mruv.Economy.WatchUnAdminJailsRequest, global::Mruv.Economy.UnAdminJailMessage> __Method_WatchUnAdminJails = new grpc::Method<global::Mruv.Economy.WatchUnAdminJailsRequest, global::Mruv.Economy.UnAdminJailMessage>(
+    static readonly grpc::Method<global::Mruv.Punishments.WatchUnAdminJailsRequest, global::Mruv.Punishments.UnAdminJailMessage> __Method_WatchUnAdminJails = new grpc::Method<global::Mruv.Punishments.WatchUnAdminJailsRequest, global::Mruv.Punishments.UnAdminJailMessage>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
         "WatchUnAdminJails",
-        __Marshaller_mruv_economy_WatchUnAdminJailsRequest,
-        __Marshaller_mruv_economy_UnAdminJailMessage);
+        __Marshaller_mruv_punishments_WatchUnAdminJailsRequest,
+        __Marshaller_mruv_punishments_UnAdminJailMessage);
 
-    static readonly grpc::Method<global::Mruv.Economy.WatchPlayerPunishmentsRequest, global::Mruv.Economy.WatchPlayerPunishmentsResponse> __Method_WatchPlayerPunishments = new grpc::Method<global::Mruv.Economy.WatchPlayerPunishmentsRequest, global::Mruv.Economy.WatchPlayerPunishmentsResponse>(
+    static readonly grpc::Method<global::Mruv.Punishments.WatchPlayerPunishmentsRequest, global::Mruv.Punishments.WatchPlayerPunishmentsResponse> __Method_WatchPlayerPunishments = new grpc::Method<global::Mruv.Punishments.WatchPlayerPunishmentsRequest, global::Mruv.Punishments.WatchPlayerPunishmentsResponse>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
         "WatchPlayerPunishments",
-        __Marshaller_mruv_economy_WatchPlayerPunishmentsRequest,
-        __Marshaller_mruv_economy_WatchPlayerPunishmentsResponse);
+        __Marshaller_mruv_punishments_WatchPlayerPunishmentsRequest,
+        __Marshaller_mruv_punishments_WatchPlayerPunishmentsResponse);
 
-    static readonly grpc::Method<global::Mruv.Economy.WatchPlayerAcquittalsRequest, global::Mruv.Economy.WatchPlayerAcquittalsResponse> __Method_WatchPlayerAcquittals = new grpc::Method<global::Mruv.Economy.WatchPlayerAcquittalsRequest, global::Mruv.Economy.WatchPlayerAcquittalsResponse>(
+    static readonly grpc::Method<global::Mruv.Punishments.WatchPlayerAcquittalsRequest, global::Mruv.Punishments.WatchPlayerAcquittalsResponse> __Method_WatchPlayerAcquittals = new grpc::Method<global::Mruv.Punishments.WatchPlayerAcquittalsRequest, global::Mruv.Punishments.WatchPlayerAcquittalsResponse>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
         "WatchPlayerAcquittals",
-        __Marshaller_mruv_economy_WatchPlayerAcquittalsRequest,
-        __Marshaller_mruv_economy_WatchPlayerAcquittalsResponse);
+        __Marshaller_mruv_punishments_WatchPlayerAcquittalsRequest,
+        __Marshaller_mruv_punishments_WatchPlayerAcquittalsResponse);
 
-    static readonly grpc::Method<global::Mruv.Economy.WatchPunishmentsRequest, global::Mruv.Economy.WatchPunishmentsResponse> __Method_WatchPunishments = new grpc::Method<global::Mruv.Economy.WatchPunishmentsRequest, global::Mruv.Economy.WatchPunishmentsResponse>(
+    static readonly grpc::Method<global::Mruv.Punishments.WatchPunishmentsRequest, global::Mruv.Punishments.WatchPunishmentsResponse> __Method_WatchPunishments = new grpc::Method<global::Mruv.Punishments.WatchPunishmentsRequest, global::Mruv.Punishments.WatchPunishmentsResponse>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
         "WatchPunishments",
-        __Marshaller_mruv_economy_WatchPunishmentsRequest,
-        __Marshaller_mruv_economy_WatchPunishmentsResponse);
+        __Marshaller_mruv_punishments_WatchPunishmentsRequest,
+        __Marshaller_mruv_punishments_WatchPunishmentsResponse);
+
+    static readonly grpc::Method<global::Mruv.Punishments.WatchAcquittalsRequest, global::Mruv.Punishments.WatchAcquittalsResponse> __Method_WatchAcquittals = new grpc::Method<global::Mruv.Punishments.WatchAcquittalsRequest, global::Mruv.Punishments.WatchAcquittalsResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "WatchAcquittals",
+        __Marshaller_mruv_punishments_WatchAcquittalsRequest,
+        __Marshaller_mruv_punishments_WatchAcquittalsResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
-      get { return global::Mruv.Economy.PunishmentsReflection.Descriptor.Services[0]; }
+      get { return global::Mruv.Punishments.PunishmentsReflection.Descriptor.Services[0]; }
     }
 
     /// <summary>Base class for server-side implementations of MruVPunishmentsService</summary>
@@ -294,13 +312,24 @@ namespace Mruv.Economy {
     public abstract partial class MruVPunishmentsServiceBase
     {
       /// <summary>
+      /// Punish player with choosen punishment type.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.Punishments.PunishResponse> Punish(global::Mruv.Punishments.PunishRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
       /// Ban player on account and/or ip.
       /// If ban_time is 0, ban will never expire.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Economy.BanResponse> Ban(global::Mruv.Economy.BanRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.Punishments.BanResponse> Ban(global::Mruv.Punishments.BanRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -311,7 +340,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Economy.BlockResponse> Block(global::Mruv.Economy.BlockRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.Punishments.BlockResponse> Block(global::Mruv.Punishments.BlockRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -323,7 +352,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Economy.WarnResponse> Warn(global::Mruv.Economy.WarnRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.Punishments.WarnResponse> Warn(global::Mruv.Punishments.WarnRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -334,7 +363,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Economy.AdminJailResponse> AdminJail(global::Mruv.Economy.AdminJailRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.Punishments.AdminJailResponse> AdminJail(global::Mruv.Punishments.AdminJailRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -345,7 +374,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Economy.MuteGlobalChatsResponse> MuteGlobalChats(global::Mruv.Economy.MuteGlobalChatsRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.Punishments.MuteGlobalChatsResponse> MuteGlobalChats(global::Mruv.Punishments.MuteGlobalChatsRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -356,7 +385,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Economy.UnBanResponse> UnBan(global::Mruv.Economy.UnBanRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.Punishments.UnBanResponse> UnBan(global::Mruv.Punishments.UnBanRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -367,7 +396,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Economy.UnBlockResponse> UnBlock(global::Mruv.Economy.UnBlockRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.Punishments.UnBlockResponse> UnBlock(global::Mruv.Punishments.UnBlockRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -378,7 +407,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Economy.UnWarnResponse> UnWarn(global::Mruv.Economy.UnWarnRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.Punishments.UnWarnResponse> UnWarn(global::Mruv.Punishments.UnWarnRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -389,7 +418,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Economy.UnAdminJailResponse> UnAdminJail(global::Mruv.Economy.UnAdminJailRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.Punishments.UnAdminJailResponse> UnAdminJail(global::Mruv.Punishments.UnAdminJailRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -399,7 +428,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Economy.UnMuteGlobalChatsResponse> UnMuteGlobalChats(global::Mruv.Economy.UnMuteGlobalChatsRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.Punishments.UnMuteGlobalChatsResponse> UnMuteGlobalChats(global::Mruv.Punishments.UnMuteGlobalChatsRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -410,7 +439,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Economy.GetPlayerBansResponse> GetPlayerBans(global::Mruv.Economy.GetPlayerBansRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.Punishments.GetPlayerBansResponse> GetPlayerBans(global::Mruv.Punishments.GetPlayerBansRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -421,7 +450,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Economy.GetPlayerWarnsResponse> GetPlayerWarns(global::Mruv.Economy.GetPlayerWarnsRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.Punishments.GetPlayerWarnsResponse> GetPlayerWarns(global::Mruv.Punishments.GetPlayerWarnsRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -432,7 +461,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Economy.GetPlayerAdminJailResponse> GetPlayerAdminJail(global::Mruv.Economy.GetPlayerAdminJailRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.Punishments.GetPlayerAdminJailResponse> GetPlayerAdminJail(global::Mruv.Punishments.GetPlayerAdminJailRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -443,7 +472,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Economy.BanMessage> GetBan(global::Mruv.Economy.GetBanRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.Punishments.BanMessage> GetBan(global::Mruv.Punishments.GetBanRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -454,7 +483,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Economy.WarnMessage> GetWarn(global::Mruv.Economy.GetWarnRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.Punishments.WarnMessage> GetWarn(global::Mruv.Punishments.GetWarnRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -465,7 +494,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Economy.BlockMessage> GetBlock(global::Mruv.Economy.GetBlockRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.Punishments.BlockMessage> GetBlock(global::Mruv.Punishments.GetBlockRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -476,7 +505,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Economy.IsPlayerBannedResponse> IsPlayerBanned(global::Mruv.Economy.IsPlayerBannedRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.Punishments.IsPlayerBannedResponse> IsPlayerBanned(global::Mruv.Punishments.IsPlayerBannedRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -487,7 +516,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Economy.IsCharacterBlockedResponse> IsCharacterBlocked(global::Mruv.Economy.IsCharacterBlockedRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.Punishments.IsCharacterBlockedResponse> IsCharacterBlocked(global::Mruv.Punishments.IsCharacterBlockedRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -497,7 +526,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Economy.IsCharacterJailedResponse> IsCharacterJailed(global::Mruv.Economy.IsCharacterJailedRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.Punishments.IsCharacterJailedResponse> IsCharacterJailed(global::Mruv.Punishments.IsCharacterJailedRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -509,7 +538,7 @@ namespace Mruv.Economy {
       /// <param name="responseStream">Used for sending responses back to the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>A task indicating completion of the handler.</returns>
-      public virtual global::System.Threading.Tasks.Task WatchBans(global::Mruv.Economy.WatchBansRequest request, grpc::IServerStreamWriter<global::Mruv.Economy.BanMessage> responseStream, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task WatchBans(global::Mruv.Punishments.WatchBansRequest request, grpc::IServerStreamWriter<global::Mruv.Punishments.BanMessage> responseStream, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -521,7 +550,7 @@ namespace Mruv.Economy {
       /// <param name="responseStream">Used for sending responses back to the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>A task indicating completion of the handler.</returns>
-      public virtual global::System.Threading.Tasks.Task WatchBlocks(global::Mruv.Economy.WatchBlocksRequest request, grpc::IServerStreamWriter<global::Mruv.Economy.BlockMessage> responseStream, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task WatchBlocks(global::Mruv.Punishments.WatchBlocksRequest request, grpc::IServerStreamWriter<global::Mruv.Punishments.BlockMessage> responseStream, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -533,7 +562,7 @@ namespace Mruv.Economy {
       /// <param name="responseStream">Used for sending responses back to the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>A task indicating completion of the handler.</returns>
-      public virtual global::System.Threading.Tasks.Task WatchWarns(global::Mruv.Economy.WatchWarnsRequest request, grpc::IServerStreamWriter<global::Mruv.Economy.WarnMessage> responseStream, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task WatchWarns(global::Mruv.Punishments.WatchWarnsRequest request, grpc::IServerStreamWriter<global::Mruv.Punishments.WarnMessage> responseStream, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -545,7 +574,7 @@ namespace Mruv.Economy {
       /// <param name="responseStream">Used for sending responses back to the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>A task indicating completion of the handler.</returns>
-      public virtual global::System.Threading.Tasks.Task WatchAdminJails(global::Mruv.Economy.WatchAdminJailsRequest request, grpc::IServerStreamWriter<global::Mruv.Economy.AdminJailMessage> responseStream, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task WatchAdminJails(global::Mruv.Punishments.WatchAdminJailsRequest request, grpc::IServerStreamWriter<global::Mruv.Punishments.AdminJailMessage> responseStream, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -557,7 +586,7 @@ namespace Mruv.Economy {
       /// <param name="responseStream">Used for sending responses back to the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>A task indicating completion of the handler.</returns>
-      public virtual global::System.Threading.Tasks.Task WatchUnBans(global::Mruv.Economy.WatchUnBansRequest request, grpc::IServerStreamWriter<global::Mruv.Economy.UnBanMessage> responseStream, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task WatchUnBans(global::Mruv.Punishments.WatchUnBansRequest request, grpc::IServerStreamWriter<global::Mruv.Punishments.UnBanMessage> responseStream, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -569,7 +598,7 @@ namespace Mruv.Economy {
       /// <param name="responseStream">Used for sending responses back to the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>A task indicating completion of the handler.</returns>
-      public virtual global::System.Threading.Tasks.Task WatchUnBlocks(global::Mruv.Economy.WatchUnBlocksRequest request, grpc::IServerStreamWriter<global::Mruv.Economy.UnBlockMessage> responseStream, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task WatchUnBlocks(global::Mruv.Punishments.WatchUnBlocksRequest request, grpc::IServerStreamWriter<global::Mruv.Punishments.UnBlockMessage> responseStream, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -581,7 +610,7 @@ namespace Mruv.Economy {
       /// <param name="responseStream">Used for sending responses back to the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>A task indicating completion of the handler.</returns>
-      public virtual global::System.Threading.Tasks.Task WatchUnWarns(global::Mruv.Economy.WatchUnWarnsRequest request, grpc::IServerStreamWriter<global::Mruv.Economy.UnWarnMessage> responseStream, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task WatchUnWarns(global::Mruv.Punishments.WatchUnWarnsRequest request, grpc::IServerStreamWriter<global::Mruv.Punishments.UnWarnMessage> responseStream, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -593,7 +622,7 @@ namespace Mruv.Economy {
       /// <param name="responseStream">Used for sending responses back to the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>A task indicating completion of the handler.</returns>
-      public virtual global::System.Threading.Tasks.Task WatchUnAdminJails(global::Mruv.Economy.WatchUnAdminJailsRequest request, grpc::IServerStreamWriter<global::Mruv.Economy.UnAdminJailMessage> responseStream, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task WatchUnAdminJails(global::Mruv.Punishments.WatchUnAdminJailsRequest request, grpc::IServerStreamWriter<global::Mruv.Punishments.UnAdminJailMessage> responseStream, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -605,7 +634,7 @@ namespace Mruv.Economy {
       /// <param name="responseStream">Used for sending responses back to the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>A task indicating completion of the handler.</returns>
-      public virtual global::System.Threading.Tasks.Task WatchPlayerPunishments(global::Mruv.Economy.WatchPlayerPunishmentsRequest request, grpc::IServerStreamWriter<global::Mruv.Economy.WatchPlayerPunishmentsResponse> responseStream, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task WatchPlayerPunishments(global::Mruv.Punishments.WatchPlayerPunishmentsRequest request, grpc::IServerStreamWriter<global::Mruv.Punishments.WatchPlayerPunishmentsResponse> responseStream, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -617,19 +646,30 @@ namespace Mruv.Economy {
       /// <param name="responseStream">Used for sending responses back to the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>A task indicating completion of the handler.</returns>
-      public virtual global::System.Threading.Tasks.Task WatchPlayerAcquittals(global::Mruv.Economy.WatchPlayerAcquittalsRequest request, grpc::IServerStreamWriter<global::Mruv.Economy.WatchPlayerAcquittalsResponse> responseStream, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task WatchPlayerAcquittals(global::Mruv.Punishments.WatchPlayerAcquittalsRequest request, grpc::IServerStreamWriter<global::Mruv.Punishments.WatchPlayerAcquittalsResponse> responseStream, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       /// <summary>
-      /// Subscribe to all punishments and acquittals events.
+      /// Subscribe to all punishments events.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="responseStream">Used for sending responses back to the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>A task indicating completion of the handler.</returns>
-      public virtual global::System.Threading.Tasks.Task WatchPunishments(global::Mruv.Economy.WatchPunishmentsRequest request, grpc::IServerStreamWriter<global::Mruv.Economy.WatchPunishmentsResponse> responseStream, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task WatchPunishments(global::Mruv.Punishments.WatchPunishmentsRequest request, grpc::IServerStreamWriter<global::Mruv.Punishments.WatchPunishmentsResponse> responseStream, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Subscribe to all acquittals events.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.Punishments.WatchAcquittalsResponse> WatchAcquittals(global::Mruv.Punishments.WatchAcquittalsRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -660,6 +700,50 @@ namespace Mruv.Economy {
       }
 
       /// <summary>
+      /// Punish player with choosen punishment type.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Mruv.Punishments.PunishResponse Punish(global::Mruv.Punishments.PunishRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return Punish(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Punish player with choosen punishment type.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Mruv.Punishments.PunishResponse Punish(global::Mruv.Punishments.PunishRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_Punish, null, options, request);
+      }
+      /// <summary>
+      /// Punish player with choosen punishment type.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.PunishResponse> PunishAsync(global::Mruv.Punishments.PunishRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PunishAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Punish player with choosen punishment type.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.PunishResponse> PunishAsync(global::Mruv.Punishments.PunishRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_Punish, null, options, request);
+      }
+      /// <summary>
       /// Ban player on account and/or ip.
       /// If ban_time is 0, ban will never expire.
       /// </summary>
@@ -668,7 +752,7 @@ namespace Mruv.Economy {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Economy.BanResponse Ban(global::Mruv.Economy.BanRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.Punishments.BanResponse Ban(global::Mruv.Punishments.BanRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return Ban(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -679,7 +763,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Economy.BanResponse Ban(global::Mruv.Economy.BanRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.Punishments.BanResponse Ban(global::Mruv.Punishments.BanRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_Ban, null, options, request);
       }
@@ -692,7 +776,7 @@ namespace Mruv.Economy {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Economy.BanResponse> BanAsync(global::Mruv.Economy.BanRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.BanResponse> BanAsync(global::Mruv.Punishments.BanRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return BanAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -703,7 +787,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Economy.BanResponse> BanAsync(global::Mruv.Economy.BanRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.BanResponse> BanAsync(global::Mruv.Punishments.BanRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_Ban, null, options, request);
       }
@@ -715,7 +799,7 @@ namespace Mruv.Economy {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Economy.BlockResponse Block(global::Mruv.Economy.BlockRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.Punishments.BlockResponse Block(global::Mruv.Punishments.BlockRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return Block(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -725,7 +809,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Economy.BlockResponse Block(global::Mruv.Economy.BlockRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.Punishments.BlockResponse Block(global::Mruv.Punishments.BlockRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_Block, null, options, request);
       }
@@ -737,7 +821,7 @@ namespace Mruv.Economy {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Economy.BlockResponse> BlockAsync(global::Mruv.Economy.BlockRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.BlockResponse> BlockAsync(global::Mruv.Punishments.BlockRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return BlockAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -747,7 +831,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Economy.BlockResponse> BlockAsync(global::Mruv.Economy.BlockRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.BlockResponse> BlockAsync(global::Mruv.Punishments.BlockRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_Block, null, options, request);
       }
@@ -760,7 +844,7 @@ namespace Mruv.Economy {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Economy.WarnResponse Warn(global::Mruv.Economy.WarnRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.Punishments.WarnResponse Warn(global::Mruv.Punishments.WarnRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return Warn(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -771,7 +855,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Economy.WarnResponse Warn(global::Mruv.Economy.WarnRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.Punishments.WarnResponse Warn(global::Mruv.Punishments.WarnRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_Warn, null, options, request);
       }
@@ -784,7 +868,7 @@ namespace Mruv.Economy {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Economy.WarnResponse> WarnAsync(global::Mruv.Economy.WarnRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.WarnResponse> WarnAsync(global::Mruv.Punishments.WarnRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return WarnAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -795,7 +879,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Economy.WarnResponse> WarnAsync(global::Mruv.Economy.WarnRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.WarnResponse> WarnAsync(global::Mruv.Punishments.WarnRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_Warn, null, options, request);
       }
@@ -807,7 +891,7 @@ namespace Mruv.Economy {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Economy.AdminJailResponse AdminJail(global::Mruv.Economy.AdminJailRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.Punishments.AdminJailResponse AdminJail(global::Mruv.Punishments.AdminJailRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return AdminJail(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -817,7 +901,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Economy.AdminJailResponse AdminJail(global::Mruv.Economy.AdminJailRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.Punishments.AdminJailResponse AdminJail(global::Mruv.Punishments.AdminJailRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_AdminJail, null, options, request);
       }
@@ -829,7 +913,7 @@ namespace Mruv.Economy {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Economy.AdminJailResponse> AdminJailAsync(global::Mruv.Economy.AdminJailRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.AdminJailResponse> AdminJailAsync(global::Mruv.Punishments.AdminJailRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return AdminJailAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -839,7 +923,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Economy.AdminJailResponse> AdminJailAsync(global::Mruv.Economy.AdminJailRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.AdminJailResponse> AdminJailAsync(global::Mruv.Punishments.AdminJailRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_AdminJail, null, options, request);
       }
@@ -851,7 +935,7 @@ namespace Mruv.Economy {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Economy.MuteGlobalChatsResponse MuteGlobalChats(global::Mruv.Economy.MuteGlobalChatsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.Punishments.MuteGlobalChatsResponse MuteGlobalChats(global::Mruv.Punishments.MuteGlobalChatsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return MuteGlobalChats(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -861,7 +945,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Economy.MuteGlobalChatsResponse MuteGlobalChats(global::Mruv.Economy.MuteGlobalChatsRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.Punishments.MuteGlobalChatsResponse MuteGlobalChats(global::Mruv.Punishments.MuteGlobalChatsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_MuteGlobalChats, null, options, request);
       }
@@ -873,7 +957,7 @@ namespace Mruv.Economy {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Economy.MuteGlobalChatsResponse> MuteGlobalChatsAsync(global::Mruv.Economy.MuteGlobalChatsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.MuteGlobalChatsResponse> MuteGlobalChatsAsync(global::Mruv.Punishments.MuteGlobalChatsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return MuteGlobalChatsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -883,7 +967,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Economy.MuteGlobalChatsResponse> MuteGlobalChatsAsync(global::Mruv.Economy.MuteGlobalChatsRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.MuteGlobalChatsResponse> MuteGlobalChatsAsync(global::Mruv.Punishments.MuteGlobalChatsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_MuteGlobalChats, null, options, request);
       }
@@ -895,7 +979,7 @@ namespace Mruv.Economy {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Economy.UnBanResponse UnBan(global::Mruv.Economy.UnBanRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.Punishments.UnBanResponse UnBan(global::Mruv.Punishments.UnBanRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return UnBan(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -905,7 +989,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Economy.UnBanResponse UnBan(global::Mruv.Economy.UnBanRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.Punishments.UnBanResponse UnBan(global::Mruv.Punishments.UnBanRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_UnBan, null, options, request);
       }
@@ -917,7 +1001,7 @@ namespace Mruv.Economy {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Economy.UnBanResponse> UnBanAsync(global::Mruv.Economy.UnBanRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.UnBanResponse> UnBanAsync(global::Mruv.Punishments.UnBanRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return UnBanAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -927,7 +1011,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Economy.UnBanResponse> UnBanAsync(global::Mruv.Economy.UnBanRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.UnBanResponse> UnBanAsync(global::Mruv.Punishments.UnBanRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_UnBan, null, options, request);
       }
@@ -939,7 +1023,7 @@ namespace Mruv.Economy {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Economy.UnBlockResponse UnBlock(global::Mruv.Economy.UnBlockRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.Punishments.UnBlockResponse UnBlock(global::Mruv.Punishments.UnBlockRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return UnBlock(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -949,7 +1033,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Economy.UnBlockResponse UnBlock(global::Mruv.Economy.UnBlockRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.Punishments.UnBlockResponse UnBlock(global::Mruv.Punishments.UnBlockRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_UnBlock, null, options, request);
       }
@@ -961,7 +1045,7 @@ namespace Mruv.Economy {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Economy.UnBlockResponse> UnBlockAsync(global::Mruv.Economy.UnBlockRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.UnBlockResponse> UnBlockAsync(global::Mruv.Punishments.UnBlockRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return UnBlockAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -971,7 +1055,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Economy.UnBlockResponse> UnBlockAsync(global::Mruv.Economy.UnBlockRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.UnBlockResponse> UnBlockAsync(global::Mruv.Punishments.UnBlockRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_UnBlock, null, options, request);
       }
@@ -983,7 +1067,7 @@ namespace Mruv.Economy {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Economy.UnWarnResponse UnWarn(global::Mruv.Economy.UnWarnRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.Punishments.UnWarnResponse UnWarn(global::Mruv.Punishments.UnWarnRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return UnWarn(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -993,7 +1077,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Economy.UnWarnResponse UnWarn(global::Mruv.Economy.UnWarnRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.Punishments.UnWarnResponse UnWarn(global::Mruv.Punishments.UnWarnRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_UnWarn, null, options, request);
       }
@@ -1005,7 +1089,7 @@ namespace Mruv.Economy {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Economy.UnWarnResponse> UnWarnAsync(global::Mruv.Economy.UnWarnRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.UnWarnResponse> UnWarnAsync(global::Mruv.Punishments.UnWarnRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return UnWarnAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1015,7 +1099,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Economy.UnWarnResponse> UnWarnAsync(global::Mruv.Economy.UnWarnRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.UnWarnResponse> UnWarnAsync(global::Mruv.Punishments.UnWarnRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_UnWarn, null, options, request);
       }
@@ -1027,7 +1111,7 @@ namespace Mruv.Economy {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Economy.UnAdminJailResponse UnAdminJail(global::Mruv.Economy.UnAdminJailRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.Punishments.UnAdminJailResponse UnAdminJail(global::Mruv.Punishments.UnAdminJailRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return UnAdminJail(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1037,7 +1121,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Economy.UnAdminJailResponse UnAdminJail(global::Mruv.Economy.UnAdminJailRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.Punishments.UnAdminJailResponse UnAdminJail(global::Mruv.Punishments.UnAdminJailRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_UnAdminJail, null, options, request);
       }
@@ -1049,7 +1133,7 @@ namespace Mruv.Economy {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Economy.UnAdminJailResponse> UnAdminJailAsync(global::Mruv.Economy.UnAdminJailRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.UnAdminJailResponse> UnAdminJailAsync(global::Mruv.Punishments.UnAdminJailRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return UnAdminJailAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1059,7 +1143,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Economy.UnAdminJailResponse> UnAdminJailAsync(global::Mruv.Economy.UnAdminJailRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.UnAdminJailResponse> UnAdminJailAsync(global::Mruv.Punishments.UnAdminJailRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_UnAdminJail, null, options, request);
       }
@@ -1070,7 +1154,7 @@ namespace Mruv.Economy {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Economy.UnMuteGlobalChatsResponse UnMuteGlobalChats(global::Mruv.Economy.UnMuteGlobalChatsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.Punishments.UnMuteGlobalChatsResponse UnMuteGlobalChats(global::Mruv.Punishments.UnMuteGlobalChatsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return UnMuteGlobalChats(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1079,7 +1163,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Economy.UnMuteGlobalChatsResponse UnMuteGlobalChats(global::Mruv.Economy.UnMuteGlobalChatsRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.Punishments.UnMuteGlobalChatsResponse UnMuteGlobalChats(global::Mruv.Punishments.UnMuteGlobalChatsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_UnMuteGlobalChats, null, options, request);
       }
@@ -1090,7 +1174,7 @@ namespace Mruv.Economy {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Economy.UnMuteGlobalChatsResponse> UnMuteGlobalChatsAsync(global::Mruv.Economy.UnMuteGlobalChatsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.UnMuteGlobalChatsResponse> UnMuteGlobalChatsAsync(global::Mruv.Punishments.UnMuteGlobalChatsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return UnMuteGlobalChatsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1099,7 +1183,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Economy.UnMuteGlobalChatsResponse> UnMuteGlobalChatsAsync(global::Mruv.Economy.UnMuteGlobalChatsRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.UnMuteGlobalChatsResponse> UnMuteGlobalChatsAsync(global::Mruv.Punishments.UnMuteGlobalChatsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_UnMuteGlobalChats, null, options, request);
       }
@@ -1111,7 +1195,7 @@ namespace Mruv.Economy {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Economy.GetPlayerBansResponse GetPlayerBans(global::Mruv.Economy.GetPlayerBansRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.Punishments.GetPlayerBansResponse GetPlayerBans(global::Mruv.Punishments.GetPlayerBansRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetPlayerBans(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1121,7 +1205,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Economy.GetPlayerBansResponse GetPlayerBans(global::Mruv.Economy.GetPlayerBansRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.Punishments.GetPlayerBansResponse GetPlayerBans(global::Mruv.Punishments.GetPlayerBansRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetPlayerBans, null, options, request);
       }
@@ -1133,7 +1217,7 @@ namespace Mruv.Economy {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Economy.GetPlayerBansResponse> GetPlayerBansAsync(global::Mruv.Economy.GetPlayerBansRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.GetPlayerBansResponse> GetPlayerBansAsync(global::Mruv.Punishments.GetPlayerBansRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetPlayerBansAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1143,7 +1227,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Economy.GetPlayerBansResponse> GetPlayerBansAsync(global::Mruv.Economy.GetPlayerBansRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.GetPlayerBansResponse> GetPlayerBansAsync(global::Mruv.Punishments.GetPlayerBansRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetPlayerBans, null, options, request);
       }
@@ -1155,7 +1239,7 @@ namespace Mruv.Economy {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Economy.GetPlayerWarnsResponse GetPlayerWarns(global::Mruv.Economy.GetPlayerWarnsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.Punishments.GetPlayerWarnsResponse GetPlayerWarns(global::Mruv.Punishments.GetPlayerWarnsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetPlayerWarns(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1165,7 +1249,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Economy.GetPlayerWarnsResponse GetPlayerWarns(global::Mruv.Economy.GetPlayerWarnsRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.Punishments.GetPlayerWarnsResponse GetPlayerWarns(global::Mruv.Punishments.GetPlayerWarnsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetPlayerWarns, null, options, request);
       }
@@ -1177,7 +1261,7 @@ namespace Mruv.Economy {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Economy.GetPlayerWarnsResponse> GetPlayerWarnsAsync(global::Mruv.Economy.GetPlayerWarnsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.GetPlayerWarnsResponse> GetPlayerWarnsAsync(global::Mruv.Punishments.GetPlayerWarnsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetPlayerWarnsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1187,7 +1271,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Economy.GetPlayerWarnsResponse> GetPlayerWarnsAsync(global::Mruv.Economy.GetPlayerWarnsRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.GetPlayerWarnsResponse> GetPlayerWarnsAsync(global::Mruv.Punishments.GetPlayerWarnsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetPlayerWarns, null, options, request);
       }
@@ -1199,7 +1283,7 @@ namespace Mruv.Economy {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Economy.GetPlayerAdminJailResponse GetPlayerAdminJail(global::Mruv.Economy.GetPlayerAdminJailRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.Punishments.GetPlayerAdminJailResponse GetPlayerAdminJail(global::Mruv.Punishments.GetPlayerAdminJailRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetPlayerAdminJail(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1209,7 +1293,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Economy.GetPlayerAdminJailResponse GetPlayerAdminJail(global::Mruv.Economy.GetPlayerAdminJailRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.Punishments.GetPlayerAdminJailResponse GetPlayerAdminJail(global::Mruv.Punishments.GetPlayerAdminJailRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetPlayerAdminJail, null, options, request);
       }
@@ -1221,7 +1305,7 @@ namespace Mruv.Economy {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Economy.GetPlayerAdminJailResponse> GetPlayerAdminJailAsync(global::Mruv.Economy.GetPlayerAdminJailRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.GetPlayerAdminJailResponse> GetPlayerAdminJailAsync(global::Mruv.Punishments.GetPlayerAdminJailRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetPlayerAdminJailAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1231,7 +1315,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Economy.GetPlayerAdminJailResponse> GetPlayerAdminJailAsync(global::Mruv.Economy.GetPlayerAdminJailRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.GetPlayerAdminJailResponse> GetPlayerAdminJailAsync(global::Mruv.Punishments.GetPlayerAdminJailRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetPlayerAdminJail, null, options, request);
       }
@@ -1243,7 +1327,7 @@ namespace Mruv.Economy {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Economy.BanMessage GetBan(global::Mruv.Economy.GetBanRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.Punishments.BanMessage GetBan(global::Mruv.Punishments.GetBanRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetBan(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1253,7 +1337,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Economy.BanMessage GetBan(global::Mruv.Economy.GetBanRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.Punishments.BanMessage GetBan(global::Mruv.Punishments.GetBanRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetBan, null, options, request);
       }
@@ -1265,7 +1349,7 @@ namespace Mruv.Economy {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Economy.BanMessage> GetBanAsync(global::Mruv.Economy.GetBanRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.BanMessage> GetBanAsync(global::Mruv.Punishments.GetBanRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetBanAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1275,7 +1359,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Economy.BanMessage> GetBanAsync(global::Mruv.Economy.GetBanRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.BanMessage> GetBanAsync(global::Mruv.Punishments.GetBanRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetBan, null, options, request);
       }
@@ -1287,7 +1371,7 @@ namespace Mruv.Economy {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Economy.WarnMessage GetWarn(global::Mruv.Economy.GetWarnRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.Punishments.WarnMessage GetWarn(global::Mruv.Punishments.GetWarnRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetWarn(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1297,7 +1381,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Economy.WarnMessage GetWarn(global::Mruv.Economy.GetWarnRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.Punishments.WarnMessage GetWarn(global::Mruv.Punishments.GetWarnRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetWarn, null, options, request);
       }
@@ -1309,7 +1393,7 @@ namespace Mruv.Economy {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Economy.WarnMessage> GetWarnAsync(global::Mruv.Economy.GetWarnRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.WarnMessage> GetWarnAsync(global::Mruv.Punishments.GetWarnRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetWarnAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1319,7 +1403,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Economy.WarnMessage> GetWarnAsync(global::Mruv.Economy.GetWarnRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.WarnMessage> GetWarnAsync(global::Mruv.Punishments.GetWarnRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetWarn, null, options, request);
       }
@@ -1331,7 +1415,7 @@ namespace Mruv.Economy {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Economy.BlockMessage GetBlock(global::Mruv.Economy.GetBlockRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.Punishments.BlockMessage GetBlock(global::Mruv.Punishments.GetBlockRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetBlock(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1341,7 +1425,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Economy.BlockMessage GetBlock(global::Mruv.Economy.GetBlockRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.Punishments.BlockMessage GetBlock(global::Mruv.Punishments.GetBlockRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetBlock, null, options, request);
       }
@@ -1353,7 +1437,7 @@ namespace Mruv.Economy {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Economy.BlockMessage> GetBlockAsync(global::Mruv.Economy.GetBlockRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.BlockMessage> GetBlockAsync(global::Mruv.Punishments.GetBlockRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetBlockAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1363,7 +1447,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Economy.BlockMessage> GetBlockAsync(global::Mruv.Economy.GetBlockRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.BlockMessage> GetBlockAsync(global::Mruv.Punishments.GetBlockRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetBlock, null, options, request);
       }
@@ -1375,7 +1459,7 @@ namespace Mruv.Economy {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Economy.IsPlayerBannedResponse IsPlayerBanned(global::Mruv.Economy.IsPlayerBannedRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.Punishments.IsPlayerBannedResponse IsPlayerBanned(global::Mruv.Punishments.IsPlayerBannedRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return IsPlayerBanned(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1385,7 +1469,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Economy.IsPlayerBannedResponse IsPlayerBanned(global::Mruv.Economy.IsPlayerBannedRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.Punishments.IsPlayerBannedResponse IsPlayerBanned(global::Mruv.Punishments.IsPlayerBannedRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_IsPlayerBanned, null, options, request);
       }
@@ -1397,7 +1481,7 @@ namespace Mruv.Economy {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Economy.IsPlayerBannedResponse> IsPlayerBannedAsync(global::Mruv.Economy.IsPlayerBannedRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.IsPlayerBannedResponse> IsPlayerBannedAsync(global::Mruv.Punishments.IsPlayerBannedRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return IsPlayerBannedAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1407,7 +1491,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Economy.IsPlayerBannedResponse> IsPlayerBannedAsync(global::Mruv.Economy.IsPlayerBannedRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.IsPlayerBannedResponse> IsPlayerBannedAsync(global::Mruv.Punishments.IsPlayerBannedRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_IsPlayerBanned, null, options, request);
       }
@@ -1419,7 +1503,7 @@ namespace Mruv.Economy {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Economy.IsCharacterBlockedResponse IsCharacterBlocked(global::Mruv.Economy.IsCharacterBlockedRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.Punishments.IsCharacterBlockedResponse IsCharacterBlocked(global::Mruv.Punishments.IsCharacterBlockedRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return IsCharacterBlocked(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1429,7 +1513,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Economy.IsCharacterBlockedResponse IsCharacterBlocked(global::Mruv.Economy.IsCharacterBlockedRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.Punishments.IsCharacterBlockedResponse IsCharacterBlocked(global::Mruv.Punishments.IsCharacterBlockedRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_IsCharacterBlocked, null, options, request);
       }
@@ -1441,7 +1525,7 @@ namespace Mruv.Economy {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Economy.IsCharacterBlockedResponse> IsCharacterBlockedAsync(global::Mruv.Economy.IsCharacterBlockedRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.IsCharacterBlockedResponse> IsCharacterBlockedAsync(global::Mruv.Punishments.IsCharacterBlockedRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return IsCharacterBlockedAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1451,7 +1535,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Economy.IsCharacterBlockedResponse> IsCharacterBlockedAsync(global::Mruv.Economy.IsCharacterBlockedRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.IsCharacterBlockedResponse> IsCharacterBlockedAsync(global::Mruv.Punishments.IsCharacterBlockedRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_IsCharacterBlocked, null, options, request);
       }
@@ -1462,7 +1546,7 @@ namespace Mruv.Economy {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Economy.IsCharacterJailedResponse IsCharacterJailed(global::Mruv.Economy.IsCharacterJailedRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.Punishments.IsCharacterJailedResponse IsCharacterJailed(global::Mruv.Punishments.IsCharacterJailedRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return IsCharacterJailed(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1471,7 +1555,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Economy.IsCharacterJailedResponse IsCharacterJailed(global::Mruv.Economy.IsCharacterJailedRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.Punishments.IsCharacterJailedResponse IsCharacterJailed(global::Mruv.Punishments.IsCharacterJailedRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_IsCharacterJailed, null, options, request);
       }
@@ -1482,7 +1566,7 @@ namespace Mruv.Economy {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Economy.IsCharacterJailedResponse> IsCharacterJailedAsync(global::Mruv.Economy.IsCharacterJailedRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.IsCharacterJailedResponse> IsCharacterJailedAsync(global::Mruv.Punishments.IsCharacterJailedRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return IsCharacterJailedAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1491,7 +1575,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Economy.IsCharacterJailedResponse> IsCharacterJailedAsync(global::Mruv.Economy.IsCharacterJailedRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.IsCharacterJailedResponse> IsCharacterJailedAsync(global::Mruv.Punishments.IsCharacterJailedRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_IsCharacterJailed, null, options, request);
       }
@@ -1503,7 +1587,7 @@ namespace Mruv.Economy {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Economy.BanMessage> WatchBans(global::Mruv.Economy.WatchBansRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Punishments.BanMessage> WatchBans(global::Mruv.Punishments.WatchBansRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return WatchBans(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1513,7 +1597,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Economy.BanMessage> WatchBans(global::Mruv.Economy.WatchBansRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Punishments.BanMessage> WatchBans(global::Mruv.Punishments.WatchBansRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_WatchBans, null, options, request);
       }
@@ -1525,7 +1609,7 @@ namespace Mruv.Economy {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Economy.BlockMessage> WatchBlocks(global::Mruv.Economy.WatchBlocksRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Punishments.BlockMessage> WatchBlocks(global::Mruv.Punishments.WatchBlocksRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return WatchBlocks(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1535,7 +1619,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Economy.BlockMessage> WatchBlocks(global::Mruv.Economy.WatchBlocksRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Punishments.BlockMessage> WatchBlocks(global::Mruv.Punishments.WatchBlocksRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_WatchBlocks, null, options, request);
       }
@@ -1547,7 +1631,7 @@ namespace Mruv.Economy {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Economy.WarnMessage> WatchWarns(global::Mruv.Economy.WatchWarnsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Punishments.WarnMessage> WatchWarns(global::Mruv.Punishments.WatchWarnsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return WatchWarns(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1557,7 +1641,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Economy.WarnMessage> WatchWarns(global::Mruv.Economy.WatchWarnsRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Punishments.WarnMessage> WatchWarns(global::Mruv.Punishments.WatchWarnsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_WatchWarns, null, options, request);
       }
@@ -1569,7 +1653,7 @@ namespace Mruv.Economy {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Economy.AdminJailMessage> WatchAdminJails(global::Mruv.Economy.WatchAdminJailsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Punishments.AdminJailMessage> WatchAdminJails(global::Mruv.Punishments.WatchAdminJailsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return WatchAdminJails(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1579,7 +1663,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Economy.AdminJailMessage> WatchAdminJails(global::Mruv.Economy.WatchAdminJailsRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Punishments.AdminJailMessage> WatchAdminJails(global::Mruv.Punishments.WatchAdminJailsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_WatchAdminJails, null, options, request);
       }
@@ -1591,7 +1675,7 @@ namespace Mruv.Economy {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Economy.UnBanMessage> WatchUnBans(global::Mruv.Economy.WatchUnBansRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Punishments.UnBanMessage> WatchUnBans(global::Mruv.Punishments.WatchUnBansRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return WatchUnBans(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1601,7 +1685,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Economy.UnBanMessage> WatchUnBans(global::Mruv.Economy.WatchUnBansRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Punishments.UnBanMessage> WatchUnBans(global::Mruv.Punishments.WatchUnBansRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_WatchUnBans, null, options, request);
       }
@@ -1613,7 +1697,7 @@ namespace Mruv.Economy {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Economy.UnBlockMessage> WatchUnBlocks(global::Mruv.Economy.WatchUnBlocksRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Punishments.UnBlockMessage> WatchUnBlocks(global::Mruv.Punishments.WatchUnBlocksRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return WatchUnBlocks(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1623,7 +1707,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Economy.UnBlockMessage> WatchUnBlocks(global::Mruv.Economy.WatchUnBlocksRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Punishments.UnBlockMessage> WatchUnBlocks(global::Mruv.Punishments.WatchUnBlocksRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_WatchUnBlocks, null, options, request);
       }
@@ -1635,7 +1719,7 @@ namespace Mruv.Economy {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Economy.UnWarnMessage> WatchUnWarns(global::Mruv.Economy.WatchUnWarnsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Punishments.UnWarnMessage> WatchUnWarns(global::Mruv.Punishments.WatchUnWarnsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return WatchUnWarns(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1645,7 +1729,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Economy.UnWarnMessage> WatchUnWarns(global::Mruv.Economy.WatchUnWarnsRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Punishments.UnWarnMessage> WatchUnWarns(global::Mruv.Punishments.WatchUnWarnsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_WatchUnWarns, null, options, request);
       }
@@ -1657,7 +1741,7 @@ namespace Mruv.Economy {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Economy.UnAdminJailMessage> WatchUnAdminJails(global::Mruv.Economy.WatchUnAdminJailsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Punishments.UnAdminJailMessage> WatchUnAdminJails(global::Mruv.Punishments.WatchUnAdminJailsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return WatchUnAdminJails(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1667,7 +1751,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Economy.UnAdminJailMessage> WatchUnAdminJails(global::Mruv.Economy.WatchUnAdminJailsRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Punishments.UnAdminJailMessage> WatchUnAdminJails(global::Mruv.Punishments.WatchUnAdminJailsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_WatchUnAdminJails, null, options, request);
       }
@@ -1679,7 +1763,7 @@ namespace Mruv.Economy {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Economy.WatchPlayerPunishmentsResponse> WatchPlayerPunishments(global::Mruv.Economy.WatchPlayerPunishmentsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Punishments.WatchPlayerPunishmentsResponse> WatchPlayerPunishments(global::Mruv.Punishments.WatchPlayerPunishmentsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return WatchPlayerPunishments(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1689,7 +1773,7 @@ namespace Mruv.Economy {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Economy.WatchPlayerPunishmentsResponse> WatchPlayerPunishments(global::Mruv.Economy.WatchPlayerPunishmentsRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Punishments.WatchPlayerPunishmentsResponse> WatchPlayerPunishments(global::Mruv.Punishments.WatchPlayerPunishmentsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_WatchPlayerPunishments, null, options, request);
       }
@@ -1701,7 +1785,7 @@ namespace Mruv.Economy {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Economy.WatchPlayerAcquittalsResponse> WatchPlayerAcquittals(global::Mruv.Economy.WatchPlayerAcquittalsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Punishments.WatchPlayerAcquittalsResponse> WatchPlayerAcquittals(global::Mruv.Punishments.WatchPlayerAcquittalsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return WatchPlayerAcquittals(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1711,31 +1795,75 @@ namespace Mruv.Economy {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Economy.WatchPlayerAcquittalsResponse> WatchPlayerAcquittals(global::Mruv.Economy.WatchPlayerAcquittalsRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Punishments.WatchPlayerAcquittalsResponse> WatchPlayerAcquittals(global::Mruv.Punishments.WatchPlayerAcquittalsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_WatchPlayerAcquittals, null, options, request);
       }
       /// <summary>
-      /// Subscribe to all punishments and acquittals events.
+      /// Subscribe to all punishments events.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Economy.WatchPunishmentsResponse> WatchPunishments(global::Mruv.Economy.WatchPunishmentsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Punishments.WatchPunishmentsResponse> WatchPunishments(global::Mruv.Punishments.WatchPunishmentsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return WatchPunishments(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Subscribe to all punishments and acquittals events.
+      /// Subscribe to all punishments events.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Economy.WatchPunishmentsResponse> WatchPunishments(global::Mruv.Economy.WatchPunishmentsRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncServerStreamingCall<global::Mruv.Punishments.WatchPunishmentsResponse> WatchPunishments(global::Mruv.Punishments.WatchPunishmentsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_WatchPunishments, null, options, request);
+      }
+      /// <summary>
+      /// Subscribe to all acquittals events.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Mruv.Punishments.WatchAcquittalsResponse WatchAcquittals(global::Mruv.Punishments.WatchAcquittalsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return WatchAcquittals(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Subscribe to all acquittals events.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Mruv.Punishments.WatchAcquittalsResponse WatchAcquittals(global::Mruv.Punishments.WatchAcquittalsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_WatchAcquittals, null, options, request);
+      }
+      /// <summary>
+      /// Subscribe to all acquittals events.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.WatchAcquittalsResponse> WatchAcquittalsAsync(global::Mruv.Punishments.WatchAcquittalsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return WatchAcquittalsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Subscribe to all acquittals events.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.WatchAcquittalsResponse> WatchAcquittalsAsync(global::Mruv.Punishments.WatchAcquittalsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_WatchAcquittals, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override MruVPunishmentsServiceClient NewInstance(ClientBaseConfiguration configuration)
@@ -1749,6 +1877,7 @@ namespace Mruv.Economy {
     public static grpc::ServerServiceDefinition BindService(MruVPunishmentsServiceBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
+          .AddMethod(__Method_Punish, serviceImpl.Punish)
           .AddMethod(__Method_Ban, serviceImpl.Ban)
           .AddMethod(__Method_Block, serviceImpl.Block)
           .AddMethod(__Method_Warn, serviceImpl.Warn)
@@ -1778,7 +1907,8 @@ namespace Mruv.Economy {
           .AddMethod(__Method_WatchUnAdminJails, serviceImpl.WatchUnAdminJails)
           .AddMethod(__Method_WatchPlayerPunishments, serviceImpl.WatchPlayerPunishments)
           .AddMethod(__Method_WatchPlayerAcquittals, serviceImpl.WatchPlayerAcquittals)
-          .AddMethod(__Method_WatchPunishments, serviceImpl.WatchPunishments).Build();
+          .AddMethod(__Method_WatchPunishments, serviceImpl.WatchPunishments)
+          .AddMethod(__Method_WatchAcquittals, serviceImpl.WatchAcquittals).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
@@ -1787,36 +1917,38 @@ namespace Mruv.Economy {
     /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
     public static void BindService(grpc::ServiceBinderBase serviceBinder, MruVPunishmentsServiceBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_Ban, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Economy.BanRequest, global::Mruv.Economy.BanResponse>(serviceImpl.Ban));
-      serviceBinder.AddMethod(__Method_Block, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Economy.BlockRequest, global::Mruv.Economy.BlockResponse>(serviceImpl.Block));
-      serviceBinder.AddMethod(__Method_Warn, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Economy.WarnRequest, global::Mruv.Economy.WarnResponse>(serviceImpl.Warn));
-      serviceBinder.AddMethod(__Method_AdminJail, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Economy.AdminJailRequest, global::Mruv.Economy.AdminJailResponse>(serviceImpl.AdminJail));
-      serviceBinder.AddMethod(__Method_MuteGlobalChats, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Economy.MuteGlobalChatsRequest, global::Mruv.Economy.MuteGlobalChatsResponse>(serviceImpl.MuteGlobalChats));
-      serviceBinder.AddMethod(__Method_UnBan, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Economy.UnBanRequest, global::Mruv.Economy.UnBanResponse>(serviceImpl.UnBan));
-      serviceBinder.AddMethod(__Method_UnBlock, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Economy.UnBlockRequest, global::Mruv.Economy.UnBlockResponse>(serviceImpl.UnBlock));
-      serviceBinder.AddMethod(__Method_UnWarn, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Economy.UnWarnRequest, global::Mruv.Economy.UnWarnResponse>(serviceImpl.UnWarn));
-      serviceBinder.AddMethod(__Method_UnAdminJail, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Economy.UnAdminJailRequest, global::Mruv.Economy.UnAdminJailResponse>(serviceImpl.UnAdminJail));
-      serviceBinder.AddMethod(__Method_UnMuteGlobalChats, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Economy.UnMuteGlobalChatsRequest, global::Mruv.Economy.UnMuteGlobalChatsResponse>(serviceImpl.UnMuteGlobalChats));
-      serviceBinder.AddMethod(__Method_GetPlayerBans, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Economy.GetPlayerBansRequest, global::Mruv.Economy.GetPlayerBansResponse>(serviceImpl.GetPlayerBans));
-      serviceBinder.AddMethod(__Method_GetPlayerWarns, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Economy.GetPlayerWarnsRequest, global::Mruv.Economy.GetPlayerWarnsResponse>(serviceImpl.GetPlayerWarns));
-      serviceBinder.AddMethod(__Method_GetPlayerAdminJail, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Economy.GetPlayerAdminJailRequest, global::Mruv.Economy.GetPlayerAdminJailResponse>(serviceImpl.GetPlayerAdminJail));
-      serviceBinder.AddMethod(__Method_GetBan, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Economy.GetBanRequest, global::Mruv.Economy.BanMessage>(serviceImpl.GetBan));
-      serviceBinder.AddMethod(__Method_GetWarn, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Economy.GetWarnRequest, global::Mruv.Economy.WarnMessage>(serviceImpl.GetWarn));
-      serviceBinder.AddMethod(__Method_GetBlock, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Economy.GetBlockRequest, global::Mruv.Economy.BlockMessage>(serviceImpl.GetBlock));
-      serviceBinder.AddMethod(__Method_IsPlayerBanned, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Economy.IsPlayerBannedRequest, global::Mruv.Economy.IsPlayerBannedResponse>(serviceImpl.IsPlayerBanned));
-      serviceBinder.AddMethod(__Method_IsCharacterBlocked, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Economy.IsCharacterBlockedRequest, global::Mruv.Economy.IsCharacterBlockedResponse>(serviceImpl.IsCharacterBlocked));
-      serviceBinder.AddMethod(__Method_IsCharacterJailed, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Economy.IsCharacterJailedRequest, global::Mruv.Economy.IsCharacterJailedResponse>(serviceImpl.IsCharacterJailed));
-      serviceBinder.AddMethod(__Method_WatchBans, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Mruv.Economy.WatchBansRequest, global::Mruv.Economy.BanMessage>(serviceImpl.WatchBans));
-      serviceBinder.AddMethod(__Method_WatchBlocks, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Mruv.Economy.WatchBlocksRequest, global::Mruv.Economy.BlockMessage>(serviceImpl.WatchBlocks));
-      serviceBinder.AddMethod(__Method_WatchWarns, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Mruv.Economy.WatchWarnsRequest, global::Mruv.Economy.WarnMessage>(serviceImpl.WatchWarns));
-      serviceBinder.AddMethod(__Method_WatchAdminJails, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Mruv.Economy.WatchAdminJailsRequest, global::Mruv.Economy.AdminJailMessage>(serviceImpl.WatchAdminJails));
-      serviceBinder.AddMethod(__Method_WatchUnBans, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Mruv.Economy.WatchUnBansRequest, global::Mruv.Economy.UnBanMessage>(serviceImpl.WatchUnBans));
-      serviceBinder.AddMethod(__Method_WatchUnBlocks, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Mruv.Economy.WatchUnBlocksRequest, global::Mruv.Economy.UnBlockMessage>(serviceImpl.WatchUnBlocks));
-      serviceBinder.AddMethod(__Method_WatchUnWarns, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Mruv.Economy.WatchUnWarnsRequest, global::Mruv.Economy.UnWarnMessage>(serviceImpl.WatchUnWarns));
-      serviceBinder.AddMethod(__Method_WatchUnAdminJails, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Mruv.Economy.WatchUnAdminJailsRequest, global::Mruv.Economy.UnAdminJailMessage>(serviceImpl.WatchUnAdminJails));
-      serviceBinder.AddMethod(__Method_WatchPlayerPunishments, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Mruv.Economy.WatchPlayerPunishmentsRequest, global::Mruv.Economy.WatchPlayerPunishmentsResponse>(serviceImpl.WatchPlayerPunishments));
-      serviceBinder.AddMethod(__Method_WatchPlayerAcquittals, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Mruv.Economy.WatchPlayerAcquittalsRequest, global::Mruv.Economy.WatchPlayerAcquittalsResponse>(serviceImpl.WatchPlayerAcquittals));
-      serviceBinder.AddMethod(__Method_WatchPunishments, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Mruv.Economy.WatchPunishmentsRequest, global::Mruv.Economy.WatchPunishmentsResponse>(serviceImpl.WatchPunishments));
+      serviceBinder.AddMethod(__Method_Punish, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Punishments.PunishRequest, global::Mruv.Punishments.PunishResponse>(serviceImpl.Punish));
+      serviceBinder.AddMethod(__Method_Ban, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Punishments.BanRequest, global::Mruv.Punishments.BanResponse>(serviceImpl.Ban));
+      serviceBinder.AddMethod(__Method_Block, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Punishments.BlockRequest, global::Mruv.Punishments.BlockResponse>(serviceImpl.Block));
+      serviceBinder.AddMethod(__Method_Warn, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Punishments.WarnRequest, global::Mruv.Punishments.WarnResponse>(serviceImpl.Warn));
+      serviceBinder.AddMethod(__Method_AdminJail, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Punishments.AdminJailRequest, global::Mruv.Punishments.AdminJailResponse>(serviceImpl.AdminJail));
+      serviceBinder.AddMethod(__Method_MuteGlobalChats, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Punishments.MuteGlobalChatsRequest, global::Mruv.Punishments.MuteGlobalChatsResponse>(serviceImpl.MuteGlobalChats));
+      serviceBinder.AddMethod(__Method_UnBan, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Punishments.UnBanRequest, global::Mruv.Punishments.UnBanResponse>(serviceImpl.UnBan));
+      serviceBinder.AddMethod(__Method_UnBlock, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Punishments.UnBlockRequest, global::Mruv.Punishments.UnBlockResponse>(serviceImpl.UnBlock));
+      serviceBinder.AddMethod(__Method_UnWarn, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Punishments.UnWarnRequest, global::Mruv.Punishments.UnWarnResponse>(serviceImpl.UnWarn));
+      serviceBinder.AddMethod(__Method_UnAdminJail, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Punishments.UnAdminJailRequest, global::Mruv.Punishments.UnAdminJailResponse>(serviceImpl.UnAdminJail));
+      serviceBinder.AddMethod(__Method_UnMuteGlobalChats, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Punishments.UnMuteGlobalChatsRequest, global::Mruv.Punishments.UnMuteGlobalChatsResponse>(serviceImpl.UnMuteGlobalChats));
+      serviceBinder.AddMethod(__Method_GetPlayerBans, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Punishments.GetPlayerBansRequest, global::Mruv.Punishments.GetPlayerBansResponse>(serviceImpl.GetPlayerBans));
+      serviceBinder.AddMethod(__Method_GetPlayerWarns, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Punishments.GetPlayerWarnsRequest, global::Mruv.Punishments.GetPlayerWarnsResponse>(serviceImpl.GetPlayerWarns));
+      serviceBinder.AddMethod(__Method_GetPlayerAdminJail, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Punishments.GetPlayerAdminJailRequest, global::Mruv.Punishments.GetPlayerAdminJailResponse>(serviceImpl.GetPlayerAdminJail));
+      serviceBinder.AddMethod(__Method_GetBan, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Punishments.GetBanRequest, global::Mruv.Punishments.BanMessage>(serviceImpl.GetBan));
+      serviceBinder.AddMethod(__Method_GetWarn, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Punishments.GetWarnRequest, global::Mruv.Punishments.WarnMessage>(serviceImpl.GetWarn));
+      serviceBinder.AddMethod(__Method_GetBlock, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Punishments.GetBlockRequest, global::Mruv.Punishments.BlockMessage>(serviceImpl.GetBlock));
+      serviceBinder.AddMethod(__Method_IsPlayerBanned, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Punishments.IsPlayerBannedRequest, global::Mruv.Punishments.IsPlayerBannedResponse>(serviceImpl.IsPlayerBanned));
+      serviceBinder.AddMethod(__Method_IsCharacterBlocked, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Punishments.IsCharacterBlockedRequest, global::Mruv.Punishments.IsCharacterBlockedResponse>(serviceImpl.IsCharacterBlocked));
+      serviceBinder.AddMethod(__Method_IsCharacterJailed, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Punishments.IsCharacterJailedRequest, global::Mruv.Punishments.IsCharacterJailedResponse>(serviceImpl.IsCharacterJailed));
+      serviceBinder.AddMethod(__Method_WatchBans, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Mruv.Punishments.WatchBansRequest, global::Mruv.Punishments.BanMessage>(serviceImpl.WatchBans));
+      serviceBinder.AddMethod(__Method_WatchBlocks, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Mruv.Punishments.WatchBlocksRequest, global::Mruv.Punishments.BlockMessage>(serviceImpl.WatchBlocks));
+      serviceBinder.AddMethod(__Method_WatchWarns, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Mruv.Punishments.WatchWarnsRequest, global::Mruv.Punishments.WarnMessage>(serviceImpl.WatchWarns));
+      serviceBinder.AddMethod(__Method_WatchAdminJails, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Mruv.Punishments.WatchAdminJailsRequest, global::Mruv.Punishments.AdminJailMessage>(serviceImpl.WatchAdminJails));
+      serviceBinder.AddMethod(__Method_WatchUnBans, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Mruv.Punishments.WatchUnBansRequest, global::Mruv.Punishments.UnBanMessage>(serviceImpl.WatchUnBans));
+      serviceBinder.AddMethod(__Method_WatchUnBlocks, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Mruv.Punishments.WatchUnBlocksRequest, global::Mruv.Punishments.UnBlockMessage>(serviceImpl.WatchUnBlocks));
+      serviceBinder.AddMethod(__Method_WatchUnWarns, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Mruv.Punishments.WatchUnWarnsRequest, global::Mruv.Punishments.UnWarnMessage>(serviceImpl.WatchUnWarns));
+      serviceBinder.AddMethod(__Method_WatchUnAdminJails, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Mruv.Punishments.WatchUnAdminJailsRequest, global::Mruv.Punishments.UnAdminJailMessage>(serviceImpl.WatchUnAdminJails));
+      serviceBinder.AddMethod(__Method_WatchPlayerPunishments, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Mruv.Punishments.WatchPlayerPunishmentsRequest, global::Mruv.Punishments.WatchPlayerPunishmentsResponse>(serviceImpl.WatchPlayerPunishments));
+      serviceBinder.AddMethod(__Method_WatchPlayerAcquittals, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Mruv.Punishments.WatchPlayerAcquittalsRequest, global::Mruv.Punishments.WatchPlayerAcquittalsResponse>(serviceImpl.WatchPlayerAcquittals));
+      serviceBinder.AddMethod(__Method_WatchPunishments, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Mruv.Punishments.WatchPunishmentsRequest, global::Mruv.Punishments.WatchPunishmentsResponse>(serviceImpl.WatchPunishments));
+      serviceBinder.AddMethod(__Method_WatchAcquittals, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Punishments.WatchAcquittalsRequest, global::Mruv.Punishments.WatchAcquittalsResponse>(serviceImpl.WatchAcquittals));
     }
 
   }
