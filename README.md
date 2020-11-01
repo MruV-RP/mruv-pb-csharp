@@ -6,7 +6,7 @@ This repository contains code generated from https://github.com/MruV-RP/mruv-pro
 This repository will generate an NuGet package for every new version of code. If you want to use MruV API package in your C# project, you should add MruV.Protos package from https://www.nuget.org/packages/MruV.Protos/ 
 
 ## Example code
-This example will connect to MruV API on address 127.0.0.1:50051 and run [IsAccountExist](https://github.com/MruV-RP/mruv-pb-docs/blob/master/docs.md#mruvaccountsservice)
+This example will connect to MruV API on address 127.0.0.1:50051 and will run remote procedure [IsAccountExist](https://github.com/MruV-RP/mruv-pb-docs/blob/master/docs.md#mruvaccountsservice)
 ```csharp
 public static void Main(string[] args)
 {
