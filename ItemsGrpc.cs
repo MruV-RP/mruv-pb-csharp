@@ -7,41 +7,41 @@
 
 using grpc = global::Grpc.Core;
 
-namespace Mruv.Items {
+namespace Mruv {
   /// <summary>
   /// The MruV items service provides procedures for managing items and containers
   /// </summary>
   public static partial class MruVItemService
   {
-    static readonly string __ServiceName = "mruv.items.MruVItemService";
+    static readonly string __ServiceName = "mruv.MruVItemService";
 
     static readonly grpc::Marshaller<global::Mruv.Item> __Marshaller_mruv_Item = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Item.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.ItemID> __Marshaller_mruv_ItemID = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.ItemID.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Items.GetItemsRequest> __Marshaller_mruv_items_GetItemsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Items.GetItemsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Items.GetItemsResponse> __Marshaller_mruv_items_GetItemsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Items.GetItemsResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.GetItemsRequest> __Marshaller_mruv_GetItemsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.GetItemsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.GetItemsResponse> __Marshaller_mruv_GetItemsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.GetItemsResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.ItemType> __Marshaller_mruv_ItemType = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.ItemType.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.ItemTypeID> __Marshaller_mruv_ItemTypeID = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.ItemTypeID.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Items.GetItemTypesRequest> __Marshaller_mruv_items_GetItemTypesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Items.GetItemTypesRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Items.GetItemTypesResponse> __Marshaller_mruv_items_GetItemTypesResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Items.GetItemTypesResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.GetItemTypesRequest> __Marshaller_mruv_GetItemTypesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.GetItemTypesRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.GetItemTypesResponse> __Marshaller_mruv_GetItemTypesResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.GetItemTypesResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.Container> __Marshaller_mruv_Container = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Container.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.ContainerID> __Marshaller_mruv_ContainerID = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.ContainerID.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Items.GetContainersRequest> __Marshaller_mruv_items_GetContainersRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Items.GetContainersRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Items.GetContainersResponse> __Marshaller_mruv_items_GetContainersResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Items.GetContainersResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.GetContainersRequest> __Marshaller_mruv_GetContainersRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.GetContainersRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.GetContainersResponse> __Marshaller_mruv_GetContainersResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.GetContainersResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.ContainerType> __Marshaller_mruv_ContainerType = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.ContainerType.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.ContainerTypeID> __Marshaller_mruv_ContainerTypeID = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.ContainerTypeID.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Items.GetContainerTypesRequest> __Marshaller_mruv_items_GetContainerTypesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Items.GetContainerTypesRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Items.GetContainerTypesResponse> __Marshaller_mruv_items_GetContainerTypesResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Items.GetContainerTypesResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Items.GetContainerItemsRequest> __Marshaller_mruv_items_GetContainerItemsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Items.GetContainerItemsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Items.GetContainerItemsResponse> __Marshaller_mruv_items_GetContainerItemsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Items.GetContainerItemsResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Items.PullItemRequest> __Marshaller_mruv_items_PullItemRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Items.PullItemRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Items.PutItemRequest> __Marshaller_mruv_items_PutItemRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Items.PutItemRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Items.PutItemResponse> __Marshaller_mruv_items_PutItemResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Items.PutItemResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Items.SortItemsRequest> __Marshaller_mruv_items_SortItemsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Items.SortItemsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Items.SortItemsResponse> __Marshaller_mruv_items_SortItemsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Items.SortItemsResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Items.GetNearestItemsRequest> __Marshaller_mruv_items_GetNearestItemsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Items.GetNearestItemsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Items.GetNearestItemsResponse> __Marshaller_mruv_items_GetNearestItemsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Items.GetNearestItemsResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Items.UseItemRequest> __Marshaller_mruv_items_UseItemRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Items.UseItemRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Items.UseItemResponse> __Marshaller_mruv_items_UseItemResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Items.UseItemResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.GetContainerTypesRequest> __Marshaller_mruv_GetContainerTypesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.GetContainerTypesRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.GetContainerTypesResponse> __Marshaller_mruv_GetContainerTypesResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.GetContainerTypesResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.GetContainerItemsRequest> __Marshaller_mruv_GetContainerItemsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.GetContainerItemsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.GetContainerItemsResponse> __Marshaller_mruv_GetContainerItemsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.GetContainerItemsResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.PullItemRequest> __Marshaller_mruv_PullItemRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.PullItemRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.PutItemRequest> __Marshaller_mruv_PutItemRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.PutItemRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.PutItemResponse> __Marshaller_mruv_PutItemResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.PutItemResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.SortItemsRequest> __Marshaller_mruv_SortItemsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.SortItemsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.SortItemsResponse> __Marshaller_mruv_SortItemsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.SortItemsResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.GetNearestItemsRequest> __Marshaller_mruv_GetNearestItemsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.GetNearestItemsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.GetNearestItemsResponse> __Marshaller_mruv_GetNearestItemsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.GetNearestItemsResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.UseItemRequest> __Marshaller_mruv_UseItemRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.UseItemRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.UseItemResponse> __Marshaller_mruv_UseItemResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.UseItemResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.ServiceStatusRequest> __Marshaller_mruv_ServiceStatusRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.ServiceStatusRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.ServiceStatusResponse> __Marshaller_mruv_ServiceStatusResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.ServiceStatusResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.VersionRequest> __Marshaller_mruv_VersionRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.VersionRequest.Parser.ParseFrom);
@@ -68,12 +68,12 @@ namespace Mruv.Items {
         __Marshaller_mruv_ItemID,
         __Marshaller_mruv_ItemID);
 
-    static readonly grpc::Method<global::Mruv.Items.GetItemsRequest, global::Mruv.Items.GetItemsResponse> __Method_GetItems = new grpc::Method<global::Mruv.Items.GetItemsRequest, global::Mruv.Items.GetItemsResponse>(
+    static readonly grpc::Method<global::Mruv.GetItemsRequest, global::Mruv.GetItemsResponse> __Method_GetItems = new grpc::Method<global::Mruv.GetItemsRequest, global::Mruv.GetItemsResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetItems",
-        __Marshaller_mruv_items_GetItemsRequest,
-        __Marshaller_mruv_items_GetItemsResponse);
+        __Marshaller_mruv_GetItemsRequest,
+        __Marshaller_mruv_GetItemsResponse);
 
     static readonly grpc::Method<global::Mruv.ItemType, global::Mruv.ItemTypeID> __Method_CreateItemType = new grpc::Method<global::Mruv.ItemType, global::Mruv.ItemTypeID>(
         grpc::MethodType.Unary,
@@ -96,12 +96,12 @@ namespace Mruv.Items {
         __Marshaller_mruv_ItemTypeID,
         __Marshaller_mruv_ItemTypeID);
 
-    static readonly grpc::Method<global::Mruv.Items.GetItemTypesRequest, global::Mruv.Items.GetItemTypesResponse> __Method_GetItemTypes = new grpc::Method<global::Mruv.Items.GetItemTypesRequest, global::Mruv.Items.GetItemTypesResponse>(
+    static readonly grpc::Method<global::Mruv.GetItemTypesRequest, global::Mruv.GetItemTypesResponse> __Method_GetItemTypes = new grpc::Method<global::Mruv.GetItemTypesRequest, global::Mruv.GetItemTypesResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetItemTypes",
-        __Marshaller_mruv_items_GetItemTypesRequest,
-        __Marshaller_mruv_items_GetItemTypesResponse);
+        __Marshaller_mruv_GetItemTypesRequest,
+        __Marshaller_mruv_GetItemTypesResponse);
 
     static readonly grpc::Method<global::Mruv.Container, global::Mruv.ContainerID> __Method_CreateContainer = new grpc::Method<global::Mruv.Container, global::Mruv.ContainerID>(
         grpc::MethodType.Unary,
@@ -124,12 +124,12 @@ namespace Mruv.Items {
         __Marshaller_mruv_ContainerID,
         __Marshaller_mruv_ContainerID);
 
-    static readonly grpc::Method<global::Mruv.Items.GetContainersRequest, global::Mruv.Items.GetContainersResponse> __Method_GetContainers = new grpc::Method<global::Mruv.Items.GetContainersRequest, global::Mruv.Items.GetContainersResponse>(
+    static readonly grpc::Method<global::Mruv.GetContainersRequest, global::Mruv.GetContainersResponse> __Method_GetContainers = new grpc::Method<global::Mruv.GetContainersRequest, global::Mruv.GetContainersResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetContainers",
-        __Marshaller_mruv_items_GetContainersRequest,
-        __Marshaller_mruv_items_GetContainersResponse);
+        __Marshaller_mruv_GetContainersRequest,
+        __Marshaller_mruv_GetContainersResponse);
 
     static readonly grpc::Method<global::Mruv.ContainerType, global::Mruv.ContainerTypeID> __Method_CreateContainerType = new grpc::Method<global::Mruv.ContainerType, global::Mruv.ContainerTypeID>(
         grpc::MethodType.Unary,
@@ -152,54 +152,54 @@ namespace Mruv.Items {
         __Marshaller_mruv_ContainerTypeID,
         __Marshaller_mruv_ContainerTypeID);
 
-    static readonly grpc::Method<global::Mruv.Items.GetContainerTypesRequest, global::Mruv.Items.GetContainerTypesResponse> __Method_GetContainerTypes = new grpc::Method<global::Mruv.Items.GetContainerTypesRequest, global::Mruv.Items.GetContainerTypesResponse>(
+    static readonly grpc::Method<global::Mruv.GetContainerTypesRequest, global::Mruv.GetContainerTypesResponse> __Method_GetContainerTypes = new grpc::Method<global::Mruv.GetContainerTypesRequest, global::Mruv.GetContainerTypesResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetContainerTypes",
-        __Marshaller_mruv_items_GetContainerTypesRequest,
-        __Marshaller_mruv_items_GetContainerTypesResponse);
+        __Marshaller_mruv_GetContainerTypesRequest,
+        __Marshaller_mruv_GetContainerTypesResponse);
 
-    static readonly grpc::Method<global::Mruv.Items.GetContainerItemsRequest, global::Mruv.Items.GetContainerItemsResponse> __Method_GetContainerItems = new grpc::Method<global::Mruv.Items.GetContainerItemsRequest, global::Mruv.Items.GetContainerItemsResponse>(
+    static readonly grpc::Method<global::Mruv.GetContainerItemsRequest, global::Mruv.GetContainerItemsResponse> __Method_GetContainerItems = new grpc::Method<global::Mruv.GetContainerItemsRequest, global::Mruv.GetContainerItemsResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetContainerItems",
-        __Marshaller_mruv_items_GetContainerItemsRequest,
-        __Marshaller_mruv_items_GetContainerItemsResponse);
+        __Marshaller_mruv_GetContainerItemsRequest,
+        __Marshaller_mruv_GetContainerItemsResponse);
 
-    static readonly grpc::Method<global::Mruv.Items.PullItemRequest, global::Mruv.Item> __Method_PullItem = new grpc::Method<global::Mruv.Items.PullItemRequest, global::Mruv.Item>(
+    static readonly grpc::Method<global::Mruv.PullItemRequest, global::Mruv.Item> __Method_PullItem = new grpc::Method<global::Mruv.PullItemRequest, global::Mruv.Item>(
         grpc::MethodType.Unary,
         __ServiceName,
         "PullItem",
-        __Marshaller_mruv_items_PullItemRequest,
+        __Marshaller_mruv_PullItemRequest,
         __Marshaller_mruv_Item);
 
-    static readonly grpc::Method<global::Mruv.Items.PutItemRequest, global::Mruv.Items.PutItemResponse> __Method_PutItem = new grpc::Method<global::Mruv.Items.PutItemRequest, global::Mruv.Items.PutItemResponse>(
+    static readonly grpc::Method<global::Mruv.PutItemRequest, global::Mruv.PutItemResponse> __Method_PutItem = new grpc::Method<global::Mruv.PutItemRequest, global::Mruv.PutItemResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "PutItem",
-        __Marshaller_mruv_items_PutItemRequest,
-        __Marshaller_mruv_items_PutItemResponse);
+        __Marshaller_mruv_PutItemRequest,
+        __Marshaller_mruv_PutItemResponse);
 
-    static readonly grpc::Method<global::Mruv.Items.SortItemsRequest, global::Mruv.Items.SortItemsResponse> __Method_SortItems = new grpc::Method<global::Mruv.Items.SortItemsRequest, global::Mruv.Items.SortItemsResponse>(
+    static readonly grpc::Method<global::Mruv.SortItemsRequest, global::Mruv.SortItemsResponse> __Method_SortItems = new grpc::Method<global::Mruv.SortItemsRequest, global::Mruv.SortItemsResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "SortItems",
-        __Marshaller_mruv_items_SortItemsRequest,
-        __Marshaller_mruv_items_SortItemsResponse);
+        __Marshaller_mruv_SortItemsRequest,
+        __Marshaller_mruv_SortItemsResponse);
 
-    static readonly grpc::Method<global::Mruv.Items.GetNearestItemsRequest, global::Mruv.Items.GetNearestItemsResponse> __Method_GetNearestItems = new grpc::Method<global::Mruv.Items.GetNearestItemsRequest, global::Mruv.Items.GetNearestItemsResponse>(
+    static readonly grpc::Method<global::Mruv.GetNearestItemsRequest, global::Mruv.GetNearestItemsResponse> __Method_GetNearestItems = new grpc::Method<global::Mruv.GetNearestItemsRequest, global::Mruv.GetNearestItemsResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetNearestItems",
-        __Marshaller_mruv_items_GetNearestItemsRequest,
-        __Marshaller_mruv_items_GetNearestItemsResponse);
+        __Marshaller_mruv_GetNearestItemsRequest,
+        __Marshaller_mruv_GetNearestItemsResponse);
 
-    static readonly grpc::Method<global::Mruv.Items.UseItemRequest, global::Mruv.Items.UseItemResponse> __Method_UseItem = new grpc::Method<global::Mruv.Items.UseItemRequest, global::Mruv.Items.UseItemResponse>(
+    static readonly grpc::Method<global::Mruv.UseItemRequest, global::Mruv.UseItemResponse> __Method_UseItem = new grpc::Method<global::Mruv.UseItemRequest, global::Mruv.UseItemResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "UseItem",
-        __Marshaller_mruv_items_UseItemRequest,
-        __Marshaller_mruv_items_UseItemResponse);
+        __Marshaller_mruv_UseItemRequest,
+        __Marshaller_mruv_UseItemResponse);
 
     static readonly grpc::Method<global::Mruv.ServiceStatusRequest, global::Mruv.ServiceStatusResponse> __Method_GetServiceStatus = new grpc::Method<global::Mruv.ServiceStatusRequest, global::Mruv.ServiceStatusResponse>(
         grpc::MethodType.Unary,
@@ -218,7 +218,7 @@ namespace Mruv.Items {
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
-      get { return global::Mruv.Items.ItemsReflection.Descriptor.Services[0]; }
+      get { return global::Mruv.ItemsReflection.Descriptor.Services[0]; }
     }
 
     /// <summary>Base class for server-side implementations of MruVItemService</summary>
@@ -264,7 +264,7 @@ namespace Mruv.Items {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Items.GetItemsResponse> GetItems(global::Mruv.Items.GetItemsRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.GetItemsResponse> GetItems(global::Mruv.GetItemsRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -308,7 +308,7 @@ namespace Mruv.Items {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Items.GetItemTypesResponse> GetItemTypes(global::Mruv.Items.GetItemTypesRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.GetItemTypesResponse> GetItemTypes(global::Mruv.GetItemTypesRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -352,7 +352,7 @@ namespace Mruv.Items {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Items.GetContainersResponse> GetContainers(global::Mruv.Items.GetContainersRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.GetContainersResponse> GetContainers(global::Mruv.GetContainersRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -396,7 +396,7 @@ namespace Mruv.Items {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Items.GetContainerTypesResponse> GetContainerTypes(global::Mruv.Items.GetContainerTypesRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.GetContainerTypesResponse> GetContainerTypes(global::Mruv.GetContainerTypesRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -407,7 +407,7 @@ namespace Mruv.Items {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Items.GetContainerItemsResponse> GetContainerItems(global::Mruv.Items.GetContainerItemsRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.GetContainerItemsResponse> GetContainerItems(global::Mruv.GetContainerItemsRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -418,7 +418,7 @@ namespace Mruv.Items {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Item> PullItem(global::Mruv.Items.PullItemRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.Item> PullItem(global::Mruv.PullItemRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -429,7 +429,7 @@ namespace Mruv.Items {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Items.PutItemResponse> PutItem(global::Mruv.Items.PutItemRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.PutItemResponse> PutItem(global::Mruv.PutItemRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -441,7 +441,7 @@ namespace Mruv.Items {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Items.SortItemsResponse> SortItems(global::Mruv.Items.SortItemsRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.SortItemsResponse> SortItems(global::Mruv.SortItemsRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -452,7 +452,7 @@ namespace Mruv.Items {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Items.GetNearestItemsResponse> GetNearestItems(global::Mruv.Items.GetNearestItemsRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.GetNearestItemsResponse> GetNearestItems(global::Mruv.GetNearestItemsRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -463,7 +463,7 @@ namespace Mruv.Items {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Items.UseItemResponse> UseItem(global::Mruv.Items.UseItemRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.UseItemResponse> UseItem(global::Mruv.UseItemRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -655,7 +655,7 @@ namespace Mruv.Items {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Items.GetItemsResponse GetItems(global::Mruv.Items.GetItemsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.GetItemsResponse GetItems(global::Mruv.GetItemsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetItems(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -665,7 +665,7 @@ namespace Mruv.Items {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Items.GetItemsResponse GetItems(global::Mruv.Items.GetItemsRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.GetItemsResponse GetItems(global::Mruv.GetItemsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetItems, null, options, request);
       }
@@ -677,7 +677,7 @@ namespace Mruv.Items {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Items.GetItemsResponse> GetItemsAsync(global::Mruv.Items.GetItemsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.GetItemsResponse> GetItemsAsync(global::Mruv.GetItemsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetItemsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -687,7 +687,7 @@ namespace Mruv.Items {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Items.GetItemsResponse> GetItemsAsync(global::Mruv.Items.GetItemsRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.GetItemsResponse> GetItemsAsync(global::Mruv.GetItemsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetItems, null, options, request);
       }
@@ -831,7 +831,7 @@ namespace Mruv.Items {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Items.GetItemTypesResponse GetItemTypes(global::Mruv.Items.GetItemTypesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.GetItemTypesResponse GetItemTypes(global::Mruv.GetItemTypesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetItemTypes(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -841,7 +841,7 @@ namespace Mruv.Items {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Items.GetItemTypesResponse GetItemTypes(global::Mruv.Items.GetItemTypesRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.GetItemTypesResponse GetItemTypes(global::Mruv.GetItemTypesRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetItemTypes, null, options, request);
       }
@@ -853,7 +853,7 @@ namespace Mruv.Items {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Items.GetItemTypesResponse> GetItemTypesAsync(global::Mruv.Items.GetItemTypesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.GetItemTypesResponse> GetItemTypesAsync(global::Mruv.GetItemTypesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetItemTypesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -863,7 +863,7 @@ namespace Mruv.Items {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Items.GetItemTypesResponse> GetItemTypesAsync(global::Mruv.Items.GetItemTypesRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.GetItemTypesResponse> GetItemTypesAsync(global::Mruv.GetItemTypesRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetItemTypes, null, options, request);
       }
@@ -1007,7 +1007,7 @@ namespace Mruv.Items {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Items.GetContainersResponse GetContainers(global::Mruv.Items.GetContainersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.GetContainersResponse GetContainers(global::Mruv.GetContainersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetContainers(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1017,7 +1017,7 @@ namespace Mruv.Items {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Items.GetContainersResponse GetContainers(global::Mruv.Items.GetContainersRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.GetContainersResponse GetContainers(global::Mruv.GetContainersRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetContainers, null, options, request);
       }
@@ -1029,7 +1029,7 @@ namespace Mruv.Items {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Items.GetContainersResponse> GetContainersAsync(global::Mruv.Items.GetContainersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.GetContainersResponse> GetContainersAsync(global::Mruv.GetContainersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetContainersAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1039,7 +1039,7 @@ namespace Mruv.Items {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Items.GetContainersResponse> GetContainersAsync(global::Mruv.Items.GetContainersRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.GetContainersResponse> GetContainersAsync(global::Mruv.GetContainersRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetContainers, null, options, request);
       }
@@ -1183,7 +1183,7 @@ namespace Mruv.Items {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Items.GetContainerTypesResponse GetContainerTypes(global::Mruv.Items.GetContainerTypesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.GetContainerTypesResponse GetContainerTypes(global::Mruv.GetContainerTypesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetContainerTypes(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1193,7 +1193,7 @@ namespace Mruv.Items {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Items.GetContainerTypesResponse GetContainerTypes(global::Mruv.Items.GetContainerTypesRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.GetContainerTypesResponse GetContainerTypes(global::Mruv.GetContainerTypesRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetContainerTypes, null, options, request);
       }
@@ -1205,7 +1205,7 @@ namespace Mruv.Items {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Items.GetContainerTypesResponse> GetContainerTypesAsync(global::Mruv.Items.GetContainerTypesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.GetContainerTypesResponse> GetContainerTypesAsync(global::Mruv.GetContainerTypesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetContainerTypesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1215,7 +1215,7 @@ namespace Mruv.Items {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Items.GetContainerTypesResponse> GetContainerTypesAsync(global::Mruv.Items.GetContainerTypesRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.GetContainerTypesResponse> GetContainerTypesAsync(global::Mruv.GetContainerTypesRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetContainerTypes, null, options, request);
       }
@@ -1227,7 +1227,7 @@ namespace Mruv.Items {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Items.GetContainerItemsResponse GetContainerItems(global::Mruv.Items.GetContainerItemsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.GetContainerItemsResponse GetContainerItems(global::Mruv.GetContainerItemsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetContainerItems(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1237,7 +1237,7 @@ namespace Mruv.Items {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Items.GetContainerItemsResponse GetContainerItems(global::Mruv.Items.GetContainerItemsRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.GetContainerItemsResponse GetContainerItems(global::Mruv.GetContainerItemsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetContainerItems, null, options, request);
       }
@@ -1249,7 +1249,7 @@ namespace Mruv.Items {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Items.GetContainerItemsResponse> GetContainerItemsAsync(global::Mruv.Items.GetContainerItemsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.GetContainerItemsResponse> GetContainerItemsAsync(global::Mruv.GetContainerItemsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetContainerItemsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1259,7 +1259,7 @@ namespace Mruv.Items {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Items.GetContainerItemsResponse> GetContainerItemsAsync(global::Mruv.Items.GetContainerItemsRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.GetContainerItemsResponse> GetContainerItemsAsync(global::Mruv.GetContainerItemsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetContainerItems, null, options, request);
       }
@@ -1271,7 +1271,7 @@ namespace Mruv.Items {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Item PullItem(global::Mruv.Items.PullItemRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.Item PullItem(global::Mruv.PullItemRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return PullItem(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1281,7 +1281,7 @@ namespace Mruv.Items {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Item PullItem(global::Mruv.Items.PullItemRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.Item PullItem(global::Mruv.PullItemRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_PullItem, null, options, request);
       }
@@ -1293,7 +1293,7 @@ namespace Mruv.Items {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Item> PullItemAsync(global::Mruv.Items.PullItemRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Item> PullItemAsync(global::Mruv.PullItemRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return PullItemAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1303,7 +1303,7 @@ namespace Mruv.Items {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Item> PullItemAsync(global::Mruv.Items.PullItemRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Item> PullItemAsync(global::Mruv.PullItemRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_PullItem, null, options, request);
       }
@@ -1315,7 +1315,7 @@ namespace Mruv.Items {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Items.PutItemResponse PutItem(global::Mruv.Items.PutItemRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.PutItemResponse PutItem(global::Mruv.PutItemRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return PutItem(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1325,7 +1325,7 @@ namespace Mruv.Items {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Items.PutItemResponse PutItem(global::Mruv.Items.PutItemRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.PutItemResponse PutItem(global::Mruv.PutItemRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_PutItem, null, options, request);
       }
@@ -1337,7 +1337,7 @@ namespace Mruv.Items {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Items.PutItemResponse> PutItemAsync(global::Mruv.Items.PutItemRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.PutItemResponse> PutItemAsync(global::Mruv.PutItemRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return PutItemAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1347,7 +1347,7 @@ namespace Mruv.Items {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Items.PutItemResponse> PutItemAsync(global::Mruv.Items.PutItemRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.PutItemResponse> PutItemAsync(global::Mruv.PutItemRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_PutItem, null, options, request);
       }
@@ -1360,7 +1360,7 @@ namespace Mruv.Items {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Items.SortItemsResponse SortItems(global::Mruv.Items.SortItemsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.SortItemsResponse SortItems(global::Mruv.SortItemsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return SortItems(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1371,7 +1371,7 @@ namespace Mruv.Items {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Items.SortItemsResponse SortItems(global::Mruv.Items.SortItemsRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.SortItemsResponse SortItems(global::Mruv.SortItemsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_SortItems, null, options, request);
       }
@@ -1384,7 +1384,7 @@ namespace Mruv.Items {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Items.SortItemsResponse> SortItemsAsync(global::Mruv.Items.SortItemsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.SortItemsResponse> SortItemsAsync(global::Mruv.SortItemsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return SortItemsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1395,7 +1395,7 @@ namespace Mruv.Items {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Items.SortItemsResponse> SortItemsAsync(global::Mruv.Items.SortItemsRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.SortItemsResponse> SortItemsAsync(global::Mruv.SortItemsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_SortItems, null, options, request);
       }
@@ -1407,7 +1407,7 @@ namespace Mruv.Items {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Items.GetNearestItemsResponse GetNearestItems(global::Mruv.Items.GetNearestItemsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.GetNearestItemsResponse GetNearestItems(global::Mruv.GetNearestItemsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetNearestItems(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1417,7 +1417,7 @@ namespace Mruv.Items {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Items.GetNearestItemsResponse GetNearestItems(global::Mruv.Items.GetNearestItemsRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.GetNearestItemsResponse GetNearestItems(global::Mruv.GetNearestItemsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetNearestItems, null, options, request);
       }
@@ -1429,7 +1429,7 @@ namespace Mruv.Items {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Items.GetNearestItemsResponse> GetNearestItemsAsync(global::Mruv.Items.GetNearestItemsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.GetNearestItemsResponse> GetNearestItemsAsync(global::Mruv.GetNearestItemsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetNearestItemsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1439,7 +1439,7 @@ namespace Mruv.Items {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Items.GetNearestItemsResponse> GetNearestItemsAsync(global::Mruv.Items.GetNearestItemsRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.GetNearestItemsResponse> GetNearestItemsAsync(global::Mruv.GetNearestItemsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetNearestItems, null, options, request);
       }
@@ -1451,7 +1451,7 @@ namespace Mruv.Items {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Items.UseItemResponse UseItem(global::Mruv.Items.UseItemRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.UseItemResponse UseItem(global::Mruv.UseItemRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return UseItem(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1461,7 +1461,7 @@ namespace Mruv.Items {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Items.UseItemResponse UseItem(global::Mruv.Items.UseItemRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.UseItemResponse UseItem(global::Mruv.UseItemRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_UseItem, null, options, request);
       }
@@ -1473,7 +1473,7 @@ namespace Mruv.Items {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Items.UseItemResponse> UseItemAsync(global::Mruv.Items.UseItemRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.UseItemResponse> UseItemAsync(global::Mruv.UseItemRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return UseItemAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1483,7 +1483,7 @@ namespace Mruv.Items {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Items.UseItemResponse> UseItemAsync(global::Mruv.Items.UseItemRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.UseItemResponse> UseItemAsync(global::Mruv.UseItemRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_UseItem, null, options, request);
       }
@@ -1622,25 +1622,25 @@ namespace Mruv.Items {
       serviceBinder.AddMethod(__Method_CreateItem, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Item, global::Mruv.ItemID>(serviceImpl.CreateItem));
       serviceBinder.AddMethod(__Method_GetItem, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.ItemID, global::Mruv.Item>(serviceImpl.GetItem));
       serviceBinder.AddMethod(__Method_DeleteItem, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.ItemID, global::Mruv.ItemID>(serviceImpl.DeleteItem));
-      serviceBinder.AddMethod(__Method_GetItems, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Items.GetItemsRequest, global::Mruv.Items.GetItemsResponse>(serviceImpl.GetItems));
+      serviceBinder.AddMethod(__Method_GetItems, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.GetItemsRequest, global::Mruv.GetItemsResponse>(serviceImpl.GetItems));
       serviceBinder.AddMethod(__Method_CreateItemType, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.ItemType, global::Mruv.ItemTypeID>(serviceImpl.CreateItemType));
       serviceBinder.AddMethod(__Method_GetItemType, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.ItemTypeID, global::Mruv.ItemType>(serviceImpl.GetItemType));
       serviceBinder.AddMethod(__Method_DeleteItemType, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.ItemTypeID, global::Mruv.ItemTypeID>(serviceImpl.DeleteItemType));
-      serviceBinder.AddMethod(__Method_GetItemTypes, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Items.GetItemTypesRequest, global::Mruv.Items.GetItemTypesResponse>(serviceImpl.GetItemTypes));
+      serviceBinder.AddMethod(__Method_GetItemTypes, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.GetItemTypesRequest, global::Mruv.GetItemTypesResponse>(serviceImpl.GetItemTypes));
       serviceBinder.AddMethod(__Method_CreateContainer, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Container, global::Mruv.ContainerID>(serviceImpl.CreateContainer));
       serviceBinder.AddMethod(__Method_GetContainer, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.ContainerID, global::Mruv.Container>(serviceImpl.GetContainer));
       serviceBinder.AddMethod(__Method_DeleteContainer, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.ContainerID, global::Mruv.ContainerID>(serviceImpl.DeleteContainer));
-      serviceBinder.AddMethod(__Method_GetContainers, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Items.GetContainersRequest, global::Mruv.Items.GetContainersResponse>(serviceImpl.GetContainers));
+      serviceBinder.AddMethod(__Method_GetContainers, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.GetContainersRequest, global::Mruv.GetContainersResponse>(serviceImpl.GetContainers));
       serviceBinder.AddMethod(__Method_CreateContainerType, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.ContainerType, global::Mruv.ContainerTypeID>(serviceImpl.CreateContainerType));
       serviceBinder.AddMethod(__Method_GetContainerType, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.ContainerTypeID, global::Mruv.ContainerType>(serviceImpl.GetContainerType));
       serviceBinder.AddMethod(__Method_DeleteContainerType, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.ContainerTypeID, global::Mruv.ContainerTypeID>(serviceImpl.DeleteContainerType));
-      serviceBinder.AddMethod(__Method_GetContainerTypes, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Items.GetContainerTypesRequest, global::Mruv.Items.GetContainerTypesResponse>(serviceImpl.GetContainerTypes));
-      serviceBinder.AddMethod(__Method_GetContainerItems, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Items.GetContainerItemsRequest, global::Mruv.Items.GetContainerItemsResponse>(serviceImpl.GetContainerItems));
-      serviceBinder.AddMethod(__Method_PullItem, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Items.PullItemRequest, global::Mruv.Item>(serviceImpl.PullItem));
-      serviceBinder.AddMethod(__Method_PutItem, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Items.PutItemRequest, global::Mruv.Items.PutItemResponse>(serviceImpl.PutItem));
-      serviceBinder.AddMethod(__Method_SortItems, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Items.SortItemsRequest, global::Mruv.Items.SortItemsResponse>(serviceImpl.SortItems));
-      serviceBinder.AddMethod(__Method_GetNearestItems, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Items.GetNearestItemsRequest, global::Mruv.Items.GetNearestItemsResponse>(serviceImpl.GetNearestItems));
-      serviceBinder.AddMethod(__Method_UseItem, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Items.UseItemRequest, global::Mruv.Items.UseItemResponse>(serviceImpl.UseItem));
+      serviceBinder.AddMethod(__Method_GetContainerTypes, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.GetContainerTypesRequest, global::Mruv.GetContainerTypesResponse>(serviceImpl.GetContainerTypes));
+      serviceBinder.AddMethod(__Method_GetContainerItems, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.GetContainerItemsRequest, global::Mruv.GetContainerItemsResponse>(serviceImpl.GetContainerItems));
+      serviceBinder.AddMethod(__Method_PullItem, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.PullItemRequest, global::Mruv.Item>(serviceImpl.PullItem));
+      serviceBinder.AddMethod(__Method_PutItem, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.PutItemRequest, global::Mruv.PutItemResponse>(serviceImpl.PutItem));
+      serviceBinder.AddMethod(__Method_SortItems, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.SortItemsRequest, global::Mruv.SortItemsResponse>(serviceImpl.SortItems));
+      serviceBinder.AddMethod(__Method_GetNearestItems, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.GetNearestItemsRequest, global::Mruv.GetNearestItemsResponse>(serviceImpl.GetNearestItems));
+      serviceBinder.AddMethod(__Method_UseItem, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.UseItemRequest, global::Mruv.UseItemResponse>(serviceImpl.UseItem));
       serviceBinder.AddMethod(__Method_GetServiceStatus, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.ServiceStatusRequest, global::Mruv.ServiceStatusResponse>(serviceImpl.GetServiceStatus));
       serviceBinder.AddMethod(__Method_GetServiceVersion, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.VersionRequest, global::Mruv.VersionResponse>(serviceImpl.GetServiceVersion));
     }

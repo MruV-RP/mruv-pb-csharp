@@ -15,8 +15,6 @@ namespace Mruv.Punishments {
   {
     static readonly string __ServiceName = "mruv.punishments.MruVPunishmentsService";
 
-    static readonly grpc::Marshaller<global::Mruv.Punishments.PunishRequest> __Marshaller_mruv_punishments_PunishRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.PunishRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.PunishResponse> __Marshaller_mruv_punishments_PunishResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.PunishResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.Punishments.BanRequest> __Marshaller_mruv_punishments_BanRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.BanRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.Punishments.BanResponse> __Marshaller_mruv_punishments_BanResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.BanResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.Punishments.BlockRequest> __Marshaller_mruv_punishments_BlockRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.BlockRequest.Parser.ParseFrom);
@@ -74,15 +72,6 @@ namespace Mruv.Punishments {
     static readonly grpc::Marshaller<global::Mruv.Punishments.WatchPlayerAcquittalsResponse> __Marshaller_mruv_punishments_WatchPlayerAcquittalsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.WatchPlayerAcquittalsResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.Punishments.WatchPunishmentsRequest> __Marshaller_mruv_punishments_WatchPunishmentsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.WatchPunishmentsRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.Punishments.WatchPunishmentsResponse> __Marshaller_mruv_punishments_WatchPunishmentsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.WatchPunishmentsResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.WatchAcquittalsRequest> __Marshaller_mruv_punishments_WatchAcquittalsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.WatchAcquittalsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.WatchAcquittalsResponse> __Marshaller_mruv_punishments_WatchAcquittalsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.WatchAcquittalsResponse.Parser.ParseFrom);
-
-    static readonly grpc::Method<global::Mruv.Punishments.PunishRequest, global::Mruv.Punishments.PunishResponse> __Method_Punish = new grpc::Method<global::Mruv.Punishments.PunishRequest, global::Mruv.Punishments.PunishResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "Punish",
-        __Marshaller_mruv_punishments_PunishRequest,
-        __Marshaller_mruv_punishments_PunishResponse);
 
     static readonly grpc::Method<global::Mruv.Punishments.BanRequest, global::Mruv.Punishments.BanResponse> __Method_Ban = new grpc::Method<global::Mruv.Punishments.BanRequest, global::Mruv.Punishments.BanResponse>(
         grpc::MethodType.Unary,
@@ -294,13 +283,6 @@ namespace Mruv.Punishments {
         __Marshaller_mruv_punishments_WatchPunishmentsRequest,
         __Marshaller_mruv_punishments_WatchPunishmentsResponse);
 
-    static readonly grpc::Method<global::Mruv.Punishments.WatchAcquittalsRequest, global::Mruv.Punishments.WatchAcquittalsResponse> __Method_WatchAcquittals = new grpc::Method<global::Mruv.Punishments.WatchAcquittalsRequest, global::Mruv.Punishments.WatchAcquittalsResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "WatchAcquittals",
-        __Marshaller_mruv_punishments_WatchAcquittalsRequest,
-        __Marshaller_mruv_punishments_WatchAcquittalsResponse);
-
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -311,17 +293,6 @@ namespace Mruv.Punishments {
     [grpc::BindServiceMethod(typeof(MruVPunishmentsService), "BindService")]
     public abstract partial class MruVPunishmentsServiceBase
     {
-      /// <summary>
-      /// Punish player with choosen punishment type.
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Punishments.PunishResponse> Punish(global::Mruv.Punishments.PunishRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
       /// <summary>
       /// Ban player on account and/or ip.
       /// If ban_time is 0, ban will never expire.
@@ -652,24 +623,13 @@ namespace Mruv.Punishments {
       }
 
       /// <summary>
-      /// Subscribe to all punishments events.
+      /// Subscribe to all punishments and acquittals events.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="responseStream">Used for sending responses back to the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>A task indicating completion of the handler.</returns>
       public virtual global::System.Threading.Tasks.Task WatchPunishments(global::Mruv.Punishments.WatchPunishmentsRequest request, grpc::IServerStreamWriter<global::Mruv.Punishments.WatchPunishmentsResponse> responseStream, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      /// Subscribe to all acquittals events.
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Punishments.WatchAcquittalsResponse> WatchAcquittals(global::Mruv.Punishments.WatchAcquittalsRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -699,50 +659,6 @@ namespace Mruv.Punishments {
       {
       }
 
-      /// <summary>
-      /// Punish player with choosen punishment type.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Punishments.PunishResponse Punish(global::Mruv.Punishments.PunishRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return Punish(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Punish player with choosen punishment type.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Punishments.PunishResponse Punish(global::Mruv.Punishments.PunishRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_Punish, null, options, request);
-      }
-      /// <summary>
-      /// Punish player with choosen punishment type.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.PunishResponse> PunishAsync(global::Mruv.Punishments.PunishRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return PunishAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Punish player with choosen punishment type.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.PunishResponse> PunishAsync(global::Mruv.Punishments.PunishRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_Punish, null, options, request);
-      }
       /// <summary>
       /// Ban player on account and/or ip.
       /// If ban_time is 0, ban will never expire.
@@ -1800,7 +1716,7 @@ namespace Mruv.Punishments {
         return CallInvoker.AsyncServerStreamingCall(__Method_WatchPlayerAcquittals, null, options, request);
       }
       /// <summary>
-      /// Subscribe to all punishments events.
+      /// Subscribe to all punishments and acquittals events.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1812,7 +1728,7 @@ namespace Mruv.Punishments {
         return WatchPunishments(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Subscribe to all punishments events.
+      /// Subscribe to all punishments and acquittals events.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1820,50 +1736,6 @@ namespace Mruv.Punishments {
       public virtual grpc::AsyncServerStreamingCall<global::Mruv.Punishments.WatchPunishmentsResponse> WatchPunishments(global::Mruv.Punishments.WatchPunishmentsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_WatchPunishments, null, options, request);
-      }
-      /// <summary>
-      /// Subscribe to all acquittals events.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Punishments.WatchAcquittalsResponse WatchAcquittals(global::Mruv.Punishments.WatchAcquittalsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return WatchAcquittals(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Subscribe to all acquittals events.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Punishments.WatchAcquittalsResponse WatchAcquittals(global::Mruv.Punishments.WatchAcquittalsRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_WatchAcquittals, null, options, request);
-      }
-      /// <summary>
-      /// Subscribe to all acquittals events.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.WatchAcquittalsResponse> WatchAcquittalsAsync(global::Mruv.Punishments.WatchAcquittalsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return WatchAcquittalsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Subscribe to all acquittals events.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.WatchAcquittalsResponse> WatchAcquittalsAsync(global::Mruv.Punishments.WatchAcquittalsRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_WatchAcquittals, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override MruVPunishmentsServiceClient NewInstance(ClientBaseConfiguration configuration)
@@ -1877,7 +1749,6 @@ namespace Mruv.Punishments {
     public static grpc::ServerServiceDefinition BindService(MruVPunishmentsServiceBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_Punish, serviceImpl.Punish)
           .AddMethod(__Method_Ban, serviceImpl.Ban)
           .AddMethod(__Method_Block, serviceImpl.Block)
           .AddMethod(__Method_Warn, serviceImpl.Warn)
@@ -1907,8 +1778,7 @@ namespace Mruv.Punishments {
           .AddMethod(__Method_WatchUnAdminJails, serviceImpl.WatchUnAdminJails)
           .AddMethod(__Method_WatchPlayerPunishments, serviceImpl.WatchPlayerPunishments)
           .AddMethod(__Method_WatchPlayerAcquittals, serviceImpl.WatchPlayerAcquittals)
-          .AddMethod(__Method_WatchPunishments, serviceImpl.WatchPunishments)
-          .AddMethod(__Method_WatchAcquittals, serviceImpl.WatchAcquittals).Build();
+          .AddMethod(__Method_WatchPunishments, serviceImpl.WatchPunishments).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
@@ -1917,7 +1787,6 @@ namespace Mruv.Punishments {
     /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
     public static void BindService(grpc::ServiceBinderBase serviceBinder, MruVPunishmentsServiceBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_Punish, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Punishments.PunishRequest, global::Mruv.Punishments.PunishResponse>(serviceImpl.Punish));
       serviceBinder.AddMethod(__Method_Ban, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Punishments.BanRequest, global::Mruv.Punishments.BanResponse>(serviceImpl.Ban));
       serviceBinder.AddMethod(__Method_Block, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Punishments.BlockRequest, global::Mruv.Punishments.BlockResponse>(serviceImpl.Block));
       serviceBinder.AddMethod(__Method_Warn, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Punishments.WarnRequest, global::Mruv.Punishments.WarnResponse>(serviceImpl.Warn));
@@ -1948,7 +1817,6 @@ namespace Mruv.Punishments {
       serviceBinder.AddMethod(__Method_WatchPlayerPunishments, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Mruv.Punishments.WatchPlayerPunishmentsRequest, global::Mruv.Punishments.WatchPlayerPunishmentsResponse>(serviceImpl.WatchPlayerPunishments));
       serviceBinder.AddMethod(__Method_WatchPlayerAcquittals, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Mruv.Punishments.WatchPlayerAcquittalsRequest, global::Mruv.Punishments.WatchPlayerAcquittalsResponse>(serviceImpl.WatchPlayerAcquittals));
       serviceBinder.AddMethod(__Method_WatchPunishments, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Mruv.Punishments.WatchPunishmentsRequest, global::Mruv.Punishments.WatchPunishmentsResponse>(serviceImpl.WatchPunishments));
-      serviceBinder.AddMethod(__Method_WatchAcquittals, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Punishments.WatchAcquittalsRequest, global::Mruv.Punishments.WatchAcquittalsResponse>(serviceImpl.WatchAcquittals));
     }
 
   }

@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Mruv.TextureStudio {
+namespace TextureStudio {
 
   /// <summary>Holder for reflection information generated from texturestudio/texturestudio_manage.proto</summary>
   public static partial class TexturestudioManageReflection {
@@ -24,47 +24,46 @@ namespace Mruv.TextureStudio {
     static TexturestudioManageReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Cih0ZXh0dXJlc3R1ZGlvL3RleHR1cmVzdHVkaW9fbWFuYWdlLnByb3RvEhNt",
-            "cnV2LnRleHR1cmVfc3R1ZGlvGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnBy",
-            "b3RvIicKE0NyZWF0ZVNlcnZlclJlcXVlc3QSEAoIb3duZXJfaWQYASABKA0i",
-            "MAoUQ3JlYXRlU2VydmVyUmVzcG9uc2USCgoCaWQYASABKA0SDAoEcG9ydBgC",
-            "IAEoDSITChFHZXRTZXJ2ZXJzUmVxdWVzdCIgChJHZXRTZXJ2ZXJzUmVzcG9u",
-            "c2USCgoCaWQYASADKA0iEQoPTXlTZXJ2ZXJSZXF1ZXN0Ih4KEE15U2VydmVy",
-            "UmVzcG9uc2USCgoCaWQYASABKA0iPwoYVHJhbnNmZXJPd25lcnNoaXBSZXF1",
-            "ZXN0EhEKCXNlcnZlcl9pZBgBIAEoDRIQCghvd25lcl9pZBgCIAEoDSIbChlU",
-            "cmFuc2Zlck93bmVyc2hpcFJlc3BvbnNlIiEKE0RlbGV0ZVNlcnZlclJlcXVl",
-            "c3QSCgoCaWQYASABKA0iFgoURGVsZXRlU2VydmVyUmVzcG9uc2Uy2gUKG1Rl",
-            "eHR1cmVTdHVkaW9NYW5hZ2VyU2VydmljZRKGAQoMQ3JlYXRlU2VydmVyEigu",
-            "bXJ1di50ZXh0dXJlX3N0dWRpby5DcmVhdGVTZXJ2ZXJSZXF1ZXN0GikubXJ1",
-            "di50ZXh0dXJlX3N0dWRpby5DcmVhdGVTZXJ2ZXJSZXNwb25zZSIhgtPkkwIb",
-            "IhkvdjEvdGV4dHVyZXN0dWRpby9zZXJ2ZXJzEoABCgpHZXRTZXJ2ZXJzEiYu",
-            "bXJ1di50ZXh0dXJlX3N0dWRpby5HZXRTZXJ2ZXJzUmVxdWVzdBonLm1ydXYu",
-            "dGV4dHVyZV9zdHVkaW8uR2V0U2VydmVyc1Jlc3BvbnNlIiGC0+STAhsSGS92",
-            "MS90ZXh0dXJlc3R1ZGlvL3NlcnZlcnMSfQoITXlTZXJ2ZXISJC5tcnV2LnRl",
-            "eHR1cmVfc3R1ZGlvLk15U2VydmVyUmVxdWVzdBolLm1ydXYudGV4dHVyZV9z",
-            "dHVkaW8uTXlTZXJ2ZXJSZXNwb25zZSIkgtPkkwIeEhwvdjEvdGV4dHVyZXN0",
-            "dWRpby9zZXJ2ZXJzL215EqEBChFUcmFuc2Zlck93bmVyc2hpcBItLm1ydXYu",
-            "dGV4dHVyZV9zdHVkaW8uVHJhbnNmZXJPd25lcnNoaXBSZXF1ZXN0Gi4ubXJ1",
-            "di50ZXh0dXJlX3N0dWRpby5UcmFuc2Zlck93bmVyc2hpcFJlc3BvbnNlIi2C",
-            "0+STAicyJS92MS90ZXh0dXJlc3R1ZGlvL3NlcnZlcnMve3NlcnZlcl9pZH0S",
-            "iwEKDERlbGV0ZVNlcnZlchIoLm1ydXYudGV4dHVyZV9zdHVkaW8uRGVsZXRl",
-            "U2VydmVyUmVxdWVzdBopLm1ydXYudGV4dHVyZV9zdHVkaW8uRGVsZXRlU2Vy",
-            "dmVyUmVzcG9uc2UiJoLT5JMCICoeL3YxL3RleHR1cmVzdHVkaW8vc2VydmVy",
-            "cy97aWR9Qi1aK2dpdGh1Yi5jb20vTXJ1Vi1SUC9tcnV2LXBiLWdvL3RleHR1",
-            "cmVzdHVkaW9iBnByb3RvMw=="));
+            "Cih0ZXh0dXJlc3R1ZGlvL3RleHR1cmVzdHVkaW9fbWFuYWdlLnByb3RvEg50",
+            "ZXh0dXJlX3N0dWRpbxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byIn",
+            "ChNDcmVhdGVTZXJ2ZXJSZXF1ZXN0EhAKCG93bmVyX2lkGAEgASgNIjAKFENy",
+            "ZWF0ZVNlcnZlclJlc3BvbnNlEgoKAmlkGAEgASgNEgwKBHBvcnQYAiABKA0i",
+            "EwoRR2V0U2VydmVyc1JlcXVlc3QiIAoSR2V0U2VydmVyc1Jlc3BvbnNlEgoK",
+            "AmlkGAEgAygNIhEKD015U2VydmVyUmVxdWVzdCIeChBNeVNlcnZlclJlc3Bv",
+            "bnNlEgoKAmlkGAEgASgNIj8KGFRyYW5zZmVyT3duZXJzaGlwUmVxdWVzdBIR",
+            "CglzZXJ2ZXJfaWQYASABKA0SEAoIb3duZXJfaWQYAiABKA0iGwoZVHJhbnNm",
+            "ZXJPd25lcnNoaXBSZXNwb25zZSIhChNEZWxldGVTZXJ2ZXJSZXF1ZXN0EgoK",
+            "AmlkGAEgASgNIhYKFERlbGV0ZVNlcnZlclJlc3BvbnNlMqYFChtUZXh0dXJl",
+            "U3R1ZGlvTWFuYWdlclNlcnZpY2USfAoMQ3JlYXRlU2VydmVyEiMudGV4dHVy",
+            "ZV9zdHVkaW8uQ3JlYXRlU2VydmVyUmVxdWVzdBokLnRleHR1cmVfc3R1ZGlv",
+            "LkNyZWF0ZVNlcnZlclJlc3BvbnNlIiGC0+STAhsiGS92MS90ZXh0dXJlc3R1",
+            "ZGlvL3NlcnZlcnMSdgoKR2V0U2VydmVycxIhLnRleHR1cmVfc3R1ZGlvLkdl",
+            "dFNlcnZlcnNSZXF1ZXN0GiIudGV4dHVyZV9zdHVkaW8uR2V0U2VydmVyc1Jl",
+            "c3BvbnNlIiGC0+STAhsSGS92MS90ZXh0dXJlc3R1ZGlvL3NlcnZlcnMScwoI",
+            "TXlTZXJ2ZXISHy50ZXh0dXJlX3N0dWRpby5NeVNlcnZlclJlcXVlc3QaIC50",
+            "ZXh0dXJlX3N0dWRpby5NeVNlcnZlclJlc3BvbnNlIiSC0+STAh4SHC92MS90",
+            "ZXh0dXJlc3R1ZGlvL3NlcnZlcnMvbXkSlwEKEVRyYW5zZmVyT3duZXJzaGlw",
+            "EigudGV4dHVyZV9zdHVkaW8uVHJhbnNmZXJPd25lcnNoaXBSZXF1ZXN0Giku",
+            "dGV4dHVyZV9zdHVkaW8uVHJhbnNmZXJPd25lcnNoaXBSZXNwb25zZSItgtPk",
+            "kwInMiUvdjEvdGV4dHVyZXN0dWRpby9zZXJ2ZXJzL3tzZXJ2ZXJfaWR9EoEB",
+            "CgxEZWxldGVTZXJ2ZXISIy50ZXh0dXJlX3N0dWRpby5EZWxldGVTZXJ2ZXJS",
+            "ZXF1ZXN0GiQudGV4dHVyZV9zdHVkaW8uRGVsZXRlU2VydmVyUmVzcG9uc2Ui",
+            "JoLT5JMCICoeL3YxL3RleHR1cmVzdHVkaW8vc2VydmVycy97aWR9Qi1aK2dp",
+            "dGh1Yi5jb20vTXJ1Vi1SUC9tcnV2LXBiLWdvL3RleHR1cmVzdHVkaW9iBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.TextureStudio.CreateServerRequest), global::Mruv.TextureStudio.CreateServerRequest.Parser, new[]{ "OwnerId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.TextureStudio.CreateServerResponse), global::Mruv.TextureStudio.CreateServerResponse.Parser, new[]{ "Id", "Port" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.TextureStudio.GetServersRequest), global::Mruv.TextureStudio.GetServersRequest.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.TextureStudio.GetServersResponse), global::Mruv.TextureStudio.GetServersResponse.Parser, new[]{ "Id" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.TextureStudio.MyServerRequest), global::Mruv.TextureStudio.MyServerRequest.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.TextureStudio.MyServerResponse), global::Mruv.TextureStudio.MyServerResponse.Parser, new[]{ "Id" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.TextureStudio.TransferOwnershipRequest), global::Mruv.TextureStudio.TransferOwnershipRequest.Parser, new[]{ "ServerId", "OwnerId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.TextureStudio.TransferOwnershipResponse), global::Mruv.TextureStudio.TransferOwnershipResponse.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.TextureStudio.DeleteServerRequest), global::Mruv.TextureStudio.DeleteServerRequest.Parser, new[]{ "Id" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.TextureStudio.DeleteServerResponse), global::Mruv.TextureStudio.DeleteServerResponse.Parser, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::TextureStudio.CreateServerRequest), global::TextureStudio.CreateServerRequest.Parser, new[]{ "OwnerId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::TextureStudio.CreateServerResponse), global::TextureStudio.CreateServerResponse.Parser, new[]{ "Id", "Port" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::TextureStudio.GetServersRequest), global::TextureStudio.GetServersRequest.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::TextureStudio.GetServersResponse), global::TextureStudio.GetServersResponse.Parser, new[]{ "Id" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::TextureStudio.MyServerRequest), global::TextureStudio.MyServerRequest.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::TextureStudio.MyServerResponse), global::TextureStudio.MyServerResponse.Parser, new[]{ "Id" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::TextureStudio.TransferOwnershipRequest), global::TextureStudio.TransferOwnershipRequest.Parser, new[]{ "ServerId", "OwnerId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::TextureStudio.TransferOwnershipResponse), global::TextureStudio.TransferOwnershipResponse.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::TextureStudio.DeleteServerRequest), global::TextureStudio.DeleteServerRequest.Parser, new[]{ "Id" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::TextureStudio.DeleteServerResponse), global::TextureStudio.DeleteServerResponse.Parser, null, null, null, null)
           }));
     }
     #endregion
@@ -82,7 +81,7 @@ namespace Mruv.TextureStudio {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.TextureStudio.TexturestudioManageReflection.Descriptor.MessageTypes[0]; }
+      get { return global::TextureStudio.TexturestudioManageReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -214,7 +213,7 @@ namespace Mruv.TextureStudio {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.TextureStudio.TexturestudioManageReflection.Descriptor.MessageTypes[1]; }
+      get { return global::TextureStudio.TexturestudioManageReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -374,7 +373,7 @@ namespace Mruv.TextureStudio {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.TextureStudio.TexturestudioManageReflection.Descriptor.MessageTypes[2]; }
+      get { return global::TextureStudio.TexturestudioManageReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -478,7 +477,7 @@ namespace Mruv.TextureStudio {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.TextureStudio.TexturestudioManageReflection.Descriptor.MessageTypes[3]; }
+      get { return global::TextureStudio.TexturestudioManageReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -603,7 +602,7 @@ namespace Mruv.TextureStudio {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.TextureStudio.TexturestudioManageReflection.Descriptor.MessageTypes[4]; }
+      get { return global::TextureStudio.TexturestudioManageReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -707,7 +706,7 @@ namespace Mruv.TextureStudio {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.TextureStudio.TexturestudioManageReflection.Descriptor.MessageTypes[5]; }
+      get { return global::TextureStudio.TexturestudioManageReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -839,7 +838,7 @@ namespace Mruv.TextureStudio {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.TextureStudio.TexturestudioManageReflection.Descriptor.MessageTypes[6]; }
+      get { return global::TextureStudio.TexturestudioManageReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -999,7 +998,7 @@ namespace Mruv.TextureStudio {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.TextureStudio.TexturestudioManageReflection.Descriptor.MessageTypes[7]; }
+      get { return global::TextureStudio.TexturestudioManageReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1103,7 +1102,7 @@ namespace Mruv.TextureStudio {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.TextureStudio.TexturestudioManageReflection.Descriptor.MessageTypes[8]; }
+      get { return global::TextureStudio.TexturestudioManageReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1235,7 +1234,7 @@ namespace Mruv.TextureStudio {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.TextureStudio.TexturestudioManageReflection.Descriptor.MessageTypes[9]; }
+      get { return global::TextureStudio.TexturestudioManageReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

@@ -7,171 +7,171 @@
 
 using grpc = global::Grpc.Core;
 
-namespace Mruv.Groups {
+namespace Mruv {
   /// <summary>
   /// The MruV groups service provides procedures for managing groups.
   /// </summary>
   public static partial class MruVGroupsService
   {
-    static readonly string __ServiceName = "mruv.groups.MruVGroupsService";
+    static readonly string __ServiceName = "mruv.MruVGroupsService";
 
-    static readonly grpc::Marshaller<global::Mruv.Groups.CreateGroupRequest> __Marshaller_mruv_groups_CreateGroupRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.CreateGroupRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.CreateGroupResponse> __Marshaller_mruv_groups_CreateGroupResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.CreateGroupResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.GetGroupRequest> __Marshaller_mruv_groups_GetGroupRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.GetGroupRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.GetGroupResponse> __Marshaller_mruv_groups_GetGroupResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.GetGroupResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.UpdateGroupRequest> __Marshaller_mruv_groups_UpdateGroupRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.UpdateGroupRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.UpdateGroupResponse> __Marshaller_mruv_groups_UpdateGroupResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.UpdateGroupResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.DeleteGroupRequest> __Marshaller_mruv_groups_DeleteGroupRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.DeleteGroupRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.DeleteGroupResponse> __Marshaller_mruv_groups_DeleteGroupResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.DeleteGroupResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.GetGroupsRequest> __Marshaller_mruv_groups_GetGroupsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.GetGroupsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.GetGroupsResponse> __Marshaller_mruv_groups_GetGroupsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.GetGroupsResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.AssignOwnerRequest> __Marshaller_mruv_groups_AssignOwnerRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.AssignOwnerRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.AssignOwnerResponse> __Marshaller_mruv_groups_AssignOwnerResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.AssignOwnerResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.GetOwnerRequest> __Marshaller_mruv_groups_GetOwnerRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.GetOwnerRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.GetOwnerResponse> __Marshaller_mruv_groups_GetOwnerResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.GetOwnerResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.AddMemberRequest> __Marshaller_mruv_groups_AddMemberRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.AddMemberRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.AddMemberResponse> __Marshaller_mruv_groups_AddMemberResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.AddMemberResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.GetMembersRequest> __Marshaller_mruv_groups_GetMembersRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.GetMembersRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.GetMembersResponse> __Marshaller_mruv_groups_GetMembersResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.GetMembersResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.RemoveMemberRequest> __Marshaller_mruv_groups_RemoveMemberRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.RemoveMemberRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.RemoveMemberResponse> __Marshaller_mruv_groups_RemoveMemberResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.RemoveMemberResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.AddPermissionRequest> __Marshaller_mruv_groups_AddPermissionRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.AddPermissionRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.AddPermissionResponse> __Marshaller_mruv_groups_AddPermissionResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.AddPermissionResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.GetPermissionsRequest> __Marshaller_mruv_groups_GetPermissionsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.GetPermissionsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.GetPermissionsResponse> __Marshaller_mruv_groups_GetPermissionsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.GetPermissionsResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.RemovePermissionRequest> __Marshaller_mruv_groups_RemovePermissionRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.RemovePermissionRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.RemovePermissionResponse> __Marshaller_mruv_groups_RemovePermissionResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.RemovePermissionResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.AddSubgroupRequest> __Marshaller_mruv_groups_AddSubgroupRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.AddSubgroupRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.AddSubgroupResponse> __Marshaller_mruv_groups_AddSubgroupResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.AddSubgroupResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.GetSubgroupsRequest> __Marshaller_mruv_groups_GetSubgroupsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.GetSubgroupsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.GetSubgroupsResponse> __Marshaller_mruv_groups_GetSubgroupsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.GetSubgroupsResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.RemoveSubgroupRequest> __Marshaller_mruv_groups_RemoveSubgroupRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.RemoveSubgroupRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.RemoveSubgroupResponse> __Marshaller_mruv_groups_RemoveSubgroupResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.RemoveSubgroupResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.IsPermittedRequest> __Marshaller_mruv_groups_IsPermittedRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.IsPermittedRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.IsPermittedResponse> __Marshaller_mruv_groups_IsPermittedResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.IsPermittedResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.CreateGroupRequest> __Marshaller_mruv_CreateGroupRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.CreateGroupRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.CreateGroupResponse> __Marshaller_mruv_CreateGroupResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.CreateGroupResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.GetGroupRequest> __Marshaller_mruv_GetGroupRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.GetGroupRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.GetGroupResponse> __Marshaller_mruv_GetGroupResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.GetGroupResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.UpdateGroupRequest> __Marshaller_mruv_UpdateGroupRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.UpdateGroupRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.UpdateGroupResponse> __Marshaller_mruv_UpdateGroupResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.UpdateGroupResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.DeleteGroupRequest> __Marshaller_mruv_DeleteGroupRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.DeleteGroupRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.DeleteGroupResponse> __Marshaller_mruv_DeleteGroupResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.DeleteGroupResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.GetGroupsRequest> __Marshaller_mruv_GetGroupsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.GetGroupsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.GetGroupsResponse> __Marshaller_mruv_GetGroupsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.GetGroupsResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.AssignOwnerRequest> __Marshaller_mruv_AssignOwnerRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.AssignOwnerRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.AssignOwnerResponse> __Marshaller_mruv_AssignOwnerResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.AssignOwnerResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.GetOwnerRequest> __Marshaller_mruv_GetOwnerRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.GetOwnerRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.GetOwnerResponse> __Marshaller_mruv_GetOwnerResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.GetOwnerResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.AddMemberRequest> __Marshaller_mruv_AddMemberRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.AddMemberRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.AddMemberResponse> __Marshaller_mruv_AddMemberResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.AddMemberResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.GetMembersRequest> __Marshaller_mruv_GetMembersRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.GetMembersRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.GetMembersResponse> __Marshaller_mruv_GetMembersResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.GetMembersResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.RemoveMemberRequest> __Marshaller_mruv_RemoveMemberRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.RemoveMemberRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.RemoveMemberResponse> __Marshaller_mruv_RemoveMemberResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.RemoveMemberResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.AddPermissionRequest> __Marshaller_mruv_AddPermissionRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.AddPermissionRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.AddPermissionResponse> __Marshaller_mruv_AddPermissionResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.AddPermissionResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.GetPermissionsRequest> __Marshaller_mruv_GetPermissionsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.GetPermissionsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.GetPermissionsResponse> __Marshaller_mruv_GetPermissionsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.GetPermissionsResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.RemovePermissionRequest> __Marshaller_mruv_RemovePermissionRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.RemovePermissionRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.RemovePermissionResponse> __Marshaller_mruv_RemovePermissionResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.RemovePermissionResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.AddSubgroupRequest> __Marshaller_mruv_AddSubgroupRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.AddSubgroupRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.AddSubgroupResponse> __Marshaller_mruv_AddSubgroupResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.AddSubgroupResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.GetSubgroupsRequest> __Marshaller_mruv_GetSubgroupsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.GetSubgroupsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.GetSubgroupsResponse> __Marshaller_mruv_GetSubgroupsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.GetSubgroupsResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.RemoveSubgroupRequest> __Marshaller_mruv_RemoveSubgroupRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.RemoveSubgroupRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.RemoveSubgroupResponse> __Marshaller_mruv_RemoveSubgroupResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.RemoveSubgroupResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.IsPermittedRequest> __Marshaller_mruv_IsPermittedRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.IsPermittedRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Mruv.IsPermittedResponse> __Marshaller_mruv_IsPermittedResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.IsPermittedResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.ServiceStatusRequest> __Marshaller_mruv_ServiceStatusRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.ServiceStatusRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.ServiceStatusResponse> __Marshaller_mruv_ServiceStatusResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.ServiceStatusResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.VersionRequest> __Marshaller_mruv_VersionRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.VersionRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Mruv.VersionResponse> __Marshaller_mruv_VersionResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.VersionResponse.Parser.ParseFrom);
 
-    static readonly grpc::Method<global::Mruv.Groups.CreateGroupRequest, global::Mruv.Groups.CreateGroupResponse> __Method_CreateGroup = new grpc::Method<global::Mruv.Groups.CreateGroupRequest, global::Mruv.Groups.CreateGroupResponse>(
+    static readonly grpc::Method<global::Mruv.CreateGroupRequest, global::Mruv.CreateGroupResponse> __Method_CreateGroup = new grpc::Method<global::Mruv.CreateGroupRequest, global::Mruv.CreateGroupResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "CreateGroup",
-        __Marshaller_mruv_groups_CreateGroupRequest,
-        __Marshaller_mruv_groups_CreateGroupResponse);
+        __Marshaller_mruv_CreateGroupRequest,
+        __Marshaller_mruv_CreateGroupResponse);
 
-    static readonly grpc::Method<global::Mruv.Groups.GetGroupRequest, global::Mruv.Groups.GetGroupResponse> __Method_GetGroup = new grpc::Method<global::Mruv.Groups.GetGroupRequest, global::Mruv.Groups.GetGroupResponse>(
+    static readonly grpc::Method<global::Mruv.GetGroupRequest, global::Mruv.GetGroupResponse> __Method_GetGroup = new grpc::Method<global::Mruv.GetGroupRequest, global::Mruv.GetGroupResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetGroup",
-        __Marshaller_mruv_groups_GetGroupRequest,
-        __Marshaller_mruv_groups_GetGroupResponse);
+        __Marshaller_mruv_GetGroupRequest,
+        __Marshaller_mruv_GetGroupResponse);
 
-    static readonly grpc::Method<global::Mruv.Groups.UpdateGroupRequest, global::Mruv.Groups.UpdateGroupResponse> __Method_UpdateGroup = new grpc::Method<global::Mruv.Groups.UpdateGroupRequest, global::Mruv.Groups.UpdateGroupResponse>(
+    static readonly grpc::Method<global::Mruv.UpdateGroupRequest, global::Mruv.UpdateGroupResponse> __Method_UpdateGroup = new grpc::Method<global::Mruv.UpdateGroupRequest, global::Mruv.UpdateGroupResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "UpdateGroup",
-        __Marshaller_mruv_groups_UpdateGroupRequest,
-        __Marshaller_mruv_groups_UpdateGroupResponse);
+        __Marshaller_mruv_UpdateGroupRequest,
+        __Marshaller_mruv_UpdateGroupResponse);
 
-    static readonly grpc::Method<global::Mruv.Groups.DeleteGroupRequest, global::Mruv.Groups.DeleteGroupResponse> __Method_DeleteGroup = new grpc::Method<global::Mruv.Groups.DeleteGroupRequest, global::Mruv.Groups.DeleteGroupResponse>(
+    static readonly grpc::Method<global::Mruv.DeleteGroupRequest, global::Mruv.DeleteGroupResponse> __Method_DeleteGroup = new grpc::Method<global::Mruv.DeleteGroupRequest, global::Mruv.DeleteGroupResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "DeleteGroup",
-        __Marshaller_mruv_groups_DeleteGroupRequest,
-        __Marshaller_mruv_groups_DeleteGroupResponse);
+        __Marshaller_mruv_DeleteGroupRequest,
+        __Marshaller_mruv_DeleteGroupResponse);
 
-    static readonly grpc::Method<global::Mruv.Groups.GetGroupsRequest, global::Mruv.Groups.GetGroupsResponse> __Method_GetGroups = new grpc::Method<global::Mruv.Groups.GetGroupsRequest, global::Mruv.Groups.GetGroupsResponse>(
+    static readonly grpc::Method<global::Mruv.GetGroupsRequest, global::Mruv.GetGroupsResponse> __Method_GetGroups = new grpc::Method<global::Mruv.GetGroupsRequest, global::Mruv.GetGroupsResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetGroups",
-        __Marshaller_mruv_groups_GetGroupsRequest,
-        __Marshaller_mruv_groups_GetGroupsResponse);
+        __Marshaller_mruv_GetGroupsRequest,
+        __Marshaller_mruv_GetGroupsResponse);
 
-    static readonly grpc::Method<global::Mruv.Groups.AssignOwnerRequest, global::Mruv.Groups.AssignOwnerResponse> __Method_AssignOwner = new grpc::Method<global::Mruv.Groups.AssignOwnerRequest, global::Mruv.Groups.AssignOwnerResponse>(
+    static readonly grpc::Method<global::Mruv.AssignOwnerRequest, global::Mruv.AssignOwnerResponse> __Method_AssignOwner = new grpc::Method<global::Mruv.AssignOwnerRequest, global::Mruv.AssignOwnerResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "AssignOwner",
-        __Marshaller_mruv_groups_AssignOwnerRequest,
-        __Marshaller_mruv_groups_AssignOwnerResponse);
+        __Marshaller_mruv_AssignOwnerRequest,
+        __Marshaller_mruv_AssignOwnerResponse);
 
-    static readonly grpc::Method<global::Mruv.Groups.GetOwnerRequest, global::Mruv.Groups.GetOwnerResponse> __Method_GetOwner = new grpc::Method<global::Mruv.Groups.GetOwnerRequest, global::Mruv.Groups.GetOwnerResponse>(
+    static readonly grpc::Method<global::Mruv.GetOwnerRequest, global::Mruv.GetOwnerResponse> __Method_GetOwner = new grpc::Method<global::Mruv.GetOwnerRequest, global::Mruv.GetOwnerResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetOwner",
-        __Marshaller_mruv_groups_GetOwnerRequest,
-        __Marshaller_mruv_groups_GetOwnerResponse);
+        __Marshaller_mruv_GetOwnerRequest,
+        __Marshaller_mruv_GetOwnerResponse);
 
-    static readonly grpc::Method<global::Mruv.Groups.AddMemberRequest, global::Mruv.Groups.AddMemberResponse> __Method_AddMember = new grpc::Method<global::Mruv.Groups.AddMemberRequest, global::Mruv.Groups.AddMemberResponse>(
+    static readonly grpc::Method<global::Mruv.AddMemberRequest, global::Mruv.AddMemberResponse> __Method_AddMember = new grpc::Method<global::Mruv.AddMemberRequest, global::Mruv.AddMemberResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "AddMember",
-        __Marshaller_mruv_groups_AddMemberRequest,
-        __Marshaller_mruv_groups_AddMemberResponse);
+        __Marshaller_mruv_AddMemberRequest,
+        __Marshaller_mruv_AddMemberResponse);
 
-    static readonly grpc::Method<global::Mruv.Groups.GetMembersRequest, global::Mruv.Groups.GetMembersResponse> __Method_GetMembers = new grpc::Method<global::Mruv.Groups.GetMembersRequest, global::Mruv.Groups.GetMembersResponse>(
+    static readonly grpc::Method<global::Mruv.GetMembersRequest, global::Mruv.GetMembersResponse> __Method_GetMembers = new grpc::Method<global::Mruv.GetMembersRequest, global::Mruv.GetMembersResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetMembers",
-        __Marshaller_mruv_groups_GetMembersRequest,
-        __Marshaller_mruv_groups_GetMembersResponse);
+        __Marshaller_mruv_GetMembersRequest,
+        __Marshaller_mruv_GetMembersResponse);
 
-    static readonly grpc::Method<global::Mruv.Groups.RemoveMemberRequest, global::Mruv.Groups.RemoveMemberResponse> __Method_RemoveMember = new grpc::Method<global::Mruv.Groups.RemoveMemberRequest, global::Mruv.Groups.RemoveMemberResponse>(
+    static readonly grpc::Method<global::Mruv.RemoveMemberRequest, global::Mruv.RemoveMemberResponse> __Method_RemoveMember = new grpc::Method<global::Mruv.RemoveMemberRequest, global::Mruv.RemoveMemberResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "RemoveMember",
-        __Marshaller_mruv_groups_RemoveMemberRequest,
-        __Marshaller_mruv_groups_RemoveMemberResponse);
+        __Marshaller_mruv_RemoveMemberRequest,
+        __Marshaller_mruv_RemoveMemberResponse);
 
-    static readonly grpc::Method<global::Mruv.Groups.AddPermissionRequest, global::Mruv.Groups.AddPermissionResponse> __Method_AddPermission = new grpc::Method<global::Mruv.Groups.AddPermissionRequest, global::Mruv.Groups.AddPermissionResponse>(
+    static readonly grpc::Method<global::Mruv.AddPermissionRequest, global::Mruv.AddPermissionResponse> __Method_AddPermission = new grpc::Method<global::Mruv.AddPermissionRequest, global::Mruv.AddPermissionResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "AddPermission",
-        __Marshaller_mruv_groups_AddPermissionRequest,
-        __Marshaller_mruv_groups_AddPermissionResponse);
+        __Marshaller_mruv_AddPermissionRequest,
+        __Marshaller_mruv_AddPermissionResponse);
 
-    static readonly grpc::Method<global::Mruv.Groups.GetPermissionsRequest, global::Mruv.Groups.GetPermissionsResponse> __Method_GetPermissions = new grpc::Method<global::Mruv.Groups.GetPermissionsRequest, global::Mruv.Groups.GetPermissionsResponse>(
+    static readonly grpc::Method<global::Mruv.GetPermissionsRequest, global::Mruv.GetPermissionsResponse> __Method_GetPermissions = new grpc::Method<global::Mruv.GetPermissionsRequest, global::Mruv.GetPermissionsResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetPermissions",
-        __Marshaller_mruv_groups_GetPermissionsRequest,
-        __Marshaller_mruv_groups_GetPermissionsResponse);
+        __Marshaller_mruv_GetPermissionsRequest,
+        __Marshaller_mruv_GetPermissionsResponse);
 
-    static readonly grpc::Method<global::Mruv.Groups.RemovePermissionRequest, global::Mruv.Groups.RemovePermissionResponse> __Method_RemovePermission = new grpc::Method<global::Mruv.Groups.RemovePermissionRequest, global::Mruv.Groups.RemovePermissionResponse>(
+    static readonly grpc::Method<global::Mruv.RemovePermissionRequest, global::Mruv.RemovePermissionResponse> __Method_RemovePermission = new grpc::Method<global::Mruv.RemovePermissionRequest, global::Mruv.RemovePermissionResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "RemovePermission",
-        __Marshaller_mruv_groups_RemovePermissionRequest,
-        __Marshaller_mruv_groups_RemovePermissionResponse);
+        __Marshaller_mruv_RemovePermissionRequest,
+        __Marshaller_mruv_RemovePermissionResponse);
 
-    static readonly grpc::Method<global::Mruv.Groups.AddSubgroupRequest, global::Mruv.Groups.AddSubgroupResponse> __Method_AddSubgroup = new grpc::Method<global::Mruv.Groups.AddSubgroupRequest, global::Mruv.Groups.AddSubgroupResponse>(
+    static readonly grpc::Method<global::Mruv.AddSubgroupRequest, global::Mruv.AddSubgroupResponse> __Method_AddSubgroup = new grpc::Method<global::Mruv.AddSubgroupRequest, global::Mruv.AddSubgroupResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "AddSubgroup",
-        __Marshaller_mruv_groups_AddSubgroupRequest,
-        __Marshaller_mruv_groups_AddSubgroupResponse);
+        __Marshaller_mruv_AddSubgroupRequest,
+        __Marshaller_mruv_AddSubgroupResponse);
 
-    static readonly grpc::Method<global::Mruv.Groups.GetSubgroupsRequest, global::Mruv.Groups.GetSubgroupsResponse> __Method_GetSubgroups = new grpc::Method<global::Mruv.Groups.GetSubgroupsRequest, global::Mruv.Groups.GetSubgroupsResponse>(
+    static readonly grpc::Method<global::Mruv.GetSubgroupsRequest, global::Mruv.GetSubgroupsResponse> __Method_GetSubgroups = new grpc::Method<global::Mruv.GetSubgroupsRequest, global::Mruv.GetSubgroupsResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetSubgroups",
-        __Marshaller_mruv_groups_GetSubgroupsRequest,
-        __Marshaller_mruv_groups_GetSubgroupsResponse);
+        __Marshaller_mruv_GetSubgroupsRequest,
+        __Marshaller_mruv_GetSubgroupsResponse);
 
-    static readonly grpc::Method<global::Mruv.Groups.RemoveSubgroupRequest, global::Mruv.Groups.RemoveSubgroupResponse> __Method_RemoveSubgroup = new grpc::Method<global::Mruv.Groups.RemoveSubgroupRequest, global::Mruv.Groups.RemoveSubgroupResponse>(
+    static readonly grpc::Method<global::Mruv.RemoveSubgroupRequest, global::Mruv.RemoveSubgroupResponse> __Method_RemoveSubgroup = new grpc::Method<global::Mruv.RemoveSubgroupRequest, global::Mruv.RemoveSubgroupResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "RemoveSubgroup",
-        __Marshaller_mruv_groups_RemoveSubgroupRequest,
-        __Marshaller_mruv_groups_RemoveSubgroupResponse);
+        __Marshaller_mruv_RemoveSubgroupRequest,
+        __Marshaller_mruv_RemoveSubgroupResponse);
 
-    static readonly grpc::Method<global::Mruv.Groups.IsPermittedRequest, global::Mruv.Groups.IsPermittedResponse> __Method_IsPermitted = new grpc::Method<global::Mruv.Groups.IsPermittedRequest, global::Mruv.Groups.IsPermittedResponse>(
+    static readonly grpc::Method<global::Mruv.IsPermittedRequest, global::Mruv.IsPermittedResponse> __Method_IsPermitted = new grpc::Method<global::Mruv.IsPermittedRequest, global::Mruv.IsPermittedResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "IsPermitted",
-        __Marshaller_mruv_groups_IsPermittedRequest,
-        __Marshaller_mruv_groups_IsPermittedResponse);
+        __Marshaller_mruv_IsPermittedRequest,
+        __Marshaller_mruv_IsPermittedResponse);
 
     static readonly grpc::Method<global::Mruv.ServiceStatusRequest, global::Mruv.ServiceStatusResponse> __Method_GetServiceStatus = new grpc::Method<global::Mruv.ServiceStatusRequest, global::Mruv.ServiceStatusResponse>(
         grpc::MethodType.Unary,
@@ -190,7 +190,7 @@ namespace Mruv.Groups {
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
-      get { return global::Mruv.Groups.GroupsReflection.Descriptor.Services[0]; }
+      get { return global::Mruv.GroupsReflection.Descriptor.Services[0]; }
     }
 
     /// <summary>Base class for server-side implementations of MruVGroupsService</summary>
@@ -203,7 +203,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Groups.CreateGroupResponse> CreateGroup(global::Mruv.Groups.CreateGroupRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.CreateGroupResponse> CreateGroup(global::Mruv.CreateGroupRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -214,7 +214,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Groups.GetGroupResponse> GetGroup(global::Mruv.Groups.GetGroupRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.GetGroupResponse> GetGroup(global::Mruv.GetGroupRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -225,7 +225,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Groups.UpdateGroupResponse> UpdateGroup(global::Mruv.Groups.UpdateGroupRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.UpdateGroupResponse> UpdateGroup(global::Mruv.UpdateGroupRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -236,7 +236,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Groups.DeleteGroupResponse> DeleteGroup(global::Mruv.Groups.DeleteGroupRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.DeleteGroupResponse> DeleteGroup(global::Mruv.DeleteGroupRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -247,7 +247,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Groups.GetGroupsResponse> GetGroups(global::Mruv.Groups.GetGroupsRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.GetGroupsResponse> GetGroups(global::Mruv.GetGroupsRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -258,7 +258,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Groups.AssignOwnerResponse> AssignOwner(global::Mruv.Groups.AssignOwnerRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.AssignOwnerResponse> AssignOwner(global::Mruv.AssignOwnerRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -269,7 +269,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Groups.GetOwnerResponse> GetOwner(global::Mruv.Groups.GetOwnerRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.GetOwnerResponse> GetOwner(global::Mruv.GetOwnerRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -280,7 +280,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Groups.AddMemberResponse> AddMember(global::Mruv.Groups.AddMemberRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.AddMemberResponse> AddMember(global::Mruv.AddMemberRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -291,7 +291,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Groups.GetMembersResponse> GetMembers(global::Mruv.Groups.GetMembersRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.GetMembersResponse> GetMembers(global::Mruv.GetMembersRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -302,7 +302,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Groups.RemoveMemberResponse> RemoveMember(global::Mruv.Groups.RemoveMemberRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.RemoveMemberResponse> RemoveMember(global::Mruv.RemoveMemberRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -313,7 +313,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Groups.AddPermissionResponse> AddPermission(global::Mruv.Groups.AddPermissionRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.AddPermissionResponse> AddPermission(global::Mruv.AddPermissionRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -324,7 +324,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Groups.GetPermissionsResponse> GetPermissions(global::Mruv.Groups.GetPermissionsRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.GetPermissionsResponse> GetPermissions(global::Mruv.GetPermissionsRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -335,7 +335,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Groups.RemovePermissionResponse> RemovePermission(global::Mruv.Groups.RemovePermissionRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.RemovePermissionResponse> RemovePermission(global::Mruv.RemovePermissionRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -346,7 +346,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Groups.AddSubgroupResponse> AddSubgroup(global::Mruv.Groups.AddSubgroupRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.AddSubgroupResponse> AddSubgroup(global::Mruv.AddSubgroupRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -357,7 +357,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Groups.GetSubgroupsResponse> GetSubgroups(global::Mruv.Groups.GetSubgroupsRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.GetSubgroupsResponse> GetSubgroups(global::Mruv.GetSubgroupsRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -368,7 +368,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Groups.RemoveSubgroupResponse> RemoveSubgroup(global::Mruv.Groups.RemoveSubgroupRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.RemoveSubgroupResponse> RemoveSubgroup(global::Mruv.RemoveSubgroupRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -379,7 +379,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Groups.IsPermittedResponse> IsPermitted(global::Mruv.Groups.IsPermittedRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.IsPermittedResponse> IsPermitted(global::Mruv.IsPermittedRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -433,7 +433,7 @@ namespace Mruv.Groups {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Groups.CreateGroupResponse CreateGroup(global::Mruv.Groups.CreateGroupRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.CreateGroupResponse CreateGroup(global::Mruv.CreateGroupRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return CreateGroup(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -443,7 +443,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Groups.CreateGroupResponse CreateGroup(global::Mruv.Groups.CreateGroupRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.CreateGroupResponse CreateGroup(global::Mruv.CreateGroupRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_CreateGroup, null, options, request);
       }
@@ -455,7 +455,7 @@ namespace Mruv.Groups {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Groups.CreateGroupResponse> CreateGroupAsync(global::Mruv.Groups.CreateGroupRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.CreateGroupResponse> CreateGroupAsync(global::Mruv.CreateGroupRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return CreateGroupAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -465,7 +465,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Groups.CreateGroupResponse> CreateGroupAsync(global::Mruv.Groups.CreateGroupRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.CreateGroupResponse> CreateGroupAsync(global::Mruv.CreateGroupRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_CreateGroup, null, options, request);
       }
@@ -477,7 +477,7 @@ namespace Mruv.Groups {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Groups.GetGroupResponse GetGroup(global::Mruv.Groups.GetGroupRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.GetGroupResponse GetGroup(global::Mruv.GetGroupRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetGroup(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -487,7 +487,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Groups.GetGroupResponse GetGroup(global::Mruv.Groups.GetGroupRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.GetGroupResponse GetGroup(global::Mruv.GetGroupRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetGroup, null, options, request);
       }
@@ -499,7 +499,7 @@ namespace Mruv.Groups {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Groups.GetGroupResponse> GetGroupAsync(global::Mruv.Groups.GetGroupRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.GetGroupResponse> GetGroupAsync(global::Mruv.GetGroupRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetGroupAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -509,7 +509,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Groups.GetGroupResponse> GetGroupAsync(global::Mruv.Groups.GetGroupRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.GetGroupResponse> GetGroupAsync(global::Mruv.GetGroupRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetGroup, null, options, request);
       }
@@ -521,7 +521,7 @@ namespace Mruv.Groups {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Groups.UpdateGroupResponse UpdateGroup(global::Mruv.Groups.UpdateGroupRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.UpdateGroupResponse UpdateGroup(global::Mruv.UpdateGroupRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return UpdateGroup(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -531,7 +531,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Groups.UpdateGroupResponse UpdateGroup(global::Mruv.Groups.UpdateGroupRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.UpdateGroupResponse UpdateGroup(global::Mruv.UpdateGroupRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_UpdateGroup, null, options, request);
       }
@@ -543,7 +543,7 @@ namespace Mruv.Groups {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Groups.UpdateGroupResponse> UpdateGroupAsync(global::Mruv.Groups.UpdateGroupRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.UpdateGroupResponse> UpdateGroupAsync(global::Mruv.UpdateGroupRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return UpdateGroupAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -553,7 +553,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Groups.UpdateGroupResponse> UpdateGroupAsync(global::Mruv.Groups.UpdateGroupRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.UpdateGroupResponse> UpdateGroupAsync(global::Mruv.UpdateGroupRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_UpdateGroup, null, options, request);
       }
@@ -565,7 +565,7 @@ namespace Mruv.Groups {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Groups.DeleteGroupResponse DeleteGroup(global::Mruv.Groups.DeleteGroupRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.DeleteGroupResponse DeleteGroup(global::Mruv.DeleteGroupRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return DeleteGroup(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -575,7 +575,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Groups.DeleteGroupResponse DeleteGroup(global::Mruv.Groups.DeleteGroupRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.DeleteGroupResponse DeleteGroup(global::Mruv.DeleteGroupRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_DeleteGroup, null, options, request);
       }
@@ -587,7 +587,7 @@ namespace Mruv.Groups {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Groups.DeleteGroupResponse> DeleteGroupAsync(global::Mruv.Groups.DeleteGroupRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.DeleteGroupResponse> DeleteGroupAsync(global::Mruv.DeleteGroupRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return DeleteGroupAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -597,7 +597,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Groups.DeleteGroupResponse> DeleteGroupAsync(global::Mruv.Groups.DeleteGroupRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.DeleteGroupResponse> DeleteGroupAsync(global::Mruv.DeleteGroupRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_DeleteGroup, null, options, request);
       }
@@ -609,7 +609,7 @@ namespace Mruv.Groups {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Groups.GetGroupsResponse GetGroups(global::Mruv.Groups.GetGroupsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.GetGroupsResponse GetGroups(global::Mruv.GetGroupsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetGroups(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -619,7 +619,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Groups.GetGroupsResponse GetGroups(global::Mruv.Groups.GetGroupsRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.GetGroupsResponse GetGroups(global::Mruv.GetGroupsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetGroups, null, options, request);
       }
@@ -631,7 +631,7 @@ namespace Mruv.Groups {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Groups.GetGroupsResponse> GetGroupsAsync(global::Mruv.Groups.GetGroupsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.GetGroupsResponse> GetGroupsAsync(global::Mruv.GetGroupsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetGroupsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -641,7 +641,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Groups.GetGroupsResponse> GetGroupsAsync(global::Mruv.Groups.GetGroupsRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.GetGroupsResponse> GetGroupsAsync(global::Mruv.GetGroupsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetGroups, null, options, request);
       }
@@ -653,7 +653,7 @@ namespace Mruv.Groups {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Groups.AssignOwnerResponse AssignOwner(global::Mruv.Groups.AssignOwnerRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.AssignOwnerResponse AssignOwner(global::Mruv.AssignOwnerRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return AssignOwner(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -663,7 +663,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Groups.AssignOwnerResponse AssignOwner(global::Mruv.Groups.AssignOwnerRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.AssignOwnerResponse AssignOwner(global::Mruv.AssignOwnerRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_AssignOwner, null, options, request);
       }
@@ -675,7 +675,7 @@ namespace Mruv.Groups {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Groups.AssignOwnerResponse> AssignOwnerAsync(global::Mruv.Groups.AssignOwnerRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.AssignOwnerResponse> AssignOwnerAsync(global::Mruv.AssignOwnerRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return AssignOwnerAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -685,7 +685,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Groups.AssignOwnerResponse> AssignOwnerAsync(global::Mruv.Groups.AssignOwnerRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.AssignOwnerResponse> AssignOwnerAsync(global::Mruv.AssignOwnerRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_AssignOwner, null, options, request);
       }
@@ -697,7 +697,7 @@ namespace Mruv.Groups {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Groups.GetOwnerResponse GetOwner(global::Mruv.Groups.GetOwnerRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.GetOwnerResponse GetOwner(global::Mruv.GetOwnerRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetOwner(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -707,7 +707,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Groups.GetOwnerResponse GetOwner(global::Mruv.Groups.GetOwnerRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.GetOwnerResponse GetOwner(global::Mruv.GetOwnerRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetOwner, null, options, request);
       }
@@ -719,7 +719,7 @@ namespace Mruv.Groups {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Groups.GetOwnerResponse> GetOwnerAsync(global::Mruv.Groups.GetOwnerRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.GetOwnerResponse> GetOwnerAsync(global::Mruv.GetOwnerRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetOwnerAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -729,7 +729,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Groups.GetOwnerResponse> GetOwnerAsync(global::Mruv.Groups.GetOwnerRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.GetOwnerResponse> GetOwnerAsync(global::Mruv.GetOwnerRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetOwner, null, options, request);
       }
@@ -741,7 +741,7 @@ namespace Mruv.Groups {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Groups.AddMemberResponse AddMember(global::Mruv.Groups.AddMemberRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.AddMemberResponse AddMember(global::Mruv.AddMemberRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return AddMember(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -751,7 +751,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Groups.AddMemberResponse AddMember(global::Mruv.Groups.AddMemberRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.AddMemberResponse AddMember(global::Mruv.AddMemberRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_AddMember, null, options, request);
       }
@@ -763,7 +763,7 @@ namespace Mruv.Groups {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Groups.AddMemberResponse> AddMemberAsync(global::Mruv.Groups.AddMemberRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.AddMemberResponse> AddMemberAsync(global::Mruv.AddMemberRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return AddMemberAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -773,7 +773,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Groups.AddMemberResponse> AddMemberAsync(global::Mruv.Groups.AddMemberRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.AddMemberResponse> AddMemberAsync(global::Mruv.AddMemberRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_AddMember, null, options, request);
       }
@@ -785,7 +785,7 @@ namespace Mruv.Groups {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Groups.GetMembersResponse GetMembers(global::Mruv.Groups.GetMembersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.GetMembersResponse GetMembers(global::Mruv.GetMembersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetMembers(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -795,7 +795,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Groups.GetMembersResponse GetMembers(global::Mruv.Groups.GetMembersRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.GetMembersResponse GetMembers(global::Mruv.GetMembersRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetMembers, null, options, request);
       }
@@ -807,7 +807,7 @@ namespace Mruv.Groups {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Groups.GetMembersResponse> GetMembersAsync(global::Mruv.Groups.GetMembersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.GetMembersResponse> GetMembersAsync(global::Mruv.GetMembersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetMembersAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -817,7 +817,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Groups.GetMembersResponse> GetMembersAsync(global::Mruv.Groups.GetMembersRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.GetMembersResponse> GetMembersAsync(global::Mruv.GetMembersRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetMembers, null, options, request);
       }
@@ -829,7 +829,7 @@ namespace Mruv.Groups {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Groups.RemoveMemberResponse RemoveMember(global::Mruv.Groups.RemoveMemberRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.RemoveMemberResponse RemoveMember(global::Mruv.RemoveMemberRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return RemoveMember(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -839,7 +839,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Groups.RemoveMemberResponse RemoveMember(global::Mruv.Groups.RemoveMemberRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.RemoveMemberResponse RemoveMember(global::Mruv.RemoveMemberRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_RemoveMember, null, options, request);
       }
@@ -851,7 +851,7 @@ namespace Mruv.Groups {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Groups.RemoveMemberResponse> RemoveMemberAsync(global::Mruv.Groups.RemoveMemberRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.RemoveMemberResponse> RemoveMemberAsync(global::Mruv.RemoveMemberRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return RemoveMemberAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -861,7 +861,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Groups.RemoveMemberResponse> RemoveMemberAsync(global::Mruv.Groups.RemoveMemberRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.RemoveMemberResponse> RemoveMemberAsync(global::Mruv.RemoveMemberRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_RemoveMember, null, options, request);
       }
@@ -873,7 +873,7 @@ namespace Mruv.Groups {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Groups.AddPermissionResponse AddPermission(global::Mruv.Groups.AddPermissionRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.AddPermissionResponse AddPermission(global::Mruv.AddPermissionRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return AddPermission(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -883,7 +883,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Groups.AddPermissionResponse AddPermission(global::Mruv.Groups.AddPermissionRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.AddPermissionResponse AddPermission(global::Mruv.AddPermissionRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_AddPermission, null, options, request);
       }
@@ -895,7 +895,7 @@ namespace Mruv.Groups {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Groups.AddPermissionResponse> AddPermissionAsync(global::Mruv.Groups.AddPermissionRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.AddPermissionResponse> AddPermissionAsync(global::Mruv.AddPermissionRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return AddPermissionAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -905,7 +905,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Groups.AddPermissionResponse> AddPermissionAsync(global::Mruv.Groups.AddPermissionRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.AddPermissionResponse> AddPermissionAsync(global::Mruv.AddPermissionRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_AddPermission, null, options, request);
       }
@@ -917,7 +917,7 @@ namespace Mruv.Groups {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Groups.GetPermissionsResponse GetPermissions(global::Mruv.Groups.GetPermissionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.GetPermissionsResponse GetPermissions(global::Mruv.GetPermissionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetPermissions(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -927,7 +927,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Groups.GetPermissionsResponse GetPermissions(global::Mruv.Groups.GetPermissionsRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.GetPermissionsResponse GetPermissions(global::Mruv.GetPermissionsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetPermissions, null, options, request);
       }
@@ -939,7 +939,7 @@ namespace Mruv.Groups {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Groups.GetPermissionsResponse> GetPermissionsAsync(global::Mruv.Groups.GetPermissionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.GetPermissionsResponse> GetPermissionsAsync(global::Mruv.GetPermissionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetPermissionsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -949,7 +949,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Groups.GetPermissionsResponse> GetPermissionsAsync(global::Mruv.Groups.GetPermissionsRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.GetPermissionsResponse> GetPermissionsAsync(global::Mruv.GetPermissionsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetPermissions, null, options, request);
       }
@@ -961,7 +961,7 @@ namespace Mruv.Groups {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Groups.RemovePermissionResponse RemovePermission(global::Mruv.Groups.RemovePermissionRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.RemovePermissionResponse RemovePermission(global::Mruv.RemovePermissionRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return RemovePermission(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -971,7 +971,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Groups.RemovePermissionResponse RemovePermission(global::Mruv.Groups.RemovePermissionRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.RemovePermissionResponse RemovePermission(global::Mruv.RemovePermissionRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_RemovePermission, null, options, request);
       }
@@ -983,7 +983,7 @@ namespace Mruv.Groups {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Groups.RemovePermissionResponse> RemovePermissionAsync(global::Mruv.Groups.RemovePermissionRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.RemovePermissionResponse> RemovePermissionAsync(global::Mruv.RemovePermissionRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return RemovePermissionAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -993,7 +993,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Groups.RemovePermissionResponse> RemovePermissionAsync(global::Mruv.Groups.RemovePermissionRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.RemovePermissionResponse> RemovePermissionAsync(global::Mruv.RemovePermissionRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_RemovePermission, null, options, request);
       }
@@ -1005,7 +1005,7 @@ namespace Mruv.Groups {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Groups.AddSubgroupResponse AddSubgroup(global::Mruv.Groups.AddSubgroupRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.AddSubgroupResponse AddSubgroup(global::Mruv.AddSubgroupRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return AddSubgroup(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1015,7 +1015,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Groups.AddSubgroupResponse AddSubgroup(global::Mruv.Groups.AddSubgroupRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.AddSubgroupResponse AddSubgroup(global::Mruv.AddSubgroupRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_AddSubgroup, null, options, request);
       }
@@ -1027,7 +1027,7 @@ namespace Mruv.Groups {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Groups.AddSubgroupResponse> AddSubgroupAsync(global::Mruv.Groups.AddSubgroupRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.AddSubgroupResponse> AddSubgroupAsync(global::Mruv.AddSubgroupRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return AddSubgroupAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1037,7 +1037,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Groups.AddSubgroupResponse> AddSubgroupAsync(global::Mruv.Groups.AddSubgroupRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.AddSubgroupResponse> AddSubgroupAsync(global::Mruv.AddSubgroupRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_AddSubgroup, null, options, request);
       }
@@ -1049,7 +1049,7 @@ namespace Mruv.Groups {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Groups.GetSubgroupsResponse GetSubgroups(global::Mruv.Groups.GetSubgroupsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.GetSubgroupsResponse GetSubgroups(global::Mruv.GetSubgroupsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetSubgroups(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1059,7 +1059,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Groups.GetSubgroupsResponse GetSubgroups(global::Mruv.Groups.GetSubgroupsRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.GetSubgroupsResponse GetSubgroups(global::Mruv.GetSubgroupsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetSubgroups, null, options, request);
       }
@@ -1071,7 +1071,7 @@ namespace Mruv.Groups {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Groups.GetSubgroupsResponse> GetSubgroupsAsync(global::Mruv.Groups.GetSubgroupsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.GetSubgroupsResponse> GetSubgroupsAsync(global::Mruv.GetSubgroupsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetSubgroupsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1081,7 +1081,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Groups.GetSubgroupsResponse> GetSubgroupsAsync(global::Mruv.Groups.GetSubgroupsRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.GetSubgroupsResponse> GetSubgroupsAsync(global::Mruv.GetSubgroupsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetSubgroups, null, options, request);
       }
@@ -1093,7 +1093,7 @@ namespace Mruv.Groups {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Groups.RemoveSubgroupResponse RemoveSubgroup(global::Mruv.Groups.RemoveSubgroupRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.RemoveSubgroupResponse RemoveSubgroup(global::Mruv.RemoveSubgroupRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return RemoveSubgroup(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1103,7 +1103,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Groups.RemoveSubgroupResponse RemoveSubgroup(global::Mruv.Groups.RemoveSubgroupRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.RemoveSubgroupResponse RemoveSubgroup(global::Mruv.RemoveSubgroupRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_RemoveSubgroup, null, options, request);
       }
@@ -1115,7 +1115,7 @@ namespace Mruv.Groups {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Groups.RemoveSubgroupResponse> RemoveSubgroupAsync(global::Mruv.Groups.RemoveSubgroupRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.RemoveSubgroupResponse> RemoveSubgroupAsync(global::Mruv.RemoveSubgroupRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return RemoveSubgroupAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1125,7 +1125,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Groups.RemoveSubgroupResponse> RemoveSubgroupAsync(global::Mruv.Groups.RemoveSubgroupRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.RemoveSubgroupResponse> RemoveSubgroupAsync(global::Mruv.RemoveSubgroupRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_RemoveSubgroup, null, options, request);
       }
@@ -1137,7 +1137,7 @@ namespace Mruv.Groups {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Groups.IsPermittedResponse IsPermitted(global::Mruv.Groups.IsPermittedRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.IsPermittedResponse IsPermitted(global::Mruv.IsPermittedRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return IsPermitted(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1147,7 +1147,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Groups.IsPermittedResponse IsPermitted(global::Mruv.Groups.IsPermittedRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.IsPermittedResponse IsPermitted(global::Mruv.IsPermittedRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_IsPermitted, null, options, request);
       }
@@ -1159,7 +1159,7 @@ namespace Mruv.Groups {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Groups.IsPermittedResponse> IsPermittedAsync(global::Mruv.Groups.IsPermittedRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.IsPermittedResponse> IsPermittedAsync(global::Mruv.IsPermittedRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return IsPermittedAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1169,7 +1169,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Groups.IsPermittedResponse> IsPermittedAsync(global::Mruv.Groups.IsPermittedRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.IsPermittedResponse> IsPermittedAsync(global::Mruv.IsPermittedRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_IsPermitted, null, options, request);
       }
@@ -1272,23 +1272,23 @@ namespace Mruv.Groups {
     /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
     public static void BindService(grpc::ServiceBinderBase serviceBinder, MruVGroupsServiceBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_CreateGroup, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Groups.CreateGroupRequest, global::Mruv.Groups.CreateGroupResponse>(serviceImpl.CreateGroup));
-      serviceBinder.AddMethod(__Method_GetGroup, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Groups.GetGroupRequest, global::Mruv.Groups.GetGroupResponse>(serviceImpl.GetGroup));
-      serviceBinder.AddMethod(__Method_UpdateGroup, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Groups.UpdateGroupRequest, global::Mruv.Groups.UpdateGroupResponse>(serviceImpl.UpdateGroup));
-      serviceBinder.AddMethod(__Method_DeleteGroup, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Groups.DeleteGroupRequest, global::Mruv.Groups.DeleteGroupResponse>(serviceImpl.DeleteGroup));
-      serviceBinder.AddMethod(__Method_GetGroups, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Groups.GetGroupsRequest, global::Mruv.Groups.GetGroupsResponse>(serviceImpl.GetGroups));
-      serviceBinder.AddMethod(__Method_AssignOwner, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Groups.AssignOwnerRequest, global::Mruv.Groups.AssignOwnerResponse>(serviceImpl.AssignOwner));
-      serviceBinder.AddMethod(__Method_GetOwner, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Groups.GetOwnerRequest, global::Mruv.Groups.GetOwnerResponse>(serviceImpl.GetOwner));
-      serviceBinder.AddMethod(__Method_AddMember, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Groups.AddMemberRequest, global::Mruv.Groups.AddMemberResponse>(serviceImpl.AddMember));
-      serviceBinder.AddMethod(__Method_GetMembers, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Groups.GetMembersRequest, global::Mruv.Groups.GetMembersResponse>(serviceImpl.GetMembers));
-      serviceBinder.AddMethod(__Method_RemoveMember, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Groups.RemoveMemberRequest, global::Mruv.Groups.RemoveMemberResponse>(serviceImpl.RemoveMember));
-      serviceBinder.AddMethod(__Method_AddPermission, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Groups.AddPermissionRequest, global::Mruv.Groups.AddPermissionResponse>(serviceImpl.AddPermission));
-      serviceBinder.AddMethod(__Method_GetPermissions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Groups.GetPermissionsRequest, global::Mruv.Groups.GetPermissionsResponse>(serviceImpl.GetPermissions));
-      serviceBinder.AddMethod(__Method_RemovePermission, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Groups.RemovePermissionRequest, global::Mruv.Groups.RemovePermissionResponse>(serviceImpl.RemovePermission));
-      serviceBinder.AddMethod(__Method_AddSubgroup, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Groups.AddSubgroupRequest, global::Mruv.Groups.AddSubgroupResponse>(serviceImpl.AddSubgroup));
-      serviceBinder.AddMethod(__Method_GetSubgroups, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Groups.GetSubgroupsRequest, global::Mruv.Groups.GetSubgroupsResponse>(serviceImpl.GetSubgroups));
-      serviceBinder.AddMethod(__Method_RemoveSubgroup, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Groups.RemoveSubgroupRequest, global::Mruv.Groups.RemoveSubgroupResponse>(serviceImpl.RemoveSubgroup));
-      serviceBinder.AddMethod(__Method_IsPermitted, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Groups.IsPermittedRequest, global::Mruv.Groups.IsPermittedResponse>(serviceImpl.IsPermitted));
+      serviceBinder.AddMethod(__Method_CreateGroup, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.CreateGroupRequest, global::Mruv.CreateGroupResponse>(serviceImpl.CreateGroup));
+      serviceBinder.AddMethod(__Method_GetGroup, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.GetGroupRequest, global::Mruv.GetGroupResponse>(serviceImpl.GetGroup));
+      serviceBinder.AddMethod(__Method_UpdateGroup, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.UpdateGroupRequest, global::Mruv.UpdateGroupResponse>(serviceImpl.UpdateGroup));
+      serviceBinder.AddMethod(__Method_DeleteGroup, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.DeleteGroupRequest, global::Mruv.DeleteGroupResponse>(serviceImpl.DeleteGroup));
+      serviceBinder.AddMethod(__Method_GetGroups, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.GetGroupsRequest, global::Mruv.GetGroupsResponse>(serviceImpl.GetGroups));
+      serviceBinder.AddMethod(__Method_AssignOwner, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.AssignOwnerRequest, global::Mruv.AssignOwnerResponse>(serviceImpl.AssignOwner));
+      serviceBinder.AddMethod(__Method_GetOwner, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.GetOwnerRequest, global::Mruv.GetOwnerResponse>(serviceImpl.GetOwner));
+      serviceBinder.AddMethod(__Method_AddMember, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.AddMemberRequest, global::Mruv.AddMemberResponse>(serviceImpl.AddMember));
+      serviceBinder.AddMethod(__Method_GetMembers, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.GetMembersRequest, global::Mruv.GetMembersResponse>(serviceImpl.GetMembers));
+      serviceBinder.AddMethod(__Method_RemoveMember, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.RemoveMemberRequest, global::Mruv.RemoveMemberResponse>(serviceImpl.RemoveMember));
+      serviceBinder.AddMethod(__Method_AddPermission, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.AddPermissionRequest, global::Mruv.AddPermissionResponse>(serviceImpl.AddPermission));
+      serviceBinder.AddMethod(__Method_GetPermissions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.GetPermissionsRequest, global::Mruv.GetPermissionsResponse>(serviceImpl.GetPermissions));
+      serviceBinder.AddMethod(__Method_RemovePermission, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.RemovePermissionRequest, global::Mruv.RemovePermissionResponse>(serviceImpl.RemovePermission));
+      serviceBinder.AddMethod(__Method_AddSubgroup, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.AddSubgroupRequest, global::Mruv.AddSubgroupResponse>(serviceImpl.AddSubgroup));
+      serviceBinder.AddMethod(__Method_GetSubgroups, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.GetSubgroupsRequest, global::Mruv.GetSubgroupsResponse>(serviceImpl.GetSubgroups));
+      serviceBinder.AddMethod(__Method_RemoveSubgroup, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.RemoveSubgroupRequest, global::Mruv.RemoveSubgroupResponse>(serviceImpl.RemoveSubgroup));
+      serviceBinder.AddMethod(__Method_IsPermitted, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.IsPermittedRequest, global::Mruv.IsPermittedResponse>(serviceImpl.IsPermitted));
       serviceBinder.AddMethod(__Method_GetServiceStatus, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.ServiceStatusRequest, global::Mruv.ServiceStatusResponse>(serviceImpl.GetServiceStatus));
       serviceBinder.AddMethod(__Method_GetServiceVersion, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.VersionRequest, global::Mruv.VersionResponse>(serviceImpl.GetServiceVersion));
     }
