@@ -15,16 +15,46 @@ namespace Mruv.Offers {
   {
     static readonly string __ServiceName = "mruv.offers.MruVOffersService";
 
-    static readonly grpc::Marshaller<global::Mruv.Offers.CreateOfferRequest> __Marshaller_mruv_offers_CreateOfferRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Offers.CreateOfferRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Offers.CreateOfferResponse> __Marshaller_mruv_offers_CreateOfferResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Offers.CreateOfferResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Offers.GetOfferRequest> __Marshaller_mruv_offers_GetOfferRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Offers.GetOfferRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Offers.GetOfferResponse> __Marshaller_mruv_offers_GetOfferResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Offers.GetOfferResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Offers.UpdateOfferRequest> __Marshaller_mruv_offers_UpdateOfferRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Offers.UpdateOfferRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Offers.UpdateOfferResponse> __Marshaller_mruv_offers_UpdateOfferResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Offers.UpdateOfferResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Offers.DeleteOfferRequest> __Marshaller_mruv_offers_DeleteOfferRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Offers.DeleteOfferRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Offers.DeleteOfferResponse> __Marshaller_mruv_offers_DeleteOfferResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Offers.DeleteOfferResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Offers.AcceptOfferRequest> __Marshaller_mruv_offers_AcceptOfferRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Offers.AcceptOfferRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Offers.AcceptOfferResponse> __Marshaller_mruv_offers_AcceptOfferResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Offers.AcceptOfferResponse.Parser.ParseFrom);
+    static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (message is global::Google.Protobuf.IBufferMessage)
+      {
+        context.SetPayloadLength(message.CalculateSize());
+        global::Google.Protobuf.MessageExtensions.WriteTo(message, context.GetBufferWriter());
+        context.Complete();
+        return;
+      }
+      #endif
+      context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));
+    }
+
+    static class __Helper_MessageCache<T>
+    {
+      public static readonly bool IsBufferMessage = global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));
+    }
+
+    static T __Helper_DeserializeMessage<T>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser<T> parser) where T : global::Google.Protobuf.IMessage<T>
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (__Helper_MessageCache<T>.IsBufferMessage)
+      {
+        return parser.ParseFrom(context.PayloadAsReadOnlySequence());
+      }
+      #endif
+      return parser.ParseFrom(context.PayloadAsNewBuffer());
+    }
+
+    static readonly grpc::Marshaller<global::Mruv.Offers.CreateOfferRequest> __Marshaller_mruv_offers_CreateOfferRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Offers.CreateOfferRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Offers.CreateOfferResponse> __Marshaller_mruv_offers_CreateOfferResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Offers.CreateOfferResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Offers.GetOfferRequest> __Marshaller_mruv_offers_GetOfferRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Offers.GetOfferRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Offers.GetOfferResponse> __Marshaller_mruv_offers_GetOfferResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Offers.GetOfferResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Offers.UpdateOfferRequest> __Marshaller_mruv_offers_UpdateOfferRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Offers.UpdateOfferRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Offers.UpdateOfferResponse> __Marshaller_mruv_offers_UpdateOfferResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Offers.UpdateOfferResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Offers.DeleteOfferRequest> __Marshaller_mruv_offers_DeleteOfferRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Offers.DeleteOfferRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Offers.DeleteOfferResponse> __Marshaller_mruv_offers_DeleteOfferResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Offers.DeleteOfferResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Offers.AcceptOfferRequest> __Marshaller_mruv_offers_AcceptOfferRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Offers.AcceptOfferRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Offers.AcceptOfferResponse> __Marshaller_mruv_offers_AcceptOfferResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Offers.AcceptOfferResponse.Parser));
 
     static readonly grpc::Method<global::Mruv.Offers.CreateOfferRequest, global::Mruv.Offers.CreateOfferResponse> __Method_CreateOffer = new grpc::Method<global::Mruv.Offers.CreateOfferRequest, global::Mruv.Offers.CreateOfferResponse>(
         grpc::MethodType.Unary,

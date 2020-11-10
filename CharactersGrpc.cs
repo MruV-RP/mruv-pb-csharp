@@ -12,23 +12,53 @@ namespace Mruv {
   {
     static readonly string __ServiceName = "mruv.MruVCharactersService";
 
-    static readonly grpc::Marshaller<global::Mruv.CreateCharacterRequest> __Marshaller_mruv_CreateCharacterRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.CreateCharacterRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.CreateCharacterResponse> __Marshaller_mruv_CreateCharacterResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.CreateCharacterResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.GetCharacterRequest> __Marshaller_mruv_GetCharacterRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.GetCharacterRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.GetCharacterResponse> __Marshaller_mruv_GetCharacterResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.GetCharacterResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.UpdateCharacterRequest> __Marshaller_mruv_UpdateCharacterRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.UpdateCharacterRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.UpdateCharacterResponse> __Marshaller_mruv_UpdateCharacterResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.UpdateCharacterResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.DeleteCharacterRequest> __Marshaller_mruv_DeleteCharacterRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.DeleteCharacterRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.DeleteCharacterResponse> __Marshaller_mruv_DeleteCharacterResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.DeleteCharacterResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.CharacterID> __Marshaller_mruv_CharacterID = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.CharacterID.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.ChangeClothesRequest> __Marshaller_mruv_ChangeClothesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.ChangeClothesRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.ChangeClothesResponse> __Marshaller_mruv_ChangeClothesResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.ChangeClothesResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.DeathStreamRequest> __Marshaller_mruv_DeathStreamRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.DeathStreamRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.DeathStreamResponse> __Marshaller_mruv_DeathStreamResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.DeathStreamResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.ServiceStatusRequest> __Marshaller_mruv_ServiceStatusRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.ServiceStatusRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.ServiceStatusResponse> __Marshaller_mruv_ServiceStatusResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.ServiceStatusResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.VersionRequest> __Marshaller_mruv_VersionRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.VersionRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.VersionResponse> __Marshaller_mruv_VersionResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.VersionResponse.Parser.ParseFrom);
+    static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (message is global::Google.Protobuf.IBufferMessage)
+      {
+        context.SetPayloadLength(message.CalculateSize());
+        global::Google.Protobuf.MessageExtensions.WriteTo(message, context.GetBufferWriter());
+        context.Complete();
+        return;
+      }
+      #endif
+      context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));
+    }
+
+    static class __Helper_MessageCache<T>
+    {
+      public static readonly bool IsBufferMessage = global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));
+    }
+
+    static T __Helper_DeserializeMessage<T>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser<T> parser) where T : global::Google.Protobuf.IMessage<T>
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (__Helper_MessageCache<T>.IsBufferMessage)
+      {
+        return parser.ParseFrom(context.PayloadAsReadOnlySequence());
+      }
+      #endif
+      return parser.ParseFrom(context.PayloadAsNewBuffer());
+    }
+
+    static readonly grpc::Marshaller<global::Mruv.CreateCharacterRequest> __Marshaller_mruv_CreateCharacterRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.CreateCharacterRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.CreateCharacterResponse> __Marshaller_mruv_CreateCharacterResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.CreateCharacterResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.GetCharacterRequest> __Marshaller_mruv_GetCharacterRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.GetCharacterRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.GetCharacterResponse> __Marshaller_mruv_GetCharacterResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.GetCharacterResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.UpdateCharacterRequest> __Marshaller_mruv_UpdateCharacterRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.UpdateCharacterRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.UpdateCharacterResponse> __Marshaller_mruv_UpdateCharacterResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.UpdateCharacterResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.DeleteCharacterRequest> __Marshaller_mruv_DeleteCharacterRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.DeleteCharacterRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.DeleteCharacterResponse> __Marshaller_mruv_DeleteCharacterResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.DeleteCharacterResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.CharacterID> __Marshaller_mruv_CharacterID = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.CharacterID.Parser));
+    static readonly grpc::Marshaller<global::Mruv.ChangeClothesRequest> __Marshaller_mruv_ChangeClothesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.ChangeClothesRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.ChangeClothesResponse> __Marshaller_mruv_ChangeClothesResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.ChangeClothesResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.DeathStreamRequest> __Marshaller_mruv_DeathStreamRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.DeathStreamRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.DeathStreamResponse> __Marshaller_mruv_DeathStreamResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.DeathStreamResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.ServiceStatusRequest> __Marshaller_mruv_ServiceStatusRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.ServiceStatusRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.ServiceStatusResponse> __Marshaller_mruv_ServiceStatusResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.ServiceStatusResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.VersionRequest> __Marshaller_mruv_VersionRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.VersionRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.VersionResponse> __Marshaller_mruv_VersionResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.VersionResponse.Parser));
 
     static readonly grpc::Method<global::Mruv.CreateCharacterRequest, global::Mruv.CreateCharacterResponse> __Method_CreateCharacter = new grpc::Method<global::Mruv.CreateCharacterRequest, global::Mruv.CreateCharacterResponse>(
         grpc::MethodType.Unary,

@@ -15,16 +15,46 @@ namespace Mruv.Spots {
   {
     static readonly string __ServiceName = "mruv.spots.MruVSpotsService";
 
-    static readonly grpc::Marshaller<global::Mruv.Spots.CreateSpotRequest> __Marshaller_mruv_spots_CreateSpotRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Spots.CreateSpotRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Spots.CreateSpotResponse> __Marshaller_mruv_spots_CreateSpotResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Spots.CreateSpotResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Spots.GetSpotRequest> __Marshaller_mruv_spots_GetSpotRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Spots.GetSpotRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Spots.GetSpotResponse> __Marshaller_mruv_spots_GetSpotResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Spots.GetSpotResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Spots.UpdateSpotRequest> __Marshaller_mruv_spots_UpdateSpotRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Spots.UpdateSpotRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Spots.UpdateSpotResponse> __Marshaller_mruv_spots_UpdateSpotResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Spots.UpdateSpotResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Spots.DeleteSpotRequest> __Marshaller_mruv_spots_DeleteSpotRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Spots.DeleteSpotRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Spots.DeleteSpotResponse> __Marshaller_mruv_spots_DeleteSpotResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Spots.DeleteSpotResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Spots.FetchAllSpotsRequest> __Marshaller_mruv_spots_FetchAllSpotsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Spots.FetchAllSpotsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Spots.FetchAllSpotsResponse> __Marshaller_mruv_spots_FetchAllSpotsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Spots.FetchAllSpotsResponse.Parser.ParseFrom);
+    static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (message is global::Google.Protobuf.IBufferMessage)
+      {
+        context.SetPayloadLength(message.CalculateSize());
+        global::Google.Protobuf.MessageExtensions.WriteTo(message, context.GetBufferWriter());
+        context.Complete();
+        return;
+      }
+      #endif
+      context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));
+    }
+
+    static class __Helper_MessageCache<T>
+    {
+      public static readonly bool IsBufferMessage = global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));
+    }
+
+    static T __Helper_DeserializeMessage<T>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser<T> parser) where T : global::Google.Protobuf.IMessage<T>
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (__Helper_MessageCache<T>.IsBufferMessage)
+      {
+        return parser.ParseFrom(context.PayloadAsReadOnlySequence());
+      }
+      #endif
+      return parser.ParseFrom(context.PayloadAsNewBuffer());
+    }
+
+    static readonly grpc::Marshaller<global::Mruv.Spots.CreateSpotRequest> __Marshaller_mruv_spots_CreateSpotRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Spots.CreateSpotRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Spots.CreateSpotResponse> __Marshaller_mruv_spots_CreateSpotResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Spots.CreateSpotResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Spots.GetSpotRequest> __Marshaller_mruv_spots_GetSpotRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Spots.GetSpotRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Spots.GetSpotResponse> __Marshaller_mruv_spots_GetSpotResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Spots.GetSpotResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Spots.UpdateSpotRequest> __Marshaller_mruv_spots_UpdateSpotRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Spots.UpdateSpotRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Spots.UpdateSpotResponse> __Marshaller_mruv_spots_UpdateSpotResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Spots.UpdateSpotResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Spots.DeleteSpotRequest> __Marshaller_mruv_spots_DeleteSpotRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Spots.DeleteSpotRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Spots.DeleteSpotResponse> __Marshaller_mruv_spots_DeleteSpotResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Spots.DeleteSpotResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Spots.FetchAllSpotsRequest> __Marshaller_mruv_spots_FetchAllSpotsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Spots.FetchAllSpotsRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Spots.FetchAllSpotsResponse> __Marshaller_mruv_spots_FetchAllSpotsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Spots.FetchAllSpotsResponse.Parser));
 
     static readonly grpc::Method<global::Mruv.Spots.CreateSpotRequest, global::Mruv.Spots.CreateSpotResponse> __Method_CreateSpot = new grpc::Method<global::Mruv.Spots.CreateSpotRequest, global::Mruv.Spots.CreateSpotResponse>(
         grpc::MethodType.Unary,

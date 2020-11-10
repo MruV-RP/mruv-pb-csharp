@@ -15,26 +15,56 @@ namespace Mruv.Gates {
   {
     static readonly string __ServiceName = "mruv.gates.MruVGatesService";
 
-    static readonly grpc::Marshaller<global::Mruv.Gates.CreateGateRequest> __Marshaller_mruv_gates_CreateGateRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Gates.CreateGateRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Gates.CreateGateResponse> __Marshaller_mruv_gates_CreateGateResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Gates.CreateGateResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Gates.GetGateRequest> __Marshaller_mruv_gates_GetGateRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Gates.GetGateRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Gates.GetGateResponse> __Marshaller_mruv_gates_GetGateResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Gates.GetGateResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Gates.UpdateGateRequest> __Marshaller_mruv_gates_UpdateGateRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Gates.UpdateGateRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Gates.UpdateGateResponse> __Marshaller_mruv_gates_UpdateGateResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Gates.UpdateGateResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Gates.DeleteGateRequest> __Marshaller_mruv_gates_DeleteGateRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Gates.DeleteGateRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Gates.DeleteGateResponse> __Marshaller_mruv_gates_DeleteGateResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Gates.DeleteGateResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Gates.LockRequest> __Marshaller_mruv_gates_LockRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Gates.LockRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Gates.LockResponse> __Marshaller_mruv_gates_LockResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Gates.LockResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Gates.UnlockRequest> __Marshaller_mruv_gates_UnlockRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Gates.UnlockRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Gates.UnlockResponse> __Marshaller_mruv_gates_UnlockResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Gates.UnlockResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Gates.OpenRequest> __Marshaller_mruv_gates_OpenRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Gates.OpenRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Gates.OpenResponse> __Marshaller_mruv_gates_OpenResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Gates.OpenResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Gates.CloseRequest> __Marshaller_mruv_gates_CloseRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Gates.CloseRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Gates.CloseResponse> __Marshaller_mruv_gates_CloseResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Gates.CloseResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Gates.FindNearestGateRequest> __Marshaller_mruv_gates_FindNearestGateRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Gates.FindNearestGateRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Gates.FindNearestGateResponse> __Marshaller_mruv_gates_FindNearestGateResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Gates.FindNearestGateResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Gates.FetchAllGatesRequest> __Marshaller_mruv_gates_FetchAllGatesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Gates.FetchAllGatesRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Gates.FetchAllGatesResponse> __Marshaller_mruv_gates_FetchAllGatesResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Gates.FetchAllGatesResponse.Parser.ParseFrom);
+    static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (message is global::Google.Protobuf.IBufferMessage)
+      {
+        context.SetPayloadLength(message.CalculateSize());
+        global::Google.Protobuf.MessageExtensions.WriteTo(message, context.GetBufferWriter());
+        context.Complete();
+        return;
+      }
+      #endif
+      context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));
+    }
+
+    static class __Helper_MessageCache<T>
+    {
+      public static readonly bool IsBufferMessage = global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));
+    }
+
+    static T __Helper_DeserializeMessage<T>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser<T> parser) where T : global::Google.Protobuf.IMessage<T>
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (__Helper_MessageCache<T>.IsBufferMessage)
+      {
+        return parser.ParseFrom(context.PayloadAsReadOnlySequence());
+      }
+      #endif
+      return parser.ParseFrom(context.PayloadAsNewBuffer());
+    }
+
+    static readonly grpc::Marshaller<global::Mruv.Gates.CreateGateRequest> __Marshaller_mruv_gates_CreateGateRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Gates.CreateGateRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Gates.CreateGateResponse> __Marshaller_mruv_gates_CreateGateResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Gates.CreateGateResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Gates.GetGateRequest> __Marshaller_mruv_gates_GetGateRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Gates.GetGateRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Gates.GetGateResponse> __Marshaller_mruv_gates_GetGateResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Gates.GetGateResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Gates.UpdateGateRequest> __Marshaller_mruv_gates_UpdateGateRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Gates.UpdateGateRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Gates.UpdateGateResponse> __Marshaller_mruv_gates_UpdateGateResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Gates.UpdateGateResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Gates.DeleteGateRequest> __Marshaller_mruv_gates_DeleteGateRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Gates.DeleteGateRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Gates.DeleteGateResponse> __Marshaller_mruv_gates_DeleteGateResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Gates.DeleteGateResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Gates.LockRequest> __Marshaller_mruv_gates_LockRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Gates.LockRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Gates.LockResponse> __Marshaller_mruv_gates_LockResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Gates.LockResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Gates.UnlockRequest> __Marshaller_mruv_gates_UnlockRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Gates.UnlockRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Gates.UnlockResponse> __Marshaller_mruv_gates_UnlockResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Gates.UnlockResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Gates.OpenRequest> __Marshaller_mruv_gates_OpenRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Gates.OpenRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Gates.OpenResponse> __Marshaller_mruv_gates_OpenResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Gates.OpenResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Gates.CloseRequest> __Marshaller_mruv_gates_CloseRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Gates.CloseRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Gates.CloseResponse> __Marshaller_mruv_gates_CloseResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Gates.CloseResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Gates.FindNearestGateRequest> __Marshaller_mruv_gates_FindNearestGateRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Gates.FindNearestGateRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Gates.FindNearestGateResponse> __Marshaller_mruv_gates_FindNearestGateResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Gates.FindNearestGateResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Gates.FetchAllGatesRequest> __Marshaller_mruv_gates_FetchAllGatesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Gates.FetchAllGatesRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Gates.FetchAllGatesResponse> __Marshaller_mruv_gates_FetchAllGatesResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Gates.FetchAllGatesResponse.Parser));
 
     static readonly grpc::Method<global::Mruv.Gates.CreateGateRequest, global::Mruv.Gates.CreateGateResponse> __Method_CreateGate = new grpc::Method<global::Mruv.Gates.CreateGateRequest, global::Mruv.Gates.CreateGateResponse>(
         grpc::MethodType.Unary,

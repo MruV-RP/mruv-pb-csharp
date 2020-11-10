@@ -181,64 +181,64 @@ namespace Mruv.Punishments {
             "c2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Mruv.Punishments.PunishmentType), typeof(global::Mruv.Punishments.AcquittalsType), }, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.BanMessage), global::Mruv.Punishments.BanMessage.Parser, new[]{ "Player", "Character", "Ip", "ExpirationDate", "Reason", "Admin", "BanDate", "Active", "UnbanDate", "UnbanAdmin" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.WarnMessage), global::Mruv.Punishments.WarnMessage.Parser, new[]{ "Player", "Character", "ExpirationDate", "Reason", "Admin", "WarnDate", "Active", "UnwarnDate", "UnwarnAdmin" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.BlockMessage), global::Mruv.Punishments.BlockMessage.Parser, new[]{ "Player", "Character", "Reason", "Admin", "BlockDate", "Active", "UnblockDate", "UnblockAdmin" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.AdminJailMessage), global::Mruv.Punishments.AdminJailMessage.Parser, new[]{ "Player", "Character", "Reason", "Admin", "AjDate", "JailTime" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.UnBanMessage), global::Mruv.Punishments.UnBanMessage.Parser, new[]{ "Player", "BanId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.UnBlockMessage), global::Mruv.Punishments.UnBlockMessage.Parser, new[]{ "Player", "BlockId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.UnWarnMessage), global::Mruv.Punishments.UnWarnMessage.Parser, new[]{ "Player", "WarnId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.UnAdminJailMessage), global::Mruv.Punishments.UnAdminJailMessage.Parser, new[]{ "Player", "Character" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.BanRequest), global::Mruv.Punishments.BanRequest.Parser, new[]{ "Player", "Character", "Ip", "Time", "Reason", "Admin" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.BanResponse), global::Mruv.Punishments.BanResponse.Parser, new[]{ "BanId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.BlockRequest), global::Mruv.Punishments.BlockRequest.Parser, new[]{ "Character", "Reason", "Admin" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.BlockResponse), global::Mruv.Punishments.BlockResponse.Parser, new[]{ "BlockId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.WarnRequest), global::Mruv.Punishments.WarnRequest.Parser, new[]{ "Player", "Character", "Time", "Reason", "Admin" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.WarnResponse), global::Mruv.Punishments.WarnResponse.Parser, new[]{ "WarnId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.AdminJailRequest), global::Mruv.Punishments.AdminJailRequest.Parser, new[]{ "Character", "Time", "Reason", "Admin" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.AdminJailResponse), global::Mruv.Punishments.AdminJailResponse.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.MuteGlobalChatsRequest), global::Mruv.Punishments.MuteGlobalChatsRequest.Parser, new[]{ "Account" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.MuteGlobalChatsResponse), global::Mruv.Punishments.MuteGlobalChatsResponse.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.UnBanRequest), global::Mruv.Punishments.UnBanRequest.Parser, new[]{ "BanId", "Reason" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.UnBanResponse), global::Mruv.Punishments.UnBanResponse.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.UnBlockRequest), global::Mruv.Punishments.UnBlockRequest.Parser, new[]{ "BlockId", "Reason" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.UnBlockResponse), global::Mruv.Punishments.UnBlockResponse.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.UnWarnRequest), global::Mruv.Punishments.UnWarnRequest.Parser, new[]{ "WarnId", "Reason" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.UnWarnResponse), global::Mruv.Punishments.UnWarnResponse.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.UnAdminJailRequest), global::Mruv.Punishments.UnAdminJailRequest.Parser, new[]{ "Character" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.UnAdminJailResponse), global::Mruv.Punishments.UnAdminJailResponse.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.UnMuteGlobalChatsRequest), global::Mruv.Punishments.UnMuteGlobalChatsRequest.Parser, new[]{ "Account" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.UnMuteGlobalChatsResponse), global::Mruv.Punishments.UnMuteGlobalChatsResponse.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.GetPlayerBansRequest), global::Mruv.Punishments.GetPlayerBansRequest.Parser, new[]{ "Player", "Ip" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.GetPlayerBansResponse), global::Mruv.Punishments.GetPlayerBansResponse.Parser, new[]{ "Bans" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.GetPlayerWarnsRequest), global::Mruv.Punishments.GetPlayerWarnsRequest.Parser, new[]{ "Player" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.GetPlayerWarnsResponse), global::Mruv.Punishments.GetPlayerWarnsResponse.Parser, new[]{ "Warns" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.GetPlayerAdminJailRequest), global::Mruv.Punishments.GetPlayerAdminJailRequest.Parser, new[]{ "Character" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.GetPlayerAdminJailResponse), global::Mruv.Punishments.GetPlayerAdminJailResponse.Parser, new[]{ "JailTime", "Reason", "Admin", "Date" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.GetBanRequest), global::Mruv.Punishments.GetBanRequest.Parser, new[]{ "Id" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.GetWarnRequest), global::Mruv.Punishments.GetWarnRequest.Parser, new[]{ "Id" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.GetBlockRequest), global::Mruv.Punishments.GetBlockRequest.Parser, new[]{ "Id" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.IsPlayerBannedRequest), global::Mruv.Punishments.IsPlayerBannedRequest.Parser, new[]{ "Player", "Ip" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.IsPlayerBannedResponse), global::Mruv.Punishments.IsPlayerBannedResponse.Parser, new[]{ "Banned", "BanId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.IsCharacterBlockedRequest), global::Mruv.Punishments.IsCharacterBlockedRequest.Parser, new[]{ "Character" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.IsCharacterBlockedResponse), global::Mruv.Punishments.IsCharacterBlockedResponse.Parser, new[]{ "Blocked", "BlockId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.IsCharacterJailedRequest), global::Mruv.Punishments.IsCharacterJailedRequest.Parser, new[]{ "Character" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.IsCharacterJailedResponse), global::Mruv.Punishments.IsCharacterJailedResponse.Parser, new[]{ "Jailed", "JailTime" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.WatchBansRequest), global::Mruv.Punishments.WatchBansRequest.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.WatchBlocksRequest), global::Mruv.Punishments.WatchBlocksRequest.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.WatchWarnsRequest), global::Mruv.Punishments.WatchWarnsRequest.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.WatchAdminJailsRequest), global::Mruv.Punishments.WatchAdminJailsRequest.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.WatchUnBansRequest), global::Mruv.Punishments.WatchUnBansRequest.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.WatchUnBlocksRequest), global::Mruv.Punishments.WatchUnBlocksRequest.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.WatchUnWarnsRequest), global::Mruv.Punishments.WatchUnWarnsRequest.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.WatchUnAdminJailsRequest), global::Mruv.Punishments.WatchUnAdminJailsRequest.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.WatchPlayerAcquittalsRequest), global::Mruv.Punishments.WatchPlayerAcquittalsRequest.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.WatchPlayerAcquittalsResponse), global::Mruv.Punishments.WatchPlayerAcquittalsResponse.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.WatchPlayerPunishmentsRequest), global::Mruv.Punishments.WatchPlayerPunishmentsRequest.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.WatchPlayerPunishmentsResponse), global::Mruv.Punishments.WatchPlayerPunishmentsResponse.Parser, new[]{ "Type", "PunishmentId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.WatchPunishmentsRequest), global::Mruv.Punishments.WatchPunishmentsRequest.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.WatchPunishmentsResponse), global::Mruv.Punishments.WatchPunishmentsResponse.Parser, new[]{ "Type", "PunishmentId", "Player", "Character" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Mruv.Punishments.PunishmentType), typeof(global::Mruv.Punishments.AcquittalsType), }, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.BanMessage), global::Mruv.Punishments.BanMessage.Parser, new[]{ "Player", "Character", "Ip", "ExpirationDate", "Reason", "Admin", "BanDate", "Active", "UnbanDate", "UnbanAdmin" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.WarnMessage), global::Mruv.Punishments.WarnMessage.Parser, new[]{ "Player", "Character", "ExpirationDate", "Reason", "Admin", "WarnDate", "Active", "UnwarnDate", "UnwarnAdmin" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.BlockMessage), global::Mruv.Punishments.BlockMessage.Parser, new[]{ "Player", "Character", "Reason", "Admin", "BlockDate", "Active", "UnblockDate", "UnblockAdmin" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.AdminJailMessage), global::Mruv.Punishments.AdminJailMessage.Parser, new[]{ "Player", "Character", "Reason", "Admin", "AjDate", "JailTime" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.UnBanMessage), global::Mruv.Punishments.UnBanMessage.Parser, new[]{ "Player", "BanId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.UnBlockMessage), global::Mruv.Punishments.UnBlockMessage.Parser, new[]{ "Player", "BlockId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.UnWarnMessage), global::Mruv.Punishments.UnWarnMessage.Parser, new[]{ "Player", "WarnId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.UnAdminJailMessage), global::Mruv.Punishments.UnAdminJailMessage.Parser, new[]{ "Player", "Character" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.BanRequest), global::Mruv.Punishments.BanRequest.Parser, new[]{ "Player", "Character", "Ip", "Time", "Reason", "Admin" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.BanResponse), global::Mruv.Punishments.BanResponse.Parser, new[]{ "BanId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.BlockRequest), global::Mruv.Punishments.BlockRequest.Parser, new[]{ "Character", "Reason", "Admin" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.BlockResponse), global::Mruv.Punishments.BlockResponse.Parser, new[]{ "BlockId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.WarnRequest), global::Mruv.Punishments.WarnRequest.Parser, new[]{ "Player", "Character", "Time", "Reason", "Admin" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.WarnResponse), global::Mruv.Punishments.WarnResponse.Parser, new[]{ "WarnId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.AdminJailRequest), global::Mruv.Punishments.AdminJailRequest.Parser, new[]{ "Character", "Time", "Reason", "Admin" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.AdminJailResponse), global::Mruv.Punishments.AdminJailResponse.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.MuteGlobalChatsRequest), global::Mruv.Punishments.MuteGlobalChatsRequest.Parser, new[]{ "Account" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.MuteGlobalChatsResponse), global::Mruv.Punishments.MuteGlobalChatsResponse.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.UnBanRequest), global::Mruv.Punishments.UnBanRequest.Parser, new[]{ "BanId", "Reason" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.UnBanResponse), global::Mruv.Punishments.UnBanResponse.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.UnBlockRequest), global::Mruv.Punishments.UnBlockRequest.Parser, new[]{ "BlockId", "Reason" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.UnBlockResponse), global::Mruv.Punishments.UnBlockResponse.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.UnWarnRequest), global::Mruv.Punishments.UnWarnRequest.Parser, new[]{ "WarnId", "Reason" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.UnWarnResponse), global::Mruv.Punishments.UnWarnResponse.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.UnAdminJailRequest), global::Mruv.Punishments.UnAdminJailRequest.Parser, new[]{ "Character" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.UnAdminJailResponse), global::Mruv.Punishments.UnAdminJailResponse.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.UnMuteGlobalChatsRequest), global::Mruv.Punishments.UnMuteGlobalChatsRequest.Parser, new[]{ "Account" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.UnMuteGlobalChatsResponse), global::Mruv.Punishments.UnMuteGlobalChatsResponse.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.GetPlayerBansRequest), global::Mruv.Punishments.GetPlayerBansRequest.Parser, new[]{ "Player", "Ip" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.GetPlayerBansResponse), global::Mruv.Punishments.GetPlayerBansResponse.Parser, new[]{ "Bans" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.GetPlayerWarnsRequest), global::Mruv.Punishments.GetPlayerWarnsRequest.Parser, new[]{ "Player" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.GetPlayerWarnsResponse), global::Mruv.Punishments.GetPlayerWarnsResponse.Parser, new[]{ "Warns" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.GetPlayerAdminJailRequest), global::Mruv.Punishments.GetPlayerAdminJailRequest.Parser, new[]{ "Character" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.GetPlayerAdminJailResponse), global::Mruv.Punishments.GetPlayerAdminJailResponse.Parser, new[]{ "JailTime", "Reason", "Admin", "Date" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.GetBanRequest), global::Mruv.Punishments.GetBanRequest.Parser, new[]{ "Id" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.GetWarnRequest), global::Mruv.Punishments.GetWarnRequest.Parser, new[]{ "Id" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.GetBlockRequest), global::Mruv.Punishments.GetBlockRequest.Parser, new[]{ "Id" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.IsPlayerBannedRequest), global::Mruv.Punishments.IsPlayerBannedRequest.Parser, new[]{ "Player", "Ip" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.IsPlayerBannedResponse), global::Mruv.Punishments.IsPlayerBannedResponse.Parser, new[]{ "Banned", "BanId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.IsCharacterBlockedRequest), global::Mruv.Punishments.IsCharacterBlockedRequest.Parser, new[]{ "Character" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.IsCharacterBlockedResponse), global::Mruv.Punishments.IsCharacterBlockedResponse.Parser, new[]{ "Blocked", "BlockId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.IsCharacterJailedRequest), global::Mruv.Punishments.IsCharacterJailedRequest.Parser, new[]{ "Character" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.IsCharacterJailedResponse), global::Mruv.Punishments.IsCharacterJailedResponse.Parser, new[]{ "Jailed", "JailTime" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.WatchBansRequest), global::Mruv.Punishments.WatchBansRequest.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.WatchBlocksRequest), global::Mruv.Punishments.WatchBlocksRequest.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.WatchWarnsRequest), global::Mruv.Punishments.WatchWarnsRequest.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.WatchAdminJailsRequest), global::Mruv.Punishments.WatchAdminJailsRequest.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.WatchUnBansRequest), global::Mruv.Punishments.WatchUnBansRequest.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.WatchUnBlocksRequest), global::Mruv.Punishments.WatchUnBlocksRequest.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.WatchUnWarnsRequest), global::Mruv.Punishments.WatchUnWarnsRequest.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.WatchUnAdminJailsRequest), global::Mruv.Punishments.WatchUnAdminJailsRequest.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.WatchPlayerAcquittalsRequest), global::Mruv.Punishments.WatchPlayerAcquittalsRequest.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.WatchPlayerAcquittalsResponse), global::Mruv.Punishments.WatchPlayerAcquittalsResponse.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.WatchPlayerPunishmentsRequest), global::Mruv.Punishments.WatchPlayerPunishmentsRequest.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.WatchPlayerPunishmentsResponse), global::Mruv.Punishments.WatchPlayerPunishmentsResponse.Parser, new[]{ "Type", "PunishmentId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.WatchPunishmentsRequest), global::Mruv.Punishments.WatchPunishmentsRequest.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Punishments.WatchPunishmentsResponse), global::Mruv.Punishments.WatchPunishmentsResponse.Parser, new[]{ "Type", "PunishmentId", "Player", "Character" }, null, null, null, null)
           }));
     }
     #endregion
@@ -264,7 +264,11 @@ namespace Mruv.Punishments {
   #endregion
 
   #region Messages
-  public sealed partial class BanMessage : pb::IMessage<BanMessage> {
+  public sealed partial class BanMessage : pb::IMessage<BanMessage>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<BanMessage> _parser = new pb::MessageParser<BanMessage>(() => new BanMessage());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -492,6 +496,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Player != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(Player);
@@ -535,7 +542,57 @@ namespace Mruv.Punishments {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Player != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Player);
+      }
+      if (Character != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(Character);
+      }
+      if (Ip.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Ip);
+      }
+      if (ExpirationDate != 0L) {
+        output.WriteRawTag(32);
+        output.WriteInt64(ExpirationDate);
+      }
+      if (Reason.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(Reason);
+      }
+      if (Admin != 0) {
+        output.WriteRawTag(48);
+        output.WriteUInt32(Admin);
+      }
+      if (BanDate != 0L) {
+        output.WriteRawTag(56);
+        output.WriteInt64(BanDate);
+      }
+      if (Active != false) {
+        output.WriteRawTag(64);
+        output.WriteBool(Active);
+      }
+      if (UnbanDate != 0L) {
+        output.WriteRawTag(72);
+        output.WriteInt64(UnbanDate);
+      }
+      if (UnbanAdmin != 0) {
+        output.WriteRawTag(80);
+        output.WriteUInt32(UnbanAdmin);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -616,6 +673,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -664,11 +724,70 @@ namespace Mruv.Punishments {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Player = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            Character = input.ReadUInt32();
+            break;
+          }
+          case 26: {
+            Ip = input.ReadString();
+            break;
+          }
+          case 32: {
+            ExpirationDate = input.ReadInt64();
+            break;
+          }
+          case 42: {
+            Reason = input.ReadString();
+            break;
+          }
+          case 48: {
+            Admin = input.ReadUInt32();
+            break;
+          }
+          case 56: {
+            BanDate = input.ReadInt64();
+            break;
+          }
+          case 64: {
+            Active = input.ReadBool();
+            break;
+          }
+          case 72: {
+            UnbanDate = input.ReadInt64();
+            break;
+          }
+          case 80: {
+            UnbanAdmin = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  public sealed partial class WarnMessage : pb::IMessage<WarnMessage> {
+  public sealed partial class WarnMessage : pb::IMessage<WarnMessage>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<WarnMessage> _parser = new pb::MessageParser<WarnMessage>(() => new WarnMessage());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -885,6 +1004,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Player != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(Player);
@@ -924,7 +1046,53 @@ namespace Mruv.Punishments {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Player != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Player);
+      }
+      if (Character != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(Character);
+      }
+      if (ExpirationDate != 0L) {
+        output.WriteRawTag(24);
+        output.WriteInt64(ExpirationDate);
+      }
+      if (Reason.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(Reason);
+      }
+      if (Admin != 0) {
+        output.WriteRawTag(40);
+        output.WriteUInt32(Admin);
+      }
+      if (WarnDate != 0L) {
+        output.WriteRawTag(48);
+        output.WriteInt64(WarnDate);
+      }
+      if (Active != false) {
+        output.WriteRawTag(56);
+        output.WriteBool(Active);
+      }
+      if (UnwarnDate != 0L) {
+        output.WriteRawTag(64);
+        output.WriteInt64(UnwarnDate);
+      }
+      if (UnwarnAdmin != 0) {
+        output.WriteRawTag(72);
+        output.WriteUInt32(UnwarnAdmin);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -999,6 +1167,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1043,11 +1214,66 @@ namespace Mruv.Punishments {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Player = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            Character = input.ReadUInt32();
+            break;
+          }
+          case 24: {
+            ExpirationDate = input.ReadInt64();
+            break;
+          }
+          case 34: {
+            Reason = input.ReadString();
+            break;
+          }
+          case 40: {
+            Admin = input.ReadUInt32();
+            break;
+          }
+          case 48: {
+            WarnDate = input.ReadInt64();
+            break;
+          }
+          case 56: {
+            Active = input.ReadBool();
+            break;
+          }
+          case 64: {
+            UnwarnDate = input.ReadInt64();
+            break;
+          }
+          case 72: {
+            UnwarnAdmin = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  public sealed partial class BlockMessage : pb::IMessage<BlockMessage> {
+  public sealed partial class BlockMessage : pb::IMessage<BlockMessage>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<BlockMessage> _parser = new pb::MessageParser<BlockMessage>(() => new BlockMessage());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1247,6 +1473,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Player != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(Player);
@@ -1282,7 +1511,49 @@ namespace Mruv.Punishments {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Player != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Player);
+      }
+      if (Character != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(Character);
+      }
+      if (Reason.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Reason);
+      }
+      if (Admin != 0) {
+        output.WriteRawTag(32);
+        output.WriteUInt32(Admin);
+      }
+      if (BlockDate != 0L) {
+        output.WriteRawTag(40);
+        output.WriteInt64(BlockDate);
+      }
+      if (Active != false) {
+        output.WriteRawTag(48);
+        output.WriteBool(Active);
+      }
+      if (UnblockDate != 0L) {
+        output.WriteRawTag(56);
+        output.WriteInt64(UnblockDate);
+      }
+      if (UnblockAdmin != 0) {
+        output.WriteRawTag(64);
+        output.WriteUInt32(UnblockAdmin);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -1351,6 +1622,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1391,11 +1665,62 @@ namespace Mruv.Punishments {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Player = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            Character = input.ReadUInt32();
+            break;
+          }
+          case 26: {
+            Reason = input.ReadString();
+            break;
+          }
+          case 32: {
+            Admin = input.ReadUInt32();
+            break;
+          }
+          case 40: {
+            BlockDate = input.ReadInt64();
+            break;
+          }
+          case 48: {
+            Active = input.ReadBool();
+            break;
+          }
+          case 56: {
+            UnblockDate = input.ReadInt64();
+            break;
+          }
+          case 64: {
+            UnblockAdmin = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  public sealed partial class AdminJailMessage : pb::IMessage<AdminJailMessage> {
+  public sealed partial class AdminJailMessage : pb::IMessage<AdminJailMessage>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<AdminJailMessage> _parser = new pb::MessageParser<AdminJailMessage>(() => new AdminJailMessage());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1562,6 +1887,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Player != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(Player);
@@ -1589,7 +1917,41 @@ namespace Mruv.Punishments {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Player != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Player);
+      }
+      if (Character != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(Character);
+      }
+      if (Reason.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Reason);
+      }
+      if (Admin != 0) {
+        output.WriteRawTag(32);
+        output.WriteUInt32(Admin);
+      }
+      if (AjDate != 0L) {
+        output.WriteRawTag(40);
+        output.WriteInt64(AjDate);
+      }
+      if (JailTime != 0) {
+        output.WriteRawTag(48);
+        output.WriteUInt32(JailTime);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -1646,6 +2008,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1678,11 +2043,54 @@ namespace Mruv.Punishments {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Player = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            Character = input.ReadUInt32();
+            break;
+          }
+          case 26: {
+            Reason = input.ReadString();
+            break;
+          }
+          case 32: {
+            Admin = input.ReadUInt32();
+            break;
+          }
+          case 40: {
+            AjDate = input.ReadInt64();
+            break;
+          }
+          case 48: {
+            JailTime = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  public sealed partial class UnBanMessage : pb::IMessage<UnBanMessage> {
+  public sealed partial class UnBanMessage : pb::IMessage<UnBanMessage>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<UnBanMessage> _parser = new pb::MessageParser<UnBanMessage>(() => new UnBanMessage());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1775,6 +2183,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Player != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(Player);
@@ -1786,7 +2197,25 @@ namespace Mruv.Punishments {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Player != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Player);
+      }
+      if (BanId != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(BanId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -1819,6 +2248,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1835,11 +2267,38 @@ namespace Mruv.Punishments {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Player = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            BanId = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  public sealed partial class UnBlockMessage : pb::IMessage<UnBlockMessage> {
+  public sealed partial class UnBlockMessage : pb::IMessage<UnBlockMessage>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<UnBlockMessage> _parser = new pb::MessageParser<UnBlockMessage>(() => new UnBlockMessage());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1932,6 +2391,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Player != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(Player);
@@ -1943,7 +2405,25 @@ namespace Mruv.Punishments {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Player != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Player);
+      }
+      if (BlockId != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(BlockId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -1976,6 +2456,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1992,11 +2475,38 @@ namespace Mruv.Punishments {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Player = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            BlockId = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  public sealed partial class UnWarnMessage : pb::IMessage<UnWarnMessage> {
+  public sealed partial class UnWarnMessage : pb::IMessage<UnWarnMessage>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<UnWarnMessage> _parser = new pb::MessageParser<UnWarnMessage>(() => new UnWarnMessage());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2089,6 +2599,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Player != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(Player);
@@ -2100,7 +2613,25 @@ namespace Mruv.Punishments {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Player != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Player);
+      }
+      if (WarnId != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(WarnId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -2133,6 +2664,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2149,11 +2683,38 @@ namespace Mruv.Punishments {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Player = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            WarnId = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  public sealed partial class UnAdminJailMessage : pb::IMessage<UnAdminJailMessage> {
+  public sealed partial class UnAdminJailMessage : pb::IMessage<UnAdminJailMessage>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<UnAdminJailMessage> _parser = new pb::MessageParser<UnAdminJailMessage>(() => new UnAdminJailMessage());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2246,6 +2807,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Player != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(Player);
@@ -2257,7 +2821,25 @@ namespace Mruv.Punishments {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Player != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Player);
+      }
+      if (Character != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(Character);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -2290,6 +2872,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2306,14 +2891,41 @@ namespace Mruv.Punishments {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Player = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            Character = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Request message for rpc `Ban`.
   /// </summary>
-  public sealed partial class BanRequest : pb::IMessage<BanRequest> {
+  public sealed partial class BanRequest : pb::IMessage<BanRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<BanRequest> _parser = new pb::MessageParser<BanRequest>(() => new BanRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2475,6 +3087,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Player != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(Player);
@@ -2502,7 +3117,41 @@ namespace Mruv.Punishments {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Player != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Player);
+      }
+      if (Character != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(Character);
+      }
+      if (Ip.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Ip);
+      }
+      if (Time != 0) {
+        output.WriteRawTag(32);
+        output.WriteUInt32(Time);
+      }
+      if (Reason.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(Reason);
+      }
+      if (Admin != 0) {
+        output.WriteRawTag(48);
+        output.WriteUInt32(Admin);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -2559,6 +3208,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2591,14 +3243,57 @@ namespace Mruv.Punishments {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Player = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            Character = input.ReadUInt32();
+            break;
+          }
+          case 26: {
+            Ip = input.ReadString();
+            break;
+          }
+          case 32: {
+            Time = input.ReadUInt32();
+            break;
+          }
+          case 42: {
+            Reason = input.ReadString();
+            break;
+          }
+          case 48: {
+            Admin = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Response message for rpc `Ban`.
   /// </summary>
-  public sealed partial class BanResponse : pb::IMessage<BanResponse> {
+  public sealed partial class BanResponse : pb::IMessage<BanResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<BanResponse> _parser = new pb::MessageParser<BanResponse>(() => new BanResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2677,6 +3372,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (BanId != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(BanId);
@@ -2684,7 +3382,21 @@ namespace Mruv.Punishments {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (BanId != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(BanId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -2711,6 +3423,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2723,14 +3438,37 @@ namespace Mruv.Punishments {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            BanId = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Request message for rpc `Block`.
   /// </summary>
-  public sealed partial class BlockRequest : pb::IMessage<BlockRequest> {
+  public sealed partial class BlockRequest : pb::IMessage<BlockRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<BlockRequest> _parser = new pb::MessageParser<BlockRequest>(() => new BlockRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2843,6 +3581,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Character != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(Character);
@@ -2858,7 +3599,29 @@ namespace Mruv.Punishments {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Character != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Character);
+      }
+      if (Reason.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Reason);
+      }
+      if (Admin != 0) {
+        output.WriteRawTag(24);
+        output.WriteUInt32(Admin);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -2897,6 +3660,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2917,14 +3683,45 @@ namespace Mruv.Punishments {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Character = input.ReadUInt32();
+            break;
+          }
+          case 18: {
+            Reason = input.ReadString();
+            break;
+          }
+          case 24: {
+            Admin = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Response message for rpc `Block`.
   /// </summary>
-  public sealed partial class BlockResponse : pb::IMessage<BlockResponse> {
+  public sealed partial class BlockResponse : pb::IMessage<BlockResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<BlockResponse> _parser = new pb::MessageParser<BlockResponse>(() => new BlockResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3003,6 +3800,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (BlockId != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(BlockId);
@@ -3010,7 +3810,21 @@ namespace Mruv.Punishments {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (BlockId != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(BlockId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -3037,6 +3851,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -3049,14 +3866,37 @@ namespace Mruv.Punishments {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            BlockId = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Request message for rpc `Warn`.
   /// </summary>
-  public sealed partial class WarnRequest : pb::IMessage<WarnRequest> {
+  public sealed partial class WarnRequest : pb::IMessage<WarnRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<WarnRequest> _parser = new pb::MessageParser<WarnRequest>(() => new WarnRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3204,6 +4044,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Player != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(Player);
@@ -3227,7 +4070,37 @@ namespace Mruv.Punishments {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Player != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Player);
+      }
+      if (Character != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(Character);
+      }
+      if (Time != 0) {
+        output.WriteRawTag(24);
+        output.WriteUInt32(Time);
+      }
+      if (Reason.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(Reason);
+      }
+      if (Admin != 0) {
+        output.WriteRawTag(40);
+        output.WriteUInt32(Admin);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -3278,6 +4151,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -3306,14 +4182,53 @@ namespace Mruv.Punishments {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Player = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            Character = input.ReadUInt32();
+            break;
+          }
+          case 24: {
+            Time = input.ReadUInt32();
+            break;
+          }
+          case 34: {
+            Reason = input.ReadString();
+            break;
+          }
+          case 40: {
+            Admin = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Response message for rpc `Warn`.
   /// </summary>
-  public sealed partial class WarnResponse : pb::IMessage<WarnResponse> {
+  public sealed partial class WarnResponse : pb::IMessage<WarnResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<WarnResponse> _parser = new pb::MessageParser<WarnResponse>(() => new WarnResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3392,6 +4307,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (WarnId != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(WarnId);
@@ -3399,7 +4317,21 @@ namespace Mruv.Punishments {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (WarnId != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(WarnId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -3426,6 +4358,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -3438,14 +4373,37 @@ namespace Mruv.Punishments {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            WarnId = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Request message for rpc `AdminJail`.
   /// </summary>
-  public sealed partial class AdminJailRequest : pb::IMessage<AdminJailRequest> {
+  public sealed partial class AdminJailRequest : pb::IMessage<AdminJailRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<AdminJailRequest> _parser = new pb::MessageParser<AdminJailRequest>(() => new AdminJailRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3575,6 +4533,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Character != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(Character);
@@ -3594,7 +4555,33 @@ namespace Mruv.Punishments {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Character != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Character);
+      }
+      if (Time != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(Time);
+      }
+      if (Reason.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Reason);
+      }
+      if (Admin != 0) {
+        output.WriteRawTag(32);
+        output.WriteUInt32(Admin);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -3639,6 +4626,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -3663,14 +4653,49 @@ namespace Mruv.Punishments {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Character = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            Time = input.ReadUInt32();
+            break;
+          }
+          case 26: {
+            Reason = input.ReadString();
+            break;
+          }
+          case 32: {
+            Admin = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Response message for rpc `AdminJail`.
   /// </summary>
-  public sealed partial class AdminJailResponse : pb::IMessage<AdminJailResponse> {
+  public sealed partial class AdminJailResponse : pb::IMessage<AdminJailResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<AdminJailResponse> _parser = new pb::MessageParser<AdminJailResponse>(() => new AdminJailResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3735,10 +4760,23 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -3759,6 +4797,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -3767,14 +4808,33 @@ namespace Mruv.Punishments {
             break;
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Request message for rpc `MuteGlobalChats`.
   /// </summary>
-  public sealed partial class MuteGlobalChatsRequest : pb::IMessage<MuteGlobalChatsRequest> {
+  public sealed partial class MuteGlobalChatsRequest : pb::IMessage<MuteGlobalChatsRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<MuteGlobalChatsRequest> _parser = new pb::MessageParser<MuteGlobalChatsRequest>(() => new MuteGlobalChatsRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3853,6 +4913,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Account != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(Account);
@@ -3860,7 +4923,21 @@ namespace Mruv.Punishments {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Account != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Account);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -3887,6 +4964,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -3899,14 +4979,37 @@ namespace Mruv.Punishments {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Account = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Response message for rpc `MuteGlobalChats`.
   /// </summary>
-  public sealed partial class MuteGlobalChatsResponse : pb::IMessage<MuteGlobalChatsResponse> {
+  public sealed partial class MuteGlobalChatsResponse : pb::IMessage<MuteGlobalChatsResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<MuteGlobalChatsResponse> _parser = new pb::MessageParser<MuteGlobalChatsResponse>(() => new MuteGlobalChatsResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3971,10 +5074,23 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -3995,6 +5111,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -4003,14 +5122,33 @@ namespace Mruv.Punishments {
             break;
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Request message for rpc `UnBan`.
   /// </summary>
-  public sealed partial class UnBanRequest : pb::IMessage<UnBanRequest> {
+  public sealed partial class UnBanRequest : pb::IMessage<UnBanRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<UnBanRequest> _parser = new pb::MessageParser<UnBanRequest>(() => new UnBanRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4103,6 +5241,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (BanId != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(BanId);
@@ -4114,7 +5255,25 @@ namespace Mruv.Punishments {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (BanId != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(BanId);
+      }
+      if (Reason.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Reason);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -4147,6 +5306,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -4163,14 +5325,41 @@ namespace Mruv.Punishments {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            BanId = input.ReadUInt32();
+            break;
+          }
+          case 18: {
+            Reason = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Response message for rpc `UnBan`.
   /// </summary>
-  public sealed partial class UnBanResponse : pb::IMessage<UnBanResponse> {
+  public sealed partial class UnBanResponse : pb::IMessage<UnBanResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<UnBanResponse> _parser = new pb::MessageParser<UnBanResponse>(() => new UnBanResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4235,10 +5424,23 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -4259,6 +5461,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -4267,14 +5472,33 @@ namespace Mruv.Punishments {
             break;
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Request message for rpc `UnBlock`.
   /// </summary>
-  public sealed partial class UnBlockRequest : pb::IMessage<UnBlockRequest> {
+  public sealed partial class UnBlockRequest : pb::IMessage<UnBlockRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<UnBlockRequest> _parser = new pb::MessageParser<UnBlockRequest>(() => new UnBlockRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4367,6 +5591,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (BlockId != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(BlockId);
@@ -4378,7 +5605,25 @@ namespace Mruv.Punishments {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (BlockId != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(BlockId);
+      }
+      if (Reason.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Reason);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -4411,6 +5656,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -4427,14 +5675,41 @@ namespace Mruv.Punishments {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            BlockId = input.ReadUInt32();
+            break;
+          }
+          case 18: {
+            Reason = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Response message for rpc `UnBlock`.
   /// </summary>
-  public sealed partial class UnBlockResponse : pb::IMessage<UnBlockResponse> {
+  public sealed partial class UnBlockResponse : pb::IMessage<UnBlockResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<UnBlockResponse> _parser = new pb::MessageParser<UnBlockResponse>(() => new UnBlockResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4499,10 +5774,23 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -4523,6 +5811,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -4531,14 +5822,33 @@ namespace Mruv.Punishments {
             break;
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Request message for rpc `UnWarn`.
   /// </summary>
-  public sealed partial class UnWarnRequest : pb::IMessage<UnWarnRequest> {
+  public sealed partial class UnWarnRequest : pb::IMessage<UnWarnRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<UnWarnRequest> _parser = new pb::MessageParser<UnWarnRequest>(() => new UnWarnRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4631,6 +5941,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (WarnId != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(WarnId);
@@ -4642,7 +5955,25 @@ namespace Mruv.Punishments {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (WarnId != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(WarnId);
+      }
+      if (Reason.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Reason);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -4675,6 +6006,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -4691,14 +6025,41 @@ namespace Mruv.Punishments {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            WarnId = input.ReadUInt32();
+            break;
+          }
+          case 18: {
+            Reason = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Response message for rpc `UnWarn`.
   /// </summary>
-  public sealed partial class UnWarnResponse : pb::IMessage<UnWarnResponse> {
+  public sealed partial class UnWarnResponse : pb::IMessage<UnWarnResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<UnWarnResponse> _parser = new pb::MessageParser<UnWarnResponse>(() => new UnWarnResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4763,10 +6124,23 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -4787,6 +6161,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -4795,14 +6172,33 @@ namespace Mruv.Punishments {
             break;
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Request message for rpc `UnAdminJail`.
   /// </summary>
-  public sealed partial class UnAdminJailRequest : pb::IMessage<UnAdminJailRequest> {
+  public sealed partial class UnAdminJailRequest : pb::IMessage<UnAdminJailRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<UnAdminJailRequest> _parser = new pb::MessageParser<UnAdminJailRequest>(() => new UnAdminJailRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4881,6 +6277,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Character != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(Character);
@@ -4888,7 +6287,21 @@ namespace Mruv.Punishments {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Character != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Character);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -4915,6 +6328,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -4927,14 +6343,37 @@ namespace Mruv.Punishments {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Character = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Response message for rpc `UnAdminJail`.
   /// </summary>
-  public sealed partial class UnAdminJailResponse : pb::IMessage<UnAdminJailResponse> {
+  public sealed partial class UnAdminJailResponse : pb::IMessage<UnAdminJailResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<UnAdminJailResponse> _parser = new pb::MessageParser<UnAdminJailResponse>(() => new UnAdminJailResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4999,10 +6438,23 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -5023,6 +6475,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -5031,14 +6486,33 @@ namespace Mruv.Punishments {
             break;
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Request message for rpc `UnMuteGlobalChats`.
   /// </summary>
-  public sealed partial class UnMuteGlobalChatsRequest : pb::IMessage<UnMuteGlobalChatsRequest> {
+  public sealed partial class UnMuteGlobalChatsRequest : pb::IMessage<UnMuteGlobalChatsRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<UnMuteGlobalChatsRequest> _parser = new pb::MessageParser<UnMuteGlobalChatsRequest>(() => new UnMuteGlobalChatsRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5117,6 +6591,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Account != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(Account);
@@ -5124,7 +6601,21 @@ namespace Mruv.Punishments {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Account != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Account);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -5151,6 +6642,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -5163,14 +6657,37 @@ namespace Mruv.Punishments {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Account = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Response message for rpc `UnMuteGlobalChats`.
   /// </summary>
-  public sealed partial class UnMuteGlobalChatsResponse : pb::IMessage<UnMuteGlobalChatsResponse> {
+  public sealed partial class UnMuteGlobalChatsResponse : pb::IMessage<UnMuteGlobalChatsResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<UnMuteGlobalChatsResponse> _parser = new pb::MessageParser<UnMuteGlobalChatsResponse>(() => new UnMuteGlobalChatsResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5235,10 +6752,23 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -5259,6 +6789,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -5267,14 +6800,33 @@ namespace Mruv.Punishments {
             break;
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Request message for rpc `GetPlayerBans`.
   /// </summary>
-  public sealed partial class GetPlayerBansRequest : pb::IMessage<GetPlayerBansRequest> {
+  public sealed partial class GetPlayerBansRequest : pb::IMessage<GetPlayerBansRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<GetPlayerBansRequest> _parser = new pb::MessageParser<GetPlayerBansRequest>(() => new GetPlayerBansRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5367,6 +6919,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Player != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(Player);
@@ -5378,7 +6933,25 @@ namespace Mruv.Punishments {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Player != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Player);
+      }
+      if (Ip.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Ip);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -5411,6 +6984,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -5427,14 +7003,41 @@ namespace Mruv.Punishments {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Player = input.ReadUInt32();
+            break;
+          }
+          case 18: {
+            Ip = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Response message for rpc `GetPlayerBans`.
   /// </summary>
-  public sealed partial class GetPlayerBansResponse : pb::IMessage<GetPlayerBansResponse> {
+  public sealed partial class GetPlayerBansResponse : pb::IMessage<GetPlayerBansResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<GetPlayerBansResponse> _parser = new pb::MessageParser<GetPlayerBansResponse>(() => new GetPlayerBansResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5512,11 +7115,25 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       bans_.WriteTo(output, _repeated_bans_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      bans_.WriteTo(ref output, _repeated_bans_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -5539,6 +7156,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -5551,14 +7171,37 @@ namespace Mruv.Punishments {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            bans_.AddEntriesFrom(ref input, _repeated_bans_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Request message for rpc `GetPlayerWarns`.
   /// </summary>
-  public sealed partial class GetPlayerWarnsRequest : pb::IMessage<GetPlayerWarnsRequest> {
+  public sealed partial class GetPlayerWarnsRequest : pb::IMessage<GetPlayerWarnsRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<GetPlayerWarnsRequest> _parser = new pb::MessageParser<GetPlayerWarnsRequest>(() => new GetPlayerWarnsRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5637,6 +7280,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Player != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(Player);
@@ -5644,7 +7290,21 @@ namespace Mruv.Punishments {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Player != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Player);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -5671,6 +7331,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -5683,14 +7346,37 @@ namespace Mruv.Punishments {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Player = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Response message for rpc `GetPlayerWarns`.
   /// </summary>
-  public sealed partial class GetPlayerWarnsResponse : pb::IMessage<GetPlayerWarnsResponse> {
+  public sealed partial class GetPlayerWarnsResponse : pb::IMessage<GetPlayerWarnsResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<GetPlayerWarnsResponse> _parser = new pb::MessageParser<GetPlayerWarnsResponse>(() => new GetPlayerWarnsResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5768,11 +7454,25 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       warns_.WriteTo(output, _repeated_warns_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      warns_.WriteTo(ref output, _repeated_warns_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -5795,6 +7495,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -5807,14 +7510,37 @@ namespace Mruv.Punishments {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            warns_.AddEntriesFrom(ref input, _repeated_warns_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Request message for rpc `GetPlayerAdminJail`.
   /// </summary>
-  public sealed partial class GetPlayerAdminJailRequest : pb::IMessage<GetPlayerAdminJailRequest> {
+  public sealed partial class GetPlayerAdminJailRequest : pb::IMessage<GetPlayerAdminJailRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<GetPlayerAdminJailRequest> _parser = new pb::MessageParser<GetPlayerAdminJailRequest>(() => new GetPlayerAdminJailRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5893,6 +7619,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Character != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(Character);
@@ -5900,7 +7629,21 @@ namespace Mruv.Punishments {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Character != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Character);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -5927,6 +7670,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -5939,14 +7685,37 @@ namespace Mruv.Punishments {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Character = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Response message for rpc `GetPlayerAdminJail`.
   /// </summary>
-  public sealed partial class GetPlayerAdminJailResponse : pb::IMessage<GetPlayerAdminJailResponse> {
+  public sealed partial class GetPlayerAdminJailResponse : pb::IMessage<GetPlayerAdminJailResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<GetPlayerAdminJailResponse> _parser = new pb::MessageParser<GetPlayerAdminJailResponse>(() => new GetPlayerAdminJailResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6079,6 +7848,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (JailTime != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(JailTime);
@@ -6098,7 +7870,33 @@ namespace Mruv.Punishments {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (JailTime != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(JailTime);
+      }
+      if (Reason.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Reason);
+      }
+      if (Admin != 0) {
+        output.WriteRawTag(24);
+        output.WriteUInt32(Admin);
+      }
+      if (Date != 0L) {
+        output.WriteRawTag(32);
+        output.WriteInt64(Date);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -6143,6 +7941,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -6167,14 +7968,49 @@ namespace Mruv.Punishments {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            JailTime = input.ReadUInt32();
+            break;
+          }
+          case 18: {
+            Reason = input.ReadString();
+            break;
+          }
+          case 24: {
+            Admin = input.ReadUInt32();
+            break;
+          }
+          case 32: {
+            Date = input.ReadInt64();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Request message for rpc `GetBan`.
   /// </summary>
-  public sealed partial class GetBanRequest : pb::IMessage<GetBanRequest> {
+  public sealed partial class GetBanRequest : pb::IMessage<GetBanRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<GetBanRequest> _parser = new pb::MessageParser<GetBanRequest>(() => new GetBanRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6253,6 +8089,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Id != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(Id);
@@ -6260,7 +8099,21 @@ namespace Mruv.Punishments {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Id != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Id);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -6287,6 +8140,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -6299,14 +8155,37 @@ namespace Mruv.Punishments {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Id = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Request message for rpc `GetWarn`.
   /// </summary>
-  public sealed partial class GetWarnRequest : pb::IMessage<GetWarnRequest> {
+  public sealed partial class GetWarnRequest : pb::IMessage<GetWarnRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<GetWarnRequest> _parser = new pb::MessageParser<GetWarnRequest>(() => new GetWarnRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6385,6 +8264,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Id != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(Id);
@@ -6392,7 +8274,21 @@ namespace Mruv.Punishments {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Id != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Id);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -6419,6 +8315,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -6431,14 +8330,37 @@ namespace Mruv.Punishments {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Id = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Request message for rpc `GetBlock`.
   /// </summary>
-  public sealed partial class GetBlockRequest : pb::IMessage<GetBlockRequest> {
+  public sealed partial class GetBlockRequest : pb::IMessage<GetBlockRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<GetBlockRequest> _parser = new pb::MessageParser<GetBlockRequest>(() => new GetBlockRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6517,6 +8439,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Id != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(Id);
@@ -6524,7 +8449,21 @@ namespace Mruv.Punishments {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Id != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Id);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -6551,6 +8490,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -6563,14 +8505,37 @@ namespace Mruv.Punishments {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Id = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Request message for rpc `IsPlayerBanned`.
   /// </summary>
-  public sealed partial class IsPlayerBannedRequest : pb::IMessage<IsPlayerBannedRequest> {
+  public sealed partial class IsPlayerBannedRequest : pb::IMessage<IsPlayerBannedRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<IsPlayerBannedRequest> _parser = new pb::MessageParser<IsPlayerBannedRequest>(() => new IsPlayerBannedRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6663,6 +8628,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Player != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(Player);
@@ -6674,7 +8642,25 @@ namespace Mruv.Punishments {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Player != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Player);
+      }
+      if (Ip.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Ip);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -6707,6 +8693,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -6723,14 +8712,41 @@ namespace Mruv.Punishments {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Player = input.ReadUInt32();
+            break;
+          }
+          case 18: {
+            Ip = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Response message for rpc `IsPlayerBanned`.
   /// </summary>
-  public sealed partial class IsPlayerBannedResponse : pb::IMessage<IsPlayerBannedResponse> {
+  public sealed partial class IsPlayerBannedResponse : pb::IMessage<IsPlayerBannedResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<IsPlayerBannedResponse> _parser = new pb::MessageParser<IsPlayerBannedResponse>(() => new IsPlayerBannedResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6823,6 +8839,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Banned != false) {
         output.WriteRawTag(8);
         output.WriteBool(Banned);
@@ -6834,7 +8853,25 @@ namespace Mruv.Punishments {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Banned != false) {
+        output.WriteRawTag(8);
+        output.WriteBool(Banned);
+      }
+      if (BanId != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(BanId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -6867,6 +8904,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -6883,14 +8923,41 @@ namespace Mruv.Punishments {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Banned = input.ReadBool();
+            break;
+          }
+          case 16: {
+            BanId = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Request message for rpc `IsCharacterBlocked`.
   /// </summary>
-  public sealed partial class IsCharacterBlockedRequest : pb::IMessage<IsCharacterBlockedRequest> {
+  public sealed partial class IsCharacterBlockedRequest : pb::IMessage<IsCharacterBlockedRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<IsCharacterBlockedRequest> _parser = new pb::MessageParser<IsCharacterBlockedRequest>(() => new IsCharacterBlockedRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6969,6 +9036,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Character != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(Character);
@@ -6976,7 +9046,21 @@ namespace Mruv.Punishments {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Character != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Character);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -7003,6 +9087,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -7015,14 +9102,37 @@ namespace Mruv.Punishments {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Character = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Response message for rpc `IsCharacterBlocked`.
   /// </summary>
-  public sealed partial class IsCharacterBlockedResponse : pb::IMessage<IsCharacterBlockedResponse> {
+  public sealed partial class IsCharacterBlockedResponse : pb::IMessage<IsCharacterBlockedResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<IsCharacterBlockedResponse> _parser = new pb::MessageParser<IsCharacterBlockedResponse>(() => new IsCharacterBlockedResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7115,6 +9225,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Blocked != false) {
         output.WriteRawTag(8);
         output.WriteBool(Blocked);
@@ -7126,7 +9239,25 @@ namespace Mruv.Punishments {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Blocked != false) {
+        output.WriteRawTag(8);
+        output.WriteBool(Blocked);
+      }
+      if (BlockId != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(BlockId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -7159,6 +9290,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -7175,14 +9309,41 @@ namespace Mruv.Punishments {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Blocked = input.ReadBool();
+            break;
+          }
+          case 16: {
+            BlockId = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Request message for rpc `IsCharacterJailed`.
   /// </summary>
-  public sealed partial class IsCharacterJailedRequest : pb::IMessage<IsCharacterJailedRequest> {
+  public sealed partial class IsCharacterJailedRequest : pb::IMessage<IsCharacterJailedRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<IsCharacterJailedRequest> _parser = new pb::MessageParser<IsCharacterJailedRequest>(() => new IsCharacterJailedRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7261,6 +9422,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Character != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(Character);
@@ -7268,7 +9432,21 @@ namespace Mruv.Punishments {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Character != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Character);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -7295,6 +9473,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -7307,14 +9488,37 @@ namespace Mruv.Punishments {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Character = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Response message for rpc `IsCharacterJailed`.
   /// </summary>
-  public sealed partial class IsCharacterJailedResponse : pb::IMessage<IsCharacterJailedResponse> {
+  public sealed partial class IsCharacterJailedResponse : pb::IMessage<IsCharacterJailedResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<IsCharacterJailedResponse> _parser = new pb::MessageParser<IsCharacterJailedResponse>(() => new IsCharacterJailedResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7407,6 +9611,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Jailed != false) {
         output.WriteRawTag(8);
         output.WriteBool(Jailed);
@@ -7418,7 +9625,25 @@ namespace Mruv.Punishments {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Jailed != false) {
+        output.WriteRawTag(8);
+        output.WriteBool(Jailed);
+      }
+      if (JailTime != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(JailTime);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -7451,6 +9676,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -7467,14 +9695,41 @@ namespace Mruv.Punishments {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Jailed = input.ReadBool();
+            break;
+          }
+          case 16: {
+            JailTime = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Request message for rpc `WatchBans`.
   /// </summary>
-  public sealed partial class WatchBansRequest : pb::IMessage<WatchBansRequest> {
+  public sealed partial class WatchBansRequest : pb::IMessage<WatchBansRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<WatchBansRequest> _parser = new pb::MessageParser<WatchBansRequest>(() => new WatchBansRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7539,10 +9794,23 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -7563,6 +9831,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -7571,14 +9842,33 @@ namespace Mruv.Punishments {
             break;
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Request message for rpc `WatchBlocks`.
   /// </summary>
-  public sealed partial class WatchBlocksRequest : pb::IMessage<WatchBlocksRequest> {
+  public sealed partial class WatchBlocksRequest : pb::IMessage<WatchBlocksRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<WatchBlocksRequest> _parser = new pb::MessageParser<WatchBlocksRequest>(() => new WatchBlocksRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7643,10 +9933,23 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -7667,6 +9970,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -7675,14 +9981,33 @@ namespace Mruv.Punishments {
             break;
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Request message for rpc `WatchWarns`.
   /// </summary>
-  public sealed partial class WatchWarnsRequest : pb::IMessage<WatchWarnsRequest> {
+  public sealed partial class WatchWarnsRequest : pb::IMessage<WatchWarnsRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<WatchWarnsRequest> _parser = new pb::MessageParser<WatchWarnsRequest>(() => new WatchWarnsRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7747,10 +10072,23 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -7771,6 +10109,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -7779,14 +10120,33 @@ namespace Mruv.Punishments {
             break;
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Request message for rpc `WatchAdminJails`.
   /// </summary>
-  public sealed partial class WatchAdminJailsRequest : pb::IMessage<WatchAdminJailsRequest> {
+  public sealed partial class WatchAdminJailsRequest : pb::IMessage<WatchAdminJailsRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<WatchAdminJailsRequest> _parser = new pb::MessageParser<WatchAdminJailsRequest>(() => new WatchAdminJailsRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7851,10 +10211,23 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -7875,6 +10248,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -7883,14 +10259,33 @@ namespace Mruv.Punishments {
             break;
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Request message for rpc `WatchUnBans`.
   /// </summary>
-  public sealed partial class WatchUnBansRequest : pb::IMessage<WatchUnBansRequest> {
+  public sealed partial class WatchUnBansRequest : pb::IMessage<WatchUnBansRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<WatchUnBansRequest> _parser = new pb::MessageParser<WatchUnBansRequest>(() => new WatchUnBansRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7955,10 +10350,23 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -7979,6 +10387,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -7987,14 +10398,33 @@ namespace Mruv.Punishments {
             break;
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Request message for rpc `WatchUnBlocks`.
   /// </summary>
-  public sealed partial class WatchUnBlocksRequest : pb::IMessage<WatchUnBlocksRequest> {
+  public sealed partial class WatchUnBlocksRequest : pb::IMessage<WatchUnBlocksRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<WatchUnBlocksRequest> _parser = new pb::MessageParser<WatchUnBlocksRequest>(() => new WatchUnBlocksRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8059,10 +10489,23 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -8083,6 +10526,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -8091,14 +10537,33 @@ namespace Mruv.Punishments {
             break;
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Request message for rpc `WatchUnWarns`.
   /// </summary>
-  public sealed partial class WatchUnWarnsRequest : pb::IMessage<WatchUnWarnsRequest> {
+  public sealed partial class WatchUnWarnsRequest : pb::IMessage<WatchUnWarnsRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<WatchUnWarnsRequest> _parser = new pb::MessageParser<WatchUnWarnsRequest>(() => new WatchUnWarnsRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8163,10 +10628,23 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -8187,6 +10665,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -8195,14 +10676,33 @@ namespace Mruv.Punishments {
             break;
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Request message for rpc `WatchUnAdminJails`.
   /// </summary>
-  public sealed partial class WatchUnAdminJailsRequest : pb::IMessage<WatchUnAdminJailsRequest> {
+  public sealed partial class WatchUnAdminJailsRequest : pb::IMessage<WatchUnAdminJailsRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<WatchUnAdminJailsRequest> _parser = new pb::MessageParser<WatchUnAdminJailsRequest>(() => new WatchUnAdminJailsRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8267,10 +10767,23 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -8291,6 +10804,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -8299,14 +10815,33 @@ namespace Mruv.Punishments {
             break;
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Request message for rpc `WatchPlayerAcquittals`.
   /// </summary>
-  public sealed partial class WatchPlayerAcquittalsRequest : pb::IMessage<WatchPlayerAcquittalsRequest> {
+  public sealed partial class WatchPlayerAcquittalsRequest : pb::IMessage<WatchPlayerAcquittalsRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<WatchPlayerAcquittalsRequest> _parser = new pb::MessageParser<WatchPlayerAcquittalsRequest>(() => new WatchPlayerAcquittalsRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8371,10 +10906,23 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -8395,6 +10943,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -8403,14 +10954,33 @@ namespace Mruv.Punishments {
             break;
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Response message for rpc `WatchPlayerAcquittals`.
   /// </summary>
-  public sealed partial class WatchPlayerAcquittalsResponse : pb::IMessage<WatchPlayerAcquittalsResponse> {
+  public sealed partial class WatchPlayerAcquittalsResponse : pb::IMessage<WatchPlayerAcquittalsResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<WatchPlayerAcquittalsResponse> _parser = new pb::MessageParser<WatchPlayerAcquittalsResponse>(() => new WatchPlayerAcquittalsResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8475,10 +11045,23 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -8499,6 +11082,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -8507,14 +11093,33 @@ namespace Mruv.Punishments {
             break;
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Request message for rpc `WatchPlayerPunishments`.
   /// </summary>
-  public sealed partial class WatchPlayerPunishmentsRequest : pb::IMessage<WatchPlayerPunishmentsRequest> {
+  public sealed partial class WatchPlayerPunishmentsRequest : pb::IMessage<WatchPlayerPunishmentsRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<WatchPlayerPunishmentsRequest> _parser = new pb::MessageParser<WatchPlayerPunishmentsRequest>(() => new WatchPlayerPunishmentsRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8579,10 +11184,23 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -8603,6 +11221,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -8611,14 +11232,33 @@ namespace Mruv.Punishments {
             break;
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Response message for rpc `WatchPlayerPunishments`.
   /// </summary>
-  public sealed partial class WatchPlayerPunishmentsResponse : pb::IMessage<WatchPlayerPunishmentsResponse> {
+  public sealed partial class WatchPlayerPunishmentsResponse : pb::IMessage<WatchPlayerPunishmentsResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<WatchPlayerPunishmentsResponse> _parser = new pb::MessageParser<WatchPlayerPunishmentsResponse>(() => new WatchPlayerPunishmentsResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8655,7 +11295,7 @@ namespace Mruv.Punishments {
 
     /// <summary>Field number for the "type" field.</summary>
     public const int TypeFieldNumber = 1;
-    private global::Mruv.Punishments.PunishmentType type_ = 0;
+    private global::Mruv.Punishments.PunishmentType type_ = global::Mruv.Punishments.PunishmentType.UnknownPunishment;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Mruv.Punishments.PunishmentType Type {
       get { return type_; }
@@ -8696,7 +11336,7 @@ namespace Mruv.Punishments {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Type != 0) hash ^= Type.GetHashCode();
+      if (Type != global::Mruv.Punishments.PunishmentType.UnknownPunishment) hash ^= Type.GetHashCode();
       if (PunishmentId != 0) hash ^= PunishmentId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -8711,7 +11351,10 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Type != 0) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Type != global::Mruv.Punishments.PunishmentType.UnknownPunishment) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Type);
       }
@@ -8722,12 +11365,30 @@ namespace Mruv.Punishments {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Type != global::Mruv.Punishments.PunishmentType.UnknownPunishment) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Type);
+      }
+      if (PunishmentId != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(PunishmentId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Type != 0) {
+      if (Type != global::Mruv.Punishments.PunishmentType.UnknownPunishment) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
       }
       if (PunishmentId != 0) {
@@ -8744,7 +11405,7 @@ namespace Mruv.Punishments {
       if (other == null) {
         return;
       }
-      if (other.Type != 0) {
+      if (other.Type != global::Mruv.Punishments.PunishmentType.UnknownPunishment) {
         Type = other.Type;
       }
       if (other.PunishmentId != 0) {
@@ -8755,6 +11416,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -8771,14 +11435,41 @@ namespace Mruv.Punishments {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Type = (global::Mruv.Punishments.PunishmentType) input.ReadEnum();
+            break;
+          }
+          case 16: {
+            PunishmentId = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Request message for rpc `WatchPunishments`.
   /// </summary>
-  public sealed partial class WatchPunishmentsRequest : pb::IMessage<WatchPunishmentsRequest> {
+  public sealed partial class WatchPunishmentsRequest : pb::IMessage<WatchPunishmentsRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<WatchPunishmentsRequest> _parser = new pb::MessageParser<WatchPunishmentsRequest>(() => new WatchPunishmentsRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8843,10 +11534,23 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -8867,6 +11571,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -8875,14 +11582,33 @@ namespace Mruv.Punishments {
             break;
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Response message for rpc `WatchPunishments`.
   /// </summary>
-  public sealed partial class WatchPunishmentsResponse : pb::IMessage<WatchPunishmentsResponse> {
+  public sealed partial class WatchPunishmentsResponse : pb::IMessage<WatchPunishmentsResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<WatchPunishmentsResponse> _parser = new pb::MessageParser<WatchPunishmentsResponse>(() => new WatchPunishmentsResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8921,7 +11647,7 @@ namespace Mruv.Punishments {
 
     /// <summary>Field number for the "type" field.</summary>
     public const int TypeFieldNumber = 1;
-    private global::Mruv.Punishments.PunishmentType type_ = 0;
+    private global::Mruv.Punishments.PunishmentType type_ = global::Mruv.Punishments.PunishmentType.UnknownPunishment;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Mruv.Punishments.PunishmentType Type {
       get { return type_; }
@@ -8986,7 +11712,7 @@ namespace Mruv.Punishments {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Type != 0) hash ^= Type.GetHashCode();
+      if (Type != global::Mruv.Punishments.PunishmentType.UnknownPunishment) hash ^= Type.GetHashCode();
       if (PunishmentId != 0) hash ^= PunishmentId.GetHashCode();
       if (Player != 0) hash ^= Player.GetHashCode();
       if (Character != 0) hash ^= Character.GetHashCode();
@@ -9003,7 +11729,10 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Type != 0) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Type != global::Mruv.Punishments.PunishmentType.UnknownPunishment) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Type);
       }
@@ -9022,12 +11751,38 @@ namespace Mruv.Punishments {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Type != global::Mruv.Punishments.PunishmentType.UnknownPunishment) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Type);
+      }
+      if (PunishmentId != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(PunishmentId);
+      }
+      if (Player != 0) {
+        output.WriteRawTag(24);
+        output.WriteUInt32(Player);
+      }
+      if (Character != 0) {
+        output.WriteRawTag(32);
+        output.WriteUInt32(Character);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Type != 0) {
+      if (Type != global::Mruv.Punishments.PunishmentType.UnknownPunishment) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
       }
       if (PunishmentId != 0) {
@@ -9050,7 +11805,7 @@ namespace Mruv.Punishments {
       if (other == null) {
         return;
       }
-      if (other.Type != 0) {
+      if (other.Type != global::Mruv.Punishments.PunishmentType.UnknownPunishment) {
         Type = other.Type;
       }
       if (other.PunishmentId != 0) {
@@ -9067,6 +11822,9 @@ namespace Mruv.Punishments {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -9091,7 +11849,38 @@ namespace Mruv.Punishments {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Type = (global::Mruv.Punishments.PunishmentType) input.ReadEnum();
+            break;
+          }
+          case 16: {
+            PunishmentId = input.ReadUInt32();
+            break;
+          }
+          case 24: {
+            Player = input.ReadUInt32();
+            break;
+          }
+          case 32: {
+            Character = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

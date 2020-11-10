@@ -26,16 +26,46 @@ namespace Mruv.Elevators {
   {
     static readonly string __ServiceName = "mruv.elevators.MruVElevatorsService";
 
-    static readonly grpc::Marshaller<global::Mruv.Elevators.CreateElevatorRequest> __Marshaller_mruv_elevators_CreateElevatorRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Elevators.CreateElevatorRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Elevators.CreateElevatorResponse> __Marshaller_mruv_elevators_CreateElevatorResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Elevators.CreateElevatorResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Elevators.GetElevatorRequest> __Marshaller_mruv_elevators_GetElevatorRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Elevators.GetElevatorRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Elevators.GetElevatorResponse> __Marshaller_mruv_elevators_GetElevatorResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Elevators.GetElevatorResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Elevators.UpdateElevatorRequest> __Marshaller_mruv_elevators_UpdateElevatorRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Elevators.UpdateElevatorRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Elevators.UpdateElevatorResponse> __Marshaller_mruv_elevators_UpdateElevatorResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Elevators.UpdateElevatorResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Elevators.DeleteElevatorRequest> __Marshaller_mruv_elevators_DeleteElevatorRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Elevators.DeleteElevatorRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Elevators.DeleteElevatorResponse> __Marshaller_mruv_elevators_DeleteElevatorResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Elevators.DeleteElevatorResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Elevators.GetElevatorFloorsRequest> __Marshaller_mruv_elevators_GetElevatorFloorsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Elevators.GetElevatorFloorsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Elevators.GetElevatorFloorsResponse> __Marshaller_mruv_elevators_GetElevatorFloorsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Elevators.GetElevatorFloorsResponse.Parser.ParseFrom);
+    static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (message is global::Google.Protobuf.IBufferMessage)
+      {
+        context.SetPayloadLength(message.CalculateSize());
+        global::Google.Protobuf.MessageExtensions.WriteTo(message, context.GetBufferWriter());
+        context.Complete();
+        return;
+      }
+      #endif
+      context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));
+    }
+
+    static class __Helper_MessageCache<T>
+    {
+      public static readonly bool IsBufferMessage = global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));
+    }
+
+    static T __Helper_DeserializeMessage<T>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser<T> parser) where T : global::Google.Protobuf.IMessage<T>
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (__Helper_MessageCache<T>.IsBufferMessage)
+      {
+        return parser.ParseFrom(context.PayloadAsReadOnlySequence());
+      }
+      #endif
+      return parser.ParseFrom(context.PayloadAsNewBuffer());
+    }
+
+    static readonly grpc::Marshaller<global::Mruv.Elevators.CreateElevatorRequest> __Marshaller_mruv_elevators_CreateElevatorRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Elevators.CreateElevatorRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Elevators.CreateElevatorResponse> __Marshaller_mruv_elevators_CreateElevatorResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Elevators.CreateElevatorResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Elevators.GetElevatorRequest> __Marshaller_mruv_elevators_GetElevatorRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Elevators.GetElevatorRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Elevators.GetElevatorResponse> __Marshaller_mruv_elevators_GetElevatorResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Elevators.GetElevatorResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Elevators.UpdateElevatorRequest> __Marshaller_mruv_elevators_UpdateElevatorRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Elevators.UpdateElevatorRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Elevators.UpdateElevatorResponse> __Marshaller_mruv_elevators_UpdateElevatorResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Elevators.UpdateElevatorResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Elevators.DeleteElevatorRequest> __Marshaller_mruv_elevators_DeleteElevatorRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Elevators.DeleteElevatorRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Elevators.DeleteElevatorResponse> __Marshaller_mruv_elevators_DeleteElevatorResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Elevators.DeleteElevatorResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Elevators.GetElevatorFloorsRequest> __Marshaller_mruv_elevators_GetElevatorFloorsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Elevators.GetElevatorFloorsRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Elevators.GetElevatorFloorsResponse> __Marshaller_mruv_elevators_GetElevatorFloorsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Elevators.GetElevatorFloorsResponse.Parser));
 
     static readonly grpc::Method<global::Mruv.Elevators.CreateElevatorRequest, global::Mruv.Elevators.CreateElevatorResponse> __Method_CreateElevator = new grpc::Method<global::Mruv.Elevators.CreateElevatorRequest, global::Mruv.Elevators.CreateElevatorResponse>(
         grpc::MethodType.Unary,

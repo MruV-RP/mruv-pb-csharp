@@ -15,14 +15,44 @@ namespace Mruv.Houses {
   {
     static readonly string __ServiceName = "mruv.houses.MruVHousesService";
 
-    static readonly grpc::Marshaller<global::Mruv.Houses.CreateHouseRequest> __Marshaller_mruv_houses_CreateHouseRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Houses.CreateHouseRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Houses.CreateHouseResponse> __Marshaller_mruv_houses_CreateHouseResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Houses.CreateHouseResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Houses.GetHouseRequest> __Marshaller_mruv_houses_GetHouseRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Houses.GetHouseRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Houses.GetHouseResponse> __Marshaller_mruv_houses_GetHouseResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Houses.GetHouseResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Houses.UpdateHouseRequest> __Marshaller_mruv_houses_UpdateHouseRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Houses.UpdateHouseRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Houses.UpdateHouseResponse> __Marshaller_mruv_houses_UpdateHouseResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Houses.UpdateHouseResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Houses.DeleteHouseRequest> __Marshaller_mruv_houses_DeleteHouseRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Houses.DeleteHouseRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Houses.DeleteHouseResponse> __Marshaller_mruv_houses_DeleteHouseResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Houses.DeleteHouseResponse.Parser.ParseFrom);
+    static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (message is global::Google.Protobuf.IBufferMessage)
+      {
+        context.SetPayloadLength(message.CalculateSize());
+        global::Google.Protobuf.MessageExtensions.WriteTo(message, context.GetBufferWriter());
+        context.Complete();
+        return;
+      }
+      #endif
+      context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));
+    }
+
+    static class __Helper_MessageCache<T>
+    {
+      public static readonly bool IsBufferMessage = global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));
+    }
+
+    static T __Helper_DeserializeMessage<T>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser<T> parser) where T : global::Google.Protobuf.IMessage<T>
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (__Helper_MessageCache<T>.IsBufferMessage)
+      {
+        return parser.ParseFrom(context.PayloadAsReadOnlySequence());
+      }
+      #endif
+      return parser.ParseFrom(context.PayloadAsNewBuffer());
+    }
+
+    static readonly grpc::Marshaller<global::Mruv.Houses.CreateHouseRequest> __Marshaller_mruv_houses_CreateHouseRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Houses.CreateHouseRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Houses.CreateHouseResponse> __Marshaller_mruv_houses_CreateHouseResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Houses.CreateHouseResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Houses.GetHouseRequest> __Marshaller_mruv_houses_GetHouseRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Houses.GetHouseRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Houses.GetHouseResponse> __Marshaller_mruv_houses_GetHouseResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Houses.GetHouseResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Houses.UpdateHouseRequest> __Marshaller_mruv_houses_UpdateHouseRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Houses.UpdateHouseRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Houses.UpdateHouseResponse> __Marshaller_mruv_houses_UpdateHouseResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Houses.UpdateHouseResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Houses.DeleteHouseRequest> __Marshaller_mruv_houses_DeleteHouseRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Houses.DeleteHouseRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Houses.DeleteHouseResponse> __Marshaller_mruv_houses_DeleteHouseResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Houses.DeleteHouseResponse.Parser));
 
     static readonly grpc::Method<global::Mruv.Houses.CreateHouseRequest, global::Mruv.Houses.CreateHouseResponse> __Method_CreateHouse = new grpc::Method<global::Mruv.Houses.CreateHouseRequest, global::Mruv.Houses.CreateHouseResponse>(
         grpc::MethodType.Unary,

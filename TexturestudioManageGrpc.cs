@@ -15,16 +15,46 @@ namespace TextureStudio {
   {
     static readonly string __ServiceName = "texture_studio.TextureStudioManagerService";
 
-    static readonly grpc::Marshaller<global::TextureStudio.CreateServerRequest> __Marshaller_texture_studio_CreateServerRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::TextureStudio.CreateServerRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::TextureStudio.CreateServerResponse> __Marshaller_texture_studio_CreateServerResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::TextureStudio.CreateServerResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::TextureStudio.GetServersRequest> __Marshaller_texture_studio_GetServersRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::TextureStudio.GetServersRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::TextureStudio.GetServersResponse> __Marshaller_texture_studio_GetServersResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::TextureStudio.GetServersResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::TextureStudio.MyServerRequest> __Marshaller_texture_studio_MyServerRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::TextureStudio.MyServerRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::TextureStudio.MyServerResponse> __Marshaller_texture_studio_MyServerResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::TextureStudio.MyServerResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::TextureStudio.TransferOwnershipRequest> __Marshaller_texture_studio_TransferOwnershipRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::TextureStudio.TransferOwnershipRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::TextureStudio.TransferOwnershipResponse> __Marshaller_texture_studio_TransferOwnershipResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::TextureStudio.TransferOwnershipResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::TextureStudio.DeleteServerRequest> __Marshaller_texture_studio_DeleteServerRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::TextureStudio.DeleteServerRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::TextureStudio.DeleteServerResponse> __Marshaller_texture_studio_DeleteServerResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::TextureStudio.DeleteServerResponse.Parser.ParseFrom);
+    static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (message is global::Google.Protobuf.IBufferMessage)
+      {
+        context.SetPayloadLength(message.CalculateSize());
+        global::Google.Protobuf.MessageExtensions.WriteTo(message, context.GetBufferWriter());
+        context.Complete();
+        return;
+      }
+      #endif
+      context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));
+    }
+
+    static class __Helper_MessageCache<T>
+    {
+      public static readonly bool IsBufferMessage = global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));
+    }
+
+    static T __Helper_DeserializeMessage<T>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser<T> parser) where T : global::Google.Protobuf.IMessage<T>
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (__Helper_MessageCache<T>.IsBufferMessage)
+      {
+        return parser.ParseFrom(context.PayloadAsReadOnlySequence());
+      }
+      #endif
+      return parser.ParseFrom(context.PayloadAsNewBuffer());
+    }
+
+    static readonly grpc::Marshaller<global::TextureStudio.CreateServerRequest> __Marshaller_texture_studio_CreateServerRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::TextureStudio.CreateServerRequest.Parser));
+    static readonly grpc::Marshaller<global::TextureStudio.CreateServerResponse> __Marshaller_texture_studio_CreateServerResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::TextureStudio.CreateServerResponse.Parser));
+    static readonly grpc::Marshaller<global::TextureStudio.GetServersRequest> __Marshaller_texture_studio_GetServersRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::TextureStudio.GetServersRequest.Parser));
+    static readonly grpc::Marshaller<global::TextureStudio.GetServersResponse> __Marshaller_texture_studio_GetServersResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::TextureStudio.GetServersResponse.Parser));
+    static readonly grpc::Marshaller<global::TextureStudio.MyServerRequest> __Marshaller_texture_studio_MyServerRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::TextureStudio.MyServerRequest.Parser));
+    static readonly grpc::Marshaller<global::TextureStudio.MyServerResponse> __Marshaller_texture_studio_MyServerResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::TextureStudio.MyServerResponse.Parser));
+    static readonly grpc::Marshaller<global::TextureStudio.TransferOwnershipRequest> __Marshaller_texture_studio_TransferOwnershipRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::TextureStudio.TransferOwnershipRequest.Parser));
+    static readonly grpc::Marshaller<global::TextureStudio.TransferOwnershipResponse> __Marshaller_texture_studio_TransferOwnershipResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::TextureStudio.TransferOwnershipResponse.Parser));
+    static readonly grpc::Marshaller<global::TextureStudio.DeleteServerRequest> __Marshaller_texture_studio_DeleteServerRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::TextureStudio.DeleteServerRequest.Parser));
+    static readonly grpc::Marshaller<global::TextureStudio.DeleteServerResponse> __Marshaller_texture_studio_DeleteServerResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::TextureStudio.DeleteServerResponse.Parser));
 
     static readonly grpc::Method<global::TextureStudio.CreateServerRequest, global::TextureStudio.CreateServerResponse> __Method_CreateServer = new grpc::Method<global::TextureStudio.CreateServerRequest, global::TextureStudio.CreateServerResponse>(
         grpc::MethodType.Unary,

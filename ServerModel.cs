@@ -33,9 +33,9 @@ namespace Mruv.Server {
             "bS9NcnVWLVJQL21ydXYtcGItZ28vc2VydmVyYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Mruv.Server.ServerStatus), }, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Server.ServerID), global::Mruv.Server.ServerID.Parser, new[]{ "Id" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Server.ServerInfo), global::Mruv.Server.ServerInfo.Parser, new[]{ "Id", "Name", "Host", "Port", "Platform", "Status", "Players" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Mruv.Server.ServerStatus), }, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Server.ServerID), global::Mruv.Server.ServerID.Parser, new[]{ "Id" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Server.ServerInfo), global::Mruv.Server.ServerInfo.Parser, new[]{ "Id", "Name", "Host", "Port", "Platform", "Status", "Players" }, null, null, null, null)
           }));
     }
     #endregion
@@ -51,7 +51,11 @@ namespace Mruv.Server {
   #endregion
 
   #region Messages
-  public sealed partial class ServerID : pb::IMessage<ServerID> {
+  public sealed partial class ServerID : pb::IMessage<ServerID>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<ServerID> _parser = new pb::MessageParser<ServerID>(() => new ServerID());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -130,6 +134,9 @@ namespace Mruv.Server {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Id != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(Id);
@@ -137,7 +144,21 @@ namespace Mruv.Server {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Id != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Id);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -164,6 +185,9 @@ namespace Mruv.Server {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -176,14 +200,37 @@ namespace Mruv.Server {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Id = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Data that describe server.
   /// </summary>
-  public sealed partial class ServerInfo : pb::IMessage<ServerInfo> {
+  public sealed partial class ServerInfo : pb::IMessage<ServerInfo>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<ServerInfo> _parser = new pb::MessageParser<ServerInfo>(() => new ServerInfo());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -295,7 +342,7 @@ namespace Mruv.Server {
 
     /// <summary>Field number for the "status" field.</summary>
     public const int StatusFieldNumber = 6;
-    private global::Mruv.Server.ServerStatus status_ = 0;
+    private global::Mruv.Server.ServerStatus status_ = global::Mruv.Server.ServerStatus.Unknown;
     /// <summary>
     /// Status of the server.
     /// </summary>
@@ -352,7 +399,7 @@ namespace Mruv.Server {
       if (Host.Length != 0) hash ^= Host.GetHashCode();
       if (Port.Length != 0) hash ^= Port.GetHashCode();
       if (Platform.Length != 0) hash ^= Platform.GetHashCode();
-      if (Status != 0) hash ^= Status.GetHashCode();
+      if (Status != global::Mruv.Server.ServerStatus.Unknown) hash ^= Status.GetHashCode();
       if (Players != 0) hash ^= Players.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -367,6 +414,9 @@ namespace Mruv.Server {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Id != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(Id);
@@ -387,7 +437,7 @@ namespace Mruv.Server {
         output.WriteRawTag(42);
         output.WriteString(Platform);
       }
-      if (Status != 0) {
+      if (Status != global::Mruv.Server.ServerStatus.Unknown) {
         output.WriteRawTag(48);
         output.WriteEnum((int) Status);
       }
@@ -398,7 +448,45 @@ namespace Mruv.Server {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Id != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Id);
+      }
+      if (Name.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Name);
+      }
+      if (Host.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Host);
+      }
+      if (Port.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(Port);
+      }
+      if (Platform.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(Platform);
+      }
+      if (Status != global::Mruv.Server.ServerStatus.Unknown) {
+        output.WriteRawTag(48);
+        output.WriteEnum((int) Status);
+      }
+      if (Players != 0) {
+        output.WriteRawTag(56);
+        output.WriteUInt32(Players);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -418,7 +506,7 @@ namespace Mruv.Server {
       if (Platform.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Platform);
       }
-      if (Status != 0) {
+      if (Status != global::Mruv.Server.ServerStatus.Unknown) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
       }
       if (Players != 0) {
@@ -450,7 +538,7 @@ namespace Mruv.Server {
       if (other.Platform.Length != 0) {
         Platform = other.Platform;
       }
-      if (other.Status != 0) {
+      if (other.Status != global::Mruv.Server.ServerStatus.Unknown) {
         Status = other.Status;
       }
       if (other.Players != 0) {
@@ -461,6 +549,9 @@ namespace Mruv.Server {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -497,7 +588,50 @@ namespace Mruv.Server {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Id = input.ReadUInt32();
+            break;
+          }
+          case 18: {
+            Name = input.ReadString();
+            break;
+          }
+          case 26: {
+            Host = input.ReadString();
+            break;
+          }
+          case 34: {
+            Port = input.ReadString();
+            break;
+          }
+          case 42: {
+            Platform = input.ReadString();
+            break;
+          }
+          case 48: {
+            Status = (global::Mruv.Server.ServerStatus) input.ReadEnum();
+            break;
+          }
+          case 56: {
+            Players = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

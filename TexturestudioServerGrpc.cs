@@ -15,22 +15,52 @@ namespace TextureStudio {
   {
     static readonly string __ServiceName = "texture_studio.TextureStudioServerService";
 
-    static readonly grpc::Marshaller<global::TextureStudio.StartServerRequest> __Marshaller_texture_studio_StartServerRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::TextureStudio.StartServerRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::TextureStudio.StartServerResponse> __Marshaller_texture_studio_StartServerResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::TextureStudio.StartServerResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::TextureStudio.StopServerRequest> __Marshaller_texture_studio_StopServerRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::TextureStudio.StopServerRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::TextureStudio.StopServerResponse> __Marshaller_texture_studio_StopServerResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::TextureStudio.StopServerResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::TextureStudio.RestartServerRequest> __Marshaller_texture_studio_RestartServerRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::TextureStudio.RestartServerRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::TextureStudio.RestartServerResponse> __Marshaller_texture_studio_RestartServerResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::TextureStudio.RestartServerResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::TextureStudio.ServerStatusRequest> __Marshaller_texture_studio_ServerStatusRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::TextureStudio.ServerStatusRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::TextureStudio.ServerStatusResponse> __Marshaller_texture_studio_ServerStatusResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::TextureStudio.ServerStatusResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::TextureStudio.UploadProjectRequest> __Marshaller_texture_studio_UploadProjectRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::TextureStudio.UploadProjectRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::TextureStudio.UploadProjectResponse> __Marshaller_texture_studio_UploadProjectResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::TextureStudio.UploadProjectResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::TextureStudio.GetProjectRequest> __Marshaller_texture_studio_GetProjectRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::TextureStudio.GetProjectRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::TextureStudio.GetProjectResponse> __Marshaller_texture_studio_GetProjectResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::TextureStudio.GetProjectResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::TextureStudio.GetProjectsRequest> __Marshaller_texture_studio_GetProjectsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::TextureStudio.GetProjectsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::TextureStudio.GetProjectsResponse> __Marshaller_texture_studio_GetProjectsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::TextureStudio.GetProjectsResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::TextureStudio.SubscribeToProjectsChangesRequest> __Marshaller_texture_studio_SubscribeToProjectsChangesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::TextureStudio.SubscribeToProjectsChangesRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::TextureStudio.SubscribeToProjectsChangesResponse> __Marshaller_texture_studio_SubscribeToProjectsChangesResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::TextureStudio.SubscribeToProjectsChangesResponse.Parser.ParseFrom);
+    static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (message is global::Google.Protobuf.IBufferMessage)
+      {
+        context.SetPayloadLength(message.CalculateSize());
+        global::Google.Protobuf.MessageExtensions.WriteTo(message, context.GetBufferWriter());
+        context.Complete();
+        return;
+      }
+      #endif
+      context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));
+    }
+
+    static class __Helper_MessageCache<T>
+    {
+      public static readonly bool IsBufferMessage = global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));
+    }
+
+    static T __Helper_DeserializeMessage<T>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser<T> parser) where T : global::Google.Protobuf.IMessage<T>
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (__Helper_MessageCache<T>.IsBufferMessage)
+      {
+        return parser.ParseFrom(context.PayloadAsReadOnlySequence());
+      }
+      #endif
+      return parser.ParseFrom(context.PayloadAsNewBuffer());
+    }
+
+    static readonly grpc::Marshaller<global::TextureStudio.StartServerRequest> __Marshaller_texture_studio_StartServerRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::TextureStudio.StartServerRequest.Parser));
+    static readonly grpc::Marshaller<global::TextureStudio.StartServerResponse> __Marshaller_texture_studio_StartServerResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::TextureStudio.StartServerResponse.Parser));
+    static readonly grpc::Marshaller<global::TextureStudio.StopServerRequest> __Marshaller_texture_studio_StopServerRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::TextureStudio.StopServerRequest.Parser));
+    static readonly grpc::Marshaller<global::TextureStudio.StopServerResponse> __Marshaller_texture_studio_StopServerResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::TextureStudio.StopServerResponse.Parser));
+    static readonly grpc::Marshaller<global::TextureStudio.RestartServerRequest> __Marshaller_texture_studio_RestartServerRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::TextureStudio.RestartServerRequest.Parser));
+    static readonly grpc::Marshaller<global::TextureStudio.RestartServerResponse> __Marshaller_texture_studio_RestartServerResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::TextureStudio.RestartServerResponse.Parser));
+    static readonly grpc::Marshaller<global::TextureStudio.ServerStatusRequest> __Marshaller_texture_studio_ServerStatusRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::TextureStudio.ServerStatusRequest.Parser));
+    static readonly grpc::Marshaller<global::TextureStudio.ServerStatusResponse> __Marshaller_texture_studio_ServerStatusResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::TextureStudio.ServerStatusResponse.Parser));
+    static readonly grpc::Marshaller<global::TextureStudio.UploadProjectRequest> __Marshaller_texture_studio_UploadProjectRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::TextureStudio.UploadProjectRequest.Parser));
+    static readonly grpc::Marshaller<global::TextureStudio.UploadProjectResponse> __Marshaller_texture_studio_UploadProjectResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::TextureStudio.UploadProjectResponse.Parser));
+    static readonly grpc::Marshaller<global::TextureStudio.GetProjectRequest> __Marshaller_texture_studio_GetProjectRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::TextureStudio.GetProjectRequest.Parser));
+    static readonly grpc::Marshaller<global::TextureStudio.GetProjectResponse> __Marshaller_texture_studio_GetProjectResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::TextureStudio.GetProjectResponse.Parser));
+    static readonly grpc::Marshaller<global::TextureStudio.GetProjectsRequest> __Marshaller_texture_studio_GetProjectsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::TextureStudio.GetProjectsRequest.Parser));
+    static readonly grpc::Marshaller<global::TextureStudio.GetProjectsResponse> __Marshaller_texture_studio_GetProjectsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::TextureStudio.GetProjectsResponse.Parser));
+    static readonly grpc::Marshaller<global::TextureStudio.SubscribeToProjectsChangesRequest> __Marshaller_texture_studio_SubscribeToProjectsChangesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::TextureStudio.SubscribeToProjectsChangesRequest.Parser));
+    static readonly grpc::Marshaller<global::TextureStudio.SubscribeToProjectsChangesResponse> __Marshaller_texture_studio_SubscribeToProjectsChangesResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::TextureStudio.SubscribeToProjectsChangesResponse.Parser));
 
     static readonly grpc::Method<global::TextureStudio.StartServerRequest, global::TextureStudio.StartServerResponse> __Method_StartServer = new grpc::Method<global::TextureStudio.StartServerRequest, global::TextureStudio.StartServerResponse>(
         grpc::MethodType.Unary,

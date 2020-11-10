@@ -15,30 +15,60 @@ namespace Mruv.Estates {
   {
     static readonly string __ServiceName = "mruv.estates.MruVEstateService";
 
-    static readonly grpc::Marshaller<global::Mruv.Estates.CreateEstateRequest> __Marshaller_mruv_estates_CreateEstateRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Estates.CreateEstateRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Estates.CreateEstateResponse> __Marshaller_mruv_estates_CreateEstateResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Estates.CreateEstateResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Estates.GetEstateRequest> __Marshaller_mruv_estates_GetEstateRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Estates.GetEstateRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Estates.Estate> __Marshaller_mruv_estates_Estate = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Estates.Estate.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Estates.UpdateEstateRequest> __Marshaller_mruv_estates_UpdateEstateRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Estates.UpdateEstateRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Estates.UpdateEstateResponse> __Marshaller_mruv_estates_UpdateEstateResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Estates.UpdateEstateResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Estates.DeleteEstateRequest> __Marshaller_mruv_estates_DeleteEstateRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Estates.DeleteEstateRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Estates.DeleteEstateResponse> __Marshaller_mruv_estates_DeleteEstateResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Estates.DeleteEstateResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Estates.GetEstatesRequest> __Marshaller_mruv_estates_GetEstatesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Estates.GetEstatesRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Estates.GetEstatesResponse> __Marshaller_mruv_estates_GetEstatesResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Estates.GetEstatesResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Estates.AddGateRequest> __Marshaller_mruv_estates_AddGateRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Estates.AddGateRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Estates.AddGateResponse> __Marshaller_mruv_estates_AddGateResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Estates.AddGateResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Estates.RemoveGateRequest> __Marshaller_mruv_estates_RemoveGateRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Estates.RemoveGateRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Estates.RemoveGateResponse> __Marshaller_mruv_estates_RemoveGateResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Estates.RemoveGateResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Estates.GetEstateGatesRequest> __Marshaller_mruv_estates_GetEstateGatesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Estates.GetEstateGatesRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Estates.GetEstateGatesResponse> __Marshaller_mruv_estates_GetEstateGatesResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Estates.GetEstateGatesResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Estates.AddEntranceRequest> __Marshaller_mruv_estates_AddEntranceRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Estates.AddEntranceRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Estates.AddEntranceResponse> __Marshaller_mruv_estates_AddEntranceResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Estates.AddEntranceResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Estates.RemoveEntranceRequest> __Marshaller_mruv_estates_RemoveEntranceRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Estates.RemoveEntranceRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Estates.RemoveEntranceResponse> __Marshaller_mruv_estates_RemoveEntranceResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Estates.RemoveEntranceResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Estates.GetEstateEntrancesRequest> __Marshaller_mruv_estates_GetEstateEntrancesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Estates.GetEstateEntrancesRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Estates.GetEstateEntrancesResponse> __Marshaller_mruv_estates_GetEstateEntrancesResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Estates.GetEstateEntrancesResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Estates.FetchAllEstatesRequest> __Marshaller_mruv_estates_FetchAllEstatesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Estates.FetchAllEstatesRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Estates.FetchAllEstatesResponse> __Marshaller_mruv_estates_FetchAllEstatesResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Estates.FetchAllEstatesResponse.Parser.ParseFrom);
+    static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (message is global::Google.Protobuf.IBufferMessage)
+      {
+        context.SetPayloadLength(message.CalculateSize());
+        global::Google.Protobuf.MessageExtensions.WriteTo(message, context.GetBufferWriter());
+        context.Complete();
+        return;
+      }
+      #endif
+      context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));
+    }
+
+    static class __Helper_MessageCache<T>
+    {
+      public static readonly bool IsBufferMessage = global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));
+    }
+
+    static T __Helper_DeserializeMessage<T>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser<T> parser) where T : global::Google.Protobuf.IMessage<T>
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (__Helper_MessageCache<T>.IsBufferMessage)
+      {
+        return parser.ParseFrom(context.PayloadAsReadOnlySequence());
+      }
+      #endif
+      return parser.ParseFrom(context.PayloadAsNewBuffer());
+    }
+
+    static readonly grpc::Marshaller<global::Mruv.Estates.CreateEstateRequest> __Marshaller_mruv_estates_CreateEstateRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Estates.CreateEstateRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Estates.CreateEstateResponse> __Marshaller_mruv_estates_CreateEstateResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Estates.CreateEstateResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Estates.GetEstateRequest> __Marshaller_mruv_estates_GetEstateRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Estates.GetEstateRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Estates.Estate> __Marshaller_mruv_estates_Estate = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Estates.Estate.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Estates.UpdateEstateRequest> __Marshaller_mruv_estates_UpdateEstateRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Estates.UpdateEstateRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Estates.UpdateEstateResponse> __Marshaller_mruv_estates_UpdateEstateResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Estates.UpdateEstateResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Estates.DeleteEstateRequest> __Marshaller_mruv_estates_DeleteEstateRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Estates.DeleteEstateRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Estates.DeleteEstateResponse> __Marshaller_mruv_estates_DeleteEstateResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Estates.DeleteEstateResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Estates.GetEstatesRequest> __Marshaller_mruv_estates_GetEstatesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Estates.GetEstatesRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Estates.GetEstatesResponse> __Marshaller_mruv_estates_GetEstatesResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Estates.GetEstatesResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Estates.AddGateRequest> __Marshaller_mruv_estates_AddGateRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Estates.AddGateRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Estates.AddGateResponse> __Marshaller_mruv_estates_AddGateResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Estates.AddGateResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Estates.RemoveGateRequest> __Marshaller_mruv_estates_RemoveGateRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Estates.RemoveGateRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Estates.RemoveGateResponse> __Marshaller_mruv_estates_RemoveGateResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Estates.RemoveGateResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Estates.GetEstateGatesRequest> __Marshaller_mruv_estates_GetEstateGatesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Estates.GetEstateGatesRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Estates.GetEstateGatesResponse> __Marshaller_mruv_estates_GetEstateGatesResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Estates.GetEstateGatesResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Estates.AddEntranceRequest> __Marshaller_mruv_estates_AddEntranceRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Estates.AddEntranceRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Estates.AddEntranceResponse> __Marshaller_mruv_estates_AddEntranceResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Estates.AddEntranceResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Estates.RemoveEntranceRequest> __Marshaller_mruv_estates_RemoveEntranceRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Estates.RemoveEntranceRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Estates.RemoveEntranceResponse> __Marshaller_mruv_estates_RemoveEntranceResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Estates.RemoveEntranceResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Estates.GetEstateEntrancesRequest> __Marshaller_mruv_estates_GetEstateEntrancesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Estates.GetEstateEntrancesRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Estates.GetEstateEntrancesResponse> __Marshaller_mruv_estates_GetEstateEntrancesResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Estates.GetEstateEntrancesResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Estates.FetchAllEstatesRequest> __Marshaller_mruv_estates_FetchAllEstatesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Estates.FetchAllEstatesRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Estates.FetchAllEstatesResponse> __Marshaller_mruv_estates_FetchAllEstatesResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Estates.FetchAllEstatesResponse.Parser));
 
     static readonly grpc::Method<global::Mruv.Estates.CreateEstateRequest, global::Mruv.Estates.CreateEstateResponse> __Method_CreateEstate = new grpc::Method<global::Mruv.Estates.CreateEstateRequest, global::Mruv.Estates.CreateEstateResponse>(
         grpc::MethodType.Unary,

@@ -15,26 +15,56 @@ namespace Mruv.Entrances {
   {
     static readonly string __ServiceName = "mruv.entrances.MruVEntrancesService";
 
-    static readonly grpc::Marshaller<global::Mruv.Entrances.CreateEntranceRequest> __Marshaller_mruv_entrances_CreateEntranceRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Entrances.CreateEntranceRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Entrances.CreateEntranceResponse> __Marshaller_mruv_entrances_CreateEntranceResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Entrances.CreateEntranceResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Entrances.GetEntranceRequest> __Marshaller_mruv_entrances_GetEntranceRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Entrances.GetEntranceRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Entrances.GetEntranceResponse> __Marshaller_mruv_entrances_GetEntranceResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Entrances.GetEntranceResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Entrances.UpdateEntranceRequest> __Marshaller_mruv_entrances_UpdateEntranceRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Entrances.UpdateEntranceRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Entrances.UpdateEntranceResponse> __Marshaller_mruv_entrances_UpdateEntranceResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Entrances.UpdateEntranceResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Entrances.DeleteEntranceRequest> __Marshaller_mruv_entrances_DeleteEntranceRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Entrances.DeleteEntranceRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Entrances.DeleteEntranceResponse> __Marshaller_mruv_entrances_DeleteEntranceResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Entrances.DeleteEntranceResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Entrances.LockRequest> __Marshaller_mruv_entrances_LockRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Entrances.LockRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Entrances.LockResponse> __Marshaller_mruv_entrances_LockResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Entrances.LockResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Entrances.UnlockRequest> __Marshaller_mruv_entrances_UnlockRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Entrances.UnlockRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Entrances.UnlockResponse> __Marshaller_mruv_entrances_UnlockResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Entrances.UnlockResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Entrances.FindNearestEntranceRequest> __Marshaller_mruv_entrances_FindNearestEntranceRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Entrances.FindNearestEntranceRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Entrances.FindNearestEntranceResponse> __Marshaller_mruv_entrances_FindNearestEntranceResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Entrances.FindNearestEntranceResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Entrances.EnterRequest> __Marshaller_mruv_entrances_EnterRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Entrances.EnterRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Entrances.EnterResponse> __Marshaller_mruv_entrances_EnterResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Entrances.EnterResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Entrances.ExitRequest> __Marshaller_mruv_entrances_ExitRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Entrances.ExitRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Entrances.ExitResponse> __Marshaller_mruv_entrances_ExitResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Entrances.ExitResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Entrances.FetchAllEntrancesRequest> __Marshaller_mruv_entrances_FetchAllEntrancesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Entrances.FetchAllEntrancesRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Entrances.FetchAllEntrancesResponse> __Marshaller_mruv_entrances_FetchAllEntrancesResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Entrances.FetchAllEntrancesResponse.Parser.ParseFrom);
+    static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (message is global::Google.Protobuf.IBufferMessage)
+      {
+        context.SetPayloadLength(message.CalculateSize());
+        global::Google.Protobuf.MessageExtensions.WriteTo(message, context.GetBufferWriter());
+        context.Complete();
+        return;
+      }
+      #endif
+      context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));
+    }
+
+    static class __Helper_MessageCache<T>
+    {
+      public static readonly bool IsBufferMessage = global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));
+    }
+
+    static T __Helper_DeserializeMessage<T>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser<T> parser) where T : global::Google.Protobuf.IMessage<T>
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (__Helper_MessageCache<T>.IsBufferMessage)
+      {
+        return parser.ParseFrom(context.PayloadAsReadOnlySequence());
+      }
+      #endif
+      return parser.ParseFrom(context.PayloadAsNewBuffer());
+    }
+
+    static readonly grpc::Marshaller<global::Mruv.Entrances.CreateEntranceRequest> __Marshaller_mruv_entrances_CreateEntranceRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Entrances.CreateEntranceRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Entrances.CreateEntranceResponse> __Marshaller_mruv_entrances_CreateEntranceResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Entrances.CreateEntranceResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Entrances.GetEntranceRequest> __Marshaller_mruv_entrances_GetEntranceRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Entrances.GetEntranceRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Entrances.GetEntranceResponse> __Marshaller_mruv_entrances_GetEntranceResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Entrances.GetEntranceResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Entrances.UpdateEntranceRequest> __Marshaller_mruv_entrances_UpdateEntranceRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Entrances.UpdateEntranceRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Entrances.UpdateEntranceResponse> __Marshaller_mruv_entrances_UpdateEntranceResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Entrances.UpdateEntranceResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Entrances.DeleteEntranceRequest> __Marshaller_mruv_entrances_DeleteEntranceRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Entrances.DeleteEntranceRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Entrances.DeleteEntranceResponse> __Marshaller_mruv_entrances_DeleteEntranceResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Entrances.DeleteEntranceResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Entrances.LockRequest> __Marshaller_mruv_entrances_LockRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Entrances.LockRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Entrances.LockResponse> __Marshaller_mruv_entrances_LockResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Entrances.LockResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Entrances.UnlockRequest> __Marshaller_mruv_entrances_UnlockRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Entrances.UnlockRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Entrances.UnlockResponse> __Marshaller_mruv_entrances_UnlockResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Entrances.UnlockResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Entrances.FindNearestEntranceRequest> __Marshaller_mruv_entrances_FindNearestEntranceRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Entrances.FindNearestEntranceRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Entrances.FindNearestEntranceResponse> __Marshaller_mruv_entrances_FindNearestEntranceResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Entrances.FindNearestEntranceResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Entrances.EnterRequest> __Marshaller_mruv_entrances_EnterRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Entrances.EnterRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Entrances.EnterResponse> __Marshaller_mruv_entrances_EnterResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Entrances.EnterResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Entrances.ExitRequest> __Marshaller_mruv_entrances_ExitRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Entrances.ExitRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Entrances.ExitResponse> __Marshaller_mruv_entrances_ExitResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Entrances.ExitResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Entrances.FetchAllEntrancesRequest> __Marshaller_mruv_entrances_FetchAllEntrancesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Entrances.FetchAllEntrancesRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Entrances.FetchAllEntrancesResponse> __Marshaller_mruv_entrances_FetchAllEntrancesResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Entrances.FetchAllEntrancesResponse.Parser));
 
     static readonly grpc::Method<global::Mruv.Entrances.CreateEntranceRequest, global::Mruv.Entrances.CreateEntranceResponse> __Method_CreateEntrance = new grpc::Method<global::Mruv.Entrances.CreateEntranceRequest, global::Mruv.Entrances.CreateEntranceResponse>(
         grpc::MethodType.Unary,

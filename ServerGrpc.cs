@@ -15,14 +15,44 @@ namespace Mruv.Server {
   {
     static readonly string __ServiceName = "mruv.server.MruVServerService";
 
-    static readonly grpc::Marshaller<global::Mruv.Server.ServerInfo> __Marshaller_mruv_server_ServerInfo = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Server.ServerInfo.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Server.ServerID> __Marshaller_mruv_server_ServerID = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Server.ServerID.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Server.GetRegisteredServersRequest> __Marshaller_mruv_server_GetRegisteredServersRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Server.GetRegisteredServersRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Server.GetRegisteredServersResponse> __Marshaller_mruv_server_GetRegisteredServersResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Server.GetRegisteredServersResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Server.UpdateServerStatusRequest> __Marshaller_mruv_server_UpdateServerStatusRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Server.UpdateServerStatusRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Server.UpdateServerStatusResponse> __Marshaller_mruv_server_UpdateServerStatusResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Server.UpdateServerStatusResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Server.ServerEventsStreamRequest> __Marshaller_mruv_server_ServerEventsStreamRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Server.ServerEventsStreamRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Server.ServerEvent> __Marshaller_mruv_server_ServerEvent = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Server.ServerEvent.Parser.ParseFrom);
+    static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (message is global::Google.Protobuf.IBufferMessage)
+      {
+        context.SetPayloadLength(message.CalculateSize());
+        global::Google.Protobuf.MessageExtensions.WriteTo(message, context.GetBufferWriter());
+        context.Complete();
+        return;
+      }
+      #endif
+      context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));
+    }
+
+    static class __Helper_MessageCache<T>
+    {
+      public static readonly bool IsBufferMessage = global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));
+    }
+
+    static T __Helper_DeserializeMessage<T>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser<T> parser) where T : global::Google.Protobuf.IMessage<T>
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (__Helper_MessageCache<T>.IsBufferMessage)
+      {
+        return parser.ParseFrom(context.PayloadAsReadOnlySequence());
+      }
+      #endif
+      return parser.ParseFrom(context.PayloadAsNewBuffer());
+    }
+
+    static readonly grpc::Marshaller<global::Mruv.Server.ServerInfo> __Marshaller_mruv_server_ServerInfo = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Server.ServerInfo.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Server.ServerID> __Marshaller_mruv_server_ServerID = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Server.ServerID.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Server.GetRegisteredServersRequest> __Marshaller_mruv_server_GetRegisteredServersRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Server.GetRegisteredServersRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Server.GetRegisteredServersResponse> __Marshaller_mruv_server_GetRegisteredServersResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Server.GetRegisteredServersResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Server.UpdateServerStatusRequest> __Marshaller_mruv_server_UpdateServerStatusRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Server.UpdateServerStatusRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Server.UpdateServerStatusResponse> __Marshaller_mruv_server_UpdateServerStatusResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Server.UpdateServerStatusResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Server.ServerEventsStreamRequest> __Marshaller_mruv_server_ServerEventsStreamRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Server.ServerEventsStreamRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Server.ServerEvent> __Marshaller_mruv_server_ServerEvent = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Server.ServerEvent.Parser));
 
     static readonly grpc::Method<global::Mruv.Server.ServerInfo, global::Mruv.Server.ServerID> __Method_RegisterServer = new grpc::Method<global::Mruv.Server.ServerInfo, global::Mruv.Server.ServerID>(
         grpc::MethodType.Unary,

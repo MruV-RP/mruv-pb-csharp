@@ -15,14 +15,44 @@ namespace Mruv.Jobs {
   {
     static readonly string __ServiceName = "mruv.jobs.MruVJobsService";
 
-    static readonly grpc::Marshaller<global::Mruv.Jobs.CreateJobRequest> __Marshaller_mruv_jobs_CreateJobRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Jobs.CreateJobRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Jobs.CreateJobResponse> __Marshaller_mruv_jobs_CreateJobResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Jobs.CreateJobResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Jobs.GetJobRequest> __Marshaller_mruv_jobs_GetJobRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Jobs.GetJobRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Jobs.GetJobResponse> __Marshaller_mruv_jobs_GetJobResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Jobs.GetJobResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Jobs.UpdateJobRequest> __Marshaller_mruv_jobs_UpdateJobRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Jobs.UpdateJobRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Jobs.UpdateJobResponse> __Marshaller_mruv_jobs_UpdateJobResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Jobs.UpdateJobResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Jobs.DeleteJobRequest> __Marshaller_mruv_jobs_DeleteJobRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Jobs.DeleteJobRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Jobs.DeleteJobResponse> __Marshaller_mruv_jobs_DeleteJobResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Jobs.DeleteJobResponse.Parser.ParseFrom);
+    static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (message is global::Google.Protobuf.IBufferMessage)
+      {
+        context.SetPayloadLength(message.CalculateSize());
+        global::Google.Protobuf.MessageExtensions.WriteTo(message, context.GetBufferWriter());
+        context.Complete();
+        return;
+      }
+      #endif
+      context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));
+    }
+
+    static class __Helper_MessageCache<T>
+    {
+      public static readonly bool IsBufferMessage = global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));
+    }
+
+    static T __Helper_DeserializeMessage<T>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser<T> parser) where T : global::Google.Protobuf.IMessage<T>
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (__Helper_MessageCache<T>.IsBufferMessage)
+      {
+        return parser.ParseFrom(context.PayloadAsReadOnlySequence());
+      }
+      #endif
+      return parser.ParseFrom(context.PayloadAsNewBuffer());
+    }
+
+    static readonly grpc::Marshaller<global::Mruv.Jobs.CreateJobRequest> __Marshaller_mruv_jobs_CreateJobRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Jobs.CreateJobRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Jobs.CreateJobResponse> __Marshaller_mruv_jobs_CreateJobResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Jobs.CreateJobResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Jobs.GetJobRequest> __Marshaller_mruv_jobs_GetJobRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Jobs.GetJobRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Jobs.GetJobResponse> __Marshaller_mruv_jobs_GetJobResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Jobs.GetJobResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Jobs.UpdateJobRequest> __Marshaller_mruv_jobs_UpdateJobRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Jobs.UpdateJobRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Jobs.UpdateJobResponse> __Marshaller_mruv_jobs_UpdateJobResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Jobs.UpdateJobResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Jobs.DeleteJobRequest> __Marshaller_mruv_jobs_DeleteJobRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Jobs.DeleteJobRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Jobs.DeleteJobResponse> __Marshaller_mruv_jobs_DeleteJobResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Jobs.DeleteJobResponse.Parser));
 
     static readonly grpc::Method<global::Mruv.Jobs.CreateJobRequest, global::Mruv.Jobs.CreateJobResponse> __Method_CreateJob = new grpc::Method<global::Mruv.Jobs.CreateJobRequest, global::Mruv.Jobs.CreateJobResponse>(
         grpc::MethodType.Unary,

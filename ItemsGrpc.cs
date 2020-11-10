@@ -15,37 +15,67 @@ namespace Mruv {
   {
     static readonly string __ServiceName = "mruv.MruVItemService";
 
-    static readonly grpc::Marshaller<global::Mruv.Item> __Marshaller_mruv_Item = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Item.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.ItemID> __Marshaller_mruv_ItemID = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.ItemID.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.GetItemsRequest> __Marshaller_mruv_GetItemsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.GetItemsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.GetItemsResponse> __Marshaller_mruv_GetItemsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.GetItemsResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.ItemType> __Marshaller_mruv_ItemType = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.ItemType.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.ItemTypeID> __Marshaller_mruv_ItemTypeID = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.ItemTypeID.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.GetItemTypesRequest> __Marshaller_mruv_GetItemTypesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.GetItemTypesRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.GetItemTypesResponse> __Marshaller_mruv_GetItemTypesResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.GetItemTypesResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Container> __Marshaller_mruv_Container = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Container.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.ContainerID> __Marshaller_mruv_ContainerID = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.ContainerID.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.GetContainersRequest> __Marshaller_mruv_GetContainersRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.GetContainersRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.GetContainersResponse> __Marshaller_mruv_GetContainersResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.GetContainersResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.ContainerType> __Marshaller_mruv_ContainerType = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.ContainerType.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.ContainerTypeID> __Marshaller_mruv_ContainerTypeID = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.ContainerTypeID.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.GetContainerTypesRequest> __Marshaller_mruv_GetContainerTypesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.GetContainerTypesRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.GetContainerTypesResponse> __Marshaller_mruv_GetContainerTypesResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.GetContainerTypesResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.GetContainerItemsRequest> __Marshaller_mruv_GetContainerItemsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.GetContainerItemsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.GetContainerItemsResponse> __Marshaller_mruv_GetContainerItemsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.GetContainerItemsResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.PullItemRequest> __Marshaller_mruv_PullItemRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.PullItemRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.PutItemRequest> __Marshaller_mruv_PutItemRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.PutItemRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.PutItemResponse> __Marshaller_mruv_PutItemResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.PutItemResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.SortItemsRequest> __Marshaller_mruv_SortItemsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.SortItemsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.SortItemsResponse> __Marshaller_mruv_SortItemsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.SortItemsResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.GetNearestItemsRequest> __Marshaller_mruv_GetNearestItemsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.GetNearestItemsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.GetNearestItemsResponse> __Marshaller_mruv_GetNearestItemsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.GetNearestItemsResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.UseItemRequest> __Marshaller_mruv_UseItemRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.UseItemRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.UseItemResponse> __Marshaller_mruv_UseItemResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.UseItemResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.ServiceStatusRequest> __Marshaller_mruv_ServiceStatusRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.ServiceStatusRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.ServiceStatusResponse> __Marshaller_mruv_ServiceStatusResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.ServiceStatusResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.VersionRequest> __Marshaller_mruv_VersionRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.VersionRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.VersionResponse> __Marshaller_mruv_VersionResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.VersionResponse.Parser.ParseFrom);
+    static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (message is global::Google.Protobuf.IBufferMessage)
+      {
+        context.SetPayloadLength(message.CalculateSize());
+        global::Google.Protobuf.MessageExtensions.WriteTo(message, context.GetBufferWriter());
+        context.Complete();
+        return;
+      }
+      #endif
+      context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));
+    }
+
+    static class __Helper_MessageCache<T>
+    {
+      public static readonly bool IsBufferMessage = global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));
+    }
+
+    static T __Helper_DeserializeMessage<T>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser<T> parser) where T : global::Google.Protobuf.IMessage<T>
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (__Helper_MessageCache<T>.IsBufferMessage)
+      {
+        return parser.ParseFrom(context.PayloadAsReadOnlySequence());
+      }
+      #endif
+      return parser.ParseFrom(context.PayloadAsNewBuffer());
+    }
+
+    static readonly grpc::Marshaller<global::Mruv.Item> __Marshaller_mruv_Item = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Item.Parser));
+    static readonly grpc::Marshaller<global::Mruv.ItemID> __Marshaller_mruv_ItemID = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.ItemID.Parser));
+    static readonly grpc::Marshaller<global::Mruv.GetItemsRequest> __Marshaller_mruv_GetItemsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.GetItemsRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.GetItemsResponse> __Marshaller_mruv_GetItemsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.GetItemsResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.ItemType> __Marshaller_mruv_ItemType = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.ItemType.Parser));
+    static readonly grpc::Marshaller<global::Mruv.ItemTypeID> __Marshaller_mruv_ItemTypeID = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.ItemTypeID.Parser));
+    static readonly grpc::Marshaller<global::Mruv.GetItemTypesRequest> __Marshaller_mruv_GetItemTypesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.GetItemTypesRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.GetItemTypesResponse> __Marshaller_mruv_GetItemTypesResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.GetItemTypesResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Container> __Marshaller_mruv_Container = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Container.Parser));
+    static readonly grpc::Marshaller<global::Mruv.ContainerID> __Marshaller_mruv_ContainerID = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.ContainerID.Parser));
+    static readonly grpc::Marshaller<global::Mruv.GetContainersRequest> __Marshaller_mruv_GetContainersRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.GetContainersRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.GetContainersResponse> __Marshaller_mruv_GetContainersResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.GetContainersResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.ContainerType> __Marshaller_mruv_ContainerType = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.ContainerType.Parser));
+    static readonly grpc::Marshaller<global::Mruv.ContainerTypeID> __Marshaller_mruv_ContainerTypeID = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.ContainerTypeID.Parser));
+    static readonly grpc::Marshaller<global::Mruv.GetContainerTypesRequest> __Marshaller_mruv_GetContainerTypesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.GetContainerTypesRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.GetContainerTypesResponse> __Marshaller_mruv_GetContainerTypesResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.GetContainerTypesResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.GetContainerItemsRequest> __Marshaller_mruv_GetContainerItemsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.GetContainerItemsRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.GetContainerItemsResponse> __Marshaller_mruv_GetContainerItemsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.GetContainerItemsResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.PullItemRequest> __Marshaller_mruv_PullItemRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.PullItemRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.PutItemRequest> __Marshaller_mruv_PutItemRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.PutItemRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.PutItemResponse> __Marshaller_mruv_PutItemResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.PutItemResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.SortItemsRequest> __Marshaller_mruv_SortItemsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.SortItemsRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.SortItemsResponse> __Marshaller_mruv_SortItemsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.SortItemsResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.GetNearestItemsRequest> __Marshaller_mruv_GetNearestItemsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.GetNearestItemsRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.GetNearestItemsResponse> __Marshaller_mruv_GetNearestItemsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.GetNearestItemsResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.UseItemRequest> __Marshaller_mruv_UseItemRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.UseItemRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.UseItemResponse> __Marshaller_mruv_UseItemResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.UseItemResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.ServiceStatusRequest> __Marshaller_mruv_ServiceStatusRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.ServiceStatusRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.ServiceStatusResponse> __Marshaller_mruv_ServiceStatusResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.ServiceStatusResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.VersionRequest> __Marshaller_mruv_VersionRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.VersionRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.VersionResponse> __Marshaller_mruv_VersionResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.VersionResponse.Parser));
 
     static readonly grpc::Method<global::Mruv.Item, global::Mruv.ItemID> __Method_CreateItem = new grpc::Method<global::Mruv.Item, global::Mruv.ItemID>(
         grpc::MethodType.Unary,
