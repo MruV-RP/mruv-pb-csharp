@@ -9,7 +9,7 @@
 	  <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Google.Api.CommonProtos" Version="1.7.0" />
-    <PackageReference Include="Grpc" Version="2.24.0" />
+    <PackageReference Include="Google.Api.CommonProtos" Version="2.2.0" />
+    <PackageReference Include="Grpc" Version="2.33.1" />
   </ItemGroup>
 </Project>
