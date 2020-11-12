@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Mruv {
+namespace Mruv.Common {
 
   /// <summary>Holder for reflection information generated from common/spatial.proto</summary>
   public static partial class SpatialReflection {
@@ -24,15 +24,15 @@ namespace Mruv {
     static SpatialReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChRjb21tb24vc3BhdGlhbC5wcm90bxIEbXJ1diIrCghQb3NpdGlvbhIJCgF4",
-            "GAEgASgBEgkKAXkYAiABKAESCQoBehgDIAEoASIuCghSb3RhdGlvbhIKCgJy",
-            "eBgBIAEoARIKCgJyeRgCIAEoARIKCgJyehgDIAEoAUImWiRnaXRodWIuY29t",
-            "L01ydVYtUlAvbXJ1di1wYi1nby9jb21tb25iBnByb3RvMw=="));
+            "ChRjb21tb24vc3BhdGlhbC5wcm90bxILbXJ1di5jb21tb24iKwoIUG9zaXRp",
+            "b24SCQoBeBgBIAEoARIJCgF5GAIgASgBEgkKAXoYAyABKAEiLgoIUm90YXRp",
+            "b24SCgoCcngYASABKAESCgoCcnkYAiABKAESCgoCcnoYAyABKAFCJlokZ2l0",
+            "aHViLmNvbS9NcnVWLVJQL21ydXYtcGItZ28vY29tbW9uYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Position), global::Mruv.Position.Parser, new[]{ "X", "Y", "Z" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Rotation), global::Mruv.Rotation.Parser, new[]{ "Rx", "Ry", "Rz" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Common.Position), global::Mruv.Common.Position.Parser, new[]{ "X", "Y", "Z" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Common.Rotation), global::Mruv.Common.Rotation.Parser, new[]{ "Rx", "Ry", "Rz" }, null, null, null, null)
           }));
     }
     #endregion
@@ -51,7 +51,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.SpatialReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Mruv.Common.SpatialReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -295,7 +295,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.SpatialReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Mruv.Common.SpatialReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

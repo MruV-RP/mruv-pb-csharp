@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Mruv {
+namespace Mruv.Common {
 
   /// <summary>Holder for reflection information generated from common/health.proto</summary>
   public static partial class HealthReflection {
@@ -24,19 +24,19 @@ namespace Mruv {
     static HealthReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChNjb21tb24vaGVhbHRoLnByb3RvEgRtcnV2IhYKFFNlcnZpY2VTdGF0dXNS",
-            "ZXF1ZXN0IicKFVNlcnZpY2VTdGF0dXNSZXNwb25zZRIOCgZzdGF0dXMYASAB",
-            "KAkiEAoOVmVyc2lvblJlcXVlc3QiVwoPVmVyc2lvblJlc3BvbnNlEg8KB3Zl",
-            "cnNpb24YASABKAkSEgoKYnVpbGRfZGF0ZRgCIAEoCRIOCgZjb21taXQYAyAB",
-            "KAkSDwoHb3NfYXJjaBgEIAEoCUImWiRnaXRodWIuY29tL01ydVYtUlAvbXJ1",
-            "di1wYi1nby9jb21tb25iBnByb3RvMw=="));
+            "ChNjb21tb24vaGVhbHRoLnByb3RvEgttcnV2LmNvbW1vbiIWChRTZXJ2aWNl",
+            "U3RhdHVzUmVxdWVzdCInChVTZXJ2aWNlU3RhdHVzUmVzcG9uc2USDgoGc3Rh",
+            "dHVzGAEgASgJIhAKDlZlcnNpb25SZXF1ZXN0IlcKD1ZlcnNpb25SZXNwb25z",
+            "ZRIPCgd2ZXJzaW9uGAEgASgJEhIKCmJ1aWxkX2RhdGUYAiABKAkSDgoGY29t",
+            "bWl0GAMgASgJEg8KB29zX2FyY2gYBCABKAlCJlokZ2l0aHViLmNvbS9NcnVW",
+            "LVJQL21ydXYtcGItZ28vY29tbW9uYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.ServiceStatusRequest), global::Mruv.ServiceStatusRequest.Parser, null, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.ServiceStatusResponse), global::Mruv.ServiceStatusResponse.Parser, new[]{ "Status" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.VersionRequest), global::Mruv.VersionRequest.Parser, null, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.VersionResponse), global::Mruv.VersionResponse.Parser, new[]{ "Version", "BuildDate", "Commit", "OsArch" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Common.ServiceStatusRequest), global::Mruv.Common.ServiceStatusRequest.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Common.ServiceStatusResponse), global::Mruv.Common.ServiceStatusResponse.Parser, new[]{ "Status" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Common.VersionRequest), global::Mruv.Common.VersionRequest.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Common.VersionResponse), global::Mruv.Common.VersionResponse.Parser, new[]{ "Version", "BuildDate", "Commit", "OsArch" }, null, null, null, null)
           }));
     }
     #endregion
@@ -55,7 +55,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.HealthReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Mruv.Common.HealthReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -191,7 +191,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.HealthReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Mruv.Common.HealthReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -363,7 +363,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.HealthReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Mruv.Common.HealthReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -499,7 +499,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.HealthReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Mruv.Common.HealthReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

@@ -61,10 +61,10 @@ namespace Mruv.Devtools {
     static readonly grpc::Marshaller<global::Mruv.Devtools.GetAnimationResponse> __Marshaller_mruv_devtools_GetAnimationResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Devtools.GetAnimationResponse.Parser));
     static readonly grpc::Marshaller<global::Mruv.Devtools.SaveAnimationRequest> __Marshaller_mruv_devtools_SaveAnimationRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Devtools.SaveAnimationRequest.Parser));
     static readonly grpc::Marshaller<global::Mruv.Devtools.SaveAnimationResponse> __Marshaller_mruv_devtools_SaveAnimationResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Devtools.SaveAnimationResponse.Parser));
-    static readonly grpc::Marshaller<global::Mruv.ServiceStatusRequest> __Marshaller_mruv_ServiceStatusRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.ServiceStatusRequest.Parser));
-    static readonly grpc::Marshaller<global::Mruv.ServiceStatusResponse> __Marshaller_mruv_ServiceStatusResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.ServiceStatusResponse.Parser));
-    static readonly grpc::Marshaller<global::Mruv.VersionRequest> __Marshaller_mruv_VersionRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.VersionRequest.Parser));
-    static readonly grpc::Marshaller<global::Mruv.VersionResponse> __Marshaller_mruv_VersionResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.VersionResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Common.ServiceStatusRequest> __Marshaller_mruv_common_ServiceStatusRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Common.ServiceStatusRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Common.ServiceStatusResponse> __Marshaller_mruv_common_ServiceStatusResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Common.ServiceStatusResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Common.VersionRequest> __Marshaller_mruv_common_VersionRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Common.VersionRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Common.VersionResponse> __Marshaller_mruv_common_VersionResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Common.VersionResponse.Parser));
 
     static readonly grpc::Method<global::Mruv.Devtools.GetPositionsRequest, global::Mruv.Devtools.GetPositionsResponse> __Method_GetPositions = new grpc::Method<global::Mruv.Devtools.GetPositionsRequest, global::Mruv.Devtools.GetPositionsResponse>(
         grpc::MethodType.Unary,
@@ -122,19 +122,19 @@ namespace Mruv.Devtools {
         __Marshaller_mruv_devtools_SaveAnimationRequest,
         __Marshaller_mruv_devtools_SaveAnimationResponse);
 
-    static readonly grpc::Method<global::Mruv.ServiceStatusRequest, global::Mruv.ServiceStatusResponse> __Method_GetServiceStatus = new grpc::Method<global::Mruv.ServiceStatusRequest, global::Mruv.ServiceStatusResponse>(
+    static readonly grpc::Method<global::Mruv.Common.ServiceStatusRequest, global::Mruv.Common.ServiceStatusResponse> __Method_GetServiceStatus = new grpc::Method<global::Mruv.Common.ServiceStatusRequest, global::Mruv.Common.ServiceStatusResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetServiceStatus",
-        __Marshaller_mruv_ServiceStatusRequest,
-        __Marshaller_mruv_ServiceStatusResponse);
+        __Marshaller_mruv_common_ServiceStatusRequest,
+        __Marshaller_mruv_common_ServiceStatusResponse);
 
-    static readonly grpc::Method<global::Mruv.VersionRequest, global::Mruv.VersionResponse> __Method_GetServiceVersion = new grpc::Method<global::Mruv.VersionRequest, global::Mruv.VersionResponse>(
+    static readonly grpc::Method<global::Mruv.Common.VersionRequest, global::Mruv.Common.VersionResponse> __Method_GetServiceVersion = new grpc::Method<global::Mruv.Common.VersionRequest, global::Mruv.Common.VersionResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetServiceVersion",
-        __Marshaller_mruv_VersionRequest,
-        __Marshaller_mruv_VersionResponse);
+        __Marshaller_mruv_common_VersionRequest,
+        __Marshaller_mruv_common_VersionResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -240,7 +240,7 @@ namespace Mruv.Devtools {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.ServiceStatusResponse> GetServiceStatus(global::Mruv.ServiceStatusRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.Common.ServiceStatusResponse> GetServiceStatus(global::Mruv.Common.ServiceStatusRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -251,7 +251,7 @@ namespace Mruv.Devtools {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.VersionResponse> GetServiceVersion(global::Mruv.VersionRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.Common.VersionResponse> GetServiceVersion(global::Mruv.Common.VersionRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -641,7 +641,7 @@ namespace Mruv.Devtools {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.ServiceStatusResponse GetServiceStatus(global::Mruv.ServiceStatusRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.Common.ServiceStatusResponse GetServiceStatus(global::Mruv.Common.ServiceStatusRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetServiceStatus(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -651,7 +651,7 @@ namespace Mruv.Devtools {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.ServiceStatusResponse GetServiceStatus(global::Mruv.ServiceStatusRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.Common.ServiceStatusResponse GetServiceStatus(global::Mruv.Common.ServiceStatusRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetServiceStatus, null, options, request);
       }
@@ -663,7 +663,7 @@ namespace Mruv.Devtools {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.ServiceStatusResponse> GetServiceStatusAsync(global::Mruv.ServiceStatusRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Common.ServiceStatusResponse> GetServiceStatusAsync(global::Mruv.Common.ServiceStatusRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetServiceStatusAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -673,7 +673,7 @@ namespace Mruv.Devtools {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.ServiceStatusResponse> GetServiceStatusAsync(global::Mruv.ServiceStatusRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Common.ServiceStatusResponse> GetServiceStatusAsync(global::Mruv.Common.ServiceStatusRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetServiceStatus, null, options, request);
       }
@@ -685,7 +685,7 @@ namespace Mruv.Devtools {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.VersionResponse GetServiceVersion(global::Mruv.VersionRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.Common.VersionResponse GetServiceVersion(global::Mruv.Common.VersionRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetServiceVersion(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -695,7 +695,7 @@ namespace Mruv.Devtools {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.VersionResponse GetServiceVersion(global::Mruv.VersionRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.Common.VersionResponse GetServiceVersion(global::Mruv.Common.VersionRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetServiceVersion, null, options, request);
       }
@@ -707,7 +707,7 @@ namespace Mruv.Devtools {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.VersionResponse> GetServiceVersionAsync(global::Mruv.VersionRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Common.VersionResponse> GetServiceVersionAsync(global::Mruv.Common.VersionRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetServiceVersionAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -717,7 +717,7 @@ namespace Mruv.Devtools {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.VersionResponse> GetServiceVersionAsync(global::Mruv.VersionRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Common.VersionResponse> GetServiceVersionAsync(global::Mruv.Common.VersionRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetServiceVersion, null, options, request);
       }
@@ -759,8 +759,8 @@ namespace Mruv.Devtools {
       serviceBinder.AddMethod(__Method_GetAnimations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Devtools.GetAnimationsRequest, global::Mruv.Devtools.GetAnimationsResponse>(serviceImpl.GetAnimations));
       serviceBinder.AddMethod(__Method_GetAnimation, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Devtools.GetAnimationRequest, global::Mruv.Devtools.GetAnimationResponse>(serviceImpl.GetAnimation));
       serviceBinder.AddMethod(__Method_SaveAnimation, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Devtools.SaveAnimationRequest, global::Mruv.Devtools.SaveAnimationResponse>(serviceImpl.SaveAnimation));
-      serviceBinder.AddMethod(__Method_GetServiceStatus, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.ServiceStatusRequest, global::Mruv.ServiceStatusResponse>(serviceImpl.GetServiceStatus));
-      serviceBinder.AddMethod(__Method_GetServiceVersion, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.VersionRequest, global::Mruv.VersionResponse>(serviceImpl.GetServiceVersion));
+      serviceBinder.AddMethod(__Method_GetServiceStatus, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Common.ServiceStatusRequest, global::Mruv.Common.ServiceStatusResponse>(serviceImpl.GetServiceStatus));
+      serviceBinder.AddMethod(__Method_GetServiceVersion, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Common.VersionRequest, global::Mruv.Common.VersionResponse>(serviceImpl.GetServiceVersion));
     }
 
   }

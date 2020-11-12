@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Mruv {
+namespace Mruv.Groups {
 
   /// <summary>Holder for reflection information generated from groups/groups.proto</summary>
   public static partial class GroupsReflection {
@@ -24,138 +24,145 @@ namespace Mruv {
     static GroupsReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChNncm91cHMvZ3JvdXBzLnByb3RvEgRtcnV2Ghxnb29nbGUvYXBpL2Fubm90",
-            "YXRpb25zLnByb3RvGhNjb21tb24vaGVhbHRoLnByb3RvIjcKEkNyZWF0ZUdy",
-            "b3VwUmVxdWVzdBIMCgRuYW1lGAEgASgJEhMKC2Rlc2NyaXB0aW9uGAIgASgJ",
-            "IicKE0NyZWF0ZUdyb3VwUmVzcG9uc2USEAoIZ3JvdXBfaWQYASABKA0iIwoP",
-            "R2V0R3JvdXBSZXF1ZXN0EhAKCGdyb3VwX2lkGAEgASgNIjUKEEdldEdyb3Vw",
-            "UmVzcG9uc2USDAoEbmFtZRgBIAEoCRITCgtkZXNjcmlwdGlvbhgCIAEoCSJJ",
-            "ChJVcGRhdGVHcm91cFJlcXVlc3QSEAoIZ3JvdXBfaWQYASABKA0SDAoEbmFt",
-            "ZRgCIAEoCRITCgtkZXNjcmlwdGlvbhgDIAEoCSIVChNVcGRhdGVHcm91cFJl",
-            "c3BvbnNlIiYKEkRlbGV0ZUdyb3VwUmVxdWVzdBIQCghncm91cF9pZBgBIAEo",
-            "DSIVChNEZWxldGVHcm91cFJlc3BvbnNlIjUKEEdldEdyb3Vwc1JlcXVlc3QS",
-            "DQoFbGltaXQYASABKA0SEgoKYmVnaW5fZnJvbRgCIAEoDSJ6ChFHZXRHcm91",
-            "cHNSZXNwb25zZRItCgZncm91cHMYASADKAsyHS5tcnV2LkdldEdyb3Vwc1Jl",
-            "c3BvbnNlLkdyb3VwGjYKBUdyb3VwEgoKAmlkGAEgASgNEgwKBG5hbWUYAiAB",
-            "KAkSEwoLZGVzY3JpcHRpb24YAyABKAkiXQoSQXNzaWduT3duZXJSZXF1ZXN0",
-            "EhAKCGdyb3VwX2lkGAEgASgNEiMKCm93bmVyX3R5cGUYAyABKA4yDy5tcnV2",
-            "Lk93bmVyVHlwZRIQCghvd25lcl9pZBgCIAEoDSIVChNBc3NpZ25Pd25lclJl",
-            "c3BvbnNlIiMKD0dldE93bmVyUmVxdWVzdBIQCghncm91cF9pZBgBIAEoDSJJ",
-            "ChBHZXRPd25lclJlc3BvbnNlEhAKCG93bmVyX2lkGAEgASgNEiMKCm93bmVy",
-            "X3R5cGUYAiABKA4yDy5tcnV2Lk93bmVyVHlwZSI3ChBBZGRNZW1iZXJSZXF1",
-            "ZXN0EhAKCGdyb3VwX2lkGAEgASgNEhEKCW1lbWJlcl9pZBgCIAEoDSITChFB",
-            "ZGRNZW1iZXJSZXNwb25zZSIlChFHZXRNZW1iZXJzUmVxdWVzdBIQCghncm91",
-            "cF9pZBgBIAEoDSJPChJHZXRNZW1iZXJzUmVzcG9uc2USJQoLbWVtYmVyX3R5",
-            "cGUYASABKA4yEC5tcnV2Lk1lbWJlclR5cGUSEgoKbWVtYmVyX2lkcxgCIAMo",
-            "DSI6ChNSZW1vdmVNZW1iZXJSZXF1ZXN0EhAKCGdyb3VwX2lkGAEgASgNEhEK",
-            "CW1lbWJlcl9pZBgCIAEoDSIWChRSZW1vdmVNZW1iZXJSZXNwb25zZSJKChRB",
-            "ZGRQZXJtaXNzaW9uUmVxdWVzdBIQCghncm91cF9pZBgBIAEoDRIMCgRuYW1l",
-            "GAIgASgJEhIKCmRlZmluaXRpb24YAyABKAkiLgoVQWRkUGVybWlzc2lvblJl",
-            "c3BvbnNlEhUKDXBlcm1pc3Npb25faWQYASABKA0iKQoVR2V0UGVybWlzc2lv",
-            "bnNSZXF1ZXN0EhAKCGdyb3VwX2lkGAEgASgNIpIBChZHZXRQZXJtaXNzaW9u",
-            "c1Jlc3BvbnNlEjwKC3Blcm1pc3Npb25zGAEgAygLMicubXJ1di5HZXRQZXJt",
-            "aXNzaW9uc1Jlc3BvbnNlLlBlcm1pc3Npb24aOgoKUGVybWlzc2lvbhIKCgJp",
-            "ZBgBIAEoDRIMCgRuYW1lGAIgASgJEhIKCmRlZmluaXRpb24YAyABKAkiQgoX",
-            "UmVtb3ZlUGVybWlzc2lvblJlcXVlc3QSEAoIZ3JvdXBfaWQYASABKA0SFQoN",
-            "cGVybWlzc2lvbl9pZBgCIAEoDSIaChhSZW1vdmVQZXJtaXNzaW9uUmVzcG9u",
-            "c2UiOwoSQWRkU3ViZ3JvdXBSZXF1ZXN0EhAKCGdyb3VwX2lkGAEgASgNEhMK",
-            "C3N1Ymdyb3VwX2lkGAIgASgNIhUKE0FkZFN1Ymdyb3VwUmVzcG9uc2UiJwoT",
-            "R2V0U3ViZ3JvdXBzUmVxdWVzdBIQCghncm91cF9pZBgBIAEoDSIsChRHZXRT",
-            "dWJncm91cHNSZXNwb25zZRIUCgxzdWJncm91cF9pZHMYASADKA0iPgoVUmVt",
-            "b3ZlU3ViZ3JvdXBSZXF1ZXN0EhAKCGdyb3VwX2lkGAEgASgNEhMKC3N1Ymdy",
-            "b3VwX2lkGAIgASgNIhgKFlJlbW92ZVN1Ymdyb3VwUmVzcG9uc2UiXgoSSXNQ",
-            "ZXJtaXR0ZWRSZXF1ZXN0EhEKCW1lbWJlcl9pZBgBIAEoDRIlCgttZW1iZXJf",
-            "dHlwZRgCIAEoDjIQLm1ydXYuTWVtYmVyVHlwZRIOCgZhY3Rpb24YAyABKAki",
-            "KAoTSXNQZXJtaXR0ZWRSZXNwb25zZRIRCglwZXJtaXR0ZWQYASABKAgqawoJ",
-            "T3duZXJUeXBlEhYKEk9XTkVSX1RZUEVfVU5LTk9XThAAEhYKEk9XTkVSX1RZ",
-            "UEVfQUNDT1VOVBABEhgKFE9XTkVSX1RZUEVfQ0hBUkFDVEVSEAISFAoQT1dO",
-            "RVJfVFlQRV9HUk9VUBADKlkKCk1lbWJlclR5cGUSFwoTTUVNQkVSX1RZUEVf",
-            "VU5LTk9XThAAEhcKE01FTUJFUl9UWVBFX0FDQ09VTlQQARIZChVNRU1CRVJf",
-            "VFlQRV9DSEFSQUNURVIQAjKQEAoRTXJ1Vkdyb3Vwc1NlcnZpY2USVgoLQ3Jl",
-            "YXRlR3JvdXASGC5tcnV2LkNyZWF0ZUdyb3VwUmVxdWVzdBoZLm1ydXYuQ3Jl",
-            "YXRlR3JvdXBSZXNwb25zZSISgtPkkwIMIgovdjEvZ3JvdXBzElgKCEdldEdy",
-            "b3VwEhUubXJ1di5HZXRHcm91cFJlcXVlc3QaFi5tcnV2LkdldEdyb3VwUmVz",
-            "cG9uc2UiHYLT5JMCFxIVL3YxL2dyb3Vwcy97Z3JvdXBfaWR9EmEKC1VwZGF0",
-            "ZUdyb3VwEhgubXJ1di5VcGRhdGVHcm91cFJlcXVlc3QaGS5tcnV2LlVwZGF0",
-            "ZUdyb3VwUmVzcG9uc2UiHYLT5JMCFzIVL3YxL2dyb3Vwcy97Z3JvdXBfaWR9",
-            "EmEKC0RlbGV0ZUdyb3VwEhgubXJ1di5EZWxldGVHcm91cFJlcXVlc3QaGS5t",
-            "cnV2LkRlbGV0ZUdyb3VwUmVzcG9uc2UiHYLT5JMCFyoVL3YxL2dyb3Vwcy97",
-            "Z3JvdXBfaWR9ElAKCUdldEdyb3VwcxIWLm1ydXYuR2V0R3JvdXBzUmVxdWVz",
-            "dBoXLm1ydXYuR2V0R3JvdXBzUmVzcG9uc2UiEoLT5JMCDBIKL3YxL2dyb3Vw",
-            "cxJnCgtBc3NpZ25Pd25lchIYLm1ydXYuQXNzaWduT3duZXJSZXF1ZXN0Ghku",
-            "bXJ1di5Bc3NpZ25Pd25lclJlc3BvbnNlIiOC0+STAh0aGy92MS9ncm91cHMv",
-            "e2dyb3VwX2lkfS9vd25lchJeCghHZXRPd25lchIVLm1ydXYuR2V0T3duZXJS",
-            "ZXF1ZXN0GhYubXJ1di5HZXRPd25lclJlc3BvbnNlIiOC0+STAh0SGy92MS9n",
-            "cm91cHMve2dyb3VwX2lkfS9vd25lchJvCglBZGRNZW1iZXISFi5tcnV2LkFk",
-            "ZE1lbWJlclJlcXVlc3QaFy5tcnV2LkFkZE1lbWJlclJlc3BvbnNlIjGC0+ST",
-            "AisiKS92MS9ncm91cHMve2dyb3VwX2lkfS9tZW1iZXJzL3ttZW1iZXJfaWR9",
-            "EmYKCkdldE1lbWJlcnMSFy5tcnV2LkdldE1lbWJlcnNSZXF1ZXN0GhgubXJ1",
-            "di5HZXRNZW1iZXJzUmVzcG9uc2UiJYLT5JMCHxIdL3YxL2dyb3Vwcy97Z3Jv",
-            "dXBfaWR9L21lbWJlcnMSeAoMUmVtb3ZlTWVtYmVyEhkubXJ1di5SZW1vdmVN",
-            "ZW1iZXJSZXF1ZXN0GhoubXJ1di5SZW1vdmVNZW1iZXJSZXNwb25zZSIxgtPk",
-            "kwIrKikvdjEvZ3JvdXBzL3tncm91cF9pZH0vbWVtYmVycy97bWVtYmVyX2lk",
-            "fRJzCg1BZGRQZXJtaXNzaW9uEhoubXJ1di5BZGRQZXJtaXNzaW9uUmVxdWVz",
-            "dBobLm1ydXYuQWRkUGVybWlzc2lvblJlc3BvbnNlIimC0+STAiMiIS92MS9n",
-            "cm91cHMve2dyb3VwX2lkfS9wZXJtaXNzaW9ucxJ2Cg5HZXRQZXJtaXNzaW9u",
-            "cxIbLm1ydXYuR2V0UGVybWlzc2lvbnNSZXF1ZXN0GhwubXJ1di5HZXRQZXJt",
-            "aXNzaW9uc1Jlc3BvbnNlIimC0+STAiMSIS92MS9ncm91cHMve2dyb3VwX2lk",
-            "fS9wZXJtaXNzaW9ucxJ8ChBSZW1vdmVQZXJtaXNzaW9uEh0ubXJ1di5SZW1v",
-            "dmVQZXJtaXNzaW9uUmVxdWVzdBoeLm1ydXYuUmVtb3ZlUGVybWlzc2lvblJl",
-            "c3BvbnNlIimC0+STAiMqIS92MS9ncm91cHMve2dyb3VwX2lkfS9wZXJtaXNz",
-            "aW9ucxJ5CgtBZGRTdWJncm91cBIYLm1ydXYuQWRkU3ViZ3JvdXBSZXF1ZXN0",
-            "GhkubXJ1di5BZGRTdWJncm91cFJlc3BvbnNlIjWC0+STAi8iLS92MS9ncm91",
-            "cHMve2dyb3VwX2lkfS9zdWJncm91cHMve3N1Ymdyb3VwX2lkfRJuCgxHZXRT",
-            "dWJncm91cHMSGS5tcnV2LkdldFN1Ymdyb3Vwc1JlcXVlc3QaGi5tcnV2Lkdl",
-            "dFN1Ymdyb3Vwc1Jlc3BvbnNlIieC0+STAiESHy92MS9ncm91cHMve2dyb3Vw",
-            "X2lkfS9zdWJncm91cHMSggEKDlJlbW92ZVN1Ymdyb3VwEhsubXJ1di5SZW1v",
-            "dmVTdWJncm91cFJlcXVlc3QaHC5tcnV2LlJlbW92ZVN1Ymdyb3VwUmVzcG9u",
-            "c2UiNYLT5JMCLyotL3YxL2dyb3Vwcy97Z3JvdXBfaWR9L3N1Ymdyb3Vwcy97",
-            "c3ViZ3JvdXBfaWR9EnQKC0lzUGVybWl0dGVkEhgubXJ1di5Jc1Blcm1pdHRl",
-            "ZFJlcXVlc3QaGS5tcnV2LklzUGVybWl0dGVkUmVzcG9uc2UiMILT5JMCKhIo",
-            "L3YxL2dyb3Vwcy9tZW1iZXJzL3ttZW1iZXJfaWR9L3Blcm1pdHRlZBJmChBH",
-            "ZXRTZXJ2aWNlU3RhdHVzEhoubXJ1di5TZXJ2aWNlU3RhdHVzUmVxdWVzdBob",
-            "Lm1ydXYuU2VydmljZVN0YXR1c1Jlc3BvbnNlIhmC0+STAhMSES92MS9ncm91",
-            "cHMvc3RhdHVzElwKEUdldFNlcnZpY2VWZXJzaW9uEhQubXJ1di5WZXJzaW9u",
-            "UmVxdWVzdBoVLm1ydXYuVmVyc2lvblJlc3BvbnNlIhqC0+STAhQSEi92MS9n",
-            "cm91cHMvdmVyc2lvbkImWiRnaXRodWIuY29tL01ydVYtUlAvbXJ1di1wYi1n",
-            "by9ncm91cHNiBnByb3RvMw=="));
+            "ChNncm91cHMvZ3JvdXBzLnByb3RvEgttcnV2Lmdyb3VwcxocZ29vZ2xlL2Fw",
+            "aS9hbm5vdGF0aW9ucy5wcm90bxoTY29tbW9uL2hlYWx0aC5wcm90byI3ChJD",
+            "cmVhdGVHcm91cFJlcXVlc3QSDAoEbmFtZRgBIAEoCRITCgtkZXNjcmlwdGlv",
+            "bhgCIAEoCSInChNDcmVhdGVHcm91cFJlc3BvbnNlEhAKCGdyb3VwX2lkGAEg",
+            "ASgNIiMKD0dldEdyb3VwUmVxdWVzdBIQCghncm91cF9pZBgBIAEoDSI1ChBH",
+            "ZXRHcm91cFJlc3BvbnNlEgwKBG5hbWUYASABKAkSEwoLZGVzY3JpcHRpb24Y",
+            "AiABKAkiSQoSVXBkYXRlR3JvdXBSZXF1ZXN0EhAKCGdyb3VwX2lkGAEgASgN",
+            "EgwKBG5hbWUYAiABKAkSEwoLZGVzY3JpcHRpb24YAyABKAkiFQoTVXBkYXRl",
+            "R3JvdXBSZXNwb25zZSImChJEZWxldGVHcm91cFJlcXVlc3QSEAoIZ3JvdXBf",
+            "aWQYASABKA0iFQoTRGVsZXRlR3JvdXBSZXNwb25zZSI1ChBHZXRHcm91cHNS",
+            "ZXF1ZXN0Eg0KBWxpbWl0GAEgASgNEhIKCmJlZ2luX2Zyb20YAiABKA0igQEK",
+            "EUdldEdyb3Vwc1Jlc3BvbnNlEjQKBmdyb3VwcxgBIAMoCzIkLm1ydXYuZ3Jv",
+            "dXBzLkdldEdyb3Vwc1Jlc3BvbnNlLkdyb3VwGjYKBUdyb3VwEgoKAmlkGAEg",
+            "ASgNEgwKBG5hbWUYAiABKAkSEwoLZGVzY3JpcHRpb24YAyABKAkiZAoSQXNz",
+            "aWduT3duZXJSZXF1ZXN0EhAKCGdyb3VwX2lkGAEgASgNEioKCm93bmVyX3R5",
+            "cGUYAyABKA4yFi5tcnV2Lmdyb3Vwcy5Pd25lclR5cGUSEAoIb3duZXJfaWQY",
+            "AiABKA0iFQoTQXNzaWduT3duZXJSZXNwb25zZSIjCg9HZXRPd25lclJlcXVl",
+            "c3QSEAoIZ3JvdXBfaWQYASABKA0iUAoQR2V0T3duZXJSZXNwb25zZRIQCghv",
+            "d25lcl9pZBgBIAEoDRIqCgpvd25lcl90eXBlGAIgASgOMhYubXJ1di5ncm91",
+            "cHMuT3duZXJUeXBlIjcKEEFkZE1lbWJlclJlcXVlc3QSEAoIZ3JvdXBfaWQY",
+            "ASABKA0SEQoJbWVtYmVyX2lkGAIgASgNIhMKEUFkZE1lbWJlclJlc3BvbnNl",
+            "IiUKEUdldE1lbWJlcnNSZXF1ZXN0EhAKCGdyb3VwX2lkGAEgASgNIlYKEkdl",
+            "dE1lbWJlcnNSZXNwb25zZRIsCgttZW1iZXJfdHlwZRgBIAEoDjIXLm1ydXYu",
+            "Z3JvdXBzLk1lbWJlclR5cGUSEgoKbWVtYmVyX2lkcxgCIAMoDSI6ChNSZW1v",
+            "dmVNZW1iZXJSZXF1ZXN0EhAKCGdyb3VwX2lkGAEgASgNEhEKCW1lbWJlcl9p",
+            "ZBgCIAEoDSIWChRSZW1vdmVNZW1iZXJSZXNwb25zZSJKChRBZGRQZXJtaXNz",
+            "aW9uUmVxdWVzdBIQCghncm91cF9pZBgBIAEoDRIMCgRuYW1lGAIgASgJEhIK",
+            "CmRlZmluaXRpb24YAyABKAkiLgoVQWRkUGVybWlzc2lvblJlc3BvbnNlEhUK",
+            "DXBlcm1pc3Npb25faWQYASABKA0iKQoVR2V0UGVybWlzc2lvbnNSZXF1ZXN0",
+            "EhAKCGdyb3VwX2lkGAEgASgNIpkBChZHZXRQZXJtaXNzaW9uc1Jlc3BvbnNl",
+            "EkMKC3Blcm1pc3Npb25zGAEgAygLMi4ubXJ1di5ncm91cHMuR2V0UGVybWlz",
+            "c2lvbnNSZXNwb25zZS5QZXJtaXNzaW9uGjoKClBlcm1pc3Npb24SCgoCaWQY",
+            "ASABKA0SDAoEbmFtZRgCIAEoCRISCgpkZWZpbml0aW9uGAMgASgJIkIKF1Jl",
+            "bW92ZVBlcm1pc3Npb25SZXF1ZXN0EhAKCGdyb3VwX2lkGAEgASgNEhUKDXBl",
+            "cm1pc3Npb25faWQYAiABKA0iGgoYUmVtb3ZlUGVybWlzc2lvblJlc3BvbnNl",
+            "IjsKEkFkZFN1Ymdyb3VwUmVxdWVzdBIQCghncm91cF9pZBgBIAEoDRITCgtz",
+            "dWJncm91cF9pZBgCIAEoDSIVChNBZGRTdWJncm91cFJlc3BvbnNlIicKE0dl",
+            "dFN1Ymdyb3Vwc1JlcXVlc3QSEAoIZ3JvdXBfaWQYASABKA0iLAoUR2V0U3Vi",
+            "Z3JvdXBzUmVzcG9uc2USFAoMc3ViZ3JvdXBfaWRzGAEgAygNIj4KFVJlbW92",
+            "ZVN1Ymdyb3VwUmVxdWVzdBIQCghncm91cF9pZBgBIAEoDRITCgtzdWJncm91",
+            "cF9pZBgCIAEoDSIYChZSZW1vdmVTdWJncm91cFJlc3BvbnNlImUKEklzUGVy",
+            "bWl0dGVkUmVxdWVzdBIRCgltZW1iZXJfaWQYASABKA0SLAoLbWVtYmVyX3R5",
+            "cGUYAiABKA4yFy5tcnV2Lmdyb3Vwcy5NZW1iZXJUeXBlEg4KBmFjdGlvbhgD",
+            "IAEoCSIoChNJc1Blcm1pdHRlZFJlc3BvbnNlEhEKCXBlcm1pdHRlZBgBIAEo",
+            "CCprCglPd25lclR5cGUSFgoST1dORVJfVFlQRV9VTktOT1dOEAASFgoST1dO",
+            "RVJfVFlQRV9BQ0NPVU5UEAESGAoUT1dORVJfVFlQRV9DSEFSQUNURVIQAhIU",
+            "ChBPV05FUl9UWVBFX0dST1VQEAMqWQoKTWVtYmVyVHlwZRIXChNNRU1CRVJf",
+            "VFlQRV9VTktOT1dOEAASFwoTTUVNQkVSX1RZUEVfQUNDT1VOVBABEhkKFU1F",
+            "TUJFUl9UWVBFX0NIQVJBQ1RFUhACMqASChFNcnVWR3JvdXBzU2VydmljZRJk",
+            "CgtDcmVhdGVHcm91cBIfLm1ydXYuZ3JvdXBzLkNyZWF0ZUdyb3VwUmVxdWVz",
+            "dBogLm1ydXYuZ3JvdXBzLkNyZWF0ZUdyb3VwUmVzcG9uc2UiEoLT5JMCDCIK",
+            "L3YxL2dyb3VwcxJmCghHZXRHcm91cBIcLm1ydXYuZ3JvdXBzLkdldEdyb3Vw",
+            "UmVxdWVzdBodLm1ydXYuZ3JvdXBzLkdldEdyb3VwUmVzcG9uc2UiHYLT5JMC",
+            "FxIVL3YxL2dyb3Vwcy97Z3JvdXBfaWR9Em8KC1VwZGF0ZUdyb3VwEh8ubXJ1",
+            "di5ncm91cHMuVXBkYXRlR3JvdXBSZXF1ZXN0GiAubXJ1di5ncm91cHMuVXBk",
+            "YXRlR3JvdXBSZXNwb25zZSIdgtPkkwIXMhUvdjEvZ3JvdXBzL3tncm91cF9p",
+            "ZH0SbwoLRGVsZXRlR3JvdXASHy5tcnV2Lmdyb3Vwcy5EZWxldGVHcm91cFJl",
+            "cXVlc3QaIC5tcnV2Lmdyb3Vwcy5EZWxldGVHcm91cFJlc3BvbnNlIh2C0+ST",
+            "AhcqFS92MS9ncm91cHMve2dyb3VwX2lkfRJeCglHZXRHcm91cHMSHS5tcnV2",
+            "Lmdyb3Vwcy5HZXRHcm91cHNSZXF1ZXN0Gh4ubXJ1di5ncm91cHMuR2V0R3Jv",
+            "dXBzUmVzcG9uc2UiEoLT5JMCDBIKL3YxL2dyb3VwcxJ1CgtBc3NpZ25Pd25l",
+            "chIfLm1ydXYuZ3JvdXBzLkFzc2lnbk93bmVyUmVxdWVzdBogLm1ydXYuZ3Jv",
+            "dXBzLkFzc2lnbk93bmVyUmVzcG9uc2UiI4LT5JMCHRobL3YxL2dyb3Vwcy97",
+            "Z3JvdXBfaWR9L293bmVyEmwKCEdldE93bmVyEhwubXJ1di5ncm91cHMuR2V0",
+            "T3duZXJSZXF1ZXN0Gh0ubXJ1di5ncm91cHMuR2V0T3duZXJSZXNwb25zZSIj",
+            "gtPkkwIdEhsvdjEvZ3JvdXBzL3tncm91cF9pZH0vb3duZXISfQoJQWRkTWVt",
+            "YmVyEh0ubXJ1di5ncm91cHMuQWRkTWVtYmVyUmVxdWVzdBoeLm1ydXYuZ3Jv",
+            "dXBzLkFkZE1lbWJlclJlc3BvbnNlIjGC0+STAisiKS92MS9ncm91cHMve2dy",
+            "b3VwX2lkfS9tZW1iZXJzL3ttZW1iZXJfaWR9EnQKCkdldE1lbWJlcnMSHi5t",
+            "cnV2Lmdyb3Vwcy5HZXRNZW1iZXJzUmVxdWVzdBofLm1ydXYuZ3JvdXBzLkdl",
+            "dE1lbWJlcnNSZXNwb25zZSIlgtPkkwIfEh0vdjEvZ3JvdXBzL3tncm91cF9p",
+            "ZH0vbWVtYmVycxKGAQoMUmVtb3ZlTWVtYmVyEiAubXJ1di5ncm91cHMuUmVt",
+            "b3ZlTWVtYmVyUmVxdWVzdBohLm1ydXYuZ3JvdXBzLlJlbW92ZU1lbWJlclJl",
+            "c3BvbnNlIjGC0+STAisqKS92MS9ncm91cHMve2dyb3VwX2lkfS9tZW1iZXJz",
+            "L3ttZW1iZXJfaWR9EoEBCg1BZGRQZXJtaXNzaW9uEiEubXJ1di5ncm91cHMu",
+            "QWRkUGVybWlzc2lvblJlcXVlc3QaIi5tcnV2Lmdyb3Vwcy5BZGRQZXJtaXNz",
+            "aW9uUmVzcG9uc2UiKYLT5JMCIyIhL3YxL2dyb3Vwcy97Z3JvdXBfaWR9L3Bl",
+            "cm1pc3Npb25zEoQBCg5HZXRQZXJtaXNzaW9ucxIiLm1ydXYuZ3JvdXBzLkdl",
+            "dFBlcm1pc3Npb25zUmVxdWVzdBojLm1ydXYuZ3JvdXBzLkdldFBlcm1pc3Np",
+            "b25zUmVzcG9uc2UiKYLT5JMCIxIhL3YxL2dyb3Vwcy97Z3JvdXBfaWR9L3Bl",
+            "cm1pc3Npb25zEooBChBSZW1vdmVQZXJtaXNzaW9uEiQubXJ1di5ncm91cHMu",
+            "UmVtb3ZlUGVybWlzc2lvblJlcXVlc3QaJS5tcnV2Lmdyb3Vwcy5SZW1vdmVQ",
+            "ZXJtaXNzaW9uUmVzcG9uc2UiKYLT5JMCIyohL3YxL2dyb3Vwcy97Z3JvdXBf",
+            "aWR9L3Blcm1pc3Npb25zEocBCgtBZGRTdWJncm91cBIfLm1ydXYuZ3JvdXBz",
+            "LkFkZFN1Ymdyb3VwUmVxdWVzdBogLm1ydXYuZ3JvdXBzLkFkZFN1Ymdyb3Vw",
+            "UmVzcG9uc2UiNYLT5JMCLyItL3YxL2dyb3Vwcy97Z3JvdXBfaWR9L3N1Ymdy",
+            "b3Vwcy97c3ViZ3JvdXBfaWR9EnwKDEdldFN1Ymdyb3VwcxIgLm1ydXYuZ3Jv",
+            "dXBzLkdldFN1Ymdyb3Vwc1JlcXVlc3QaIS5tcnV2Lmdyb3Vwcy5HZXRTdWJn",
+            "cm91cHNSZXNwb25zZSIngtPkkwIhEh8vdjEvZ3JvdXBzL3tncm91cF9pZH0v",
+            "c3ViZ3JvdXBzEpABCg5SZW1vdmVTdWJncm91cBIiLm1ydXYuZ3JvdXBzLlJl",
+            "bW92ZVN1Ymdyb3VwUmVxdWVzdBojLm1ydXYuZ3JvdXBzLlJlbW92ZVN1Ymdy",
+            "b3VwUmVzcG9uc2UiNYLT5JMCLyotL3YxL2dyb3Vwcy97Z3JvdXBfaWR9L3N1",
+            "Ymdyb3Vwcy97c3ViZ3JvdXBfaWR9EoIBCgtJc1Blcm1pdHRlZBIfLm1ydXYu",
+            "Z3JvdXBzLklzUGVybWl0dGVkUmVxdWVzdBogLm1ydXYuZ3JvdXBzLklzUGVy",
+            "bWl0dGVkUmVzcG9uc2UiMILT5JMCKhIoL3YxL2dyb3Vwcy9tZW1iZXJzL3tt",
+            "ZW1iZXJfaWR9L3Blcm1pdHRlZBJ0ChBHZXRTZXJ2aWNlU3RhdHVzEiEubXJ1",
+            "di5jb21tb24uU2VydmljZVN0YXR1c1JlcXVlc3QaIi5tcnV2LmNvbW1vbi5T",
+            "ZXJ2aWNlU3RhdHVzUmVzcG9uc2UiGYLT5JMCExIRL3YxL2dyb3Vwcy9zdGF0",
+            "dXMSagoRR2V0U2VydmljZVZlcnNpb24SGy5tcnV2LmNvbW1vbi5WZXJzaW9u",
+            "UmVxdWVzdBocLm1ydXYuY29tbW9uLlZlcnNpb25SZXNwb25zZSIagtPkkwIU",
+            "EhIvdjEvZ3JvdXBzL3ZlcnNpb25CJlokZ2l0aHViLmNvbS9NcnVWLVJQL21y",
+            "dXYtcGItZ28vZ3JvdXBzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, global::Mruv.HealthReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Mruv.OwnerType), typeof(global::Mruv.MemberType), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.CreateGroupRequest), global::Mruv.CreateGroupRequest.Parser, new[]{ "Name", "Description" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.CreateGroupResponse), global::Mruv.CreateGroupResponse.Parser, new[]{ "GroupId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetGroupRequest), global::Mruv.GetGroupRequest.Parser, new[]{ "GroupId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetGroupResponse), global::Mruv.GetGroupResponse.Parser, new[]{ "Name", "Description" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.UpdateGroupRequest), global::Mruv.UpdateGroupRequest.Parser, new[]{ "GroupId", "Name", "Description" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.UpdateGroupResponse), global::Mruv.UpdateGroupResponse.Parser, null, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.DeleteGroupRequest), global::Mruv.DeleteGroupRequest.Parser, new[]{ "GroupId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.DeleteGroupResponse), global::Mruv.DeleteGroupResponse.Parser, null, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetGroupsRequest), global::Mruv.GetGroupsRequest.Parser, new[]{ "Limit", "BeginFrom" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetGroupsResponse), global::Mruv.GetGroupsResponse.Parser, new[]{ "Groups" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetGroupsResponse.Types.Group), global::Mruv.GetGroupsResponse.Types.Group.Parser, new[]{ "Id", "Name", "Description" }, null, null, null, null)}),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.AssignOwnerRequest), global::Mruv.AssignOwnerRequest.Parser, new[]{ "GroupId", "OwnerType", "OwnerId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.AssignOwnerResponse), global::Mruv.AssignOwnerResponse.Parser, null, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetOwnerRequest), global::Mruv.GetOwnerRequest.Parser, new[]{ "GroupId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetOwnerResponse), global::Mruv.GetOwnerResponse.Parser, new[]{ "OwnerId", "OwnerType" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.AddMemberRequest), global::Mruv.AddMemberRequest.Parser, new[]{ "GroupId", "MemberId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.AddMemberResponse), global::Mruv.AddMemberResponse.Parser, null, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetMembersRequest), global::Mruv.GetMembersRequest.Parser, new[]{ "GroupId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetMembersResponse), global::Mruv.GetMembersResponse.Parser, new[]{ "MemberType", "MemberIds" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.RemoveMemberRequest), global::Mruv.RemoveMemberRequest.Parser, new[]{ "GroupId", "MemberId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.RemoveMemberResponse), global::Mruv.RemoveMemberResponse.Parser, null, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.AddPermissionRequest), global::Mruv.AddPermissionRequest.Parser, new[]{ "GroupId", "Name", "Definition" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.AddPermissionResponse), global::Mruv.AddPermissionResponse.Parser, new[]{ "PermissionId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetPermissionsRequest), global::Mruv.GetPermissionsRequest.Parser, new[]{ "GroupId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetPermissionsResponse), global::Mruv.GetPermissionsResponse.Parser, new[]{ "Permissions" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetPermissionsResponse.Types.Permission), global::Mruv.GetPermissionsResponse.Types.Permission.Parser, new[]{ "Id", "Name", "Definition" }, null, null, null, null)}),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.RemovePermissionRequest), global::Mruv.RemovePermissionRequest.Parser, new[]{ "GroupId", "PermissionId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.RemovePermissionResponse), global::Mruv.RemovePermissionResponse.Parser, null, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.AddSubgroupRequest), global::Mruv.AddSubgroupRequest.Parser, new[]{ "GroupId", "SubgroupId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.AddSubgroupResponse), global::Mruv.AddSubgroupResponse.Parser, null, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetSubgroupsRequest), global::Mruv.GetSubgroupsRequest.Parser, new[]{ "GroupId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetSubgroupsResponse), global::Mruv.GetSubgroupsResponse.Parser, new[]{ "SubgroupIds" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.RemoveSubgroupRequest), global::Mruv.RemoveSubgroupRequest.Parser, new[]{ "GroupId", "SubgroupId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.RemoveSubgroupResponse), global::Mruv.RemoveSubgroupResponse.Parser, null, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.IsPermittedRequest), global::Mruv.IsPermittedRequest.Parser, new[]{ "MemberId", "MemberType", "Action" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.IsPermittedResponse), global::Mruv.IsPermittedResponse.Parser, new[]{ "Permitted" }, null, null, null, null)
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, global::Mruv.Common.HealthReflection.Descriptor, },
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Mruv.Groups.OwnerType), typeof(global::Mruv.Groups.MemberType), }, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Groups.CreateGroupRequest), global::Mruv.Groups.CreateGroupRequest.Parser, new[]{ "Name", "Description" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Groups.CreateGroupResponse), global::Mruv.Groups.CreateGroupResponse.Parser, new[]{ "GroupId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Groups.GetGroupRequest), global::Mruv.Groups.GetGroupRequest.Parser, new[]{ "GroupId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Groups.GetGroupResponse), global::Mruv.Groups.GetGroupResponse.Parser, new[]{ "Name", "Description" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Groups.UpdateGroupRequest), global::Mruv.Groups.UpdateGroupRequest.Parser, new[]{ "GroupId", "Name", "Description" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Groups.UpdateGroupResponse), global::Mruv.Groups.UpdateGroupResponse.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Groups.DeleteGroupRequest), global::Mruv.Groups.DeleteGroupRequest.Parser, new[]{ "GroupId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Groups.DeleteGroupResponse), global::Mruv.Groups.DeleteGroupResponse.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Groups.GetGroupsRequest), global::Mruv.Groups.GetGroupsRequest.Parser, new[]{ "Limit", "BeginFrom" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Groups.GetGroupsResponse), global::Mruv.Groups.GetGroupsResponse.Parser, new[]{ "Groups" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Groups.GetGroupsResponse.Types.Group), global::Mruv.Groups.GetGroupsResponse.Types.Group.Parser, new[]{ "Id", "Name", "Description" }, null, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Groups.AssignOwnerRequest), global::Mruv.Groups.AssignOwnerRequest.Parser, new[]{ "GroupId", "OwnerType", "OwnerId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Groups.AssignOwnerResponse), global::Mruv.Groups.AssignOwnerResponse.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Groups.GetOwnerRequest), global::Mruv.Groups.GetOwnerRequest.Parser, new[]{ "GroupId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Groups.GetOwnerResponse), global::Mruv.Groups.GetOwnerResponse.Parser, new[]{ "OwnerId", "OwnerType" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Groups.AddMemberRequest), global::Mruv.Groups.AddMemberRequest.Parser, new[]{ "GroupId", "MemberId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Groups.AddMemberResponse), global::Mruv.Groups.AddMemberResponse.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Groups.GetMembersRequest), global::Mruv.Groups.GetMembersRequest.Parser, new[]{ "GroupId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Groups.GetMembersResponse), global::Mruv.Groups.GetMembersResponse.Parser, new[]{ "MemberType", "MemberIds" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Groups.RemoveMemberRequest), global::Mruv.Groups.RemoveMemberRequest.Parser, new[]{ "GroupId", "MemberId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Groups.RemoveMemberResponse), global::Mruv.Groups.RemoveMemberResponse.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Groups.AddPermissionRequest), global::Mruv.Groups.AddPermissionRequest.Parser, new[]{ "GroupId", "Name", "Definition" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Groups.AddPermissionResponse), global::Mruv.Groups.AddPermissionResponse.Parser, new[]{ "PermissionId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Groups.GetPermissionsRequest), global::Mruv.Groups.GetPermissionsRequest.Parser, new[]{ "GroupId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Groups.GetPermissionsResponse), global::Mruv.Groups.GetPermissionsResponse.Parser, new[]{ "Permissions" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Groups.GetPermissionsResponse.Types.Permission), global::Mruv.Groups.GetPermissionsResponse.Types.Permission.Parser, new[]{ "Id", "Name", "Definition" }, null, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Groups.RemovePermissionRequest), global::Mruv.Groups.RemovePermissionRequest.Parser, new[]{ "GroupId", "PermissionId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Groups.RemovePermissionResponse), global::Mruv.Groups.RemovePermissionResponse.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Groups.AddSubgroupRequest), global::Mruv.Groups.AddSubgroupRequest.Parser, new[]{ "GroupId", "SubgroupId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Groups.AddSubgroupResponse), global::Mruv.Groups.AddSubgroupResponse.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Groups.GetSubgroupsRequest), global::Mruv.Groups.GetSubgroupsRequest.Parser, new[]{ "GroupId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Groups.GetSubgroupsResponse), global::Mruv.Groups.GetSubgroupsResponse.Parser, new[]{ "SubgroupIds" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Groups.RemoveSubgroupRequest), global::Mruv.Groups.RemoveSubgroupRequest.Parser, new[]{ "GroupId", "SubgroupId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Groups.RemoveSubgroupResponse), global::Mruv.Groups.RemoveSubgroupResponse.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Groups.IsPermittedRequest), global::Mruv.Groups.IsPermittedRequest.Parser, new[]{ "MemberId", "MemberType", "Action" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Groups.IsPermittedResponse), global::Mruv.Groups.IsPermittedResponse.Parser, new[]{ "Permitted" }, null, null, null, null)
           }));
     }
     #endregion
@@ -199,7 +206,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Mruv.Groups.GroupsReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -410,7 +417,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Mruv.Groups.GroupsReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -585,7 +592,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Mruv.Groups.GroupsReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -760,7 +767,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Mruv.Groups.GroupsReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -971,7 +978,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Mruv.Groups.GroupsReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1218,7 +1225,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Mruv.Groups.GroupsReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1357,7 +1364,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[6]; }
+      get { return global::Mruv.Groups.GroupsReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1532,7 +1539,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[7]; }
+      get { return global::Mruv.Groups.GroupsReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1671,7 +1678,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[8]; }
+      get { return global::Mruv.Groups.GroupsReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1882,7 +1889,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[9]; }
+      get { return global::Mruv.Groups.GroupsReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1910,11 +1917,11 @@ namespace Mruv {
 
     /// <summary>Field number for the "groups" field.</summary>
     public const int GroupsFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Mruv.GetGroupsResponse.Types.Group> _repeated_groups_codec
-        = pb::FieldCodec.ForMessage(10, global::Mruv.GetGroupsResponse.Types.Group.Parser);
-    private readonly pbc::RepeatedField<global::Mruv.GetGroupsResponse.Types.Group> groups_ = new pbc::RepeatedField<global::Mruv.GetGroupsResponse.Types.Group>();
+    private static readonly pb::FieldCodec<global::Mruv.Groups.GetGroupsResponse.Types.Group> _repeated_groups_codec
+        = pb::FieldCodec.ForMessage(10, global::Mruv.Groups.GetGroupsResponse.Types.Group.Parser);
+    private readonly pbc::RepeatedField<global::Mruv.Groups.GetGroupsResponse.Types.Group> groups_ = new pbc::RepeatedField<global::Mruv.Groups.GetGroupsResponse.Types.Group>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Mruv.GetGroupsResponse.Types.Group> Groups {
+    public pbc::RepeatedField<global::Mruv.Groups.GetGroupsResponse.Types.Group> Groups {
       get { return groups_; }
     }
 
@@ -2045,7 +2052,7 @@ namespace Mruv {
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::Mruv.GetGroupsResponse.Descriptor.NestedTypes[0]; }
+          get { return global::Mruv.Groups.GetGroupsResponse.Descriptor.NestedTypes[0]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2297,7 +2304,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[10]; }
+      get { return global::Mruv.Groups.GroupsReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2338,9 +2345,9 @@ namespace Mruv {
 
     /// <summary>Field number for the "owner_type" field.</summary>
     public const int OwnerTypeFieldNumber = 3;
-    private global::Mruv.OwnerType ownerType_ = global::Mruv.OwnerType.Unknown;
+    private global::Mruv.Groups.OwnerType ownerType_ = global::Mruv.Groups.OwnerType.Unknown;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Mruv.OwnerType OwnerType {
+    public global::Mruv.Groups.OwnerType OwnerType {
       get { return ownerType_; }
       set {
         ownerType_ = value;
@@ -2381,7 +2388,7 @@ namespace Mruv {
     public override int GetHashCode() {
       int hash = 1;
       if (GroupId != 0) hash ^= GroupId.GetHashCode();
-      if (OwnerType != global::Mruv.OwnerType.Unknown) hash ^= OwnerType.GetHashCode();
+      if (OwnerType != global::Mruv.Groups.OwnerType.Unknown) hash ^= OwnerType.GetHashCode();
       if (OwnerId != 0) hash ^= OwnerId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -2407,7 +2414,7 @@ namespace Mruv {
         output.WriteRawTag(16);
         output.WriteUInt32(OwnerId);
       }
-      if (OwnerType != global::Mruv.OwnerType.Unknown) {
+      if (OwnerType != global::Mruv.Groups.OwnerType.Unknown) {
         output.WriteRawTag(24);
         output.WriteEnum((int) OwnerType);
       }
@@ -2428,7 +2435,7 @@ namespace Mruv {
         output.WriteRawTag(16);
         output.WriteUInt32(OwnerId);
       }
-      if (OwnerType != global::Mruv.OwnerType.Unknown) {
+      if (OwnerType != global::Mruv.Groups.OwnerType.Unknown) {
         output.WriteRawTag(24);
         output.WriteEnum((int) OwnerType);
       }
@@ -2444,7 +2451,7 @@ namespace Mruv {
       if (GroupId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(GroupId);
       }
-      if (OwnerType != global::Mruv.OwnerType.Unknown) {
+      if (OwnerType != global::Mruv.Groups.OwnerType.Unknown) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) OwnerType);
       }
       if (OwnerId != 0) {
@@ -2464,7 +2471,7 @@ namespace Mruv {
       if (other.GroupId != 0) {
         GroupId = other.GroupId;
       }
-      if (other.OwnerType != global::Mruv.OwnerType.Unknown) {
+      if (other.OwnerType != global::Mruv.Groups.OwnerType.Unknown) {
         OwnerType = other.OwnerType;
       }
       if (other.OwnerId != 0) {
@@ -2493,7 +2500,7 @@ namespace Mruv {
             break;
           }
           case 24: {
-            OwnerType = (global::Mruv.OwnerType) input.ReadEnum();
+            OwnerType = (global::Mruv.Groups.OwnerType) input.ReadEnum();
             break;
           }
         }
@@ -2519,7 +2526,7 @@ namespace Mruv {
             break;
           }
           case 24: {
-            OwnerType = (global::Mruv.OwnerType) input.ReadEnum();
+            OwnerType = (global::Mruv.Groups.OwnerType) input.ReadEnum();
             break;
           }
         }
@@ -2544,7 +2551,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[11]; }
+      get { return global::Mruv.Groups.GroupsReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2683,7 +2690,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[12]; }
+      get { return global::Mruv.Groups.GroupsReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2858,7 +2865,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[13]; }
+      get { return global::Mruv.Groups.GroupsReflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2898,9 +2905,9 @@ namespace Mruv {
 
     /// <summary>Field number for the "owner_type" field.</summary>
     public const int OwnerTypeFieldNumber = 2;
-    private global::Mruv.OwnerType ownerType_ = global::Mruv.OwnerType.Unknown;
+    private global::Mruv.Groups.OwnerType ownerType_ = global::Mruv.Groups.OwnerType.Unknown;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Mruv.OwnerType OwnerType {
+    public global::Mruv.Groups.OwnerType OwnerType {
       get { return ownerType_; }
       set {
         ownerType_ = value;
@@ -2929,7 +2936,7 @@ namespace Mruv {
     public override int GetHashCode() {
       int hash = 1;
       if (OwnerId != 0) hash ^= OwnerId.GetHashCode();
-      if (OwnerType != global::Mruv.OwnerType.Unknown) hash ^= OwnerType.GetHashCode();
+      if (OwnerType != global::Mruv.Groups.OwnerType.Unknown) hash ^= OwnerType.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2950,7 +2957,7 @@ namespace Mruv {
         output.WriteRawTag(8);
         output.WriteUInt32(OwnerId);
       }
-      if (OwnerType != global::Mruv.OwnerType.Unknown) {
+      if (OwnerType != global::Mruv.Groups.OwnerType.Unknown) {
         output.WriteRawTag(16);
         output.WriteEnum((int) OwnerType);
       }
@@ -2967,7 +2974,7 @@ namespace Mruv {
         output.WriteRawTag(8);
         output.WriteUInt32(OwnerId);
       }
-      if (OwnerType != global::Mruv.OwnerType.Unknown) {
+      if (OwnerType != global::Mruv.Groups.OwnerType.Unknown) {
         output.WriteRawTag(16);
         output.WriteEnum((int) OwnerType);
       }
@@ -2983,7 +2990,7 @@ namespace Mruv {
       if (OwnerId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(OwnerId);
       }
-      if (OwnerType != global::Mruv.OwnerType.Unknown) {
+      if (OwnerType != global::Mruv.Groups.OwnerType.Unknown) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) OwnerType);
       }
       if (_unknownFields != null) {
@@ -3000,7 +3007,7 @@ namespace Mruv {
       if (other.OwnerId != 0) {
         OwnerId = other.OwnerId;
       }
-      if (other.OwnerType != global::Mruv.OwnerType.Unknown) {
+      if (other.OwnerType != global::Mruv.Groups.OwnerType.Unknown) {
         OwnerType = other.OwnerType;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -3022,7 +3029,7 @@ namespace Mruv {
             break;
           }
           case 16: {
-            OwnerType = (global::Mruv.OwnerType) input.ReadEnum();
+            OwnerType = (global::Mruv.Groups.OwnerType) input.ReadEnum();
             break;
           }
         }
@@ -3044,7 +3051,7 @@ namespace Mruv {
             break;
           }
           case 16: {
-            OwnerType = (global::Mruv.OwnerType) input.ReadEnum();
+            OwnerType = (global::Mruv.Groups.OwnerType) input.ReadEnum();
             break;
           }
         }
@@ -3069,7 +3076,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[14]; }
+      get { return global::Mruv.Groups.GroupsReflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3280,7 +3287,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[15]; }
+      get { return global::Mruv.Groups.GroupsReflection.Descriptor.MessageTypes[15]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3419,7 +3426,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[16]; }
+      get { return global::Mruv.Groups.GroupsReflection.Descriptor.MessageTypes[16]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3594,7 +3601,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[17]; }
+      get { return global::Mruv.Groups.GroupsReflection.Descriptor.MessageTypes[17]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3623,9 +3630,9 @@ namespace Mruv {
 
     /// <summary>Field number for the "member_type" field.</summary>
     public const int MemberTypeFieldNumber = 1;
-    private global::Mruv.MemberType memberType_ = global::Mruv.MemberType.Unknown;
+    private global::Mruv.Groups.MemberType memberType_ = global::Mruv.Groups.MemberType.Unknown;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Mruv.MemberType MemberType {
+    public global::Mruv.Groups.MemberType MemberType {
       get { return memberType_; }
       set {
         memberType_ = value;
@@ -3663,7 +3670,7 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (MemberType != global::Mruv.MemberType.Unknown) hash ^= MemberType.GetHashCode();
+      if (MemberType != global::Mruv.Groups.MemberType.Unknown) hash ^= MemberType.GetHashCode();
       hash ^= memberIds_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -3681,7 +3688,7 @@ namespace Mruv {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (MemberType != global::Mruv.MemberType.Unknown) {
+      if (MemberType != global::Mruv.Groups.MemberType.Unknown) {
         output.WriteRawTag(8);
         output.WriteEnum((int) MemberType);
       }
@@ -3695,7 +3702,7 @@ namespace Mruv {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (MemberType != global::Mruv.MemberType.Unknown) {
+      if (MemberType != global::Mruv.Groups.MemberType.Unknown) {
         output.WriteRawTag(8);
         output.WriteEnum((int) MemberType);
       }
@@ -3709,7 +3716,7 @@ namespace Mruv {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (MemberType != global::Mruv.MemberType.Unknown) {
+      if (MemberType != global::Mruv.Groups.MemberType.Unknown) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) MemberType);
       }
       size += memberIds_.CalculateSize(_repeated_memberIds_codec);
@@ -3724,7 +3731,7 @@ namespace Mruv {
       if (other == null) {
         return;
       }
-      if (other.MemberType != global::Mruv.MemberType.Unknown) {
+      if (other.MemberType != global::Mruv.Groups.MemberType.Unknown) {
         MemberType = other.MemberType;
       }
       memberIds_.Add(other.memberIds_);
@@ -3743,7 +3750,7 @@ namespace Mruv {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            MemberType = (global::Mruv.MemberType) input.ReadEnum();
+            MemberType = (global::Mruv.Groups.MemberType) input.ReadEnum();
             break;
           }
           case 18:
@@ -3766,7 +3773,7 @@ namespace Mruv {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            MemberType = (global::Mruv.MemberType) input.ReadEnum();
+            MemberType = (global::Mruv.Groups.MemberType) input.ReadEnum();
             break;
           }
           case 18:
@@ -3796,7 +3803,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[18]; }
+      get { return global::Mruv.Groups.GroupsReflection.Descriptor.MessageTypes[18]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4007,7 +4014,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[19]; }
+      get { return global::Mruv.Groups.GroupsReflection.Descriptor.MessageTypes[19]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4146,7 +4153,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[20]; }
+      get { return global::Mruv.Groups.GroupsReflection.Descriptor.MessageTypes[20]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4393,7 +4400,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[21]; }
+      get { return global::Mruv.Groups.GroupsReflection.Descriptor.MessageTypes[21]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4568,7 +4575,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[22]; }
+      get { return global::Mruv.Groups.GroupsReflection.Descriptor.MessageTypes[22]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4743,7 +4750,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[23]; }
+      get { return global::Mruv.Groups.GroupsReflection.Descriptor.MessageTypes[23]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4771,11 +4778,11 @@ namespace Mruv {
 
     /// <summary>Field number for the "permissions" field.</summary>
     public const int PermissionsFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Mruv.GetPermissionsResponse.Types.Permission> _repeated_permissions_codec
-        = pb::FieldCodec.ForMessage(10, global::Mruv.GetPermissionsResponse.Types.Permission.Parser);
-    private readonly pbc::RepeatedField<global::Mruv.GetPermissionsResponse.Types.Permission> permissions_ = new pbc::RepeatedField<global::Mruv.GetPermissionsResponse.Types.Permission>();
+    private static readonly pb::FieldCodec<global::Mruv.Groups.GetPermissionsResponse.Types.Permission> _repeated_permissions_codec
+        = pb::FieldCodec.ForMessage(10, global::Mruv.Groups.GetPermissionsResponse.Types.Permission.Parser);
+    private readonly pbc::RepeatedField<global::Mruv.Groups.GetPermissionsResponse.Types.Permission> permissions_ = new pbc::RepeatedField<global::Mruv.Groups.GetPermissionsResponse.Types.Permission>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Mruv.GetPermissionsResponse.Types.Permission> Permissions {
+    public pbc::RepeatedField<global::Mruv.Groups.GetPermissionsResponse.Types.Permission> Permissions {
       get { return permissions_; }
     }
 
@@ -4906,7 +4913,7 @@ namespace Mruv {
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::Mruv.GetPermissionsResponse.Descriptor.NestedTypes[0]; }
+          get { return global::Mruv.Groups.GetPermissionsResponse.Descriptor.NestedTypes[0]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5158,7 +5165,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[24]; }
+      get { return global::Mruv.Groups.GroupsReflection.Descriptor.MessageTypes[24]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5369,7 +5376,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[25]; }
+      get { return global::Mruv.Groups.GroupsReflection.Descriptor.MessageTypes[25]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5508,7 +5515,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[26]; }
+      get { return global::Mruv.Groups.GroupsReflection.Descriptor.MessageTypes[26]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5719,7 +5726,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[27]; }
+      get { return global::Mruv.Groups.GroupsReflection.Descriptor.MessageTypes[27]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5858,7 +5865,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[28]; }
+      get { return global::Mruv.Groups.GroupsReflection.Descriptor.MessageTypes[28]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6033,7 +6040,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[29]; }
+      get { return global::Mruv.Groups.GroupsReflection.Descriptor.MessageTypes[29]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6199,7 +6206,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[30]; }
+      get { return global::Mruv.Groups.GroupsReflection.Descriptor.MessageTypes[30]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6410,7 +6417,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[31]; }
+      get { return global::Mruv.Groups.GroupsReflection.Descriptor.MessageTypes[31]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6549,7 +6556,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[32]; }
+      get { return global::Mruv.Groups.GroupsReflection.Descriptor.MessageTypes[32]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6590,9 +6597,9 @@ namespace Mruv {
 
     /// <summary>Field number for the "member_type" field.</summary>
     public const int MemberTypeFieldNumber = 2;
-    private global::Mruv.MemberType memberType_ = global::Mruv.MemberType.Unknown;
+    private global::Mruv.Groups.MemberType memberType_ = global::Mruv.Groups.MemberType.Unknown;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Mruv.MemberType MemberType {
+    public global::Mruv.Groups.MemberType MemberType {
       get { return memberType_; }
       set {
         memberType_ = value;
@@ -6633,7 +6640,7 @@ namespace Mruv {
     public override int GetHashCode() {
       int hash = 1;
       if (MemberId != 0) hash ^= MemberId.GetHashCode();
-      if (MemberType != global::Mruv.MemberType.Unknown) hash ^= MemberType.GetHashCode();
+      if (MemberType != global::Mruv.Groups.MemberType.Unknown) hash ^= MemberType.GetHashCode();
       if (Action.Length != 0) hash ^= Action.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -6655,7 +6662,7 @@ namespace Mruv {
         output.WriteRawTag(8);
         output.WriteUInt32(MemberId);
       }
-      if (MemberType != global::Mruv.MemberType.Unknown) {
+      if (MemberType != global::Mruv.Groups.MemberType.Unknown) {
         output.WriteRawTag(16);
         output.WriteEnum((int) MemberType);
       }
@@ -6676,7 +6683,7 @@ namespace Mruv {
         output.WriteRawTag(8);
         output.WriteUInt32(MemberId);
       }
-      if (MemberType != global::Mruv.MemberType.Unknown) {
+      if (MemberType != global::Mruv.Groups.MemberType.Unknown) {
         output.WriteRawTag(16);
         output.WriteEnum((int) MemberType);
       }
@@ -6696,7 +6703,7 @@ namespace Mruv {
       if (MemberId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(MemberId);
       }
-      if (MemberType != global::Mruv.MemberType.Unknown) {
+      if (MemberType != global::Mruv.Groups.MemberType.Unknown) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) MemberType);
       }
       if (Action.Length != 0) {
@@ -6716,7 +6723,7 @@ namespace Mruv {
       if (other.MemberId != 0) {
         MemberId = other.MemberId;
       }
-      if (other.MemberType != global::Mruv.MemberType.Unknown) {
+      if (other.MemberType != global::Mruv.Groups.MemberType.Unknown) {
         MemberType = other.MemberType;
       }
       if (other.Action.Length != 0) {
@@ -6741,7 +6748,7 @@ namespace Mruv {
             break;
           }
           case 16: {
-            MemberType = (global::Mruv.MemberType) input.ReadEnum();
+            MemberType = (global::Mruv.Groups.MemberType) input.ReadEnum();
             break;
           }
           case 26: {
@@ -6767,7 +6774,7 @@ namespace Mruv {
             break;
           }
           case 16: {
-            MemberType = (global::Mruv.MemberType) input.ReadEnum();
+            MemberType = (global::Mruv.Groups.MemberType) input.ReadEnum();
             break;
           }
           case 26: {
@@ -6796,7 +6803,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.GroupsReflection.Descriptor.MessageTypes[33]; }
+      get { return global::Mruv.Groups.GroupsReflection.Descriptor.MessageTypes[33]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Mruv {
+namespace Mruv.Items {
 
   /// <summary>Holder for reflection information generated from items/items_model.proto</summary>
   public static partial class ItemsModelReflection {
@@ -24,38 +24,38 @@ namespace Mruv {
     static ItemsModelReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChdpdGVtcy9pdGVtc19tb2RlbC5wcm90bxIEbXJ1diKLAQoISXRlbVR5cGUS",
-            "CgoCaWQYASABKA0SDAoEbmFtZRgCIAEoCRITCgtkZXNjcmlwdGlvbhgDIAEo",
-            "CRITCgtiYXNlX3dlaWdodBgEIAEoAhITCgtiYXNlX3ZvbHVtZRgFIAEoAhIS",
-            "Cgptb2RlbF9uYW1lGAYgASgJEhIKCm1vZGVsX2hhc2gYByABKAUiGAoKSXRl",
-            "bVR5cGVJRBIKCgJpZBgBIAEoDSJICgRJdGVtEgoKAmlkGAEgASgNEhQKDGl0",
-            "ZW1fdHlwZV9pZBgCIAEoDRIOCgZ3ZWlnaHQYAyABKAISDgoGdm9sdW1lGAQg",
-            "ASgCIhQKBkl0ZW1JRBIKCgJpZBgBIAEoDSKRAQoNQ29udGFpbmVyVHlwZRIK",
-            "CgJpZBgBIAEoDRIeChZjb250YWluZXJfaXRlbV90eXBlX2lkGAIgASgNEhIK",
-            "Cm1heF9udW1iZXIYAyABKA0SEgoKbWF4X3ZvbHVtZRgEIAEoAhISCgptYXhf",
-            "d2VpZ2h0GAUgASgCEhgKEHZhbGlkX2l0ZW1fdHlwZXMYCCADKAMiHQoPQ29u",
-            "dGFpbmVyVHlwZUlEEgoKAmlkGAEgASgNInAKCUNvbnRhaW5lchIKCgJpZBgB",
-            "IAEoDRIPCgd0eXBlX2lkGAIgASgNEg8KB2l0ZW1faWQYAyABKA0SFAoMaXRl",
-            "bXNfaW5zaWRlGAQgASgNEh8KBWl0ZW1zGAUgAygLMhAubXJ1di5JbnNpZGVJ",
-            "dGVtIhkKC0NvbnRhaW5lcklEEgoKAmlkGAEgASgNInEKCkluc2lkZUl0ZW0S",
-            "FAoMY29udGFpbmVyX2lkGAEgASgNEhEKB2l0ZW1faWQYAiABKA1IABIaCgRp",
-            "dGVtGAMgASgLMgoubXJ1di5JdGVtSAASEAoIcG9zaXRpb24YBCABKAVCDAoK",
-            "aXRlbV9vcl9pZCpcCgtTb3J0aW5nTW9kZRILCgdVTktOT1dOEAASDwoLV0VJ",
-            "R0hUX0RFU0MQARIOCgpXRUlHSFRfQVNDEAISDwoLVk9MVU1FX0RFU0MQAxIO",
-            "CgpWT0xVTUVfQVNDEARCJVojZ2l0aHViLmNvbS9NcnVWLVJQL21ydXYtcGIt",
-            "Z28vaXRlbXNiBnByb3RvMw=="));
+            "ChdpdGVtcy9pdGVtc19tb2RlbC5wcm90bxIKbXJ1di5pdGVtcyKLAQoISXRl",
+            "bVR5cGUSCgoCaWQYASABKA0SDAoEbmFtZRgCIAEoCRITCgtkZXNjcmlwdGlv",
+            "bhgDIAEoCRITCgtiYXNlX3dlaWdodBgEIAEoAhITCgtiYXNlX3ZvbHVtZRgF",
+            "IAEoAhISCgptb2RlbF9uYW1lGAYgASgJEhIKCm1vZGVsX2hhc2gYByABKAUi",
+            "GAoKSXRlbVR5cGVJRBIKCgJpZBgBIAEoDSJICgRJdGVtEgoKAmlkGAEgASgN",
+            "EhQKDGl0ZW1fdHlwZV9pZBgCIAEoDRIOCgZ3ZWlnaHQYAyABKAISDgoGdm9s",
+            "dW1lGAQgASgCIhQKBkl0ZW1JRBIKCgJpZBgBIAEoDSKRAQoNQ29udGFpbmVy",
+            "VHlwZRIKCgJpZBgBIAEoDRIeChZjb250YWluZXJfaXRlbV90eXBlX2lkGAIg",
+            "ASgNEhIKCm1heF9udW1iZXIYAyABKA0SEgoKbWF4X3ZvbHVtZRgEIAEoAhIS",
+            "CgptYXhfd2VpZ2h0GAUgASgCEhgKEHZhbGlkX2l0ZW1fdHlwZXMYCCADKAMi",
+            "HQoPQ29udGFpbmVyVHlwZUlEEgoKAmlkGAEgASgNInYKCUNvbnRhaW5lchIK",
+            "CgJpZBgBIAEoDRIPCgd0eXBlX2lkGAIgASgNEg8KB2l0ZW1faWQYAyABKA0S",
+            "FAoMaXRlbXNfaW5zaWRlGAQgASgNEiUKBWl0ZW1zGAUgAygLMhYubXJ1di5p",
+            "dGVtcy5JbnNpZGVJdGVtIhkKC0NvbnRhaW5lcklEEgoKAmlkGAEgASgNIncK",
+            "Ckluc2lkZUl0ZW0SFAoMY29udGFpbmVyX2lkGAEgASgNEhEKB2l0ZW1faWQY",
+            "AiABKA1IABIgCgRpdGVtGAMgASgLMhAubXJ1di5pdGVtcy5JdGVtSAASEAoI",
+            "cG9zaXRpb24YBCABKAVCDAoKaXRlbV9vcl9pZCpcCgtTb3J0aW5nTW9kZRIL",
+            "CgdVTktOT1dOEAASDwoLV0VJR0hUX0RFU0MQARIOCgpXRUlHSFRfQVNDEAIS",
+            "DwoLVk9MVU1FX0RFU0MQAxIOCgpWT0xVTUVfQVNDEARCJVojZ2l0aHViLmNv",
+            "bS9NcnVWLVJQL21ydXYtcGItZ28vaXRlbXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Mruv.SortingMode), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.ItemType), global::Mruv.ItemType.Parser, new[]{ "Id", "Name", "Description", "BaseWeight", "BaseVolume", "ModelName", "ModelHash" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.ItemTypeID), global::Mruv.ItemTypeID.Parser, new[]{ "Id" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Item), global::Mruv.Item.Parser, new[]{ "Id", "ItemTypeId", "Weight", "Volume" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.ItemID), global::Mruv.ItemID.Parser, new[]{ "Id" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.ContainerType), global::Mruv.ContainerType.Parser, new[]{ "Id", "ContainerItemTypeId", "MaxNumber", "MaxVolume", "MaxWeight", "ValidItemTypes" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.ContainerTypeID), global::Mruv.ContainerTypeID.Parser, new[]{ "Id" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Container), global::Mruv.Container.Parser, new[]{ "Id", "TypeId", "ItemId", "ItemsInside", "Items" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.ContainerID), global::Mruv.ContainerID.Parser, new[]{ "Id" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.InsideItem), global::Mruv.InsideItem.Parser, new[]{ "ContainerId", "ItemId", "Item", "Position" }, new[]{ "ItemOrId" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Mruv.Items.SortingMode), }, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Items.ItemType), global::Mruv.Items.ItemType.Parser, new[]{ "Id", "Name", "Description", "BaseWeight", "BaseVolume", "ModelName", "ModelHash" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Items.ItemTypeID), global::Mruv.Items.ItemTypeID.Parser, new[]{ "Id" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Items.Item), global::Mruv.Items.Item.Parser, new[]{ "Id", "ItemTypeId", "Weight", "Volume" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Items.ItemID), global::Mruv.Items.ItemID.Parser, new[]{ "Id" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Items.ContainerType), global::Mruv.Items.ContainerType.Parser, new[]{ "Id", "ContainerItemTypeId", "MaxNumber", "MaxVolume", "MaxWeight", "ValidItemTypes" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Items.ContainerTypeID), global::Mruv.Items.ContainerTypeID.Parser, new[]{ "Id" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Items.Container), global::Mruv.Items.Container.Parser, new[]{ "Id", "TypeId", "ItemId", "ItemsInside", "Items" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Items.ContainerID), global::Mruv.Items.ContainerID.Parser, new[]{ "Id" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Items.InsideItem), global::Mruv.Items.InsideItem.Parser, new[]{ "ContainerId", "ItemId", "Item", "Position" }, new[]{ "ItemOrId" }, null, null, null)
           }));
     }
     #endregion
@@ -106,7 +106,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.ItemsModelReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Mruv.Items.ItemsModelReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -515,7 +515,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.ItemsModelReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Mruv.Items.ItemsModelReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -690,7 +690,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.ItemsModelReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Mruv.Items.ItemsModelReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -982,7 +982,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.ItemsModelReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Mruv.Items.ItemsModelReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1157,7 +1157,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.ItemsModelReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Mruv.Items.ItemsModelReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1515,7 +1515,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.ItemsModelReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Mruv.Items.ItemsModelReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1690,7 +1690,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.ItemsModelReflection.Descriptor.MessageTypes[6]; }
+      get { return global::Mruv.Items.ItemsModelReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1775,14 +1775,14 @@ namespace Mruv {
 
     /// <summary>Field number for the "items" field.</summary>
     public const int ItemsFieldNumber = 5;
-    private static readonly pb::FieldCodec<global::Mruv.InsideItem> _repeated_items_codec
-        = pb::FieldCodec.ForMessage(42, global::Mruv.InsideItem.Parser);
-    private readonly pbc::RepeatedField<global::Mruv.InsideItem> items_ = new pbc::RepeatedField<global::Mruv.InsideItem>();
+    private static readonly pb::FieldCodec<global::Mruv.Items.InsideItem> _repeated_items_codec
+        = pb::FieldCodec.ForMessage(42, global::Mruv.Items.InsideItem.Parser);
+    private readonly pbc::RepeatedField<global::Mruv.Items.InsideItem> items_ = new pbc::RepeatedField<global::Mruv.Items.InsideItem>();
     /// <summary>
     ///List of items inside container.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Mruv.InsideItem> Items {
+    public pbc::RepeatedField<global::Mruv.Items.InsideItem> Items {
       get { return items_; }
     }
 
@@ -2010,7 +2010,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.ItemsModelReflection.Descriptor.MessageTypes[7]; }
+      get { return global::Mruv.Items.ItemsModelReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2185,7 +2185,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.ItemsModelReflection.Descriptor.MessageTypes[8]; }
+      get { return global::Mruv.Items.ItemsModelReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2249,8 +2249,8 @@ namespace Mruv {
     /// <summary>Field number for the "item" field.</summary>
     public const int ItemFieldNumber = 3;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Mruv.Item Item {
-      get { return itemOrIdCase_ == ItemOrIdOneofCase.Item ? (global::Mruv.Item) itemOrId_ : null; }
+    public global::Mruv.Items.Item Item {
+      get { return itemOrIdCase_ == ItemOrIdOneofCase.Item ? (global::Mruv.Items.Item) itemOrId_ : null; }
       set {
         itemOrId_ = value;
         itemOrIdCase_ = value == null ? ItemOrIdOneofCase.None : ItemOrIdOneofCase.Item;
@@ -2420,7 +2420,7 @@ namespace Mruv {
           break;
         case ItemOrIdOneofCase.Item:
           if (Item == null) {
-            Item = new global::Mruv.Item();
+            Item = new global::Mruv.Items.Item();
           }
           Item.MergeFrom(other.Item);
           break;
@@ -2449,7 +2449,7 @@ namespace Mruv {
             break;
           }
           case 26: {
-            global::Mruv.Item subBuilder = new global::Mruv.Item();
+            global::Mruv.Items.Item subBuilder = new global::Mruv.Items.Item();
             if (itemOrIdCase_ == ItemOrIdOneofCase.Item) {
               subBuilder.MergeFrom(Item);
             }
@@ -2484,7 +2484,7 @@ namespace Mruv {
             break;
           }
           case 26: {
-            global::Mruv.Item subBuilder = new global::Mruv.Item();
+            global::Mruv.Items.Item subBuilder = new global::Mruv.Items.Item();
             if (itemOrIdCase_ == ItemOrIdOneofCase.Item) {
               subBuilder.MergeFrom(Item);
             }

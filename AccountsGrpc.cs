@@ -7,14 +7,14 @@
 
 using grpc = global::Grpc.Core;
 
-namespace Mruv {
+namespace Mruv.Accounts {
   /// <summary>
   /// The MruV accounts service provides procedures for managing players accounts.
   /// This service is an additional/intermediary service between the ORY Kratos &amp; ORY Hydra service.
   /// </summary>
   public static partial class MruVAccountsService
   {
-    static readonly string __ServiceName = "mruv.MruVAccountsService";
+    static readonly string __ServiceName = "mruv.accounts.MruVAccountsService";
 
     static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
     {
@@ -46,56 +46,56 @@ namespace Mruv {
       return parser.ParseFrom(context.PayloadAsNewBuffer());
     }
 
-    static readonly grpc::Marshaller<global::Mruv.RegisterAccountRequest> __Marshaller_mruv_RegisterAccountRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.RegisterAccountRequest.Parser));
-    static readonly grpc::Marshaller<global::Mruv.RegisterAccountResponse> __Marshaller_mruv_RegisterAccountResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.RegisterAccountResponse.Parser));
-    static readonly grpc::Marshaller<global::Mruv.LogInRequest> __Marshaller_mruv_LogInRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.LogInRequest.Parser));
-    static readonly grpc::Marshaller<global::Mruv.LogInResponse> __Marshaller_mruv_LogInResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.LogInResponse.Parser));
-    static readonly grpc::Marshaller<global::Mruv.IsAccountExistRequest> __Marshaller_mruv_IsAccountExistRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.IsAccountExistRequest.Parser));
-    static readonly grpc::Marshaller<global::Mruv.IsAccountExistResponse> __Marshaller_mruv_IsAccountExistResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.IsAccountExistResponse.Parser));
-    static readonly grpc::Marshaller<global::Mruv.GetAccountRequest> __Marshaller_mruv_GetAccountRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.GetAccountRequest.Parser));
-    static readonly grpc::Marshaller<global::Mruv.GetAccountResponse> __Marshaller_mruv_GetAccountResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.GetAccountResponse.Parser));
-    static readonly grpc::Marshaller<global::Mruv.GetAccountCharactersRequest> __Marshaller_mruv_GetAccountCharactersRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.GetAccountCharactersRequest.Parser));
-    static readonly grpc::Marshaller<global::Mruv.GetAccountCharactersResponse> __Marshaller_mruv_GetAccountCharactersResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.GetAccountCharactersResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Accounts.RegisterAccountRequest> __Marshaller_mruv_accounts_RegisterAccountRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Accounts.RegisterAccountRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Accounts.RegisterAccountResponse> __Marshaller_mruv_accounts_RegisterAccountResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Accounts.RegisterAccountResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Accounts.LogInRequest> __Marshaller_mruv_accounts_LogInRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Accounts.LogInRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Accounts.LogInResponse> __Marshaller_mruv_accounts_LogInResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Accounts.LogInResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Accounts.IsAccountExistRequest> __Marshaller_mruv_accounts_IsAccountExistRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Accounts.IsAccountExistRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Accounts.IsAccountExistResponse> __Marshaller_mruv_accounts_IsAccountExistResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Accounts.IsAccountExistResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Accounts.GetAccountRequest> __Marshaller_mruv_accounts_GetAccountRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Accounts.GetAccountRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Accounts.GetAccountResponse> __Marshaller_mruv_accounts_GetAccountResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Accounts.GetAccountResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Accounts.GetAccountCharactersRequest> __Marshaller_mruv_accounts_GetAccountCharactersRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Accounts.GetAccountCharactersRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Accounts.GetAccountCharactersResponse> __Marshaller_mruv_accounts_GetAccountCharactersResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Accounts.GetAccountCharactersResponse.Parser));
 
-    static readonly grpc::Method<global::Mruv.RegisterAccountRequest, global::Mruv.RegisterAccountResponse> __Method_RegisterAccount = new grpc::Method<global::Mruv.RegisterAccountRequest, global::Mruv.RegisterAccountResponse>(
+    static readonly grpc::Method<global::Mruv.Accounts.RegisterAccountRequest, global::Mruv.Accounts.RegisterAccountResponse> __Method_RegisterAccount = new grpc::Method<global::Mruv.Accounts.RegisterAccountRequest, global::Mruv.Accounts.RegisterAccountResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "RegisterAccount",
-        __Marshaller_mruv_RegisterAccountRequest,
-        __Marshaller_mruv_RegisterAccountResponse);
+        __Marshaller_mruv_accounts_RegisterAccountRequest,
+        __Marshaller_mruv_accounts_RegisterAccountResponse);
 
-    static readonly grpc::Method<global::Mruv.LogInRequest, global::Mruv.LogInResponse> __Method_LogIn = new grpc::Method<global::Mruv.LogInRequest, global::Mruv.LogInResponse>(
+    static readonly grpc::Method<global::Mruv.Accounts.LogInRequest, global::Mruv.Accounts.LogInResponse> __Method_LogIn = new grpc::Method<global::Mruv.Accounts.LogInRequest, global::Mruv.Accounts.LogInResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "LogIn",
-        __Marshaller_mruv_LogInRequest,
-        __Marshaller_mruv_LogInResponse);
+        __Marshaller_mruv_accounts_LogInRequest,
+        __Marshaller_mruv_accounts_LogInResponse);
 
-    static readonly grpc::Method<global::Mruv.IsAccountExistRequest, global::Mruv.IsAccountExistResponse> __Method_IsAccountExist = new grpc::Method<global::Mruv.IsAccountExistRequest, global::Mruv.IsAccountExistResponse>(
+    static readonly grpc::Method<global::Mruv.Accounts.IsAccountExistRequest, global::Mruv.Accounts.IsAccountExistResponse> __Method_IsAccountExist = new grpc::Method<global::Mruv.Accounts.IsAccountExistRequest, global::Mruv.Accounts.IsAccountExistResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "IsAccountExist",
-        __Marshaller_mruv_IsAccountExistRequest,
-        __Marshaller_mruv_IsAccountExistResponse);
+        __Marshaller_mruv_accounts_IsAccountExistRequest,
+        __Marshaller_mruv_accounts_IsAccountExistResponse);
 
-    static readonly grpc::Method<global::Mruv.GetAccountRequest, global::Mruv.GetAccountResponse> __Method_GetAccount = new grpc::Method<global::Mruv.GetAccountRequest, global::Mruv.GetAccountResponse>(
+    static readonly grpc::Method<global::Mruv.Accounts.GetAccountRequest, global::Mruv.Accounts.GetAccountResponse> __Method_GetAccount = new grpc::Method<global::Mruv.Accounts.GetAccountRequest, global::Mruv.Accounts.GetAccountResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetAccount",
-        __Marshaller_mruv_GetAccountRequest,
-        __Marshaller_mruv_GetAccountResponse);
+        __Marshaller_mruv_accounts_GetAccountRequest,
+        __Marshaller_mruv_accounts_GetAccountResponse);
 
-    static readonly grpc::Method<global::Mruv.GetAccountCharactersRequest, global::Mruv.GetAccountCharactersResponse> __Method_GetAccountCharacters = new grpc::Method<global::Mruv.GetAccountCharactersRequest, global::Mruv.GetAccountCharactersResponse>(
+    static readonly grpc::Method<global::Mruv.Accounts.GetAccountCharactersRequest, global::Mruv.Accounts.GetAccountCharactersResponse> __Method_GetAccountCharacters = new grpc::Method<global::Mruv.Accounts.GetAccountCharactersRequest, global::Mruv.Accounts.GetAccountCharactersResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetAccountCharacters",
-        __Marshaller_mruv_GetAccountCharactersRequest,
-        __Marshaller_mruv_GetAccountCharactersResponse);
+        __Marshaller_mruv_accounts_GetAccountCharactersRequest,
+        __Marshaller_mruv_accounts_GetAccountCharactersResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
-      get { return global::Mruv.AccountsReflection.Descriptor.Services[0]; }
+      get { return global::Mruv.Accounts.AccountsReflection.Descriptor.Services[0]; }
     }
 
     /// <summary>Base class for server-side implementations of MruVAccountsService</summary>
@@ -108,7 +108,7 @@ namespace Mruv {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.RegisterAccountResponse> RegisterAccount(global::Mruv.RegisterAccountRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.Accounts.RegisterAccountResponse> RegisterAccount(global::Mruv.Accounts.RegisterAccountRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -119,7 +119,7 @@ namespace Mruv {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.LogInResponse> LogIn(global::Mruv.LogInRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.Accounts.LogInResponse> LogIn(global::Mruv.Accounts.LogInRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -130,7 +130,7 @@ namespace Mruv {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.IsAccountExistResponse> IsAccountExist(global::Mruv.IsAccountExistRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.Accounts.IsAccountExistResponse> IsAccountExist(global::Mruv.Accounts.IsAccountExistRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -141,7 +141,7 @@ namespace Mruv {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.GetAccountResponse> GetAccount(global::Mruv.GetAccountRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.Accounts.GetAccountResponse> GetAccount(global::Mruv.Accounts.GetAccountRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -152,7 +152,7 @@ namespace Mruv {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.GetAccountCharactersResponse> GetAccountCharacters(global::Mruv.GetAccountCharactersRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.Accounts.GetAccountCharactersResponse> GetAccountCharacters(global::Mruv.Accounts.GetAccountCharactersRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -190,7 +190,7 @@ namespace Mruv {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.RegisterAccountResponse RegisterAccount(global::Mruv.RegisterAccountRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.Accounts.RegisterAccountResponse RegisterAccount(global::Mruv.Accounts.RegisterAccountRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return RegisterAccount(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -200,7 +200,7 @@ namespace Mruv {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.RegisterAccountResponse RegisterAccount(global::Mruv.RegisterAccountRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.Accounts.RegisterAccountResponse RegisterAccount(global::Mruv.Accounts.RegisterAccountRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_RegisterAccount, null, options, request);
       }
@@ -212,7 +212,7 @@ namespace Mruv {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.RegisterAccountResponse> RegisterAccountAsync(global::Mruv.RegisterAccountRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Accounts.RegisterAccountResponse> RegisterAccountAsync(global::Mruv.Accounts.RegisterAccountRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return RegisterAccountAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -222,7 +222,7 @@ namespace Mruv {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.RegisterAccountResponse> RegisterAccountAsync(global::Mruv.RegisterAccountRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Accounts.RegisterAccountResponse> RegisterAccountAsync(global::Mruv.Accounts.RegisterAccountRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_RegisterAccount, null, options, request);
       }
@@ -234,7 +234,7 @@ namespace Mruv {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.LogInResponse LogIn(global::Mruv.LogInRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.Accounts.LogInResponse LogIn(global::Mruv.Accounts.LogInRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return LogIn(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -244,7 +244,7 @@ namespace Mruv {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.LogInResponse LogIn(global::Mruv.LogInRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.Accounts.LogInResponse LogIn(global::Mruv.Accounts.LogInRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_LogIn, null, options, request);
       }
@@ -256,7 +256,7 @@ namespace Mruv {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.LogInResponse> LogInAsync(global::Mruv.LogInRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Accounts.LogInResponse> LogInAsync(global::Mruv.Accounts.LogInRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return LogInAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -266,7 +266,7 @@ namespace Mruv {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.LogInResponse> LogInAsync(global::Mruv.LogInRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Accounts.LogInResponse> LogInAsync(global::Mruv.Accounts.LogInRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_LogIn, null, options, request);
       }
@@ -278,7 +278,7 @@ namespace Mruv {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.IsAccountExistResponse IsAccountExist(global::Mruv.IsAccountExistRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.Accounts.IsAccountExistResponse IsAccountExist(global::Mruv.Accounts.IsAccountExistRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return IsAccountExist(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -288,7 +288,7 @@ namespace Mruv {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.IsAccountExistResponse IsAccountExist(global::Mruv.IsAccountExistRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.Accounts.IsAccountExistResponse IsAccountExist(global::Mruv.Accounts.IsAccountExistRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_IsAccountExist, null, options, request);
       }
@@ -300,7 +300,7 @@ namespace Mruv {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.IsAccountExistResponse> IsAccountExistAsync(global::Mruv.IsAccountExistRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Accounts.IsAccountExistResponse> IsAccountExistAsync(global::Mruv.Accounts.IsAccountExistRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return IsAccountExistAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -310,7 +310,7 @@ namespace Mruv {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.IsAccountExistResponse> IsAccountExistAsync(global::Mruv.IsAccountExistRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Accounts.IsAccountExistResponse> IsAccountExistAsync(global::Mruv.Accounts.IsAccountExistRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_IsAccountExist, null, options, request);
       }
@@ -322,7 +322,7 @@ namespace Mruv {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.GetAccountResponse GetAccount(global::Mruv.GetAccountRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.Accounts.GetAccountResponse GetAccount(global::Mruv.Accounts.GetAccountRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetAccount(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -332,7 +332,7 @@ namespace Mruv {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.GetAccountResponse GetAccount(global::Mruv.GetAccountRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.Accounts.GetAccountResponse GetAccount(global::Mruv.Accounts.GetAccountRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetAccount, null, options, request);
       }
@@ -344,7 +344,7 @@ namespace Mruv {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.GetAccountResponse> GetAccountAsync(global::Mruv.GetAccountRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Accounts.GetAccountResponse> GetAccountAsync(global::Mruv.Accounts.GetAccountRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetAccountAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -354,7 +354,7 @@ namespace Mruv {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.GetAccountResponse> GetAccountAsync(global::Mruv.GetAccountRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Accounts.GetAccountResponse> GetAccountAsync(global::Mruv.Accounts.GetAccountRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetAccount, null, options, request);
       }
@@ -366,7 +366,7 @@ namespace Mruv {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.GetAccountCharactersResponse GetAccountCharacters(global::Mruv.GetAccountCharactersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.Accounts.GetAccountCharactersResponse GetAccountCharacters(global::Mruv.Accounts.GetAccountCharactersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetAccountCharacters(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -376,7 +376,7 @@ namespace Mruv {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.GetAccountCharactersResponse GetAccountCharacters(global::Mruv.GetAccountCharactersRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.Accounts.GetAccountCharactersResponse GetAccountCharacters(global::Mruv.Accounts.GetAccountCharactersRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetAccountCharacters, null, options, request);
       }
@@ -388,7 +388,7 @@ namespace Mruv {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.GetAccountCharactersResponse> GetAccountCharactersAsync(global::Mruv.GetAccountCharactersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Accounts.GetAccountCharactersResponse> GetAccountCharactersAsync(global::Mruv.Accounts.GetAccountCharactersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetAccountCharactersAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -398,7 +398,7 @@ namespace Mruv {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.GetAccountCharactersResponse> GetAccountCharactersAsync(global::Mruv.GetAccountCharactersRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Accounts.GetAccountCharactersResponse> GetAccountCharactersAsync(global::Mruv.Accounts.GetAccountCharactersRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetAccountCharacters, null, options, request);
       }
@@ -427,11 +427,11 @@ namespace Mruv {
     /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
     public static void BindService(grpc::ServiceBinderBase serviceBinder, MruVAccountsServiceBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_RegisterAccount, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.RegisterAccountRequest, global::Mruv.RegisterAccountResponse>(serviceImpl.RegisterAccount));
-      serviceBinder.AddMethod(__Method_LogIn, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.LogInRequest, global::Mruv.LogInResponse>(serviceImpl.LogIn));
-      serviceBinder.AddMethod(__Method_IsAccountExist, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.IsAccountExistRequest, global::Mruv.IsAccountExistResponse>(serviceImpl.IsAccountExist));
-      serviceBinder.AddMethod(__Method_GetAccount, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.GetAccountRequest, global::Mruv.GetAccountResponse>(serviceImpl.GetAccount));
-      serviceBinder.AddMethod(__Method_GetAccountCharacters, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.GetAccountCharactersRequest, global::Mruv.GetAccountCharactersResponse>(serviceImpl.GetAccountCharacters));
+      serviceBinder.AddMethod(__Method_RegisterAccount, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Accounts.RegisterAccountRequest, global::Mruv.Accounts.RegisterAccountResponse>(serviceImpl.RegisterAccount));
+      serviceBinder.AddMethod(__Method_LogIn, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Accounts.LogInRequest, global::Mruv.Accounts.LogInResponse>(serviceImpl.LogIn));
+      serviceBinder.AddMethod(__Method_IsAccountExist, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Accounts.IsAccountExistRequest, global::Mruv.Accounts.IsAccountExistResponse>(serviceImpl.IsAccountExist));
+      serviceBinder.AddMethod(__Method_GetAccount, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Accounts.GetAccountRequest, global::Mruv.Accounts.GetAccountResponse>(serviceImpl.GetAccount));
+      serviceBinder.AddMethod(__Method_GetAccountCharacters, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Accounts.GetAccountCharactersRequest, global::Mruv.Accounts.GetAccountCharactersResponse>(serviceImpl.GetAccountCharacters));
     }
 
   }

@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Mruv {
+namespace Mruv.Accounts {
 
   /// <summary>Holder for reflection information generated from accounts/accounts.proto</summary>
   public static partial class AccountsReflection {
@@ -24,46 +24,48 @@ namespace Mruv {
     static AccountsReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChdhY2NvdW50cy9hY2NvdW50cy5wcm90bxIEbXJ1dhocZ29vZ2xlL2FwaS9h",
-            "bm5vdGF0aW9ucy5wcm90byJIChZSZWdpc3RlckFjY291bnRSZXF1ZXN0Eg0K",
-            "BWxvZ2luGAEgASgJEhAKCHBhc3N3b3JkGAIgASgJEg0KBWVtYWlsGAMgASgJ",
-            "Ij4KF1JlZ2lzdGVyQWNjb3VudFJlc3BvbnNlEg8KB3N1Y2Nlc3MYASABKAgS",
-            "EgoKYWNjb3VudF9pZBgCIAEoDSIvCgxMb2dJblJlcXVlc3QSDQoFbG9naW4Y",
-            "ASABKAkSEAoIcGFzc3dvcmQYAiABKAkiNAoNTG9nSW5SZXNwb25zZRIPCgdz",
-            "dWNjZXNzGAEgASgIEhIKCmFjY291bnRfaWQYAiABKA0iIgoRR2V0QWNjb3Vu",
-            "dFJlcXVlc3QSDQoFbG9naW4YASABKAkiMgoSR2V0QWNjb3VudFJlc3BvbnNl",
-            "Eg0KBWxvZ2luGAEgASgJEg0KBWVtYWlsGAIgASgJIiwKG0dldEFjY291bnRD",
-            "aGFyYWN0ZXJzUmVxdWVzdBINCgVsb2dpbhgBIAEoCSI1ChxHZXRBY2NvdW50",
-            "Q2hhcmFjdGVyc1Jlc3BvbnNlEhUKDWNoYXJhY3Rlcl9pZHMYASADKA0iJgoV",
-            "SXNBY2NvdW50RXhpc3RSZXF1ZXN0Eg0KBWxvZ2luGAEgASgJIjQKFklzQWNj",
-            "b3VudEV4aXN0UmVzcG9uc2USDgoGZXhpc3RzGAEgASgIEgoKAmlkGAIgASgN",
-            "MrAEChNNcnVWQWNjb3VudHNTZXJ2aWNlEm0KD1JlZ2lzdGVyQWNjb3VudBIc",
-            "Lm1ydXYuUmVnaXN0ZXJBY2NvdW50UmVxdWVzdBodLm1ydXYuUmVnaXN0ZXJB",
-            "Y2NvdW50UmVzcG9uc2UiHYLT5JMCFyIVL3YxL2FjY291bnRzL3JlZ2lzdGVy",
-            "EkwKBUxvZ0luEhIubXJ1di5Mb2dJblJlcXVlc3QaEy5tcnV2LkxvZ0luUmVz",
-            "cG9uc2UiGoLT5JMCFCISL3YxL2FjY291bnRzL2xvZ2luEnQKDklzQWNjb3Vu",
-            "dEV4aXN0EhsubXJ1di5Jc0FjY291bnRFeGlzdFJlcXVlc3QaHC5tcnV2Lklz",
-            "QWNjb3VudEV4aXN0UmVzcG9uc2UiJ4LT5JMCIRIfL3YxL2FjY291bnRzL3ts",
-            "b2dpbn0vcmVnaXN0ZXJlZBJdCgpHZXRBY2NvdW50EhcubXJ1di5HZXRBY2Nv",
-            "dW50UmVxdWVzdBoYLm1ydXYuR2V0QWNjb3VudFJlc3BvbnNlIhyC0+STAhYS",
-            "FC92MS9hY2NvdW50cy97bG9naW59EoYBChRHZXRBY2NvdW50Q2hhcmFjdGVy",
-            "cxIhLm1ydXYuR2V0QWNjb3VudENoYXJhY3RlcnNSZXF1ZXN0GiIubXJ1di5H",
-            "ZXRBY2NvdW50Q2hhcmFjdGVyc1Jlc3BvbnNlIieC0+STAiESHy92MS9hY2Nv",
-            "dW50cy97bG9naW59L2NoYXJhY3RlcnNCKFomZ2l0aHViLmNvbS9NcnVWLVJQ",
-            "L21ydXYtcGItZ28vYWNjb3VudHNiBnByb3RvMw=="));
+            "ChdhY2NvdW50cy9hY2NvdW50cy5wcm90bxINbXJ1di5hY2NvdW50cxocZ29v",
+            "Z2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byJIChZSZWdpc3RlckFjY291bnRS",
+            "ZXF1ZXN0Eg0KBWxvZ2luGAEgASgJEhAKCHBhc3N3b3JkGAIgASgJEg0KBWVt",
+            "YWlsGAMgASgJIj4KF1JlZ2lzdGVyQWNjb3VudFJlc3BvbnNlEg8KB3N1Y2Nl",
+            "c3MYASABKAgSEgoKYWNjb3VudF9pZBgCIAEoDSIvCgxMb2dJblJlcXVlc3QS",
+            "DQoFbG9naW4YASABKAkSEAoIcGFzc3dvcmQYAiABKAkiNAoNTG9nSW5SZXNw",
+            "b25zZRIPCgdzdWNjZXNzGAEgASgIEhIKCmFjY291bnRfaWQYAiABKA0iIgoR",
+            "R2V0QWNjb3VudFJlcXVlc3QSDQoFbG9naW4YASABKAkiMgoSR2V0QWNjb3Vu",
+            "dFJlc3BvbnNlEg0KBWxvZ2luGAEgASgJEg0KBWVtYWlsGAIgASgJIiwKG0dl",
+            "dEFjY291bnRDaGFyYWN0ZXJzUmVxdWVzdBINCgVsb2dpbhgBIAEoCSI1ChxH",
+            "ZXRBY2NvdW50Q2hhcmFjdGVyc1Jlc3BvbnNlEhUKDWNoYXJhY3Rlcl9pZHMY",
+            "ASADKA0iJgoVSXNBY2NvdW50RXhpc3RSZXF1ZXN0Eg0KBWxvZ2luGAEgASgJ",
+            "IjQKFklzQWNjb3VudEV4aXN0UmVzcG9uc2USDgoGZXhpc3RzGAEgASgIEgoK",
+            "AmlkGAIgASgNMosFChNNcnVWQWNjb3VudHNTZXJ2aWNlEn8KD1JlZ2lzdGVy",
+            "QWNjb3VudBIlLm1ydXYuYWNjb3VudHMuUmVnaXN0ZXJBY2NvdW50UmVxdWVz",
+            "dBomLm1ydXYuYWNjb3VudHMuUmVnaXN0ZXJBY2NvdW50UmVzcG9uc2UiHYLT",
+            "5JMCFyIVL3YxL2FjY291bnRzL3JlZ2lzdGVyEl4KBUxvZ0luEhsubXJ1di5h",
+            "Y2NvdW50cy5Mb2dJblJlcXVlc3QaHC5tcnV2LmFjY291bnRzLkxvZ0luUmVz",
+            "cG9uc2UiGoLT5JMCFCISL3YxL2FjY291bnRzL2xvZ2luEoYBCg5Jc0FjY291",
+            "bnRFeGlzdBIkLm1ydXYuYWNjb3VudHMuSXNBY2NvdW50RXhpc3RSZXF1ZXN0",
+            "GiUubXJ1di5hY2NvdW50cy5Jc0FjY291bnRFeGlzdFJlc3BvbnNlIieC0+ST",
+            "AiESHy92MS9hY2NvdW50cy97bG9naW59L3JlZ2lzdGVyZWQSbwoKR2V0QWNj",
+            "b3VudBIgLm1ydXYuYWNjb3VudHMuR2V0QWNjb3VudFJlcXVlc3QaIS5tcnV2",
+            "LmFjY291bnRzLkdldEFjY291bnRSZXNwb25zZSIcgtPkkwIWEhQvdjEvYWNj",
+            "b3VudHMve2xvZ2lufRKYAQoUR2V0QWNjb3VudENoYXJhY3RlcnMSKi5tcnV2",
+            "LmFjY291bnRzLkdldEFjY291bnRDaGFyYWN0ZXJzUmVxdWVzdBorLm1ydXYu",
+            "YWNjb3VudHMuR2V0QWNjb3VudENoYXJhY3RlcnNSZXNwb25zZSIngtPkkwIh",
+            "Eh8vdjEvYWNjb3VudHMve2xvZ2lufS9jaGFyYWN0ZXJzQihaJmdpdGh1Yi5j",
+            "b20vTXJ1Vi1SUC9tcnV2LXBiLWdvL2FjY291bnRzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.RegisterAccountRequest), global::Mruv.RegisterAccountRequest.Parser, new[]{ "Login", "Password", "Email" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.RegisterAccountResponse), global::Mruv.RegisterAccountResponse.Parser, new[]{ "Success", "AccountId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.LogInRequest), global::Mruv.LogInRequest.Parser, new[]{ "Login", "Password" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.LogInResponse), global::Mruv.LogInResponse.Parser, new[]{ "Success", "AccountId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetAccountRequest), global::Mruv.GetAccountRequest.Parser, new[]{ "Login" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetAccountResponse), global::Mruv.GetAccountResponse.Parser, new[]{ "Login", "Email" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetAccountCharactersRequest), global::Mruv.GetAccountCharactersRequest.Parser, new[]{ "Login" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.GetAccountCharactersResponse), global::Mruv.GetAccountCharactersResponse.Parser, new[]{ "CharacterIds" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.IsAccountExistRequest), global::Mruv.IsAccountExistRequest.Parser, new[]{ "Login" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.IsAccountExistResponse), global::Mruv.IsAccountExistResponse.Parser, new[]{ "Exists", "Id" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Accounts.RegisterAccountRequest), global::Mruv.Accounts.RegisterAccountRequest.Parser, new[]{ "Login", "Password", "Email" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Accounts.RegisterAccountResponse), global::Mruv.Accounts.RegisterAccountResponse.Parser, new[]{ "Success", "AccountId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Accounts.LogInRequest), global::Mruv.Accounts.LogInRequest.Parser, new[]{ "Login", "Password" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Accounts.LogInResponse), global::Mruv.Accounts.LogInResponse.Parser, new[]{ "Success", "AccountId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Accounts.GetAccountRequest), global::Mruv.Accounts.GetAccountRequest.Parser, new[]{ "Login" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Accounts.GetAccountResponse), global::Mruv.Accounts.GetAccountResponse.Parser, new[]{ "Login", "Email" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Accounts.GetAccountCharactersRequest), global::Mruv.Accounts.GetAccountCharactersRequest.Parser, new[]{ "Login" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Accounts.GetAccountCharactersResponse), global::Mruv.Accounts.GetAccountCharactersResponse.Parser, new[]{ "CharacterIds" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Accounts.IsAccountExistRequest), global::Mruv.Accounts.IsAccountExistRequest.Parser, new[]{ "Login" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Accounts.IsAccountExistResponse), global::Mruv.Accounts.IsAccountExistResponse.Parser, new[]{ "Exists", "Id" }, null, null, null, null)
           }));
     }
     #endregion
@@ -85,7 +87,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.AccountsReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Mruv.Accounts.AccountsReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -332,7 +334,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.AccountsReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Mruv.Accounts.AccountsReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -543,7 +545,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.AccountsReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Mruv.Accounts.AccountsReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -754,7 +756,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.AccountsReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Mruv.Accounts.AccountsReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -965,7 +967,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.AccountsReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Mruv.Accounts.AccountsReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1140,7 +1142,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.AccountsReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Mruv.Accounts.AccountsReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1351,7 +1353,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.AccountsReflection.Descriptor.MessageTypes[6]; }
+      get { return global::Mruv.Accounts.AccountsReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1526,7 +1528,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.AccountsReflection.Descriptor.MessageTypes[7]; }
+      get { return global::Mruv.Accounts.AccountsReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1692,7 +1694,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.AccountsReflection.Descriptor.MessageTypes[8]; }
+      get { return global::Mruv.Accounts.AccountsReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1867,7 +1869,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.AccountsReflection.Descriptor.MessageTypes[9]; }
+      get { return global::Mruv.Accounts.AccountsReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
