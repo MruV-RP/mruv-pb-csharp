@@ -15,44 +15,74 @@ namespace Mruv.Groups {
   {
     static readonly string __ServiceName = "mruv.groups.MruVGroupsService";
 
-    static readonly grpc::Marshaller<global::Mruv.Groups.CreateGroupRequest> __Marshaller_mruv_groups_CreateGroupRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.CreateGroupRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.CreateGroupResponse> __Marshaller_mruv_groups_CreateGroupResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.CreateGroupResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.GetGroupRequest> __Marshaller_mruv_groups_GetGroupRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.GetGroupRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.GetGroupResponse> __Marshaller_mruv_groups_GetGroupResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.GetGroupResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.UpdateGroupRequest> __Marshaller_mruv_groups_UpdateGroupRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.UpdateGroupRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.UpdateGroupResponse> __Marshaller_mruv_groups_UpdateGroupResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.UpdateGroupResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.DeleteGroupRequest> __Marshaller_mruv_groups_DeleteGroupRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.DeleteGroupRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.DeleteGroupResponse> __Marshaller_mruv_groups_DeleteGroupResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.DeleteGroupResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.GetGroupsRequest> __Marshaller_mruv_groups_GetGroupsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.GetGroupsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.GetGroupsResponse> __Marshaller_mruv_groups_GetGroupsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.GetGroupsResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.AssignOwnerRequest> __Marshaller_mruv_groups_AssignOwnerRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.AssignOwnerRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.AssignOwnerResponse> __Marshaller_mruv_groups_AssignOwnerResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.AssignOwnerResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.GetOwnerRequest> __Marshaller_mruv_groups_GetOwnerRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.GetOwnerRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.GetOwnerResponse> __Marshaller_mruv_groups_GetOwnerResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.GetOwnerResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.AddMemberRequest> __Marshaller_mruv_groups_AddMemberRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.AddMemberRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.AddMemberResponse> __Marshaller_mruv_groups_AddMemberResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.AddMemberResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.GetMembersRequest> __Marshaller_mruv_groups_GetMembersRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.GetMembersRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.GetMembersResponse> __Marshaller_mruv_groups_GetMembersResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.GetMembersResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.RemoveMemberRequest> __Marshaller_mruv_groups_RemoveMemberRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.RemoveMemberRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.RemoveMemberResponse> __Marshaller_mruv_groups_RemoveMemberResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.RemoveMemberResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.AddPermissionRequest> __Marshaller_mruv_groups_AddPermissionRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.AddPermissionRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.AddPermissionResponse> __Marshaller_mruv_groups_AddPermissionResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.AddPermissionResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.GetPermissionsRequest> __Marshaller_mruv_groups_GetPermissionsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.GetPermissionsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.GetPermissionsResponse> __Marshaller_mruv_groups_GetPermissionsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.GetPermissionsResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.RemovePermissionRequest> __Marshaller_mruv_groups_RemovePermissionRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.RemovePermissionRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.RemovePermissionResponse> __Marshaller_mruv_groups_RemovePermissionResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.RemovePermissionResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.AddSubgroupRequest> __Marshaller_mruv_groups_AddSubgroupRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.AddSubgroupRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.AddSubgroupResponse> __Marshaller_mruv_groups_AddSubgroupResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.AddSubgroupResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.GetSubgroupsRequest> __Marshaller_mruv_groups_GetSubgroupsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.GetSubgroupsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.GetSubgroupsResponse> __Marshaller_mruv_groups_GetSubgroupsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.GetSubgroupsResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.RemoveSubgroupRequest> __Marshaller_mruv_groups_RemoveSubgroupRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.RemoveSubgroupRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.RemoveSubgroupResponse> __Marshaller_mruv_groups_RemoveSubgroupResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.RemoveSubgroupResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.IsPermittedRequest> __Marshaller_mruv_groups_IsPermittedRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.IsPermittedRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Groups.IsPermittedResponse> __Marshaller_mruv_groups_IsPermittedResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Groups.IsPermittedResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.ServiceStatusRequest> __Marshaller_mruv_ServiceStatusRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.ServiceStatusRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.ServiceStatusResponse> __Marshaller_mruv_ServiceStatusResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.ServiceStatusResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.VersionRequest> __Marshaller_mruv_VersionRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.VersionRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.VersionResponse> __Marshaller_mruv_VersionResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.VersionResponse.Parser.ParseFrom);
+    static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (message is global::Google.Protobuf.IBufferMessage)
+      {
+        context.SetPayloadLength(message.CalculateSize());
+        global::Google.Protobuf.MessageExtensions.WriteTo(message, context.GetBufferWriter());
+        context.Complete();
+        return;
+      }
+      #endif
+      context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));
+    }
+
+    static class __Helper_MessageCache<T>
+    {
+      public static readonly bool IsBufferMessage = global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));
+    }
+
+    static T __Helper_DeserializeMessage<T>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser<T> parser) where T : global::Google.Protobuf.IMessage<T>
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (__Helper_MessageCache<T>.IsBufferMessage)
+      {
+        return parser.ParseFrom(context.PayloadAsReadOnlySequence());
+      }
+      #endif
+      return parser.ParseFrom(context.PayloadAsNewBuffer());
+    }
+
+    static readonly grpc::Marshaller<global::Mruv.Groups.CreateGroupRequest> __Marshaller_mruv_groups_CreateGroupRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Groups.CreateGroupRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Groups.CreateGroupResponse> __Marshaller_mruv_groups_CreateGroupResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Groups.CreateGroupResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Groups.GetGroupRequest> __Marshaller_mruv_groups_GetGroupRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Groups.GetGroupRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Groups.GetGroupResponse> __Marshaller_mruv_groups_GetGroupResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Groups.GetGroupResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Groups.UpdateGroupRequest> __Marshaller_mruv_groups_UpdateGroupRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Groups.UpdateGroupRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Groups.UpdateGroupResponse> __Marshaller_mruv_groups_UpdateGroupResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Groups.UpdateGroupResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Groups.DeleteGroupRequest> __Marshaller_mruv_groups_DeleteGroupRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Groups.DeleteGroupRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Groups.DeleteGroupResponse> __Marshaller_mruv_groups_DeleteGroupResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Groups.DeleteGroupResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Groups.GetGroupsRequest> __Marshaller_mruv_groups_GetGroupsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Groups.GetGroupsRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Groups.GetGroupsResponse> __Marshaller_mruv_groups_GetGroupsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Groups.GetGroupsResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Groups.AssignOwnerRequest> __Marshaller_mruv_groups_AssignOwnerRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Groups.AssignOwnerRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Groups.AssignOwnerResponse> __Marshaller_mruv_groups_AssignOwnerResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Groups.AssignOwnerResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Groups.GetOwnerRequest> __Marshaller_mruv_groups_GetOwnerRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Groups.GetOwnerRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Groups.GetOwnerResponse> __Marshaller_mruv_groups_GetOwnerResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Groups.GetOwnerResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Groups.AddMemberRequest> __Marshaller_mruv_groups_AddMemberRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Groups.AddMemberRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Groups.AddMemberResponse> __Marshaller_mruv_groups_AddMemberResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Groups.AddMemberResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Groups.GetMembersRequest> __Marshaller_mruv_groups_GetMembersRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Groups.GetMembersRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Groups.GetMembersResponse> __Marshaller_mruv_groups_GetMembersResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Groups.GetMembersResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Groups.RemoveMemberRequest> __Marshaller_mruv_groups_RemoveMemberRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Groups.RemoveMemberRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Groups.RemoveMemberResponse> __Marshaller_mruv_groups_RemoveMemberResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Groups.RemoveMemberResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Groups.AddPermissionRequest> __Marshaller_mruv_groups_AddPermissionRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Groups.AddPermissionRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Groups.AddPermissionResponse> __Marshaller_mruv_groups_AddPermissionResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Groups.AddPermissionResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Groups.GetPermissionsRequest> __Marshaller_mruv_groups_GetPermissionsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Groups.GetPermissionsRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Groups.GetPermissionsResponse> __Marshaller_mruv_groups_GetPermissionsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Groups.GetPermissionsResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Groups.RemovePermissionRequest> __Marshaller_mruv_groups_RemovePermissionRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Groups.RemovePermissionRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Groups.RemovePermissionResponse> __Marshaller_mruv_groups_RemovePermissionResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Groups.RemovePermissionResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Groups.AddSubgroupRequest> __Marshaller_mruv_groups_AddSubgroupRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Groups.AddSubgroupRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Groups.AddSubgroupResponse> __Marshaller_mruv_groups_AddSubgroupResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Groups.AddSubgroupResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Groups.GetSubgroupsRequest> __Marshaller_mruv_groups_GetSubgroupsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Groups.GetSubgroupsRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Groups.GetSubgroupsResponse> __Marshaller_mruv_groups_GetSubgroupsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Groups.GetSubgroupsResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Groups.RemoveSubgroupRequest> __Marshaller_mruv_groups_RemoveSubgroupRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Groups.RemoveSubgroupRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Groups.RemoveSubgroupResponse> __Marshaller_mruv_groups_RemoveSubgroupResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Groups.RemoveSubgroupResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Groups.IsPermittedRequest> __Marshaller_mruv_groups_IsPermittedRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Groups.IsPermittedRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Groups.IsPermittedResponse> __Marshaller_mruv_groups_IsPermittedResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Groups.IsPermittedResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Common.ServiceStatusRequest> __Marshaller_mruv_common_ServiceStatusRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Common.ServiceStatusRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Common.ServiceStatusResponse> __Marshaller_mruv_common_ServiceStatusResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Common.ServiceStatusResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Common.VersionRequest> __Marshaller_mruv_common_VersionRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Common.VersionRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Common.VersionResponse> __Marshaller_mruv_common_VersionResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Common.VersionResponse.Parser));
 
     static readonly grpc::Method<global::Mruv.Groups.CreateGroupRequest, global::Mruv.Groups.CreateGroupResponse> __Method_CreateGroup = new grpc::Method<global::Mruv.Groups.CreateGroupRequest, global::Mruv.Groups.CreateGroupResponse>(
         grpc::MethodType.Unary,
@@ -173,19 +203,19 @@ namespace Mruv.Groups {
         __Marshaller_mruv_groups_IsPermittedRequest,
         __Marshaller_mruv_groups_IsPermittedResponse);
 
-    static readonly grpc::Method<global::Mruv.ServiceStatusRequest, global::Mruv.ServiceStatusResponse> __Method_GetServiceStatus = new grpc::Method<global::Mruv.ServiceStatusRequest, global::Mruv.ServiceStatusResponse>(
+    static readonly grpc::Method<global::Mruv.Common.ServiceStatusRequest, global::Mruv.Common.ServiceStatusResponse> __Method_GetServiceStatus = new grpc::Method<global::Mruv.Common.ServiceStatusRequest, global::Mruv.Common.ServiceStatusResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetServiceStatus",
-        __Marshaller_mruv_ServiceStatusRequest,
-        __Marshaller_mruv_ServiceStatusResponse);
+        __Marshaller_mruv_common_ServiceStatusRequest,
+        __Marshaller_mruv_common_ServiceStatusResponse);
 
-    static readonly grpc::Method<global::Mruv.VersionRequest, global::Mruv.VersionResponse> __Method_GetServiceVersion = new grpc::Method<global::Mruv.VersionRequest, global::Mruv.VersionResponse>(
+    static readonly grpc::Method<global::Mruv.Common.VersionRequest, global::Mruv.Common.VersionResponse> __Method_GetServiceVersion = new grpc::Method<global::Mruv.Common.VersionRequest, global::Mruv.Common.VersionResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetServiceVersion",
-        __Marshaller_mruv_VersionRequest,
-        __Marshaller_mruv_VersionResponse);
+        __Marshaller_mruv_common_VersionRequest,
+        __Marshaller_mruv_common_VersionResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -390,12 +420,12 @@ namespace Mruv.Groups {
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.ServiceStatusResponse> GetServiceStatus(global::Mruv.ServiceStatusRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.Common.ServiceStatusResponse> GetServiceStatus(global::Mruv.Common.ServiceStatusRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.VersionResponse> GetServiceVersion(global::Mruv.VersionRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Mruv.Common.VersionResponse> GetServiceVersion(global::Mruv.Common.VersionRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -1181,7 +1211,7 @@ namespace Mruv.Groups {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.ServiceStatusResponse GetServiceStatus(global::Mruv.ServiceStatusRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.Common.ServiceStatusResponse GetServiceStatus(global::Mruv.Common.ServiceStatusRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetServiceStatus(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1191,7 +1221,7 @@ namespace Mruv.Groups {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.ServiceStatusResponse GetServiceStatus(global::Mruv.ServiceStatusRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.Common.ServiceStatusResponse GetServiceStatus(global::Mruv.Common.ServiceStatusRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetServiceStatus, null, options, request);
       }
@@ -1203,7 +1233,7 @@ namespace Mruv.Groups {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.ServiceStatusResponse> GetServiceStatusAsync(global::Mruv.ServiceStatusRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Common.ServiceStatusResponse> GetServiceStatusAsync(global::Mruv.Common.ServiceStatusRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetServiceStatusAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -1213,23 +1243,23 @@ namespace Mruv.Groups {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.ServiceStatusResponse> GetServiceStatusAsync(global::Mruv.ServiceStatusRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Common.ServiceStatusResponse> GetServiceStatusAsync(global::Mruv.Common.ServiceStatusRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetServiceStatus, null, options, request);
       }
-      public virtual global::Mruv.VersionResponse GetServiceVersion(global::Mruv.VersionRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Mruv.Common.VersionResponse GetServiceVersion(global::Mruv.Common.VersionRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetServiceVersion(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Mruv.VersionResponse GetServiceVersion(global::Mruv.VersionRequest request, grpc::CallOptions options)
+      public virtual global::Mruv.Common.VersionResponse GetServiceVersion(global::Mruv.Common.VersionRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetServiceVersion, null, options, request);
       }
-      public virtual grpc::AsyncUnaryCall<global::Mruv.VersionResponse> GetServiceVersionAsync(global::Mruv.VersionRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Common.VersionResponse> GetServiceVersionAsync(global::Mruv.Common.VersionRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetServiceVersionAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual grpc::AsyncUnaryCall<global::Mruv.VersionResponse> GetServiceVersionAsync(global::Mruv.VersionRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Mruv.Common.VersionResponse> GetServiceVersionAsync(global::Mruv.Common.VersionRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetServiceVersion, null, options, request);
       }
@@ -1289,8 +1319,8 @@ namespace Mruv.Groups {
       serviceBinder.AddMethod(__Method_GetSubgroups, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Groups.GetSubgroupsRequest, global::Mruv.Groups.GetSubgroupsResponse>(serviceImpl.GetSubgroups));
       serviceBinder.AddMethod(__Method_RemoveSubgroup, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Groups.RemoveSubgroupRequest, global::Mruv.Groups.RemoveSubgroupResponse>(serviceImpl.RemoveSubgroup));
       serviceBinder.AddMethod(__Method_IsPermitted, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Groups.IsPermittedRequest, global::Mruv.Groups.IsPermittedResponse>(serviceImpl.IsPermitted));
-      serviceBinder.AddMethod(__Method_GetServiceStatus, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.ServiceStatusRequest, global::Mruv.ServiceStatusResponse>(serviceImpl.GetServiceStatus));
-      serviceBinder.AddMethod(__Method_GetServiceVersion, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.VersionRequest, global::Mruv.VersionResponse>(serviceImpl.GetServiceVersion));
+      serviceBinder.AddMethod(__Method_GetServiceStatus, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Common.ServiceStatusRequest, global::Mruv.Common.ServiceStatusResponse>(serviceImpl.GetServiceStatus));
+      serviceBinder.AddMethod(__Method_GetServiceVersion, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Common.VersionRequest, global::Mruv.Common.VersionResponse>(serviceImpl.GetServiceVersion));
     }
 
   }

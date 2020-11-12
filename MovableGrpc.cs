@@ -15,22 +15,52 @@ namespace Mruv.Objects {
   {
     static readonly string __ServiceName = "mruv.objects.MruVMovableObjectsService";
 
-    static readonly grpc::Marshaller<global::Mruv.Objects.CreateMovableObjectRequest> __Marshaller_mruv_objects_CreateMovableObjectRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.CreateMovableObjectRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Objects.CreateMovableObjectResponse> __Marshaller_mruv_objects_CreateMovableObjectResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.CreateMovableObjectResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Objects.GetMovableObjectRequest> __Marshaller_mruv_objects_GetMovableObjectRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.GetMovableObjectRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Objects.GetMovableObjectResponse> __Marshaller_mruv_objects_GetMovableObjectResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.GetMovableObjectResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Objects.UpdateMovableObjectRequest> __Marshaller_mruv_objects_UpdateMovableObjectRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.UpdateMovableObjectRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Objects.UpdateMovableObjectResponse> __Marshaller_mruv_objects_UpdateMovableObjectResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.UpdateMovableObjectResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Objects.DeleteMovableObjectRequest> __Marshaller_mruv_objects_DeleteMovableObjectRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.DeleteMovableObjectRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Objects.DeleteMovableObjectResponse> __Marshaller_mruv_objects_DeleteMovableObjectResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.DeleteMovableObjectResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Objects.MoveObjectRequest> __Marshaller_mruv_objects_MoveObjectRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.MoveObjectRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Objects.MoveObjectResponse> __Marshaller_mruv_objects_MoveObjectResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.MoveObjectResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Objects.MoveObjectNextRequest> __Marshaller_mruv_objects_MoveObjectNextRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.MoveObjectNextRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Objects.MoveObjectNextResponse> __Marshaller_mruv_objects_MoveObjectNextResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.MoveObjectNextResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Objects.MoveObjectPreviousRequest> __Marshaller_mruv_objects_MoveObjectPreviousRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.MoveObjectPreviousRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Objects.MoveObjectPreviousResponse> __Marshaller_mruv_objects_MoveObjectPreviousResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.MoveObjectPreviousResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Objects.FetchAllMovableObjectsRequest> __Marshaller_mruv_objects_FetchAllMovableObjectsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.FetchAllMovableObjectsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Objects.FetchAllMovableObjectsResponse> __Marshaller_mruv_objects_FetchAllMovableObjectsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Objects.FetchAllMovableObjectsResponse.Parser.ParseFrom);
+    static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (message is global::Google.Protobuf.IBufferMessage)
+      {
+        context.SetPayloadLength(message.CalculateSize());
+        global::Google.Protobuf.MessageExtensions.WriteTo(message, context.GetBufferWriter());
+        context.Complete();
+        return;
+      }
+      #endif
+      context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));
+    }
+
+    static class __Helper_MessageCache<T>
+    {
+      public static readonly bool IsBufferMessage = global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));
+    }
+
+    static T __Helper_DeserializeMessage<T>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser<T> parser) where T : global::Google.Protobuf.IMessage<T>
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (__Helper_MessageCache<T>.IsBufferMessage)
+      {
+        return parser.ParseFrom(context.PayloadAsReadOnlySequence());
+      }
+      #endif
+      return parser.ParseFrom(context.PayloadAsNewBuffer());
+    }
+
+    static readonly grpc::Marshaller<global::Mruv.Objects.CreateMovableObjectRequest> __Marshaller_mruv_objects_CreateMovableObjectRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Objects.CreateMovableObjectRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Objects.CreateMovableObjectResponse> __Marshaller_mruv_objects_CreateMovableObjectResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Objects.CreateMovableObjectResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Objects.GetMovableObjectRequest> __Marshaller_mruv_objects_GetMovableObjectRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Objects.GetMovableObjectRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Objects.GetMovableObjectResponse> __Marshaller_mruv_objects_GetMovableObjectResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Objects.GetMovableObjectResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Objects.UpdateMovableObjectRequest> __Marshaller_mruv_objects_UpdateMovableObjectRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Objects.UpdateMovableObjectRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Objects.UpdateMovableObjectResponse> __Marshaller_mruv_objects_UpdateMovableObjectResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Objects.UpdateMovableObjectResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Objects.DeleteMovableObjectRequest> __Marshaller_mruv_objects_DeleteMovableObjectRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Objects.DeleteMovableObjectRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Objects.DeleteMovableObjectResponse> __Marshaller_mruv_objects_DeleteMovableObjectResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Objects.DeleteMovableObjectResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Objects.MoveObjectRequest> __Marshaller_mruv_objects_MoveObjectRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Objects.MoveObjectRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Objects.MoveObjectResponse> __Marshaller_mruv_objects_MoveObjectResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Objects.MoveObjectResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Objects.MoveObjectNextRequest> __Marshaller_mruv_objects_MoveObjectNextRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Objects.MoveObjectNextRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Objects.MoveObjectNextResponse> __Marshaller_mruv_objects_MoveObjectNextResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Objects.MoveObjectNextResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Objects.MoveObjectPreviousRequest> __Marshaller_mruv_objects_MoveObjectPreviousRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Objects.MoveObjectPreviousRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Objects.MoveObjectPreviousResponse> __Marshaller_mruv_objects_MoveObjectPreviousResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Objects.MoveObjectPreviousResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Objects.FetchAllMovableObjectsRequest> __Marshaller_mruv_objects_FetchAllMovableObjectsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Objects.FetchAllMovableObjectsRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Objects.FetchAllMovableObjectsResponse> __Marshaller_mruv_objects_FetchAllMovableObjectsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Objects.FetchAllMovableObjectsResponse.Parser));
 
     static readonly grpc::Method<global::Mruv.Objects.CreateMovableObjectRequest, global::Mruv.Objects.CreateMovableObjectResponse> __Method_CreateMovableObject = new grpc::Method<global::Mruv.Objects.CreateMovableObjectRequest, global::Mruv.Objects.CreateMovableObjectResponse>(
         grpc::MethodType.Unary,

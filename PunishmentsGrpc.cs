@@ -15,74 +15,93 @@ namespace Mruv.Punishments {
   {
     static readonly string __ServiceName = "mruv.punishments.MruVPunishmentsService";
 
-    static readonly grpc::Marshaller<global::Mruv.Punishments.PunishRequest> __Marshaller_mruv_punishments_PunishRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.PunishRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.PunishResponse> __Marshaller_mruv_punishments_PunishResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.PunishResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.BanRequest> __Marshaller_mruv_punishments_BanRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.BanRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.BanResponse> __Marshaller_mruv_punishments_BanResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.BanResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.BlockRequest> __Marshaller_mruv_punishments_BlockRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.BlockRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.BlockResponse> __Marshaller_mruv_punishments_BlockResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.BlockResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.WarnRequest> __Marshaller_mruv_punishments_WarnRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.WarnRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.WarnResponse> __Marshaller_mruv_punishments_WarnResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.WarnResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.AdminJailRequest> __Marshaller_mruv_punishments_AdminJailRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.AdminJailRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.AdminJailResponse> __Marshaller_mruv_punishments_AdminJailResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.AdminJailResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.MuteGlobalChatsRequest> __Marshaller_mruv_punishments_MuteGlobalChatsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.MuteGlobalChatsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.MuteGlobalChatsResponse> __Marshaller_mruv_punishments_MuteGlobalChatsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.MuteGlobalChatsResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.UnBanRequest> __Marshaller_mruv_punishments_UnBanRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.UnBanRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.UnBanResponse> __Marshaller_mruv_punishments_UnBanResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.UnBanResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.UnBlockRequest> __Marshaller_mruv_punishments_UnBlockRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.UnBlockRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.UnBlockResponse> __Marshaller_mruv_punishments_UnBlockResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.UnBlockResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.UnWarnRequest> __Marshaller_mruv_punishments_UnWarnRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.UnWarnRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.UnWarnResponse> __Marshaller_mruv_punishments_UnWarnResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.UnWarnResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.UnAdminJailRequest> __Marshaller_mruv_punishments_UnAdminJailRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.UnAdminJailRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.UnAdminJailResponse> __Marshaller_mruv_punishments_UnAdminJailResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.UnAdminJailResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.UnMuteGlobalChatsRequest> __Marshaller_mruv_punishments_UnMuteGlobalChatsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.UnMuteGlobalChatsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.UnMuteGlobalChatsResponse> __Marshaller_mruv_punishments_UnMuteGlobalChatsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.UnMuteGlobalChatsResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.GetPlayerBansRequest> __Marshaller_mruv_punishments_GetPlayerBansRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.GetPlayerBansRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.GetPlayerBansResponse> __Marshaller_mruv_punishments_GetPlayerBansResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.GetPlayerBansResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.GetPlayerWarnsRequest> __Marshaller_mruv_punishments_GetPlayerWarnsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.GetPlayerWarnsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.GetPlayerWarnsResponse> __Marshaller_mruv_punishments_GetPlayerWarnsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.GetPlayerWarnsResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.GetPlayerAdminJailRequest> __Marshaller_mruv_punishments_GetPlayerAdminJailRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.GetPlayerAdminJailRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.GetPlayerAdminJailResponse> __Marshaller_mruv_punishments_GetPlayerAdminJailResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.GetPlayerAdminJailResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.GetBanRequest> __Marshaller_mruv_punishments_GetBanRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.GetBanRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.BanMessage> __Marshaller_mruv_punishments_BanMessage = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.BanMessage.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.GetWarnRequest> __Marshaller_mruv_punishments_GetWarnRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.GetWarnRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.WarnMessage> __Marshaller_mruv_punishments_WarnMessage = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.WarnMessage.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.GetBlockRequest> __Marshaller_mruv_punishments_GetBlockRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.GetBlockRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.BlockMessage> __Marshaller_mruv_punishments_BlockMessage = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.BlockMessage.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.IsPlayerBannedRequest> __Marshaller_mruv_punishments_IsPlayerBannedRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.IsPlayerBannedRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.IsPlayerBannedResponse> __Marshaller_mruv_punishments_IsPlayerBannedResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.IsPlayerBannedResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.IsCharacterBlockedRequest> __Marshaller_mruv_punishments_IsCharacterBlockedRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.IsCharacterBlockedRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.IsCharacterBlockedResponse> __Marshaller_mruv_punishments_IsCharacterBlockedResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.IsCharacterBlockedResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.IsCharacterJailedRequest> __Marshaller_mruv_punishments_IsCharacterJailedRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.IsCharacterJailedRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.IsCharacterJailedResponse> __Marshaller_mruv_punishments_IsCharacterJailedResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.IsCharacterJailedResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.WatchBansRequest> __Marshaller_mruv_punishments_WatchBansRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.WatchBansRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.WatchBlocksRequest> __Marshaller_mruv_punishments_WatchBlocksRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.WatchBlocksRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.WatchWarnsRequest> __Marshaller_mruv_punishments_WatchWarnsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.WatchWarnsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.WatchAdminJailsRequest> __Marshaller_mruv_punishments_WatchAdminJailsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.WatchAdminJailsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.AdminJailMessage> __Marshaller_mruv_punishments_AdminJailMessage = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.AdminJailMessage.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.WatchUnBansRequest> __Marshaller_mruv_punishments_WatchUnBansRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.WatchUnBansRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.UnBanMessage> __Marshaller_mruv_punishments_UnBanMessage = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.UnBanMessage.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.WatchUnBlocksRequest> __Marshaller_mruv_punishments_WatchUnBlocksRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.WatchUnBlocksRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.UnBlockMessage> __Marshaller_mruv_punishments_UnBlockMessage = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.UnBlockMessage.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.WatchUnWarnsRequest> __Marshaller_mruv_punishments_WatchUnWarnsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.WatchUnWarnsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.UnWarnMessage> __Marshaller_mruv_punishments_UnWarnMessage = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.UnWarnMessage.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.WatchUnAdminJailsRequest> __Marshaller_mruv_punishments_WatchUnAdminJailsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.WatchUnAdminJailsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.UnAdminJailMessage> __Marshaller_mruv_punishments_UnAdminJailMessage = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.UnAdminJailMessage.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.WatchPlayerPunishmentsRequest> __Marshaller_mruv_punishments_WatchPlayerPunishmentsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.WatchPlayerPunishmentsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.WatchPlayerPunishmentsResponse> __Marshaller_mruv_punishments_WatchPlayerPunishmentsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.WatchPlayerPunishmentsResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.WatchPlayerAcquittalsRequest> __Marshaller_mruv_punishments_WatchPlayerAcquittalsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.WatchPlayerAcquittalsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.WatchPlayerAcquittalsResponse> __Marshaller_mruv_punishments_WatchPlayerAcquittalsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.WatchPlayerAcquittalsResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.WatchPunishmentsRequest> __Marshaller_mruv_punishments_WatchPunishmentsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.WatchPunishmentsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.WatchPunishmentsResponse> __Marshaller_mruv_punishments_WatchPunishmentsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.WatchPunishmentsResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.WatchAcquittalsRequest> __Marshaller_mruv_punishments_WatchAcquittalsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.WatchAcquittalsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Punishments.WatchAcquittalsResponse> __Marshaller_mruv_punishments_WatchAcquittalsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Punishments.WatchAcquittalsResponse.Parser.ParseFrom);
+    static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (message is global::Google.Protobuf.IBufferMessage)
+      {
+        context.SetPayloadLength(message.CalculateSize());
+        global::Google.Protobuf.MessageExtensions.WriteTo(message, context.GetBufferWriter());
+        context.Complete();
+        return;
+      }
+      #endif
+      context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));
+    }
 
-    static readonly grpc::Method<global::Mruv.Punishments.PunishRequest, global::Mruv.Punishments.PunishResponse> __Method_Punish = new grpc::Method<global::Mruv.Punishments.PunishRequest, global::Mruv.Punishments.PunishResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "Punish",
-        __Marshaller_mruv_punishments_PunishRequest,
-        __Marshaller_mruv_punishments_PunishResponse);
+    static class __Helper_MessageCache<T>
+    {
+      public static readonly bool IsBufferMessage = global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));
+    }
+
+    static T __Helper_DeserializeMessage<T>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser<T> parser) where T : global::Google.Protobuf.IMessage<T>
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (__Helper_MessageCache<T>.IsBufferMessage)
+      {
+        return parser.ParseFrom(context.PayloadAsReadOnlySequence());
+      }
+      #endif
+      return parser.ParseFrom(context.PayloadAsNewBuffer());
+    }
+
+    static readonly grpc::Marshaller<global::Mruv.Punishments.BanRequest> __Marshaller_mruv_punishments_BanRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.BanRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.BanResponse> __Marshaller_mruv_punishments_BanResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.BanResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.BlockRequest> __Marshaller_mruv_punishments_BlockRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.BlockRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.BlockResponse> __Marshaller_mruv_punishments_BlockResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.BlockResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.WarnRequest> __Marshaller_mruv_punishments_WarnRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.WarnRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.WarnResponse> __Marshaller_mruv_punishments_WarnResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.WarnResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.AdminJailRequest> __Marshaller_mruv_punishments_AdminJailRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.AdminJailRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.AdminJailResponse> __Marshaller_mruv_punishments_AdminJailResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.AdminJailResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.MuteGlobalChatsRequest> __Marshaller_mruv_punishments_MuteGlobalChatsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.MuteGlobalChatsRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.MuteGlobalChatsResponse> __Marshaller_mruv_punishments_MuteGlobalChatsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.MuteGlobalChatsResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.UnBanRequest> __Marshaller_mruv_punishments_UnBanRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.UnBanRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.UnBanResponse> __Marshaller_mruv_punishments_UnBanResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.UnBanResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.UnBlockRequest> __Marshaller_mruv_punishments_UnBlockRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.UnBlockRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.UnBlockResponse> __Marshaller_mruv_punishments_UnBlockResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.UnBlockResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.UnWarnRequest> __Marshaller_mruv_punishments_UnWarnRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.UnWarnRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.UnWarnResponse> __Marshaller_mruv_punishments_UnWarnResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.UnWarnResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.UnAdminJailRequest> __Marshaller_mruv_punishments_UnAdminJailRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.UnAdminJailRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.UnAdminJailResponse> __Marshaller_mruv_punishments_UnAdminJailResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.UnAdminJailResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.UnMuteGlobalChatsRequest> __Marshaller_mruv_punishments_UnMuteGlobalChatsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.UnMuteGlobalChatsRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.UnMuteGlobalChatsResponse> __Marshaller_mruv_punishments_UnMuteGlobalChatsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.UnMuteGlobalChatsResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.GetPlayerBansRequest> __Marshaller_mruv_punishments_GetPlayerBansRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.GetPlayerBansRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.GetPlayerBansResponse> __Marshaller_mruv_punishments_GetPlayerBansResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.GetPlayerBansResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.GetPlayerWarnsRequest> __Marshaller_mruv_punishments_GetPlayerWarnsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.GetPlayerWarnsRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.GetPlayerWarnsResponse> __Marshaller_mruv_punishments_GetPlayerWarnsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.GetPlayerWarnsResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.GetPlayerAdminJailRequest> __Marshaller_mruv_punishments_GetPlayerAdminJailRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.GetPlayerAdminJailRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.GetPlayerAdminJailResponse> __Marshaller_mruv_punishments_GetPlayerAdminJailResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.GetPlayerAdminJailResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.GetBanRequest> __Marshaller_mruv_punishments_GetBanRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.GetBanRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.BanMessage> __Marshaller_mruv_punishments_BanMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.BanMessage.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.GetWarnRequest> __Marshaller_mruv_punishments_GetWarnRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.GetWarnRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.WarnMessage> __Marshaller_mruv_punishments_WarnMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.WarnMessage.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.GetBlockRequest> __Marshaller_mruv_punishments_GetBlockRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.GetBlockRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.BlockMessage> __Marshaller_mruv_punishments_BlockMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.BlockMessage.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.IsPlayerBannedRequest> __Marshaller_mruv_punishments_IsPlayerBannedRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.IsPlayerBannedRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.IsPlayerBannedResponse> __Marshaller_mruv_punishments_IsPlayerBannedResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.IsPlayerBannedResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.IsCharacterBlockedRequest> __Marshaller_mruv_punishments_IsCharacterBlockedRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.IsCharacterBlockedRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.IsCharacterBlockedResponse> __Marshaller_mruv_punishments_IsCharacterBlockedResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.IsCharacterBlockedResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.IsCharacterJailedRequest> __Marshaller_mruv_punishments_IsCharacterJailedRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.IsCharacterJailedRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.IsCharacterJailedResponse> __Marshaller_mruv_punishments_IsCharacterJailedResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.IsCharacterJailedResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.WatchBansRequest> __Marshaller_mruv_punishments_WatchBansRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.WatchBansRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.WatchBlocksRequest> __Marshaller_mruv_punishments_WatchBlocksRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.WatchBlocksRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.WatchWarnsRequest> __Marshaller_mruv_punishments_WatchWarnsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.WatchWarnsRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.WatchAdminJailsRequest> __Marshaller_mruv_punishments_WatchAdminJailsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.WatchAdminJailsRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.AdminJailMessage> __Marshaller_mruv_punishments_AdminJailMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.AdminJailMessage.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.WatchUnBansRequest> __Marshaller_mruv_punishments_WatchUnBansRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.WatchUnBansRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.UnBanMessage> __Marshaller_mruv_punishments_UnBanMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.UnBanMessage.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.WatchUnBlocksRequest> __Marshaller_mruv_punishments_WatchUnBlocksRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.WatchUnBlocksRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.UnBlockMessage> __Marshaller_mruv_punishments_UnBlockMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.UnBlockMessage.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.WatchUnWarnsRequest> __Marshaller_mruv_punishments_WatchUnWarnsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.WatchUnWarnsRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.UnWarnMessage> __Marshaller_mruv_punishments_UnWarnMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.UnWarnMessage.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.WatchUnAdminJailsRequest> __Marshaller_mruv_punishments_WatchUnAdminJailsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.WatchUnAdminJailsRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.UnAdminJailMessage> __Marshaller_mruv_punishments_UnAdminJailMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.UnAdminJailMessage.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.WatchPlayerPunishmentsRequest> __Marshaller_mruv_punishments_WatchPlayerPunishmentsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.WatchPlayerPunishmentsRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.WatchPlayerPunishmentsResponse> __Marshaller_mruv_punishments_WatchPlayerPunishmentsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.WatchPlayerPunishmentsResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.WatchPlayerAcquittalsRequest> __Marshaller_mruv_punishments_WatchPlayerAcquittalsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.WatchPlayerAcquittalsRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.WatchPlayerAcquittalsResponse> __Marshaller_mruv_punishments_WatchPlayerAcquittalsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.WatchPlayerAcquittalsResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.WatchPunishmentsRequest> __Marshaller_mruv_punishments_WatchPunishmentsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.WatchPunishmentsRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Punishments.WatchPunishmentsResponse> __Marshaller_mruv_punishments_WatchPunishmentsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Punishments.WatchPunishmentsResponse.Parser));
 
     static readonly grpc::Method<global::Mruv.Punishments.BanRequest, global::Mruv.Punishments.BanResponse> __Method_Ban = new grpc::Method<global::Mruv.Punishments.BanRequest, global::Mruv.Punishments.BanResponse>(
         grpc::MethodType.Unary,
@@ -294,13 +313,6 @@ namespace Mruv.Punishments {
         __Marshaller_mruv_punishments_WatchPunishmentsRequest,
         __Marshaller_mruv_punishments_WatchPunishmentsResponse);
 
-    static readonly grpc::Method<global::Mruv.Punishments.WatchAcquittalsRequest, global::Mruv.Punishments.WatchAcquittalsResponse> __Method_WatchAcquittals = new grpc::Method<global::Mruv.Punishments.WatchAcquittalsRequest, global::Mruv.Punishments.WatchAcquittalsResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "WatchAcquittals",
-        __Marshaller_mruv_punishments_WatchAcquittalsRequest,
-        __Marshaller_mruv_punishments_WatchAcquittalsResponse);
-
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -311,17 +323,6 @@ namespace Mruv.Punishments {
     [grpc::BindServiceMethod(typeof(MruVPunishmentsService), "BindService")]
     public abstract partial class MruVPunishmentsServiceBase
     {
-      /// <summary>
-      /// Punish player with choosen punishment type.
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Punishments.PunishResponse> Punish(global::Mruv.Punishments.PunishRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
       /// <summary>
       /// Ban player on account and/or ip.
       /// If ban_time is 0, ban will never expire.
@@ -652,24 +653,13 @@ namespace Mruv.Punishments {
       }
 
       /// <summary>
-      /// Subscribe to all punishments events.
+      /// Subscribe to all punishments and acquittals events.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="responseStream">Used for sending responses back to the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>A task indicating completion of the handler.</returns>
       public virtual global::System.Threading.Tasks.Task WatchPunishments(global::Mruv.Punishments.WatchPunishmentsRequest request, grpc::IServerStreamWriter<global::Mruv.Punishments.WatchPunishmentsResponse> responseStream, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      /// Subscribe to all acquittals events.
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Mruv.Punishments.WatchAcquittalsResponse> WatchAcquittals(global::Mruv.Punishments.WatchAcquittalsRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -699,50 +689,6 @@ namespace Mruv.Punishments {
       {
       }
 
-      /// <summary>
-      /// Punish player with choosen punishment type.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Punishments.PunishResponse Punish(global::Mruv.Punishments.PunishRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return Punish(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Punish player with choosen punishment type.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Punishments.PunishResponse Punish(global::Mruv.Punishments.PunishRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_Punish, null, options, request);
-      }
-      /// <summary>
-      /// Punish player with choosen punishment type.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.PunishResponse> PunishAsync(global::Mruv.Punishments.PunishRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return PunishAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Punish player with choosen punishment type.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.PunishResponse> PunishAsync(global::Mruv.Punishments.PunishRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_Punish, null, options, request);
-      }
       /// <summary>
       /// Ban player on account and/or ip.
       /// If ban_time is 0, ban will never expire.
@@ -1800,7 +1746,7 @@ namespace Mruv.Punishments {
         return CallInvoker.AsyncServerStreamingCall(__Method_WatchPlayerAcquittals, null, options, request);
       }
       /// <summary>
-      /// Subscribe to all punishments events.
+      /// Subscribe to all punishments and acquittals events.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1812,7 +1758,7 @@ namespace Mruv.Punishments {
         return WatchPunishments(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Subscribe to all punishments events.
+      /// Subscribe to all punishments and acquittals events.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1820,50 +1766,6 @@ namespace Mruv.Punishments {
       public virtual grpc::AsyncServerStreamingCall<global::Mruv.Punishments.WatchPunishmentsResponse> WatchPunishments(global::Mruv.Punishments.WatchPunishmentsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_WatchPunishments, null, options, request);
-      }
-      /// <summary>
-      /// Subscribe to all acquittals events.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Punishments.WatchAcquittalsResponse WatchAcquittals(global::Mruv.Punishments.WatchAcquittalsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return WatchAcquittals(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Subscribe to all acquittals events.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      public virtual global::Mruv.Punishments.WatchAcquittalsResponse WatchAcquittals(global::Mruv.Punishments.WatchAcquittalsRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_WatchAcquittals, null, options, request);
-      }
-      /// <summary>
-      /// Subscribe to all acquittals events.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.WatchAcquittalsResponse> WatchAcquittalsAsync(global::Mruv.Punishments.WatchAcquittalsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return WatchAcquittalsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Subscribe to all acquittals events.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Mruv.Punishments.WatchAcquittalsResponse> WatchAcquittalsAsync(global::Mruv.Punishments.WatchAcquittalsRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_WatchAcquittals, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override MruVPunishmentsServiceClient NewInstance(ClientBaseConfiguration configuration)
@@ -1877,7 +1779,6 @@ namespace Mruv.Punishments {
     public static grpc::ServerServiceDefinition BindService(MruVPunishmentsServiceBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_Punish, serviceImpl.Punish)
           .AddMethod(__Method_Ban, serviceImpl.Ban)
           .AddMethod(__Method_Block, serviceImpl.Block)
           .AddMethod(__Method_Warn, serviceImpl.Warn)
@@ -1907,8 +1808,7 @@ namespace Mruv.Punishments {
           .AddMethod(__Method_WatchUnAdminJails, serviceImpl.WatchUnAdminJails)
           .AddMethod(__Method_WatchPlayerPunishments, serviceImpl.WatchPlayerPunishments)
           .AddMethod(__Method_WatchPlayerAcquittals, serviceImpl.WatchPlayerAcquittals)
-          .AddMethod(__Method_WatchPunishments, serviceImpl.WatchPunishments)
-          .AddMethod(__Method_WatchAcquittals, serviceImpl.WatchAcquittals).Build();
+          .AddMethod(__Method_WatchPunishments, serviceImpl.WatchPunishments).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
@@ -1917,7 +1817,6 @@ namespace Mruv.Punishments {
     /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
     public static void BindService(grpc::ServiceBinderBase serviceBinder, MruVPunishmentsServiceBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_Punish, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Punishments.PunishRequest, global::Mruv.Punishments.PunishResponse>(serviceImpl.Punish));
       serviceBinder.AddMethod(__Method_Ban, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Punishments.BanRequest, global::Mruv.Punishments.BanResponse>(serviceImpl.Ban));
       serviceBinder.AddMethod(__Method_Block, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Punishments.BlockRequest, global::Mruv.Punishments.BlockResponse>(serviceImpl.Block));
       serviceBinder.AddMethod(__Method_Warn, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Punishments.WarnRequest, global::Mruv.Punishments.WarnResponse>(serviceImpl.Warn));
@@ -1948,7 +1847,6 @@ namespace Mruv.Punishments {
       serviceBinder.AddMethod(__Method_WatchPlayerPunishments, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Mruv.Punishments.WatchPlayerPunishmentsRequest, global::Mruv.Punishments.WatchPlayerPunishmentsResponse>(serviceImpl.WatchPlayerPunishments));
       serviceBinder.AddMethod(__Method_WatchPlayerAcquittals, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Mruv.Punishments.WatchPlayerAcquittalsRequest, global::Mruv.Punishments.WatchPlayerAcquittalsResponse>(serviceImpl.WatchPlayerAcquittals));
       serviceBinder.AddMethod(__Method_WatchPunishments, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Mruv.Punishments.WatchPunishmentsRequest, global::Mruv.Punishments.WatchPunishmentsResponse>(serviceImpl.WatchPunishments));
-      serviceBinder.AddMethod(__Method_WatchAcquittals, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mruv.Punishments.WatchAcquittalsRequest, global::Mruv.Punishments.WatchAcquittalsResponse>(serviceImpl.WatchAcquittals));
     }
 
   }

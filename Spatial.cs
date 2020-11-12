@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Mruv {
+namespace Mruv.Common {
 
   /// <summary>Holder for reflection information generated from common/spatial.proto</summary>
   public static partial class SpatialReflection {
@@ -24,22 +24,26 @@ namespace Mruv {
     static SpatialReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChRjb21tb24vc3BhdGlhbC5wcm90bxIEbXJ1diIrCghQb3NpdGlvbhIJCgF4",
-            "GAEgASgBEgkKAXkYAiABKAESCQoBehgDIAEoASIuCghSb3RhdGlvbhIKCgJy",
-            "eBgBIAEoARIKCgJyeRgCIAEoARIKCgJyehgDIAEoAUImWiRnaXRodWIuY29t",
-            "L01ydVYtUlAvbXJ1di1wYi1nby9jb21tb25iBnByb3RvMw=="));
+            "ChRjb21tb24vc3BhdGlhbC5wcm90bxILbXJ1di5jb21tb24iKwoIUG9zaXRp",
+            "b24SCQoBeBgBIAEoARIJCgF5GAIgASgBEgkKAXoYAyABKAEiLgoIUm90YXRp",
+            "b24SCgoCcngYASABKAESCgoCcnkYAiABKAESCgoCcnoYAyABKAFCJlokZ2l0",
+            "aHViLmNvbS9NcnVWLVJQL21ydXYtcGItZ28vY29tbW9uYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Position), global::Mruv.Position.Parser, new[]{ "X", "Y", "Z" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Rotation), global::Mruv.Rotation.Parser, new[]{ "Rx", "Ry", "Rz" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Common.Position), global::Mruv.Common.Position.Parser, new[]{ "X", "Y", "Z" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Common.Rotation), global::Mruv.Common.Rotation.Parser, new[]{ "Rx", "Ry", "Rz" }, null, null, null, null)
           }));
     }
     #endregion
 
   }
   #region Messages
-  public sealed partial class Position : pb::IMessage<Position> {
+  public sealed partial class Position : pb::IMessage<Position>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<Position> _parser = new pb::MessageParser<Position>(() => new Position());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -47,7 +51,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.SpatialReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Mruv.Common.SpatialReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -146,6 +150,9 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (X != 0D) {
         output.WriteRawTag(9);
         output.WriteDouble(X);
@@ -161,7 +168,29 @@ namespace Mruv {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (X != 0D) {
+        output.WriteRawTag(9);
+        output.WriteDouble(X);
+      }
+      if (Y != 0D) {
+        output.WriteRawTag(17);
+        output.WriteDouble(Y);
+      }
+      if (Z != 0D) {
+        output.WriteRawTag(25);
+        output.WriteDouble(Z);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -200,6 +229,9 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -220,11 +252,42 @@ namespace Mruv {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 9: {
+            X = input.ReadDouble();
+            break;
+          }
+          case 17: {
+            Y = input.ReadDouble();
+            break;
+          }
+          case 25: {
+            Z = input.ReadDouble();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  public sealed partial class Rotation : pb::IMessage<Rotation> {
+  public sealed partial class Rotation : pb::IMessage<Rotation>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<Rotation> _parser = new pb::MessageParser<Rotation>(() => new Rotation());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -232,7 +295,7 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Mruv.SpatialReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Mruv.Common.SpatialReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -331,6 +394,9 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Rx != 0D) {
         output.WriteRawTag(9);
         output.WriteDouble(Rx);
@@ -346,7 +412,29 @@ namespace Mruv {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Rx != 0D) {
+        output.WriteRawTag(9);
+        output.WriteDouble(Rx);
+      }
+      if (Ry != 0D) {
+        output.WriteRawTag(17);
+        output.WriteDouble(Ry);
+      }
+      if (Rz != 0D) {
+        output.WriteRawTag(25);
+        output.WriteDouble(Rz);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -385,6 +473,9 @@ namespace Mruv {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -405,7 +496,34 @@ namespace Mruv {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 9: {
+            Rx = input.ReadDouble();
+            break;
+          }
+          case 17: {
+            Ry = input.ReadDouble();
+            break;
+          }
+          case 25: {
+            Rz = input.ReadDouble();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

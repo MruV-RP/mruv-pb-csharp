@@ -15,14 +15,44 @@ namespace Mruv.Vehicles {
   {
     static readonly string __ServiceName = "mruv.vehicles.MruVVehiclesService";
 
-    static readonly grpc::Marshaller<global::Mruv.Vehicles.CreateVehicleRequest> __Marshaller_mruv_vehicles_CreateVehicleRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Vehicles.CreateVehicleRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Vehicles.CreateVehicleResponse> __Marshaller_mruv_vehicles_CreateVehicleResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Vehicles.CreateVehicleResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Vehicles.GetVehicleRequest> __Marshaller_mruv_vehicles_GetVehicleRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Vehicles.GetVehicleRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Vehicles.GetVehicleResponse> __Marshaller_mruv_vehicles_GetVehicleResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Vehicles.GetVehicleResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Vehicles.UpdateVehicleRequest> __Marshaller_mruv_vehicles_UpdateVehicleRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Vehicles.UpdateVehicleRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Vehicles.UpdateVehicleResponse> __Marshaller_mruv_vehicles_UpdateVehicleResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Vehicles.UpdateVehicleResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Vehicles.DeleteVehicleRequest> __Marshaller_mruv_vehicles_DeleteVehicleRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Vehicles.DeleteVehicleRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Vehicles.DeleteVehicleResponse> __Marshaller_mruv_vehicles_DeleteVehicleResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Vehicles.DeleteVehicleResponse.Parser.ParseFrom);
+    static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (message is global::Google.Protobuf.IBufferMessage)
+      {
+        context.SetPayloadLength(message.CalculateSize());
+        global::Google.Protobuf.MessageExtensions.WriteTo(message, context.GetBufferWriter());
+        context.Complete();
+        return;
+      }
+      #endif
+      context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));
+    }
+
+    static class __Helper_MessageCache<T>
+    {
+      public static readonly bool IsBufferMessage = global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));
+    }
+
+    static T __Helper_DeserializeMessage<T>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser<T> parser) where T : global::Google.Protobuf.IMessage<T>
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (__Helper_MessageCache<T>.IsBufferMessage)
+      {
+        return parser.ParseFrom(context.PayloadAsReadOnlySequence());
+      }
+      #endif
+      return parser.ParseFrom(context.PayloadAsNewBuffer());
+    }
+
+    static readonly grpc::Marshaller<global::Mruv.Vehicles.CreateVehicleRequest> __Marshaller_mruv_vehicles_CreateVehicleRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Vehicles.CreateVehicleRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Vehicles.CreateVehicleResponse> __Marshaller_mruv_vehicles_CreateVehicleResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Vehicles.CreateVehicleResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Vehicles.GetVehicleRequest> __Marshaller_mruv_vehicles_GetVehicleRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Vehicles.GetVehicleRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Vehicles.GetVehicleResponse> __Marshaller_mruv_vehicles_GetVehicleResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Vehicles.GetVehicleResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Vehicles.UpdateVehicleRequest> __Marshaller_mruv_vehicles_UpdateVehicleRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Vehicles.UpdateVehicleRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Vehicles.UpdateVehicleResponse> __Marshaller_mruv_vehicles_UpdateVehicleResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Vehicles.UpdateVehicleResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Vehicles.DeleteVehicleRequest> __Marshaller_mruv_vehicles_DeleteVehicleRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Vehicles.DeleteVehicleRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Vehicles.DeleteVehicleResponse> __Marshaller_mruv_vehicles_DeleteVehicleResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Vehicles.DeleteVehicleResponse.Parser));
 
     static readonly grpc::Method<global::Mruv.Vehicles.CreateVehicleRequest, global::Mruv.Vehicles.CreateVehicleResponse> __Method_CreateVehicle = new grpc::Method<global::Mruv.Vehicles.CreateVehicleRequest, global::Mruv.Vehicles.CreateVehicleResponse>(
         grpc::MethodType.Unary,

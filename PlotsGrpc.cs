@@ -15,14 +15,44 @@ namespace Mruv.Plots {
   {
     static readonly string __ServiceName = "mruv.plots.MruVPlotsService";
 
-    static readonly grpc::Marshaller<global::Mruv.Plots.CreatePlotRequest> __Marshaller_mruv_plots_CreatePlotRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Plots.CreatePlotRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Plots.CreatePlotResponse> __Marshaller_mruv_plots_CreatePlotResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Plots.CreatePlotResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Plots.GetPlotRequest> __Marshaller_mruv_plots_GetPlotRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Plots.GetPlotRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Plots.GetPlotResponse> __Marshaller_mruv_plots_GetPlotResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Plots.GetPlotResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Plots.UpdatePlotRequest> __Marshaller_mruv_plots_UpdatePlotRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Plots.UpdatePlotRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Plots.UpdatePlotResponse> __Marshaller_mruv_plots_UpdatePlotResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Plots.UpdatePlotResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Plots.DeletePlotRequest> __Marshaller_mruv_plots_DeletePlotRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Plots.DeletePlotRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Plots.DeletePlotResponse> __Marshaller_mruv_plots_DeletePlotResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Plots.DeletePlotResponse.Parser.ParseFrom);
+    static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (message is global::Google.Protobuf.IBufferMessage)
+      {
+        context.SetPayloadLength(message.CalculateSize());
+        global::Google.Protobuf.MessageExtensions.WriteTo(message, context.GetBufferWriter());
+        context.Complete();
+        return;
+      }
+      #endif
+      context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));
+    }
+
+    static class __Helper_MessageCache<T>
+    {
+      public static readonly bool IsBufferMessage = global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));
+    }
+
+    static T __Helper_DeserializeMessage<T>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser<T> parser) where T : global::Google.Protobuf.IMessage<T>
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (__Helper_MessageCache<T>.IsBufferMessage)
+      {
+        return parser.ParseFrom(context.PayloadAsReadOnlySequence());
+      }
+      #endif
+      return parser.ParseFrom(context.PayloadAsNewBuffer());
+    }
+
+    static readonly grpc::Marshaller<global::Mruv.Plots.CreatePlotRequest> __Marshaller_mruv_plots_CreatePlotRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Plots.CreatePlotRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Plots.CreatePlotResponse> __Marshaller_mruv_plots_CreatePlotResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Plots.CreatePlotResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Plots.GetPlotRequest> __Marshaller_mruv_plots_GetPlotRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Plots.GetPlotRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Plots.GetPlotResponse> __Marshaller_mruv_plots_GetPlotResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Plots.GetPlotResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Plots.UpdatePlotRequest> __Marshaller_mruv_plots_UpdatePlotRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Plots.UpdatePlotRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Plots.UpdatePlotResponse> __Marshaller_mruv_plots_UpdatePlotResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Plots.UpdatePlotResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Plots.DeletePlotRequest> __Marshaller_mruv_plots_DeletePlotRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Plots.DeletePlotRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Plots.DeletePlotResponse> __Marshaller_mruv_plots_DeletePlotResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Plots.DeletePlotResponse.Parser));
 
     static readonly grpc::Method<global::Mruv.Plots.CreatePlotRequest, global::Mruv.Plots.CreatePlotResponse> __Method_CreatePlot = new grpc::Method<global::Mruv.Plots.CreatePlotRequest, global::Mruv.Plots.CreatePlotResponse>(
         grpc::MethodType.Unary,

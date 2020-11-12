@@ -15,24 +15,54 @@ namespace Mruv.Economy {
   {
     static readonly string __ServiceName = "mruv.economy.MruVEconomyService";
 
-    static readonly grpc::Marshaller<global::Mruv.Economy.RegisterProductRequest> __Marshaller_mruv_economy_RegisterProductRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.RegisterProductRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.RegisterProductResponse> __Marshaller_mruv_economy_RegisterProductResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.RegisterProductResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.GetProductRequest> __Marshaller_mruv_economy_GetProductRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.GetProductRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.GetProductResponse> __Marshaller_mruv_economy_GetProductResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.GetProductResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.UpdateProductRequest> __Marshaller_mruv_economy_UpdateProductRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.UpdateProductRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.UpdateProductResponse> __Marshaller_mruv_economy_UpdateProductResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.UpdateProductResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.DeleteProductRequest> __Marshaller_mruv_economy_DeleteProductRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.DeleteProductRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.DeleteProductResponse> __Marshaller_mruv_economy_DeleteProductResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.DeleteProductResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.UpdatePriceRequest> __Marshaller_mruv_economy_UpdatePriceRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.UpdatePriceRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.UpdatePriceResponse> __Marshaller_mruv_economy_UpdatePriceResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.UpdatePriceResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.GetPriceRequest> __Marshaller_mruv_economy_GetPriceRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.GetPriceRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.GetPriceResponse> __Marshaller_mruv_economy_GetPriceResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.GetPriceResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.BuyProductRequest> __Marshaller_mruv_economy_BuyProductRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.BuyProductRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.BuyProductResponse> __Marshaller_mruv_economy_BuyProductResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.BuyProductResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.WatchProductRequest> __Marshaller_mruv_economy_WatchProductRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.WatchProductRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.WatchProductResponse> __Marshaller_mruv_economy_WatchProductResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.WatchProductResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.WatchPriceRequest> __Marshaller_mruv_economy_WatchPriceRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.WatchPriceRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Economy.WatchPriceResponse> __Marshaller_mruv_economy_WatchPriceResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Economy.WatchPriceResponse.Parser.ParseFrom);
+    static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (message is global::Google.Protobuf.IBufferMessage)
+      {
+        context.SetPayloadLength(message.CalculateSize());
+        global::Google.Protobuf.MessageExtensions.WriteTo(message, context.GetBufferWriter());
+        context.Complete();
+        return;
+      }
+      #endif
+      context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));
+    }
+
+    static class __Helper_MessageCache<T>
+    {
+      public static readonly bool IsBufferMessage = global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));
+    }
+
+    static T __Helper_DeserializeMessage<T>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser<T> parser) where T : global::Google.Protobuf.IMessage<T>
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (__Helper_MessageCache<T>.IsBufferMessage)
+      {
+        return parser.ParseFrom(context.PayloadAsReadOnlySequence());
+      }
+      #endif
+      return parser.ParseFrom(context.PayloadAsNewBuffer());
+    }
+
+    static readonly grpc::Marshaller<global::Mruv.Economy.RegisterProductRequest> __Marshaller_mruv_economy_RegisterProductRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Economy.RegisterProductRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Economy.RegisterProductResponse> __Marshaller_mruv_economy_RegisterProductResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Economy.RegisterProductResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Economy.GetProductRequest> __Marshaller_mruv_economy_GetProductRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Economy.GetProductRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Economy.GetProductResponse> __Marshaller_mruv_economy_GetProductResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Economy.GetProductResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Economy.UpdateProductRequest> __Marshaller_mruv_economy_UpdateProductRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Economy.UpdateProductRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Economy.UpdateProductResponse> __Marshaller_mruv_economy_UpdateProductResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Economy.UpdateProductResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Economy.DeleteProductRequest> __Marshaller_mruv_economy_DeleteProductRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Economy.DeleteProductRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Economy.DeleteProductResponse> __Marshaller_mruv_economy_DeleteProductResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Economy.DeleteProductResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Economy.UpdatePriceRequest> __Marshaller_mruv_economy_UpdatePriceRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Economy.UpdatePriceRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Economy.UpdatePriceResponse> __Marshaller_mruv_economy_UpdatePriceResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Economy.UpdatePriceResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Economy.GetPriceRequest> __Marshaller_mruv_economy_GetPriceRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Economy.GetPriceRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Economy.GetPriceResponse> __Marshaller_mruv_economy_GetPriceResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Economy.GetPriceResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Economy.BuyProductRequest> __Marshaller_mruv_economy_BuyProductRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Economy.BuyProductRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Economy.BuyProductResponse> __Marshaller_mruv_economy_BuyProductResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Economy.BuyProductResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Economy.WatchProductRequest> __Marshaller_mruv_economy_WatchProductRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Economy.WatchProductRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Economy.WatchProductResponse> __Marshaller_mruv_economy_WatchProductResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Economy.WatchProductResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Economy.WatchPriceRequest> __Marshaller_mruv_economy_WatchPriceRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Economy.WatchPriceRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Economy.WatchPriceResponse> __Marshaller_mruv_economy_WatchPriceResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Economy.WatchPriceResponse.Parser));
 
     static readonly grpc::Method<global::Mruv.Economy.RegisterProductRequest, global::Mruv.Economy.RegisterProductResponse> __Method_RegisterProduct = new grpc::Method<global::Mruv.Economy.RegisterProductRequest, global::Mruv.Economy.RegisterProductResponse>(
         grpc::MethodType.Unary,

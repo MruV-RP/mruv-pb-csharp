@@ -146,39 +146,39 @@ namespace Mruv.Objects {
             "Y29tL01ydVYtUlAvbXJ1di1wYi1nby9vYmplY3RzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Mruv.Objects.MaterialSize), }, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.Object), global::Mruv.Objects.Object.Parser, new[]{ "Model", "X", "Y", "Z", "Rx", "Ry", "Rz", "WorldId", "InteriorId", "PlayerId", "AreaId", "StreamDistance", "DrawDistance", "Priority", "EstateId", "Materials", "MaterialTexts" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, null, }),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.Material), global::Mruv.Objects.Material.Parser, new[]{ "ModelId", "TxdName", "TextureName", "MaterialColor" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.MaterialText), global::Mruv.Objects.MaterialText.Parser, new[]{ "Text", "MaterialSize", "FontFace", "FontSize", "Bold", "FontColor", "BackColor", "TextAlignment" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.RemovedBuilding), global::Mruv.Objects.RemovedBuilding.Parser, new[]{ "Model", "X", "Y", "Z", "Radius", "EstateId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.CreateObjectRequest), global::Mruv.Objects.CreateObjectRequest.Parser, new[]{ "Object" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.CreateObjectResponse), global::Mruv.Objects.CreateObjectResponse.Parser, new[]{ "Id" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.GetObjectRequest), global::Mruv.Objects.GetObjectRequest.Parser, new[]{ "Id" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.GetObjectResponse), global::Mruv.Objects.GetObjectResponse.Parser, new[]{ "Object" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.UpdateObjectRequest), global::Mruv.Objects.UpdateObjectRequest.Parser, new[]{ "Id", "Object" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.UpdateObjectResponse), global::Mruv.Objects.UpdateObjectResponse.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.DeleteObjectRequest), global::Mruv.Objects.DeleteObjectRequest.Parser, new[]{ "Id" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.DeleteObjectResponse), global::Mruv.Objects.DeleteObjectResponse.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.AddObjectMaterialRequest), global::Mruv.Objects.AddObjectMaterialRequest.Parser, new[]{ "ObjectId", "Index", "Material" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.AddObjectMaterialResponse), global::Mruv.Objects.AddObjectMaterialResponse.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.GetObjectMaterialsRequest), global::Mruv.Objects.GetObjectMaterialsRequest.Parser, new[]{ "ObjectId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.GetObjectMaterialsResponse), global::Mruv.Objects.GetObjectMaterialsResponse.Parser, new[]{ "Materials" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.DeleteObjectMaterialRequest), global::Mruv.Objects.DeleteObjectMaterialRequest.Parser, new[]{ "ObjectId", "Index" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.DeleteObjectMaterialResponse), global::Mruv.Objects.DeleteObjectMaterialResponse.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.AddObjectMaterialTextRequest), global::Mruv.Objects.AddObjectMaterialTextRequest.Parser, new[]{ "ObjectId", "Index", "MaterialText" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.AddObjectMaterialTextResponse), global::Mruv.Objects.AddObjectMaterialTextResponse.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.GetObjectMaterialTextsRequest), global::Mruv.Objects.GetObjectMaterialTextsRequest.Parser, new[]{ "ObjectId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.GetObjectMaterialTextsResponse), global::Mruv.Objects.GetObjectMaterialTextsResponse.Parser, new[]{ "MaterialTexts" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.DeleteObjectMaterialTextRequest), global::Mruv.Objects.DeleteObjectMaterialTextRequest.Parser, new[]{ "ObjectId", "Index" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.DeleteObjectMaterialTextResponse), global::Mruv.Objects.DeleteObjectMaterialTextResponse.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.AddRemoveBuildingRequest), global::Mruv.Objects.AddRemoveBuildingRequest.Parser, new[]{ "RemovedBuilding" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.AddRemoveBuildingResponse), global::Mruv.Objects.AddRemoveBuildingResponse.Parser, new[]{ "Id" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.GetRemovedBuildingsRequest), global::Mruv.Objects.GetRemovedBuildingsRequest.Parser, new[]{ "EstateId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.GetRemovedBuildingsResponse), global::Mruv.Objects.GetRemovedBuildingsResponse.Parser, new[]{ "RemovedBuildings" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.DeleteRemoveBuildingRequest), global::Mruv.Objects.DeleteRemoveBuildingRequest.Parser, new[]{ "Id" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.DeleteRemoveBuildingResponse), global::Mruv.Objects.DeleteRemoveBuildingResponse.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.FetchAllObjectsRequest), global::Mruv.Objects.FetchAllObjectsRequest.Parser, new[]{ "ChunkSize", "EstateId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.FetchAllObjectsResponse), global::Mruv.Objects.FetchAllObjectsResponse.Parser, new[]{ "Objects" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Mruv.Objects.MaterialSize), }, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.Object), global::Mruv.Objects.Object.Parser, new[]{ "Model", "X", "Y", "Z", "Rx", "Ry", "Rz", "WorldId", "InteriorId", "PlayerId", "AreaId", "StreamDistance", "DrawDistance", "Priority", "EstateId", "Materials", "MaterialTexts" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, null, }),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.Material), global::Mruv.Objects.Material.Parser, new[]{ "ModelId", "TxdName", "TextureName", "MaterialColor" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.MaterialText), global::Mruv.Objects.MaterialText.Parser, new[]{ "Text", "MaterialSize", "FontFace", "FontSize", "Bold", "FontColor", "BackColor", "TextAlignment" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.RemovedBuilding), global::Mruv.Objects.RemovedBuilding.Parser, new[]{ "Model", "X", "Y", "Z", "Radius", "EstateId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.CreateObjectRequest), global::Mruv.Objects.CreateObjectRequest.Parser, new[]{ "Object" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.CreateObjectResponse), global::Mruv.Objects.CreateObjectResponse.Parser, new[]{ "Id" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.GetObjectRequest), global::Mruv.Objects.GetObjectRequest.Parser, new[]{ "Id" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.GetObjectResponse), global::Mruv.Objects.GetObjectResponse.Parser, new[]{ "Object" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.UpdateObjectRequest), global::Mruv.Objects.UpdateObjectRequest.Parser, new[]{ "Id", "Object" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.UpdateObjectResponse), global::Mruv.Objects.UpdateObjectResponse.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.DeleteObjectRequest), global::Mruv.Objects.DeleteObjectRequest.Parser, new[]{ "Id" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.DeleteObjectResponse), global::Mruv.Objects.DeleteObjectResponse.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.AddObjectMaterialRequest), global::Mruv.Objects.AddObjectMaterialRequest.Parser, new[]{ "ObjectId", "Index", "Material" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.AddObjectMaterialResponse), global::Mruv.Objects.AddObjectMaterialResponse.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.GetObjectMaterialsRequest), global::Mruv.Objects.GetObjectMaterialsRequest.Parser, new[]{ "ObjectId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.GetObjectMaterialsResponse), global::Mruv.Objects.GetObjectMaterialsResponse.Parser, new[]{ "Materials" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.DeleteObjectMaterialRequest), global::Mruv.Objects.DeleteObjectMaterialRequest.Parser, new[]{ "ObjectId", "Index" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.DeleteObjectMaterialResponse), global::Mruv.Objects.DeleteObjectMaterialResponse.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.AddObjectMaterialTextRequest), global::Mruv.Objects.AddObjectMaterialTextRequest.Parser, new[]{ "ObjectId", "Index", "MaterialText" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.AddObjectMaterialTextResponse), global::Mruv.Objects.AddObjectMaterialTextResponse.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.GetObjectMaterialTextsRequest), global::Mruv.Objects.GetObjectMaterialTextsRequest.Parser, new[]{ "ObjectId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.GetObjectMaterialTextsResponse), global::Mruv.Objects.GetObjectMaterialTextsResponse.Parser, new[]{ "MaterialTexts" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.DeleteObjectMaterialTextRequest), global::Mruv.Objects.DeleteObjectMaterialTextRequest.Parser, new[]{ "ObjectId", "Index" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.DeleteObjectMaterialTextResponse), global::Mruv.Objects.DeleteObjectMaterialTextResponse.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.AddRemoveBuildingRequest), global::Mruv.Objects.AddRemoveBuildingRequest.Parser, new[]{ "RemovedBuilding" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.AddRemoveBuildingResponse), global::Mruv.Objects.AddRemoveBuildingResponse.Parser, new[]{ "Id" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.GetRemovedBuildingsRequest), global::Mruv.Objects.GetRemovedBuildingsRequest.Parser, new[]{ "EstateId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.GetRemovedBuildingsResponse), global::Mruv.Objects.GetRemovedBuildingsResponse.Parser, new[]{ "RemovedBuildings" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.DeleteRemoveBuildingRequest), global::Mruv.Objects.DeleteRemoveBuildingRequest.Parser, new[]{ "Id" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.DeleteRemoveBuildingResponse), global::Mruv.Objects.DeleteRemoveBuildingResponse.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.FetchAllObjectsRequest), global::Mruv.Objects.FetchAllObjectsRequest.Parser, new[]{ "ChunkSize", "EstateId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Objects.FetchAllObjectsResponse), global::Mruv.Objects.FetchAllObjectsResponse.Parser, new[]{ "Objects" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
           }));
     }
     #endregion
@@ -209,7 +209,11 @@ namespace Mruv.Objects {
   /// <summary>
   /// SA-MP Dynamic object data structure.
   /// </summary>
-  public sealed partial class Object : pb::IMessage<Object> {
+  public sealed partial class Object : pb::IMessage<Object>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<Object> _parser = new pb::MessageParser<Object>(() => new Object());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -445,7 +449,7 @@ namespace Mruv.Objects {
     /// <summary>Field number for the "materials" field.</summary>
     public const int MaterialsFieldNumber = 17;
     private static readonly pbc::MapField<uint, global::Mruv.Objects.Material>.Codec _map_materials_codec
-        = new pbc::MapField<uint, global::Mruv.Objects.Material>.Codec(pb::FieldCodec.ForUInt32(8), pb::FieldCodec.ForMessage(18, global::Mruv.Objects.Material.Parser), 138);
+        = new pbc::MapField<uint, global::Mruv.Objects.Material>.Codec(pb::FieldCodec.ForUInt32(8, 0), pb::FieldCodec.ForMessage(18, global::Mruv.Objects.Material.Parser), 138);
     private readonly pbc::MapField<uint, global::Mruv.Objects.Material> materials_ = new pbc::MapField<uint, global::Mruv.Objects.Material>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::MapField<uint, global::Mruv.Objects.Material> Materials {
@@ -455,7 +459,7 @@ namespace Mruv.Objects {
     /// <summary>Field number for the "material_texts" field.</summary>
     public const int MaterialTextsFieldNumber = 18;
     private static readonly pbc::MapField<uint, global::Mruv.Objects.MaterialText>.Codec _map_materialTexts_codec
-        = new pbc::MapField<uint, global::Mruv.Objects.MaterialText>.Codec(pb::FieldCodec.ForUInt32(8), pb::FieldCodec.ForMessage(18, global::Mruv.Objects.MaterialText.Parser), 146);
+        = new pbc::MapField<uint, global::Mruv.Objects.MaterialText>.Codec(pb::FieldCodec.ForUInt32(8, 0), pb::FieldCodec.ForMessage(18, global::Mruv.Objects.MaterialText.Parser), 146);
     private readonly pbc::MapField<uint, global::Mruv.Objects.MaterialText> materialTexts_ = new pbc::MapField<uint, global::Mruv.Objects.MaterialText>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::MapField<uint, global::Mruv.Objects.MaterialText> MaterialTexts {
@@ -528,6 +532,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Model != 0) {
         output.WriteRawTag(8);
         output.WriteInt32(Model);
@@ -593,7 +600,79 @@ namespace Mruv.Objects {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Model != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(Model);
+      }
+      if (X != 0F) {
+        output.WriteRawTag(21);
+        output.WriteFloat(X);
+      }
+      if (Y != 0F) {
+        output.WriteRawTag(29);
+        output.WriteFloat(Y);
+      }
+      if (Z != 0F) {
+        output.WriteRawTag(37);
+        output.WriteFloat(Z);
+      }
+      if (Rx != 0F) {
+        output.WriteRawTag(45);
+        output.WriteFloat(Rx);
+      }
+      if (Ry != 0F) {
+        output.WriteRawTag(53);
+        output.WriteFloat(Ry);
+      }
+      if (Rz != 0F) {
+        output.WriteRawTag(61);
+        output.WriteFloat(Rz);
+      }
+      if (WorldId != 0) {
+        output.WriteRawTag(64);
+        output.WriteInt32(WorldId);
+      }
+      if (InteriorId != 0) {
+        output.WriteRawTag(72);
+        output.WriteInt32(InteriorId);
+      }
+      if (PlayerId != 0) {
+        output.WriteRawTag(80);
+        output.WriteInt32(PlayerId);
+      }
+      if (AreaId != 0) {
+        output.WriteRawTag(88);
+        output.WriteInt32(AreaId);
+      }
+      if (StreamDistance != 0F) {
+        output.WriteRawTag(101);
+        output.WriteFloat(StreamDistance);
+      }
+      if (DrawDistance != 0F) {
+        output.WriteRawTag(109);
+        output.WriteFloat(DrawDistance);
+      }
+      if (Priority != 0) {
+        output.WriteRawTag(120);
+        output.WriteInt32(Priority);
+      }
+      if (EstateId != 0) {
+        output.WriteRawTag(128, 1);
+        output.WriteUInt32(EstateId);
+      }
+      materials_.WriteTo(ref output, _map_materials_codec);
+      materialTexts_.WriteTo(ref output, _map_materialTexts_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -708,6 +787,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -784,14 +866,101 @@ namespace Mruv.Objects {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Model = input.ReadInt32();
+            break;
+          }
+          case 21: {
+            X = input.ReadFloat();
+            break;
+          }
+          case 29: {
+            Y = input.ReadFloat();
+            break;
+          }
+          case 37: {
+            Z = input.ReadFloat();
+            break;
+          }
+          case 45: {
+            Rx = input.ReadFloat();
+            break;
+          }
+          case 53: {
+            Ry = input.ReadFloat();
+            break;
+          }
+          case 61: {
+            Rz = input.ReadFloat();
+            break;
+          }
+          case 64: {
+            WorldId = input.ReadInt32();
+            break;
+          }
+          case 72: {
+            InteriorId = input.ReadInt32();
+            break;
+          }
+          case 80: {
+            PlayerId = input.ReadInt32();
+            break;
+          }
+          case 88: {
+            AreaId = input.ReadInt32();
+            break;
+          }
+          case 101: {
+            StreamDistance = input.ReadFloat();
+            break;
+          }
+          case 109: {
+            DrawDistance = input.ReadFloat();
+            break;
+          }
+          case 120: {
+            Priority = input.ReadInt32();
+            break;
+          }
+          case 128: {
+            EstateId = input.ReadUInt32();
+            break;
+          }
+          case 138: {
+            materials_.AddEntriesFrom(ref input, _map_materials_codec);
+            break;
+          }
+          case 146: {
+            materialTexts_.AddEntriesFrom(ref input, _map_materialTexts_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Replace the texture of an object with the texture from another model in the game.
   /// </summary>
-  public sealed partial class Material : pb::IMessage<Material> {
+  public sealed partial class Material : pb::IMessage<Material>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<Material> _parser = new pb::MessageParser<Material>(() => new Material());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -924,6 +1093,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (ModelId != 0) {
         output.WriteRawTag(8);
         output.WriteInt32(ModelId);
@@ -943,7 +1115,33 @@ namespace Mruv.Objects {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ModelId != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(ModelId);
+      }
+      if (TxdName.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(TxdName);
+      }
+      if (TextureName.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(TextureName);
+      }
+      if (MaterialColor != 0) {
+        output.WriteRawTag(32);
+        output.WriteInt32(MaterialColor);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -988,6 +1186,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1012,14 +1213,49 @@ namespace Mruv.Objects {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            ModelId = input.ReadInt32();
+            break;
+          }
+          case 18: {
+            TxdName = input.ReadString();
+            break;
+          }
+          case 26: {
+            TextureName = input.ReadString();
+            break;
+          }
+          case 32: {
+            MaterialColor = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Replace the texture of an object with text.
   /// </summary>
-  public sealed partial class MaterialText : pb::IMessage<MaterialText> {
+  public sealed partial class MaterialText : pb::IMessage<MaterialText>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<MaterialText> _parser = new pb::MessageParser<MaterialText>(() => new MaterialText());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1076,7 +1312,7 @@ namespace Mruv.Objects {
 
     /// <summary>Field number for the "material_size" field.</summary>
     public const int MaterialSizeFieldNumber = 2;
-    private global::Mruv.Objects.MaterialSize materialSize_ = 0;
+    private global::Mruv.Objects.MaterialSize materialSize_ = global::Mruv.Objects.MaterialSize.ObjectMaterialSize0;
     /// <summary>
     /// The size of the material (default: 256x128).
     /// </summary>
@@ -1200,7 +1436,7 @@ namespace Mruv.Objects {
     public override int GetHashCode() {
       int hash = 1;
       if (Text.Length != 0) hash ^= Text.GetHashCode();
-      if (MaterialSize != 0) hash ^= MaterialSize.GetHashCode();
+      if (MaterialSize != global::Mruv.Objects.MaterialSize.ObjectMaterialSize0) hash ^= MaterialSize.GetHashCode();
       if (FontFace.Length != 0) hash ^= FontFace.GetHashCode();
       if (FontSize != 0) hash ^= FontSize.GetHashCode();
       if (Bold != false) hash ^= Bold.GetHashCode();
@@ -1220,11 +1456,14 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Text.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(Text);
       }
-      if (MaterialSize != 0) {
+      if (MaterialSize != global::Mruv.Objects.MaterialSize.ObjectMaterialSize0) {
         output.WriteRawTag(16);
         output.WriteEnum((int) MaterialSize);
       }
@@ -1255,7 +1494,49 @@ namespace Mruv.Objects {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Text.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Text);
+      }
+      if (MaterialSize != global::Mruv.Objects.MaterialSize.ObjectMaterialSize0) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) MaterialSize);
+      }
+      if (FontFace.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(FontFace);
+      }
+      if (FontSize != 0) {
+        output.WriteRawTag(32);
+        output.WriteUInt32(FontSize);
+      }
+      if (Bold != false) {
+        output.WriteRawTag(40);
+        output.WriteBool(Bold);
+      }
+      if (FontColor != 0) {
+        output.WriteRawTag(48);
+        output.WriteInt32(FontColor);
+      }
+      if (BackColor != 0) {
+        output.WriteRawTag(56);
+        output.WriteInt32(BackColor);
+      }
+      if (TextAlignment != 0) {
+        output.WriteRawTag(64);
+        output.WriteInt32(TextAlignment);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -1263,7 +1544,7 @@ namespace Mruv.Objects {
       if (Text.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Text);
       }
-      if (MaterialSize != 0) {
+      if (MaterialSize != global::Mruv.Objects.MaterialSize.ObjectMaterialSize0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) MaterialSize);
       }
       if (FontFace.Length != 0) {
@@ -1298,7 +1579,7 @@ namespace Mruv.Objects {
       if (other.Text.Length != 0) {
         Text = other.Text;
       }
-      if (other.MaterialSize != 0) {
+      if (other.MaterialSize != global::Mruv.Objects.MaterialSize.ObjectMaterialSize0) {
         MaterialSize = other.MaterialSize;
       }
       if (other.FontFace.Length != 0) {
@@ -1324,6 +1605,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1364,14 +1648,65 @@ namespace Mruv.Objects {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Text = input.ReadString();
+            break;
+          }
+          case 16: {
+            MaterialSize = (global::Mruv.Objects.MaterialSize) input.ReadEnum();
+            break;
+          }
+          case 26: {
+            FontFace = input.ReadString();
+            break;
+          }
+          case 32: {
+            FontSize = input.ReadUInt32();
+            break;
+          }
+          case 40: {
+            Bold = input.ReadBool();
+            break;
+          }
+          case 48: {
+            FontColor = input.ReadInt32();
+            break;
+          }
+          case 56: {
+            BackColor = input.ReadInt32();
+            break;
+          }
+          case 64: {
+            TextAlignment = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Removes a standard San Andreas model for a single player within a specified range.
   /// </summary>
-  public sealed partial class RemovedBuilding : pb::IMessage<RemovedBuilding> {
+  public sealed partial class RemovedBuilding : pb::IMessage<RemovedBuilding>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<RemovedBuilding> _parser = new pb::MessageParser<RemovedBuilding>(() => new RemovedBuilding());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1538,6 +1873,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Model != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(Model);
@@ -1565,7 +1903,41 @@ namespace Mruv.Objects {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Model != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Model);
+      }
+      if (X != 0F) {
+        output.WriteRawTag(21);
+        output.WriteFloat(X);
+      }
+      if (Y != 0F) {
+        output.WriteRawTag(29);
+        output.WriteFloat(Y);
+      }
+      if (Z != 0F) {
+        output.WriteRawTag(37);
+        output.WriteFloat(Z);
+      }
+      if (Radius != 0F) {
+        output.WriteRawTag(45);
+        output.WriteFloat(Radius);
+      }
+      if (EstateId != 0) {
+        output.WriteRawTag(48);
+        output.WriteUInt32(EstateId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -1622,6 +1994,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1654,14 +2029,57 @@ namespace Mruv.Objects {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Model = input.ReadUInt32();
+            break;
+          }
+          case 21: {
+            X = input.ReadFloat();
+            break;
+          }
+          case 29: {
+            Y = input.ReadFloat();
+            break;
+          }
+          case 37: {
+            Z = input.ReadFloat();
+            break;
+          }
+          case 45: {
+            Radius = input.ReadFloat();
+            break;
+          }
+          case 48: {
+            EstateId = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Request message for rpc `CreateObject`.
   /// </summary>
-  public sealed partial class CreateObjectRequest : pb::IMessage<CreateObjectRequest> {
+  public sealed partial class CreateObjectRequest : pb::IMessage<CreateObjectRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<CreateObjectRequest> _parser = new pb::MessageParser<CreateObjectRequest>(() => new CreateObjectRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1740,6 +2158,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (object_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(Object);
@@ -1747,7 +2168,21 @@ namespace Mruv.Objects {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (object_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Object);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -1777,6 +2212,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1792,14 +2230,40 @@ namespace Mruv.Objects {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (object_ == null) {
+              Object = new global::Mruv.Objects.Object();
+            }
+            input.ReadMessage(Object);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Response message for rpc `CreateObject`.
   /// </summary>
-  public sealed partial class CreateObjectResponse : pb::IMessage<CreateObjectResponse> {
+  public sealed partial class CreateObjectResponse : pb::IMessage<CreateObjectResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<CreateObjectResponse> _parser = new pb::MessageParser<CreateObjectResponse>(() => new CreateObjectResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1878,6 +2342,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Id != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(Id);
@@ -1885,7 +2352,21 @@ namespace Mruv.Objects {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Id != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Id);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -1912,6 +2393,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1924,14 +2408,37 @@ namespace Mruv.Objects {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Id = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Request message for rpc `GetObject`.
   /// </summary>
-  public sealed partial class GetObjectRequest : pb::IMessage<GetObjectRequest> {
+  public sealed partial class GetObjectRequest : pb::IMessage<GetObjectRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<GetObjectRequest> _parser = new pb::MessageParser<GetObjectRequest>(() => new GetObjectRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2010,6 +2517,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Id != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(Id);
@@ -2017,7 +2527,21 @@ namespace Mruv.Objects {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Id != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Id);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -2044,6 +2568,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2056,14 +2583,37 @@ namespace Mruv.Objects {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Id = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Response message for rpc `GetObject`.
   /// </summary>
-  public sealed partial class GetObjectResponse : pb::IMessage<GetObjectResponse> {
+  public sealed partial class GetObjectResponse : pb::IMessage<GetObjectResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<GetObjectResponse> _parser = new pb::MessageParser<GetObjectResponse>(() => new GetObjectResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2142,6 +2692,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (object_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(Object);
@@ -2149,7 +2702,21 @@ namespace Mruv.Objects {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (object_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Object);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -2179,6 +2746,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2194,14 +2764,40 @@ namespace Mruv.Objects {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (object_ == null) {
+              Object = new global::Mruv.Objects.Object();
+            }
+            input.ReadMessage(Object);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Request message for rpc `UpdateObject`.
   /// </summary>
-  public sealed partial class UpdateObjectRequest : pb::IMessage<UpdateObjectRequest> {
+  public sealed partial class UpdateObjectRequest : pb::IMessage<UpdateObjectRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<UpdateObjectRequest> _parser = new pb::MessageParser<UpdateObjectRequest>(() => new UpdateObjectRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2294,6 +2890,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Id != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(Id);
@@ -2305,7 +2904,25 @@ namespace Mruv.Objects {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Id != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Id);
+      }
+      if (object_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Object);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -2341,6 +2958,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2360,14 +2980,44 @@ namespace Mruv.Objects {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Id = input.ReadUInt32();
+            break;
+          }
+          case 18: {
+            if (object_ == null) {
+              Object = new global::Mruv.Objects.Object();
+            }
+            input.ReadMessage(Object);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Response message for rpc `UpdateObject`.
   /// </summary>
-  public sealed partial class UpdateObjectResponse : pb::IMessage<UpdateObjectResponse> {
+  public sealed partial class UpdateObjectResponse : pb::IMessage<UpdateObjectResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<UpdateObjectResponse> _parser = new pb::MessageParser<UpdateObjectResponse>(() => new UpdateObjectResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2432,10 +3082,23 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -2456,6 +3119,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2464,14 +3130,33 @@ namespace Mruv.Objects {
             break;
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Request message for rpc `DeleteObject`.
   /// </summary>
-  public sealed partial class DeleteObjectRequest : pb::IMessage<DeleteObjectRequest> {
+  public sealed partial class DeleteObjectRequest : pb::IMessage<DeleteObjectRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<DeleteObjectRequest> _parser = new pb::MessageParser<DeleteObjectRequest>(() => new DeleteObjectRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2550,6 +3235,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Id != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(Id);
@@ -2557,7 +3245,21 @@ namespace Mruv.Objects {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Id != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Id);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -2584,6 +3286,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2596,14 +3301,37 @@ namespace Mruv.Objects {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Id = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Response message for rpc `DeleteObject`.
   /// </summary>
-  public sealed partial class DeleteObjectResponse : pb::IMessage<DeleteObjectResponse> {
+  public sealed partial class DeleteObjectResponse : pb::IMessage<DeleteObjectResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<DeleteObjectResponse> _parser = new pb::MessageParser<DeleteObjectResponse>(() => new DeleteObjectResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2668,10 +3396,23 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -2692,6 +3433,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2700,14 +3444,33 @@ namespace Mruv.Objects {
             break;
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Request message for rpc `AddObjectMaterial`.
   /// </summary>
-  public sealed partial class AddObjectMaterialRequest : pb::IMessage<AddObjectMaterialRequest> {
+  public sealed partial class AddObjectMaterialRequest : pb::IMessage<AddObjectMaterialRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<AddObjectMaterialRequest> _parser = new pb::MessageParser<AddObjectMaterialRequest>(() => new AddObjectMaterialRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2817,6 +3580,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (ObjectId != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(ObjectId);
@@ -2832,7 +3598,29 @@ namespace Mruv.Objects {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ObjectId != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(ObjectId);
+      }
+      if (Index != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(Index);
+      }
+      if (material_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Material);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -2874,6 +3662,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2897,14 +3688,48 @@ namespace Mruv.Objects {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            ObjectId = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            Index = input.ReadUInt32();
+            break;
+          }
+          case 26: {
+            if (material_ == null) {
+              Material = new global::Mruv.Objects.Material();
+            }
+            input.ReadMessage(Material);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Response message for rpc `AddObjectMaterial`.
   /// </summary>
-  public sealed partial class AddObjectMaterialResponse : pb::IMessage<AddObjectMaterialResponse> {
+  public sealed partial class AddObjectMaterialResponse : pb::IMessage<AddObjectMaterialResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<AddObjectMaterialResponse> _parser = new pb::MessageParser<AddObjectMaterialResponse>(() => new AddObjectMaterialResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2969,10 +3794,23 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -2993,6 +3831,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -3001,14 +3842,33 @@ namespace Mruv.Objects {
             break;
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Request message for rpc `GetObjectMaterials`.
   /// </summary>
-  public sealed partial class GetObjectMaterialsRequest : pb::IMessage<GetObjectMaterialsRequest> {
+  public sealed partial class GetObjectMaterialsRequest : pb::IMessage<GetObjectMaterialsRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<GetObjectMaterialsRequest> _parser = new pb::MessageParser<GetObjectMaterialsRequest>(() => new GetObjectMaterialsRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3087,6 +3947,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (ObjectId != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(ObjectId);
@@ -3094,7 +3957,21 @@ namespace Mruv.Objects {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ObjectId != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(ObjectId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -3121,6 +3998,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -3133,14 +4013,37 @@ namespace Mruv.Objects {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            ObjectId = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Response message for rpc `GetObjectMaterials`.
   /// </summary>
-  public sealed partial class GetObjectMaterialsResponse : pb::IMessage<GetObjectMaterialsResponse> {
+  public sealed partial class GetObjectMaterialsResponse : pb::IMessage<GetObjectMaterialsResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<GetObjectMaterialsResponse> _parser = new pb::MessageParser<GetObjectMaterialsResponse>(() => new GetObjectMaterialsResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3177,7 +4080,7 @@ namespace Mruv.Objects {
     /// <summary>Field number for the "materials" field.</summary>
     public const int MaterialsFieldNumber = 1;
     private static readonly pbc::MapField<uint, global::Mruv.Objects.Material>.Codec _map_materials_codec
-        = new pbc::MapField<uint, global::Mruv.Objects.Material>.Codec(pb::FieldCodec.ForUInt32(8), pb::FieldCodec.ForMessage(18, global::Mruv.Objects.Material.Parser), 10);
+        = new pbc::MapField<uint, global::Mruv.Objects.Material>.Codec(pb::FieldCodec.ForUInt32(8, 0), pb::FieldCodec.ForMessage(18, global::Mruv.Objects.Material.Parser), 10);
     private readonly pbc::MapField<uint, global::Mruv.Objects.Material> materials_ = new pbc::MapField<uint, global::Mruv.Objects.Material>();
     /// <summary>
     /// Map of materials, key - material index (0-15)
@@ -3221,11 +4124,25 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       materials_.WriteTo(output, _map_materials_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      materials_.WriteTo(ref output, _map_materials_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -3248,6 +4165,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -3260,14 +4180,37 @@ namespace Mruv.Objects {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            materials_.AddEntriesFrom(ref input, _map_materials_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Request message for rpc `DeleteObjectMaterial`.
   /// </summary>
-  public sealed partial class DeleteObjectMaterialRequest : pb::IMessage<DeleteObjectMaterialRequest> {
+  public sealed partial class DeleteObjectMaterialRequest : pb::IMessage<DeleteObjectMaterialRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<DeleteObjectMaterialRequest> _parser = new pb::MessageParser<DeleteObjectMaterialRequest>(() => new DeleteObjectMaterialRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3363,6 +4306,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (ObjectId != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(ObjectId);
@@ -3374,7 +4320,25 @@ namespace Mruv.Objects {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ObjectId != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(ObjectId);
+      }
+      if (Index != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(Index);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -3407,6 +4371,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -3423,14 +4390,41 @@ namespace Mruv.Objects {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            ObjectId = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            Index = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Response message for rpc `DeleteObjectMaterial`.
   /// </summary>
-  public sealed partial class DeleteObjectMaterialResponse : pb::IMessage<DeleteObjectMaterialResponse> {
+  public sealed partial class DeleteObjectMaterialResponse : pb::IMessage<DeleteObjectMaterialResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<DeleteObjectMaterialResponse> _parser = new pb::MessageParser<DeleteObjectMaterialResponse>(() => new DeleteObjectMaterialResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3495,10 +4489,23 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -3519,6 +4526,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -3527,14 +4537,33 @@ namespace Mruv.Objects {
             break;
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Request message for rpc `AddObjectMaterialText`.
   /// </summary>
-  public sealed partial class AddObjectMaterialTextRequest : pb::IMessage<AddObjectMaterialTextRequest> {
+  public sealed partial class AddObjectMaterialTextRequest : pb::IMessage<AddObjectMaterialTextRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<AddObjectMaterialTextRequest> _parser = new pb::MessageParser<AddObjectMaterialTextRequest>(() => new AddObjectMaterialTextRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3644,6 +4673,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (ObjectId != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(ObjectId);
@@ -3659,7 +4691,29 @@ namespace Mruv.Objects {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ObjectId != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(ObjectId);
+      }
+      if (Index != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(Index);
+      }
+      if (materialText_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(MaterialText);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -3701,6 +4755,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -3724,14 +4781,48 @@ namespace Mruv.Objects {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            ObjectId = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            Index = input.ReadUInt32();
+            break;
+          }
+          case 26: {
+            if (materialText_ == null) {
+              MaterialText = new global::Mruv.Objects.MaterialText();
+            }
+            input.ReadMessage(MaterialText);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Response message for rpc `AddObjectMaterialText`.
   /// </summary>
-  public sealed partial class AddObjectMaterialTextResponse : pb::IMessage<AddObjectMaterialTextResponse> {
+  public sealed partial class AddObjectMaterialTextResponse : pb::IMessage<AddObjectMaterialTextResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<AddObjectMaterialTextResponse> _parser = new pb::MessageParser<AddObjectMaterialTextResponse>(() => new AddObjectMaterialTextResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3796,10 +4887,23 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -3820,6 +4924,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -3828,14 +4935,33 @@ namespace Mruv.Objects {
             break;
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Request message for rpc `GetObjectMaterialTexts`.
   /// </summary>
-  public sealed partial class GetObjectMaterialTextsRequest : pb::IMessage<GetObjectMaterialTextsRequest> {
+  public sealed partial class GetObjectMaterialTextsRequest : pb::IMessage<GetObjectMaterialTextsRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<GetObjectMaterialTextsRequest> _parser = new pb::MessageParser<GetObjectMaterialTextsRequest>(() => new GetObjectMaterialTextsRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3914,6 +5040,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (ObjectId != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(ObjectId);
@@ -3921,7 +5050,21 @@ namespace Mruv.Objects {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ObjectId != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(ObjectId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -3948,6 +5091,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -3960,14 +5106,37 @@ namespace Mruv.Objects {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            ObjectId = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Response message for rpc `GetObjectMaterialTexts`.
   /// </summary>
-  public sealed partial class GetObjectMaterialTextsResponse : pb::IMessage<GetObjectMaterialTextsResponse> {
+  public sealed partial class GetObjectMaterialTextsResponse : pb::IMessage<GetObjectMaterialTextsResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<GetObjectMaterialTextsResponse> _parser = new pb::MessageParser<GetObjectMaterialTextsResponse>(() => new GetObjectMaterialTextsResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4004,7 +5173,7 @@ namespace Mruv.Objects {
     /// <summary>Field number for the "material_texts" field.</summary>
     public const int MaterialTextsFieldNumber = 1;
     private static readonly pbc::MapField<uint, global::Mruv.Objects.MaterialText>.Codec _map_materialTexts_codec
-        = new pbc::MapField<uint, global::Mruv.Objects.MaterialText>.Codec(pb::FieldCodec.ForUInt32(8), pb::FieldCodec.ForMessage(18, global::Mruv.Objects.MaterialText.Parser), 10);
+        = new pbc::MapField<uint, global::Mruv.Objects.MaterialText>.Codec(pb::FieldCodec.ForUInt32(8, 0), pb::FieldCodec.ForMessage(18, global::Mruv.Objects.MaterialText.Parser), 10);
     private readonly pbc::MapField<uint, global::Mruv.Objects.MaterialText> materialTexts_ = new pbc::MapField<uint, global::Mruv.Objects.MaterialText>();
     /// <summary>
     /// Map of material texts, key - material index (0-15).
@@ -4048,11 +5217,25 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       materialTexts_.WriteTo(output, _map_materialTexts_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      materialTexts_.WriteTo(ref output, _map_materialTexts_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -4075,6 +5258,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -4087,14 +5273,37 @@ namespace Mruv.Objects {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            materialTexts_.AddEntriesFrom(ref input, _map_materialTexts_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Request message for rpc `DeleteObjectMaterialText`.
   /// </summary>
-  public sealed partial class DeleteObjectMaterialTextRequest : pb::IMessage<DeleteObjectMaterialTextRequest> {
+  public sealed partial class DeleteObjectMaterialTextRequest : pb::IMessage<DeleteObjectMaterialTextRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<DeleteObjectMaterialTextRequest> _parser = new pb::MessageParser<DeleteObjectMaterialTextRequest>(() => new DeleteObjectMaterialTextRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4190,6 +5399,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (ObjectId != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(ObjectId);
@@ -4201,7 +5413,25 @@ namespace Mruv.Objects {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ObjectId != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(ObjectId);
+      }
+      if (Index != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(Index);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -4234,6 +5464,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -4250,14 +5483,41 @@ namespace Mruv.Objects {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            ObjectId = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            Index = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Response message for rpc `DeleteObjectMaterialText`.
   /// </summary>
-  public sealed partial class DeleteObjectMaterialTextResponse : pb::IMessage<DeleteObjectMaterialTextResponse> {
+  public sealed partial class DeleteObjectMaterialTextResponse : pb::IMessage<DeleteObjectMaterialTextResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<DeleteObjectMaterialTextResponse> _parser = new pb::MessageParser<DeleteObjectMaterialTextResponse>(() => new DeleteObjectMaterialTextResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4322,10 +5582,23 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -4346,6 +5619,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -4354,14 +5630,33 @@ namespace Mruv.Objects {
             break;
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Request message for rpc `AddRemoveBuilding`.
   /// </summary>
-  public sealed partial class AddRemoveBuildingRequest : pb::IMessage<AddRemoveBuildingRequest> {
+  public sealed partial class AddRemoveBuildingRequest : pb::IMessage<AddRemoveBuildingRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<AddRemoveBuildingRequest> _parser = new pb::MessageParser<AddRemoveBuildingRequest>(() => new AddRemoveBuildingRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4440,6 +5735,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (removedBuilding_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(RemovedBuilding);
@@ -4447,7 +5745,21 @@ namespace Mruv.Objects {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (removedBuilding_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(RemovedBuilding);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -4477,6 +5789,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -4492,14 +5807,40 @@ namespace Mruv.Objects {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (removedBuilding_ == null) {
+              RemovedBuilding = new global::Mruv.Objects.RemovedBuilding();
+            }
+            input.ReadMessage(RemovedBuilding);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Response message for rpc `AddRemoveBuilding`.
   /// </summary>
-  public sealed partial class AddRemoveBuildingResponse : pb::IMessage<AddRemoveBuildingResponse> {
+  public sealed partial class AddRemoveBuildingResponse : pb::IMessage<AddRemoveBuildingResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<AddRemoveBuildingResponse> _parser = new pb::MessageParser<AddRemoveBuildingResponse>(() => new AddRemoveBuildingResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4578,6 +5919,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Id != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(Id);
@@ -4585,7 +5929,21 @@ namespace Mruv.Objects {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Id != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Id);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -4612,6 +5970,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -4624,14 +5985,37 @@ namespace Mruv.Objects {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Id = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Request message for rpc `GetRemovedBuildings`.
   /// </summary>
-  public sealed partial class GetRemovedBuildingsRequest : pb::IMessage<GetRemovedBuildingsRequest> {
+  public sealed partial class GetRemovedBuildingsRequest : pb::IMessage<GetRemovedBuildingsRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<GetRemovedBuildingsRequest> _parser = new pb::MessageParser<GetRemovedBuildingsRequest>(() => new GetRemovedBuildingsRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4713,6 +6097,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (EstateId != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(EstateId);
@@ -4720,7 +6107,21 @@ namespace Mruv.Objects {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (EstateId != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(EstateId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -4747,6 +6148,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -4759,14 +6163,37 @@ namespace Mruv.Objects {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            EstateId = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Response message for rpc `GetRemovedBuildings`.
   /// </summary>
-  public sealed partial class GetRemovedBuildingsResponse : pb::IMessage<GetRemovedBuildingsResponse> {
+  public sealed partial class GetRemovedBuildingsResponse : pb::IMessage<GetRemovedBuildingsResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<GetRemovedBuildingsResponse> _parser = new pb::MessageParser<GetRemovedBuildingsResponse>(() => new GetRemovedBuildingsResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4844,11 +6271,25 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       removedBuildings_.WriteTo(output, _repeated_removedBuildings_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      removedBuildings_.WriteTo(ref output, _repeated_removedBuildings_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -4871,6 +6312,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -4883,14 +6327,37 @@ namespace Mruv.Objects {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            removedBuildings_.AddEntriesFrom(ref input, _repeated_removedBuildings_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Request message for rpc `DeleteRemoveBuilding`.
   /// </summary>
-  public sealed partial class DeleteRemoveBuildingRequest : pb::IMessage<DeleteRemoveBuildingRequest> {
+  public sealed partial class DeleteRemoveBuildingRequest : pb::IMessage<DeleteRemoveBuildingRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<DeleteRemoveBuildingRequest> _parser = new pb::MessageParser<DeleteRemoveBuildingRequest>(() => new DeleteRemoveBuildingRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4969,6 +6436,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Id != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(Id);
@@ -4976,7 +6446,21 @@ namespace Mruv.Objects {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Id != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Id);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -5003,6 +6487,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -5015,14 +6502,37 @@ namespace Mruv.Objects {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Id = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Response message for rpc `DeleteRemoveBuilding`.
   /// </summary>
-  public sealed partial class DeleteRemoveBuildingResponse : pb::IMessage<DeleteRemoveBuildingResponse> {
+  public sealed partial class DeleteRemoveBuildingResponse : pb::IMessage<DeleteRemoveBuildingResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<DeleteRemoveBuildingResponse> _parser = new pb::MessageParser<DeleteRemoveBuildingResponse>(() => new DeleteRemoveBuildingResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5087,10 +6597,23 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -5111,6 +6634,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -5119,14 +6645,33 @@ namespace Mruv.Objects {
             break;
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Request message for rpc `FetchAll`.
   /// </summary>
-  public sealed partial class FetchAllObjectsRequest : pb::IMessage<FetchAllObjectsRequest> {
+  public sealed partial class FetchAllObjectsRequest : pb::IMessage<FetchAllObjectsRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<FetchAllObjectsRequest> _parser = new pb::MessageParser<FetchAllObjectsRequest>(() => new FetchAllObjectsRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5222,6 +6767,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (ChunkSize != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(ChunkSize);
@@ -5233,7 +6781,25 @@ namespace Mruv.Objects {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ChunkSize != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(ChunkSize);
+      }
+      if (EstateId != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(EstateId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -5266,6 +6832,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -5282,14 +6851,41 @@ namespace Mruv.Objects {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            ChunkSize = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            EstateId = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Response message for rpc `FetchAll`.
   /// </summary>
-  public sealed partial class FetchAllObjectsResponse : pb::IMessage<FetchAllObjectsResponse> {
+  public sealed partial class FetchAllObjectsResponse : pb::IMessage<FetchAllObjectsResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<FetchAllObjectsResponse> _parser = new pb::MessageParser<FetchAllObjectsResponse>(() => new FetchAllObjectsResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5326,7 +6922,7 @@ namespace Mruv.Objects {
     /// <summary>Field number for the "objects" field.</summary>
     public const int ObjectsFieldNumber = 1;
     private static readonly pbc::MapField<int, global::Mruv.Objects.Object>.Codec _map_objects_codec
-        = new pbc::MapField<int, global::Mruv.Objects.Object>.Codec(pb::FieldCodec.ForInt32(8), pb::FieldCodec.ForMessage(18, global::Mruv.Objects.Object.Parser), 10);
+        = new pbc::MapField<int, global::Mruv.Objects.Object>.Codec(pb::FieldCodec.ForInt32(8, 0), pb::FieldCodec.ForMessage(18, global::Mruv.Objects.Object.Parser), 10);
     private readonly pbc::MapField<int, global::Mruv.Objects.Object> objects_ = new pbc::MapField<int, global::Mruv.Objects.Object>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::MapField<int, global::Mruv.Objects.Object> Objects {
@@ -5367,11 +6963,25 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       objects_.WriteTo(output, _map_objects_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      objects_.WriteTo(ref output, _map_objects_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -5394,6 +7004,9 @@ namespace Mruv.Objects {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -5406,7 +7019,26 @@ namespace Mruv.Objects {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            objects_.AddEntriesFrom(ref input, _map_objects_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

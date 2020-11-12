@@ -25,47 +25,51 @@ namespace Mruv.Plots {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChFwbG90cy9wbG90cy5wcm90bxIKbXJ1di5wbG90cxocZ29vZ2xlL2FwaS9h",
-            "bm5vdGF0aW9ucy5wcm90bxoUY29tbW9uL3NwYXRpYWwucHJvdG8iSQoEUGxv",
-            "dBIMCgRuYW1lGAEgASgJEhMKC2Rlc2NyaXB0aW9uGAIgASgJEh4KBnBvaW50",
-            "cxgDIAMoCzIOLm1ydXYuUG9zaXRpb24iVgoRQ3JlYXRlUGxvdFJlcXVlc3QS",
-            "DAoEbmFtZRgBIAEoCRITCgtkZXNjcmlwdGlvbhgCIAEoCRIeCgZwb2ludHMY",
-            "AyADKAsyDi5tcnV2LlBvc2l0aW9uIiAKEkNyZWF0ZVBsb3RSZXNwb25zZRIK",
-            "CgJpZBgBIAEoDSIcCg5HZXRQbG90UmVxdWVzdBIKCgJpZBgBIAEoDSJiCg9H",
-            "ZXRQbG90UmVzcG9uc2USDAoEbmFtZRgBIAEoCRITCgtkZXNjcmlwdGlvbhgC",
-            "IAEoCRIeCgZwb2ludHMYAyADKAsyDi5tcnV2LlBvc2l0aW9uEgwKBGFyZWEY",
-            "BCABKAEiQgoRVXBkYXRlUGxvdFJlcXVlc3QSCgoCaWQYASABKA0SDAoEbmFt",
-            "ZRgCIAEoCRITCgtkZXNjcmlwdGlvbhgDIAEoCSIUChJVcGRhdGVQbG90UmVz",
-            "cG9uc2UiHwoRRGVsZXRlUGxvdFJlcXVlc3QSCgoCaWQYASABKA0iFAoSRGVs",
-            "ZXRlUGxvdFJlc3BvbnNlMpgDChBNcnVWUGxvdHNTZXJ2aWNlEl4KCkNyZWF0",
-            "ZVBsb3QSHS5tcnV2LnBsb3RzLkNyZWF0ZVBsb3RSZXF1ZXN0Gh4ubXJ1di5w",
-            "bG90cy5DcmVhdGVQbG90UmVzcG9uc2UiEYLT5JMCCyIJL3YxL3Bsb3RzEloK",
-            "B0dldFBsb3QSGi5tcnV2LnBsb3RzLkdldFBsb3RSZXF1ZXN0GhsubXJ1di5w",
-            "bG90cy5HZXRQbG90UmVzcG9uc2UiFoLT5JMCEBIOL3YxL3Bsb3RzL3tpZH0S",
-            "YwoKVXBkYXRlUGxvdBIdLm1ydXYucGxvdHMuVXBkYXRlUGxvdFJlcXVlc3Qa",
-            "Hi5tcnV2LnBsb3RzLlVwZGF0ZVBsb3RSZXNwb25zZSIWgtPkkwIQMg4vdjEv",
-            "cGxvdHMve2lkfRJjCgpEZWxldGVQbG90Eh0ubXJ1di5wbG90cy5EZWxldGVQ",
-            "bG90UmVxdWVzdBoeLm1ydXYucGxvdHMuRGVsZXRlUGxvdFJlc3BvbnNlIhaC",
-            "0+STAhAqDi92MS9wbG90cy97aWR9QiVaI2dpdGh1Yi5jb20vTXJ1Vi1SUC9t",
-            "cnV2LXBiLWdvL3Bsb3RzYgZwcm90bzM="));
+            "bm5vdGF0aW9ucy5wcm90bxoUY29tbW9uL3NwYXRpYWwucHJvdG8iUAoEUGxv",
+            "dBIMCgRuYW1lGAEgASgJEhMKC2Rlc2NyaXB0aW9uGAIgASgJEiUKBnBvaW50",
+            "cxgDIAMoCzIVLm1ydXYuY29tbW9uLlBvc2l0aW9uIl0KEUNyZWF0ZVBsb3RS",
+            "ZXF1ZXN0EgwKBG5hbWUYASABKAkSEwoLZGVzY3JpcHRpb24YAiABKAkSJQoG",
+            "cG9pbnRzGAMgAygLMhUubXJ1di5jb21tb24uUG9zaXRpb24iIAoSQ3JlYXRl",
+            "UGxvdFJlc3BvbnNlEgoKAmlkGAEgASgNIhwKDkdldFBsb3RSZXF1ZXN0EgoK",
+            "AmlkGAEgASgNImkKD0dldFBsb3RSZXNwb25zZRIMCgRuYW1lGAEgASgJEhMK",
+            "C2Rlc2NyaXB0aW9uGAIgASgJEiUKBnBvaW50cxgDIAMoCzIVLm1ydXYuY29t",
+            "bW9uLlBvc2l0aW9uEgwKBGFyZWEYBCABKAEiQgoRVXBkYXRlUGxvdFJlcXVl",
+            "c3QSCgoCaWQYASABKA0SDAoEbmFtZRgCIAEoCRITCgtkZXNjcmlwdGlvbhgD",
+            "IAEoCSIUChJVcGRhdGVQbG90UmVzcG9uc2UiHwoRRGVsZXRlUGxvdFJlcXVl",
+            "c3QSCgoCaWQYASABKA0iFAoSRGVsZXRlUGxvdFJlc3BvbnNlMpgDChBNcnVW",
+            "UGxvdHNTZXJ2aWNlEl4KCkNyZWF0ZVBsb3QSHS5tcnV2LnBsb3RzLkNyZWF0",
+            "ZVBsb3RSZXF1ZXN0Gh4ubXJ1di5wbG90cy5DcmVhdGVQbG90UmVzcG9uc2Ui",
+            "EYLT5JMCCyIJL3YxL3Bsb3RzEloKB0dldFBsb3QSGi5tcnV2LnBsb3RzLkdl",
+            "dFBsb3RSZXF1ZXN0GhsubXJ1di5wbG90cy5HZXRQbG90UmVzcG9uc2UiFoLT",
+            "5JMCEBIOL3YxL3Bsb3RzL3tpZH0SYwoKVXBkYXRlUGxvdBIdLm1ydXYucGxv",
+            "dHMuVXBkYXRlUGxvdFJlcXVlc3QaHi5tcnV2LnBsb3RzLlVwZGF0ZVBsb3RS",
+            "ZXNwb25zZSIWgtPkkwIQMg4vdjEvcGxvdHMve2lkfRJjCgpEZWxldGVQbG90",
+            "Eh0ubXJ1di5wbG90cy5EZWxldGVQbG90UmVxdWVzdBoeLm1ydXYucGxvdHMu",
+            "RGVsZXRlUGxvdFJlc3BvbnNlIhaC0+STAhAqDi92MS9wbG90cy97aWR9QiVa",
+            "I2dpdGh1Yi5jb20vTXJ1Vi1SUC9tcnV2LXBiLWdvL3Bsb3RzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, global::Mruv.SpatialReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Plots.Plot), global::Mruv.Plots.Plot.Parser, new[]{ "Name", "Description", "Points" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Plots.CreatePlotRequest), global::Mruv.Plots.CreatePlotRequest.Parser, new[]{ "Name", "Description", "Points" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Plots.CreatePlotResponse), global::Mruv.Plots.CreatePlotResponse.Parser, new[]{ "Id" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Plots.GetPlotRequest), global::Mruv.Plots.GetPlotRequest.Parser, new[]{ "Id" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Plots.GetPlotResponse), global::Mruv.Plots.GetPlotResponse.Parser, new[]{ "Name", "Description", "Points", "Area" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Plots.UpdatePlotRequest), global::Mruv.Plots.UpdatePlotRequest.Parser, new[]{ "Id", "Name", "Description" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Plots.UpdatePlotResponse), global::Mruv.Plots.UpdatePlotResponse.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Plots.DeletePlotRequest), global::Mruv.Plots.DeletePlotRequest.Parser, new[]{ "Id" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Plots.DeletePlotResponse), global::Mruv.Plots.DeletePlotResponse.Parser, null, null, null, null)
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, global::Mruv.Common.SpatialReflection.Descriptor, },
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Plots.Plot), global::Mruv.Plots.Plot.Parser, new[]{ "Name", "Description", "Points" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Plots.CreatePlotRequest), global::Mruv.Plots.CreatePlotRequest.Parser, new[]{ "Name", "Description", "Points" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Plots.CreatePlotResponse), global::Mruv.Plots.CreatePlotResponse.Parser, new[]{ "Id" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Plots.GetPlotRequest), global::Mruv.Plots.GetPlotRequest.Parser, new[]{ "Id" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Plots.GetPlotResponse), global::Mruv.Plots.GetPlotResponse.Parser, new[]{ "Name", "Description", "Points", "Area" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Plots.UpdatePlotRequest), global::Mruv.Plots.UpdatePlotRequest.Parser, new[]{ "Id", "Name", "Description" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Plots.UpdatePlotResponse), global::Mruv.Plots.UpdatePlotResponse.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Plots.DeletePlotRequest), global::Mruv.Plots.DeletePlotRequest.Parser, new[]{ "Id" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mruv.Plots.DeletePlotResponse), global::Mruv.Plots.DeletePlotResponse.Parser, null, null, null, null, null)
           }));
     }
     #endregion
 
   }
   #region Messages
-  public sealed partial class Plot : pb::IMessage<Plot> {
+  public sealed partial class Plot : pb::IMessage<Plot>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<Plot> _parser = new pb::MessageParser<Plot>(() => new Plot());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -125,11 +129,11 @@ namespace Mruv.Plots {
 
     /// <summary>Field number for the "points" field.</summary>
     public const int PointsFieldNumber = 3;
-    private static readonly pb::FieldCodec<global::Mruv.Position> _repeated_points_codec
-        = pb::FieldCodec.ForMessage(26, global::Mruv.Position.Parser);
-    private readonly pbc::RepeatedField<global::Mruv.Position> points_ = new pbc::RepeatedField<global::Mruv.Position>();
+    private static readonly pb::FieldCodec<global::Mruv.Common.Position> _repeated_points_codec
+        = pb::FieldCodec.ForMessage(26, global::Mruv.Common.Position.Parser);
+    private readonly pbc::RepeatedField<global::Mruv.Common.Position> points_ = new pbc::RepeatedField<global::Mruv.Common.Position>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Mruv.Position> Points {
+    public pbc::RepeatedField<global::Mruv.Common.Position> Points {
       get { return points_; }
     }
 
@@ -171,6 +175,9 @@ namespace Mruv.Plots {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Name.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(Name);
@@ -183,7 +190,26 @@ namespace Mruv.Plots {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Name.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Name);
+      }
+      if (Description.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Description);
+      }
+      points_.WriteTo(ref output, _repeated_points_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -218,6 +244,9 @@ namespace Mruv.Plots {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -238,14 +267,45 @@ namespace Mruv.Plots {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Name = input.ReadString();
+            break;
+          }
+          case 18: {
+            Description = input.ReadString();
+            break;
+          }
+          case 26: {
+            points_.AddEntriesFrom(ref input, _repeated_points_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Request message for rpc `CreatePlot`.
   /// </summary>
-  public sealed partial class CreatePlotRequest : pb::IMessage<CreatePlotRequest> {
+  public sealed partial class CreatePlotRequest : pb::IMessage<CreatePlotRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<CreatePlotRequest> _parser = new pb::MessageParser<CreatePlotRequest>(() => new CreatePlotRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -305,11 +365,11 @@ namespace Mruv.Plots {
 
     /// <summary>Field number for the "points" field.</summary>
     public const int PointsFieldNumber = 3;
-    private static readonly pb::FieldCodec<global::Mruv.Position> _repeated_points_codec
-        = pb::FieldCodec.ForMessage(26, global::Mruv.Position.Parser);
-    private readonly pbc::RepeatedField<global::Mruv.Position> points_ = new pbc::RepeatedField<global::Mruv.Position>();
+    private static readonly pb::FieldCodec<global::Mruv.Common.Position> _repeated_points_codec
+        = pb::FieldCodec.ForMessage(26, global::Mruv.Common.Position.Parser);
+    private readonly pbc::RepeatedField<global::Mruv.Common.Position> points_ = new pbc::RepeatedField<global::Mruv.Common.Position>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Mruv.Position> Points {
+    public pbc::RepeatedField<global::Mruv.Common.Position> Points {
       get { return points_; }
     }
 
@@ -351,6 +411,9 @@ namespace Mruv.Plots {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Name.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(Name);
@@ -363,7 +426,26 @@ namespace Mruv.Plots {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Name.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Name);
+      }
+      if (Description.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Description);
+      }
+      points_.WriteTo(ref output, _repeated_points_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -398,6 +480,9 @@ namespace Mruv.Plots {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -418,14 +503,45 @@ namespace Mruv.Plots {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Name = input.ReadString();
+            break;
+          }
+          case 18: {
+            Description = input.ReadString();
+            break;
+          }
+          case 26: {
+            points_.AddEntriesFrom(ref input, _repeated_points_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Response message for rpc `CreatePlot`.
   /// </summary>
-  public sealed partial class CreatePlotResponse : pb::IMessage<CreatePlotResponse> {
+  public sealed partial class CreatePlotResponse : pb::IMessage<CreatePlotResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<CreatePlotResponse> _parser = new pb::MessageParser<CreatePlotResponse>(() => new CreatePlotResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -504,6 +620,9 @@ namespace Mruv.Plots {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Id != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(Id);
@@ -511,7 +630,21 @@ namespace Mruv.Plots {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Id != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Id);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -538,6 +671,9 @@ namespace Mruv.Plots {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -550,14 +686,37 @@ namespace Mruv.Plots {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Id = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Request message for rpc `GetPlot`.
   /// </summary>
-  public sealed partial class GetPlotRequest : pb::IMessage<GetPlotRequest> {
+  public sealed partial class GetPlotRequest : pb::IMessage<GetPlotRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<GetPlotRequest> _parser = new pb::MessageParser<GetPlotRequest>(() => new GetPlotRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -636,6 +795,9 @@ namespace Mruv.Plots {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Id != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(Id);
@@ -643,7 +805,21 @@ namespace Mruv.Plots {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Id != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Id);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -670,6 +846,9 @@ namespace Mruv.Plots {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -682,14 +861,37 @@ namespace Mruv.Plots {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Id = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Response message for rpc `GetPlot`.
   /// </summary>
-  public sealed partial class GetPlotResponse : pb::IMessage<GetPlotResponse> {
+  public sealed partial class GetPlotResponse : pb::IMessage<GetPlotResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<GetPlotResponse> _parser = new pb::MessageParser<GetPlotResponse>(() => new GetPlotResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -750,11 +952,11 @@ namespace Mruv.Plots {
 
     /// <summary>Field number for the "points" field.</summary>
     public const int PointsFieldNumber = 3;
-    private static readonly pb::FieldCodec<global::Mruv.Position> _repeated_points_codec
-        = pb::FieldCodec.ForMessage(26, global::Mruv.Position.Parser);
-    private readonly pbc::RepeatedField<global::Mruv.Position> points_ = new pbc::RepeatedField<global::Mruv.Position>();
+    private static readonly pb::FieldCodec<global::Mruv.Common.Position> _repeated_points_codec
+        = pb::FieldCodec.ForMessage(26, global::Mruv.Common.Position.Parser);
+    private readonly pbc::RepeatedField<global::Mruv.Common.Position> points_ = new pbc::RepeatedField<global::Mruv.Common.Position>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Mruv.Position> Points {
+    public pbc::RepeatedField<global::Mruv.Common.Position> Points {
       get { return points_; }
     }
 
@@ -809,6 +1011,9 @@ namespace Mruv.Plots {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Name.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(Name);
@@ -825,7 +1030,30 @@ namespace Mruv.Plots {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Name.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Name);
+      }
+      if (Description.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Description);
+      }
+      points_.WriteTo(ref output, _repeated_points_codec);
+      if (Area != 0D) {
+        output.WriteRawTag(33);
+        output.WriteDouble(Area);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -866,6 +1094,9 @@ namespace Mruv.Plots {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -890,14 +1121,49 @@ namespace Mruv.Plots {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Name = input.ReadString();
+            break;
+          }
+          case 18: {
+            Description = input.ReadString();
+            break;
+          }
+          case 26: {
+            points_.AddEntriesFrom(ref input, _repeated_points_codec);
+            break;
+          }
+          case 33: {
+            Area = input.ReadDouble();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Request message for rpc `UpdatePlot`.
   /// </summary>
-  public sealed partial class UpdatePlotRequest : pb::IMessage<UpdatePlotRequest> {
+  public sealed partial class UpdatePlotRequest : pb::IMessage<UpdatePlotRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<UpdatePlotRequest> _parser = new pb::MessageParser<UpdatePlotRequest>(() => new UpdatePlotRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1004,6 +1270,9 @@ namespace Mruv.Plots {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Id != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(Id);
@@ -1019,7 +1288,29 @@ namespace Mruv.Plots {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Id != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Id);
+      }
+      if (Name.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Name);
+      }
+      if (Description.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Description);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -1058,6 +1349,9 @@ namespace Mruv.Plots {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1078,14 +1372,45 @@ namespace Mruv.Plots {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Id = input.ReadUInt32();
+            break;
+          }
+          case 18: {
+            Name = input.ReadString();
+            break;
+          }
+          case 26: {
+            Description = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Response message for rpc `UpdatePlot`.
   /// </summary>
-  public sealed partial class UpdatePlotResponse : pb::IMessage<UpdatePlotResponse> {
+  public sealed partial class UpdatePlotResponse : pb::IMessage<UpdatePlotResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<UpdatePlotResponse> _parser = new pb::MessageParser<UpdatePlotResponse>(() => new UpdatePlotResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1150,10 +1475,23 @@ namespace Mruv.Plots {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -1174,6 +1512,9 @@ namespace Mruv.Plots {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1182,14 +1523,33 @@ namespace Mruv.Plots {
             break;
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Request message for rpc `DeletePlot`.
   /// </summary>
-  public sealed partial class DeletePlotRequest : pb::IMessage<DeletePlotRequest> {
+  public sealed partial class DeletePlotRequest : pb::IMessage<DeletePlotRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<DeletePlotRequest> _parser = new pb::MessageParser<DeletePlotRequest>(() => new DeletePlotRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1268,6 +1628,9 @@ namespace Mruv.Plots {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Id != 0) {
         output.WriteRawTag(8);
         output.WriteUInt32(Id);
@@ -1275,7 +1638,21 @@ namespace Mruv.Plots {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Id != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Id);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -1302,6 +1679,9 @@ namespace Mruv.Plots {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1314,14 +1694,37 @@ namespace Mruv.Plots {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Id = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Response message for rpc `DeletePlot`.
   /// </summary>
-  public sealed partial class DeletePlotResponse : pb::IMessage<DeletePlotResponse> {
+  public sealed partial class DeletePlotResponse : pb::IMessage<DeletePlotResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<DeletePlotResponse> _parser = new pb::MessageParser<DeletePlotResponse>(() => new DeletePlotResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1386,10 +1789,23 @@ namespace Mruv.Plots {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -1410,6 +1826,9 @@ namespace Mruv.Plots {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1418,7 +1837,22 @@ namespace Mruv.Plots {
             break;
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
 
   }
 

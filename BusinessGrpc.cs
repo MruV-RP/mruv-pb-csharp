@@ -18,25 +18,55 @@ namespace Mruv.Business {
   {
     static readonly string __ServiceName = "mruv.business.MruVBusinessService";
 
-    static readonly grpc::Marshaller<global::Mruv.Business.CreateBusinessRequest> __Marshaller_mruv_business_CreateBusinessRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Business.CreateBusinessRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Business.CreateBusinessResponse> __Marshaller_mruv_business_CreateBusinessResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Business.CreateBusinessResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Business.GetBusinessRequest> __Marshaller_mruv_business_GetBusinessRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Business.GetBusinessRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Business.Business> __Marshaller_mruv_business_Business = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Business.Business.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Business.UpdateBusinessRequest> __Marshaller_mruv_business_UpdateBusinessRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Business.UpdateBusinessRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Business.DeleteBusinessRequest> __Marshaller_mruv_business_DeleteBusinessRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Business.DeleteBusinessRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Business.DeleteBusinessResponse> __Marshaller_mruv_business_DeleteBusinessResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Business.DeleteBusinessResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Business.AssignOwnerRequest> __Marshaller_mruv_business_AssignOwnerRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Business.AssignOwnerRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Business.AssignOwnerResponse> __Marshaller_mruv_business_AssignOwnerResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Business.AssignOwnerResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Business.AssignEstateRequest> __Marshaller_mruv_business_AssignEstateRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Business.AssignEstateRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Business.AssignEstateResponse> __Marshaller_mruv_business_AssignEstateResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Business.AssignEstateResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Business.UnassignEstateRequest> __Marshaller_mruv_business_UnassignEstateRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Business.UnassignEstateRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Business.UnassignEstateResponse> __Marshaller_mruv_business_UnassignEstateResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Business.UnassignEstateResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Business.BuyBusinessRequest> __Marshaller_mruv_business_BuyBusinessRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Business.BuyBusinessRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Business.BuyBusinessResponse> __Marshaller_mruv_business_BuyBusinessResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Business.BuyBusinessResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Business.WatchBusinessRequest> __Marshaller_mruv_business_WatchBusinessRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Business.WatchBusinessRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Business.WatchBusinessResponse> __Marshaller_mruv_business_WatchBusinessResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Business.WatchBusinessResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Business.WatchBusinessesRequest> __Marshaller_mruv_business_WatchBusinessesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Business.WatchBusinessesRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Business.WatchBusinessesResponse> __Marshaller_mruv_business_WatchBusinessesResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Business.WatchBusinessesResponse.Parser.ParseFrom);
+    static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (message is global::Google.Protobuf.IBufferMessage)
+      {
+        context.SetPayloadLength(message.CalculateSize());
+        global::Google.Protobuf.MessageExtensions.WriteTo(message, context.GetBufferWriter());
+        context.Complete();
+        return;
+      }
+      #endif
+      context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));
+    }
+
+    static class __Helper_MessageCache<T>
+    {
+      public static readonly bool IsBufferMessage = global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));
+    }
+
+    static T __Helper_DeserializeMessage<T>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser<T> parser) where T : global::Google.Protobuf.IMessage<T>
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (__Helper_MessageCache<T>.IsBufferMessage)
+      {
+        return parser.ParseFrom(context.PayloadAsReadOnlySequence());
+      }
+      #endif
+      return parser.ParseFrom(context.PayloadAsNewBuffer());
+    }
+
+    static readonly grpc::Marshaller<global::Mruv.Business.CreateBusinessRequest> __Marshaller_mruv_business_CreateBusinessRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Business.CreateBusinessRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Business.CreateBusinessResponse> __Marshaller_mruv_business_CreateBusinessResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Business.CreateBusinessResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Business.GetBusinessRequest> __Marshaller_mruv_business_GetBusinessRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Business.GetBusinessRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Business.Business> __Marshaller_mruv_business_Business = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Business.Business.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Business.UpdateBusinessRequest> __Marshaller_mruv_business_UpdateBusinessRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Business.UpdateBusinessRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Business.DeleteBusinessRequest> __Marshaller_mruv_business_DeleteBusinessRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Business.DeleteBusinessRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Business.DeleteBusinessResponse> __Marshaller_mruv_business_DeleteBusinessResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Business.DeleteBusinessResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Business.AssignOwnerRequest> __Marshaller_mruv_business_AssignOwnerRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Business.AssignOwnerRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Business.AssignOwnerResponse> __Marshaller_mruv_business_AssignOwnerResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Business.AssignOwnerResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Business.AssignEstateRequest> __Marshaller_mruv_business_AssignEstateRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Business.AssignEstateRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Business.AssignEstateResponse> __Marshaller_mruv_business_AssignEstateResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Business.AssignEstateResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Business.UnassignEstateRequest> __Marshaller_mruv_business_UnassignEstateRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Business.UnassignEstateRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Business.UnassignEstateResponse> __Marshaller_mruv_business_UnassignEstateResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Business.UnassignEstateResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Business.BuyBusinessRequest> __Marshaller_mruv_business_BuyBusinessRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Business.BuyBusinessRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Business.BuyBusinessResponse> __Marshaller_mruv_business_BuyBusinessResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Business.BuyBusinessResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Business.WatchBusinessRequest> __Marshaller_mruv_business_WatchBusinessRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Business.WatchBusinessRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Business.WatchBusinessResponse> __Marshaller_mruv_business_WatchBusinessResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Business.WatchBusinessResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Business.WatchBusinessesRequest> __Marshaller_mruv_business_WatchBusinessesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Business.WatchBusinessesRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Business.WatchBusinessesResponse> __Marshaller_mruv_business_WatchBusinessesResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Business.WatchBusinessesResponse.Parser));
 
     static readonly grpc::Method<global::Mruv.Business.CreateBusinessRequest, global::Mruv.Business.CreateBusinessResponse> __Method_CreateBusiness = new grpc::Method<global::Mruv.Business.CreateBusinessRequest, global::Mruv.Business.CreateBusinessResponse>(
         grpc::MethodType.Unary,

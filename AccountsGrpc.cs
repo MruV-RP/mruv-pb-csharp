@@ -16,16 +16,46 @@ namespace Mruv.Accounts {
   {
     static readonly string __ServiceName = "mruv.accounts.MruVAccountsService";
 
-    static readonly grpc::Marshaller<global::Mruv.Accounts.RegisterAccountRequest> __Marshaller_mruv_accounts_RegisterAccountRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Accounts.RegisterAccountRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Accounts.RegisterAccountResponse> __Marshaller_mruv_accounts_RegisterAccountResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Accounts.RegisterAccountResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Accounts.LogInRequest> __Marshaller_mruv_accounts_LogInRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Accounts.LogInRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Accounts.LogInResponse> __Marshaller_mruv_accounts_LogInResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Accounts.LogInResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Accounts.IsAccountExistRequest> __Marshaller_mruv_accounts_IsAccountExistRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Accounts.IsAccountExistRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Accounts.IsAccountExistResponse> __Marshaller_mruv_accounts_IsAccountExistResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Accounts.IsAccountExistResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Accounts.GetAccountRequest> __Marshaller_mruv_accounts_GetAccountRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Accounts.GetAccountRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Accounts.GetAccountResponse> __Marshaller_mruv_accounts_GetAccountResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Accounts.GetAccountResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Accounts.GetAccountCharactersRequest> __Marshaller_mruv_accounts_GetAccountCharactersRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Accounts.GetAccountCharactersRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Accounts.GetAccountCharactersResponse> __Marshaller_mruv_accounts_GetAccountCharactersResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Accounts.GetAccountCharactersResponse.Parser.ParseFrom);
+    static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (message is global::Google.Protobuf.IBufferMessage)
+      {
+        context.SetPayloadLength(message.CalculateSize());
+        global::Google.Protobuf.MessageExtensions.WriteTo(message, context.GetBufferWriter());
+        context.Complete();
+        return;
+      }
+      #endif
+      context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));
+    }
+
+    static class __Helper_MessageCache<T>
+    {
+      public static readonly bool IsBufferMessage = global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));
+    }
+
+    static T __Helper_DeserializeMessage<T>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser<T> parser) where T : global::Google.Protobuf.IMessage<T>
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (__Helper_MessageCache<T>.IsBufferMessage)
+      {
+        return parser.ParseFrom(context.PayloadAsReadOnlySequence());
+      }
+      #endif
+      return parser.ParseFrom(context.PayloadAsNewBuffer());
+    }
+
+    static readonly grpc::Marshaller<global::Mruv.Accounts.RegisterAccountRequest> __Marshaller_mruv_accounts_RegisterAccountRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Accounts.RegisterAccountRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Accounts.RegisterAccountResponse> __Marshaller_mruv_accounts_RegisterAccountResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Accounts.RegisterAccountResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Accounts.LogInRequest> __Marshaller_mruv_accounts_LogInRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Accounts.LogInRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Accounts.LogInResponse> __Marshaller_mruv_accounts_LogInResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Accounts.LogInResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Accounts.IsAccountExistRequest> __Marshaller_mruv_accounts_IsAccountExistRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Accounts.IsAccountExistRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Accounts.IsAccountExistResponse> __Marshaller_mruv_accounts_IsAccountExistResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Accounts.IsAccountExistResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Accounts.GetAccountRequest> __Marshaller_mruv_accounts_GetAccountRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Accounts.GetAccountRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Accounts.GetAccountResponse> __Marshaller_mruv_accounts_GetAccountResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Accounts.GetAccountResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Accounts.GetAccountCharactersRequest> __Marshaller_mruv_accounts_GetAccountCharactersRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Accounts.GetAccountCharactersRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Accounts.GetAccountCharactersResponse> __Marshaller_mruv_accounts_GetAccountCharactersResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Accounts.GetAccountCharactersResponse.Parser));
 
     static readonly grpc::Method<global::Mruv.Accounts.RegisterAccountRequest, global::Mruv.Accounts.RegisterAccountResponse> __Method_RegisterAccount = new grpc::Method<global::Mruv.Accounts.RegisterAccountRequest, global::Mruv.Accounts.RegisterAccountResponse>(
         grpc::MethodType.Unary,

@@ -15,18 +15,48 @@ namespace Mruv.Organizations {
   {
     static readonly string __ServiceName = "mruv.organizations.MruVOrganizationsService";
 
-    static readonly grpc::Marshaller<global::Mruv.Organizations.CreateOrganizationRequest> __Marshaller_mruv_organizations_CreateOrganizationRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Organizations.CreateOrganizationRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Organizations.CreateOrganizationResponse> __Marshaller_mruv_organizations_CreateOrganizationResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Organizations.CreateOrganizationResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Organizations.GetOrganizationRequest> __Marshaller_mruv_organizations_GetOrganizationRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Organizations.GetOrganizationRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Organizations.GetOrganizationResponse> __Marshaller_mruv_organizations_GetOrganizationResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Organizations.GetOrganizationResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Organizations.UpdateOrganizationRequest> __Marshaller_mruv_organizations_UpdateOrganizationRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Organizations.UpdateOrganizationRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Organizations.UpdateOrganizationResponse> __Marshaller_mruv_organizations_UpdateOrganizationResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Organizations.UpdateOrganizationResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Organizations.DeleteOrganizationRequest> __Marshaller_mruv_organizations_DeleteOrganizationRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Organizations.DeleteOrganizationRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Organizations.DeleteOrganizationResponse> __Marshaller_mruv_organizations_DeleteOrganizationResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Organizations.DeleteOrganizationResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Organizations.AssignLeaderRequest> __Marshaller_mruv_organizations_AssignLeaderRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Organizations.AssignLeaderRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Organizations.AssignLeaderResponse> __Marshaller_mruv_organizations_AssignLeaderResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Organizations.AssignLeaderResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Organizations.UnassignLeaderRequest> __Marshaller_mruv_organizations_UnassignLeaderRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Organizations.UnassignLeaderRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Mruv.Organizations.UnassignLeaderResponse> __Marshaller_mruv_organizations_UnassignLeaderResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Mruv.Organizations.UnassignLeaderResponse.Parser.ParseFrom);
+    static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (message is global::Google.Protobuf.IBufferMessage)
+      {
+        context.SetPayloadLength(message.CalculateSize());
+        global::Google.Protobuf.MessageExtensions.WriteTo(message, context.GetBufferWriter());
+        context.Complete();
+        return;
+      }
+      #endif
+      context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));
+    }
+
+    static class __Helper_MessageCache<T>
+    {
+      public static readonly bool IsBufferMessage = global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));
+    }
+
+    static T __Helper_DeserializeMessage<T>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser<T> parser) where T : global::Google.Protobuf.IMessage<T>
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (__Helper_MessageCache<T>.IsBufferMessage)
+      {
+        return parser.ParseFrom(context.PayloadAsReadOnlySequence());
+      }
+      #endif
+      return parser.ParseFrom(context.PayloadAsNewBuffer());
+    }
+
+    static readonly grpc::Marshaller<global::Mruv.Organizations.CreateOrganizationRequest> __Marshaller_mruv_organizations_CreateOrganizationRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Organizations.CreateOrganizationRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Organizations.CreateOrganizationResponse> __Marshaller_mruv_organizations_CreateOrganizationResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Organizations.CreateOrganizationResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Organizations.GetOrganizationRequest> __Marshaller_mruv_organizations_GetOrganizationRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Organizations.GetOrganizationRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Organizations.GetOrganizationResponse> __Marshaller_mruv_organizations_GetOrganizationResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Organizations.GetOrganizationResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Organizations.UpdateOrganizationRequest> __Marshaller_mruv_organizations_UpdateOrganizationRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Organizations.UpdateOrganizationRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Organizations.UpdateOrganizationResponse> __Marshaller_mruv_organizations_UpdateOrganizationResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Organizations.UpdateOrganizationResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Organizations.DeleteOrganizationRequest> __Marshaller_mruv_organizations_DeleteOrganizationRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Organizations.DeleteOrganizationRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Organizations.DeleteOrganizationResponse> __Marshaller_mruv_organizations_DeleteOrganizationResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Organizations.DeleteOrganizationResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Organizations.AssignLeaderRequest> __Marshaller_mruv_organizations_AssignLeaderRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Organizations.AssignLeaderRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Organizations.AssignLeaderResponse> __Marshaller_mruv_organizations_AssignLeaderResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Organizations.AssignLeaderResponse.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Organizations.UnassignLeaderRequest> __Marshaller_mruv_organizations_UnassignLeaderRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Organizations.UnassignLeaderRequest.Parser));
+    static readonly grpc::Marshaller<global::Mruv.Organizations.UnassignLeaderResponse> __Marshaller_mruv_organizations_UnassignLeaderResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mruv.Organizations.UnassignLeaderResponse.Parser));
 
     static readonly grpc::Method<global::Mruv.Organizations.CreateOrganizationRequest, global::Mruv.Organizations.CreateOrganizationResponse> __Method_CreateOrganization = new grpc::Method<global::Mruv.Organizations.CreateOrganizationRequest, global::Mruv.Organizations.CreateOrganizationResponse>(
         grpc::MethodType.Unary,
